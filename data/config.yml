@@ -1,0 +1,17 @@
+# Site wide settings
+site:
+  root_url: http://www.brett.cool
+  title: brett.cool
+  title_separator: " &mdash; "
+  meta_description: designer and front end developer
+  meta_keywords:
+    - brett jones
+  author: Brett Jones
+  active_navigation_item_class: current
+  analytics_id: UA-XXXXXXX-XX
+
+# Author of CSS & JavaScript
+source:
+  author:
+    name: Brett Jones
+    uri: http://brett.cool

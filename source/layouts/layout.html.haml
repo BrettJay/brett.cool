@@ -1,0 +1,48 @@
+!!! 5
+%html.no-js{lang: "en"}
+  %head
+    %meta{charset: "utf-8"}
+
+    %title= render_page_title
+    %meta{name: "description", content: meta_description}
+    %meta{name: "keywords", content: meta_keywords}
+    %meta{name: "author", content: data.config.site.author}
+
+    -# Generated Geo-Tags: http://www.geo-tag.de/generator
+    %meta{name: "DC.title", content: render_page_title}
+    -# %meta{name: "geo.region", content: "XX-XX"}
+    -# %meta{name: "geo.placename", content: "XXXXX"}
+    -# %meta{name: "geo.position", content: "XXXX;XXXX"}
+    -# %meta{name: "ICBM", content: "XXXX XXXX"}
+
+    -# Standard viewport tag to set the viewport to the device's width,
+    %meta{content: "width=device-width, initial-scale=1", name: "viewport"}
+
+    -# Stylesheets
+    = stylesheet_link_tag 'styles'
+
+    %link{rel: "author", href: "/humans.txt"}
+
+    -# App Icons
+    %link{rel: "shortcut icon", href: "favicon.ico"}
+
+    /[if lte IE 8]
+      -# Loading fallback scripts from a CDN for older IE versions could be beneficial
+      -# as it may have been cached by the browser before
+
+      -# html5shiv (don't include it in modernizr)
+      = javascript_include_tag "//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"
+
+      -# Respond.js (responsive styles for old browsers)
+      = javascript_include_tag "//cdnjs.cloudflare.com/ajax/libs/respond.js/1.4.2/respond.min.js"
+
+    - if build?
+      -# Google Analytics
+      = partial "shared/google_analytics"
+
+  %body{class: current_page.data.body_classes || "page"}
+
+    = yield
+
+    -# Load all Javascript at the end to avoid render-blocking
+    = javascript_include_tag "scripts"

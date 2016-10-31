@@ -1,0 +1,6 @@
+type: article
+image:
+  '': http://brett.cool/images/fb.jpg
+  type: image/jpg
+  width: 600
+  height: 315
