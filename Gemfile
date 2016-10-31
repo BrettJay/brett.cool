@@ -18,3 +18,6 @@ gem 'rubocop', require: false
 
 # OGP
 gem 'middleman-ogp'
+
+# Deploy
+gem 'middleman-deploy'
