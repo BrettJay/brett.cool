@@ -26,6 +26,9 @@
     -# App Icons
     %link{rel: "shortcut icon", href: "favicon.ico"}
 
+    - ogp_tags do|name, value|
+      %meta{ property: name, content: value}
+
     /[if lte IE 8]
       -# Loading fallback scripts from a CDN for older IE versions could be beneficial
       -# as it may have been cached by the browser before
