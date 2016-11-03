@@ -28,7 +28,6 @@ p, ul, dl, ol
   line-height: 1.3
   letter-spacing: -0.3px
 
-
 p a
   color: #06C
   text-decoration: none
@@ -36,3 +35,31 @@ p a
   transition: 0.2s ease
   &:hover
     border-bottom: 1px solid rgba(0,102,204,1)
+
+.Article_title
+  margin-bottom: 0
+  +fluid-scale(font-size, 375px, 1040px, 31px, 48px)
+  a
+    color: inherit
+    text-decoration: none
+
+.Article_metadata
+  text-transform: uppercase
+  color: #808080
+  letter-spacing: 1px
+  +fluid-scale(font-size, 375px, 1040px, 13px, 16px)
+
+.Article_heading
+  margin-bottom: $base-spacing-unit
+
+.Article_content
+  p
+    +fluid-scale(font-size, 375px, 1040px, 15px, 17px)
+    line-height: 1.4
+  .read-more
+    text-decoration: none
+    color: #06C
+    border-bottom: 1px solid rgba(0,102,204,0)
+    transition: 0.2s ease
+    &:hover
+      border-bottom: 1px solid rgba(0,102,204,0.2)
