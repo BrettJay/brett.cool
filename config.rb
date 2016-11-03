@@ -52,8 +52,11 @@ activate :directory_indexes
 # --------------------------------------------------------------------------------------------------
 # Build configuration
 # --------------------------------------------------------------------------------------------------
+# Run build cleaner
+require_relative "./lib/build_cleaner"
 
 configure :build do
+  activate :build_cleaner
   # Exclude any vendor components (bower or custom builds) in the build
   ignore 'stylesheets/vendor/*'
   ignore 'javascripts/vendor/*'
