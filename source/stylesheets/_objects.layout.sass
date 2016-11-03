@@ -1,0 +1,74 @@
+.Content
+  max-width: 1060px
+  margin-left: auto
+  margin-right: auto
+  padding-left: 10px
+  padding-right: 10px
+
+.Content_row
+  margin-left: -10px
+  margin-right: -10px
+  +clearfix
+
+.Content_sidebar,
+.Content_primary,
+.Content_main
+  padding-left: 10px
+  padding-right: 10px
+
+.Content_sidebar
+  width: 27.7%
+  float: left
+
+.Content_primary
+  width: 72.3%
+  float: right
+
+.Content_main
+  width: 60%
+  float: left
+  margin-left: 27.7%
+  margin-top: $base-spacing-unit
+  margin-bottom: $base-spacing-unit
+
+.hero_image
+  width: 100%
+
+.navigation
+  padding: ($base-spacing-unit/2) 0
+  list-style: none
+  margin: 0
+  li
+    display: inline
+    line-height: 30px
+    padding-right: ($base-spacing-unit/2)
+    +fluid-scale(font-size, 375px, 1040px, 14px, 17px)
+  a
+    text-decoration: none
+    color: #000
+  li.current a
+    color: rgba(0,0,0,0.5)
+
+.Content_header .navigation
+  padding: $base-spacing-unit 0
+
+.name
+  +fluid-scale(font-size, 375px, 1040px, 16px, 24px)
+  font-family: $font_headline
+  line-height: 30px
+  padding: $base-spacing-unit 0
+  margin-bottom: 0
+
+.tagline
+  +fluid-scale(font-size, 375px, 1040px, 16px, 24px)
+  line-height: 1.3
+
+hr
+  border: 0 none
+  height: 1px
+  background: rgba(0,0,0,0.1)
+  margin: 0
+  padding: 0
+
+.Content_footer
+  margin-top: $base-spacing-unit * 2

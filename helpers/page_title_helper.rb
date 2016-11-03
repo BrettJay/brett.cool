@@ -18,7 +18,7 @@ module PageTitleHelper
     raise 'You must provide a page title for your page!' if title.blank?
 
     if current_resource.url == '/'
-      "#{site_title} #{title_separator} #{title}"
+      "Brett Jones"
     else
       "#{title} #{title_separator} #{site_title}"
     end

@@ -1,5 +1,38 @@
+// Scale: http://www.modularscale.com/?16&px&1.25&web&text
+html
+  font-family: $font_body
+
 h1, h2, h3, h4, h5, h6
   font-family: $font_headline
 
-p
-  font-family: $font_body
+h1
+  +font-size(62px)
+
+h2
+  +font-size(48px)
+
+h3
+  +font-size(39px)
+
+h4
+  +font-size(31px)
+
+h5
+  +font-size(25px)
+
+h6
+  +font-size(20px)
+
+p, ul, dl, ol
+  +font-size(17px)
+  line-height: 1.3
+  letter-spacing: -0.3px
+
+
+p a
+  color: #06C
+  text-decoration: none
+  border-bottom: 1px solid rgba(0,102,204,0.2)
+  transition: 0.2s ease
+  &:hover
+    border-bottom: 1px solid rgba(0,102,204,1)

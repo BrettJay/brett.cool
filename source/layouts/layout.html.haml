@@ -46,7 +46,21 @@
 
   %body{class: current_page.data.body_classes || "page"}
 
+    .Content
+      .Content_row
+        .Content_sidebar
+          .name brett😎
+        .Content_primary.Content_header
+          = partial "layouts/nav"
+
     = yield
 
+    .Content
+      .Content_row
+
+        .Content_primary
+          .Content_footer
+            %hr/
+            = partial "layouts/nav"
     -# Load all Javascript at the end to avoid render-blocking
     = javascript_include_tag "scripts"
