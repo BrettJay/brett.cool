@@ -52,5 +52,14 @@ p a
 .Article_heading
   margin-bottom: $base-spacing-unit
 
-.Article_content p
-  +fluid-scale(font-size, 375px, 1040px, 15px, 17px)
+.Article_content
+  p
+    +fluid-scale(font-size, 375px, 1040px, 15px, 17px)
+    line-height: 1.4
+  .read-more
+    text-decoration: none
+    color: #06C
+    border-bottom: 1px solid rgba(0,102,204,0)
+    transition: 0.2s ease
+    &:hover
+      border-bottom: 1px solid rgba(0,102,204,0.2)
