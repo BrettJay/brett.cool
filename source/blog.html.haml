@@ -1,0 +1,21 @@
+---
+  title: Blog
+  body_classes: about
+  meta_description: Brett Jones is a designer and front end developer from Perth, WA.
+  meta_keywords:
+---
+
+
+.Content
+
+  .Content_row
+    .Content_main
+      - page_articles.each_with_index do |article, i|
+        .Article
+          .Article_heading
+            %h2.Article_title= link_to article.title, article
+            %p.Article_metadata= Date.parse(article.date.to_s).strftime('%B %e, %Y')
+          .Article_content
+            = article.summary
+
+            = link_to 'Continue Reading...', article, class: 'read-more'

@@ -5,6 +5,7 @@ gem 'middleman', '~> 3'
 gem 'middleman-bower'
 gem 'middleman-livereload'
 gem 'middleman-search_engine_sitemap'
+gem "middleman-blog"
 
 # Source minification
 gem 'middleman-minify-html'

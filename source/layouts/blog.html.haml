@@ -1,0 +1,10 @@
+= wrap_layout :layout do
+  .Content
+    .Content_row
+      .Content_main
+        .Article
+          .Article_heading
+            %h2.Article_title= current_article.title
+            %p.Article_metadata= Date.parse(current_article.date.to_s).strftime('%B %e, %Y')
+          .Article_content
+            = yield
