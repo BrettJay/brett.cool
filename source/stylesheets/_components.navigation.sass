@@ -1,0 +1,20 @@
+.navigation
+  padding: ($base-spacing-unit/2) 0
+  list-style: none
+  margin: 0
+  li
+    display: inline
+    line-height: 30px
+    padding-right: ($base-spacing-unit/2)
+    +fluid-scale(font-size, 375px, 1040px, 14px, 17px)
+  a
+    text-decoration: none
+    color: rgba(0,0,0,0.5)
+  li.current a
+    color: #000
+
+.page-blog li.navigation_blog a
+  color: #000
+
+.Content_header .navigation
+  padding: $base-spacing-unit 0
