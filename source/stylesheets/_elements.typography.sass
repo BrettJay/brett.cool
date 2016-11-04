@@ -1,25 +1,19 @@
 // Scale: http://www.modularscale.com/?16&px&1.25&web&text
 html
   font-family: $font_body
-
 h1, h2, h3, h4, h5, h6
   font-family: $font_headline
 
 h1
   +font-size(62px)
-
 h2
   +font-size(48px)
-
 h3
   +font-size(39px)
-
 h4
   +font-size(31px)
-
 h5
   +font-size(25px)
-
 h6
   +font-size(20px)
 
@@ -35,30 +29,3 @@ p a
   transition: 0.2s ease
   &:hover
     border-bottom: 1px solid $content-link_underline--hover
-
-.Article_title
-  margin-bottom: 0
-  +fluid-scale(font-size, 375px, 1040px, 31px, 48px)
-  a
-    color: inherit
-    text-decoration: none
-
-.Article_metadata
-  +uppercase
-  color: $content-tertiary
-  +fluid-scale(font-size, 375px, 1040px, 13px, 16px)
-
-.Article_heading
-  margin-bottom: $base-spacing-unit
-
-.Article_content
-  p
-    +fluid-scale(font-size, 375px, 1040px, 15px, 17px)
-    line-height: 1.4
-  .read-more
-    text-decoration: none
-    color: #06C
-    border-bottom: 1px solid $content-link_underline--invisible
-    transition: 0.2s ease
-    &:hover
-      border-bottom: 1px solid $content-link_underline
