@@ -31,10 +31,10 @@ p, ul, dl, ol
 p a
   color: #06C
   text-decoration: none
-  border-bottom: 1px solid rgba(0,102,204,0.2)
+  border-bottom: 1px solid $content-link_underline
   transition: 0.2s ease
   &:hover
-    border-bottom: 1px solid rgba(0,102,204,1)
+    border-bottom: 1px solid $content-link_underline--hover
 
 .Article_title
   margin-bottom: 0
@@ -44,9 +44,8 @@ p a
     text-decoration: none
 
 .Article_metadata
-  text-transform: uppercase
-  color: #808080
-  letter-spacing: 1px
+  +uppercase
+  color: $content-tertiary
   +fluid-scale(font-size, 375px, 1040px, 13px, 16px)
 
 .Article_heading
@@ -59,7 +58,7 @@ p a
   .read-more
     text-decoration: none
     color: #06C
-    border-bottom: 1px solid rgba(0,102,204,0)
+    border-bottom: 1px solid $content-link_underline--invisible
     transition: 0.2s ease
     &:hover
-      border-bottom: 1px solid rgba(0,102,204,0.2)
+      border-bottom: 1px solid $content-link_underline
