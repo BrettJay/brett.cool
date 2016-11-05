@@ -10,6 +10,13 @@
   margin-right: -10px
   +clearfix
 
+.page-blog .Fullbleed_image
+  margin-left: -10px
+  margin-right: -10px
+  margin-bottom: $base-spacing-unit
+  img
+    vertical-align: middle
+
 .Content_sidebar,
 .Content_primary,
 .Content_main
@@ -24,12 +31,10 @@
   width: 72.3%
   float: right
 
-.Content_main
+.Content > .Content_row > .Content_main
   width: 60%
   float: left
   margin-left: 27.7%
-  margin-top: $base-spacing-unit
-  margin-bottom: $base-spacing-unit
 
 .Content_sidebar p
   +fluid-scale(font-size, 375px, 1040px, 11px, 16px)
@@ -47,7 +52,9 @@
   line-height: 30px
   padding: $base-spacing-unit 0
   margin-bottom: 0
-
+  a
+    color: inherit
+    text-decoration: none
 .tagline
   +fluid-scale(font-size, 375px, 1040px, 16px, 24px)
   line-height: 1.3
