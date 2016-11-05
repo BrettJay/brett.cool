@@ -5,17 +5,40 @@ h1, h2, h3, h4, h5, h6
   font-family: $font_headline
 
 h1
-  +font-size(62px)
+  // +font-size(62px)
+  +fluid-scale(font-size, 375px, 1040px, 30px, 52px)
+  margin: 0.5em 0
+  line-height: 1.1
+
 h2
-  +font-size(48px)
+  // +font-size(48px)
+  +fluid-scale(font-size, 375px, 1040px, 28px, 40px)
+  margin: 0.7em 0
+  line-height: 1.2
+
 h3
-  +font-size(39px)
+  // +font-size(39px)
+  +fluid-scale(font-size, 375px, 1040px, 24px, 39px)
+  margin: 0.7em 0
+  line-height: 1.2
+
 h4
-  +font-size(31px)
+  // +font-size(31px)
+  +fluid-scale(font-size, 375px, 1040px, 22px, 31px)
+  margin: 0.7em 0
+  line-height: 1.2
+
 h5
-  +font-size(25px)
+  // +font-size(25px)
+  +fluid-scale(font-size, 375px, 1040px, 20px, 25px)
+  margin: 0.7em 0
+  line-height: 1.2
+
 h6
-  +font-size(20px)
+  // +font-size(20px)
+  +fluid-scale(font-size, 375px, 1040px, 19px, 20px)
+  margin: 0.8em 0
+  line-height: 1.2
 
 p, ul, dl, ol
   +font-size(17px)
