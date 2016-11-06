@@ -103,7 +103,7 @@ configure :build do
 
   # Uniquely-named assets (cache buster)
   # Exception: svg & png in images folder because they need to be interchangeable by JS
-  activate :asset_hash, ignore: [%r{images/(.*\.jpeg|.*\.jpg|.*\.png|.*\.svg)$}i]
+  activate :asset_hash, ignore: [%r{(.*\.jpeg|.*\.jpg|.*\.png|.*\.svg)$}i]
 end
 
 # --------------------------------------------------------------------------------------------------
