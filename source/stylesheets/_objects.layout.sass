@@ -16,7 +16,7 @@
   margin-bottom: $base-spacing-unit
   img
     vertical-align: middle
-
+    width: 100%
 .Content_sidebar,
 .Content_primary,
 .Content_main
@@ -26,15 +26,22 @@
 .Content_sidebar
   width: 27.7%
   float: left
+  +respond-to(small-down)
+    width: 24%
 
 .Content_primary
   width: 72.3%
   float: right
+  +respond-to(small-down)
+    width: 76%
 
 .Content > .Content_row > .Content_main
   width: 60%
   float: left
   margin-left: 27.7%
+  +respond-to(small-down)
+    margin-left: 24%
+    width: 75%
 
 .Content_sidebar p
   +fluid-scale(font-size, 375px, 1040px, 11px, 16px)
@@ -55,6 +62,7 @@
   a
     color: inherit
     text-decoration: none
+
 .tagline
   +fluid-scale(font-size, 375px, 1040px, 16px, 24px)
   line-height: 1.3
