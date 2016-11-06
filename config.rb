@@ -7,6 +7,9 @@ helpers do
   # In case you require helpers within `config.rb`, they can be added here.
 end
 
+require_relative './lib/reading_time'
+activate :reading_time
+
 # --------------------------------------------------------------------------------------------------
 # Blog
 # --------------------------------------------------------------------------------------------------
@@ -28,7 +31,8 @@ end
 activate :ogp do |ogp|
   ogp.namespaces = {
     fb: data.ogp.fb,
-    og: data.ogp.og
+    og: data.ogp.og,
+    twitter: data.ogp.twitter
   }
   ogp.base_url = 'http://brett.cool'
 end
