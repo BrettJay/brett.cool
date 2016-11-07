@@ -36,3 +36,16 @@
 =uppercase
   text-transform: uppercase
   letter-spacing: 1px
+
+
+=vertical-center
+  :position absolute
+  :top 50%
+  :-webkit-transform translateY(-50%)
+  :-ms-transform translateY(-50%)
+  :transform translateY(-50%)
+
+=vertical-parent
+  :-webkit-transform-style preserve-3d
+  :-moz-transform-style preserve-3d
+  :transform-style preserve-3d

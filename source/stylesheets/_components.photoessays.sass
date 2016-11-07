@@ -1,0 +1,57 @@
+.Content_photoessays
+  display: flex
+  margin: ($base-spacing-unit / 2) 0
+  flex-wrap: wrap
+  +respond-to(ipad-up)
+    margin: $base-spacing-unit 0
+
+.PhotoEssayItem
+  flex: 0 1 50%
+  padding: 2px
+
+  +respond-to(ipad-up)
+    flex: 0 1 33.33%
+    padding: 10px
+
+.PhotoEssayCard
+  position: relative
+  display: block
+  color: #fff
+  text-decoration: none
+  transition: all 0.2s ease
+  box-shadow: 0 0 0 transparent
+
+  &:hover
+    transform: translateY(-4px)
+    box-shadow: 0 10px 40px rgba(0,0,0,0.6)
+
+  &:active
+    transform: translateY(2px)
+    box-shadow: 0 0 0 rgba(0,0,0,1)
+
+.PhotoEssayCard_caption
+  width: 100%
+  text-align: center
+  text-shadow: 0 2px 14px rgba(0,0,0,1)
+  position: absolute
+  bottom: 0
+  left: 0
+  right: 0
+  padding: 4vw 2vw 6vw
+  width: 100%
+  background-image: linear-gradient(-180deg, rgba(0,0,0,0.00) 0%, rgba(0,0,0,0.88) 75%)
+  +respond-to(ipad-up)
+    padding: $base-spacing-unit ($base-spacing-unit /2 )($base-spacing-unit * 1.5)
+.PhotoEssayCard_title
+  text-transform: uppercase
+  font-family: $font_headline
+  letter-spacing: 0.1em
+  margin: 0 0 10px
+  +fluid-scale(font-size, 375px, 1040px, 16px, 25px)
+
+.PhotoEssayCard_subtitle
+  +fluid-scale(font-size, 375px, 1040px, 13px, 17px)
+
+.PhotoEssayCard_cardImage
+  width: 100%
+  vertical-align: middle
