@@ -3,7 +3,7 @@
 A static site stored and deployed to github pages, with:
 
  * [middleman][middleman-url]
- * [middleman-basis][middleman-basis-url] by [Patrick Affentrager][pzi-url]
+ * [middleman-basis][middleman-basis-url] by [Patrik Affentranger][pzi-url]
  * [middleman-ogp][middleman-ogp-url]
  * [middleman-deploy][middleman-deploy-url]
  * [bower][bower-url]
