@@ -22,17 +22,65 @@
     +fluid-scale(font-size, 375px, 1040px, 12px, 16px)
 
   .read-more
-    text-decoration: none
     color: #06C
+    +clearfix
     border-bottom: 1px solid $content-link_underline--invisible
     transition: 0.2s ease
+    +fluid-scale(font-size, 375px, 1040px, 16px, 18px)
+    text-decoration: none
     &:hover
       border-bottom: 1px solid $content-link_underline
-
+    .reading-time
+      color: $content-tertiary
+      +fluid-scale(font-size, 375px, 1040px, 12px, 14px)
   hr
     margin: $base-spacing-unit * 2 auto
     width: 30%
     height: 2px
+
+  figure
+    margin-left: 0
+    margin-right: 0
+
+
+  code
+    display: block
+    font-family: 'Menlo', 'Consolas', monospace
+    line-height: 1.4
+    +fluid-scale(font-size, 375px, 1040px, 12px, 13px)
+    background: #F7F8F9
+    color: #3D454C
+    border-radius: 5px
+    padding: 20px
+  pre
+    white-space: pre-wrap
+    white-space: -moz-pre-wrap
+    white-space: -pre-wrap
+    white-space: -o-pre-wrap
+    word-wrap: break-word
+
+figure figcaption
+  text-align: center
+  margin-top: 20px
+  +fluid-scale(font-size, 375px, 1040px, 12px, 15px)
+  color: $content-tertiary
+  a
+    color: #06C
+    text-decoration: none
+    border-bottom: 1px solid $content-link_underline
+    transition: 0.2s ease
+    cursor: pointer
+    &:hover
+      border-bottom: 1px solid $content-link_underline--hover
+figure.image_expand
+  +respond-to(ipad-up)
+    margin: 60px -40px
+
+figure img
+  max-width: 100%
+
+.inline_image
+  margin: $base-spacing-unit/2 0
 
 .ArticleBreadcrumb
   a

@@ -18,4 +18,5 @@
           .Article_content
             = article.summary
 
-            = link_to 'Continue Reading...', article, class: 'read-more'
+            = link_to article, class: 'read-more' do
+              Continue Reading <span class="reading-time"> — #{reading_time article.body}</span>
