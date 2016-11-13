@@ -27,7 +27,7 @@
 = partial("photoessays/components/banner", locals: {slug: current_page.data.slug, title: current_page.data.title, 'subtitle': current_page.data.subtitle})
 
 .Content#story
-  = partial("photoessays/components/paragraph", locals: {slug: current_page.data.slug, 'paragraph': 'It’s Mixin time.'})
+  = partial("photoessays/components/paragraph", locals: {slug: current_page.data.slug, 'paragraph': ['It’s Mixin time.']})
   = partial("photoessays/components/photo_two_column", locals: {slug: current_page.data.slug, 'left': ['shape','speakers'], 'right': ['moi'] })
   = partial("photoessays/components/photo_right", locals: {slug: current_page.data.slug, 'caption': 'I am a caption and I hope you like it.', 'photo': 'shape'})
   = partial("photoessays/components/photo_left", locals: {slug: current_page.data.slug, 'caption': 'I am a caption and I hope you like it.', 'photo': 'shape'})
