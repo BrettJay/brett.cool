@@ -26,9 +26,16 @@
     +respond-to(mobile)
       padding-top: 40px
 
-  .Article_content p
-    +fluid-scale(font-size, 375px, 1040px, 16px, 24px)
-    line-height: 1.3
+  .Content .Content_main
+    width: 46.32%
+    +respond-to(ipad-down)
+      margin-left: 12%
+      width: 76%
+
+  .Article_content
+    p
+      +fluid-scale(font-size, 375px, 1040px, 16px, 24px)
+      line-height: 1.3
 
 .Content_photoessays
   display: flex
