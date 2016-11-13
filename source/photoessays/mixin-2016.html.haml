@@ -22,7 +22,14 @@
         width: 600
         height: 315
 ---
-.Content
+
+.Banner{style: "background-image: url('/images/photoessays/mixin-2016/banner.jpg')"}
+  .Banner_caption
+    %h1 Mixin 2016
+    %p A conference for designers, developers, and those around and in-between.
+  = partial "photoessays/components/scroll"
+
+.Content#story
   = partial("photoessays/components/paragraph", locals: {slug: current_page.data.slug, 'paragraph': 'It’s Mixin time.'})
   = partial("photoessays/components/photo_two_column", locals: {slug: current_page.data.slug, 'left': ['shape','speakers'], 'right': ['moi'] })
   = partial("photoessays/components/photo_right", locals: {slug: current_page.data.slug, 'caption': 'I am a caption and I hope you like it.', 'photo': 'shape'})
