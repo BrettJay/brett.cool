@@ -31,9 +31,4 @@
   .Content_row
     .Content_photoessays
       - data.photoessays.each do | photoessay |
-        .PhotoEssayItem
-          = link_to photoessay_link(photoessay), id: photoessay.url, class: "PhotoEssayCard PhotoEssayCard--#{photoessay.url}" do
-            .PhotoEssayCard_caption
-              .PhotoEssayCard_title= photoessay.title
-              .PhotoEssayCard_subtitle= photoessay.date
-            = image_tag "images/photoessays/#{photoessay.url}/card.jpg", alt: photoessay.name, class: 'PhotoEssayCard_cardImage'
+        = partial("photoessays/components/card", locals: { photoessay: photoessay})
