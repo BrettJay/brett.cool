@@ -48,6 +48,7 @@
   margin-right: -10px
   margin-top: $base-spacing-unit
   margin-bottom: $base-spacing-unit
+  position: relative
   +clearfix
 
   .PhotoCol_alpha,
@@ -78,3 +79,10 @@
     padding-right: 10px
     +respond-to(small-down)
       padding-right: 2px
+
+.page-photoessays .Component
+  margin: 160px 0
+  +respond-to(ipad-down)
+    margin: 80px 0
+  +respond-to(mobile)
+    margin: 40px 0

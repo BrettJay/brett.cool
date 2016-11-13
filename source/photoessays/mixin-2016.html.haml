@@ -1,5 +1,6 @@
 ---
   title: Mixin 2016
+  slug: mixin-2016
   body_classes: page-photoessays
   meta_description: A growing collection of photoessays from my travels and experiences…
   meta_keywords:
@@ -20,6 +21,10 @@
         type: image/jpg
         width: 600
         height: 315
-  days:
-    first: 'hello'
 ---
+.Content
+  = partial("photoessays/components/paragraph", locals: {slug: current_page.data.slug, 'paragraph': 'It’s Mixin time.'})
+  = partial("photoessays/components/photo_two_column", locals: {slug: current_page.data.slug, 'left': ['shape','speakers'], 'right': ['moi'] })
+  = partial("photoessays/components/photo_right", locals: {slug: current_page.data.slug, 'caption': 'I am a caption and I hope you like it.', 'photo': 'shape'})
+  = partial("photoessays/components/photo_left", locals: {slug: current_page.data.slug, 'caption': 'I am a caption and I hope you like it.', 'photo': 'shape'})
+  = partial("photoessays/components/photo", locals: {slug: current_page.data.slug, 'caption': 'I am a caption and I hope you like it.', 'photo': 'shape'})

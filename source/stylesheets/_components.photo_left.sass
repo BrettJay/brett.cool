@@ -1,0 +1,29 @@
+.Photo_left
+  width: 73.68%
+  float: left
+  padding: 0 10px
+  img
+    width: 100%
+    vertical-align: middle
+
+.PhotoCaption_right
+  text-align: left
+  float: right
+  width: 14.34%
+  padding: 0 0 0 10px
+  margin-left: 73.68%
+  position: absolute
+  bottom: 0
+
++respond-to(ipad-down)
+  .Photo_right
+    padding-right: 0
+    width: 76%
+  .PhotoCaption_left
+    margin-left: 5%
+    width: 19%
+
++respond-to(mobile)
+  .PhotoCaption_left
+    margin-left: 1%
+    width: 23%
