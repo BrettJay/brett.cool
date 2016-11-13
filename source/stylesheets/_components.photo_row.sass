@@ -1,22 +1,40 @@
-.PhotoRow--thirds
+.PhotoRow--thirds,
+.PhotoRow--quarters
   float: left
   img
     width: 100%
+    vertical-align: middle
 
-.PhotoRow--thirds_0
-  width: 27%
+.PhotoRow--thirds_0,
+.PhotoRow--quarters_0
+  width: 27.7%
   padding: 0 10px 0 0
   +respond-to(small-down)
-  padding: 0 2px 0 0
+    padding: 0 2px 0 0
 
 .PhotoRow--thirds_1
   padding: 0 10px
-  width: 46%
+  width: 45.3%
   +respond-to(small-down)
     padding: 0 2px
 
-.PhotoRow--thirds_2
+.PhotoRow--thirds_2,
+.PhotoRow--quarters_3
   padding: 0 0 0 10px
   width: 26%
   +respond-to(small-down)
     padding: 0 0 0 2px
+
+
+
+.PhotoRow--quarters_1,
+.PhotoRow--quarters_2
+  padding: 0 10px
+  +respond-to(small-down)
+    padding: 0 2px
+
+.PhotoRow--quarters_1
+  width: 21%
+
+.PhotoRow--quarters_2
+  width: 24.3%

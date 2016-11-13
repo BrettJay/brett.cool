@@ -30,15 +30,161 @@
   .Content_row
     .Content_main
       .Article_content
-        %p Mixin,
+        :markdown
+          *Many of the photos featured here were taken by our excellent event photographer, #{link_to 'Cameron Campbell', 'http://camc.net.au/', target: '_blank'}.*
 
-  = partial("photoessays/components/photo_two_column", locals: {slug: current_page.data.slug, 'left': ['shape','speakers'], 'right': ['moi'] })
-  = partial("photoessays/components/photo_row_three", locals: {slug: current_page.data.slug, 'photos': ['shape','speakers']})
-  = partial("photoessays/components/photo_right", locals: {slug: current_page.data.slug, 'caption': 'I am a caption and I hope you like it.', 'photo': 'shape'})
-  = partial("photoessays/components/photo_left", locals: {slug: current_page.data.slug, 'caption': 'I am a caption and I hope you like it.', 'photo': 'shape'})
+          ---
 
-  = partial("photoessays/components/photo_left", locals: {slug: current_page.data.slug, 'caption': 'Una clearly demonstrating we have some things left to learn about image', 'photo': 'filesize'})
+          Even if an Apple event hadn’t been scheduled for 1am Friday morning, I was finding the prospect of sleep tricky on the eve of Mixin.
 
-  = partial("photoessays/components/photo", locals: {slug: current_page.data.slug, 'caption': 'Mike Riethmuller', 'photo': 'mike'})
+          Not only were there equal parts nerves and excitement for sleep to contend with, but it also felt like there was a slew of tiny last minute things that needed to be done.
 
-  = partial("photoessays/components/photo", locals: {slug: current_page.data.slug, 'caption': 'Alice Lee', 'photo': 'alice'})
+  = partial("photoessays/components/photo_hero", locals: {slug: current_page.data.slug, 'caption': '', 'photo': 'intro'})
+
+  .Content_row
+    .Content_main
+      .Article_content
+        :markdown
+          At the stage door of the State Theatre Center of WA, I met the fellow Mixin organisers and volunteers.
+
+          We checked in, and begun the last of the preparations; interior decorations and signage, the final touches in the courtyard, and a final tech check.
+
+  = partial("photoessays/components/photo_two_column", locals: {slug: current_page.data.slug, 'left': ['waffle'], 'right': ['setup'] })
+
+  = partial("photoessays/components/photo_right", locals: {slug: current_page.data.slug, 'caption': 'Mo Espresso on board, dialing in their coffee.', 'photo': 'mo'})
+
+  .Content_row
+    .Content_main
+      .Article_content
+        :markdown
+          And then, in what felt like no time at all, suddenly attendees were arriving.
+
+  = partial("photoessays/components/photo_two_column", locals: {slug: current_page.data.slug, 'left': ['registration','attendees'], 'right': ['lanyards'] })
+
+  .Content_row
+    .Content_main
+      .Article_content
+        :markdown
+          One blur of a registration later, and we were on.
+
+  = partial("photoessays/components/photo_hero", locals: {slug: current_page.data.slug, 'caption': '', 'photo': 'start'})
+
+  .Content_row
+    .Content_main
+      .Article_content
+        :markdown
+          Kylie and Josh took to the stage to welcome the audience and tell the story of Mixin.
+
+  = partial("photoessays/components/photo", locals: {slug: current_page.data.slug, 'photo': 'story', 'caption': '' })
+
+  .Content_row
+    .Content_main
+      .Article_content
+        :markdown
+          They did a fantastic job setting the playful tone for the day, before inviting our keynote speaker up.
+
+  = partial("photoessays/components/photo_hero", locals: {slug: current_page.data.slug, 'photo': 'andy', 'caption': '' })
+
+  .Content_row
+    .Content_main
+      .Article_content
+        :markdown
+          ## Art Directing Web Design
+
+          #{link_to 'Andy Clarke', 'https://twitter.com/malarkey', target: '_blank'} took to the stage to give an invigorating talk, challenging web designers to think beyond the 12 column grid we so often turn to.
+
+          First, he made the case for art direction in web design, and how it can affect and enhance the story we are telling, and that not all stories should be told the same way.
+
+  = partial("photoessays/components/photo_right", locals: {slug: current_page.data.slug, 'caption': 'Andy showing some creative applications of grids.', 'photo': 'andy_slide'})
+
+  .Content_row
+    .Content_main
+      .Article_content
+        :markdown
+          It is not the fact we use grids that is the problem, but we’re often not taking full advantage of grids on the web. The proliferation of 12 column grids has narrowed our thinking.
+
+          Some big takeaways for me was using more ratios in my grids and design work (including this site) and the concept of using multiple grids (known as compound grids).
+
+  = partial("photoessays/components/photo_hero", locals: {slug: current_page.data.slug, 'photo': 'una', 'caption': '' })
+
+  .Content_row
+    .Content_main
+      .Article_content
+        :markdown
+          ## The Joy of Optimising
+          Following Andy, #{link_to 'Una Kravets', 'https://twitter.com/una', target: '_blank'} took to the stage to deliver a fascinating and energetic talk which covered a range of new image formats on the horizon, including FLIF and GIFV, and some fascinating information about image compression.
+
+          For instance, it turns out colourising a black and white jpeg using CSS blending is more efficient than baking colour blending into the image itself.
+
+          And to top it off, I finally (think) I understand why the GIF format yields such inefficient file sizes.
+
+          Towards the very end of the talk, she applied all the theory to our very own Mixin website.
+
+          #{link_to 'I found this hugely inspiring', '/blog/2016/11/05/be-open/', target: '_blank'}.
+
+  = partial("photoessays/components/photo_right", locals: {slug: current_page.data.slug, 'photo': 'filesize', 'caption': 'In this industry, there’s always more to learn!' })
+
+  .Content_row
+    .Content_main
+      .Article_content
+        :markdown
+          ## Coffee time ☕️
+          I got up to invite people (not that it was necessary, I’m sure), to grab a coffee.
+
+  = partial("photoessays/components/photo_two_column", locals: {slug: current_page.data.slug, 'left': ['break'], 'right': ['break_courtyard','break_buildkite'] })
+
+  .Content_row
+    .Content_main
+      .Article_content
+        :markdown
+          In no time, it was time to head back in for the next two sessions.
+
+  = partial("photoessays/components/photo_hero", locals: {slug: current_page.data.slug, 'photo': 'alice', 'caption': '' })
+
+  .Content_row
+    .Content_main
+      .Article_content
+        :markdown
+          ## Pencil Mileage
+          Walking on stage to Kanye West, #{link_to 'Alice Lee', 'https://twitter.com/byalicelee', target: '_blank'} delivered an uplifting and thoughtful talk about.
+
+  .Content_row
+    .Content_main
+      .Article_content
+        :markdown
+          ## Full Stack Anxiety
+          #{link_to 'Joel Califa', 'https://twitter.com/notdetails', target: '_blank'}
+
+  = partial("photoessays/components/photo_hero", locals: {slug: current_page.data.slug, 'photo': 'joel_selfie', 'caption': 'Joel gets a selfie with the crowd' })
+
+  = partial("photoessays/components/photo_hero", locals: {slug: current_page.data.slug, 'photo': 'css_eulogy', 'caption': '' })
+
+  .Content_row
+    .Content_main
+      .Article_content
+        :markdown
+          ## A CSS Eulogy
+          #{link_to 'Mike Riethmuller', 'https://twitter.com/MikeRiethmuller', target: '_blank'}
+
+  = partial("photoessays/components/photo_right", locals: {slug: current_page.data.slug, 'photo': 'mike', 'caption': 'Mike Riethmuller' })
+
+  .Content_row
+    .Content_main
+      .Article_content
+        :markdown
+          ## Designing Design Systems
+          #{link_to 'Jina Bolton', 'https://twitter.com/jina', target: '_blank'}
+
+  = partial("photoessays/components/photo_left", locals: {slug: current_page.data.slug, 'photo': 'jina', 'caption': 'Jina Bolton' })
+
+  .Content_row
+    .Content_main
+      .Article_content
+        :markdown
+          ## The Secret Life of Comedy
+          #{link_to 'Espen Brunborg', 'https://twitter.com/ebrunborg', target: '_blank'}
+
+          And just like that, Mixin 2016 was over.
+
+  = partial("photoessays/components/photo_hero", locals: {slug: current_page.data.slug, 'photo': 'group_hug', 'caption': '' })
+  = partial("photoessays/components/photo_hero", locals: {slug: current_page.data.slug, 'photo': 'shape', 'caption': '' })
