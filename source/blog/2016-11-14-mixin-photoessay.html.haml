@@ -1,0 +1,50 @@
+---
+title: Mixin Photoessay
+date: 2016-11-14 00:01 UTC
+author: Brett Jones
+author_slug: brett
+body_classes: page-blog
+ogp:
+  og:
+    title: 'Mixin Photoessay'
+    description: 'Today I finally got around to shipping photoessays, a section where I hope to produce longer-form content with a focus on photography…'
+    image:
+      '': http://brett.cool/images/blog/2016-11-14-mixin-photoessay/og.jpg
+      type: image/jpg
+      width: 560
+      height: 300
+    locale:
+      '': en_us
+  twitter:
+    card: 'summary_large_image'
+    label1: 'Reading Time 🕖'
+    data1: 'About 1 minute'
+    label2: 'Published 📅'
+    data2: 'November 14, 2016'
+  fb:
+    title: 'Mixin Photoessay'
+    description: 'Today I finally got around to shipping photoessays, a section where I hope to produce longer-form content with a focus on photography…'
+    image:
+      '': http://brett.cool/images/blog/2016-11-14-mixin-photoessay/fb.jpg
+      type: image/jpg
+      width: 600
+      height: 315
+---
+
+.Content_row
+  .Content_main
+    .Article_content
+      :markdown
+        Today I finally got around to shipping #{link_to 'photoessays', '/photoessays'}, a section where I hope to produce longer-form content with a focus on photography.
+
+        It’s something I’ve thought about and worked on and off on a number of times, and what better way to finally ship the thing than with a #{link_to 'look back on Mixin 2016', '/photoessays/mixin-2016'}.
+
+        Reflecting on the photoessays work I can see — aside from sheer motivation from all the speakers — the manifestation of many learnings from the Mixin 2016 speakers.
+
+        Andy Clarke’s talk on art directed web design inspired me to design a non-standard grid layout. Una Kravets reminded me to perform some pre-emptive image optimisation techniques to keep things nice and snappy.
+
+        Jina Bolton’s talk on design systems got me #{link_to 'thinking about how I could compose photoessays from reusable components', 'https://github.com/BrettJay/brett.cool/tree/master/source/photoessays/components', target:'_blank'}, and Mike Riethmuller’s excellent #{link_to 'fluid typography work', 'https://github.com/BrettJay/brett.cool/blob/master/source/stylesheets/_tools.mixins.sass#L18-L28', target: '_blank'} informs the responsive typography.
+
+        I’ll have to write up some learnings from building the Photoessays section, or you can #{link_to 'take a look on Github', 'https://github.com/BrettJay/brett.cool/blob/master/source/photoessays/mixin-2016.html.haml', target: '_blank'}.
+
+        But I won’t waste any more of your time here — #{link_to 'go take a look at the Mixin 2016 Photoessay', '/photoessays/mixin-2016'}!
