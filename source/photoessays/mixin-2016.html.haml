@@ -1,0 +1,297 @@
+---
+  title: Mixin 2016
+  slug: mixin-2016
+  subtitle: A conference for designers, developers, and those around and in between.
+  body_classes: page-photoessays
+  meta_description: A conference for designers, developers, and those around and in between.
+  meta_keywords:
+  ogp:
+    og:
+      title: Photoessays
+      description: A conference for designers, developers, and those around and in between.
+      image:
+        '': http://brett.cool/images/photoessays/mixin-2016/og.jpg
+        type: image/jpg
+        width: 560
+        height: 300
+    fb:
+      title: Mixin 2016
+      description: A conference for designers, developers, and those around and in between.
+      image:
+        '': http://brett.cool/images/photoessays/mixin-2016/fb.jpg
+        type: image/jpg
+        width: 600
+        height: 315
+---
+
+= partial("photoessays/components/banner", locals: {slug: current_page.data.slug, title: current_page.data.title, 'subtitle': current_page.data.subtitle})
+
+.Content#story
+  .Content_row
+    .Content_main
+      .Article_content
+        :markdown
+          *Many of the photos featured here were taken by our excellent event photographer, #{link_to 'Cameron Campbell', 'http://camc.net.au/', target: '_blank'}.*
+
+          ---
+
+          Even if an Apple event hadn’t been scheduled for 1am Friday morning, I was finding the prospect of sleep tricky on the eve of Mixin.
+
+          Not only were there equal parts nerves and excitement for sleep to contend with, but it also felt like there was a slew of tiny last minute things that needed to be done.
+
+  = partial("photoessays/components/photo_hero", locals: {slug: current_page.data.slug, 'caption': '', 'photo': 'intro'})
+
+  .Content_row
+    .Content_main
+      .Article_content
+        :markdown
+          At the stage door of the State Theatre Center of WA, I met the fellow Mixin organisers and volunteers.
+
+          We checked in, and begun the last of the preparations; interior decorations and signage, the final touches in the courtyard, and a final tech check.
+
+  = partial("photoessays/components/photo_two_column", locals: {slug: current_page.data.slug, 'left': ['waffle'], 'right': ['setup'] })
+
+  = partial("photoessays/components/photo_right", locals: {slug: current_page.data.slug, 'caption': 'Mo Espresso on board, dialing in their coffee.', 'photo': 'mo'})
+
+  .Content_row
+    .Content_main
+      .Article_content
+        :markdown
+          And then, in what felt like no time at all, suddenly attendees were arriving.
+
+  = partial("photoessays/components/photo_two_column", locals: {slug: current_page.data.slug, 'left': ['registration','attendees'], 'right': ['lanyards'] })
+
+  .Content_row
+    .Content_main
+      .Article_content
+        :markdown
+          One blur of a registration later, and we were on.
+
+  = partial("photoessays/components/photo_hero", locals: {slug: current_page.data.slug, 'caption': '', 'photo': 'start'})
+
+  .Content_row
+    .Content_main
+      .Article_content
+        :markdown
+          Kylie and Josh took to the stage to welcome the audience and tell the story of Mixin.
+
+  = partial("photoessays/components/photo", locals: {slug: current_page.data.slug, 'photo': 'story', 'caption': '' })
+
+  .Content_row
+    .Content_main
+      .Article_content
+        :markdown
+          They did a fantastic job setting the playful tone for the day, before inviting our keynote speaker up.
+
+  = partial("photoessays/components/photo_hero", locals: {slug: current_page.data.slug, 'photo': 'andy', 'caption': '' })
+
+  .Content_row
+    .Content_main
+      .Article_content
+        :markdown
+          ## Art Directing Web Design
+
+          #{link_to 'Andy Clarke', 'https://twitter.com/malarkey', target: '_blank'} took to the stage to give an invigorating talk, challenging web designers to think beyond the 12 column grid we so often turn to.
+
+          First, he made the case for art direction in web design, and how it can affect and enhance the story we are telling, and that not all stories should be told the same way.
+
+  = partial("photoessays/components/photo_right", locals: {slug: current_page.data.slug, 'caption': 'Andy showing some creative applications of grids.', 'photo': 'andy_slide'})
+
+  .Content_row
+    .Content_main
+      .Article_content
+        :markdown
+          It is not the fact we use grids that is the problem, but we’re often not taking full advantage of grids on the web. The proliferation of 12 column grids has narrowed our thinking.
+
+          Some big takeaways for me was to be conscious of using more ratios in my work, and to not shy away from using multiple grids (known as compound grids).
+
+  = partial("photoessays/components/photo_hero", locals: {slug: current_page.data.slug, 'photo': 'una', 'caption': '' })
+
+  .Content_row
+    .Content_main
+      .Article_content
+        :markdown
+          ## The Joy of Optimising
+          Following Andy, #{link_to 'Una Kravets', 'https://twitter.com/una', target: '_blank'} took to the stage to deliver a fascinating and energetic talk which covered a range of new image formats on the horizon, including FLIF and GIFV, and some fascinating information about image compression.
+
+          For instance, it turns out colourising a black and white jpeg using CSS blending is more efficient than baking colour blending into the image itself.
+
+          And to top it off, I finally (think) I understand why the GIF format yields such inefficient file sizes.
+
+          Towards the very end of the talk, she applied all the theory to our very own Mixin website. #{link_to 'I found this hugely inspiring', '/blog/2016/11/05/be-open/', target: '_blank'}; it was one of the prompts to finally redesign my website I needed, and #{link_to 'make to it public on Github', 'https://github.com/BrettJay/brett.cool', target:'_blank'}.
+
+  = partial("photoessays/components/photo_right", locals: {slug: current_page.data.slug, 'photo': 'filesize', 'caption': 'In this industry, there’s always more to learn!' })
+
+  .Content_row
+    .Content_main
+      .Article_content
+        :markdown
+          ## Coffee time ☕️
+          I got up to invite people (not that it was necessary, I’m sure), to grab a coffee.
+
+  = partial("photoessays/components/photo_two_column", locals: {slug: current_page.data.slug, 'left': ['break'], 'right': ['break_courtyard','break_buildkite'] })
+
+  .Content_row
+    .Content_main
+      .Article_content
+        :markdown
+          In no time, it was time to head back in for the next two sessions.
+
+  = partial("photoessays/components/photo_hero", locals: {slug: current_page.data.slug, 'photo': 'alice', 'caption': '' })
+
+  .Content_row
+    .Content_main
+      .Article_content
+        :markdown
+          ## Pencil Mileage
+          Walking on stage to Kanye West, #{link_to 'Alice Lee', 'https://twitter.com/byalicelee', target: '_blank'} delivered an uplifting and thoughtful talk, on the topic of personal development and growth.
+
+          In her talk, Alice identified four stages we move through as we gain expertise in a field. Unconscious incompetence, conscious incompetence, conscious competence, and finally unconscious competence. She suggested the phrase “pencil mileage” to describe the expertise we gain in a given field.
+
+          Visualising the amount of time and effort an illustrator spends in terms of physical miles of ink or lead remind us that it’s the little things we do every day that contribute to our expertise in a given field, and that it’s all about the journey.
+
+  = partial("photoessays/components/photo_hero", locals: {slug: current_page.data.slug, 'photo': 'full_stack_anxiety', 'caption': '' })
+
+  .Content_row
+    .Content_main
+      .Article_content
+        :markdown
+          ## Full Stack Anxiety
+          A perfect compliment to Alice’s talk, #{link_to 'Joel Califa', 'https://twitter.com/notdetails', target: '_blank'} took to the stage te give an inspiring talk on the anxiety many of us in this industry feel...
+
+          ... and also to take a group selfie.
+
+  = partial("photoessays/components/photo_right", locals: {slug: current_page.data.slug, 'photo': 'joel_selfie', 'caption': 'Joel gets a group selfie with the audience' })
+
+  .Content_row
+    .Content_main
+      .Article_content
+        :markdown
+          Joel’s talk particularly resonated with me. There’s so much to learn in our industry that it can sometimes feel overwhelming and exhausting — trying to keep up with everything — or even just knowing what to focus on learning.
+
+          There’s more opportunities than ever in our industry, but there’s also more expectations too. Designers 15 years ago who could code their designs were a bit of a rarity. Now, it’s almost a requirement.
+
+          And it’s not just that. Designers these days are expected to be experienced with prototyping, user experience research, and more. And with the landscape in modern web development, developers don’t have it any easier.
+
+          One of the key takeaways for me was to take more time to be more thoughtful and intention with what you actually want to learn, and to prioritise general, fundamental skills over trends and fashions.
+
+          > Your life in its entirety deserves the level of care you put into your projects. So put some time in... and design it.
+
+  = partial("photoessays/components/photo_hero", locals: {slug: current_page.data.slug, 'photo': 'mike', 'caption': '' })
+
+  .Content_row
+    .Content_main
+      .Article_content
+        :markdown
+          ## A CSS Eulogy
+          Following afternoon tea, #{link_to 'Mike Riethmuller', 'https://twitter.com/MikeRiethmuller', target: '_blank'} took on a somber tone as he gave a touching eulogy to some of our best known CSS hacks, which we all know and love (or hate), and perhaps even feel guilty using.
+
+          Going through a series of humble CSS hacks, Mike examined each of their histories, and one by one suggested modern, well supported alternatives and challenged us to get by without them (I definitely agree, though please don’t check the source of this page if you feel particularly strongly about it!).
+
+          His experimentation on fluid typography (#{link_to 'which I’m borrowing right here', 'https://github.com/BrettJay/brett.cool/blob/master/source/stylesheets/_tools.mixins.sass#L18-L28', target: '_blank'}) definitely blew some minds in the audience.
+
+          <blockquote class="twitter-tweet" data-lang="en"><p lang="en" dir="ltr">There is a magician at <a href="https://twitter.com/hashtag/mixin16?src=hash">#mixin16</a> and it&#39;s <a href="https://twitter.com/MikeRiethmuller">@MikeRiethmuller</a> <a href="https://t.co/RojcIQVNhp">pic.twitter.com/RojcIQVNhp</a></p>&mdash; Joel Califa (@notdetails) <a href="https://twitter.com/notdetails/status/791922066341507073">October 28, 2016</a></blockquote>
+          <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+          A particular takeaway for me was the suggestion that CSS hacks are part of the life cycle of a technology such as the web.
+
+          We start trying to hack away at CSS to produce components that aren’t natively available — such as the modal — and eventually standards emerge and we develop native solutions, like the &lt;dialog&gt; tag.
+
+  = partial("photoessays/components/photo_right", locals: {slug: current_page.data.slug, 'photo': 'css_eulogy', 'caption': '“Farewell, clearfix. You were there for us when times were hard”' })
+
+  .Content_row
+    .Content_main
+      .Article_content
+        :markdown
+          ## Designing Design Systems
+
+          Next, #{link_to 'Jina Bolton', 'https://twitter.com/jina', target: '_blank'} took to the stage to talk about design systems, and her experience working with design systems at Salesforce.
+
+  = partial("photoessays/components/photo_right", locals: {slug: current_page.data.slug, 'photo': 'jina', 'caption': '' })
+
+  .Content_row
+    .Content_main
+      .Article_content
+        :markdown
+          As Jina pointed out, design systems can mean a lot of things to different people — from branding style guides and moodboards, to far more thorough component libraries. So nailing down a proper definition can be hard, it can be any of those things, depending on the situation. Above all else, Design systems help to bring clarity and consistency to applications and websites.
+
+          But in order to bring these benefits, they must not be neglected. Jina outlined a number of different methodologies for managing design systems, and stressed the importance of buy-in from stakeholders and all parties for design systems to be used to their full advantage.
+
+          Design systems is a subject I’m very interested in, and Jina’s talk proved to be an insightful and inspirational start.
+
+  = partial("photoessays/components/photo_two_column", locals: {slug: current_page.data.slug, 'left': ['afternoon_tea'], 'right': ['afternoon_tea_b'] })
+
+  .Content_row
+    .Content_main
+      .Article_content
+        :markdown
+          ## Afternoon tea ☕️
+          A quick sugar and caffiene break, before the final talk of the day.
+
+  = partial("photoessays/components/photo_hero", locals: {slug: current_page.data.slug, 'photo': 'espen', 'caption': '' })
+
+  .Content_row
+    .Content_main
+      .Article_content
+        :markdown
+          ## The Secret Life of Comedy
+          It was a real honour to welcome #{link_to 'Espen Brunborg', 'https://twitter.com/ebrunborg', target: '_blank'} to the stage for the closing talk of Mixin 2016.
+
+          Emerging to “The Final Countdown”, Espen delivered a thought provoking and hilarious talk about the state of web design.
+
+          Echoing sentiments touched on earlier by Andy, Espen was critical of the current state of by-the-numbers design and lack of variety in design on the internet.
+
+          Part of that he put down to our tooling; working within the confines of CMS platforms like wordpress, but also our sometimes–dogmatic belief in what constitutes “good design”.
+
+  = partial("photoessays/components/photo_right", locals: {slug: current_page.data.slug, 'photo': 'espen_slide', 'caption': 'One of my favourite quotes from the day.' })
+
+  .Content_row
+    .Content_main
+      .Article_content
+        :markdown
+          Outlining characteristics we’d typically identify as good design, Espen then considered how the opposite of these widely–held notions could also be considered good design, and that — like music and comedy — we could make our work more memorable and unique by considering the rhythm in our work by meeting — and subverting — expectations.
+
+          The rhythm of comedy comes from subverting expectations. Music rewards your expectations around rhythm. When telling stories, we can do both to great effect.
+
+          At the end of his talk, Espen did something wholly unexpected and unrehearsed, and invited the organisers to the stage.
+
+  = partial("photoessays/components/photo_hero", locals: {slug: current_page.data.slug, 'photo': 'espen_team', 'caption': '' })
+
+  .Content_row
+    .Content_main
+      .Article_content
+        :markdown
+          It was just one of many very touching moments from the speakers and the attendees that I won’t forget.
+
+          Mandy and Patima took to the stage to close the day.
+
+          <blockquote class="twitter-tweet" data-lang="en"><p lang="en" dir="ltr"><a href="https://twitter.com/the_patima">@the_patima</a>: &quot;Hey <a href="https://twitter.com/Mandy_Kerr">@Mandy_Kerr</a>... we just ran a conference.&quot; HECK YEAH YOU DID 💜🙌💜 <a href="https://twitter.com/hashtag/mixin16?src=hash">#mixin16</a> <a href="https://t.co/m6iU9Gaset">pic.twitter.com/m6iU9Gaset</a></p>&mdash; Teegan Lincoln (@teeganlincoln) <a href="https://twitter.com/teeganlincoln/status/791933298163318784">October 28, 2016</a></blockquote>
+          <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+          A few group photos, and a group hug or two...
+
+  = partial("photoessays/components/photo_two_column", locals: {slug: current_page.data.slug, 'left': ['group_photo'], 'right': ['group_hug'] })
+
+  .Content_row
+    .Content_main
+      .Article_content
+        :markdown
+          And just like that, Mixin 2016 was over.
+
+  = partial("photoessays/components/photo_hero", locals: {slug: current_page.data.slug, 'photo': 'shape', 'caption': '' })
+
+  .Content_row
+    .Content_main
+      .Article_content
+        :markdown
+          > Thanks
+
+          > Our wonderful speakers, for their inspiring and insightful talks, and being such delightful people too.
+
+          > Our amazing audience—local and from afar—who brought Mixin to life.
+
+          > Our sponsors—Mailchimp, CBDC, ESP, Mo Espresso, Pin Payments, Waaffle, Young Henrys, 6Q, and Buzzmaster—for making Mixin possible.
+
+          > Our volunteers, State Theatre Center staff, and our photographers and videographers for helping to run the show.
+
+          > And my fellow organisers, for an unforgettable conference.

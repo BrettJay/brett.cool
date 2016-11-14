@@ -1,4 +1,5 @@
 #= require vendor/modernizr
+#= require vendor/smooth-scroll
 
 document.onreadystatechange = ->
   if document.readyState == 'interactive'
@@ -12,3 +13,9 @@ document.onreadystatechange = ->
       for img in imgs
         if img.src.match(endsWithDotSvg)
           img.src = img.src.replace(/.svg$/, '.png')
+
+  smoothScroll.init
+    speed: 500
+    easing: 'easeInOutCubic'
+    offset: 100
+    updateURL: true

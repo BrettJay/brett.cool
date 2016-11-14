@@ -1,0 +1,4 @@
+.PhotoRow.Component
+  .Photo_hero= image_tag "photoessays/#{slug}/#{photo}.jpg"
+  - unless caption.empty?
+    .PhotoCaption= caption

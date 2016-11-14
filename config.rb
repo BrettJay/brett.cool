@@ -5,6 +5,9 @@
 helpers do
   # Helpers are defined in and can be added to `helpers/custom_helpers.rb`.
   # In case you require helpers within `config.rb`, they can be added here.
+  def photoessay_link(photoessay)
+    "/photoessays/#{photoessay.url}"
+  end
 end
 
 require_relative './lib/reading_time'

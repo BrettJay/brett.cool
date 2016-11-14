@@ -90,12 +90,12 @@ figure img
 .Article + .Article
   margin-top: $base-spacing-unit * 2
 
-
 .PhotoRow
   margin-left: -10px
   margin-right: -10px
   margin-top: $base-spacing-unit
   margin-bottom: $base-spacing-unit
+  position: relative
   +clearfix
 
   .PhotoCol_alpha,
@@ -126,3 +126,13 @@ figure img
     padding-right: 10px
     +respond-to(small-down)
       padding-right: 2px
+
+.page-photoessays .Component
+  margin-top: 100px
+  margin-bottom: 100px
+  +respond-to(ipad-down)
+    margin-top: 80px
+    margin-bottom: 80px
+  +respond-to(mobile)
+    margin-top: 40px
+    margin-bottom: 40px

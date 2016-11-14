@@ -1,0 +1,22 @@
+.Banner
+  +vertical-parent
+  position: relative
+  height: calc( 100vh - 110px)
+  background-position: 50% 50%
+  background-size: cover
+  background-color: #000
+  .Banner_caption
+    color: #fff
+    width: 100%
+    padding: 0 20px
+    +vertical-center
+    text-align: center
+    h1
+      +fluid-scale(font-size, 375px, 1040px, 30px, 72px)
+    p
+      +fluid-scale(font-size, 375px, 1040px, 13px, 24px)
+      font-style: italic
+
+  img
+    width: 100%
+    vertical-align: middle
