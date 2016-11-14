@@ -103,7 +103,7 @@
         :markdown
           It is not the fact we use grids that is the problem, but we’re often not taking full advantage of grids on the web. The proliferation of 12 column grids has narrowed our thinking.
 
-          Some big takeaways for me was using more ratios in my work and to not shy away from using multiple grids (known as compound grids).
+          Some big takeaways for me was to be conscious of using more ratios in my work, and to not shy away from using multiple grids (known as compound grids).
 
   = partial("photoessays/components/photo_hero", locals: {slug: current_page.data.slug, 'photo': 'una', 'caption': '' })
 
@@ -184,7 +184,7 @@
       .Article_content
         :markdown
           ## A CSS Eulogy
-          Following afternoon tea, #{link_to 'Mike Riethmuller', 'https://twitter.com/MikeRiethmuller', target: '_blank'} took on a somber tone as he gave a touching eulogy to some of our best known CSS hacks, which we all know and love (or hate), and sometimes feel guilty for using.
+          Following afternoon tea, #{link_to 'Mike Riethmuller', 'https://twitter.com/MikeRiethmuller', target: '_blank'} took on a somber tone as he gave a touching eulogy to some of our best known CSS hacks, which we all know and love (or hate), and perhaps even feel guilty using.
 
           Going through a series of humble CSS hacks, Mike examined each of their histories, and one by one suggested modern, well supported alternatives and challenged us to get by without them (I definitely agree, though please don’t check the source of this page if you feel particularly strongly about it!).
 
@@ -193,7 +193,9 @@
           <blockquote class="twitter-tweet" data-lang="en"><p lang="en" dir="ltr">There is a magician at <a href="https://twitter.com/hashtag/mixin16?src=hash">#mixin16</a> and it&#39;s <a href="https://twitter.com/MikeRiethmuller">@MikeRiethmuller</a> <a href="https://t.co/RojcIQVNhp">pic.twitter.com/RojcIQVNhp</a></p>&mdash; Joel Califa (@notdetails) <a href="https://twitter.com/notdetails/status/791922066341507073">October 28, 2016</a></blockquote>
           <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
 
-          A particular takeaway for me was the suggestion that CSS hacks are part of the life cycle of a technology such as the web. We start trying to hack away at CSS to produce components that aren’t natively available — such as the modal — and eventually standards emerge and we develop native solutions, like the &lt;dialog&gt; tag.
+          A particular takeaway for me was the suggestion that CSS hacks are part of the life cycle of a technology such as the web.
+
+          We start trying to hack away at CSS to produce components that aren’t natively available — such as the modal — and eventually standards emerge and we develop native solutions, like the &lt;dialog&gt; tag.
 
   = partial("photoessays/components/photo_right", locals: {slug: current_page.data.slug, 'photo': 'css_eulogy', 'caption': '“Farewell, clearfix. You were there for us when times were hard”' })
 
@@ -202,18 +204,94 @@
       .Article_content
         :markdown
           ## Designing Design Systems
-          #{link_to 'Jina Bolton', 'https://twitter.com/jina', target: '_blank'}
 
-  = partial("photoessays/components/photo_left", locals: {slug: current_page.data.slug, 'photo': 'jina', 'caption': 'Jina Bolton' })
+          Next, #{link_to 'Jina Bolton', 'https://twitter.com/jina', target: '_blank'} took to the stage to talk about design systems, and her experience working with design systems at Salesforce.
+
+  = partial("photoessays/components/photo_right", locals: {slug: current_page.data.slug, 'photo': 'jina', 'caption': '' })
+
+  .Content_row
+    .Content_main
+      .Article_content
+        :markdown
+          As Jina pointed out, design systems can mean a lot of things to different people — from branding style guides and moodboards, to far more thorough component libraries. So nailing down a proper definition can be hard, it can be any of those things, depending on the situation. Above all else, Design systems help to bring clarity and consistency to applications and websites.
+
+          But in order to bring these benefits, they must not be neglected. Jina outlined a number of different methodologies for managing design systems, and stressed the importance of buy-in from stakeholders and all parties for design systems to be used to their full advantage.
+
+          Design systems is a subject I’m very interested in, and Jina’s talk proved to be an insightful and inspirational start.
+
+  = partial("photoessays/components/photo_two_column", locals: {slug: current_page.data.slug, 'left': ['afternoon_tea'], 'right': ['afternoon_tea_b'] })
+
+  .Content_row
+    .Content_main
+      .Article_content
+        :markdown
+          ## Afternoon tea ☕️
+          A quick sugar and caffiene break, before the final talk of the day.
+
+  = partial("photoessays/components/photo_hero", locals: {slug: current_page.data.slug, 'photo': 'espen', 'caption': '' })
 
   .Content_row
     .Content_main
       .Article_content
         :markdown
           ## The Secret Life of Comedy
-          #{link_to 'Espen Brunborg', 'https://twitter.com/ebrunborg', target: '_blank'}
+          It was a real honour to welcome #{link_to 'Espen Brunborg', 'https://twitter.com/ebrunborg', target: '_blank'} to the stage for the closing talk of Mixin 2016.
 
+          Emerging to “The Final Countdown”, Espen delivered a thought provoking and hilarious talk about the state of web design.
+
+          Echoing sentiments touched on earlier by Andy, Espen was critical of the current state of by-the-numbers design and lack of variety in design on the internet.
+
+          Part of that he put down to our tooling; working within the confines of CMS platforms like wordpress, but also our sometimes–dogmatic belief in what constitutes “good design”.
+
+  = partial("photoessays/components/photo_right", locals: {slug: current_page.data.slug, 'photo': 'espen_slide', 'caption': 'One of my favourite quotes from the day.' })
+
+  .Content_row
+    .Content_main
+      .Article_content
+        :markdown
+          Outlining characteristics we’d typically identify as good design, Espen then considered how the opposite of these widely–held notions could also be considered good design, and that — like music and comedy — we could make our work more memorable and unique by considering the rhythm in our work by meeting — and subverting — expectations.
+
+          The rhythm of comedy comes from subverting expectations. Music rewards your expectations around rhythm. When telling stories, we can do both to great effect.
+
+          At the end of his talk, Espen did something wholly unexpected and unrehearsed, and invited the organisers to the stage.
+
+  = partial("photoessays/components/photo_hero", locals: {slug: current_page.data.slug, 'photo': 'espen_team', 'caption': '' })
+
+  .Content_row
+    .Content_main
+      .Article_content
+        :markdown
+          It was just one of many very touching moments from the speakers and the attendees that I won’t forget.
+
+          Mandy and Patima took to the stage to close the day.
+
+          <blockquote class="twitter-tweet" data-lang="en"><p lang="en" dir="ltr"><a href="https://twitter.com/the_patima">@the_patima</a>: &quot;Hey <a href="https://twitter.com/Mandy_Kerr">@Mandy_Kerr</a>... we just ran a conference.&quot; HECK YEAH YOU DID 💜🙌💜 <a href="https://twitter.com/hashtag/mixin16?src=hash">#mixin16</a> <a href="https://t.co/m6iU9Gaset">pic.twitter.com/m6iU9Gaset</a></p>&mdash; Teegan Lincoln (@teeganlincoln) <a href="https://twitter.com/teeganlincoln/status/791933298163318784">October 28, 2016</a></blockquote>
+          <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+          A few group photos, and a group hug or two...
+
+  = partial("photoessays/components/photo_two_column", locals: {slug: current_page.data.slug, 'left': ['group_photo'], 'right': ['group_hug'] })
+
+  .Content_row
+    .Content_main
+      .Article_content
+        :markdown
           And just like that, Mixin 2016 was over.
 
-  = partial("photoessays/components/photo_hero", locals: {slug: current_page.data.slug, 'photo': 'group_hug', 'caption': '' })
   = partial("photoessays/components/photo_hero", locals: {slug: current_page.data.slug, 'photo': 'shape', 'caption': '' })
+
+  .Content_row
+    .Content_main
+      .Article_content
+        :markdown
+          > Thanks
+
+          > Our wonderful speakers, for their inspiring and insightful talks, and being such delightful people too.
+
+          > Our amazing audience—local and from afar—who brought Mixin to life.
+
+          > Our sponsors—Mailchimp, CBDC, ESP, Mo Espresso, Pin Payments, Waaffle, Young Henrys, 6Q, and Buzzmaster—for making Mixin possible.
+
+          > Our volunteers, State Theatre Center staff, and our photographers and videographers for helping to run the show.
+
+          > And my fellow organisers, for an unforgettable conference.
