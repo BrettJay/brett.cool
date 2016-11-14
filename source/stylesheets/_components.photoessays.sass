@@ -40,6 +40,18 @@
       margin-bottom: 0
     p:first-child
       margin-top: 0
+
+    blockquote
+      +respond-to(mobile)
+        margin-left: 0
+        margin-right: 0
+      +respond-to(ipad-up)
+        margin: 40px -40px
+      p
+        +fluid-scale(font-size, 375px, 1040px, 18px, 28px)
+        text-align: center
+        font-style: italic
+
 .Content_photoessays
   display: flex
   margin: ($base-spacing-unit / 2) 0
