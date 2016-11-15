@@ -1,0 +1,27 @@
+---
+  title: San Francisco
+  slug: '2013/san-francisco'
+  subtitle: A conference for designers, developers, and those around and in between.
+  body_classes: page-photoessays
+  meta_description: A conference for designers, developers, and those around and in between.
+  meta_keywords:
+  ogp:
+    og:
+      title: Photoessays
+      description: A conference for designers, developers, and those around and in between.
+      image:
+        '': http://brett.cool/images/photoessays/mixin-2016/og.jpg
+        type: image/jpg
+        width: 560
+        height: 300
+    fb:
+      title: Mixin 2016
+      description: A conference for designers, developers, and those around and in between.
+      image:
+        '': http://brett.cool/images/photoessays/mixin-2016/fb.jpg
+        type: image/jpg
+        width: 600
+        height: 315
+---
+
+= partial("/photoessays/components/banner", locals: {slug: current_page.data.slug, title: current_page.data.title, 'subtitle': current_page.data.subtitle})
