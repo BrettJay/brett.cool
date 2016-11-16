@@ -1,0 +1,27 @@
+---
+  title: Denver
+  slug: '2013/denver'
+  subtitle: A sleepy town, a bit like home.
+  body_classes: page-photoessays
+  meta_description: A sleepy town, a bit like home.
+  meta_keywords:
+  ogp:
+    og:
+      title: Denver
+      description: A sleepy town, a bit like home.
+      image:
+        '': http://brett.cool/images/photoessays/2013/denver/og.jpg
+        type: image/jpg
+        width: 560
+        height: 300
+    fb:
+      title: Denver
+      description: A sleepy town, a bit like home.
+      image:
+        '': http://brett.cool/images/photoessays/2013/denver/fb.jpg
+        type: image/jpg
+        width: 600
+        height: 315
+---
+
+= partial("/photoessays/components/banner", locals: {slug: current_page.data.slug, title: current_page.data.title, 'subtitle': current_page.data.subtitle})

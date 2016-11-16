@@ -1,36 +1,65 @@
-- title: Mixin 2016
-  url: mixin-2016
-  date: October 28, 2016
-  description: A new conference for designers, developers, and those around and in between
+- year: 2016
+  photoessays:
+  - title: Mixin
+    url: mixin-2016
+    date: October 28, 2016
+    description: A new conference for designers, developers, and those around and in between
 
-- title: New York
-  url: '2013/new-york'
-  date: August 11, 2013
+- year: 2015
+  photoessays:
+    - title: CSSConf Au
+      url: '2015/css-conf'
+      date: March 26, 2015
 
-- title: Washington
-  url: '2013/washington'
-  date: August 9, 2013
+- year: 2014
+  photoessays:
+    - title: Web Directions
+      url: '2014/web-directions'
+      date: October 30, 2014
 
-- title: Pittsburgh
-  url: '2013/pittsburgh'
-  date: August 7, 2013
+    - title: Red Dot Ruby Conf
+      url: '2014/red-dot-ruby-conf'
+      date: June 26, 2014
 
-- title: St Louis
-  url: '2013/st-louis'
-  date: August 4, 2013
+    - title: CSSConf Au
+      url: '2014/css-conf'
+      date: April 9, 2014
 
-- title: Denver
-  url: '2013/denver'
-  date: August 1, 2013
+- year: 2013
+  photoessays:
+    - title: New York
+      url: '2013/new-york'
+      date: August 11, 2013
+      trip:
+        location: america
+        dates:
+          from: 2016-8-11
+          to: 2016-8-16
 
-- title: Las Vegas
-  url: '2013/las-vegas'
-  date: July 28, 2013
+    - title: Washington
+      url: '2013/washington'
+      date: August 9, 2013
 
-- title: Los Angeles
-  url: '2013/los-angeles'
-  date: July 25, 2013
+    - title: Pittsburgh
+      url: '2013/pittsburgh'
+      date: August 7, 2013
 
-- title: San Francisco
-  url: '2013/san-francisco'
-  date: July 22, 2013
+    - title: St Louis
+      url: '2013/st-louis'
+      date: August 4, 2013
+
+    - title: Denver
+      url: '2013/denver'
+      date: August 1, 2013
+
+    - title: Las Vegas
+      url: '2013/las-vegas'
+      date: July 28, 2013
+
+    - title: Los Angeles
+      url: '2013/los-angeles'
+      date: July 25, 2013
+
+    - title: San Francisco
+      url: '2013/san-francisco'
+      date: July 22, 2013
