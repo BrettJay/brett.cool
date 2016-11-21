@@ -241,4 +241,15 @@
 
           The next morning, Jared, Butcher and I set off early to look for some throat lozenges for Jared, who was feeling a bit under the weather after the flight.
 
-  = partial("photoessays/components/photo_hero", locals: {slug: current_page.data.slug, 'caption': '', 'photo': '25/group_panorama'})
+          When we returned, we decided to head East and check out where we’d be headed for the greyhound coach the following day, to get to Los Angeles.
+
+          We walked East through the finance district.
+
+  = partial("photoessays/components/photo_grid", locals: {slug: current_page.data.slug, rows: [ { count: 3, caption: '', photos: ['25/nob_hill','25/grant','25/skyline'] }, { count: 1, caption:'', photos: ['25/group_panorama'] } ] } )
+
+  .Content_row
+    .Content_main
+      .Article_content
+        :markdown
+          Eventually we
+= partial("photoessays/components/photo_full", locals: {slug: current_page.data.slug, caption: '', 'photo': '25/cupid_panorama'})
