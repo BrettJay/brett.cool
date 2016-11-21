@@ -90,43 +90,6 @@ figure img
 .Article + .Article
   margin-top: $base-spacing-unit * 2
 
-.PhotoRow
-  margin-left: -10px
-  margin-right: -10px
-  margin-top: $base-spacing-unit
-  margin-bottom: $base-spacing-unit
-  position: relative
-  +clearfix
-
-  .PhotoCol_alpha,
-  .PhotoCol_beta
-    float: left
-    img
-      vertical-align: middle
-      width: 100%
-    img + img
-      margin-top: 20px
-      +respond-to(small-down)
-        margin-top: 4px
-
-  .PhotoCol_alpha
-    width: 48%
-    padding-right: 10px
-    +respond-to(small-down)
-      padding-right: 2px
-
-  .PhotoCol_beta
-    width: 52%
-    padding-left: 10px
-    +respond-to(small-down)
-      padding-left: 2px
-
-  .PhotoCol_gamma
-    width: 27.3584906%
-    padding-right: 10px
-    +respond-to(small-down)
-      padding-right: 2px
-
 .page-photoessays .Component
   margin-top: 100px
   margin-bottom: 100px

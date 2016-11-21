@@ -1,0 +1,19 @@
+.Content_row
+  .Content_main
+    .PlaceCard
+      .PlaceCard_cover{style: "background-image: url('/images/photoessays/#{slug}/#{image}.jpg')"}
+      .PlaceCard_icon
+      .PlaceCard_title= title
+      .PlaceCard_address= address
+
+      .PlaceCard_attributes
+        %dl.Attribute_pair
+          %dt= price
+          %dd Price
+        %dl.Attribute_pair
+          %dt= menu
+          %dd Cuisine
+
+      .PlaceCard_rating{class: "PlaceCard_rating--#{rating}"}
+        - rating.times do
+          ★
