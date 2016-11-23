@@ -63,9 +63,3 @@
     - title: San Francisco
       url: '2013/san-francisco'
       date: July 22, 2013
-      trip:
-        location: america
-        weather: sunny
-        dates:
-          from: 2016-7-22
-          to: 2016-7-25

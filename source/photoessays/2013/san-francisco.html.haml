@@ -5,6 +5,13 @@
   body_classes: page-photoessays
   meta_description: Fresh off a plane from Auckland.
   meta_keywords:
+  trip:
+    transport: plane
+    location: america
+    weather: sun
+    dates:
+      from: 2013-7-22
+      to: 2013-7-25
   ogp:
     og:
       title: San Francisco
@@ -24,7 +31,7 @@
         height: 315
 ---
 
-= partial("/photoessays/components/banner", locals: {slug: current_page.data.slug, title: current_page.data.title, 'subtitle': current_page.data.subtitle})
+= partial("/photoessays/components/banner", locals: {slug: current_page.data.slug, title: current_page.data.title, 'subtitle': current_page.data.subtitle, trip: current_page.data.trip})
 
 .Content#story
   .Content_row

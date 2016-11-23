@@ -18,7 +18,73 @@
       +fluid-scale(font-size, 375px, 1040px, 13px, 24px)
       font-style: italic
       text-shadow: 0 20px 80px rgba(0,0,0,0.8)
-
   img
     width: 100%
     vertical-align: middle
+
+
+.Banner_TripSummary
+  display: flex
+  justify-content: center
+  position: absolute
+  padding: 30px
+  background: rgba(0,0,0,0.7)
+  bottom: 0
+  left: 0
+  right: 0
+  width: 100%
+  color: #fff
+  dl
+    margin: 0 20px
+    text-align: left
+  dl + dl
+    border-left: 1px solid rgba(255,255,255,0.6)
+    padding-left: 40px
+  dt, dd
+    margin: 0
+  dt
+    font-family: $font_headline
+    +fluid-scale(font-size, 375px, 1040px, 19px, 18px)
+  dd
+    font-family: $font_body
+    +fluid-scale(font-size, 375px, 1040px, 12px, 14px)
+
+.TripIcon
+  width: 40px
+  height: 40px
+  margin: 0 20px
+  flex-shrink: 0
+
+.TripIcon_weather--sun
+  background: image-url('photoessays/trips/weather_sun.svg') 50% 50% no-repeat
+
+.TripIcon_weather--cloud
+  background: image-url('photoessays/trips/weather_cloud.svg') 50% 50% no-repeat
+
+.TripIcon_weather--rain
+  background: image-url('photoessays/trips/weather_rain.svg') 50% 50% no-repeat
+
+.TripIcon_weather--storm
+  background: image-url('photoessays/trips/weather_rain.svg') 50% 50% no-repeat
+
+.TripIcon_transport--bus
+  background: image-url('photoessays/trips/transport_bus.svg') 50% 50% no-repeat
+
+.TripIcon_transport--plane
+  background: image-url('photoessays/trips/transport_plane.svg') 50% 50% no-repeat
+
++respond-to(mobile)
+  .Banner_TripSummary
+    padding: 20px 5px
+
+    dl
+      margin: 0
+
+    dl + dl
+      margin-left: 10px
+      margin-right: 5px
+      padding-left: 10px
+      border-left: 1px solid rgba(255,255,255,0.2)
+
+    .TripIcon
+      margin: 0 5px
