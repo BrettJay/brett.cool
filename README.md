@@ -1,6 +1,6 @@
 # brett.cool
 
-A static site stored and deployed to github pages, with:
+A static site stored, and deployed to github pages, with:
 
  * [middleman][middleman-url]
  * [middleman-basis][middleman-basis-url] by [Patrik Affentranger][pzi-url]
