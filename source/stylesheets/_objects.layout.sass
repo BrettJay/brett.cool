@@ -59,10 +59,17 @@
 .hero_image,
 .aside_image
   width: 100%
+  img
+    vertical-align: middle
+
+.hero_image
+  margin-bottom: $base-spacing-unit / 2
+  +respond-to(ipad-up)
+    margin-bottom: $base-spacing-unit
 
 .name
   +fluid-scale(font-size, 375px, 1040px, 16px, 24px)
-  font-family: $font_headline
+  +font_headline
   line-height: 30px
   padding: $base-spacing-unit 0
   margin-bottom: 0
