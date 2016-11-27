@@ -31,7 +31,7 @@
     +respond-to(small-down)
       margin-left: 12%
       width: 76%
-  
+
   .Article_content
     p
       +fluid-scale(font-size, 375px, 1040px, 15px, 20px)
@@ -52,12 +52,17 @@
         text-align: center
         font-style: italic
 
+.Content_photoessayHeader
+  padding-left: 10px
+  h2
+    margin-bottom: 0
+
 .Content_photoessays
   display: flex
-  margin: ($base-spacing-unit / 2) 0
+  margin: ($base-spacing-unit / 4) 0 ($base-spacing-unit / 2)
   flex-wrap: wrap
   +respond-to(ipad-up)
-    margin: $base-spacing-unit 0
+    margin: ($base-spacing-unit / 2) 0 $base-spacing-unit
 
 .PhotoEssayItem
   flex: 0 1 50%
@@ -110,3 +115,13 @@
 .PhotoEssayCard_cardImage
   width: 100%
   vertical-align: middle
+
+.PhotoEssayCard--draft:hover,
+.PhotoEssayCard--draft:active
+  transform: translateY(0)
+  box-shadow: 0 0 0 transparent
+
+.PhotoEssayCard--draft
+  background: #000
+  .PhotoEssayCard_cardImage
+    opacity: 0.2

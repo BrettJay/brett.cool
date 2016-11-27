@@ -1,0 +1,58 @@
+.PlaceCard
+  background: #FFFFFF
+  box-shadow: 0 1px 5px 0 rgba(0,0,0,0.45), 0 15px 40px 0 rgba(0,0,0,0.20)
+  padding: 30px 20px 30px calc(37% + 55px)
+  margin: 80px -50px
+  border-radius: 2px
+  transition: all 0.25s ease
+  position: relative
+  .PlaceCard_cover
+    position: absolute
+    top: 0
+    left: 0
+    bottom: 0
+    width: 36.66%
+    background-size: cover
+  &:hover
+    transform: translateY(-4px)
+    box-shadow: 0 2px 8px 0 rgba(0,0,0,0.45), 0 20px 80px 0 rgba(0,0,0,0.20)
+
+  .PlaceCard_title
+    +fluid-scale(font-size, 375px, 1040px, 20px, 25px)
+    font-family: $font_headline
+    margin: 0
+    line-height: 1.2
+
+  .PlaceCard_address
+    +fluid-scale(font-size, 375px, 1040px, 12px, 14px)
+    line-height: 1.5
+
+  .PlaceCard_attributes
+    +clearfix
+
+  .Attribute_pair
+    float: left
+    dt, dd
+      margin: 0
+    dt
+      font-family: $font_headline
+      +fluid-scale(font-size, 375px, 1040px, 19px, 20px)
+    dd
+      font-family: $font_body
+      +fluid-scale(font-size, 375px, 1040px, 12px, 14px)
+
+  .Attribute_pair + .Attribute_pair
+    margin-left: 20px
+    padding-left: 20px
+    border-left: 1px solid rgba(0,0,0,0.1)
+
+  .PlaceCard_rating:after
+    opacity: 0.1
+  .PlaceCard_rating--1:after
+    content: "★ ★ ★ ★"
+  .PlaceCard_rating--2:after
+    content: "★ ★ ★"
+  .PlaceCard_rating--3:after
+    content: "★ ★"
+  .PlaceCard_rating--4:after
+    content: "★"

@@ -1,40 +1,95 @@
-.PhotoRow--thirds,
-.PhotoRow--quarters
+.PhotoRow
+  margin-left: -10px
+  margin-right: -10px
+  margin-top: $base-spacing-unit
+  margin-bottom: $base-spacing-unit
+  position: relative
+  +clearfix
+
+  .PhotoCol_alpha,
+  .PhotoCol_beta
+    float: left
+    img
+      vertical-align: middle
+      width: 100%
+    img + img
+      margin-top: 20px
+      +respond-to(small-down)
+        margin-top: 4px
+
+  .PhotoCol_alpha
+    width: 48%
+    padding-right: 10px
+    +respond-to(small-down)
+      padding-right: 2px
+
+  .PhotoCol_beta
+    width: 52%
+    padding-left: 10px
+    +respond-to(small-down)
+      padding-left: 2px
+
+  .PhotoCol_gamma
+    width: 27.3584906%
+    padding-right: 10px
+    +respond-to(small-down)
+      padding-right: 2px
+
+.PhotoRow--full
+  margin-left: 0
+  margin-right: 0
+
+.PhotoRow--Grid
+  .PhotoRow
+    margin: 0
+    padding: 10px 0
+    +respond-to(small-down)
+      padding: 2px 0
+.Photo
   float: left
   img
     width: 100%
     vertical-align: middle
 
-.PhotoRow--thirds_0,
-.PhotoRow--quarters_0
+.Photo--1_of_2
+  width: 48%
+  padding-right: 10px
+  +respond-to(small-down)
+    padding-right: 2px
+
+.Photo--2_of_2
+  width: 52%
+  padding-left: 10px
+  +respond-to(small-down)
+    padding-left: 2px
+
+.Photo--1_of_3,
+.Photo--1_of_4
   width: 27.7%
   padding: 0 10px 0 0
   +respond-to(small-down)
     padding: 0 2px 0 0
 
-.PhotoRow--thirds_1
+.Photo--2_of_3
   padding: 0 10px
   width: 45.3%
   +respond-to(small-down)
     padding: 0 2px
 
-.PhotoRow--thirds_2,
-.PhotoRow--quarters_3
+.Photo--3_of_3,
+.Photo--4_of_4
   padding: 0 0 0 10px
-  width: 26%
+  width: 27%
   +respond-to(small-down)
     padding: 0 0 0 2px
 
-
-
-.PhotoRow--quarters_1,
-.PhotoRow--quarters_2
+.Photo--2_of_4,
+.Photo--3_of_4
   padding: 0 10px
   +respond-to(small-down)
     padding: 0 2px
 
-.PhotoRow--quarters_1
+.Photo--2_of_4
   width: 21%
-
-.PhotoRow--quarters_2
+.Photo--3_of_4
   width: 24.3%

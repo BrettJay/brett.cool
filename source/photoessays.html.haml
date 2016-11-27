@@ -1,12 +1,12 @@
 ---
   title: Photoessays
   body_classes: photoessays
-  meta_description: A growing collection of photoessays from my travels and experiences…
+  meta_description: A collection of photoessays, from travels, conferences, and experiences…
   meta_keywords:
   ogp:
     og:
       title: 'Photoessays'
-      description: 'A growing collection of photoessays from my travels and experiences…'
+      description: 'A collection of photoessays, from travels, conferences, and experiences…'
       image:
         '': http://brett.cool/images/og.jpg
         type: image/jpg
@@ -14,7 +14,7 @@
         height: 300
     fb:
       title: 'Photoessays'
-      description: 'A growing collection of photoessays from my travels and experiences…'
+      description: 'A collection of photoessays, from travels, conferences, and experiences…'
       image:
         '': http://brett.cool/images/og/fb.jpg
         type: image/jpg
@@ -26,9 +26,13 @@
 .Content
   .Content_row
     .Content_main
-      %p.tagline A growing collection of photoessays from my travels and other experiences…
-
-  .Content_row
-    .Content_photoessays
-      - data.photoessays.each do | photoessay |
-        = partial("photoessays/components/card", locals: { photoessay: photoessay})
+      %h1 Photoessays
+      %p.tagline A collection of photoessays from travels, conferences, and other experiences…
+  - data.photoessays.each do | photoessays |
+    .Content_row
+      .Content_photoessayHeader
+        %h2= photoessays.year
+    .Content_row
+      .Content_photoessays
+        - photoessays.photoessays.each do | photoessay |
+          = partial("photoessays/components/card", locals: { photoessay: photoessay})
