@@ -5,31 +5,32 @@
     date: October 28, 2016
     description: A new conference for designers, developers, and those around and in between
 
-- year: 2015
-  photoessays:
-    - title: CSSConf Au
-      url: '2015/css-conf'
-      date: March 26, 2015
+# - year: 2015
+#   photoessays:
+#     - title: CSSConf Au
+#       url: '2015/css-conf'
+#       date: March 26, 2015
 
-- year: 2014
-  photoessays:
-    - title: Web Directions
-      url: '2014/web-directions'
-      date: October 30, 2014
+# - year: 2014
+#   photoessays:
+#     - title: Web Directions
+#       url: '2014/web-directions'
+#       date: October 30, 2014
 
-    - title: Red Dot Ruby Conf
-      url: '2014/red-dot-ruby-conf'
-      date: June 26, 2014
+#     - title: Red Dot Ruby Conf
+#       url: '2014/red-dot-ruby-conf'
+#       date: June 26, 2014
 
-    - title: CSSConf Au
-      url: '2014/css-conf'
-      date: April 9, 2014
+#     - title: CSSConf Au
+#       url: '2014/css-conf'
+#       date: April 9, 2014
 
 - year: 2013
   photoessays:
     - title: New York
       url: '2013/new-york'
       date: August 11, 2013
+      draft: true
       trip:
         location: america
         dates:
@@ -39,26 +40,32 @@
     - title: Washington
       url: '2013/washington'
       date: August 9, 2013
+      draft: true
 
     - title: Pittsburgh
       url: '2013/pittsburgh'
       date: August 7, 2013
+      draft: true
 
     - title: St Louis
       url: '2013/st-louis'
       date: August 4, 2013
+      draft: true
 
     - title: Denver
       url: '2013/denver'
       date: August 1, 2013
+      draft: true
 
     - title: Las Vegas
       url: '2013/las-vegas'
       date: July 28, 2013
+      draft: true
 
     - title: Los Angeles
       url: '2013/los-angeles'
       date: July 25, 2013
+      draft: true
 
     - title: San Francisco
       url: '2013/san-francisco'

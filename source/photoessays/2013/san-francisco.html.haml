@@ -10,7 +10,7 @@
     location: america
     weather: sun
     dates:
-      from: 2013-7-22
+      from: 2013-7-23
       to: 2013-7-25
   ogp:
     og:
@@ -57,7 +57,7 @@
         :markdown
           After some more waiting, we eventually cleared customs, and, once we got our bearings, headed for downtown San Francisco using the BART.
 
-  = partial("photoessays/components/photo_hero", locals: {slug: current_page.data.slug, 'caption': '', 'photo': '23/bart'})
+  = partial("photoessays/components/photo_hero", locals: {slug: current_page.data.slug, caption: '', 'photo': '23/bart'})
 
   .Content_row
     .Content_main
@@ -107,9 +107,9 @@
 
   = partial("photoessays/components/photo_two_column", locals: {slug: current_page.data.slug, 'left': ['23/walking_around'], 'right': ['23/brett_sim'] })
 
-  = partial("photoessays/components/photo_hero", locals: {slug: current_page.data.slug, 'caption': '', 'photo': '23/downtown'})
+  = partial("photoessays/components/photo_hero", locals: {slug: current_page.data.slug, caption: '', 'photo': '23/downtown'})
 
-  = partial("photoessays/components/photo_right", locals: {slug: current_page.data.slug, 'caption': 'Stumbling upon an awesome street performance, not something we’re used to seeing every day...', 'photo': '23/urban_funk_machine'})
+  = partial("photoessays/components/photo_right", locals: {slug: current_page.data.slug, caption: 'Stumbling upon an awesome street performance, not something we’re used to seeing every day...', 'photo': '23/urban_funk_machine'})
 
   .Content_row
     .Content_main
@@ -137,10 +137,9 @@
         :markdown
           We returned to our hostel and turned in for the night.
 
-          ---
+= partial("photoessays/components/photo_full", locals: {slug: current_page.data.slug, caption: '', 'photo': '24/morning'})
 
-  = partial("photoessays/components/photo_hero", locals: {slug: current_page.data.slug, 'caption': '', 'photo': '24/morning'})
-
+.Content
   .Content_row
     .Content_main
       .Article_content
@@ -157,7 +156,7 @@
         :markdown
           We reached Fishermans Wharf, and took a wander round the local area...
 
-  = partial("photoessays/components/photo_hero", locals: {slug: current_page.data.slug, 'caption': '', 'photo': '24/fishermans_wharf'})
+  = partial("photoessays/components/photo_hero", locals: {slug: current_page.data.slug, caption: '', 'photo': '24/fishermans_wharf'})
 
   .Content_row
     .Content_main
@@ -167,7 +166,7 @@
 
           As we came upon the street, we should have been able to spot it a mile away...
 
-  = partial("photoessays/components/photo_right", locals: {slug: current_page.data.slug, 'caption': 'Tommy Wiseau immortalised, staring down on the street.', 'photo': '24/spy_shop'})
+  = partial("photoessays/components/photo_right", locals: {slug: current_page.data.slug, caption: 'Tommy Wiseau immortalised, staring down on the street.', 'photo': '24/spy_shop'})
 
   .Content_row
     .Content_main
@@ -179,13 +178,13 @@
 
           When we spotted a beacon of garish red...
 
-  = partial("photoessays/components/photo_right", locals: {slug: current_page.data.slug, 'caption': "I learned much   later #{link_to 'it had only just opened', 'http://insidescoopsf.sfgate.com/blog/2013/07/17/san-franciscos-first-applebees-has-arrived-on-fishermans-wharf/', target: '_blank'}.", 'photo': '24/applebees'})
+  = partial("photoessays/components/photo_right", locals: {slug: current_page.data.slug, caption: "I learned much   later #{link_to 'it had only just opened', 'http://insidescoopsf.sfgate.com/blog/2013/07/17/san-franciscos-first-applebees-has-arrived-on-fishermans-wharf/', target: '_blank'}.", 'photo': '24/applebees'})
 
   .Content_row
     .Content_main
       .Article_content
         :markdown
-          We stepped inside from the ground floor, amused by the option of taking an elevator up to the actualy restaurant.
+          We stepped inside from the ground floor, amused by the option of taking an elevator up to the actual restaurant.
 
           We decided to use the stairs, since we had the option.
 
@@ -223,7 +222,7 @@
 
           Knowing he was on his way, we decided to meet him en route to the hostel. It was a jarring (and relieving) to see a familiar face in a foreign country, as Jared strolled up to us on Powell street.
 
-= partial("photoessays/components/photo_full", locals: {slug: current_page.data.slug, 'caption': '✅  Jared has joined your party.', 'photo': '24/jared_rendezvous'})
+= partial("photoessays/components/photo_full", locals: {slug: current_page.data.slug, caption: '✅  Jared has joined your party.', 'photo': '24/jared_rendezvous'})
 
 .Content
   .Content_row
@@ -279,7 +278,7 @@
         :markdown
           Afterwards, we headed north, back towards Fisherman’s Wharf, catching a Tram; incidentally named after Melbourne, Australia.
 
-  = partial("photoessays/components/photo_right", locals: {slug: current_page.data.slug, 'caption': 'Weren’t we just there...? 🤔', 'photo': '25/f_line'})
+  = partial("photoessays/components/photo_right", locals: {slug: current_page.data.slug, caption: '', 'photo': '25/f_line'})
 
   .Content_row
     .Content_main
@@ -288,3 +287,120 @@
           Back in Fisherman’s Wharf and now quite hungry, we decided to hit up Hard Rock Café.
 
   = partial("photoessays/components/place_restaurant", locals: {slug: current_page.data.slug, image: '25/place_hardrock', 'title': 'Hard Rock Café', 'address': 'Pier 39, Beach St #256, San Francisco', 'price': '$$', 'menu': 'American', rating: 4 })
+
+  = partial("photoessays/components/photo_grid", locals: {slug: current_page.data.slug, rows: [ { count: 1, caption: '', photos: ['25/inside_hard_rock'] }, { count: 3, caption: 'They don’t mess around with their serving sizes...', photos: ['25/hardrock_menu','25/hardrock_burger','25/hardrock_drink'] } ] } )
+
+  .Content_row
+    .Content_main
+      .Article_content
+        :markdown
+          After our rather heavy lunch, we wandered around Fisherman’s Wharf.
+
+  = partial("photoessays/components/photo_grid", locals: {slug: current_page.data.slug, rows: [ { count: 3, caption: '', photos: ['25/giant_enemy_crab','25/wharf','25/wharf_flags'] }, { count: 2, caption: '', photos: ['25/van','25/basketball'] }, { count: 3, caption: '', photos: ['25/street','25/fire_station','25/street_view'] } ] } )
+
+  .Content_row
+    .Content_main
+      .Article_content
+        :markdown
+          Finally, it was time to hire some bikes and ride across the Golden Gate Bridge.
+
+= partial("photoessays/components/photo_full", locals: {slug: current_page.data.slug, caption: '', 'photo': '25/bike_panorama'})
+
+.Content
+  .Content_row
+    .Content_main
+      .Article_content
+        :markdown
+          Riding amongst the traffic in San Francisco near Fisherman’s Wharf was surprisingly easy.
+
+          Apparently San Francisco drivers were a bit more patient with tourists and cyclists than we’re accustomed to back in Perth.
+
+  = partial("photoessays/components/photo_right", locals: {slug: current_page.data.slug, caption: 'Chilling in front of Alcatraz', 'photo': '25/alcatraz'})
+  = partial("photoessays/components/photo_grid", locals: {slug: current_page.data.slug, rows: [ { count: 2, caption: '', photos: ['25/bike_richard','25/bike_ride'] } ] } )
+
+  .Content_row
+    .Content_main
+      .Article_content
+        :markdown
+          We followed our nose...
+
+= partial("photoessays/components/photo_full", locals: {slug: current_page.data.slug, caption: '', 'photo': '25/bike_directions'})
+
+.Content
+  .Content_row
+    .Content_main
+      .Article_content
+        :markdown
+          After a short ride, the Golden Gate bridge loomed in&nbsp;to&nbsp;view...
+
+= partial("photoessays/components/photo_full", locals: {slug: current_page.data.slug, caption: '', 'photo': '25/bridge_panorama_alt'})
+
+.Content
+  .Content_row
+    .Content_main
+      .Article_content
+        :markdown
+          Or, as much as it does when its shrouded in its characteristic fog.
+  = partial("photoessays/components/photo_grid", locals: {slug: current_page.data.slug, rows: [ { count: 2, caption: '', photos: ['25/bridge_under','25/bridge_butcher'] }, { count: 3, caption: '', photos: ['25/bridge_brett', '25/bridge_view','25/bridge_boat'] } ] } )
+  .Content_row
+    .Content_main
+      .Article_content
+        :markdown
+          We stopped and grouped up to admire the partially–fog–obscured view...
+
+= partial("photoessays/components/photo_full", locals: {slug: current_page.data.slug, caption: '', 'photo': '25/bridge_panorama_view'})
+
+.Content
+  .Content_row
+    .Content_main
+      .Article_content
+        :markdown
+          We then continued riding North, towards Sausalito. It was approaching sunset, and the ride to the Sausalito Ferry was very pleasant.
+
+  = partial("photoessays/components/photo_grid", locals: {slug: current_page.data.slug, rows: [ { count: 2, caption: '', photos: ['25/island','25/ferry'] } ] } )
+
+  .Content_row
+    .Content_main
+      .Article_content
+        :markdown
+          It looked like a quaint European town (or at least what I imagine one to look like). Unfortunately, we didn’t have any time to stop, as we had a ferry to catch, and some hire bikes to return...
+
+          On board the ferry, we perked up with some coffee and — in the case of Richard and I — White Russians.
+
+  = partial("photoessays/components/photo_grid", locals: {slug: current_page.data.slug, rows: [ { count: 2, caption: '', photos: ['25/boat_view','25/boat_drinks'] } ] } )
+
+  .Content_row
+    .Content_main
+      .Article_content
+        :markdown
+          The return home was a blur of exhaustion and stress to return the hire bikes in time...
+
+          ---
+
+          Some time much later we emerged — stiff, sore, and feeling a little worse for wear — in search of some San Francisco pizza-y sustenance...
+
+  = partial("photoessays/components/place_restaurant", locals: {slug: current_page.data.slug, image: '25/place_pizza', 'title': 'Piraat Pizzeria & Rotisserie', 'address': '696 Sutter St, San Francisco', 'price': '$', 'menu': 'Pizza', rating: 4 })
+
+  = partial("photoessays/components/photo_grid", locals: {slug: current_page.data.slug, rows: [ { count: 2, caption: '', photos: ['25/pizza_butcher','25/pizza_jared_irwin'] } ] } )
+
+  .Content_row
+    .Content_main
+      .Article_content
+        :markdown
+          We returned to the hostel to eat, and then groggily went to bed.
+
+          ---
+
+          The next morning we awoke, all a little exhausted from the previous day.
+
+          Before we knew it, our bags were packed, and we were checking out and walking to the Greyhound terminal...
+
+  = partial("photoessays/components/photo_grid", locals: {slug: current_page.data.slug, rows: [ { count: 2, caption: '', photos: ['26/morning','26/walking'] } ] } )
+
+  .Content_row
+    .Content_main
+      .Article_content
+        :markdown
+          After a short wait, we boarded the greyhound bus, headed for Los Angeles...
+
+  = partial("photoessays/components/photo_hero", locals: {slug: current_page.data.slug, caption: 'To be continued...', 'photo': '26/greyhound'})
