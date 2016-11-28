@@ -1,0 +1,41 @@
+---
+  title: CSSConf AU
+  slug: '2016/cssconfau'
+  subtitle: Getting our CSS Learning on.
+  body_classes: page-photoessays
+  meta_description: Getting our CSS Learning on.
+  meta_keywords:
+  trip:
+    transport: plane
+    location: australia
+    weather: sun
+    dates:
+      from: 2016-11-29
+      to: 2016-12-02
+  ogp:
+    og:
+      title: CSSConf AU
+      description: Getting our CSS Learning on.
+      image:
+        '': http://brett.cool/images/photoessays/2013/san-francisco/og.jpg
+        type: image/jpg
+        width: 560
+        height: 300
+    fb:
+      title: CSSConf AU
+      description: Getting our CSS Learning on.
+      image:
+        '': http://brett.cool/images/photoessays/2013/san-francisco/fb.jpg
+        type: image/jpg
+        width: 600
+        height: 315
+---
+
+= partial("photoessays/components/banner", locals: {slug: current_page.data.slug, title: current_page.data.title, subtitle: current_page.data.subtitle, trip: current_page.data.trip})
+
+.Content#story
+  .Content_row
+    .Content_main
+      .Article_content
+        :markdown
+          Hello
