@@ -46,19 +46,54 @@ ogp:
 
         In the leadup to it arriving, I created a checklist of files to backup and must-have apps to install. As I collated it, I figured it might make for an interesting reference. So here we are.
 
-        ## Environment
-
-        ### Homebrew
+        ## Homebrew
         #{link_to 'Homebrew', 'http://brew.sh'} is a fantastic command-line utility for
+= partial("blog/components/application_link", locals: {slug: current_page.data.slug, image: '23/place_amsterdam', title: 'Homebrew', developer: '', link: 'http://brew.sh'})
+.Content_row
+  .Content_main
+    .Article_content
+      :markdown
+        ## Sketch 3
+        Sketch is really a no-brainer for me at this point. I’d been dabbling with it since version 2, but never made the jump full-time until Sketch 3.
 
-        ## Applications
+        Sketch excels with UI design. It’s been purpose-built for this and once you learn the workflows many other apps feel slow. If you need anything outside that niche purpose—such as raster image editing or more advanced vector tools—you’re best suited to complimenting Sketch with another application.
+= partial("blog/components/application_link", locals: {slug: current_page.data.slug, image: '23/place_amsterdam', title: 'Sketch', developer: 'Bohemian Coding', link: 'http://sketchapp.com'})
 
-= partial("blog/components/application_link", locals: {slug: current_page.data.slug, image: '23/place_amsterdam', title: 'Sketch', developer: 'Bohemian Coding', body: 'Sketch is really a no-brainer for me at this point. I’d been dabbling with it since version 2, but never made the jump full-time until Sketch 3.<br/><br/>Sketch excels with UI design. It’s been purpose-built for this and once you learn the workflows many other apps feel slow. If you need anything outside that niche purpose—such as raster image editing or more advanced vector tools—you’re best suited to complimenting Sketch with another application.', link: 'http://sketchapp.com'})
+.Content_row
+  .Content_main
+    .Article_content
+      :markdown
+        ## Pixelmator
+        A similar take on raster image editing to Affinity Photo, Pixelmator is a wonderful app which takes full advantage of macOS frameworks and graphic technologies.
 
-= partial("blog/components/application_link", locals: {slug: current_page.data.slug, image: '23/place_amsterdam', title: 'Pixelmator', developer: 'Pixelmator Team', body: 'A similar take on raster image editing to Affinity Photo, Pixelmator is a wonderful app which takes full advantage of macOS frameworks and graphic technologies.<br/><br/> It feels slightly more analogous to Photoshop than Affinity Photo, so for quick comedy shoops I might turn to Photoshop for, Pixelmator now fills that niche. The iPhone/iPad app is surprisingly robust, and you can open documents created on the Mac with it.', link: 'http://pixelmator.com'})
+        It feels slightly more analogous to Photoshop than Affinity Photo, so for quick comedy shoops I might turn to Photoshop for, Pixelmator now fills that niche. The iPhone/iPad app is surprisingly robust, and you can open documents created on the Mac with it.
+= partial("blog/components/application_link", locals: {slug: current_page.data.slug, image: '23/place_amsterdam', title: 'Pixelmator', developer: 'Pixelmator Team', link: 'http://pixelmator.com'})
 
-= partial("blog/components/application_link", locals: {slug: current_page.data.slug, image: '23/place_amsterdam', title: 'Affinity Designer', developer: 'Serif Labs', body: 'For more involved vector graphic work I keep Affinity Designer handy.', link: 'http://serif.com'})
 
-= partial("blog/components/application_link", locals: {slug: current_page.data.slug, image: '23/place_amsterdam', title: 'Affinity Photo', developer: 'Serif Labs', body: 'For my light photo-editing needs, Affinity Photo is an excellent, lightweight, and zippy alternative to Adobe Photoshop.', link: 'http://serif.com'})
+.Content_row
+  .Content_main
+    .Article_content
+      :markdown
+        ## Affinity Designer
+        For more involved vector graphic work I keep Affinity Designer handy.
+= partial("blog/components/application_link", locals: {slug: current_page.data.slug, image: '23/place_amsterdam', title: 'Affinity Designer', developer: 'Serif Labs', link: 'http://serif.com'})
 
-= partial("blog/components/application_link", locals: {slug: current_page.data.slug, image: '23/place_amsterdam', title: 'Sublime Text 3', developer: 'Jonathan Skinner', body: 'I’ve been a Sublime Text user ever since the first version was Windows-exclusive, and it migrated to Linux and Mac with version 2 around the same time I moved to macOS.<br/><br/>There are other text-editors out there, but none of them feel as snappy as Sublime Text to me. All seem comparable feature-wise, so it feels like switching to anything other than emacs or vim would be a sidestep, rather than a clear step up.<br/><br/> Sublime paired with the  might be my dream text editor UI, while VSCode’s UI and sidebar are a bit too ugly for my tastes (pedantic? yes).', link: 'http://sublimetext.com'})
+
+.Content_row
+  .Content_main
+    .Article_content
+      :markdown
+        ## Affinity Photo
+        For my light photo-editing needs, Affinity Photo is an excellent, lightweight, and zippy alternative to Adobe Photoshop.
+= partial("blog/components/application_link", locals: {slug: current_page.data.slug, image: '23/place_amsterdam', title: 'Affinity Photo', developer: 'Serif Labs', link: 'http://serif.com'})
+
+.Content_row
+  .Content_main
+    .Article_content
+      :markdown
+        I’ve been a Sublime Text user ever since the first version was Windows-exclusive, and it migrated to Linux and Mac with version 2 around the same time I moved to macOS.
+
+        There are other text-editors out there, but none of them feel as snappy as Sublime Text to me. All seem comparable feature-wise, so it feels like switching to anything other than emacs or vim would be a sidestep, rather than a clear step up.
+
+        Sublime paired with the  might be my dream text editor UI, while VSCode’s UI and sidebar are a bit too ugly for my tastes (pedantic? yes).
+= partial("blog/components/application_link", locals: {slug: current_page.data.slug, image: '23/place_amsterdam', title: 'Sublime Text 3', developer: 'Jonathan Skinner', link: 'http://sublimetext.com'})
