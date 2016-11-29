@@ -1,9 +1,9 @@
 ---
   title: CSSConf AU
   slug: '2016/cssconfau'
-  subtitle: Getting our CSS Learning on.
+  subtitle: Attending the third annual CSSConf Australia.
   body_classes: page-photoessays
-  meta_description: Getting our CSS Learning on.
+  meta_description: Attending the third annual CSSConf Australia.
   meta_keywords:
   trip:
     transport: plane
@@ -15,7 +15,7 @@
   ogp:
     og:
       title: CSSConf AU
-      description: Getting our CSS Learning on.
+      description: Attending the third annual CSSConf Australia.
       image:
         '': http://brett.cool/images/photoessays/2016/cssconfau/og.jpg
         type: image/jpg
@@ -23,7 +23,7 @@
         height: 300
     fb:
       title: CSSConf AU
-      description: Getting our CSS Learning on.
+      description: Attending the third annual CSSConf Australia.
       image:
         '': http://brett.cool/images/photoessays/2016/cssconfau/fb.jpg
         type: image/jpg
@@ -38,4 +38,10 @@
     .Content_main
       .Article_content
         :markdown
-          Hello
+          Barely a month after #{link_to 'Mixin', '/photoessays/mixin-2016'}, it was time to jet off to one of the main sources of inspiration for our conference.
+
+          The morning of my flight I awoke a bit tired — due to some unfortunate scheduling I had a rental inspection on the same day.
+
+  = partial("photoessays/components/photo_grid", locals: {slug: current_page.data.slug, rows: [ { count: 2, caption: '', photos: ['29/terminal','29/in_air'] } ] } )
+
+  = partial("photoessays/components/flight", locals: {slug: current_page.data.slug, image: '29/flight_va682', title: 'VA682', gate: '48', seat: '25A', airline: 'Virgin Australia Airlines', depart: '9:45am', arrive: '4:50pm', rating: 3 })
