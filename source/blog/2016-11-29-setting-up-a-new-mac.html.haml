@@ -4,6 +4,7 @@ date: 2016-11-29 00:01 UTC
 author: Brett Jones
 author_slug: brett
 body_classes: page-blog
+slug: '/blog/2016-11-29-setting-up-a-new-mac'
 ogp:
   og:
     title: Setting Up A New Mac
@@ -39,16 +40,25 @@ ogp:
   .Content_main
     .Article_content
       :markdown
-        Today I finally got around to shipping #{link_to 'photoessays', '/photoessays'}, a section where I hope to produce longer-form content with a focus on photography.
+        Despite living in the Mac ecosystem for some time now, I haven’t started afresh with macOS in some time.
 
-        It’s something I’ve thought about and worked on and off on a number of times, and what better way to finally ship the thing than with a #{link_to 'look back on Mixin 2016', '/photoessays/mixin-2016'}.
+        Unlike with Windows—which I’d frequently nuke to get that minty fresh feeling—the only time I really feel a prompt to start afresh is with the arrival of a new machine.
 
-        Reflecting on the photoessays work I can see — aside from sheer motivation from all the speakers — the manifestation of many learnings from the Mixin 2016 speakers.
+        In the leadup to it arriving, I created a checklist of files to backup and must-have apps to install. As I collated it, I figured it might make for an interesting reference. So here we are.
 
-        Andy Clarke’s talk on art directed web design inspired me to design a non-standard grid layout. Una Kravets reminded me to perform some pre-emptive image optimisation techniques to keep things nice and snappy.
+        ## Environment
 
-        Jina Bolton’s talk on design systems got me #{link_to 'thinking about how I could compose photoessays from reusable components', 'https://github.com/BrettJay/brett.cool/tree/master/source/photoessays/components', target:'_blank'}, and Mike Riethmuller’s excellent #{link_to 'fluid typography work', 'https://github.com/BrettJay/brett.cool/blob/master/source/stylesheets/_tools.mixins.sass#L18-L28', target: '_blank'} informs the responsive typography.
+        ### Homebrew
+        #{link_to 'Homebrew', 'http://brew.sh'} is a fantastic command-line utility for
 
-        I’ll have to write up some learnings from building the Photoessays section, or you can #{link_to 'take a look on Github', 'https://github.com/BrettJay/brett.cool/blob/master/source/photoessays/mixin-2016.html.haml', target: '_blank'}.
+        ## Applications
 
-        But I won’t waste any more of your time here — #{link_to 'go take a look at the Mixin 2016 Photoessay', '/photoessays/mixin-2016'}!
+= partial("blog/components/application_link", locals: {slug: current_page.data.slug, image: '23/place_amsterdam', title: 'Sketch', developer: 'Bohemian Coding', body: 'Sketch is really a no-brainer for me at this point. I’d been dabbling with it since version 2, but never made the jump full-time until Sketch 3.<br/><br/>Sketch excels with UI design. It’s been purpose-built for this and once you learn the workflows many other apps feel slow. If you need anything outside that niche purpose—such as raster image editing or more advanced vector tools—you’re best suited to complimenting Sketch with another application.', link: 'http://sketchapp.com'})
+
+= partial("blog/components/application_link", locals: {slug: current_page.data.slug, image: '23/place_amsterdam', title: 'Pixelmator', developer: 'Pixelmator Team', body: 'A similar take on raster image editing to Affinity Photo, Pixelmator is a wonderful app which takes full advantage of macOS frameworks and graphic technologies.<br/><br/> It feels slightly more analogous to Photoshop than Affinity Photo, so for quick comedy shoops I might turn to Photoshop for, Pixelmator now fills that niche. The iPhone/iPad app is surprisingly robust, and you can open documents created on the Mac with it.', link: 'http://pixelmator.com'})
+
+= partial("blog/components/application_link", locals: {slug: current_page.data.slug, image: '23/place_amsterdam', title: 'Affinity Designer', developer: 'Serif Labs', body: 'For more involved vector graphic work I keep Affinity Designer handy.', link: 'http://serif.com'})
+
+= partial("blog/components/application_link", locals: {slug: current_page.data.slug, image: '23/place_amsterdam', title: 'Affinity Photo', developer: 'Serif Labs', body: 'For my light photo-editing needs, Affinity Photo is an excellent, lightweight, and zippy alternative to Adobe Photoshop.', link: 'http://serif.com'})
+
+= partial("blog/components/application_link", locals: {slug: current_page.data.slug, image: '23/place_amsterdam', title: 'Sublime Text 3', developer: 'Jonathan Skinner', body: 'I’ve been a Sublime Text user ever since the first version was Windows-exclusive, and it migrated to Linux and Mac with version 2 around the same time I moved to macOS.<br/><br/>There are other text-editors out there, but none of them feel as snappy as Sublime Text to me. All seem comparable feature-wise, so it feels like switching to anything other than emacs or vim would be a sidestep, rather than a clear step up.<br/><br/> Sublime paired with the  might be my dream text editor UI, while VSCode’s UI and sidebar are a bit too ugly for my tastes (pedantic? yes).', link: 'http://sublimetext.com'})
