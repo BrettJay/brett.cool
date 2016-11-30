@@ -57,3 +57,85 @@
           The meager 13” Macbook Pro’s figure made PlaneHax rather enjoyable. I was able to, with the assistance of some dongles, start preparing some of the photos I’d already taken and start scaffolding out this photoessay (how meta). And the QC35 allowed me to listen to music and videos and focus nicely.
 
           One nice thing about the touch bar in this configuration is music/video and other slider/shuttle controls are super clutch for making the most of screen real estate.
+
+          ---
+
+          I landed
+
+          Caught a taxi
+
+          Checked in at hotel
+
+          Picked up a new Myki
+
+          Went to Stomping grounds.
+
+          ---
+
+  .Content_row#cssconf
+    .Content_main
+      .Article_content
+        :markdown
+          Walked to CSSConf
+
+  = partial("photoessays/components/photo_right", locals: {slug: current_page.data.slug, caption: '~(˘▾˘~) CSSConf Time Again! (~˘▾˘)~', 'photo': '30/PB300066'})
+
+  .Content_row
+    .Content_main
+      .Article_content
+        :markdown
+          Registered, met with Mandy, Jess and Patima.
+
+  = partial("photoessays/components/photo_grid", locals: {slug: current_page.data.slug, rows: [ { count: 2, caption: '', photos: ['30/PB300074','30/PB300078'] } ] } )
+
+  .Content_row
+    .Content_main
+      .Article_content
+        :markdown
+          After some coffee and bagels, we were entering the theatre to begin the day!
+
+          #{link_to 'Ben Scwarz', 'https://twitter.com/benschwarz', target: '_blank'} and #{link_to 'Karolina Szczur', 'https://twitter.com/fox', target: '_blank'} took to the stage to welcome us and go over the housekeeping, before handing over to Kristina #{link_to 'Kristina', 'https://twitter.com/kriesse', target: '_blank'} from CSSConfEU to emcee for the rest of the day.
+
+          ---
+
+  = partial("photoessays/components/talk", locals: {slug: "#{current_page.data.slug}/30", talk: 'Human Compatibility Error: How novice tech users in West Africa respond to your fancy CSS', name: 'Ally Long', twitter: 'allyelle', slides: '' } )
+
+  .Content_row
+    .Content_main
+      .Article_content
+        :markdown
+          Ally kicked off the day by examining how. A lot of the projects Ally encountered were novice tech user going from pen and paper to an app. If they weren’t new to it, they were still quite fresh to it. Probably got their first, second-hand phone from a market. Lck of connectivity in west africa. Broadband is very uncommon, or broadband is quite rare and expensive.
+
+          Touch screens are easier to use than laptops. Most people are introduced to technology via smart phones. Very unintuitive, slow to type. If elements are offdcreen, they’re not discoverable
+
+          We know how to scroll because it’s obvious. It’s only because we know how to scroll already. Better to have interfaces that tech savvy users complain about than interfaves tech novices can’t use. Avoid concealed tags like select tags. Consistency is key.
+
+          ---
+
+  = partial("photoessays/components/talk", locals: {slug: "#{current_page.data.slug}/30", talk: 'Accessibility matters. Let’s do something about it.', name: 'Ally Palanzi', twitter: 'mylifeasalllly', slides: 'http://allypalanzi.com/a11y/slides' } )
+
+  .Content_row
+    .Content_main
+      .Article_content
+        :markdown
+          As Senior Front-End Engineer at Vox Media, Ally took us through the process of making Accessibility a key consideration of.
+
+          As designers and developers, the impact of disability is radically changed on the web because the web remove sbarriers to communication and interaction.
+
+          By designing with disabilities in mind, we create better products for everyone. It's not something you can tell from your analytics, but by designing for disability you’re improving everyone’s experience.
+
+          Follow WCAG guidelines.
+
+          It’s not that complicated to build accessibility in to your product and nobody will complain.
+
+          Made everyone care about it, no accessibility police. Keeping people accountable, making it part of the QA project, features of a project.
+
+          Checklist builder would be helpful for tother people. Links to resources to.
+
+          - Contrast tools
+          - Don’t indicate important information using colour alone.
+          - Pair values of colour together (not only hues) to increase contrast
+          - Design accessible forms. Clear labels
+
+  = partial("photoessays/components/talk", locals: { slug: "#{current_page.data.slug}/30", talk: 'Getting Up To Speed with Accelerated Mobile Pages', name: 'Michael Rog', twitter: 'michaelrog' } )
+  = partial("photoessays/components/talk", locals: { slug: "#{current_page.data.slug}/30", talk: 'At Least 6 Ways to Win with CSS Modules', name: 'Josh Johnston', twitter: 'joshwnj' } )

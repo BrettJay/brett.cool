@@ -1,0 +1,6 @@
+.Content_row
+  .Content_main
+    = link_to "https://twitter.com/#{twitter}", target: '_blank', class: 'PersonCard' do
+      .PersonCard_cover{style: "background-image: url('/images/photoessays/#{slug}/#{twitter}.jpg')"}
+      .PersonCard_title= name
+      .PersonCard_twitter @#{twitter}
