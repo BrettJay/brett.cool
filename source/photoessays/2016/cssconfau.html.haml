@@ -127,7 +127,7 @@
     .Content_main
       .Article_content
         :markdown
-          After some coffee and bagels, we were entering the theatre to begin the day!
+          After some coffee and bagels, we were entered the theatre to begin the day.
 
           #{link_to 'Ben Scwarz', 'https://twitter.com/benschwarz', target: '_blank'} and #{link_to 'Karolina Szczur', 'https://twitter.com/fox', target: '_blank'} took to the stage to welcome us, set the ground rules and go over the housekeeping, before handing over to #{link_to 'Kristina', 'https://twitter.com/kriesse', target: '_blank'} from CSSConfEU to emcee for the rest of the day, which was a nice touch.
 
@@ -147,6 +147,8 @@
           And while there are simple things we take forgranted — like scrolling offscreen elements into view — many less tech savvy individuals were unaware of it, simply because of lack of prior experience.
 
           Another point Ally highlighted was the trend in flat design which eschews some visual affordance on elements. While we are still able to parse and use these interfaces, many less tech literate individuals are not as likely to realise they can interact with elements treated in this visual style.
+
+          This talk served as a great reminder about the impact of our work beyond those in our own immediate vicinity, which we can so easily think of as our only users.
 
 = partial("photoessays/components/photo_full", locals: {slug: current_page.data.slug, caption: '', 'photo': '30/PB300096'})
 .Content
@@ -171,14 +173,14 @@
     .Content_main
       .Article_content
         :markdown
-          Michael gave a talk on AMP, a tech spec backed by Google with the goal of
+          After morning coffee, Michael was up to give a talk on AMP, a tech spec backed by Google with the goal of drastically increasing page performanace and load times on websites, because average users quickly abandon slow-loading websites.
 
-          Some of the features of AMP include
+          Some of the features of AMP include async everywhere, dns preconnect for third party services, static layout engine and content prioritization.
 
-          - async everywhere
-          - dns preconnect
-          - static layout engine
-          - content prioritization
+          One of the nice things about AMP is once you’ve loaded it in, you get a lot of the nice benefits without much additional effort on your part. The impact of loading an AMP page from a list of Google Search results is quite remarkable, with pages appearing to load nearly-instantaneously.
+
+          Michael was keen to stress that even if you don’t want to use AMP, their ideas and goals are a good idea and you can follow along with some of their recommendations in order to optimise the performance of your own site.
+
 
 = partial("photoessays/components/photo_full", locals: {slug: current_page.data.slug, caption: '', 'photo': '30/PB300110'})
 .Content
@@ -187,19 +189,15 @@
     .Content_main
       .Article_content
         :markdown
-          In “At Least 6 Ways To Win With CSS”, Josh recounted the pain points of CSS which led to the creation of CSS Modules.
+          In “At Least 6 Ways To Win With CSS Modules”, Josh recounted the pain points of CSS which led to the creation of CSS Modules.
 
-          Valid things that are difficult to do with CSS Modules.
+          Josh noted there are some valid things that are difficult to do with CSS Modules. But then went on to show that some of the habits we’ve accumulated when naming components in CSS is largely a result of the global scope, specificity wars and inheritance, and that with CSS Modules, we can actually breath out and let some of that go.
 
-          One of the main FORC — fear of removing CSS.
+          Of the 6 ways of winning with CSS Modules, perhaps my favourite was the removal of FORC, or fear of removing CSS. When working with CSS Modules and refactoring, if one of the UI components is not imported anymore, at that point it’s disconnected and far easier to delete CSS, without worrying it will affect anything outside the intended scope.
 
-          When one of the UI components is not imported anymore, at that point, it’s easier to delete CSS.
+          Ultimately, Josh concluded that with any decision there is a tradeoff. “Good or better” is subjective — what’s the cost?
 
-          Ultimaetly, Josh stressed that with anything there is a tradeoff. “Good or better” is subjective — what’s the cost?
-
-          In Josh’s experience, CSS Modules gave important value in a number of areas. Simpler class names and writing during authoring — only concerned with stuff that makes sense in your module. During Debugging, CSS Modules offered the benefits of immutabile CSS. Look at a class name, and know what it means, without any more context. Explicit mapping to DOM is easy to trace back to source of error.
-
-          Refactoring is made better by the dependency tree. As soon as a module is disconnected, it can be deleted. D4
+          In Josh’s experience, CSS Modules gave important value in a number of areas. Simpler class names and writing during authoring — only concerned with stuff that makes sense in your module. During Debugging, CSS Modules offered the benefits of immutabile CSS. With CSS Modules, it’s possible to look at a class name, and know what it means, without any more context. Explicit mapping to DOM is easy to trace back to source of error. And then Refactoring is made better with the dependency tree. As soon as a module is disconnected, it can be deleted.
 
 = partial("photoessays/components/photo_full", locals: {slug: current_page.data.slug, caption: '', 'photo': '30/PB300124'})
 .Content
@@ -208,11 +206,15 @@
     .Content_main
       .Article_content
         :markdown
-          After lunch, Nadieh took to the stage to discuss ways to use SVG for data analysis with SVG.
+          After lunch, Nadieh took to the stage to discuss ways to use SVG for data analysis with SVG, and some of the fancy techniques she uses to turn her ideas and sketches of data visualisation into a reality.
 
-          Nadieh showed off some fascinating.
+          One of the nice things that SVG affords us is that we can get far more creative with the way we visualise data. It allows us to build data visualisations which are interactive, dynamic, and even incorporate motion for context and meaning.
 
-          Communicating data is important.
+          There was some rather inspiring and some mind-bending data visualisation examples, and I certainly want to play around more with SVG for data visualisation after seeing her talk. I can get behind seeing more motion blur and gooey svg effects in data visualisation.
+
+          A key takeaway from Nadieh was to think beyond mere static representations of data, and find more unique and meaningful ways to express information. By doing so, you can glean new insights from the same data, and people will often be more engaged.
+
+          Data is important, and how you communicate that data is equally important.
 
 = partial("photoessays/components/photo_full", locals: {slug: current_page.data.slug, caption: '', 'photo': '30/PB300126'})
 .Content
@@ -221,24 +223,19 @@
     .Content_main
       .Article_content
         :markdown
-          Barak took to the stage to deliver an entertaining and insightful talk about the gulf between a proposed CSS spec and its implementation by vendors.
+          Barak took to the stage to deliver an entertaining and insightful talk about the gulf of time between a proposed CSS spec and its proper implementation by vendors.
 
-          Houdini CSS Spec that will give you web magic powers.
+          First, Barak took us through the 4-step process, from stylesheet with CSS object model, to the layout, paint and composition phases a browser users to render a web page.
 
-          How CSS works.
+          Houdini and the CSS Parser API allows us to hook into this process to implement out own constructs, custom functions and @rules in the same way we use media queries and custom font-face declarations.
 
-          1. Stylesheet with CSS object model with all the properties, classes, and elements.
-          1. Run through a layout phase, organise in final structure, block or inline elements.
-          1. Paint phase, where we render thse components to a visual layout.
-          1. Composition with the fully rendered web page.
+          By doing so, we are extending the CSS engine itself, and Barak gave a series of examples of how we might go about this, and create our own css values and properties to, for example, generate a QR code by calling an element with a custom URL value.
 
-          CSS Parser API allows us to implement out own constructs and custom functions and CSS at rules in the same way we use media queries.
+          Another feature mentioned was the Typed CSS Object Model. Trying to get a value out of CSS and into javascript is complicated, and involves manipulating a string to get the numeric value and convert it to a proper number. With Typed CSS OM, values have type, with more context, and less transposing of that data to use it.
 
-          Extending the CSS engine itself. Select a frame from a gif, create a selection of image filters, in the same way CSS allows us to define custom typefaces.
+          Houdini and the proposed CSS Layout Spec would allow you to define your own layout engine using the Layout API.
 
-          Typed CSS Object Model. Trying to get a value out of CSS and into javascript. Values have type, more context.
-
-          Define your own CSS Layout with the Layout API.
+          This is very performant as it runs on a separate thread, and would allow you to define the exact way in which the layout should work — no more weird cross-browser inconsistencies (once all browsers support Houdinin and CSS Parser API).
 
 = partial("photoessays/components/photo_full", locals: {slug: current_page.data.slug, caption: '', 'photo': '30/PB300133'})
 .Content
@@ -249,13 +246,13 @@
         :markdown
           After a quick coffee break, José took us through some advanced image optimisation techniques and avoiding some common pitfalls.
 
-          One of the commonly-used incorrect ways trying to hiding images is using display: none on content images, but the browser will still see the image tag and load the resource.
+          One of the commonly-used incorrect ways to hide images that José pointed out is to call display: none on content images — the browser still sees the image tag and load the resource regardless.
 
-          Unlike the costs associated with some tecnical choices, there is no downside to optimising your images. The Picure element and srcset is one solution, but the markup and CSS is tightly coupled and keeping markup and CSS in sync is extra effort.
+          A key point José made was that, unlike the costs associated with some technical choices, there is no downside to optimising your images.
 
-          Another good technique is Lazy loading, but this can be difficullt to get right. The IntersectionObserver API is one way to help determine when elements are on the scren and should be loaded, and by displaying blurry, low-file-size placeholders, it can give a better end user experience.
+          He then identified some key ways to properly optimise images. The Picure element and srcset is one solution, but the markup and CSS is tightly coupled and keeping markup and CSS in sync is extra effort.
 
-          Only 7% of images on the web are progressive.
+          Lazy loading is another good technique, but can be difficult to get right. The forthcoming Intersection Observer API can help determine when elements are on the screen and should be loaded, and we can also improve the perceived performance by displaying blurry, low-file-size placeholders, and lazily load the full sized asset.
 
 = partial("photoessays/components/photo_full", locals: {slug: current_page.data.slug, caption: '', 'photo': '30/PB300137'})
 .Content
@@ -266,9 +263,13 @@
         :markdown
           Serena took to the stage to deliver an entertaining and thought-provoking thought experiment about what the ideal CSS language would look like for our needs today.
 
+          She then took us through, step by step, the problems we tend to have with CSS these days, and how our ideal version of CSS would handle those pain points, including the cascade and specificity wars, and selectors, and how we’d like to see how we’d like CSS to do things.
+
           One of the key takeaways for me was how little developers may understand the cascade. We often fear it, and perhaps don’t fully understand its limitations and opportunities.
 
+          Another key takeaway for me was this tension between the very object-oriented BEM methodology with one class, while it results in a lot of repetition of declarations, and Atomic CSS, which avoids heavy CSS repetition, but begins to pollute your markup with stylistic information. Reusability or separation of concerns. Can we have both?
 
+          Serena then pointed out that mixins — popularised by precompilers like Sass and LESS — allow for us to create functions we can reuse, which become quite powerful in native CSS. This keeps separation of concerns but allows for less repetition.
 
 = partial("photoessays/components/photo_full", locals: {slug: current_page.data.slug, caption: '', 'photo': '30/PB300147'})
 .Content
@@ -277,6 +278,28 @@
     .Content_main
       .Article_content
         :markdown
-          Petra
+          Petra took to the stage to discuss the importance of building better style guides for all users.
 
-          Code comments + gulp = style guide
+          Creating online services for governments means making all Australians your audience — everyone who can access needs to be able to use it.
+
+          When you have an audience of everyone in Australia, that makes Accessibility of utmost importance. Last year, 5,000 sessions on government websites were using the Nintendo Wii’s web browser. Chances are, if you build your website to work for the Wii, it’ll work on anything newer than that!
+
+          Petra and her team were keen to come up with an approach that allowed them to build a reusable set of components across government websites, to help reduce repetition and improve consistency across the board. This resulted in the #{link_to 'DTO Design Guide', 'https://www.dta.gov.au/standard/', target: '_blank'}.
+
+          Petra had some useful and wise advice for building Don’t work in a bubble — design systems take a lot of people to build. Even though her team had research, design, and development capabilities — the team couldn’t prescribe all the ways in which everyone who used their styleguide, so being open ws important, and test early, and test often.
+
+          ---
+
+          After a couple of quick group photos, CSSConfAU was over for another year...
+
+          ... Well, not quite.
+
+  = partial("photoessays/components/place_drink", locals: {slug: current_page.data.slug, image: '30/PB300159', title: 'The Panama Dining Room', address: '231 Smith St, Fitzroy VIC', price: '$$$', menu: 'Bar', rating: 5 })
+
+  .Content_row
+    .Content_main
+      .Article_content
+        :markdown
+          The organisers, speakers, and fellow attendees met at The Panama Dining Hall to chat over some drinks and food. A fantastic way to end the day.
+
+  = partial("photoessays/components/photo_grid", locals: {slug: current_page.data.slug, rows: [ { count: 2, caption: '', photos: ['30/PB300159','30/PB300173'] }, { count: 2, caption: '', photos: ['30/PB300174','30/PB300164'] }, { count: 1, caption: '', photos: ['30/PB300156'] } ] } )
