@@ -38,45 +38,48 @@
     .Content_main
       .Article_content
         :markdown
-          Barely a month after #{link_to 'Mixin', '/photoessays/mixin-2016'}, it was time to jet off to one of the main sources of inspiration for our conference.
+          *As per CSSConf AU’s #{link_to 'photo policy', 'http://2016.cssconf.com.au/codeofconduct/', target: '_blank'}, I tried to be respectful and only photograph individuals who signalled by their lanyards they were okay with being photographed.*
 
-          The morning of my flight I awoke a bit tired — due to some unfortunate scheduling I had a rental inspection on the same day.
+          *If you’re in a photo and would like it removed, #{link_to 'please do let me know', 'https://github.com/BrettJay/brett.cool/issues/new', target: '_blank'}.*
+
+          ---
+
+          Barely a month after #{link_to 'Mixin', '/photoessays/mixin-2016'}, it was time to jet off to one of the main sources of inspiration for our conference.
 
           I arrived at the still rather-new Virgin Australia T1 terminal and checked in for my flight.
 
-  = partial("photoessays/components/photo_grid", locals: {slug: current_page.data.slug, rows: [ { count: 2, caption: '', photos: ['29/terminal','29/in_air'] } ] } )
+  = partial("photoessays/components/flight", locals: {slug: current_page.data.slug, image: '29/flight_va682', title: 'VA682', gate: '48', seat: '25A', airline: 'Virgin Australia Airlines', depart: '9:45am', arrive: '4:50pm', rating: '' })
 
-  = partial("photoessays/components/flight", locals: {slug: current_page.data.slug, image: '29/flight_va682', title: 'VA682', gate: '48', seat: '25A', airline: 'Virgin Australia Airlines', depart: '9:45am', arrive: '4:50pm', rating: 3 })
+  = partial("photoessays/components/photo_grid", locals: {slug: current_page.data.slug, rows: [ { count: 2, caption: '', photos: ['29/terminal','29/in_air'] } ] } )
 
   .Content_row
     .Content_main
       .Article_content
         :markdown
-          This was my first flight ‘road-testing’ the Late 2016 13” Macbook Pro with Touch Bar and Bose QuietComfort QC35s. Both performed admirably and made the flight much more enjoyable.
+          One plane-hack filled flight later, I landed in Melbourne...
 
-          The meager 13” Macbook Pro’s figure made PlaneHax rather enjoyable. I was able to, with the assistance of some dongles, start preparing some of the photos I’d already taken and start scaffolding out this photoessay (how meta). And the QC35 allowed me to listen to music and videos and focus nicely.
+  = partial("photoessays/components/place_accomodation", locals: {slug: current_page.data.slug, image: '29/place_somerset', title: 'Somerset on Elizabeth', address: '250 Elizabeth St, Melbourne VIC', checkin: '29 Nov', checkout: '2 Dec', rating: 4 })
 
-          One nice thing about the touch bar in this configuration is music/video and other slider/shuttle controls are super clutch for making the most of screen real estate.
+  .Content_row
+    .Content_main
+      .Article_content
+        :markdown
+          Now around 5:30pm Melbourne time, I had barely any time to settle in before the pre-conference social event.
 
-          ---
+          I dropped my bags, picked up #{link_to 'yet another', 'https://twitter.com/Brett_Jay/status/803474452793040896', target: '_blank'} Myki, and set off for Stomping Grounds in Collingwood, via the South Morang line.
 
-          I landed
+  = partial("photoessays/components/place_drink", locals: {slug: current_page.data.slug, image: '29/place_stompingground', title: 'Stomping Ground', address: '100 Gipps St, Collingwood VIC', price: '$$', menu: 'Beer Hall', rating: 5 })
 
-          Caught a taxi
+  = partial("photoessays/components/photo_grid", locals: {slug: current_page.data.slug, rows: [ { count: 2, caption: '', photos: ['29/PB290034','29/PB290038'] }, { count: 3, caption: '', photos: ['29/PB290039','29/PB290041','29/PB290054'] } ] } )
 
-          Checked in at hotel
+= partial("photoessays/components/photo_full", locals: {slug: current_page.data.slug, caption: '', 'photo': '30/PB300057'})
 
-          Picked up a new Myki
-
-          Went to Stomping grounds.
-
-          ---
-
+.Content
   .Content_row#cssconf
     .Content_main
       .Article_content
         :markdown
-          Walked to CSSConf
+          The next morning I set off for CSSConf.
 
   = partial("photoessays/components/photo_right", locals: {slug: current_page.data.slug, caption: '~(˘▾˘~) CSSConf Time Again! (~˘▾˘)~', 'photo': '30/PB300066'})
 
@@ -84,7 +87,7 @@
     .Content_main
       .Article_content
         :markdown
-          Registered, met with Mandy, Jess and Patima.
+          After registration, I caught up with some fellow Perthians (or Perthons), and some Melbournian friends.
 
   = partial("photoessays/components/photo_grid", locals: {slug: current_page.data.slug, rows: [ { count: 2, caption: '', photos: ['30/PB300074','30/PB300078'] } ] } )
 
@@ -96,10 +99,9 @@
 
           #{link_to 'Ben Scwarz', 'https://twitter.com/benschwarz', target: '_blank'} and #{link_to 'Karolina Szczur', 'https://twitter.com/fox', target: '_blank'} took to the stage to welcome us and go over the housekeeping, before handing over to Kristina #{link_to 'Kristina', 'https://twitter.com/kriesse', target: '_blank'} from CSSConfEU to emcee for the rest of the day.
 
-          ---
-
+= partial("photoessays/components/photo_full", locals: {slug: current_page.data.slug, caption: '', 'photo': '30/PB300093'})
+.Content
   = partial("photoessays/components/talk", locals: {slug: "#{current_page.data.slug}/30", talk: 'Human Compatibility Error: How novice tech users in West Africa respond to your fancy CSS', name: 'Ally Long', twitter: 'allyelle', slides: '' } )
-
   .Content_row
     .Content_main
       .Article_content
@@ -110,21 +112,20 @@
 
           We know how to scroll because it’s obvious. It’s only because we know how to scroll already. Better to have interfaces that tech savvy users complain about than interfaves tech novices can’t use. Avoid concealed tags like select tags. Consistency is key.
 
-          ---
-
+= partial("photoessays/components/photo_full", locals: {slug: current_page.data.slug, caption: '', 'photo': '30/PB300096'})
+.Content
   = partial("photoessays/components/talk", locals: {slug: "#{current_page.data.slug}/30", talk: 'Accessibility matters. Let’s do something about it.', name: 'Ally Palanzi', twitter: 'mylifeasalllly', slides: 'http://allypalanzi.com/a11y/slides' } )
 
   .Content_row
     .Content_main
       .Article_content
         :markdown
-          As Senior Front-End Engineer at Vox Media, Ally took us through the process of making Accessibility a key consideration of.
+          As Senior Front-End Engineer at Vox Media, Ally took us through the process of making Accessibility a key consideration of Vox’s development process.
 
           As designers and developers, the impact of disability is radically changed on the web because the web remove sbarriers to communication and interaction.
 
           By designing with disabilities in mind, we create better products for everyone. It's not something you can tell from your analytics, but by designing for disability you’re improving everyone’s experience.
 
-          Follow WCAG guidelines.
 
           It’s not that complicated to build accessibility in to your product and nobody will complain.
 
@@ -137,5 +138,108 @@
           - Pair values of colour together (not only hues) to increase contrast
           - Design accessible forms. Clear labels
 
+= partial("photoessays/components/photo_full", locals: {slug: current_page.data.slug, caption: '', 'photo': '30/PB300101'})
+.Content
   = partial("photoessays/components/talk", locals: { slug: "#{current_page.data.slug}/30", talk: 'Getting Up To Speed with Accelerated Mobile Pages', name: 'Michael Rog', twitter: 'michaelrog' } )
+  .Content_row
+    .Content_main
+      .Article_content
+        :markdown
+          AMP is a tech spec
+
+          async everywhere
+
+          dns preconnect
+
+          static layout engine
+
+          content prioritization
+
+= partial("photoessays/components/photo_full", locals: {slug: current_page.data.slug, caption: '', 'photo': '30/PB300110'})
+.Content
   = partial("photoessays/components/talk", locals: { slug: "#{current_page.data.slug}/30", talk: 'At Least 6 Ways to Win with CSS Modules', name: 'Josh Johnston', twitter: 'joshwnj' } )
+  .Content_row
+    .Content_main
+      .Article_content
+        :markdown
+          In “At Least 6 Ways To Win With CSS”, Josh recounted the creation of CSS Modules, with Mark Dalgesh, Glenn Maddern.
+
+          Valid things that are difficult to do with CSS Modules.
+
+          FORC
+
+          When one of the UI components is not imported anymore, at that point, it’s easier to delete CSS.
+
+          Everything is a tradeoff. “Good or better”. What’s the cost.
+
+          How CSS Modules gives value. Very simple class names during authoring, just stuff that makes snse for your module.
+
+          Debugging: benefits of immutability. Look at a class name, and know what it means, without any more context. Explicit mapping to DOM is easy to trace back to source of error.
+
+          Refactoring is made better by the dependency tree. As soon as a module is disconnected, it can be deleted. D4
+
+= partial("photoessays/components/photo_full", locals: {slug: current_page.data.slug, caption: '', 'photo': '30/PB300124'})
+.Content
+  = partial("photoessays/components/talk", locals: { slug: "#{current_page.data.slug}/30", talk: 'SVGs beyond mere shapes', name: 'Nadieh Bremer', twitter: 'NadiehBremer' } )
+  .Content_row
+    .Content_main
+      .Article_content
+        :markdown
+          After lunch, Nadieh took to the stage to discuss ways to use SVG for data analysis with SVG.
+
+          Nadieh showed off some fascinating.
+
+          Communicating data is important.
+
+= partial("photoessays/components/photo_full", locals: {slug: current_page.data.slug, caption: '', 'photo': '30/PB300126'})
+.Content
+  = partial("photoessays/components/talk", locals: { slug: "#{current_page.data.slug}/30", talk: 'Hey presto, CSS!', name: 'Barak Chamo', twitter: 'GoFoolhardy' } )
+  .Content_row
+    .Content_main
+      .Article_content
+        :markdown
+          Barak took to the stage to deliver an entertaining and insightful talk about the gulf between a proposed CSS spec and its implementation by vendors.
+
+          Houdini CSS Spec that will give you web magic powers.
+
+          How CSS works.
+
+          1. Stylesheet with CSS object model with all the properties, classes, and elements.
+          1. Run through a layout phase, organise in final structure, block or inline elements.
+          1. Paint phase, where we render thse components to a visual layout.
+          1. Composition with the fully rendered web page.
+
+          CSS Parser API allows us to implement out own constructs and custom functions and CSS at rules in the same way we use media queries.
+
+          Extending the CSS engine itself. Select a frame from a gif, create a selection of image filters, in the same way CSS allows us to define custom typefaces.
+
+          Typed CSS Object Model. Trying to get a value out of CSS and into javascript. Values have type, more context.
+
+          Define your own CSS Layout with the Layout API.
+
+= partial("photoessays/components/photo_full", locals: {slug: current_page.data.slug, caption: '', 'photo': '30/PB300110'})
+.Content
+  = partial("photoessays/components/talk", locals: { slug: "#{current_page.data.slug}/30", talk: 'Progressive image rendering', name: 'José M. Pérez', twitter: 'jmperezperez' } )
+  .Content_row
+    .Content_main
+      .Article_content
+        :markdown
+          Lorem Ipsum
+
+= partial("photoessays/components/photo_full", locals: {slug: current_page.data.slug, caption: '', 'photo': '30/PB300110'})
+.Content
+  = partial("photoessays/components/talk", locals: { slug: "#{current_page.data.slug}/30", talk: 'The Ideal Styling Language: a gedankenexperiment', name: 'Serena Chen', twitter: 'sereeena' } )
+  .Content_row
+    .Content_main
+      .Article_content
+        :markdown
+          Lorem Ipsum
+
+= partial("photoessays/components/photo_full", locals: {slug: current_page.data.slug, caption: '', 'photo': '30/PB300110'})
+.Content
+  = partial("photoessays/components/talk", locals: { slug: "#{current_page.data.slug}/30", talk: 'Building a style guide for all Australians', name: 'Petra Gulicher', twitter: 'petronbot' } )
+  .Content_row
+    .Content_main
+      .Article_content
+        :markdown
+          Lorem Ipsum

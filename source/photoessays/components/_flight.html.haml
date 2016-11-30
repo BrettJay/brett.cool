@@ -23,6 +23,7 @@
             %dt= seat
             %dd Seat
 
-      .PlaceCard_rating{class: "PlaceCard_rating--#{rating}"}
-        - rating.times do
-          ★
+      - unless rating.empty?
+        .PlaceCard_rating{class: "PlaceCard_rating--#{rating}"}
+          - rating.times do
+            ★
