@@ -1,5 +1,5 @@
 ---
-  title: CSSConf AU
+  title: CSSConf AU 2016
   slug: '2016/cssconfau'
   subtitle: Attending the third annual CSSConf Australia.
   body_classes: page-photoessays
@@ -106,7 +106,9 @@
     .Content_main
       .Article_content
         :markdown
-          Ally kicked off the day by examining how. A lot of the projects Ally encountered were novice tech user going from pen and paper to an app. If they weren’t new to it, they were still quite fresh to it. Probably got their first, second-hand phone from a market. Lck of connectivity in west africa. Broadband is very uncommon, or broadband is quite rare and expensive.
+          Ally kicked off the day by examining how people less tech savvy experience the apps we design and develop. It was a
+
+          A lot of the projects Ally encountered were novice tech user going from pen and paper to an app. If they weren’t new to it, they were still quite fresh to it. Probably got their first, second-hand phone from a market. Lck of connectivity in west africa. Broadband is very uncommon, or broadband is quite rare and expensive.
 
           Touch screens are easier to use than laptops. Most people are introduced to technology via smart phones. Very unintuitive, slow to type. If elements are offdcreen, they’re not discoverable
 
@@ -120,23 +122,15 @@
     .Content_main
       .Article_content
         :markdown
-          As Senior Front-End Engineer at Vox Media, Ally took us through the process of making Accessibility a key consideration of Vox’s development process.
+          As Senior Front-End Engineer at #{link_to 'Vox Media', 'http://www.voxmedia.com', target: '_blank'}, Ally took us through the process of making Accessibility a key part of Vox’s development process.
 
-          As designers and developers, the impact of disability is radically changed on the web because the web remove sbarriers to communication and interaction.
+          As designers and developers, the impact of disability is radically changed on the web because the web remove barriers to communication and interaction that exist in the physical world.
 
-          By designing with disabilities in mind, we create better products for everyone. It's not something you can tell from your analytics, but by designing for disability you’re improving everyone’s experience.
+          A key takeaway from Ally’s talk was that by designing with disabilities in mind, we create better products for everyone. The results may not always quantifiable, but we should remember that these decisions improve the experience for everyone, rather than considering accessibility as some sort of edge-case.
 
+          For accessibility to be a key part of a team’s process, you have to make everyone care about it — not just a few people policing accessibility.
 
-          It’s not that complicated to build accessibility in to your product and nobody will complain.
-
-          Made everyone care about it, no accessibility police. Keeping people accountable, making it part of the QA project, features of a project.
-
-          Checklist builder would be helpful for tother people. Links to resources to.
-
-          - Contrast tools
-          - Don’t indicate important information using colour alone.
-          - Pair values of colour together (not only hues) to increase contrast
-          - Design accessible forms. Clear labels
+          In order to do so, Ally recommended keeping everyone accountable, making it part of the QA acceptance stage, and considering it as a key feature of any work.
 
 = partial("photoessays/components/photo_full", locals: {slug: current_page.data.slug, caption: '', 'photo': '30/PB300101'})
 .Content
@@ -145,15 +139,14 @@
     .Content_main
       .Article_content
         :markdown
-          AMP is a tech spec
+          Michael gave a talk on AMP, a tech spec backed by Google with the goal of
 
-          async everywhere
+          Some of the features of AMP include
 
-          dns preconnect
-
-          static layout engine
-
-          content prioritization
+          - async everywhere
+          - dns preconnect
+          - static layout engine
+          - content prioritization
 
 = partial("photoessays/components/photo_full", locals: {slug: current_page.data.slug, caption: '', 'photo': '30/PB300110'})
 .Content
@@ -217,25 +210,35 @@
 
           Define your own CSS Layout with the Layout API.
 
-= partial("photoessays/components/photo_full", locals: {slug: current_page.data.slug, caption: '', 'photo': '30/PB300110'})
+= partial("photoessays/components/photo_full", locals: {slug: current_page.data.slug, caption: '', 'photo': '30/PB300133'})
 .Content
   = partial("photoessays/components/talk", locals: { slug: "#{current_page.data.slug}/30", talk: 'Progressive image rendering', name: 'José M. Pérez', twitter: 'jmperezperez' } )
   .Content_row
     .Content_main
       .Article_content
         :markdown
-          Lorem Ipsum
+          After a quick coffee break, José took us through some advanced image optimisation techniques and avoiding some common pitfalls.
 
-= partial("photoessays/components/photo_full", locals: {slug: current_page.data.slug, caption: '', 'photo': '30/PB300110'})
+          One of the commonly-used incorrect ways trying to hiding images is using display: none on content images, but the browser will still see the image tag and load the resource.
+
+          Unlike the costs associated with some tecnical choices, there is no downside to optimising your images. The Picure element and srcset is one solution, but the markup and CSS is tightly coupled and keeping markup and CSS in sync is extra effort. Lazy loading is another good approach, but can be difficullt to get right. The IntersectionObserver API is one way to help determine when elements are on the scren and should be loaded, and by displaying blurry, low-file-size placeholders, it can give a better end user experience.
+
+          Only 7% of images on the web are progressive.
+
+= partial("photoessays/components/photo_full", locals: {slug: current_page.data.slug, caption: '', 'photo': '30/PB300137'})
 .Content
   = partial("photoessays/components/talk", locals: { slug: "#{current_page.data.slug}/30", talk: 'The Ideal Styling Language: a gedankenexperiment', name: 'Serena Chen', twitter: 'sereeena' } )
   .Content_row
     .Content_main
       .Article_content
         :markdown
-          Lorem Ipsum
+          Serena took to the stage to deliver an entertaining and thought-provoking thought experiment about what the ideal CSS language would look like for our needs today.
 
-= partial("photoessays/components/photo_full", locals: {slug: current_page.data.slug, caption: '', 'photo': '30/PB300110'})
+          Reusability or separation of concerns. Choose one?
+
+          Mixins in sass.
+
+= partial("photoessays/components/photo_full", locals: {slug: current_page.data.slug, caption: '', 'photo': '30/PB300147'})
 .Content
   = partial("photoessays/components/talk", locals: { slug: "#{current_page.data.slug}/30", talk: 'Building a style guide for all Australians', name: 'Petra Gulicher', twitter: 'petronbot' } )
   .Content_row
