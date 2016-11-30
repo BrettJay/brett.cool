@@ -1,0 +1,29 @@
+.Content_row
+  .Content_main
+    .PlaceCard
+      .PlaceCard_cover{style: "background-image: url('/images/photoessays/#{slug}/#{image}.jpg')"}
+      .PlaceCard_icon
+      .PlaceCard_title= title
+      .PlaceCard_address= airline
+
+      .PlaceCard_attributeGrid
+        .PlaceCard_attributes
+          %dl.Attribute_pair
+            %dt= depart
+            %dd Depart
+          %dl.Attribute_pair
+            %dt= arrive
+            %dd Arrive
+
+        .PlaceCard_attributes
+          %dl.Attribute_pair
+            %dt= gate
+            %dd Gate
+          %dl.Attribute_pair
+            %dt= seat
+            %dd Seat
+
+      - unless rating.empty?
+        .PlaceCard_rating{class: "PlaceCard_rating--#{rating}"}
+          - rating.times do
+            ★
