@@ -1,0 +1,40 @@
+---
+  title: Los Angeles
+  slug: '2013/los-angeles'
+  subtitle: Theme Parks and Fun Times
+  body_classes: page-photoessays
+  meta_description: Theme Parks and Fun Times
+  meta_keywords:
+  trip:
+    transport: bus
+    location: america
+    weather: sun
+    dates:
+      from: 2013-7-25
+      to: 2013-7-29
+  ogp:
+    og:
+      title: San Francisco
+      description: Theme Parks and Fun Times
+      image:
+        '': http://brett.cool/images/photoessays/2013/san-francisco/og.jpg
+        type: image/jpg
+        width: 560
+        height: 300
+    fb:
+      title: San Francisco
+      description: Theme Parks and Fun Times
+      image:
+        '': http://brett.cool/images/photoessays/2013/san-francisco/fb.jpg
+        type: image/jpg
+        width: 600
+        height: 315
+---
+
+= partial("/photoessays/components/banner", locals: {slug: current_page.data.slug, title: current_page.data.title, 'subtitle': current_page.data.subtitle, trip: current_page.data.trip})
+
+.Content#story
+  .Content_row
+    .Content_main
+      .Article_content
+        :markdown
