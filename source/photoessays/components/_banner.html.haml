@@ -4,12 +4,11 @@
     %p= subtitle
   - if trip.present?
     .Banner_TripSummary
-      %dl
+      %dl.TripIcon--withText{class: "TripIcon_transport--#{trip[:arrival]}"}
         %dt= trip[:dates][:from].strftime("%b %-d, %Y")
-        %dd Arrival
-      %dl
+        %dd Arrived via #{trip[:arrival].capitalize}
+      %dl.TripIcon--withText{class: "TripIcon_transport--#{trip[:departure]}"}
         %dt= trip[:dates][:to].strftime("%b %-d, %Y")
-        %dd Departure
-      .TripIcon{class: "TripIcon_transport--#{trip[:transport]}"}
-      .TripIcon{class: "TripIcon_weather--#{trip[:weather]}"}
+        %dd Departed via #{trip[:departure].capitalize}
+      =# .TripIcon{class: "TripIcon_weather--#{trip[:weather]}"}
   = partial "photoessays/components/scroll"

@@ -1,7 +1,7 @@
 .Banner
   +vertical-parent
   position: relative
-  height: calc( 100vh - 110px)
+  height: calc( 100vh - 10px)
   background-position: 50% 50%
   background-size: cover
   background-color: #000
@@ -28,26 +28,23 @@
   justify-content: center
   position: absolute
   padding: 30px
-  background: rgba(0,0,0,0.7)
+  background: rgba(0,0,0,0.9)
   bottom: 0
   left: 0
   right: 0
   width: 100%
   color: #fff
   dl
-    margin: 0 20px
     text-align: left
-  dl + dl
-    border-left: 1px solid rgba(255,255,255,0.6)
-    padding-left: 40px
   dt, dd
     margin: 0
   dt
     +font_headline
-    +fluid-scale(font-size, 375px, 1040px, 19px, 18px)
+    +fluid-scale(font-size, 375px, 1040px, 15px, 18px)
   dd
-    font-family: $font_body
     +fluid-scale(font-size, 375px, 1040px, 12px, 14px)
+    font-family: $font_body
+    opacity: 0.7
 
 .TripIcon
   width: 40px
@@ -73,18 +70,17 @@
 .TripIcon_transport--plane
   background: image-url('photoessays/trips/transport_plane.svg') 50% 50% no-repeat
 
+.TripIcon--withText
+  background-position: 0 50%
+  padding-left: 40px
+  margin: 0 20px
+  background-size: 30px
+
 +respond-to(mobile)
+  .Banner
+    height: calc( 100vh - 36px)
   .Banner_TripSummary
     padding: 20px 5px
-
-    dl
-      margin: 0
-
-    dl + dl
-      margin-left: 10px
-      margin-right: 5px
-      padding-left: 10px
-      border-left: 1px solid rgba(255,255,255,0.2)
 
     .TripIcon
       margin: 0 5px
