@@ -1,0 +1,6 @@
+.Content_row
+  .Content_main
+    = link_to link, class: 'AppCard', target: '_blank' do
+      .AppCard_cover{style: "background-image: url('#{slug}/#{image}.jpg')"}
+      .AppCard_title= title
+      .AppCard_developer= developer
