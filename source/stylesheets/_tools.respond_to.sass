@@ -77,3 +77,23 @@
   @else if $media == x-large-down
     @media only screen and (max-width: 1120px)
       @content
+
+span.u-show--small-up
+  display: none
+  +respond-to(small-up)
+    display: inline
+
+div.u-show--small-up
+  display: none
+  +respond-to(small-up)
+    display: block
+
+span.u-show--mobile
+  display: none
+  +respond-to(mobile)
+    display: inline
+
+div.u-show--mobile
+  display: none
+  +respond-to(mobile)
+    display: block

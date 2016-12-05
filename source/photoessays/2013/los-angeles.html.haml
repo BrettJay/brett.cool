@@ -11,7 +11,7 @@
     arrival: bus
     departure: bus
     dates:
-      from: 2013-7-25
+      from: 2013-7-26
       to: 2013-7-29
   ogp:
     og:
@@ -39,3 +39,101 @@
     .Content_main
       .Article_content
         :markdown
+          Heading east on the Greyhound coach, we soon left San Francisco behind.
+
+  = partial("photoessays/components/photo_grid", locals: {slug: current_page.data.slug, rows: [ { count: 3, caption: '', photos: ['26/IMG_2096','26/IMG_2100','26/IMG_3723'] } ] } )
+
+  .Content_row
+    .Content_main
+      .Article_content
+        :markdown
+          Before we knew it, we were driving through wide American country landscape, with rolling hills, and familiar-yet-different landscapes...
+
+  = partial("photoessays/components/photo_two_column", locals: {slug: current_page.data.slug, 'left': ['26/IMG_0474','26/IMG_3728'], 'right': ['26/IMG_0476','26/IMG_2113','26/IMG_0478'] })
+
+  .Content_row
+    .Content_main
+      .Article_content
+        :markdown
+          Eventually, we reached the greyhound coach in down town Los Angeles. It was mid afternoon at this point, and we needed to head north to reach our hostel — Banana Bungalow — in Hollywood.
+
+          Encumbered with all our luggage, we decided to take two Taxis. As we came to appreciate though Los Angeles does in fact have severe traffic issues. After making slow progress, our Taxi driver suggested he drop us at downtown Los Angeles train station and to continue from there.
+
+          After spending a little time at the train station figuring out where to go, we caught an underground train to Hollywood station.
+
+          We rode an escalator up and got our first glimpse of&nbsp;Hollywood...
+
+  = partial("photoessays/components/photo_right", locals: {slug: current_page.data.slug, caption: '', 'photo': '26/IMG_2129'})
+
+  .Content_row
+    .Content_main
+      .Article_content
+        :markdown
+          We headed East for Banana Bungalow Hostel...
+
+= partial("photoessays/components/photo_full", locals: {slug: current_page.data.slug, caption: '', 'photo': '26/IMG_2133'})
+
+.Content
+  = partial("photoessays/components/place_accomodation", locals: {slug: current_page.data.slug, image: '26/place_bb', 'title': 'Banana Bungalow',  'address': '5920 Hollywood Blvd, Hollywood', 'checkin': '26 July', 'checkout': '29 July', rating: 3 })
+
+  .Content_row
+    .Content_main
+      .Article_content
+        :markdown
+          We reached the other party, who had managed to reach the Hostel before us in their Taxi. It turned out that Banana Bungalow had bungled our booking, and had us in two separate rooms, with one group sharing with randos.
+
+          Mild frustration aside, we decided to set out and explore Hollywood, tracing our footsteps back down Hollywood Boulevard in search of dinner and sightseeing.
+
+  = partial("photoessays/components/photo_two_column", locals: {slug: current_page.data.slug, 'left': ['26/IMG_2138','26/IMG_2144'], 'right': ['26/IMG_2134','26/IMG_3738',] })
+
+  .Content_row
+    .Content_main
+      .Article_content
+        :markdown
+          We found a place nearby to grab some dinner.
+
+  = partial("photoessays/components/place_restaurant", locals: {slug: current_page.data.slug, image: '26/place_chickendijon', 'title': 'Chicken Dijon', 'address': '6282 Hollywood Blvd, Hollywood, CA 90028', 'price': '$$', 'menu': 'Rotisserie & Grill', rating: 3 })
+
+  .Content_row
+    .Content_main
+      .Article_content
+        :markdown
+          After dinner, we wandered around Hollywood Boulevard and the surrounds, taking in the sights...
+
+= partial("photoessays/components/photo_full", locals: {slug: current_page.data.slug, caption: '', 'photo': '26/IMG_2155'})
+
+.Content
+  = partial("photoessays/components/photo_two_column", locals: {slug: current_page.data.slug, 'left': ['26/IMG_2151'], 'right': ['26/IMG_2157','26/IMG_2161',] })
+
+  .Content_row
+    .Content_main
+      .Article_content
+        :markdown
+          We decided to stock up some supplies of snacks and some beer. So naturally, we hit up a nearby CVS Drive Thru Pharmacy + Liquor. Oh America.
+
+  = partial("photoessays/components/photo_right", locals: {slug: current_page.data.slug, caption: 'I mean, what else do you&nbsp;need?', 'photo': '26/IMG_2169'})
+
+  = partial("photoessays/components/photo_two_column", locals: {slug: current_page.data.slug, 'left': ['26/IMG_3760'], 'right': ['26/IMG_2168'] })
+
+  .Content_row
+    .Content_main
+      .Article_content
+        :markdown
+          Supplies in tow, we headed back to the Hostel.
+
+  = partial("photoessays/components/photo_grid", locals: {slug: current_page.data.slug, rows: [ { count: 1, caption: '', photos: ['26/IMG_0483'] }, { count: 3, caption: 'Yes, PBR is about as awful as you’d expect.', photos: ['26/IMG_0493','26/IMG_2181','26/IMG_2184'] } ] } )
+
+  .Content_row
+    .Content_main
+      .Article_content
+        :markdown
+          Many beers and real-talks later, we turned in.
+
+= partial("photoessays/components/photo_full", locals: {slug: current_page.data.slug, caption: '', 'photo': '26/IMG_2191'})
+
+.Content
+  .Content_row
+    .Content_main
+      .Article_content
+        :markdown
+          The next morning, we awoke and headed

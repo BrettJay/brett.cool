@@ -36,13 +36,14 @@
   color: #fff
   dl
     text-align: left
+    margin: 0 10px
   dt, dd
     margin: 0
   dt
     +font_headline
-    +fluid-scale(font-size, 375px, 1040px, 15px, 18px)
+    +fluid-scale(font-size, 375px, 1040px, 13px, 16px)
   dd
-    +fluid-scale(font-size, 375px, 1040px, 12px, 14px)
+    +fluid-scale(font-size, 375px, 1040px, 11px, 14px)
     font-family: $font_body
     opacity: 0.7
 
@@ -73,14 +74,18 @@
 .TripIcon--withText
   background-position: 0 50%
   padding-left: 40px
-  margin: 0 20px
   background-size: 30px
 
 +respond-to(mobile)
   .Banner
     height: calc( 100vh - 36px)
-  .Banner_TripSummary
-    padding: 20px 5px
 
-    .TripIcon
+  .Banner_TripSummary
+    padding: 20px 10px
+    dl
       margin: 0 5px
+
+  .TripIcon--withText
+    background-position: 0 50%
+    padding-left: 30px
+    background-size: 20px
