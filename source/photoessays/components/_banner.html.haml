@@ -1,11 +1,10 @@
-- @arrival_date = trip[:dates][:from]
-- @departure_date = trip[:dates][:to]
-
 .Banner{style: "background-image: url('/images/photoessays/#{slug}/banner.jpg')"}
   .Banner_caption
     %h1= title
     %p= subtitle
   - if trip.present?
+    - @arrival_date = trip[:dates][:from]
+    - @departure_date = trip[:dates][:to]
     .Banner_TripSummary
       %dl.TripIcon--withText{class: "TripIcon_transport--#{trip[:arrival]}"}
         %dt
