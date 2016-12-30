@@ -1,15 +1,32 @@
+- @arrival_date = trip[:dates][:from]
+- @departure_date = trip[:dates][:to]
+
 .Banner{style: "background-image: url('/images/photoessays/#{slug}/banner.jpg')"}
   .Banner_caption
     %h1= title
     %p= subtitle
   - if trip.present?
     .Banner_TripSummary
+      %dl.TripIcon--withText{class: "TripIcon_transport--#{trip[:arrival]}"}
+        %dt
+          %span.u-show--small-up= @arrival_date.strftime("%b %-d, %Y")
+          %span.u-show--mobile= @arrival_date.strftime("%b %-d")
+        %dd Arrived
+      %dl.TripIcon--withText{class: "TripIcon_transport--#{trip[:departure]}"}
+        %dt
+          %span.u-show--small-up= @departure_date.strftime("%b %-d, %Y")
+          %span.u-show--mobile= @departure_date.strftime("%b %-d")
+        %dd Departed
       %dl
-        %dt= trip[:dates][:from].strftime("%b %-d, %Y")
-        %dd Arrival
-      %dl
-        %dt= trip[:dates][:to].strftime("%b %-d, %Y")
-        %dd Departure
-      .TripIcon{class: "TripIcon_transport--#{trip[:transport]}"}
-      .TripIcon{class: "TripIcon_weather--#{trip[:weather]}"}
+        %dt= @departure_date.mjd - @arrival_date.mjd
+        %dd Days
+      - if trip[:steps].present?
+        %dl
+          %dt= number_with_delimiter(trip[:steps], :delimiter => ',')
+          %dd Steps
+      - if trip[:photos].present?
+        %dl
+          %dt= number_with_delimiter(trip[:photos], :delimiter => ',')
+          %dd Photos
+      =# .TripIcon{class: "TripIcon_weather--#{trip[:weather]}"}
   = partial "photoessays/components/scroll"

@@ -103,8 +103,8 @@
     padding: $base-spacing-unit ($base-spacing-unit /2 )($base-spacing-unit * 1.5)
 
 .PhotoEssayCard_title
-  text-transform: uppercase
   +font_headline
+  text-transform: uppercase
   letter-spacing: 0.1em
   margin: 0 0 10px
   +fluid-scale(font-size, 375px, 1040px, 16px, 25px)
@@ -114,7 +114,10 @@
 
 .PhotoEssayCard_cardImage
   width: 100%
-  vertical-align: middle
+  height: 0
+  padding-top: 133.33%
+  background-size: cover
+  background-color: #000
 
 .PhotoEssayCard--draft:hover,
 .PhotoEssayCard--draft:active

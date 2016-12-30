@@ -61,14 +61,13 @@
 
     - title: Las Vegas
       url: '2013/las-vegas'
-      date: 2013-07-28
+      date: 2013-07-29
       draft: true
 
     - title: Los Angeles
       url: '2013/los-angeles'
-      date: 2013-07-25
-      draft: true
+      date: 2013-07-26
 
     - title: San Francisco
       url: '2013/san-francisco'
-      date: 2013-07-22
+      date: 2013-07-23

@@ -5,7 +5,10 @@
       .PlaceCard_icon
       .PlaceCard_title= title
       .PlaceCard_address= address
-
+      .PlaceCard_attributes
+        %dl.Attribute_pair
+          %dt= place
+          %dd Location
       - if rating.present?
         .PlaceCard_rating{class: "PlaceCard_rating--#{rating}"}
           - rating.times do

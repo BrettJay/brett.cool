@@ -1,0 +1,356 @@
+---
+  title: Los Angeles
+  slug: '2013/los-angeles'
+  subtitle: Theme Parks and Fun Times
+  body_classes: page-photoessays
+  meta_description: Theme Parks and Fun Times
+  meta_keywords:
+  trip:
+    location: america
+    weather: sun
+    arrival: bus
+    departure: bus
+    dates:
+      from: 2013-7-26
+      to: 2013-7-29
+  ogp:
+    og:
+      title: San Francisco
+      description: Theme Parks and Fun Times
+      image:
+        '': http://brett.cool/images/photoessays/2013/san-francisco/og.jpg
+        type: image/jpg
+        width: 560
+        height: 300
+    fb:
+      title: San Francisco
+      description: Theme Parks and Fun Times
+      image:
+        '': http://brett.cool/images/photoessays/2013/san-francisco/fb.jpg
+        type: image/jpg
+        width: 600
+        height: 315
+---
+
+= partial("/photoessays/components/banner", locals: {slug: current_page.data.slug, title: current_page.data.title, 'subtitle': current_page.data.subtitle, trip: current_page.data.trip})
+
+.Content#story
+  .Content_row
+    .Content_main
+      .Article_content
+        :markdown
+          Heading east on the Greyhound coach, we soon left San Francisco behind.
+
+  = partial("photoessays/components/photo_grid", locals: {slug: current_page.data.slug, rows: [ { count: 3, caption: '', photos: ['26/IMG_2096','26/IMG_2100','26/IMG_3723'] } ] } )
+
+  .Content_row
+    .Content_main
+      .Article_content
+        :markdown
+          Before we knew it, we were driving through wide American country landscape, with rolling hills, and familiar-yet-different landscapes...
+
+  = partial("photoessays/components/photo_two_column", locals: {slug: current_page.data.slug, 'left': ['26/IMG_0474','26/IMG_3728'], 'right': ['26/IMG_0476','26/IMG_2113','26/IMG_0478'] })
+
+  .Content_row
+    .Content_main
+      .Article_content
+        :markdown
+          Eventually, we reached the greyhound coach in down town Los Angeles. It was mid afternoon at this point, and we needed to head north to reach our hostel — Banana Bungalow — in Hollywood.
+
+          Encumbered with all our luggage, we decided to take two Taxis. As we came to appreciate though Los Angeles does in fact have severe traffic issues, our our cabbie was having his own issues, his meter wasn’t working. After making slow progress, our Taxi driver suggested he drop us at Union station and take the red metro line to Hollywood/Vine. We agreed, and set off.
+
+          After spending a little time at the train station figuring out where to go, we caught an underground train to Hollywood station.
+
+          We rode an escalator up and got our first glimpse of&nbsp;Hollywood...
+
+  = partial("photoessays/components/photo_right", locals: {slug: current_page.data.slug, caption: '', 'photo': '26/IMG_2129'})
+
+  .Content_row
+    .Content_main
+      .Article_content
+        :markdown
+          We headed East for Banana Bungalow Hostel...
+
+= partial("photoessays/components/photo_full", locals: {slug: current_page.data.slug, caption: '', 'photo': '26/IMG_2133'})
+
+.Content
+  = partial("photoessays/components/place_accomodation", locals: {slug: current_page.data.slug, image: '26/place_bb', 'title': 'Banana Bungalow',  'address': '5920 Hollywood Blvd, Hollywood', 'checkin': '26 July', 'checkout': '29 July', rating: 3 })
+
+  .Content_row
+    .Content_main
+      .Article_content
+        :markdown
+          We reached the other party, who had managed to reach the Hostel before us in their Taxi. It turned out that Banana Bungalow had bungled our booking, and had us in two separate rooms, with one group sharing with randos.
+
+          Mild frustration aside, we decided to set out and explore Hollywood, tracing our footsteps back down Hollywood Boulevard in search of dinner and sightseeing.
+
+  = partial("photoessays/components/photo_two_column", locals: {slug: current_page.data.slug, 'left': ['26/IMG_2138','26/IMG_2144'], 'right': ['26/IMG_2134','26/IMG_3738',] })
+
+  .Content_row
+    .Content_main
+      .Article_content
+        :markdown
+          We found a place nearby to grab some dinner.
+
+  = partial("photoessays/components/place_restaurant", locals: {slug: current_page.data.slug, image: '26/place_chickendijon', 'title': 'Chicken Dijon', 'address': '6282 Hollywood Blvd, Hollywood, CA 90028', 'price': '$$', 'menu': 'Rotisserie & Grill', rating: 3 })
+
+  .Content_row
+    .Content_main
+      .Article_content
+        :markdown
+          After dinner, we wandered around Hollywood Boulevard and the surrounds, taking in the sights...
+
+= partial("photoessays/components/photo_full", locals: {slug: current_page.data.slug, caption: '', 'photo': '26/IMG_2155'})
+
+.Content
+  = partial("photoessays/components/photo_two_column", locals: {slug: current_page.data.slug, 'left': ['26/IMG_2151'], 'right': ['26/IMG_2157','26/IMG_2161',] })
+
+  .Content_row
+    .Content_main
+      .Article_content
+        :markdown
+          We decided to stock up some supplies of snacks and some beer. So naturally, we hit up a nearby CVS Drive Thru Pharmacy + Liquor. Oh America.
+
+  = partial("photoessays/components/photo_right", locals: {slug: current_page.data.slug, caption: 'I mean, what else do you&nbsp;need?', 'photo': '26/IMG_2169'})
+
+  = partial("photoessays/components/photo_two_column", locals: {slug: current_page.data.slug, 'left': ['26/IMG_3760'], 'right': ['26/IMG_2168'] })
+
+  .Content_row
+    .Content_main
+      .Article_content
+        :markdown
+          Supplies in tow, we headed back to the Hostel.
+
+  = partial("photoessays/components/photo_grid", locals: {slug: current_page.data.slug, rows: [ { count: 1, caption: '', photos: ['26/IMG_0483'] }, { count: 3, caption: 'Yes, PBR is about as awful as you’d expect.', photos: ['26/IMG_0493','26/IMG_2181','26/IMG_2184'] } ] } )
+
+  .Content_row
+    .Content_main
+      .Article_content
+        :markdown
+          Many beers and real-talks later, we turned in.
+
+= partial("photoessays/components/photo_full", locals: {slug: current_page.data.slug, caption: '', 'photo': '26/IMG_2191'})
+
+.Content
+  .Content_row
+    .Content_main
+      .Article_content
+        :markdown
+          We awoke in our dark room to the sound of a few phone alarms prompting us to prepare for our journey to Knotts Berry Farm. We manoevered around the small room — a couple of us had opted to sleep on the floor in the private room than a random shared dorm.
+
+          Richard opted to take the day to explore Hollywood while the rest of us headed for Hollywood/Vine station, to go to Knotts Berry Farm.
+
+  = partial("photoessays/components/photo_right", locals: {slug: current_page.data.slug, caption: '', 'photo': '27/station'})
+
+  .Content_row
+    .Content_main
+      .Article_content
+        :markdown
+          I helped those from the other taxi get their Metro Tap cards set up. After an uneventful ride we emerged at Union station, only to discover with the help of Google Maps that we had taken the wrong station.
+
+          We got back on a train and alighted at 7th and Metro, and proceeded up Metro Street. This was one of our first glimpses of downtown Los Angeles. We reached Flower street, where we caught the 460 to Disneyland Express.
+
+          One thing that was immediately apparent was how less reserved people were in public. People were much more conversational.
+
+          90 minutes later, we reached Beach Boulevard. We stepped off the bus, and headed west to the main entrance.
+
+  = partial("photoessays/components/place_of_interest", locals: {slug: current_page.data.slug, image: '27/knottsberry', title: 'Knottsberry Farm', address: '6282 Hollywood Blvd, Hollywood, CA 90028', place: 'Amusement Park', rating: 4 })
+
+  = partial("photoessays/components/photo_right", locals: {slug: current_page.data.slug, caption: '', 'photo': '27/knottsberry'})
+
+  .Content_row
+    .Content_main
+      .Article_content
+        :markdown
+          We walked through with our printed tickets and began to explore. Despite being a Friday it was rather crowded, I wouldn’t want to be here on a weekend.
+
+          We found some lockers, put away our valuables (hence the lack of much photography from the day), grabbed some food, and took some rides.
+
+          ---
+
+          Some time later in the afternoon, after many rides, and many more queues, we opted to explore the area.
+
+          It was here I made a terrible mistake. We decided to get ice cream. I saw for $1 more than an ice cream cone, I could get an ice cream cookiewich. _“Why not?”_ I reasoned.
+
+          Why not, indeed.
+
+  = partial("photoessays/components/photo_two_column", locals: {slug: current_page.data.slug, 'left': ['27/IMG_3766'], 'right': ['27/IMG_3767'] })
+
+  .Content_row
+    .Content_main
+      .Article_content
+        :markdown
+          I knew I made a mistake as soon as I saw the size of the cookie, and saw the server put it under the ice cream dispenser and have to physically rotate and move the cookie in great arcs to cover the dinner-plate sized cookie.
+
+          American serving sizes, god bless.
+
+= partial("photoessays/components/photo_full", locals: {slug: current_page.data.slug, caption: '', 'photo': '27/evening'})
+.Content
+  .Content_row
+    .Content_main
+      .Article_content
+        :markdown
+          After a few more rides — including one memorable diner-themed car ride which catapulted people at high speed — it was time to head off.
+
+          We headed out of the park and sat across from an IHOP, waiting for our next bus back to 7th and Metro.
+
+  = partial("photoessays/components/photo_grid", locals: {slug: current_page.data.slug, rows: [ { count: 3, caption: '', photos: ['27/waiting','27/ihop','27/IMG_3779'] } ] } )
+
+  .Content_row
+    .Content_main
+      .Article_content
+        :markdown
+          The 460 was running very late. Ahead we saw a bus at another stop. I boarded and asked if it went to 7th and Metro station; I didn’t quite catch the reply, so I decided to board
+
+          That was a mistake. It detoured on to another street and pulled in at a nearby terminal. We alighted, and were soon some of the only people left there. A man nearby asked what we were doing, saying there were no more services running.
+
+          We explained we’d taken the wrong bus, and where we were trying to go.
+
+          “Well shit you were right there, you just needed to take that orange 460 back to 7th and Metro.”
+
+          He told us that our best option was to catch a 25 or 29 back onto the main Beach boulevard strip, and to catch a 460 from there.
+
+          “You go back there, and wait for a 25 to take you back to Beach boulevard.. And watch out for the weirdos that come out at night...”
+
+          We waited by the abandoned bus that had dropped us off for the driver to return. A few minutes later he approached. We explained how we needed to get back to 7th and Metro station. The driver consulted his time sheet and recommended walking four blocks to Beach boulevard to catch the 460. We thanked him and started to set off.
+
+          Moments later he drove up alongside us and pulled over. “I’m just kidding, I'll give you a lift... part of the way there.” And changed his bus number to 25.
+
+          We boarded and thanked the driver. A few minutes later, he dropped off a few blocks from Beach boulevard, with instructions to find our stop.
+
+          To our surprise, as we stepped off, the other man we had met at the terminal was only a short distance ahead, and turned to see us.
+
+          “What's he doing dropping you there?” Doing us a favour getting us closer to the 460 stop, we said.
+
+          “By dropping you in the middle of nowhere? Jesus! What an asshole! Alright, looks like I'll see you there myself...”
+
+          And despite the completely bizarre set of circumstances, we followed him as he led us towards Beach boulevard...
+
+  = partial("photoessays/components/photo_right", locals: {slug: current_page.data.slug, caption: 'One bizarre set&nbsp;of cirumstances later...', 'photo': '27/IMG_3781'})
+
+  .Content_row
+    .Content_main
+      .Article_content
+        :markdown
+          We finally caught the correct bus, and one 90 minute journey later, we were back in downtown Los Angeles. I distincly remember each of us fading on the bus ride back — how we made our way through a foreign city on little energy is a bit of a blur to me.
+
+          Some time much later, we met Richard back at Banana Bungalow and turned in for the night.
+
+  = partial("photoessays/components/photo_full", locals: {slug: current_page.data.slug, caption: '', 'photo': '28/IMG_2212'})
+
+  .Content_row
+    .Content_main
+      .Article_content
+        :markdown
+          The next morning, we set off for Universal Studios.
+
+  = partial("photoessays/components/place_of_interest", locals: {slug: current_page.data.slug, image: '28/IMG_0717', title: 'Universal Studios', address: '100 Universal City Plaza, Universal City, CA 91608', place: 'Amusement Park', rating: 5 })
+
+  .Content_row
+    .Content_main
+      .Article_content
+        :markdown
+          After taking a shuttle bus in, we arrived at the park. Everything there seems to vy for your attention and a photograph.
+
+  = partial("photoessays/components/photo_two_column", locals: {slug: current_page.data.slug, 'left': ['28/IMG_0705','28/IMG_0723','28/IMG_0733','28/IMG_0736'], 'right': ['28/IMG_0710','28/IMG_2244','28/IMG_0717','28/IMG_0726'] })
+
+= partial("photoessays/components/photo_full", locals: {slug: current_page.data.slug, caption: '', 'photo': '28/IMG_2252'})
+
+.Content
+  .Content_row
+    .Content_main
+      .Article_content
+        :markdown
+          After getting our bearings, we headed for the Universal Studios tour ride first.
+
+  = partial("photoessays/components/photo_grid", locals: {slug: current_page.data.slug, rows: [ { count: 2, caption: '', photos: ['28/IMG_2271','28/IMG_2273'] }, { count: 1, caption: '', photos: ['28/IMG_2278'] }, { count: 2, caption: '', photos: ['28/IMG_2285','28/IMG_2284'] }, ] } )
+
+  .Content_row
+    .Content_main
+      .Article_content
+        :markdown
+          The Studio Tour was an excellent look behind the scenes of filmmaking, something many of us are rather interested in ourselves.
+
+          Seeing practical, physical locations built by artists reinforced the value of physical locations and effects compared with CGI.
+
+  = partial("photoessays/components/photo_two_column", locals: {slug: current_page.data.slug, 'left': ['28/IMG_2314','28/IMG_2340'], 'right': ['28/IMG_2338','28/IMG_2343'] })
+
+  .Content_row
+    .Content_main
+      .Article_content
+        :markdown
+          After lunch, we began queing for the Jurassic Park ride. Richard opted to skip the ride and get a group photo of us at the end of the ride.
+
+  = partial("photoessays/components/photo_full", locals: {slug: current_page.data.slug, caption: '', 'photo': '28/IMG_0891'})
+
+  .Content_row
+    .Content_main
+      .Article_content
+        :markdown
+          we wandered around the park as we dried off, and headed towards the Waterworld show, with plenty of aformentioned water, and a lot of pyrotechnics.
+
+  = partial("photoessays/components/photo_grid", locals: {slug: current_page.data.slug, rows: [ { count: 2, caption: '', photos: ['28/IMG_0927','28/IMG_0937'] }, { count: 1, caption: '', photos: ['28/IMG_0958'] }, { count: 2, caption: '', photos: ['28/IMG_0979','28/IMG_0987'] }, ] } )
+
+  .Content_row
+    .Content_main
+      .Article_content
+        :markdown
+          we wandered around the park as we dried off, and headed towards the Waterworld show, with plenty of aformentioned water, and a lot of pyrotechnics.
+
+          Once it was over, we wandered around the park some more, stopped off for a pint, and took some photos at a lookout spot.
+
+  = partial("photoessays/components/photo_two_column", locals: {slug: current_page.data.slug, 'left': ['28/IMG_1078','28/IMG_1111','28/IMG_2389','28/IMG_1119'], 'right': ['28/IMG_1090','28/IMG_1128','28/IMG_1106','28/IMG_1122'] })
+
+  .Content_row
+    .Content_main
+      .Article_content
+        :markdown
+          Before we knew it, it was time to head off.
+
+  = partial("photoessays/components/photo_right", locals: {slug: current_page.data.slug, caption: 'Waiting for a shuttle out of the park...', 'photo': '28/IMG_2404'})
+
+  .Content_row
+    .Content_main
+      .Article_content
+        :markdown
+          After a moment of downtime at our Hostel, we headed out in search of dinner.
+
+          Eventually, we ended up at La Velvet Margarita Cantina, a rather well-known spot with Mexican-themed cocktails and food.
+
+  = partial("photoessays/components/place_restaurant", locals: {slug: current_page.data.slug, image: '28/place_velvet', title: 'La Velvet Margarita Cantina', address: '1612 N Cahuenga Blvd, Los Angeles, CA 90028', price: '$$', menu: 'Mexican', rating: 4 })
+
+  .Content_row
+    .Content_main
+      .Article_content
+        :markdown
+          The drinks were strong and boozy, and the food was pretty good from my rather hazy memory...
+
+  = partial("photoessays/components/photo_grid", locals: {slug: current_page.data.slug, rows: [ { count: 2, caption: 'Shoutouts to potato-quality iPhone 5 low-light performance.', photos: ['28/IMG_2422','28/IMG_2420'] } ] } )
+
+  .Content_row
+    .Content_main
+      .Article_content
+        :markdown
+          After dinner and a few too many drinks, we traipsed back to Banana Bungalow. It was already our last night in LA.
+
+  = partial("photoessays/components/photo_right", locals: {slug: current_page.data.slug, caption: "This photo is as blurry as my recollection of the&nbsp;night.", 'photo': '28/IMG_2431'})
+
+  .Content_row
+    .Content_main
+      .Article_content
+        :markdown
+          ---
+
+          The next morning, we departed Banana Bungalow and headed west for Hollywood/Vine station.
+
+  = partial("photoessays/components/photo_grid", locals: {slug: current_page.data.slug, rows: [ { count: 2, caption: '', photos: ['29/IMG_2440','29/IMG_2445'] } ] } )
+
+  .Content_row
+    .Content_main
+      .Article_content
+        :markdown
+          We boarded a train, and set off for our Greyhound coach to Las Vegas.
+
+  .PhotoRow.Component
+    .PhotoCaption.PhotoCaption_left To be continued...
+    .Photo_right= image_tag "photoessays/2013/los-angeles/29/departing_hq.gif"
