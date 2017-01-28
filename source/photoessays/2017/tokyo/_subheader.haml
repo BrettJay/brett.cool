@@ -1,0 +1,27 @@
+.PhotoEssaySubHeader
+  .Content
+    .Content_row
+      .SubHeader_Main
+        .LinkBreadCrumbs
+          #{link_to 'Tokyo', '/photoessays/2017/tokyo', class: 'BreadCrumb_Header'}
+          .Menu_Button
+            - data.tokyo.dates.each do | date |
+              - if date.slug === current_page.data.collection.current
+                <span class="DayDate">#{date.date.strftime("%b %-d")}</span> #{date.title}
+      .DayMenu
+        - data.tokyo.dates.each do | date |
+          - if date.slug === current_page.data.collection.current
+            .DayItem.DayItem--Current
+              <span class="DayDate">#{date.date.strftime("%b %-d")}</span> #{date.title} <span class="DayDescription">#{date.subtitle}</span>
+          - else
+            = link_to "/photoessays/2017/tokyo/#{date.slug}", class: 'DayItem' do
+              <span class="DayDate">#{date.date.strftime("%b %-d")}</span> #{date.title} <span class="DayDescription">#{date.subtitle}</span>
+
+<script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
+
+:javascript
+  $(document).ready(function () {
+    $('.Menu_Button').on('click', function() {
+      $('.PhotoEssaySubHeader').toggleClass('PhotoEssaySubHeader--MenuOpen')
+    });
+  });

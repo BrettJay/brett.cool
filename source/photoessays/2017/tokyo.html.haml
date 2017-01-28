@@ -37,7 +37,7 @@
 = partial("photoessays/components/banner", locals: {slug: current_page.data.slug, title: current_page.data.title, subtitle: current_page.data.subtitle, trip: current_page.data.trip})
 
 .Content_photoessays.Content_photoessays--full
-  - data.photoessays.2017.tokyo.dates.each do | date |
+  - data.tokyo.dates.each do | date |
     .PhotoEssayItem
       = link_to "/photoessays/2017/tokyo/#{date.slug}", class: "PhotoEssayCard" do
         .PhotoEssayCard_caption

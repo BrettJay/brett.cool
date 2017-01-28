@@ -4,6 +4,10 @@
   subtitle: A city with unparalleled scale
   body_classes: page-photoessays
   meta_description: A city with unparalleled scale
+  collection:
+    current: jan-08
+    next: jan-09
+    prev: jan-07
   meta_keywords:
   trip:
     location: japan
@@ -33,6 +37,8 @@
         width: 600
         height: 315
 ---
+
+= partial("photoessays/2017/tokyo/subheader", locals: {collection: current_page.data.collection})
 
 = partial("photoessays/components/banner", locals: {slug: current_page.data.slug, title: current_page.data.title, subtitle: current_page.data.subtitle, trip: current_page.data.trip})
 

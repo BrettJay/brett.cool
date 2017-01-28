@@ -4,6 +4,9 @@
   subtitle: Making our way through the crowds
   body_classes: page-photoessays
   meta_description: Making our way through the crowds
+  collection:
+    current: jan-07
+    next: jan-08
   meta_keywords:
   ogp:
     og:
@@ -24,17 +27,7 @@
         height: 315
 ---
 
-.PhotoEssaySubHeader
-  .Content
-    .LinkBreadCrumbs
-      ‹ #{link_to 'Tokyo', '/photoessays/2017/tokyo'}
-      .Menu
-        .Button Arriving in Shibuya
-
-    .DayMenu
-      - data.photoessays.2017.tokyo.dates.each do | date |
-        .DayItem
-          <span> #{date.date.strftime("%B %-d")} </span> #{date.title}
+= partial("photoessays/2017/tokyo/subheader", locals: {collection: current_page.data.collection})
 
 = partial("photoessays/components/banner", locals: {slug: current_page.data.slug, title: current_page.data.title, subtitle: current_page.data.subtitle, trip: ''})
 
