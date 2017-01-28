@@ -1,5 +1,5 @@
 ---
-  title: Tokyo 2017
+  title: Tokyo
   slug: '2017/tokyo'
   subtitle: A city with unparalleled scale
   body_classes: page-photoessays
@@ -9,7 +9,7 @@
     location: japan
     weather: winter
     arrival: plane
-    departure: plane
+    departure: train
     steps: 45631
     photos: 166
     dates:
@@ -36,46 +36,11 @@
 
 = partial("photoessays/components/banner", locals: {slug: current_page.data.slug, title: current_page.data.title, subtitle: current_page.data.subtitle, trip: current_page.data.trip})
 
-.Content#story
-  .Content_row
-    .Content_main
-      .Article_content
-        :markdown
-          We arrived after an early morning flight into Tokyo.
-
-  = partial("photoessays/components/photo_two_column", locals: {slug: current_page.data.slug, 'left': ['07/P1070052'], 'right': ['07/P1070063'] })
-
-  .Content_row
-    .Content_main
-      .Article_content
-        :markdown
-          After security and waiting to pick up a WiFi Hotspot from the Post Office, we headed for JR East to organise our Rail Passes and get into Shibuya.
-
-  = partial("photoessays/components/photo_two_column", locals: {slug: current_page.data.slug, 'left': ['07/P1070064'], 'right': ['07/P1070067'] })
-
-  .Content_row
-    .Content_main
-      .Article_content
-        :markdown
-          We caught a 9:15 JR Express to Shibuya, and got our first glimpse of Japan proper.
-
-  = partial("photoessays/components/photo_right", locals: {slug: current_page.data.slug, caption: '', 'photo': '07/P1070090'})
-
-  .Content_row
-    .Content_main
-      .Article_content
-        :markdown
-          I’ve heard a lot about trains in Japan but boy were they ever still very impressive. We were hurtling along in smooth comfort, and the sheer size of Tokyo.
-
-          Of the 45 minute journey, the time between the preceding Chiba stop and Tokyo was at least 25 minutes, and then another 15 minutes to get to Shibuya.
-
-  = partial("photoessays/components/photo_two_column", locals: {slug: current_page.data.slug, 'left': ['07/P1070108'], 'right': ['07/P1070131'] })
-  
-  .Content_row
-    .Content_main
-      .Article_content
-        :markdown
-          We exited the station and weaved through the labyrinthian-like walkways to emerge at the  Shibuya crossing.
-
-  = partial("photoessays/components/photo_hero", locals: {slug: current_page.data.slug, caption: '', 'photo': '07/P1070152'})
-  
+.Content_photoessays.Content_photoessays--full
+  - data.photoessays.2017.tokyo.dates.each do | date |
+    .PhotoEssayItem
+      = link_to "/photoessays/2017/tokyo/#{date.slug}", class: "PhotoEssayCard" do
+        .PhotoEssayCard_caption
+          .PhotoEssayCard_title= date.title
+          .PhotoEssayCard_subtitle= date.subtitle
+        .PhotoEssayCard_cardImage{style: "background-image: url('/images/photoessays/#{current_page.data.slug}/#{date.slug}/banner.jpg')"}
