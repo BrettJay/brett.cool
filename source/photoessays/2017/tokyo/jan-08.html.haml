@@ -1,36 +1,26 @@
 ---
-  title: Tokyo 2017
+  title: Meiji Shrine
   slug: '2017/tokyo/jan-08'
-  subtitle: A city with unparalleled scale
+  subtitle: Harajuku, specialty coffee and rabbit cafés
   body_classes: page-photoessays
-  meta_description: A city with unparalleled scale
+  meta_description: Harajuku, specialty coffee and rabbit cafés
   collection:
     current: jan-08
     next: jan-09
     prev: jan-07
   meta_keywords:
-  trip:
-    location: japan
-    weather: winter
-    arrival: plane
-    departure: plane
-    steps: 45631
-    photos: 166
-    dates:
-      from: 2017-01-07
-      to: 2017-01-15
   ogp:
     og:
-      title: Tokyo 2017
-      description: A city with unparalleled scale
+      title: Meiji Shrine
+      description: Harajuku, specialty coffee and rabbit cafés
       image:
         '': http://brett.cool/images/photoessays/2016/cssconfau/og.jpg
         type: image/jpg
         width: 560
         height: 300
     fb:
-      title: Tokyo 2017
-      description: A city with unparalleled scale
+      title: Meiji Shrine
+      description: Harajuku, specialty coffee and rabbit cafés
       image:
         '': http://brett.cool/images/photoessays/2016/cssconfau/fb.jpg
         type: image/jpg
@@ -47,4 +37,63 @@
     .Content_main
       .Article_content
         :markdown
-          We arrived after an early morning flight into Narita.
+          Next morning, we awoke to some curious kids shows on Japanese TV.
+
+          We set off, and headed north. Along the way, we took a detour via NHK studios so I could meet Domo-kun.
+
+  = partial("photoessays/components/photo_two_column", locals: {slug: current_page.data.slug, 'left': ['P1080474'], 'right': ['P1080477'] })
+
+  .Content_row
+    .Content_main
+      .Article_content
+        :markdown
+          A short walk later, we arrived at Meiji shrine, next to Harajuku station.
+
+  = partial("photoessays/components/photo_two_column", locals: {slug: current_page.data.slug, 'left': ['P1080495','P1080506','P1080517'], 'right': ['P1080498','P1080511','P1080535'] })
+
+  .Content_row
+    .Content_main
+      .Article_content
+        :markdown
+          We soon reached the main shrine.
+
+  = partial("photoessays/components/photo_right", locals: {slug: current_page.data.slug, caption: '', 'photo': 'P1080545'})
+
+  .Content_row
+    .Content_main
+      .Article_content
+        :markdown
+          Though I’m not particularly spiritual, I felt a sense of the significance this place held for locals, particularly as we entered the main shrine and watched people pay tribute.
+
+  = partial("photoessays/components/photo_two_column", locals: {slug: current_page.data.slug, 'left': ['P1080571'], 'right': ['P1080498'] })
+
+  .Content_row
+    .Content_main
+      .Article_content
+        :markdown
+          We looped around the shrine and exited, eastwards over Harajuku station towards more built up shops.
+
+  = partial("photoessays/components/photo_two_column", locals: {slug: current_page.data.slug, 'left': ['P1080619','P1080620'], 'right': ['P1080616','P1080626'] })
+
+  .Content_row
+    .Content_main
+      .Article_content
+        :markdown
+          It appears shops don’t open on Sunday before 10, so we headed through Harajuku and some very charming, winding paths, towards a coffee shop that had been on my to-do list...
+
+  = partial("photoessays/components/photo_two_column", locals: {slug: current_page.data.slug, 'left': ['P1080639'], 'right': ['P1080641'] })
+
+  = partial("photoessays/components/place_cafe", locals: {slug: current_page.data.slug, image: 'P1080650', title: 'The Roastery by Nozy Coffee', address: '神宮前5-17-13 (ダイイチHOKI神宮前ビル 1F), Shibuya, Tōkyō', price: '¥', menu: 'Coffee', rating: 5, link: 'https://foursquare.com/v/the-roastery-by-nozy-coffee/524944ff498e85d3b5ee5775' })
+
+  .Content_row
+    .Content_main
+      .Article_content
+        :markdown
+          One excellent coffee later, we wandered on, heading for a rabbit cafe...
+
+  = partial("photoessays/components/place_cafe", locals: {slug: current_page.data.slug, image: 'P1080662', title: 'Ra.a.g.f Rabbit Café', address: '神宮前5-17-13 (ダイイチHOKI神宮前ビル 1F), Shibuya, Tōkyō', price: '¥', menu: 'Pet Cafe', rating: 3, link: 'https://foursquare.com/v/%E3%81%86%E3%81%95%E3%81%8E%E3%81%A8%E9%81%8A%E3%81%B9%E3%82%8B%E5%B0%82%E9%96%80%E5%BA%97-raagf-%E3%83%A9%E3%83%95-%E5%8E%9F%E5%AE%BF%E5%BA%97/4e3515ee2271b2cf06742eca' })
+
+  = partial("photoessays/components/photo_two_column", locals: {slug: current_page.data.slug, 'left': ['P1080706'], 'right': ['P1080730'] })
+
+   
+= partial("photoessays/2017/tokyo/footer", locals: {collection: current_page.data.collection})

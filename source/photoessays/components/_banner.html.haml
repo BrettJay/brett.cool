@@ -23,6 +23,10 @@
         %dl
           %dt= number_with_delimiter(trip[:steps], :delimiter => ',')
           %dd Steps
+      - if trip[:km].present?
+        %dl
+          %dt #{number_with_delimiter(trip[:km], :delimiter => ',')}km
+          %dd Walked
       - if trip[:photos].present?
         %dl
           %dt= number_with_delimiter(trip[:photos], :delimiter => ',')

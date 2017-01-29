@@ -9,9 +9,10 @@
     location: japan
     weather: winter
     arrival: plane
-    departure: train
-    steps: 45631
-    photos: 166
+    departure: bus
+    steps: 160489
+    photos: 2795
+    km: 119.4
     dates:
       from: 2017-01-07
       to: 2017-01-15
@@ -36,7 +37,7 @@
 
 = partial("photoessays/components/banner", locals: {slug: current_page.data.slug, title: current_page.data.title, subtitle: current_page.data.subtitle, trip: current_page.data.trip})
 
-.Content_photoessays.Content_photoessays--full
+.Content_photoessays.Content_photoessays--full#story
   - data.tokyo.dates.each do | date |
     .PhotoEssayItem
       = link_to "/photoessays/2017/tokyo/#{date.slug}", class: "PhotoEssayCard" do

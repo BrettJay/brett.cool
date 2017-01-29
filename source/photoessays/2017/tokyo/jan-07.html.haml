@@ -1,9 +1,9 @@
 ---
   title: Arriving in Shibuya
   slug: '2017/tokyo/jan-07'
-  subtitle: Making our way through the crowds
+  subtitle: Nightlife and crowds
   body_classes: page-photoessays
-  meta_description: Making our way through the crowds
+  meta_description: Nightlife and crowds
   collection:
     current: jan-07
     next: jan-08
@@ -11,7 +11,7 @@
   ogp:
     og:
       title: Arriving in Shibuya
-      description: Making our way through the crowds
+      description: Nightlife and crowds
       image:
         '': http://brett.cool/images/photoessays/2016/cssconfau/og.jpg
         type: image/jpg
@@ -19,7 +19,7 @@
         height: 300
     fb:
       title: Arriving in Shibuya
-      description: Making our way through the crowds
+      description: Nightlife and crowds
       image:
         '': http://brett.cool/images/photoessays/2016/cssconfau/fb.jpg
         type: image/jpg
@@ -36,9 +36,9 @@
     .Content_main
       .Article_content
         :markdown
-          We arrived after an early morning flight into Narita.
+          We arrived on an early morning flight into Narita.
 
-  = partial("photoessays/components/flight", locals: {slug: current_page.data.slug, image: '29/flight_va682', title: 'VA682', gate: '48', seat: '25A', airline: 'Singapore Airlines', depart: '9:45am', arrive: '4:50pm', rating: '' })
+  = partial("photoessays/components/flight", locals: {slug: current_page.data.slug, image: 'flight', title: 'VA682', gate: '48', seat: '25A', airline: 'Singapore Airlines', depart: '12:15am', arrive: '7:45am', rating: '' })
 
   = partial("photoessays/components/photo_two_column", locals: {slug: current_page.data.slug, 'left': ['P1070052'], 'right': ['P1070063'] })
 
@@ -46,25 +46,19 @@
     .Content_main
       .Article_content
         :markdown
-          After security and waiting to pick up a WiFi Hotspot from the Post Office, we headed for JR East to organise our Rail Passes and get into Shibuya.
+          After security and waiting to pick up a WiFi Hotspot from the Post Office, the next stop was JR East to organise a Rail Pass, and to get into Shibuya.
 
-  = partial("photoessays/components/photo_two_column", locals: {slug: current_page.data.slug, 'left': ['P1070064'], 'right': ['P1070067'] })
+          On–board a JR Express to Shibuya, I got my first glimpse of Japan proper.
 
-  .Content_row
-    .Content_main
-      .Article_content
-        :markdown
-          We caught a 9:15 JR Express to Shibuya, and got our first glimpse of Japan proper.
-
-  = partial("photoessays/components/photo_right", locals: {slug: current_page.data.slug, caption: '', 'photo': 'P1070090'})
+  = partial("photoessays/components/photo_two_column", locals: {slug: current_page.data.slug, 'left': ['P1070064'], 'right': ['P1070090'] })
 
   .Content_row
     .Content_main
       .Article_content
         :markdown
-          I’ve heard a lot about trains in Japan but they still didn’t fail to impress. We were hurtling along in smooth comfort, and the sheer size of Tokyo.
+          I’ve heard a lot about trains in Japan but they still didn’t fail to impress.
 
-          Of the 45 minute journey, the time between the preceding Chiba stop and Tokyo was at least 25 minutes, and then another 15 minutes to get to Shibuya.
+          Of the 45 minute journey, the time between the preceding Chiba stop and Tokyo was at least 25 minutes, and then another 15 minutes to get to Shibuya station.
 
   = partial("photoessays/components/photo_two_column", locals: {slug: current_page.data.slug, 'left': ['P1070108'], 'right': ['P1070131'] })
 
@@ -72,7 +66,7 @@
     .Content_main
       .Article_content
         :markdown
-          We exited the station and weaved through the labyrinthian-like walkways to emerge at the  Shibuya crossing.
+          Exiting the station, we weaved through the labyrinthian-like walkways to emerge at the Shibuya crossing outside the station.
 
   = partial("photoessays/components/photo_grid", locals: {slug: current_page.data.slug, rows: [ { count: 1, caption: '', photos: ['P1070152'] }, { count: 2, caption: '', photos: ['P1070165','P1070196'] } ] } )
 
@@ -96,9 +90,9 @@
     .Content_main
       .Article_content
         :markdown
-          After a quick pit-stop in which I figured out how to get our WiFi hot spot working, we wandered around trying to find lunch, eventually settling on Tonkatsu.
+          After a quick pit-stop in which I figured out how to get our WiFi hot spot working, we found a good Tonkatsu place.
 
-  = partial("photoessays/components/place_restaurant", locals: {slug: current_page.data.slug, image: 'tonkatsu_maisen', title: 'Tonkatsu Maisen', address: '渋谷2-21 (渋谷ヒカリエ 6F) Shibuya, Tōkyō', price: '$$', menu: 'Tonkatsu', rating: 4, time: '11:59am' })
+  = partial("photoessays/components/place_restaurant", locals: {slug: current_page.data.slug, image: 'tonkatsu_maisen', title: 'Tonkatsu Maisen', address: '渋谷2-21 (渋谷ヒカリエ 6F) Shibuya, Tōkyō', price: '$$', menu: 'Tonkatsu', rating: 4, time: '12:59pm', link: 'https://foursquare.com/v/%E3%81%A8%E3%82%93%E3%81%8B%E3%81%A4-%E3%81%BE%E3%81%84%E6%B3%89-%E9%9D%92%E5%B1%B1%E6%9C%AC%E5%BA%97/4b5d79c6f964a520415e29e3' })
 
   = partial("photoessays/components/photo_right", locals: {slug: current_page.data.slug, caption: '', 'photo': 'P1070225'})
 
@@ -132,7 +126,7 @@
     .Content_main
       .Article_content
         :markdown
-          We headed east towards Grand Father’s, a small whiskey bar.
+          Fancying a drink, we headed for a nearby whiskey&nbsp;place.
 
   = partial("photoessays/components/place_drink", locals: {slug: current_page.data.slug, image: 'P1070405', title: 'Grandfather’s', address: 'B1F Flat Bldg, 1-24-7 Shibuya, Shibuya-ku Tokyo', price: '$$', menu: 'Whiskey', rating: 4 })
 
@@ -140,7 +134,7 @@
     .Content_main
       .Article_content
         :markdown
-          It was something to hand over a ¥500 coin in exchange for a shot of whiskey, granted it was a Suntory whiskey, but it still tasted better for the price than anything in that range I’ve had in Perth (perhaps Buffalo Trace comes close).
+          It was something to hand over a ¥500 coin in exchange for a shot of whiskey, granted it was a Suntory whiskey, but it still tasted better for the price than anything in that price range than I’m typically used to.
 
   = partial("photoessays/components/photo_two_column", locals: {slug: current_page.data.slug, 'left': ['P1070403'], 'right': ['P1070405'] })
 
@@ -152,7 +146,7 @@
 
   = partial("photoessays/components/photo_two_column", locals: {slug: current_page.data.slug, 'left': ['P1070422'], 'right': ['P1070425'] })
 
-  = partial("photoessays/components/place_restaurant", locals: {slug: current_page.data.slug, image: 'kamukura_ramen', title: 'Kamukura Ramen', address: '29-4 Udagawacho, Shibuya 150-0042, Tōkyō', price: '$', menu: 'Tonkatsu', rating: 4, time: '11:59am' })
+  = partial("photoessays/components/place_restaurant", locals: {slug: current_page.data.slug, image: 'kamukura_ramen', title: 'Kamukura Ramen', address: '29-4 Udagawacho, Shibuya 150-0042, Tōkyō', price: '$', menu: 'Ramen', rating: 4, time: '7:37pm', link: 'https://foursquare.com/v/%E3%81%A9%E3%81%86%E3%81%A8%E3%82%93%E3%81%BC%E3%82%8A%E7%A5%9E%E5%BA%A7-%E6%B8%8B%E8%B0%B7%E5%BA%97/4b49c505f964a520647326e3' })
 
   .Content_row
     .Content_main
@@ -166,13 +160,8 @@
     .Content_main
       .Article_content
         :markdown
-          One cheap and cheerful ramen later, we headed home, picking up some random goodies from a local convenience store.
+          One cheap and cheerful ramen later, we headed home, picking up some random goodies from a local convenience store, and turned in for the night.
 
-  = partial("photoessays/components/photo_two_column", locals: {slug: current_page.data.slug, 'left': ['P1070444'], 'right': ['P1070458'] })
+          ---
 
-.Content
-  .Content_row
-    .Content_primary
-      .PhotoEssayFooterNavigation
-        Previous Day
-        Next Day
+= partial("photoessays/2017/tokyo/footer", locals: {collection: current_page.data.collection})
