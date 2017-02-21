@@ -1,0 +1,59 @@
+---
+  title: Kyoto
+  slug: '2017/kyoto'
+  subtitle: Kyoto
+  body_classes: page-photoessays body--dark
+  meta_description: Kyoto
+  meta_keywords:
+  dates:
+    - slug: jan-16
+      title: Arriving in Shibuya
+      subtitle: Making our way through the crowds
+    - slug: jan-17
+      title: Meji Shrine
+      subtitle: Making our way through the crowds
+    - slug: jan-18
+      title: Shinjuku
+      subtitle: Walking
+    - slug: jan-19
+      title: Owl Cafe
+      subtitle: Walking
+  trip:
+    location: japan
+    weather: winter
+    arrival: plane
+    departure: plane
+    steps: 45631
+    photos: 166
+    dates:
+      from: 2017-01-07
+      to: 2017-01-15
+  ogp:
+    og:
+      title: Tokyo 2017
+      description: Kyoto
+      image:
+        '': http://brett.cool/images/photoessays/2016/cssconfau/og.jpg
+        type: image/jpg
+        width: 560
+        height: 300
+    fb:
+      title: Tokyo 2017
+      description: Kyoto
+      image:
+        '': http://brett.cool/images/photoessays/2016/cssconfau/fb.jpg
+        type: image/jpg
+        width: 600
+        height: 315
+---
+
+= partial("photoessays/components/banner", locals: {slug: current_page.data.slug, title: current_page.data.title, subtitle: current_page.data.subtitle, trip: current_page.data.trip})
+
+.Content_photoessays.Content_photoessays--full
+  - current_page.data.dates.each do | date |
+    .PhotoEssayItem
+      = link_to "/photoessays/2017/tokyo/#{date.slug}", class: "PhotoEssayCard" do
+        .PhotoEssayCard_caption
+          .PhotoEssayCard_title= date.title
+          .PhotoEssayCard_subtitle= date.subtitle
+        .PhotoEssayCard_cardImage{style: "background-image: url('/images/photoessays/#{current_page.data.slug}/#{date.slug}/banner.jpg')"}

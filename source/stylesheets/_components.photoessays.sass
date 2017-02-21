@@ -72,6 +72,22 @@
     flex: 0 1 33.33%
     padding: 10px
 
+.Content_photoessays--full
+  margin: 0
+  +respond-to(ipad-up)
+    margin: 0
+
+  .PhotoEssayItem
+    flex: 0 1 33.33%
+    padding: 0
+
+    +respond-to(ipad-up)
+      flex: 0 1 20%
+      padding: 0
+  +respond-to(mobile)
+    .PhotoEssayItem
+      flex: 0 1 50%
+
 .PhotoEssayCard
   position: relative
   display: block
@@ -118,7 +134,7 @@
   padding-top: 133.33%
   background-size: cover
   background-color: #000
-
+  background-position: 50% 50%
 .PhotoEssayCard--draft:hover,
 .PhotoEssayCard--draft:active
   transform: translateY(0)

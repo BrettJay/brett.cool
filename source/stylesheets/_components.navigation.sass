@@ -13,11 +13,11 @@
   li.current a
     color: $navigation-link--current
 
-.page-blog li.navigation_blog a
-  color: $navigation-link--current
-
+.page-blog li.navigation_blog a,
 .page-photoessays li.navigation_photoessays a
   color: $navigation-link--current
 
 .Content_header .navigation
   padding: $base-spacing-unit 0
+  +respond-to(small-down)
+    padding: ($base-spacing-unit/2) 0

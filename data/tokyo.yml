@@ -1,0 +1,55 @@
+dates:
+  - slug: jan-07
+    date: 2017-01-07
+    title: Arriving in Shibuya
+    subtitle: Nightlife and crowds
+    steps: 12438
+    km: 9.6
+  - slug: jan-08
+    date: 2017-01-08
+    title: Meiji Shrine
+    subtitle: Harajuku, coffee, and rabbit cafés
+    steps: 19901
+    km: 15.1
+  - slug: jan-09
+    date: 2017-01-09
+    title: Shinjuku Views
+    subtitle: and Akihabara nightlife
+    steps: 26246
+    km: 19.8
+  - slug: jan-10
+    date: 2017-01-10
+    title: Ikebukuro
+    subtitle: and Owl Cafés
+    steps: 15512
+    km: 11.3
+  - slug: jan-11
+    date: 2017-01-11
+    title: Roppongi
+    subtitle: City views and Tonkatsu
+    steps: 23344
+    km: 16.6
+  - slug: jan-12
+    date: 2017-01-12
+    title: Ghlibli Mueseum
+    subtitle: Bird Cafés, and West Tokyo
+    steps: 16505
+    km: 11.6
+  - slug: jan-13
+    date: 2017-01-13
+    title: Tokyo Dome
+    subtitle: giant ice creams, dumplings and craft beer
+    steps: 21049
+    km: 17.6
+  - slug: jan-14
+    date: 2017-01-14
+    title: Yuzawa Snow
+    subtitle: Shinkansens and snow
+    steps: 9431
+    km: 6.5
+  - slug: jan-15
+    date: 2017-01-15
+    title: Kyoto-Bound
+    subtitle: Taking a Hikari Shinkansen to Kyoto
+    steps: 16063
+    km: 11.3

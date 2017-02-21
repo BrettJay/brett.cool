@@ -1,0 +1,96 @@
+---
+  title: Kyoto-Bound
+  slug: '2017/tokyo/jan-15'
+  subtitle: Taking a Hikari Shinkansen to Kyoto
+  body_classes: page-photoessays
+  meta_description: Taking a Hikari Shinkansen to Kyoto
+  collection:
+    current: jan-15
+    prev: jan-14
+  meta_keywords:
+  ogp:
+    og:
+      title: Kyoto-Bound
+      description: Taking a Hikari Shinkansen to Kyoto
+      image:
+        '': http://brett.cool/images/photoessays/2017/tokyo/jan-15/og.jpg
+        type: image/jpg
+        width: 560
+        height: 300
+    fb:
+      title: Kyoto-Bound
+      description: Taking a Hikari Shinkansen to Kyoto
+      image:
+        '': http://brett.cool/images/photoessays/2017/tokyo/jan-15/fb.jpg
+        type: image/jpg
+        width: 600
+        height: 315
+---
+
+= partial("photoessays/2017/tokyo/subheader", locals: {collection: current_page.data.collection})
+
+= partial("photoessays/components/banner", locals: {slug: current_page.data.slug, title: current_page.data.title, subtitle: current_page.data.subtitle, trip: current_page.data.trip})
+
+.Content#story
+
+  .Content_row
+    .Content_main
+      .Article_content
+        :markdown
+          The next morning I packed, getting everything in place to check out of my hotel.
+
+          Before leaving, I headed to another bakery near my hotel, having acquired a taste for baked goods the day prior.
+
+  = partial("photoessays/components/place_restaurant", locals: {slug: current_page.data.slug, image: 'viron', title: 'Boulangerie Patisserie VIRON 渋谷店', address: '宇田川町33-8 (塚田ビル 1F) Shibuya, Tōkyō', price: '¥¥', menu: 'Bakery', rating: 4, time: '9:41am', link: 'https://foursquare.com/v/boulangerie-patisserie-viron-%E6%B8%8B%E8%B0%B7%E5%BA%97/4b70ef73f964a520eb342de3' })
+
+  .Content_row
+    .Content_main
+      .Article_content
+        :markdown
+          After breakfast, it was time to check out, and then walk the familiar path south to Shibuya Station.
+
+          Encumbered with my luggage, I didn’t stop to take many photos.
+
+          At the station, I boarded a train headed for Tokyo. From there I transferred to a shinkansen platform.
+
+  = partial("photoessays/components/photo_full", locals: {slug: current_page.data.slug, caption: '', 'photo': 'P1150001'})
+
+  .Content_row
+    .Content_main
+      .Article_content
+        :markdown
+          Taking a Shinkansen to Kyoto seemed similar, yet preferable, to air travel, for a number of reasons.
+
+          For one, the departures were every 45 minutes or so, and most trains had carriages without reserved seating.
+
+          It was trivial to rock up on the platform, line up at a non-reserved carriage, grab some takeaway lunch, and overall have a much more pleasant experience than air travel.
+
+          Soon, we were off and away.
+
+  = partial("photoessays/components/photo_two_column", locals: {slug: current_page.data.slug, 'left': ['P1150035','P1150046'], 'right': ['P1150039','P1150063'] })
+
+  .Content_row
+    .Content_main
+      .Article_content
+        :markdown
+          The Hikari Express I was on only had a half dozen or so stops. And it was really booking it between stops.
+
+          As the shinkansen drew closer to Kyoto, the weather began to change...
+
+  = partial("photoessays/components/photo_two_column", locals: {slug: current_page.data.slug, 'left': ['P1150075','P1150085'], 'right': ['P1150079','P1150090'] })
+
+  .Content_row
+    .Content_main
+      .Article_content
+        :markdown
+          If I’d thought I’d seen the last of snow in Yuzawa, it looked like I had another thing coming...
+
+  = partial("photoessays/components/photo_full", locals: {slug: current_page.data.slug, caption: '', 'photo': 'P1150093'})
+
+  .Content_row
+    .Content_main
+      .Article_content
+        :markdown
+          ... To be continued.
+
+= partial("photoessays/2017/tokyo/footer", locals: {collection: current_page.data.collection})
