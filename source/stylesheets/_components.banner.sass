@@ -2,7 +2,7 @@
   +vertical-parent
   position: relative
   height: calc( 100vh - 10px)
-  background-position: 50% 50%
+  background-position: 50% 33%
   background-size: cover
   background-color: #000
   .Banner_caption
@@ -25,6 +25,8 @@
 
 .PhotoEssaySubHeader ~ .Banner
   height: calc( 100vh - 169px)
+  +respond-to(small-down)
+    height: calc( 100vh - 126px)
   .scroll_arrows
     bottom: 60px
 
@@ -76,14 +78,15 @@
 .TripIcon_transport--plane
   background: image-url('photoessays/trips/transport_plane.svg') 50% 50% no-repeat
 
+.TripIcon_transport--shinkansen
+  background: image-url('photoessays/trips/transport_shinkansen.svg') 50% 50% no-repeat
+
 .TripIcon--withText
   background-position: 0 50%
   padding-left: 40px
   background-size: 30px
 
 +respond-to(mobile)
-  .Banner
-    height: calc( 100vh - 36px)
 
   .Banner_TripSummary
     padding: 20px 10px

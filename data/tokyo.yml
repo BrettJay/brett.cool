@@ -8,25 +8,25 @@ dates:
   - slug: jan-08
     date: 2017-01-08
     title: Meiji Shrine
-    subtitle: Harajuku, coffee and rabbit cafés
+    subtitle: Harajuku, coffee, and rabbit cafés
     steps: 19901
     km: 15.1
   - slug: jan-09
     date: 2017-01-09
-    title: Shinjuku
-    subtitle: Views from the Metropolitan buildings
+    title: Shinjuku Views
+    subtitle: and Akihabara nightlife
     steps: 26246
     km: 19.8
   - slug: jan-10
     date: 2017-01-10
-    title: Owl Cafe
-    subtitle: and
+    title: Ikebukuro
+    subtitle: and Owl Cafés
     steps: 15512
     km: 11.3
   - slug: jan-11
     date: 2017-01-11
     title: Roppongi
-    subtitle: Sights and surrounds
+    subtitle: City views and Tonkatsu
     steps: 23344
     km: 16.6
   - slug: jan-12
@@ -38,18 +38,18 @@ dates:
   - slug: jan-13
     date: 2017-01-13
     title: Tokyo Dome
-    subtitle: and roof gardens
+    subtitle: giant ice creams, dumplings and craft beer
     steps: 21049
     km: 17.6
   - slug: jan-14
     date: 2017-01-14
-    title: Snow Trip
-    subtitle: Such Snow
+    title: Yuzawa Snow
+    subtitle: Shinkansens and snow
     steps: 9431
     km: 6.5
   - slug: jan-15
     date: 2017-01-15
     title: Kyoto-Bound
-    subtitle: Shinkansen to Kyoto
+    subtitle: Taking a Hikari Shinkansen to Kyoto
     steps: 16063
     km: 11.3

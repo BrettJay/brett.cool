@@ -14,6 +14,7 @@
   border-top: 1px solid $color-black--transparent
   .Content
     position: relative
+    +fluid-scale(font-size, 375px, 1040px, 13px, 16px)
   .SubHeader_Main
     padding: 20px 10px
 
@@ -93,7 +94,6 @@
   .DayItem:hover .DayDescription
     opacity: 1
     transform: translateX(0px)
-
   .DayDate
     color: $color-black--half
     padding-right: 10px
@@ -104,7 +104,7 @@
     display: inline-block
 
   .DayDescription
-    display: none
+    display: inline-block
     color: $color-black--half
     opacity: 0
     transition: all 0.2s ease
@@ -113,6 +113,9 @@
     transform: translateX(-5px)
     +respond-to(small-up)
       display: inline-block
+    +respond-to(small-down)
+      opacity: 1
+      transform: translateX(0px)
   .BreadCrumb_Header
     font-weight: bold
     display: inline-block
