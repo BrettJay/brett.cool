@@ -1,9 +1,8 @@
 - year: 2017
   photoessays:
-    # - title: Kyoto
-    #   url: 2017/kyoto
-    #   date: 2017-01-15
-    #   draft: true
+    - title: Kyoto
+      url: 2017/kyoto
+      date: 2017-01-15
     - title: Tokyo
       url: 2017/tokyo
       date: 2017-01-07

@@ -7,6 +7,7 @@
   collection:
     current: jan-15
     prev: jan-14
+    next: jan-15
   meta_keywords:
   ogp:
     og:
@@ -87,10 +88,18 @@
 
   = partial("photoessays/components/photo_full", locals: {slug: current_page.data.slug, caption: '', 'photo': 'P1150093'})
 
-  .Content_row
-    .Content_main
-      .Article_content
-        :markdown
-          ... To be continued.
-
-= partial("photoessays/2017/tokyo/footer", locals: {collection: current_page.data.collection})
+.Content
+  .PhotoRow
+    .PhotoEssayFooterNavigation
+      = link_to "/photoessays/2017/tokyo/#{current_page.data.collection.prev}", class: 'PhotoEssay_nav PhotoEssay_nav--previous', style: "background-image: url('/images/photoessays/2017/tokyo/#{current_page.data.collection.prev}/banner.jpg')" do
+        .PhotoEssay_nav_label Previous
+        - data.tokyo.dates.each do | date |
+          - if date.slug === current_page.data.collection.prev
+            .PhotoEssay_nav_title= date.title
+            .PhotoEssay_nav_date= date.date.strftime("%B %-d")
+      = link_to "/photoessays/2017/kyoto/#{current_page.data.collection.next}", class: 'PhotoEssay_nav PhotoEssay_nav--next', style: "background-image: url('/images/photoessays/2017/kyoto/#{current_page.data.collection.next}/banner.jpg')" do
+        .PhotoEssay_nav_label Next
+        - data.kyoto.dates.each do | date |
+          - if date.slug === current_page.data.collection.next
+            .PhotoEssay_nav_title= date.title
+            .PhotoEssay_nav_date= date.date.strftime("%B %-d")
