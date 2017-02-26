@@ -1,0 +1,85 @@
+---
+  title: Returning to Tokyo
+  slug: '2017/kyoto/jan-19'
+  subtitle: Bound for Ueno
+  body_classes: page-photoessays
+  meta_description: Bound for Ueno
+  collection:
+    prev: jan-18
+    current: jan-19
+  meta_keywords:
+  ogp:
+    og:
+      title: Returning to Tokyo
+      description: Bound for Ueno
+      image:
+        '': http://brett.cool/images/photoessays/2017/kyoto/jan-19/og.jpg
+        type: image/jpg
+        width: 560
+        height: 300
+    fb:
+      title: Returning to Tokyo
+      description: Bound for Ueno
+      image:
+        '': http://brett.cool/images/photoessays/2017/kyoto/jan-19/fb.jpg
+        type: image/jpg
+        width: 600
+        height: 315
+---
+
+= partial("photoessays/2017/kyoto/subheader", locals: {collection: current_page.data.collection})
+
+= partial("photoessays/components/banner", locals: {slug: current_page.data.slug, title: current_page.data.title, subtitle: current_page.data.subtitle, trip: current_page.data.trip})
+
+.Content#story
+
+  .Content_row
+    .Content_main
+      .Article_content
+        :markdown
+          The next morning I packed. Luckily, my posessions hadn’t strayed as far in the shorter time I’d been in&nbsp;Kyoto.
+
+  = partial("photoessays/components/place_cafe", locals: {slug: current_page.data.slug, image: 'P1191881', title: 'Kurasu', address: '下京区東油小路町552 (油小路通塩小路下る) Kyoto', price: '¥', menu: 'Coffee', rating: 5, link: 'https://foursquare.com/v/kurasu/57abc6d6498ef9d8938d95cf' })
+
+  .Content_row
+    .Content_main
+      .Article_content
+        :markdown
+          I popped in to Kurasu one last time, eyeing off their coffee beans...
+
+  = partial("photoessays/components/photo_two_column", locals: {slug: current_page.data.slug, 'left': ['P1191879'], 'right': ['P1191881'] })
+
+  .Content_row
+    .Content_main
+      .Article_content
+        :markdown
+          I vowed to place an order online when I got back, and headed off.
+
+          I was glad I did, because I found cheaper ‘specialty’ coffee nearby.
+
+  = partial("photoessays/components/photo_right", locals: {slug: current_page.data.slug, caption: 'jk lol :^)', 'photo': 'P1191882'})
+
+  .Content_row
+    .Content_main
+      .Article_content
+        :markdown
+          I returned to the hotel and checked out, and carried my luggage towards the station.
+
+          Thankfully, getting to the Shinkansen platform was far simpler from where I was staying in Kyoto than Shibuya.
+
+  = partial("photoessays/components/photo_full", locals: {slug: current_page.data.slug, caption: '', 'photo': 'P1191886'})
+
+  .Content_row
+    .Content_main
+      .Article_content
+        :markdown
+          I boarded the shinkansen, looking forward to returning to Tokyo...
+
+          ---
+
+          <p style="text-align: center;">To be continued</p>
+
+          ---
+
+= partial("photoessays/2017/kyoto/footer", locals: {collection: current_page.data.collection})
+

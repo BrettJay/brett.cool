@@ -1,0 +1,31 @@
+dates:
+  - slug: jan-15
+    date: 2017-01-15
+    title: Arriving in Kyoto
+    subtitle: Snow, trains and shrines
+    steps: 16063
+    km: 11.3
+  - slug: jan-16
+    date: 2017-01-16
+    title: Kyoto Shrines
+    subtitle: and dumplings and sake
+    steps: 20185
+    km: 14.6
+  - slug: jan-17
+    date: 2017-01-17
+    title: Arashiyama Views
+    subtitle: and a closed monkey park
+    steps: 23299
+    km: 17.0
+  - slug: jan-18
+    date: 2017-01-18
+    title: Nara Park
+    subtitle: Deer and Kyoto Tower views
+    steps: 22488
+    km: 15.7
+  - slug: jan-19
+    date: 2017-01-18
+    title: Returning to Tokyo
+    subtitle: Bound for Ueno
+    steps: 16530
+    km: 12.7
