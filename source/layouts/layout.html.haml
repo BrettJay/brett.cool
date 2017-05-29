@@ -31,7 +31,8 @@
     %link{color: "#000000", href: "/safari-pinned-tab.svg", rel: "mask-icon"}/
     %meta{content: "#ffffff", name: "theme-color"}/
 
-    %link{href: "https://fonts.googleapis.com/css?family=Karla|Work+Sans:800", rel: "stylesheet"}/
+    %link{href: "https://fonts.googleapis.com/css?family=Karla|Work+Sans:500,700,800", rel: "stylesheet"}/
+
     - ogp_tags do|name, value|
       %meta{ property: name, content: value}
 
@@ -51,14 +52,15 @@
 
   %body{class: current_page.data.body_classes || "page"}
     - unless @hide_header.present?
-      .Content
-        .Content_row
-          .Content_sidebar
-            .name
-              = link_to '/' do
-                <span class="responsive-name">Brett</span>😎
-          .Content_primary.Content_header
-            = partial "layouts/nav"
+      .Header
+        .Content
+          .Content_row
+            .Header_logo
+              .name
+                = link_to '/' do
+                  <span class="responsive-name">Brett</span>😎
+            .Header_navigation
+              = partial "layouts/nav"
 
     = yield
 

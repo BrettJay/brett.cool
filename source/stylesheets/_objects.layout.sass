@@ -1,14 +1,22 @@
 .Content
-  max-width: 1060px
-  margin-left: auto
-  margin-right: auto
-  padding-left: 10px
-  padding-right: 10px
+  +container
+
+.Content--margins
+  padding-top: 80px
+  +respond-to(small-down)
+    padding-top: 40px
+
+.Content--marginCollapse
+  padding-top: 80px
+  @media only screen and (max-width: 1060px)
+    padding-top: 0
 
 .Content_row
-  margin-left: -10px
-  margin-right: -10px
-  +clearfix
+  +row
+
+.Fullbleed
+  padding-left: 0
+  padding-right: 0
 
 .page-blog .Fullbleed_image
   margin-left: -10px
@@ -23,7 +31,8 @@
 
 .Content_sidebar,
 .Content_primary,
-.Content_main
+.Content_main,
+.Content_middle
   padding-left: 10px
   padding-right: 10px
 
@@ -43,6 +52,14 @@
   +respond-to(mobile)
     width: 88%
 
+.Content_row--wrap
+  .Content_sidebar,
+  .Content_primary,
+  .Content_main
+    +respond-to(small-down)
+      float: none
+      width: 100%
+
 .Content > .Content_row > .Content_main
   width: 60%
   float: left
@@ -54,11 +71,60 @@
     margin-left: 12%
     width: 88%
 
-.Content > .Content_row > .Content_photoessays,
-.Content > .Content_row > .Content_photoessayHeader
-  margin-left: 10.28%
+.Content_row--padded
+  padding: $base-spacing-unit 0
+  h1, p
+    margin: 0
   +respond-to(small-down)
-    margin-left: 5.14%
+    h1
+      margin-bottom: 0.25em
+  +respond-to(small-down)
+    margin-left: 24%
+    width: 76%
+    padding-left: 0
+    padding-right: 0
+    .Content_sidebar,
+    .Content_main,
+    .Content_middle
+      padding-left: 0
+      padding-right: 0
+  +respond-to(mobile)
+    margin-left: 12%
+    width: 88%
+
+.Content_middle
+  +respond-to(ipad-up)
+    float: left
+    width: 45.28%
+    max-width: 471px
+
+.Content > .Content_row > .Content_sidebar + .Content_main
+  margin-left: 0
+
+.Content > .Content_row > .Content_photoessays
+  width: 72.3%
+  float: right
+  padding-left: 10px
+  padding-right: 10px
+  +respond-to(small-down)
+    width: 76%
+  +respond-to(mobile)
+    width: 88%
+
+.Content > .Content_row > .Content_photoessayHeader
+  width: 27.7%
+  float: left
+  padding-left: 10px
+  padding-right: 10px
+  h2
+    text-align: right
+  +respond-to(small-down)
+    width: 76%
+    float: right
+    h2
+      text-align: left
+  +respond-to(mobile)
+    width: 88%
 
 .Content_sidebar p
   +fluid-scale(font-size, 375px, 1040px, 11px, 16px)
@@ -77,21 +143,6 @@
   +respond-to(ipad-up)
     margin-bottom: $base-spacing-unit
 
-.name
-  +fluid-scale(font-size, 375px, 1040px, 16px, 24px)
-  +font_headline
-  line-height: 30px
-  padding: $base-spacing-unit 0
-  margin-bottom: 0
-  .responsive-name
-    display: none
-    +respond-to(small-up)
-      display: inline
-  a
-    color: inherit
-    text-decoration: none
-  +respond-to(small-down)
-    padding: ($base-spacing-unit/2) 0
 .tagline
   +fluid-scale(font-size, 375px, 1040px, 16px, 24px)
   line-height: 1.3

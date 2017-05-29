@@ -1,0 +1,367 @@
+---
+  title: Less Glamorous Elements of Design
+  body_classes: body--talks body--slides
+  meta_description: Occasionally I give talks
+  meta_keywords:
+  ogp:
+    og:
+      title: Less Glamorous Elements of Design
+      description: Occasionally I give talks
+      image:
+        '': http://brett.cool/images/og.jpg
+        type: image/jpg
+        width: 560
+        height: 300
+    fb:
+      title: Less Glamorous Elements of Design
+      description: Occasionally I give talks
+      image:
+        '': http://brett.cool/images/og/fb.jpg
+        type: image/jpg
+        width: 600
+        height: 315
+---
+
+- @path = "/images/talk/less-glamorous-elements-of-design"
+
+
+%link{href: "https://fonts.googleapis.com/css?family=Karla|Work+Sans:300,400,500,600,700,800", rel: "stylesheet"}/
+
+<script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
+
+:javascript
+  $(document).ready(function () {
+    $('.Menu_Button').on('click', function() {
+      $('.PhotoEssaySubHeader').toggleClass('PhotoEssaySubHeader--MenuOpen')
+    });
+  });
+
+.PhotoEssaySubHeader
+  .Content
+    .Content_row
+      .SubHeader_Main
+        .LinkBreadCrumbs
+          #{link_to 'Talks', '/talk', class: 'BreadCrumb_Header'}
+          .Menu_Button
+            Less Glamorous Elements of Design
+        .DayMenu
+          = link_to "Introduction", "#introduction", class: 'DayItem'
+          = link_to "Varying Expectations of Designers", "#expectations", class: 'DayItem'
+          = link_to "Fragmented Education", "#fragmentation", class: 'DayItem'
+
+.Slides_LessGlamorous
+
+  .Slide.Slide--title.Slide--dark{"data-aspect-ratio": "16:9"}
+    .Slide_content
+      %h1
+        %div Less
+        %div Glamorous
+        %div Elements
+        %div of Design
+
+  .Content
+    .Content_row#introduction
+      .Content_main
+        %p Hello, I’m Brett 👋
+        %p I’m a designer and front-end developer at #{link_to 'Pin Payments', 'https://pin.net.au', target: '_blank'}. In the past few years, I’ve been lucky enough to attend some truly fantastic conferences, including #{link_to 'CSSConf Australia', 'http://cssconf.com.au', target: '_blank'} and #{link_to 'Web Directions', 'https://www.webdirections.org/', target: '_blank'}.
+        %p These awesome conference experiences eventually lead me and some other passionate, talented Perth people to run Mixin, and I think it went pretty well...
+
+    .Content_row
+      .Slide{"data-aspect-ratio": "16:9"}
+        .Slide_content
+          %h2 “Less Glamorous<br/>Elements&nbsp;of&nbsp;Design”
+
+    .Content_row
+      .Content_main
+        %p When I say “less glamorous elements of design”, what am I referring to?
+
+    .Content_row
+      .Slide{"data-aspect-ratio": "16:9"}
+        .Slide_content
+          = image_tag "#{@path}/clients.jpg", title: "Clients from Hell", alt: "Clients from Hell Website"
+
+    .Content_row
+      .Content_main
+        %p I’m not referring to <em>clients from hell</em>...
+
+    .Content_row
+      .Slide{"data-aspect-ratio": "16:9"}
+        .Slide_content= image_tag "#{@path}/dribbble.jpg", title: "Dribbble", alt: "Dribbble Website"
+
+    .Content_row
+      .Content_main
+        %p Nor even the so called <abbr>dribbbilisation of design<abbr>...
+        %p Well, <em>not exactly...</em>
+
+    .Content_row#expectations
+      .Slide{"data-aspect-ratio": "16:9"}
+        .Slide_content
+          = image_tag "#{@path}/designers.jpg", title: "Different types of designers", alt: "Different types of designers"
+
+    .Content_row
+      .Content_main
+        %p There are many different kinds of designers, but even for in our own industry, there’s anxiety and uncertainty due to the many differing expectations placed upon designers.
+
+    .Content_row
+      .Slide.Less_shouldDesigners{"data-aspect-ratio": "16:9"}
+        .Slide_content
+          %h2 Should designers code?
+
+    .Content_row
+      .Content_main
+        %p So who’s seen this philosophical question posited by the greatest thought leaders on twitter and medium?
+
+        %p It’s easy to make a mockery of, as is evidenced here… But these questions, in varying degrees of sincerity, plainly indicate.
+
+    .Content_row
+      .Slide{"data-aspect-ratio": "16:9"}
+        .Slide_content
+          %h2 There are fragmented expectations around what designers should do.
+
+    .Content_row
+      .Content_main
+        %p There are many varying ideas and expectations around what designers in our industry should do.
+
+    .Content_row
+      .Slide{"data-aspect-ratio": "16:9"}
+        .Slide_content
+          %h2 Why?
+
+    .Content_row
+      .Content_main
+        %p Why is that, though?
+
+    .Content_row
+      .Slide.Less_roles{"data-aspect-ratio": "16:9"}
+        .Slide_content
+          %h2 There are various roles
+
+    .Content_row
+      .Content_main
+        %p Well, obviously there are various role. Here are some current titles — next week there’ll be new ones.
+        %p Now obviously, these roles have different expectations around responsibilities.
+        %p But when I see dozens of roles, I feel like the industry is getting awfully fragmented, and I wonder if it needs to be this way...
+
+    .Content_row#fragmentation
+      .Slide.Slide--dark{"data-aspect-ratio": "16:9"}
+        .Slide_content
+          %h2 Could fragmentation of roles be a symptom of fragmented education?
+
+    .Content_row
+      .Content_main
+        %p Could the fragmentation around roles actually be a symptom, not the cause of varying expectations?
+
+    .Content_row
+      .Slide{"data-aspect-ratio": "16:9"}
+        .Slide_content
+          %h2 Our industry is largely self-taught
+
+    .Content_row
+      .Content_main
+        %p Our industry is largely self-taught, I don’t think that’s controversial to say.
+
+    .Content_row
+      .Slide{"data-aspect-ratio": "16:9"}
+        .Slide_content
+          %h2 Our industry moves fast
+
+    .Content_row
+      .Content_main
+        %p The reason for such prolific self-learning in our industry is that it moves fast. It can feel like traditional curriculums aren’t relevant for the work we do today.
+
+        %p And because of that, expectations and ideas about what we should do change all the time.
+
+    .Content_row
+      .Slide{"data-aspect-ratio": "16:9"}
+        .Slide_content
+          %h2 Fragmentation of roles
+
+    .Content_row
+      .Content_main
+        %p And the existing fragmentation of roles further reinforces expectations and ideas about what we should do.
+
+        %p Depending where you enter the industry from, <em>titles and roles may inadvertantly silo you in to learning some things, and not other things</em>.
+
+    .Content_row
+      .Slide{"data-aspect-ratio": "16:9"}
+        .Slide_content
+          %h2
+            Our industry is largely self-taught<br/>
+            Our industry moves fast<br/>
+            Fragmentation of roles
+
+    .Content_row
+      .Content_main
+        %p I want to talk a little more about all these. Starting with the self-learning in our industry.
+
+    .Content_row
+      .Slide{"data-aspect-ratio": "16:9"}
+        .Slide_content
+          %h2 Curriculums being taught aren’t always relevant for the work we do today
+
+    .Content_row
+      .Content_main
+        %p Part of the problem is that curriculums can feel outdated or irrelevant. Perhaps institutions have caught up in recent years since I was at university, but that’s certainly how I felt at the time, and with the rate of change, I could easily see it being worse now.
+
+    .Content_row
+      .Slide{"data-aspect-ratio": "16:9"}
+        .Slide_content
+          %h2 Self learning > curriculum
+
+    .Content_row
+      .Content_main
+        %p I hear a quality which university is good at instilling — regardless of curriculum — is self learning.
+
+    .Content_row
+      .Slide{"data-aspect-ratio": "16:9"}
+        .Slide_content
+          %h2 Without a relevant curriculum, we have no guide for what to learn
+
+    .Content_row
+      .Content_main
+        %p But without a solid curriculum, we have no guide for what to learn.
+
+    .Content_row
+      .Slide{"data-aspect-ratio": "16:9"}
+        .Slide_content
+          %h2 How do we learn?<br/>What do we learn?
+
+    .Content_row
+      .Content_main
+        %p How do we learn, and what do we learn? It should be a deliberate decision.
+
+    .Content_row
+      .Slide{"data-aspect-ratio": "16:9"}
+        .Slide_content
+          %h2 Known Knowns
+
+    .Content_row
+      .Content_main
+        %p There are things we know we need to learn, which we currently don’t know. There are some very glamorous elements to design which are easy to appreciate as technical skills we should cultivate.
+
+    .Content_row
+      .Slide.Slide--dark{"data-aspect-ratio": "16:9"}
+        .Slide_content
+          %h2 Unknown Unknowns
+
+    .Content_row
+      .Content_main
+        %p But it’s the things we aren’t even aware we can learn that’s really tricky.
+
+    .Content_row
+      .Slide{"data-aspect-ratio": "16:9"}
+        .Slide_content
+          %h2 Deciding what to learn should be deliberate
+
+    .Content_row
+      .Content_main
+        %p What you learn should be a deliberate decision.
+
+    .Content_row
+      .Slide{"data-aspect-ratio": "16:9"}
+        .Slide_content
+          %h2 But you cannot make an informed decision without all the information
+
+    .Content_row
+      .Content_main
+        %p But you cannot do this without all the information.
+
+    .Content_row
+      .Slide.Slide--dark{"data-aspect-ratio": "16:9"}
+        .Slide_content
+          %h2 Here’s how I learned
+
+    .Content_row
+      .Content_main
+        %p So I’ve been speaking in abstract for a bit. Here’s my experience learning design.
+
+    .Content_row
+      .Slide{"data-aspect-ratio": "16:9"}
+        .Slide_content= image_tag "#{@path}/dribbble.jpg", title: "Dribbble", alt: "Dribbble Website"
+
+    .Content_row
+      .Content_main
+        %p Which brings us back here. Now I love Dribbble. I promise this isn’t a rant on dribbbilisation of design. This is in fact what got me excited about design. Nice looking, shiny pixels. So glamorous!
+
+        %p To fourteen year old aspiring designer me, this was the pinnacle of design. It was enthralling, I saw these amazing looking designs and I wanted to do it too.
+
+    .Content_row
+      .Slide{"data-aspect-ratio": "16:9"}
+        .Slide_content= image_tag "#{@path}/skins.jpg", title: "My Aesthetic", alt: "Winamp Skins, Userbars, Gloss"
+
+    .Content_row
+      .Content_main
+        %p Actually, back then, Windows Media Player and Winamp skins were my aesthetic. And userbars — shoutouts to silkscreen.ttf, and web 2.0 gloss, diagonal stripes etc…
+        %p So back in the day...
+    .Content_row
+      .Slide{"data-aspect-ratio": "16:9"}
+        %video{src: "#{@path}/flashback.mp4", controls: 'controls', preload: 'preload'}
+
+    .Content_row
+      .Content_main
+        %p My journey in self learning begins in the shameful days of my Windows past when looking at flashy graphics and wanting to accomplish it myself.
+
+        %p And so, thanks to a knack for Google, I ended up teaching myself design — or so I thought of it — through series of 16 step psd tutorials and the like.
+
+    .Content_row
+      .Slide{"data-aspect-ratio": "16:9"}
+        .Slide_content
+          %h2 ⚠️
+
+    .Content_row
+      .Content_main
+        %p And this is where a problem arises.
+
+        %p Now this is a slightly exaggerated example, but when it comes to self-learning...
+
+    .Content_row
+      .Slide{"data-aspect-ratio": "16:9"}
+        .Slide_content
+          %h2 Google is a great way to learn what you know what you need to learn.
+
+    .Content_row
+      .Content_main
+        %p Google is only a great way to learn what you already know you need to learn.
+
+    .Content_row
+      .Slide{"data-aspect-ratio": "16:9"}
+        .Slide_content
+          %h2 I appreciated superficial qualities of design.
+
+    .Content_row
+      .Content_main
+        %p The superficial qualities of design and the technical skills I’d need to develop.
+
+    .Content_row
+      .Slide{"data-aspect-ratio": "16:9"}
+        .Slide_content
+          %h2 But there was more to learn.
+
+    .Content_row
+      .Content_main
+        %p But there was so much process and technique I should learn that was invisible to me.
+
+    .Content_row
+      .Slide{"data-aspect-ratio": "16:9"}
+        .Slide_content= image_tag "#{@path}/jjg.jpg", title: "Jesse James Garrett", alt: "Jesse James Garrett"
+
+    .Content_row
+      .Content_main
+        %p Enter Jesse James Garrett. He has written a lot on the topics of user experience design, including a book entitled “The Elements of User Experience”.
+
+    .Content_row
+      .Slide.Less_pin{"data-aspect-ratio": "16:9"}
+
+    .Content_row
+      .Content_main
+        %p I became much more familiar with Jesse’s work at my current position, when we looked at how to make our design process more explicit.
+
+    .Content_row
+      .Slide{"data-aspect-ratio": "16:9"}
+        .Slide_content= image_tag "#{@path}/elements.png", title: "The Elements of User Experience", alt: "The Elements of User Experience"
+
+    .Content_row
+      .Content_main
+        %p And specifically, this diagram. Here is something that didn’t come up in my google searches while learning design. I didn’t know the combination of magic words to bring it up.
+
+        %p Now this diagram looks quite complicated, but it’s a brilliant encapsulation of much of what we do, and is still relevant now.
