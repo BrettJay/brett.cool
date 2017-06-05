@@ -1,0 +1,53 @@
+---
+  title: Talks
+  body_classes: body--talks
+  meta_description: Occasionally I give talks
+  meta_keywords:
+  ogp:
+    og:
+      title: Talk
+      description: Occasionally I give talks
+      image:
+        '': http://brett.cool/images/og.jpg
+        type: image/jpg
+        width: 560
+        height: 300
+    fb:
+      title: Talk
+      description: Occasionally I give talks
+      image:
+        '': http://brett.cool/images/og/fb.jpg
+        type: image/jpg
+        width: 600
+        height: 315
+---
+
+%link{href: "https://fonts.googleapis.com/css?family=Karla|Work+Sans:300,400,500,600,700,800", rel: "stylesheet"}/
+
+%link{:rel => "stylesheet", :href => ""}/
+.Content.Content--margins
+  .Content_row
+    .Content_primary
+      %ol.Talks
+        %li.Talk_item
+          = link_to '/talk/less-glamorous-elements-of-design' do
+            .Slides_LessGlamorous
+              .Slide.Slide--title.Slide--dark{"data-aspect-ratio": "16:9"}
+                .Slide_content
+                  %h2
+                    %div Less
+                    %div Glamorous
+                    %div Elements
+                    %div of Design
+            .Talk_detail
+              %h2 Less Glamorous Elements of&nbsp;Design
+              %p Localhost Deployment · 6–9 June 2017
+
+        %li.Talk_item.Talk_item--unavailable
+          .Slides_MixinUp
+            .Slide.Slide--title.Slide--mixin{"data-aspect-ratio": "16:9"}
+              .Slide_content
+                %h2 Mixin’ Up Design &&nbsp;Development
+          .Talk_detail
+            %h2 Mixin’ Up Design &&nbsp;Development
+            %p Localhost Perth · 2 November 2016

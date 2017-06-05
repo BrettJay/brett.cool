@@ -1,0 +1,42 @@
+.Header
+  background: #222
+
+.Header_logo
+  width: 27.7%
+  float: left
+  +respond-to(small-down)
+    width: 24%
+  +respond-to(mobile)
+    width: 12%
+
+.Header_navigation
+  width: 72.3%
+  float: right
+  +respond-to(small-down)
+    width: 76%
+  +respond-to(mobile)
+    width: 88%
+
+.name
+  +fluid-scale(font-size, 375px, 1040px, 13px, 15px)
+  +font_headline
+  line-height: 30px
+  padding: 25px 0
+  color: #fff
+  text-transform: uppercase
+  margin-bottom: 0
+  .responsive-name
+    display: none
+    +respond-to(small-up)
+      display: inline
+  a
+    color: inherit
+    text-decoration: none
+
+.Header_navigation .navigation a
+  color: #fff
+
+.Header_navigation .navigation,
+.Header_logo .name
+  +respond-to(small-down)
+    padding: ($base-spacing-unit/2) 0

@@ -23,9 +23,8 @@
 ---
 
 
-.Content
-  .Content_row= image_tag 'home/brett.jpg', alt: 'Brett at CSSConf 2015', class: 'hero_image'
-
+.Content.Content--marginCollapse
+  .Content_row= image_tag 'home/brett.jpg', alt: 'Brett at CSSConf 2015', class: 'hero_image Fullbleed'
   .Content_row
     .Content_main
       %p.tagline I’m a designer and developer at #{link_to "Pin&nbsp;Payments", 'https://pin.net.au', target: '_blank'}, and a co–organiser of #{link_to "Mixin", 'http://mixinconf.com', target: '_blank'}. I love coffee, photography, and design grids of the exploded&nbsp;variety.

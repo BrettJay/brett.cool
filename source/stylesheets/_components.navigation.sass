@@ -1,23 +1,32 @@
 .navigation
-  padding: ($base-spacing-unit/2) 0
+  padding: 25px 0
   list-style: none
   margin: 0
   li
     display: inline
     line-height: 30px
-    padding-right: ($base-spacing-unit/2)
-    +fluid-scale(font-size, 375px, 1040px, 14px, 17px)
+    +fluid-scale(font-size, 375px, 1040px, 12px, 15px)
+    font-family: $font_headline
+    font-weight: 500
+    text-transform: uppercase
+    letter-spacing: 0.4px
+    +respond-to(small-down)
+      letter-spacing: 0.3px
+  li + li
+    padding-left: 20px
+    +respond-to(small-down)
+      padding-left: 10px
+    +respond-to(mobile)
+      padding-left: 5px
   a
     text-decoration: none
     color: $navigation-link
+    opacity: 0.3
   li.current a
-    color: $navigation-link--current
+    opacity: 1
 
+// todo: settle on a page naming convention :V
 .page-blog li.navigation_blog a,
-.page-photoessays li.navigation_photoessays a
-  color: $navigation-link--current
-
-.Content_header .navigation
-  padding: $base-spacing-unit 0
-  +respond-to(small-down)
-    padding: ($base-spacing-unit/2) 0
+.page-photoessays li.navigation_photoessays a,
+.body--talks li.navigation_talk a
+  opacity: 1

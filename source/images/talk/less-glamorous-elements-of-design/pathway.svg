@@ -1,0 +1,68 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1440" height="840" viewBox="0 0 1440 840">
+  <defs>
+    <path id="a" d="M50,100 C77.61424,100 100,77.6142 100,50 C100,22.3858 77.61424,0 50,0 C22.38576,0 0,22.3858 0,50 C0,77.6142 22.38576,100 50,100 Z"/>
+    <path id="c" d="M50,100 C77.614,100 100,77.6142 100,50 C100,22.3858 77.614,0 50,0 C22.386,0 0,22.3858 0,50 C0,77.6142 22.386,100 50,100 Z"/>
+    <path id="e" d="M50,100 C77.61424,100 100,77.6142 100,50 C100,22.3858 77.61424,0 50,0 C22.38576,0 0,22.3858 0,50 C0,77.6142 22.38576,100 50,100 Z"/>
+    <path id="g" d="M50,100 C77.61424,100 100,77.6142 100,50 C100,22.3858 77.61424,0 50,0 C22.38576,0 0,22.3858 0,50 C0,77.6142 22.38576,100 50,100 Z"/>
+    <path id="i" d="M50,100 C77.61424,100 100,77.61424 100,50 C100,22.38576 77.61424,0 50,0 C22.38576,0 0,22.38576 0,50 C0,77.61424 22.38576,100 50,100 Z"/>
+    <path id="k" d="M50,100 C77.61424,100 100,77.6142 100,50 C100,22.3858 77.61424,0 50,0 C22.38576,0 0,22.3858 0,50 C0,77.6142 22.38576,100 50,100 Z"/>
+    <path id="m" d="M50,100 C77.614,100 100,77.6142 100,50 C100,22.3858 77.614,0 50,0 C22.386,0 0,22.3858 0,50 C0,77.6142 22.386,100 50,100 Z"/>
+    <path id="o" d="M50,100 C77.614,100 100,77.61424 100,50 C100,22.38576 77.614,0 50,0 C22.386,0 0,22.38576 0,50 C0,77.61424 22.386,100 50,100 Z"/>
+  </defs>
+  <g fill="none" fill-rule="evenodd">
+    <g stroke-linecap="square" stroke-width="5" transform="translate(43 51)">
+      <path stroke="#ECECEC" d="M4.5 1.5L1352.501 1.5M.5 189.5L1352.501.5M.5 189.5L1345.5 370.5"/>
+      <path stroke="#9B9B9B" d="M9.5,555.5 L1348.5,743.5"/>
+      <path stroke="#ECECEC" d="M9.5 555.5L1348.5 743.5M3.5 743.5L1350.5 368.5"/>
+    </g>
+    <mask id="b" fill="white">
+      <use xlink:href="#a"/>
+    </mask>
+    <polygon fill="#ECECEC" points="-5 105 105 105 105 -5 -5 -5" mask="url(#b)"/>
+    <g transform="translate(1340)">
+      <mask id="d" fill="white">
+        <use xlink:href="#c"/>
+      </mask>
+      <polygon fill="#ECECEC" points="-5 105 105 105 105 -5 -5 -5" mask="url(#d)"/>
+    </g>
+    <g transform="translate(0 185)">
+      <mask id="f" fill="white">
+        <use xlink:href="#e"/>
+      </mask>
+      <polygon fill="#ECECEC" points="-5 105 105 105 105 -5 -5 -5" mask="url(#f)"/>
+    </g>
+    <g transform="translate(0 555)">
+      <mask id="h" fill="white">
+        <use xlink:href="#g"/>
+      </mask>
+      <polygon fill="#ECECEC" points="-5 105 105 105 105 -5 -5 -5" mask="url(#h)"/>
+    </g>
+    <g transform="translate(0 740)">
+      <mask id="j" fill="white">
+        <use xlink:href="#i"/>
+      </mask>
+      <polygon fill="#ECECEC" points="-5 105 105 105 105 -5 -5 -5" mask="url(#j)"/>
+    </g>
+    <g stroke="#000000" stroke-linecap="square" stroke-width="5" transform="translate(50 421)">
+      <path d="M.5 1.5L1346.5 1.5M.5.5L1341.5 373.5"/>
+    </g>
+    <g transform="translate(0 370)">
+      <mask id="l" fill="white">
+        <use xlink:href="#k"/>
+      </mask>
+      <polygon fill="#000000" points="-5 105 105 105 105 -5 -5 -5" mask="url(#l)"/>
+    </g>
+    <g transform="translate(1340 370)">
+      <mask id="n" fill="white">
+        <use xlink:href="#m"/>
+      </mask>
+      <polygon fill="#000000" points="-5 105 105 105 105 -5 -5 -5" mask="url(#n)"/>
+    </g>
+    <g transform="translate(1340 740)">
+      <mask id="p" fill="white">
+        <use xlink:href="#o"/>
+      </mask>
+      <polygon fill="#000000" points="-5 105 105 105 105 -5 -5 -5" mask="url(#p)"/>
+    </g>
+  </g>
+</svg>

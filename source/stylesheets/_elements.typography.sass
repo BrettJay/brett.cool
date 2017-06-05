@@ -1,53 +1,76 @@
-// Scale: http://www.modularscale.com/?16&px&1.25&web&text
 html
   font-family: $font_body
+
 h1, h2, h3, h4, h5, h6
   +font_headline
 
-
-h1
-  // +font-size(62px)
-  +fluid-scale(font-size, 375px, 1040px, 30px, 52px)
-  margin: 0.5em 0
+=h1_scale
+  +fluid-scale(font-size, 375px, 1040px, 30px, 50px)
   line-height: 1.1
 
-h2
-  // +font-size(48px)
-  +fluid-scale(font-size, 375px, 1040px, 28px, 40px)
-  margin: 1em 0 0.3em
+=h2_scale
+  +fluid-scale(font-size, 375px, 1040px, 28px, 38px)
   line-height: 1.2
 
+=h3_scale
+  +fluid-scale(font-size, 375px, 1040px, 24px, 35px)
+  line-height: 1.2
+
+=h4_scale
+  +fluid-scale(font-size, 375px, 1040px, 22px, 31px)
+  line-height: 1.2
+
+=h5_scale
+  +fluid-scale(font-size, 375px, 1040px, 20px, 25px)
+  line-height: 1.2
+
+=h6_scale
+  +fluid-scale(font-size, 375px, 1040px, 19px, 20px)
+  line-height: 1.2
+
+=body_scale
+  +fluid-scale(font-size, 375px, 1040px, 16px, 18px)
+  line-height: 1.5
+  letter-spacing: -0.2px
+  margin: 1.6em 0
+
+=body--small_scale
+  +fluid-scale(font-size, 375px, 1040px, 13px, 16px)
+
+h1
+  +h1_scale
+  margin: 0.5em 0
+
+h2
+  +h2_scale
+  margin: 1em 0 0.3em
+
 h3
-  // +font-size(39px)
-  +fluid-scale(font-size, 375px, 1040px, 24px, 39px)
+  +h3_scale
   margin: 0.7em 0
   line-height: 1.2
 
 h4
-  // +font-size(31px)
-  +fluid-scale(font-size, 375px, 1040px, 22px, 31px)
+  +h4_scale
   margin: 0.7em 0
   line-height: 1.2
 
 h5
-  // +font-size(25px)
-  +fluid-scale(font-size, 375px, 1040px, 20px, 25px)
+  +h5_scale
   margin: 0.7em 0
   line-height: 1.2
 
 h6
-  // +font-size(20px)
-  +fluid-scale(font-size, 375px, 1040px, 19px, 20px)
+  +h6_scale
   margin: 0.8em 0
   line-height: 1.2
 
 p, ul, dl, ol
-  +font-size(17px)
-  line-height: 1.3
-  letter-spacing: -0.3px
+  +body_scale
 
-p a
-  color: #06C
+p a,
+.slide_references a
+  color: $content-link
   text-decoration: none
   border-bottom: 1px solid $content-link_underline
   transition: 0.2s ease

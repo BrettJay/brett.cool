@@ -1,0 +1,39 @@
+.Talks
+  margin: -10px
+  padding: 0
+  list-style: none
+
+  .Talk_item
+    padding: 10px
+    a
+      transition: 0.15s ease
+      display: block
+    +respond-to(ipad-up)
+      width: 50%
+      float: left
+    .Slide
+      transition: 0.15s ease
+      box-shadow: 0 1px 2px rgba(0,0,0,0.3)
+
+  .Talk_item a:hover
+    transform: translateY(-2px)
+    .Slide
+      box-shadow: 0 4px 6px rgba(0,0,0,0.2)
+
+  .Talk_detail
+    padding-top: 10px
+    h2
+      +fluid-scale(font-size, 375px, 1040px, 14px, 17px)
+      font-weight: 600
+    h2, p
+      margin: 0
+    p
+      +fluid-scale(font-size, 375px, 1040px, 13px, 16px)
+  a
+    color: inherit
+    text-decoration: none
+    border: 0
+
+  .Talk_item--unavailable
+    opacity: 0.6
+    cursor: default
