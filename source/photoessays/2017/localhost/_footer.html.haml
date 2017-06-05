@@ -1,0 +1,17 @@
+.Content
+  .PhotoRow
+    .PhotoEssayFooterNavigation
+      - if current_page.data.collection.prev
+        = link_to "/photoessays/2017/localhost/#{current_page.data.collection.prev}", class: 'PhotoEssay_nav PhotoEssay_nav--previous', style: "background-image: url('/images/photoessays/2017/localhost/#{current_page.data.collection.prev}/banner.jpg')" do
+          .PhotoEssay_nav_label Previous
+          - data.localhost.dates.each do | date |
+            - if date.slug === current_page.data.collection.prev
+              .PhotoEssay_nav_title= date.title
+              .PhotoEssay_nav_date= date.date.strftime("%B %-d")
+      - if current_page.data.collection.next
+        = link_to "/photoessays/2017/localhost/#{current_page.data.collection.next}", class: 'PhotoEssay_nav PhotoEssay_nav--next', style: "background-image: url('/images/photoessays/2017/localhost/#{current_page.data.collection.next}/banner.jpg')" do
+          .PhotoEssay_nav_label Next
+          - data.localhost.dates.each do | date |
+            - if date.slug === current_page.data.collection.next
+              .PhotoEssay_nav_title= date.title
+              .PhotoEssay_nav_date= date.date.strftime("%B %-d")

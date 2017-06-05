@@ -1,0 +1,42 @@
+---
+  title: Sydney
+  slug: '2017/localhost/june-08'
+  subtitle: Day 3, June 8
+  body_classes: page-photoessays
+  meta_description: Day 3, June 8
+  collection:
+    current: june-08
+    next: june-09
+    prev: june-07
+  meta_keywords:
+  ogp:
+    og:
+      title: Sydney
+      description: Day 3, June 8
+      image:
+        '': http://brett.cool/images/photoessays/2017/localhost/june-08/og.jpg
+        type: image/jpg
+        width: 560
+        height: 300
+    fb:
+      title: Sydney
+      description: Day 3, June 8
+      image:
+        '': http://brett.cool/images/photoessays/2017/localhost/june-08/fb.jpg
+        type: image/jpg
+        width: 600
+        height: 315
+---
+
+= partial("photoessays/2017/tokyo/subheader", locals: {collection: current_page.data.collection})
+
+= partial("photoessays/components/banner", locals: {slug: current_page.data.slug, title: current_page.data.title, subtitle: current_page.data.subtitle, trip: ''})
+
+.Content#story
+  .Content_row
+    .Content_main
+      .Article_content
+        :markdown
+          Hello World
+
+= partial("photoessays/2017/localhost/footer", locals: {collection: current_page.data.collection})

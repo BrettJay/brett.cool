@@ -1,0 +1,47 @@
+---
+  title: Localhost Deployment
+  slug: '2017/localhost'
+  subtitle: 4 Speakers, 4 Cities, 4 Days
+  body_classes: page-photoessays
+  meta_description: 4 Speakers, 4 Cities, 4 Days
+  meta_keywords:
+  trip:
+    location: australia
+    weather: winter
+    arrival: plane
+    departure: plane
+    steps: 0
+    photos: 0
+    km: 0
+    dates:
+      from: 2017-06-06
+      to: 2017-06-10
+  ogp:
+    og:
+      title: Localhost Deployment
+      description: 4 Speakers, 4 Cities, 4 Days
+      image:
+        '': http://brett.cool/images/photoessays/2017/localhost/og.jpg
+        type: image/jpg
+        width: 560
+        height: 300
+    fb:
+      title: Localhost Deployment
+      description: 4 Speakers, 4 Cities, 4 Days
+      image:
+        '': http://brett.cool/images/photoessays/2017/localhost/fb.jpg
+        type: image/jpg
+        width: 600
+        height: 315
+---
+
+= partial("photoessays/components/banner", locals: {slug: current_page.data.slug, title: current_page.data.title, subtitle: current_page.data.subtitle, trip: current_page.data.trip})
+
+.Content_photoessays.Content_photoessays--full#story
+  - data.localhost.dates.each do | date |
+    .PhotoEssayItem
+      = link_to "/photoessays/2017/localhost/#{date.slug}", class: "PhotoEssayCard" do
+        .PhotoEssayCard_caption
+          .PhotoEssayCard_title= date.title
+          .PhotoEssayCard_subtitle= date.subtitle
+        .PhotoEssayCard_cardImage{style: "background-image: url('/images/photoessays/#{current_page.data.slug}/#{date.slug}/banner.jpg')"}

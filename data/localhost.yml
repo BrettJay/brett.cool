@@ -1,0 +1,31 @@
+dates:
+  - slug: june-06
+    date: 2017-01-07
+    title: Perth
+    subtitle: Day 1, June 6
+    steps: 0
+    km: 0
+  - slug: june-07
+    date: 2017-01-08
+    title: Melbourne
+    subtitle: Day 2, June 7
+    steps: 0
+    km: 0
+  - slug: june-08
+    date: 2017-01-09
+    title: Sydney
+    subtitle: Day 3, June 8
+    steps: 0
+    km: 0
+  - slug: june-09
+    date: 2017-01-10
+    title: Brisbane
+    subtitle: Day 4, June 9
+    steps: 0
+    km: 0
+  - slug: june-10
+    date: 2017-01-10
+    title: Bonus Day
+    subtitle: In Brisbane
+    steps: 0
+    km: 0
