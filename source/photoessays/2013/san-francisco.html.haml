@@ -405,3 +405,11 @@
           After a short wait, we boarded the greyhound bus, headed for Los Angeles...
 
   = partial("photoessays/components/photo_hero", locals: {slug: current_page.data.slug, caption: 'To be continued...', 'photo': '26/greyhound'})
+
+.Content
+  .PhotoRow
+    .PhotoEssayFooterNavigation
+      = link_to "/photoessays/2013/los-angeles", class: 'PhotoEssay_nav PhotoEssay_nav--next', style: "background-image: url('/images/photoessays/2013/los-angeles/banner.jpg')" do
+        .PhotoEssay_nav_label Next
+        .PhotoEssay_nav_title Los Angeles
+        .PhotoEssay_nav_date July 26, 2013

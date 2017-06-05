@@ -146,3 +146,15 @@
 .tagline
   +fluid-scale(font-size, 375px, 1040px, 16px, 24px)
   line-height: 1.3
+
+.Content_main--decoration
+  position: relative
+  &:before
+    content: ''
+    display: block
+    position: absolute
+    z-index: -1
+    width: 20%
+    height: 1px
+    left: 0
+    background: #000

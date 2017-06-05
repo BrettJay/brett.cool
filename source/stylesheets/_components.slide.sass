@@ -22,6 +22,17 @@
 
 .Slide:not(.Slide--title) .Slide_content
   +center_content
+  flex-wrap: wrap
+  &.Slide_content--full
+    padding: 0
+    img
+      max-width: 100%
+
+  p
+    flex: 0 1 100%
+    text-align: left
+    max-width: 80%
+    +fluid-scale(font-size, 375px, 1920px, 14px, 23px)
 
 .Slide--dark
   background: #000
@@ -94,3 +105,7 @@
     color: #fff
     background: #583ca0 image-url('talk/mixin-up/title.png') 50% 50% no-repeat
     background-size: 80%
+
+.slide_references
+  margin: 40px 0 0
+  padding: 0
