@@ -1,0 +1,25 @@
+dates:
+  - slug: june-06
+    date: 2017-06-06
+    title: Perth
+    subtitle: June 6
+    steps: 5868
+    km: 4.2
+  - slug: june-07
+    date: 2017-06-07
+    title: Melbourne
+    subtitle: June 7
+    steps: 5584
+    km: 3.7
+  - slug: june-08
+    date: 2017-06-08
+    title: Sydney
+    subtitle: June 8
+    steps: 9534
+    km: 6.8
+  - slug: june-09
+    date: 2017-06-09
+    title: Brisbane
+    subtitle: June 9
+    steps: 8832
+    km: 6.8

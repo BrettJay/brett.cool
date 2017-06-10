@@ -1,0 +1,148 @@
+---
+  title: Perth
+  slug: '2017/localhost/june-06'
+  subtitle: Day 1, June 6
+  body_classes: page-photoessays
+  meta_description: Day 1, June 6
+  collection:
+    current: june-06
+    next: june-07
+  meta_keywords:
+  ogp:
+    og:
+      title: Localhost Perth
+      description: Day 1, June 6
+      image:
+        '': http://brett.cool/images/photoessays/2017/localhost/june-06/og.jpg
+        type: image/jpg
+        width: 560
+        height: 300
+    fb:
+      title: Localhost Perth
+      description: Day 1, June 6
+      image:
+        '': http://brett.cool/images/photoessays/2017/localhost/june-06/fb.jpg
+        type: image/jpg
+        width: 600
+        height: 315
+---
+
+= partial("photoessays/2017/localhost/subheader", locals: {collection: current_page.data.collection})
+
+= partial("photoessays/components/banner", locals: {slug: current_page.data.slug, title: current_page.data.title, subtitle: current_page.data.subtitle, trip: ''})
+
+.Content#story
+  .Content_row
+    .Content_main
+      .Article_content
+        :markdown
+          I awoke to the news of Apple’s WWDC event across all my feeds.
+
+          Making coffee, I digesting all the announcements, and set about rehearsing my&nbsp;slides.
+
+  = partial("photoessays/components/photo_right", locals: {slug: current_page.data.slug, caption: 'Still yet to finish packing at this point', 'photo': 'P6060021'})
+
+  .Content_row
+    .Content_main
+      .Article_content
+        :markdown
+          The rest of the day just melted away. After packing, rehearsing, and a quick visit to the gym, it was time to leave for Perth leg of Localhost Deployment.
+
+          I caught an Uber to CBDC...
+
+  = partial("photoessays/components/place_of_interest", locals: {slug: current_page.data.slug, image: 'cbdc', title: 'CBDC', address: '25 Gladstone Street, WA', place: 'Coworking', link: '', rating: ''})
+
+  .Content_row
+    .Content_main
+      .Article_content
+        :markdown
+          The Localhost crew and volunteers were already in place, setting up the venue, assembling chairs, setting out food and drinks.
+
+          Watching the thought and care going in behind the scenes made me aware of the situation and how it was going to.
+
+  = partial("photoessays/components/photo_two_column", locals: {slug: current_page.data.slug, 'left': ['P6060024','P6060030'], 'right': ['P6060026','P6060033'] })
+
+  .Content_row
+    .Content_main
+      .Article_content
+        :markdown
+          After unpacking the chairs, we set about with our tech check, which involved hooking up the four speaker laptops to a switcher provided by DT, it was an impressive setup.
+
+  = partial("photoessays/components/photo_full", locals: {slug: current_page.data.slug, caption: "The crazy HDMI switcher setup from DT, with dongles as far as the eye can&nbsp;see.", 'photo': 'P6060034'})
+
+  .Content_row
+    .Content_main
+      .Article_content
+        :markdown
+          Soon, the catered burritos arrived 🌯
+
+  = partial("photoessays/components/photo_right", locals: {slug: current_page.data.slug, caption: 'Well catered 👌', 'photo': 'P6060035'})
+
+  .Content_row
+    .Content_main
+      .Article_content
+        :markdown
+          Before long, people were arriving...
+
+  = partial("photoessays/components/photo_full", locals: {slug: current_page.data.slug, caption: '', 'photo': 'P6060040'})
+
+  .Content_row
+    .Content_main
+      .Article_content
+        :markdown
+          Unfortunately at this point, a little preoccupied, I stopped taking photos as I prepared for my talk...
+
+          Patima started the show, and we were off.
+
+          I was up first, with my talk, #{link_to 'Less Glamorous Elements of Design', '/talk/less-glamorous-elements-of-design'}.
+
+          I had a number of technical difficulties at the start — it turns out that using the record slideshow feature in Keynote completely disables build animations, which for some of the more complicated slides made them totally unusable.
+
+          After a quick restart in regular presentation mode, I resumed. Unfortunately for the rest of the talk I was experiencing intermittent issues with my clicker, which was advancing two slides at a time.
+
+          Despite all these technical issues however, it appears I had rehearsed sufficiently to be able to roll with the punches and keep the flow going, and never lost my place or paused for an awkward amount of&nbsp;time.
+
+          In a weird way it makes me more confident about the next talks, that I was able to overcome the technical issues and making it through coherently. I’d ask <em>how hard can the next one be?</em> but I’m sure that’s just tempting fate!
+
+          ---
+
+          Next up was #{link_to 'Glen Maddern', '/', target: '_blank'}, on The Road to Unification.
+
+          With the air of a seasoned speaker, Glen took us through some high level goals and directions he sees the front end community moving in.
+
+          Having just watched episode fifteen of his excellent Frontend.center course, a lot of his content dovetailed nicely, providing additional background context to the screencasts he’s working on.
+
+          What I really appreciate about the Glen’s perspective—along with others like Mark Dalgeish—is that he is not dogmatic about an approach, and fully understands inherent tradeoffs made with client side rendered javascript.
+
+          Furthermore, his point about making barriers to entry lower by making things familiar to new users was a very valid point. I’ll always have a soft spot for writing Sass in its vanilla syntax still.
+
+          ---
+
+          After a short break, #{link_to 'Anna', 'https://twitter.com/planelyspeaking', target: '_blank'} took to the stage in a thoroughly delightful talk which challenged some views we often take for granted — that having choice is always inherently a good thing.
+
+          Pointing out that the abundance of choice can burder our users and customers with anxiety and confusion, and using her experience working on the very configurable TinyMCE as a case-study, Anna made a very compelling argument that it is our job to make these decisions for users where possible.
+
+          A product is being used in the context of an individual’s day, during which 35,000 other decisions are being made.
+
+          We should be respectful of this context and the limited attention our user can spare, so we should design products that work out the box, have sane defaults, and do not offload unnecessary choices to the user, which is basically asking them to design the product themselves.
+
+          ---
+
+          Last up, #{link_to 'Simon Wright', 'https://twitter.com/diversionary', target: '_blank'} took the stage to share with us that relatable sensation of going from feeling like you have no idea what you’re doing, to figuring out how to translate some of your skills, to that Eureka moment where it all clicks.
+
+          A veteran web and user experience designer, Simon took us through his history building websites, taking us back to that naïve moment in web design in the 90’s when we were all figuring this stuff out, and abusing things like spacer gifs, table cells, and other techniques, before the advent of CSS.
+
+          These days, Simon runs #{link_to 'Sample Coffee', 'http://sample.coffee', target:'_blank'}, and took us through the process of how he built an entire rails subscription platform himself, due to being unhappy with the experience of existing off-the-shelf products.
+
+          What was more alient to him, however, was attempting to learn all the nuances of print design and tools like Adobe Illustrator. As someone with very limited print experience this particularly resonated with me.
+
+          What Simon identified though was an interesting opportunity. Due to the inherent requirement of printing so many different variations of labels, the process with Indesign was complicated and very human-error prone. So Simon begun to investigate whether he could leverage his existing web development skills to produce websites.
+
+          What followed was some very informative learning on what I can only assume are less-known features in upcoming CSS Specs. The @page declaration, as well as the ability to be able to specify bleed marks, margins, and sizes in mm, cm, and pica, coupled with the web’s ability to make variations and reducing repetition easy were the perfect solution to improve the process of printing labels.
+
+          ---
+
+          After the wonderful talks, we stuck around, chatting and drinking. As the night wound down, we headed home, in preparation for our early flight the next day (or, later that morning, to be more accurate)...
+
+
+= partial("photoessays/2017/localhost/footer", locals: {collection: current_page.data.collection})

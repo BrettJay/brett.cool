@@ -1,5 +1,8 @@
 - year: 2017
   photoessays:
+    - title: Localhost Deployment
+      url: 2017/localhost
+      date: 2017-06-06
     - title: Kyoto
       url: 2017/kyoto
       date: 2017-01-15

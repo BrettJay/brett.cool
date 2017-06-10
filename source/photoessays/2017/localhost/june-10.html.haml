@@ -1,0 +1,41 @@
+---
+  title: Bonus Day
+  slug: '2017/localhost/june-10'
+  subtitle: Half a day in Brisbane
+  body_classes: page-photoessays
+  meta_description: Half a day in Brisbane
+  collection:
+    current: june-10
+    prev: june-09
+  meta_keywords:
+  ogp:
+    og:
+      title: Bonus Day
+      description: Half a day in Brisbane
+      image:
+        '': http://brett.cool/images/photoessays/2017/localhost/june-10/og.jpg
+        type: image/jpg
+        width: 560
+        height: 300
+    fb:
+      title: Bonus Day
+      description: Half a day in Brisbane
+      image:
+        '': http://brett.cool/images/photoessays/2017/localhost/june-10/fb.jpg
+        type: image/jpg
+        width: 600
+        height: 315
+---
+
+= partial("photoessays/2017/localhost/subheader", locals: {collection: current_page.data.collection})
+
+= partial("photoessays/components/banner", locals: {slug: current_page.data.slug, title: current_page.data.title, subtitle: current_page.data.subtitle, trip: ''})
+
+.Content#story
+  .Content_row
+    .Content_main
+      .Article_content
+        :markdown
+          Hello World
+
+= partial("photoessays/2017/localhost/footer", locals: {collection: current_page.data.collection})

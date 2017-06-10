@@ -68,7 +68,8 @@
   +respond-to(ipad-up)
     flex: 0 1 33.33%
 
-.Content_photoessays--full
+.Content_photoessays--full,
+.Content_photoessays--localhost
   margin: 0
   +respond-to(ipad-up)
     margin: 0
@@ -76,7 +77,6 @@
   .PhotoEssayItem
     flex: 0 1 33.33%
     padding: 0
-
     +respond-to(ipad-up)
       flex: 0 1 20%
       padding: 0
@@ -84,6 +84,11 @@
     .PhotoEssayItem
       flex: 0 1 50%
 
+.Content_photoessays--localhost
+  .PhotoEssayItem
+    flex: 0 1 50%
+    +respond-to(ipad-up)
+      flex: 0 1 25%
 .PhotoEssayCard
   position: relative
   display: block
