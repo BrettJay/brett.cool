@@ -6,12 +6,11 @@
   meta_description: Day 4, June 9
   collection:
     current: june-09
-    next: june-10
     prev: june-08
   meta_keywords:
   ogp:
     og:
-      title: Brisbane
+      title: Localhost Brisbane
       description: Day 4, June 9
       image:
         '': http://brett.cool/images/photoessays/2017/localhost/june-09/og.jpg
@@ -19,7 +18,7 @@
         width: 560
         height: 300
     fb:
-      title: Brisbane
+      title: Localhost Brisbane
       description: Day 4, June 9
       image:
         '': http://brett.cool/images/photoessays/2017/localhost/june-09/fb.jpg
@@ -28,15 +27,170 @@
         height: 315
 ---
 
-= partial("photoessays/2017/tokyo/subheader", locals: {collection: current_page.data.collection})
+= partial("photoessays/2017/localhost/subheader", locals: {collection: current_page.data.collection})
 
 = partial("photoessays/components/banner", locals: {slug: current_page.data.slug, title: current_page.data.title, subtitle: current_page.data.subtitle, trip: ''})
 
 .Content#story
+
   .Content_row
     .Content_main
       .Article_content
         :markdown
-          Hello World
+          After a rather late night (or early morning) at Frankie’s last night, we all slept in a little the next morning.
+
+          Aside from a quick circuit to Campaign Monitor headquarters and back in search of my lost Macbook Pro charger (it turned out the Localhost organisers picked it up — thanks Georgie and Jamie at Campaign Monitor for their help!), we didn’t have time for early morning Sydney adventures as we did in Melbourne the previous day.
+
+          Without much time to spare, we decided to check out and go straight to the airport.
+
+  = partial("photoessays/components/photo_two_column", locals: {slug: current_page.data.slug, 'left': ['P6090657'], 'right': ['P6090659'] })
+
+  .Content_row
+    .Content_main
+      .Article_content
+        :markdown
+          When we arrived, we discovered there were some delays to flights due to the ongoing weather.
+
+          We took the opportunity to occupy a long table in the food court and get to hacking.
+
+  = partial("photoessays/components/photo_grid", locals: {slug: current_page.data.slug, rows: [ { count: 1, caption: '', photos: ['P6090666'] }, { count: 2, caption: '', photos: ['P6090664','P6090670'] } ] } )
+
+  .Content_row
+    .Content_main
+      .Article_content
+        :markdown
+          Some hacking later, it was finally time to board.
+
+  = partial("photoessays/components/photo_full", locals: {slug: current_page.data.slug, caption: '', 'photo': 'P6090672'})
+
+  .Content_row
+    .Content_main
+      .Article_content
+        :markdown
+          One delightfully quick flight later, we arrived in&nbsp;Brisbane.
+
+  = partial("photoessays/components/photo_right", locals: {slug: current_page.data.slug, caption: '', 'photo': 'P6090689'})
+
+  .Content_row
+    .Content_main
+      .Article_content
+        :markdown
+          After bag claim — which we finally had absolutely no issues with — we headed for the cab rank, and again, opted for a Maxi Taxi.
+
+  = partial("photoessays/components/photo_full", locals: {slug: current_page.data.slug, caption: '', 'photo': 'P6090711'})
+
+  .Content_row
+    .Content_main
+      .Article_content
+        :markdown
+          The ride was smooth and enjoyable, as I got my first proper look of Brisbane.
+
+          We quickly arrived at our hotel in the city.
+
+  = partial("photoessays/components/photo_full", locals: {slug: current_page.data.slug, caption: '', 'photo': 'P6090718'})
+
+  = partial("photoessays/components/place_accomodation", locals: { title: 'Mercure Hotel', image: 'P6090718', slug: current_page.data.slug, address: '85–87 North Quay, QLD 4000', checkin: 'Jun 9', checkout: 'Jun 10', rating: 5})
+
+  .Content_row
+    .Content_main
+      .Article_content
+        :markdown
+          I barely had time to iron my shirt, stage an elaborate photo of ironing my shirt, and put on my shirt, before we had to set off that evening for the final evening of talks.
+
+  = partial("photoessays/components/photo_full", locals: {slug: current_page.data.slug, caption: 'En route in an uber.', 'photo': 'P6090731'})
+
+  = partial("photoessays/components/place_of_interest", locals: {slug: current_page.data.slug, image: 'josephmark', title: 'Josephmark', address: '110 Arthur St, Fortitude Valley', place: 'Office', link: '', rating: ''})
+
+  .Content_row
+    .Content_main
+      .Article_content
+        :markdown
+          We arrived at the venue, a delightful converted interior inside an industrial exterior.
+
+          That interior was being completely refitted by Team Localhost to accomodate the talks.
+
+          Somehow Patima, DT, Corey and Teegan transformed the venue in time for the crowds to arrive, thanks in no small part to a lot of help from Jai and the other Josephmark staff.
+
+  = partial("photoessays/components/photo_two_column", locals: {slug: current_page.data.slug, 'left': ['P6090733'], 'right': ['P6090734'] })
+
+  .Content_row
+    .Content_main
+      .Article_content
+        :markdown
+          Soon, the crowds arrived, and for the fourth night, Patima introduced me and I was up again to give my talk.
+
+          Tonight I think I finally managed to slow down sufficiently for people to not miss anything. It says something that this was still only barely 20 minutes long, when I was trying to actually go a _little over_ that, considering the impromptu ironing bit I added at the start.
+
+  = partial("photoessays/components/photo_right", locals: {slug: current_page.data.slug, caption: '', 'photo': 'P6090738'})
+
+  .Content_row
+    .Content_main
+      .Article_content
+        :markdown
+          Next, Glen gave his fourth iteration of the Road to Unification. With a more relaxed time limit, Glen was able to take a bit more time to deliver his talk, and was well received by the Brisbane audience.
+
+  = partial("photoessays/components/photo_two_column", locals: {slug: current_page.data.slug, 'left': ['P6090742'], 'right': ['P6090745'] })
+
+  .Content_row
+    .Content_main
+      .Article_content
+        :markdown
+          “Dr Anna House is in the house” declared Patima.
+
+          And Anna proceeded to deliver a very entertaining rendition of her “Decisions Considered Harmful for Product Love” talk.
+
+          The small iterative tweaks and refinements to delivery have continued to refine Anna’s talk given only a few days ago in Perth on June 6.
+
+  = partial("photoessays/components/photo_right", locals: {slug: current_page.data.slug, caption: '', 'photo': 'P6090748'})
+
+  .Content_row
+    .Content_main
+      .Article_content
+        :markdown
+          Simon closed out the night with _“Design, Coffee and IHNIDWIDOWMID”_. As always, it was an entertaining end to the night.
+
+          I noticed a few little additions to Simon’s keynote deck — such as a new magic move transition to illustrate the way bleed marks crop and cross look — a very excellent planehack! (Also, Simon confessed he magic moved a screenshot to make the process far easier — fair enough!)
+
+          ---
+
+          After Simon’s talk, it was time to wrap up. But of course, like so much of the Localhost Deployment, it was not going to stay on script!
+
+          In front of the audience, Anna, Simon, Glen and I presented Patima, DT, Teegan, Corey and Ryan with gifts for their incredible job putting together Localhost Deployment, and all the hard work they had put in.
+
+          We couldn’t stop there! After a little while hanging back and chatting with the Brisbane community, it was on to the after party!
+
+  = partial("photoessays/components/place_drink", locals: {slug: current_page.data.slug, title: 'Netherworld', address:'186 Brunswick St, Fortitude Valley', image: 'P6090751', price: '$$', menu: 'Bar', rating: 5, link: '' })
+
+  .Content_row
+    .Content_main
+      .Article_content
+        :markdown
+          A trendy videogame arcade seemed like the most fitting venue for our final after party.
+
+          Glen, Simon and I arrived, and slowly begun to claim shared table space to share with the others as they arrived.
+
+  = partial("photoessays/components/photo_two_column", locals: {slug: current_page.data.slug, 'left': ['P6090757','P6090763'], 'right': ['P6090758','P6090767'] })
+
+  .Content_row
+    .Content_main
+      .Article_content
+        :markdown
+          Craft beer, arcade machines, pinball, and board games. There was something for everyone.
+
+          Including Daytona USA, just for Glen.
+
+  = partial("photoessays/components/photo_two_column", locals: {slug: current_page.data.slug, 'left': ['P6090762','P6090773'], 'right': ['P6090770','P6100777'] })
+
+  .Content_row
+    .Content_main
+      .Article_content
+        :markdown
+          All in all, it was an awesome night, and a perfect way to wrap up the tour. The Brisbane community was awesome, and I know we can’t wait to be back.
+
+          ---
+
+          Thank you so much to Localhost—Patima, Corey, Teegan, and DT—for their incredible efforts in making the Localhost Deployment Tour a reality.
+
+          Thank you to CBDC, MelbCSS, Campaign Monitor (and Georgie, and Fiona), Josephmark (and Jai), for working with Localhost closely to bring each of the events to life.
 
 = partial("photoessays/2017/localhost/footer", locals: {collection: current_page.data.collection})

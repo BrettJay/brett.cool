@@ -10,9 +10,9 @@
     weather: winter
     arrival: plane
     departure: plane
-    steps: 0
-    photos: 0
-    km: 0
+    steps: 29818
+    photos: 797
+    km: 21.5
     dates:
       from: 2017-06-06
       to: 2017-06-10
@@ -37,7 +37,7 @@
 
 = partial("photoessays/components/banner", locals: {slug: current_page.data.slug, title: current_page.data.title, subtitle: current_page.data.subtitle, trip: current_page.data.trip})
 
-.Content_photoessays.Content_photoessays--full#story
+.Content_photoessays.Content_photoessays--localhost#story
   - data.localhost.dates.each do | date |
     .PhotoEssayItem
       = link_to "/photoessays/2017/localhost/#{date.slug}", class: "PhotoEssayCard" do
