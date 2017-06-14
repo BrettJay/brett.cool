@@ -90,23 +90,33 @@
     .Content_main
       .Article_content
         :markdown
-          Unfortunately at this point, a little preoccupied, I stopped taking photos as I prepared for my talk...
-
           Patima started the show, and we were off.
 
+  = partial("photoessays/components/photo_full", locals: {slug: current_page.data.slug, caption: '', 'photo': 'per-brett'})
+
+  .Content_row
+    .Content_main
+      .Article_content
+        :markdown
           I was up first, with my talk, #{link_to 'Less Glamorous Elements of Design', '/talk/less-glamorous-elements-of-design'}.
 
           I had a number of technical difficulties at the start — it turns out that using the record slideshow feature in Keynote completely disables build animations, which for some of the more complicated slides made them totally unusable.
 
           After a quick restart in regular presentation mode, I resumed. Unfortunately for the rest of the talk I was experiencing intermittent issues with my clicker, which was advancing two slides at a time.
 
+  = partial("photoessays/components/photo_right", locals: {slug: current_page.data.slug, caption: '', 'photo': 'per-brett02'})
+
+  .Content_row
+    .Content_main
+      .Article_content
+        :markdown
           Despite all these technical issues however, it appears I had rehearsed sufficiently to be able to roll with the punches and keep the flow going, and never lost my place or paused for an awkward amount of&nbsp;time.
 
           In a weird way it makes me more confident about the next talks, that I was able to overcome the technical issues and making it through coherently. I’d ask <em>how hard can the next one be?</em> but I’m sure that’s just tempting fate!
 
           ---
 
-          Next up was #{link_to 'Glen Maddern', '/', target: '_blank'}, on The Road to Unification.
+          Next up was #{link_to 'Glen Maddern', 'https://twitter.com/glenmaddern', target: '_blank'}, on The Road to Unification.
 
           With the air of a seasoned speaker, Glen took us through some high level goals and directions he sees the front end community moving in.
 
@@ -116,8 +126,12 @@
 
           Furthermore, his point about making barriers to entry lower by making things familiar to new users was a very valid point. I’ll always have a soft spot for writing Sass in its vanilla syntax still.
 
-          ---
+  = partial("photoessays/components/photo_full", locals: {slug: current_page.data.slug, caption: '', 'photo': 'per-anna'})
 
+  .Content_row
+    .Content_main
+      .Article_content
+        :markdown
           After a short break, #{link_to 'Anna', 'https://twitter.com/planelyspeaking', target: '_blank'} took to the stage in a thoroughly delightful talk which challenged some views we often take for granted — that having choice is always inherently a good thing.
 
           Pointing out that the abundance of choice can burder our users and customers with anxiety and confusion, and using her experience working on the very configurable TinyMCE as a case-study, Anna made a very compelling argument that it is our job to make these decisions for users where possible.
@@ -126,7 +140,12 @@
 
           We should be respectful of this context and the limited attention our user can spare, so we should design products that work out the box, have sane defaults, and do not offload unnecessary choices to the user, which is basically asking them to design the product themselves.
 
-          ---
+  = partial("photoessays/components/photo_full", locals: {slug: current_page.data.slug, caption: '', 'photo': 'per-simon'})
+
+  .Content_row
+    .Content_main
+      .Article_content
+        :markdown
 
           Last up, #{link_to 'Simon Wright', 'https://twitter.com/diversionary', target: '_blank'} took the stage to share with us that relatable sensation of going from feeling like you have no idea what you’re doing, to figuring out how to translate some of your skills, to that Eureka moment where it all clicks.
 
