@@ -13,9 +13,12 @@
         .Article.Article--list
           .Article_heading
             %h2.Article_title= link_to article.title, article
-            .Article_metadata= Date.parse(article.date.to_s).strftime('%B %e, %Y')
+            .Article_metadata
+              %span.metadata_date= Date.parse(article.date.to_s).strftime('%b %e, %Y')
+              •
+              %span.metadata_reading_time #{time_label article.body}
           .Article_content
             = article.summary
 
             = link_to article, class: 'read-more' do
-              Continue Reading <span class="reading-time"> — #{reading_time article.body}</span>
+              Continue Reading

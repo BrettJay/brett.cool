@@ -5,5 +5,8 @@
         .Article
           .Article_heading
             %h1.Article_title= current_article.title
-            .Article_metadata= Date.parse(current_article.date.to_s).strftime('%B %e, %Y')
+            .Article_metadata
+              %span.metadata_date= Date.parse(current_article.date.to_s).strftime('%b %e, %Y')
+              •
+              %span.metadata_reading_time #{time_label current_article.body}
     = yield

@@ -213,11 +213,25 @@
         :markdown
           In a familiar blur, the event was on before I knew it.
 
+  = partial("photoessays/components/photo_full", locals: {slug: current_page.data.slug, caption: '', 'photo': 'brett-mel'})
+
+  .Content_row
+    .Content_main
+      .Article_content
+        :markdown
           I launched into the talk, inviting people from Melbourne to send me recommendations on Twitter—which I was delighted to see they did with gusto!
 
           Thankfully the technical issues that plagued my talk on the Monday night were all but absent, and I was able to run through my talk without issue. This was a huge relief, and the feedback I received was really encouraging.
 
-          Next up, Glen took to the stage to give his talk. After listening to his talk from the previous night, he decided to modify the content — it was interesting to see the changes he made since the night before, and despite the last minute changes, he pulled it off with the air of a well rehearsed, seasoned speaker.
+  = partial("photoessays/components/photo_full", locals: {slug: current_page.data.slug, caption: '', 'photo': 'glen-mel'})
+
+  .Content_row
+    .Content_main
+      .Article_content
+        :markdown
+          Next up, Glen took to the stage to give his talk.
+
+          After listening to his talk from the previous night, he decided to modify the content — it was interesting to see the changes he made since the night before, and despite the last minute changes, he pulled it off with the air of a well rehearsed, seasoned speaker.
 
   = partial("photoessays/components/photo_right", locals: {slug: current_page.data.slug, caption: 'Dr Anna Harrison — “Decisions Considered Harmful”', 'photo': 'P6070178'})
 

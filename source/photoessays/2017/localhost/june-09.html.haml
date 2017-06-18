@@ -109,6 +109,12 @@
 
           That interior was being completely refitted by Team Localhost to accomodate the talks.
 
+  = partial("photoessays/components/photo_full", locals: {slug: current_page.data.slug, caption: '', 'photo': 'setup'})
+
+  .Content_row
+    .Content_main
+      .Article_content
+        :markdown
           Somehow Patima, DT, Corey and Teegan transformed the venue in time for the crowds to arrive, thanks in no small part to a lot of help from Jai and the other Josephmark staff.
 
   = partial("photoessays/components/photo_two_column", locals: {slug: current_page.data.slug, 'left': ['P6090733'], 'right': ['P6090734'] })
@@ -117,9 +123,17 @@
     .Content_main
       .Article_content
         :markdown
-          Soon, the crowds arrived, and for the fourth night, Patima introduced me and I was up again to give my talk.
+          Soon, the crowds arrived, and for the fourth night, Patima introduced me and I was up to give my talk.
 
-          Tonight I think I finally managed to slow down sufficiently for people to not miss anything. It says something that this was still only barely 20 minutes long, when I was trying to actually go a _little over_ that, considering the impromptu ironing bit I added at the start.
+  = partial("photoessays/components/photo_full", locals: {slug: current_page.data.slug, caption: '', 'photo': 'brett-bne'})
+
+  .Content_row
+    .Content_main
+      .Article_content
+        :markdown
+          Tonight I think I finally managed to slow down sufficiently for people to not miss anything.
+
+          It says something that this was still only barely 20 minutes long, when I was trying to actually go a _little over_ that, considering the impromptu ironing bit I added at the start.
 
   = partial("photoessays/components/photo_right", locals: {slug: current_page.data.slug, caption: '', 'photo': 'P6090738'})
 
