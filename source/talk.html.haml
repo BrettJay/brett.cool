@@ -25,9 +25,12 @@
 %link{href: "https://fonts.googleapis.com/css?family=Karla|Work+Sans:300,400,500,600,700,800", rel: "stylesheet"}/
 
 %link{:rel => "stylesheet", :href => ""}/
-.Content.Content--margins
+.Content.Content--marginCollapse
+  .Content_row= image_tag 'talk/deployment.jpg', alt: 'Speaking at Localhost Deployment, June 8 in Sydney', title: 'Speaking at Localhost Deployment, June 8 in Sydney', class: 'hero_image Fullbleed'
   .Content_row
-    .Content_primary
+    .Content_main
+      %h1 Talks
+
       %ol.Talks
         %li.Talk_item
           = link_to '/talk/less-glamorous-elements-of-design' do
