@@ -1,0 +1,76 @@
+---
+  title: Happy Six Months, Alyssa!
+  body_classes: page--sixmonths
+  ogp:
+    og:
+      title: Happy Six Months, Alyssa!
+      description: Here’s to many more ☺️
+      image:
+        '': http://brett.cool/images/six-months/og.jpg
+        type: image/jpg
+        width: 560
+        height: 300
+    fb:
+      title: Happy Six Months, Alyssa!
+      description: Here’s to many more ☺️
+      image:
+        '': http://brett.cool/images/six-months/fb.jpg
+        type: image/jpg
+        width: 600
+        height: 315
+---
+
+.Content
+  .Content_row
+    .DateIntro
+      .DateIntro_content
+        .DateTitle Dear Alyssa,
+        .DateContent
+          %p Happy six months!
+          %p I can’t believe how fast it’s gone — time flies when we’re&nbsp;together!
+          %p Six months may have passed in the blink of an eye, but there’s so much I look back on in our time together so far, and want to celebrate — meeting you, above all else!
+          %p I look forward to what the future brings!
+          %p
+            Love, <br/>
+            —Brett
+
+    - data.alyssa.dates.each do | date |
+      %time.DateTime
+        %span= date.date.strftime("%b %-d, %Y")
+
+      - date.events.each do | event |
+
+        - if event.type == 'dialogue'
+          .DateDialogue{class: "#{event.message_class}" }
+            - event.lines.each do | line |
+              .DateLine{class: line.cite }
+                %blockquote.DateQuote= line.content
+
+        - elsif event.type == 'place'
+          .DatePlace{ class: "Place--#{event.category}" }
+            .DatePlace_content
+              .DateTitle= event.name
+              .DateContent= event.content
+            - if event.photos.any?
+              .DatePhotoGrid
+                - event.photos.each do | photo |
+                  .DatePhoto= image_tag "six-months/#{photo}.jpg"
+
+        - elsif event.type == 'photos'
+          .DatePhotos
+            .DateTitle= event.name
+            .DateContent= event.content
+            .DatePhotoGrid{ class: "PhotoGrid--#{event.grid}" }
+              - event.photos.each do | photo |
+                .DatePhoto= image_tag "six-months/#{photo}.jpg"
+
+        - elsif event.type == 'emoji'
+          .DatePhotos
+            .DateTitle= event.content
+
+        - elsif event.type == 'quote'
+          .DateQuotation
+            .DateLine{class: "#{event.message_class}" }
+              %blockquote.DateQuote #{event.content}
+              - if event.cite.present?
+                %cite.DateCite — #{event.cite}, #{date.date.strftime("%Y")}

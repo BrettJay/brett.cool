@@ -19,6 +19,8 @@ module PageTitleHelper
 
     if current_resource.url == '/'
       "brett😎"
+    elsif current_resource.url == '/alyssa'
+      "#{title}"
     else
       "#{title} #{title_separator} #{site_title}"
     end

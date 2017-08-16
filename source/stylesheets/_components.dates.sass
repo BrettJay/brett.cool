@@ -1,0 +1,217 @@
+=place-icon-col($col)
+  $colx: -30px * ($col - 1)
+  background-image: image-url('six-months/places.png')
+  background-position: $colx 0
+  background-repeat: no-repeat
+  background-size: 390px 30px
+
+$element: #F7F7F7
+.page--sixmonths
+  background: #fff
+  .Header,
+  .Content_footer
+    display: none
+
+  .DateTime
+    display: block
+    text-align: center
+    margin: 40px 0
+    text-transform: uppercase
+    letter-spacing: 0.2px
+    color: #808080
+    +fluid-scale(font-size, 375px, 1040px, 13px, 15px)
+    position: relative
+    z-index: 1
+    span
+      background: #fff
+      padding: 10px
+      position: relative
+      z-index: 3
+    &:before
+      position: absolute
+      content: ''
+      top: -40px
+      bottom: -40px
+      left: 50%
+      z-index: 0
+      transform: translateX(-50%)
+      width: 2px
+      background: $element
+
+  .DateDialogue,
+  .DateQuotation,
+  .DatePlace
+    width: 95%
+    max-width: 460px
+    margin: 0 auto
+    .DateLine
+      +clearfix
+
+  .DateLine.significant
+    text-align: center
+
+  .DateDialogue
+    max-width: 540px
+    width: 99%
+    margin: 40px auto
+
+  .DatePlace
+    margin: 20px auto
+    background: $element
+    border-radius: 15px
+    position: relative
+    overflow: hidden
+    padding: 0
+    &:before
+      content: ''
+      display: block
+      position: absolute
+      top: 15px
+      left: 15px
+      width: 30px
+      height: 30px
+      border-radius: 15px
+      background: #07D
+      +place-icon-col(1)
+
+  .DatePlace_content
+    padding: 15px 15px 15px 59px
+
+  .Place--brunch:before
+    background: #F5A623
+    +place-icon-col(3)
+
+  .Place--meal:before
+    background: #97CCE8
+    +place-icon-col(7)
+
+  .Place--icecream:before
+    background: #AD1896
+    +place-icon-col(4)
+
+  .Place--dessert:before
+    background: #AD183F
+    +place-icon-col(2)
+
+  .Place--drink:before
+    background: #9A002F
+    +place-icon-col(5)
+
+  .Place--spaghetti:before
+    background: #AD5618
+    +place-icon-col(6)
+
+  .Place--burrito:before
+    background: #97E8B5
+    +place-icon-col(8)
+
+  .Place--movie:before
+    background: #222
+    +place-icon-col(9)
+
+  .Place--tea:before
+    background: #97ACE8
+    +place-icon-col(10)
+
+  .Place--games:before
+    background: #444
+    +place-icon-col(12)
+
+  .Place--ramen:before
+    background: #DAE897
+    +place-icon-col(11)
+
+  .Place--gig:before
+    background: #97ABE8
+    +place-icon-col(13)
+
+  .DateQuote 
+    background: #07D
+    padding: 10px 20px
+    border-radius: 26px
+    line-height: 1.4
+    color: #fff
+    margin: 20px 0
+    display: inline-block
+    +fluid-scale(font-size, 375px, 1040px, 16px, 24px)
+
+  .DateDialogue.sms .DateQuote
+    background: #01CC47
+
+  .DateLine.alyssa
+    text-align: right
+    .DateQuote
+      float: right
+
+  .DateTitle
+    +fluid-scale(font-size, 375px, 1040px, 14px, 18px)
+    +font_headline
+    font-weight: bold
+
+  .DateContent,
+  .DateContent p
+    +fluid-scale(font-size, 375px, 1040px, 13px, 14px)
+    letter-spacing: -0.3
+    margin-top: 5px
+    margin-bottom: 0
+
+  .DatePhotos
+    text-align: center
+
+  .DatePhotoGrid
+    display: flex
+    margin: 20px -5px
+    flex-wrap: wrap
+    justify-content: center
+    align-items: center
+    .DatePhoto
+      flex: 0 1 33.33%
+      padding: 5px
+      +respond-to(small-down)
+        flex: 0 1 50%
+
+  .DateCite
+    font-style: normal
+    margin-left: 40px
+
+  .PhotoGrid--1 .DatePhoto
+    flex: 0 1 66%
+    +respond-to(small-down)
+      flex: 0 1 80%
+
+  .PhotoGrid--0 .DatePhoto
+    flex: 0 1 100%
+    padding: 0
+
+  .PhotoGrid--2 .DatePhoto
+    flex: 0 1 50%
+
+  .DatePhoto
+    img
+      width: 100%
+      border-radius: 30px
+      overflow: hidden
+      vertical-align: middle
+      +respond-to(small-down)
+        border-radius: 15px
+
+  .DatePlace
+    overflow: hidden
+    .DatePhotoGrid
+      margin: 0
+    .DatePhoto
+      padding: 0
+      flex: 1
+    img
+      width: 100%
+      border-radius: 0
+      overflow: hidden
+
+  .DateIntro
+    text-align: center
+    width: 95%
+    max-width: 460px
+    margin: 40px auto 0
+    padding: 20px
+    background: $element
+    border-radius: 15px
