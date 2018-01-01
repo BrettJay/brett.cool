@@ -22,12 +22,13 @@
         height: 315
 ---
 
+.Page
+  .Content
+    .Row
+      .Content_Headline.pb3
+        %h1 Photoessays
 
-.Content.Content--margins
-  - data.photoessays.each do | photoessays |
-    .Content_row
-      .Content_photoessayHeader
-        %h2= photoessays.year
-      .Content_photoessays
+    - data.photoessays.each do | photoessays |
+      .Content_photoessays.Row
         - photoessays.photoessays.each do | photoessay |
           = partial("photoessays/components/card", locals: { photoessay: photoessay})

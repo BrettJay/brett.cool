@@ -1,10 +1,8 @@
 .Content .PhotoRow
-  margin-left: -10px
-  margin-right: -10px
 
 .PhotoRow
-  margin-top: $base-spacing-unit
-  margin-bottom: $base-spacing-unit
+  +fluid-scale(margin-top, $responsive_min, $responsive_max, 20px, 60px)
+  +fluid-scale(margin-bottom, $responsive_min, $responsive_max, 20px, 60px)
   position: relative
   +clearfix
 
@@ -15,25 +13,25 @@
       vertical-align: middle
       width: 100%
     img + img
-      margin-top: 20px
+      margin-top: 30px
       +respond-to(small-down)
         margin-top: 4px
 
   .PhotoCol_alpha
     width: 48%
-    padding-right: 10px
+    padding-right: 15px
     +respond-to(small-down)
       padding-right: 2px
 
   .PhotoCol_beta
     width: 52%
-    padding-left: 10px
+    padding-left: 15px
     +respond-to(small-down)
       padding-left: 2px
 
   .PhotoCol_gamma
     width: 27.3584906%
-    padding-right: 10px
+    padding-right: 15px
     +respond-to(small-down)
       padding-right: 2px
 
@@ -44,7 +42,7 @@
 .PhotoRow--Grid
   .PhotoRow
     margin: 0
-    padding: 10px 0
+    padding: 15px 0
     +respond-to(small-down)
       padding: 2px 0
 .Photo

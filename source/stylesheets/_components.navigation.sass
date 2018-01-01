@@ -1,15 +1,13 @@
 .navigation
-  padding: 25px 0
+  padding: 24px 0 23px
   list-style: none
   margin: 0
   li
+    +fluid-scale(font-size, $responsive_min, $responsive_max, 12px, 15px)
     display: inline
-    line-height: 30px
-    +fluid-scale(font-size, 375px, 1040px, 12px, 15px)
-    font-family: $font_headline
+    line-height: 2
     font-weight: 500
-    text-transform: uppercase
-    letter-spacing: 0.4px
+    letter-spacing: 0.1px
     +respond-to(small-down)
       letter-spacing: 0.3px
   li + li
@@ -21,12 +19,13 @@
   a
     text-decoration: none
     color: $navigation-link
-    opacity: 0.3
-  li.current a
     opacity: 1
+  li.current a
+    opacity: 0.3
 
 // todo: settle on a page naming convention :V
 .page-blog li.navigation_blog a,
 .page-photoessays li.navigation_photoessays a,
-.body--talks li.navigation_talk a
-  opacity: 1
+.body--talks li.navigation_talk a,
+.body--talk li.navigation_talk a
+  opacity: 0.3

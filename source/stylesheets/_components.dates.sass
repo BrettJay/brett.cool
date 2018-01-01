@@ -19,7 +19,7 @@ $element: #F7F7F7
     text-transform: uppercase
     letter-spacing: 0.2px
     color: #808080
-    +fluid-scale(font-size, 375px, 1040px, 13px, 15px)
+    +fluid-scale(font-size, $responsive_min, $responsive_max, 13px, 15px)
     position: relative
     z-index: 1
     span
@@ -133,7 +133,7 @@ $element: #F7F7F7
     color: #fff
     margin: 20px 0
     display: inline-block
-    +fluid-scale(font-size, 375px, 1040px, 16px, 24px)
+    +fluid-scale(font-size, $responsive_min, $responsive_max, 16px, 24px)
 
   .DateDialogue.sms .DateQuote
     background: #01CC47
@@ -144,13 +144,13 @@ $element: #F7F7F7
       float: right
 
   .DateTitle
-    +fluid-scale(font-size, 375px, 1040px, 14px, 18px)
+    +fluid-scale(font-size, $responsive_min, $responsive_max, 14px, 18px)
     +font_headline
     font-weight: bold
 
   .DateContent,
   .DateContent p
-    +fluid-scale(font-size, 375px, 1040px, 13px, 14px)
+    +fluid-scale(font-size, $responsive_min, $responsive_max, 13px, 14px)
     letter-spacing: -0.3
     margin-top: 5px
     margin-bottom: 0

@@ -1,13 +1,16 @@
-.PhotoEssayItem
-  - if photoessay.draft
-    .PhotoEssayCard.PhotoEssayCard--draft
-      .PhotoEssayCard_caption
-        .PhotoEssayCard_title= photoessay.title
-        .PhotoEssayCard_subtitle Coming Soon
+- if photoessay.draft
+  .PhotoEssayItem.PhotoEssayItem--draft
+    .PhotoEssayCard
       .PhotoEssayCard_cardImage{style: "background-image: url('/images/photoessays/#{photoessay.url}/card.jpg')"}
-  - else
-    = link_to photoessay_link(photoessay), id: photoessay.url, class: "PhotoEssayCard PhotoEssayCard--#{photoessay.url}" do
-      .PhotoEssayCard_caption
-        .PhotoEssayCard_title= photoessay.title
-        .PhotoEssayCard_subtitle= photoessay.date.strftime("%B %-d, %Y")
-      .PhotoEssayCard_cardImage{style: "background-image: url('/images/photoessays/#{photoessay.url}/card.jpg')"}
+    .PhotoEssayCaption.pt1.pb2
+      .PhotoEssayCaption_title= photoessay.title
+      .PhotoEssayCaption_date= photoessay.date.strftime("%B %Y")
+- else
+  .PhotoEssayItem
+    = link_to photoessay_link(photoessay), id: photoessay.url do
+      .PhotoEssayCard
+        .PhotoEssayCard_cardImage{style: "background-image: url('/images/photoessays/#{photoessay.url}/card.jpg')"}
+
+      .PhotoEssayCaption.pt1.pb2
+        .PhotoEssayCaption_title= photoessay.title
+        .PhotoEssayCaption_date= photoessay.date.strftime("%B %Y")

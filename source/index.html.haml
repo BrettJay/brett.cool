@@ -22,11 +22,18 @@
         height: 315
 ---
 
-
-.Content.Content--marginCollapse
-  .Content_row= image_tag 'home/brett.jpg', alt: 'Brett at CSSConf 2015', class: 'hero_image Fullbleed'
-  .Content_row
-    .Content_main
-      %p.tagline I’m a designer and developer at #{link_to "Pin&nbsp;Payments", 'https://pin.net.au', target: '_blank'}, a co–organiser of #{link_to "Mixin", 'http://mixinconf.com', target: '_blank'}. I love coffee, photography, and design grids of the exploded&nbsp;variety.
-      %p.tagline I produce #{link_to 'photoessays', '/photoessays'} and #{link_to 'speak', '/talk'} very ocassionally.
-      %p.tagline I tweet #{link_to "@brett_jay", 'https://twitter.com/brett_jay', target: '_blank'}, share photos #{link_to "@brt.j", 'https://www.instagram.com/brt.j/', target: '_blank'}, and track my life with #{link_to 'Gyroscope', 'http://life.brett.cool', target: '_blank'}.
+.Page
+  .Content
+    / .Content_row
+    .Row
+      .Content_Headline
+        %h1
+          Hello, I’m Brett 👋<br/>
+          a designer at #{link_to "Pin&nbsp;Payments", 'https://pinpayments.com', target: '_blank', class: 'il-pin'},<br/>
+          and a #{link_to "Mixin", 'http://mixinconf.com', target: '_blank', class: 'il-mixin'}&nbsp;organiser.
+    .Row.pt3.pb3
+      .Content_Full
+        = image_tag 'home/brett.jpg', alt: 'Brett at CSSConf 2015', style: 'width: 100%;'
+    .Row
+      .Content_Main
+        %p I love coffee, travel, photography, and design grids of the exploded&nbsp;variety. I produce #{link_to 'photoessays', '/photoessays'} and #{link_to 'speak', '/talk'}—very infrequently.

@@ -10,15 +10,6 @@ figure
     color: inherit
     text-decoration: none
 
-.Article--list .Article_title
-  +h2_scale
-
-.Article--list
-  h2
-    +h3_scale
-  h3
-    +h4_scale
-
 .Article_metadata
   +body--small_scale
   color: $content-tertiary
@@ -26,20 +17,23 @@ figure
 
 .metadata_date
   padding-right: 5px
+
 .metadata_reading_time
   padding-left: 5px
 
-.Article_heading
-  margin-bottom: $base-spacing-unit
+.Content_Article
+  h2
+    margin: 1em 0 0.8em
+  h3
+    margin: 0.9em 0
 
-.Article_content
   .aside
     color: $content-tertiary
     +body--small_scale
 
   .read-more
     +clearfix
-    +fluid-scale(font-size, 375px, 1040px, 12px, 14px)
+    +fluid-scale(font-size, $responsive_min, $responsive_max, 12px, 14px)
     color: $content-link
     border-bottom: 1px solid $content-link_underline--invisible
     transition: 0.2s ease
@@ -51,11 +45,11 @@ figure
 
   hr
     margin: $base-spacing-unit * 2 auto
-    width: 30%
+    width: 25%
     height: 2px
 
   code
-    +fluid-scale(font-size, 375px, 1040px, 12px, 13px)
+    +fluid-scale(font-size, $responsive_min, $responsive_max, 12px, 13px)
     display: block
     font-family: 'Menlo', 'Consolas', monospace
     line-height: 1.4
@@ -98,26 +92,3 @@ figure img
   text-decoration: none
   color: inherit
 
-.Article + .Article
-  margin-top: 52px
-  padding-top: $base-spacing-unit * 2
-  position: relative
-  &:before
-    content: ''
-    display: block
-    width: $base-spacing-unit * 2
-    height: 2px
-    background: #ccc
-    position: absolute
-    top: 0
-    left: 50%
-    transform: translateX(-50%)
-.page-photoessays .Component
-  margin-top: 100px
-  margin-bottom: 100px
-  +respond-to(ipad-down)
-    margin-top: 80px
-    margin-bottom: 80px
-  +respond-to(mobile)
-    margin-top: 40px
-    margin-bottom: 40px

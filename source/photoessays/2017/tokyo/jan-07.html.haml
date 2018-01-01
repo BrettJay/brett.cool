@@ -31,78 +31,70 @@
 
 = partial("photoessays/components/banner", locals: {slug: current_page.data.slug, title: current_page.data.title, subtitle: current_page.data.subtitle, trip: ''})
 
-.Content#story
-  .Content_row
-    .Content_main
-      .Article_content
+.Page
+  .Content#story
+    .Row
+      .Content_Main.Content_Article
         :markdown
           I arrived on an early morning flight in to Narita.
 
-  = partial("photoessays/components/flight", locals: {slug: current_page.data.slug, image: 'flight', title: 'VA682', gate: '48', seat: '25A', airline: 'Singapore Airlines', depart: '12:15am', arrive: '7:45am', rating: '' })
+    = partial("photoessays/components/flight", locals: {slug: current_page.data.slug, image: 'flight', title: 'VA682', gate: '48', seat: '25A', airline: 'Singapore Airlines', depart: '12:15am', arrive: '7:45am', rating: '' })
 
-  = partial("photoessays/components/photo_two_column", locals: {slug: current_page.data.slug, 'left': ['P1070052'], 'right': ['P1070063'] })
+    = partial("photoessays/components/photo_two_column", locals: {slug: current_page.data.slug, 'left': ['P1070052'], 'right': ['P1070063'] })
 
-  .Content_row
-    .Content_main
-      .Article_content
+    .Row
+      .Content_Main.Content_Article
         :markdown
           After security and waiting to pick up a WiFi Hotspot from the Post Office, the next stop was JR East to organise a Rail Pass, and to get into Shibuya.
 
           On–board a JR Express to Shibuya, I got my first glimpse of Japan proper.
 
-  = partial("photoessays/components/photo_two_column", locals: {slug: current_page.data.slug, 'left': ['P1070064'], 'right': ['P1070090'] })
+    = partial("photoessays/components/photo_two_column", locals: {slug: current_page.data.slug, 'left': ['P1070064'], 'right': ['P1070090'] })
 
-  .Content_row
-    .Content_main
-      .Article_content
+    .Row
+      .Content_Main.Content_Article
         :markdown
           I’ve heard a lot about trains in Japan but they still didn’t fail to impress.
 
-  = partial("photoessays/components/photo_two_column", locals: {slug: current_page.data.slug, 'left': ['P1070108'], 'right': ['P1070131'] })
+    = partial("photoessays/components/photo_two_column", locals: {slug: current_page.data.slug, 'left': ['P1070108'], 'right': ['P1070131'] })
 
-  .Content_row
-    .Content_main
-      .Article_content
+    .Row
+      .Content_Main.Content_Article
         :markdown
           Exiting the station, I weaved through the labyrinthian-like tunnels to emerge at the Shibuya crossing outside the station.
 
-  = partial("photoessays/components/photo_grid", locals: {slug: current_page.data.slug, rows: [ { count: 1, caption: '', photos: ['P1070152'] }, { count: 2, caption: '', photos: ['P1070165','P1070196'] } ] } )
+    = partial("photoessays/components/photo_grid", locals: {slug: current_page.data.slug, rows: [ { count: 1, caption: '', photos: ['P1070152'] }, { count: 2, caption: '', photos: ['P1070165','P1070196'] } ] } )
 
-  .Content_row
-    .Content_main
-      .Article_content
+    .Row
+      .Content_Main.Content_Article
         :markdown
           I headed for the hotel to drop my luggage off. Check-in was still a number of hours away.
 
-  = partial("photoessays/components/place_accomodation", locals: {slug: current_page.data.slug, image: 'shibuya_tobu', title: 'Shibuya Tobu Hotel',  address: '3-1 Udagawacho, 渋谷区 Tokyo 150-0042', 'checkin': '7 Jan', 'checkout': '15 Jan', rating: 4 })
+    = partial("photoessays/components/place_accomodation", locals: {slug: current_page.data.slug, image: 'shibuya_tobu', title: 'Shibuya Tobu Hotel',  address: '3-1 Udagawacho, 渋谷区 Tokyo 150-0042', 'checkin': '7 Jan', 'checkout': '15 Jan', rating: 4 })
 
-  .Content_row
-    .Content_main
-      .Article_content
+    .Row
+      .Content_Main.Content_Article
         :markdown
           I grabbed a drink at a nearby Family Mart, and headed back towards the Shibuya Crossing.
 
-  = partial("photoessays/components/photo_two_column", locals: {slug: current_page.data.slug, 'left': ['P1070185'], 'right': ['P1070222'] })
+    = partial("photoessays/components/photo_two_column", locals: {slug: current_page.data.slug, 'left': ['P1070185'], 'right': ['P1070222'] })
 
-  .Content_row
-    .Content_main
-      .Article_content
+    .Row
+      .Content_Main.Content_Article
         :markdown
           After a quick pit-stop in which I figured out how to get my WiFi hot spot working, I found a well-rated Tonkatsu place.
 
-  = partial("photoessays/components/place_restaurant", locals: {slug: current_page.data.slug, image: 'tonkatsu_maisen', title: 'Tonkatsu Maisen', address: '渋谷2-21 (渋谷ヒカリエ 6F) Shibuya, Tōkyō', price: '¥¥', menu: 'Tonkatsu', rating: 4, time: '12:59pm', link: 'https://foursquare.com/v/%E3%81%A8%E3%82%93%E3%81%8B%E3%81%A4-%E3%81%BE%E3%81%84%E6%B3%89-%E9%9D%92%E5%B1%B1%E6%9C%AC%E5%BA%97/4b5d79c6f964a520415e29e3' })
+    = partial("photoessays/components/place_restaurant", locals: {slug: current_page.data.slug, image: 'tonkatsu_maisen', title: 'Tonkatsu Maisen', address: '渋谷2-21 (渋谷ヒカリエ 6F) Shibuya, Tōkyō', price: '¥¥', menu: 'Tonkatsu', rating: 4, time: '12:59pm', link: 'https://foursquare.com/v/%E3%81%A8%E3%82%93%E3%81%8B%E3%81%A4-%E3%81%BE%E3%81%84%E6%B3%89-%E9%9D%92%E5%B1%B1%E6%9C%AC%E5%BA%97/4b5d79c6f964a520415e29e3' })
 
-  .Content_row
-    .Content_main
-      .Article_content
+    .Row
+      .Content_Main.Content_Article
         :markdown
           After lunch and a quick browse around the shops, I wandered around Shibuya, walking through parks, spotting some real-life Mario Karters, and slowly winding my way back to the hotel for check-in.
 
-  = partial("photoessays/components/photo_two_column", locals: {slug: current_page.data.slug, 'left': ['P1070234','P1070256'], 'right': ['P1070245','P1070276'] })
+    = partial("photoessays/components/photo_two_column", locals: {slug: current_page.data.slug, 'left': ['P1070234','P1070256'], 'right': ['P1070245','P1070276'] })
 
-  .Content_row
-    .Content_main
-      .Article_content
+    .Row
+      .Content_Main.Content_Article
         :markdown
           I checked in to my room, and decided to have a short nap. Some time later I awoke to find the sun had already set.
 
@@ -110,56 +102,50 @@
 
           I blearily emerged into beautiful Shibuya nightlife.
 
-  = partial("photoessays/components/photo_two_column", locals: {slug: current_page.data.slug, 'left': ['P1070283','P1070317'], 'right': ['P1070312','P1070334'] })
+    = partial("photoessays/components/photo_two_column", locals: {slug: current_page.data.slug, 'left': ['P1070283','P1070317'], 'right': ['P1070312','P1070334'] })
 
-  .Content_row
-    .Content_main
-      .Article_content
+    .Row
+      .Content_Main.Content_Article
         :markdown
           I walked back down the familiar path towards the Shibuya Crossing, the streets looking so different and alive at night.
 
-  = partial("photoessays/components/photo_two_column", locals: {slug: current_page.data.slug, 'left': ['P1070379','P1070368'], 'right': ['P1070357','P1070385'] })
+    = partial("photoessays/components/photo_two_column", locals: {slug: current_page.data.slug, 'left': ['P1070379','P1070368'], 'right': ['P1070357','P1070385'] })
 
-  .Content_row
-    .Content_main
-      .Article_content
+    .Row
+      .Content_Main.Content_Article
         :markdown
           After checking out the Shibuya Scramble, and now fancying a drink, I headed for a nearby whiskey&nbsp;place.
 
-  = partial("photoessays/components/place_drink", locals: {slug: current_page.data.slug, image: 'P1070405', title: 'Grandfather’s', address: 'B1F Flat Bldg, 1-24-7 Shibuya, Shibuya-ku Tokyo', price: '¥¥', menu: 'Whiskey', rating: 4, link: '' })
+    = partial("photoessays/components/place_drink", locals: {slug: current_page.data.slug, image: 'P1070405', title: 'Grandfather’s', address: 'B1F Flat Bldg, 1-24-7 Shibuya, Shibuya-ku Tokyo', price: '¥¥', menu: 'Whiskey', rating: 4, link: '' })
 
-  .Content_row
-    .Content_main
-      .Article_content
+    .Row
+      .Content_Main.Content_Article
         :markdown
           It was quite something to hand over a ¥500 coin in exchange for a shot of whiskey.
 
-  = partial("photoessays/components/photo_two_column", locals: {slug: current_page.data.slug, 'left': ['P1070403'], 'right': ['P1070405'] })
+    = partial("photoessays/components/photo_two_column", locals: {slug: current_page.data.slug, 'left': ['P1070403'], 'right': ['P1070405'] })
 
-  .Content_row
-    .Content_main
-      .Article_content
+    .Row
+      .Content_Main.Content_Article
         :markdown
           After a couple of drinks, I made my way through Shibuya nightlife, heading for a highly recommended ramen place.
 
-  = partial("photoessays/components/photo_two_column", locals: {slug: current_page.data.slug, 'left': ['P1070422'], 'right': ['P1070425'] })
+    = partial("photoessays/components/photo_two_column", locals: {slug: current_page.data.slug, 'left': ['P1070422'], 'right': ['P1070425'] })
 
-  = partial("photoessays/components/place_restaurant", locals: {slug: current_page.data.slug, image: 'kamukura_ramen', title: 'Kamukura Ramen', address: '29-4 Udagawacho, Shibuya 150-0042, Tōkyō', price: '¥', menu: 'Ramen', rating: 4, time: '7:37pm', link: 'https://foursquare.com/v/%E3%81%A9%E3%81%86%E3%81%A8%E3%82%93%E3%81%BC%E3%82%8A%E7%A5%9E%E5%BA%A7-%E6%B8%8B%E8%B0%B7%E5%BA%97/4b49c505f964a520647326e3' })
+    = partial("photoessays/components/place_restaurant", locals: {slug: current_page.data.slug, image: 'kamukura_ramen', title: 'Kamukura Ramen', address: '29-4 Udagawacho, Shibuya 150-0042, Tōkyō', price: '¥', menu: 'Ramen', rating: 4, time: '7:37pm', link: 'https://foursquare.com/v/%E3%81%A9%E3%81%86%E3%81%A8%E3%82%93%E3%81%BC%E3%82%8A%E7%A5%9E%E5%BA%A7-%E6%B8%8B%E8%B0%B7%E5%BA%97/4b49c505f964a520647326e3' })
 
-  .Content_row
-    .Content_main
-      .Article_content
+    .Row
+      .Content_Main.Content_Article
         :markdown
           Ordering was handled by entering yen into a vending machine, which printed tickets that were exchanged inside. It was novel, quite convenient (language barrier aside), and efficient.
 
-  = partial("photoessays/components/photo_grid", locals: {slug: current_page.data.slug, rows: [ { count: 2, caption: '', photos: ['P1070428','P1070429'] }, { count: 1, caption: '', photos: ['P1070436'] } ] } )
+    = partial("photoessays/components/photo_grid", locals: {slug: current_page.data.slug, rows: [ { count: 2, caption: '', photos: ['P1070428','P1070429'] }, { count: 1, caption: '', photos: ['P1070436'] } ] } )
 
-  .Content_row
-    .Content_main
-      .Article_content
+    .Row
+      .Content_Main.Content_Article
         :markdown
           One cheap and cheerful ramen later, I headed home, picking up some random goodies from a local convenience store, and turned in for the night.
 
           ---
 
-= partial("photoessays/2017/tokyo/footer", locals: {collection: current_page.data.collection})
+  = partial("photoessays/2017/tokyo/footer", locals: {collection: current_page.data.collection})

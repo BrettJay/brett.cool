@@ -32,152 +32,136 @@
 
 = partial("photoessays/components/banner", locals: {slug: current_page.data.slug, title: current_page.data.title, subtitle: current_page.data.subtitle, trip: current_page.data.trip})
 
-.Content#story
-  .Content_row
-    .Content_main
-      .Article_content
+.Page
+  .Content#story
+    .Row
+      .Content_Main.Content_Article
         :markdown
           The next morning I set off, deciding to give Little Nap another try.
 
-  = partial("photoessays/components/photo_right", locals: {slug: current_page.data.slug, caption: 'Success!', 'photo': 'P1111494'})
+    = partial("photoessays/components/photo_right", locals: {slug: current_page.data.slug, caption: 'Success!', 'photo': 'P1111494'})
 
-  = partial("photoessays/components/place_cafe", locals: {slug: current_page.data.slug, image: 'little_nap', title: 'Little Nap Coffee Stand', address: '代々木5-65-4 Shibuya, Tōkyō', price: '¥', menu: 'Coffee', rating: 4, link: 'https://foursquare.com/v/little-nap-coffee-stand/4d512bb7e0275481e1a3a7b6' })
+    = partial("photoessays/components/place_cafe", locals: {slug: current_page.data.slug, image: 'little_nap', title: 'Little Nap Coffee Stand', address: '代々木5-65-4 Shibuya, Tōkyō', price: '¥', menu: 'Coffee', rating: 4, link: 'https://foursquare.com/v/little-nap-coffee-stand/4d512bb7e0275481e1a3a7b6' })
 
-  .Content_row
-    .Content_main
-      .Article_content
+    .Row
+      .Content_Main.Content_Article
         :markdown
           One rather excellent filter later, it was time to head into Roppongi, via a local Metro line station.
 
-  = partial("photoessays/components/photo_right", locals: {slug: current_page.data.slug, caption: '', 'photo': 'P1111497'})
+    = partial("photoessays/components/photo_right", locals: {slug: current_page.data.slug, caption: '', 'photo': 'P1111497'})
 
-  .Content_row
-    .Content_main
-      .Article_content
+    .Row
+      .Content_Main.Content_Article
         :markdown
           After ariving at Nogizaka station, I worked my way on foot towards Roppongi Hills.
 
-  = partial("photoessays/components/photo_two_column", locals: {slug: current_page.data.slug, 'left': ['P1111506','P1111528'], 'right': ['P1111527','P1111532'] })
+    = partial("photoessays/components/photo_two_column", locals: {slug: current_page.data.slug, 'left': ['P1111506','P1111528'], 'right': ['P1111527','P1111532'] })
 
-  .Content_row
-    .Content_main
-      .Article_content
+    .Row
+      .Content_Main.Content_Article
         :markdown
           Eventually I reached Roppongi Hills and headed for the Tokyo City view.
 
-  = partial("photoessays/components/place_of_interest", locals: {slug: current_page.data.slug, image: 'city_views', title: 'Tokyo City View', address: '六本木6-10-1 (六本木ヒルズ 森タワー 52F) Minato, Tōkyō', place: 'Sightseeing', rating: 4, link: 'https://foursquare.com/v/%E5%85%AD%E6%9C%AC%E6%9C%A8%E3%83%92%E3%83%AB%E3%82%BA%E5%B1%95%E6%9C%9B%E5%8F%B0-%E6%9D%B1%E4%BA%AC%E3%82%B7%E3%83%86%E3%82%A3%E3%83%93%E3%83%A5%E3%83%BC-tokyo-city-view/4b91e099f964a52021dd33e3' })
+    = partial("photoessays/components/place_of_interest", locals: {slug: current_page.data.slug, image: 'city_views', title: 'Tokyo City View', address: '六本木6-10-1 (六本木ヒルズ 森タワー 52F) Minato, Tōkyō', place: 'Sightseeing', rating: 4, link: 'https://foursquare.com/v/%E5%85%AD%E6%9C%AC%E6%9C%A8%E3%83%92%E3%83%AB%E3%82%BA%E5%B1%95%E6%9C%9B%E5%8F%B0-%E6%9D%B1%E4%BA%AC%E3%82%B7%E3%83%86%E3%82%A3%E3%83%93%E3%83%A5%E3%83%BC-tokyo-city-view/4b91e099f964a52021dd33e3' })
 
-  .Content_row
-    .Content_main
-      .Article_content
+    .Row
+      .Content_Main.Content_Article
         :markdown
           From the 52nd floor there were some brilliant views of Tokyo, and with the clear conditions, even Mt. Fuji was clearly visible.
 
-  = partial("photoessays/components/photo_two_column", locals: {slug: current_page.data.slug, 'left': ['P1111544','P1111563'], 'right': ['P1111562','P1111590'] })
+    = partial("photoessays/components/photo_two_column", locals: {slug: current_page.data.slug, 'left': ['P1111544','P1111563'], 'right': ['P1111562','P1111590'] })
 
-  .Content_row
-    .Content_main
-      .Article_content
+    .Row
+      .Content_Main.Content_Article
         :markdown
           After going through some interesting exhibits, some of which were dedicated to astronomy, I exited.
 
           On the way out, I doubled back to check out a bronze spider sculpture.
 
-  = partial("photoessays/components/photo_right", locals: {slug: current_page.data.slug, caption: '', 'photo': 'P1111592'})
+    = partial("photoessays/components/photo_right", locals: {slug: current_page.data.slug, caption: '', 'photo': 'P1111592'})
 
-  .Content_row
-    .Content_main
-      .Article_content
+    .Row
+      .Content_Main.Content_Article
         :markdown
           In search of lunch, I headed downtown.
 
-  = partial("photoessays/components/photo_two_column", locals: {slug: current_page.data.slug, 'left': ['P1111596'], 'right': ['P1111621'] })
+    = partial("photoessays/components/photo_two_column", locals: {slug: current_page.data.slug, 'left': ['P1111596'], 'right': ['P1111621'] })
 
-  .Content_row
-    .Content_main
-      .Article_content
+    .Row
+      .Content_Main.Content_Article
         :markdown
           After finding a Don Quijote, and that much of the downtown lunch options were seemingly unavailable on a weekday, I eventually ended up at a Tonkatsu place with rave reviews.
 
-  = partial("photoessays/components/place_restaurant", locals: {slug: current_page.data.slug, image: 'imakatsu', title: 'Imakatsu', address: '六本木4-12-5 (フェニキア ルクソス 1F), Minato, Tōkyō', price: '¥¥', menu: 'Tonkatsu', rating: 5, time: '12:26pm', link: 'https://foursquare.com/v/%E5%85%AD%E6%9C%AC%E6%9C%A8-%E3%82%A4%E3%83%9E%E3%82%AB%E3%83%84/4b568549f964a520cc1328e3' })
+    = partial("photoessays/components/place_restaurant", locals: {slug: current_page.data.slug, image: 'imakatsu', title: 'Imakatsu', address: '六本木4-12-5 (フェニキア ルクソス 1F), Minato, Tōkyō', price: '¥¥', menu: 'Tonkatsu', rating: 5, time: '12:26pm', link: 'https://foursquare.com/v/%E5%85%AD%E6%9C%AC%E6%9C%A8-%E3%82%A4%E3%83%9E%E3%82%AB%E3%83%84/4b568549f964a520cc1328e3' })
 
-  .Content_row
-    .Content_main
-      .Article_content
+    .Row
+      .Content_Main.Content_Article
         :markdown
           The Pork and Chicken Tonkatsu were both sublime. The breaded batter coating was actually very fine, and put the focus on the meat itself.
 
-  = partial("photoessays/components/photo_right", locals: {slug: current_page.data.slug, caption: '', 'photo': 'P1111638'})
+    = partial("photoessays/components/photo_right", locals: {slug: current_page.data.slug, caption: '', 'photo': 'P1111638'})
 
-  .Content_row
-    .Content_main
-      .Article_content
+    .Row
+      .Content_Main.Content_Article
         :markdown
           ---
 
           That evening, I decided to revisit the Metropolitan Government buildings in Shinjuku at dusk for some more photos.
 
-  = partial("photoessays/components/place_of_interest", locals: {slug: current_page.data.slug, image: 'mgb', title: 'Tokyo Metropolitan Government Building', address: '西新宿2-8-1m Shinjuku, Tōkyō', place: 'Sightseeing', rating: 5, link: 'https://foursquare.com/v/%E6%9D%B1%E4%BA%AC%E9%83%BD%E5%BA%81-tokyo-metropolitan-government-office/4b525412f964a520807727e3' })
+    = partial("photoessays/components/place_of_interest", locals: {slug: current_page.data.slug, image: 'mgb', title: 'Tokyo Metropolitan Government Building', address: '西新宿2-8-1m Shinjuku, Tōkyō', place: 'Sightseeing', rating: 5, link: 'https://foursquare.com/v/%E6%9D%B1%E4%BA%AC%E9%83%BD%E5%BA%81-tokyo-metropolitan-government-office/4b525412f964a520807727e3' })
 
-  .Content_row
-    .Content_main
-      .Article_content
+    .Row
+      .Content_Main.Content_Article
         :markdown
           The view at sunset was stunning, and worth returning for.
 
-  = partial("photoessays/components/photo_two_column", locals: {slug: current_page.data.slug, 'left': ['P1111646','P1111654'], 'right': ['P1111647','P1111682'] })
+    = partial("photoessays/components/photo_two_column", locals: {slug: current_page.data.slug, 'left': ['P1111646','P1111654'], 'right': ['P1111647','P1111682'] })
 
-  .Content_row
-    .Content_main
-      .Article_content
+    .Row
+      .Content_Main.Content_Article
         :markdown
           As the sun finally set, it was time to go.
 
-  = partial("photoessays/components/photo_right", locals: {slug: current_page.data.slug, caption: '', 'photo': 'P1111699'})
+    = partial("photoessays/components/photo_right", locals: {slug: current_page.data.slug, caption: '', 'photo': 'P1111699'})
 
-  .Content_row
-    .Content_main
-      .Article_content
+    .Row
+      .Content_Main.Content_Article
         :markdown
           After a quick bite to eat at a restauarant inside the Lumine building, I wandered through Shinjuku looking for a highly rated cocktail bar...
 
-  = partial("photoessays/components/photo_two_column", locals: {slug: current_page.data.slug, 'left': ['P1111713'], 'right': ['P1111717'] })
+    = partial("photoessays/components/photo_two_column", locals: {slug: current_page.data.slug, 'left': ['P1111713'], 'right': ['P1111717'] })
 
-  = partial("photoessays/components/place_drink", locals: {slug: current_page.data.slug, image: 'barb', title: 'Bar Benfiddich', address: '西新宿1-13-7 Shinjuku, Tōkyō', price: '¥¥¥', menu: 'Cocktail', rating: 5, link: 'https://foursquare.com/v/bar-benfiddich/51d56c11498efa52e2de492a' })
+    = partial("photoessays/components/place_drink", locals: {slug: current_page.data.slug, image: 'barb', title: 'Bar Benfiddich', address: '西新宿1-13-7 Shinjuku, Tōkyō', price: '¥¥¥', menu: 'Cocktail', rating: 5, link: 'https://foursquare.com/v/bar-benfiddich/51d56c11498efa52e2de492a' })
 
-  .Content_row
-    .Content_main
-      .Article_content
+    .Row
+      .Content_Main.Content_Article
         :markdown
           Inside the cozy Bar Benfiddich there’s no menu — Hiroyasu Kayama and his staff prepare drinks from scratch based on your tastes.
 
-  = partial("photoessays/components/photo_right", locals: {slug: current_page.data.slug, caption: '', 'photo': 'P1111740'})
+    = partial("photoessays/components/photo_right", locals: {slug: current_page.data.slug, caption: '', 'photo': 'P1111740'})
 
-  .Content_row
-    .Content_main
-      .Article_content
+    .Row
+      .Content_Main.Content_Article
         :markdown
           What could easily be written off as a gimmick was actually a very memorable experience.
 
           After speaking to one of the assistants, Kayama prepared me a cocktail with a Japanese whiskey base, coffee, and a hint of orange.
 
-  = partial("photoessays/components/photo_right", locals: {slug: current_page.data.slug, caption: '10/10 would return to Japan for.', 'photo': 'P1111746'})
+    = partial("photoessays/components/photo_right", locals: {slug: current_page.data.slug, caption: '10/10 would return to Japan for.', 'photo': 'P1111746'})
 
-  .Content_row
-    .Content_main
-      .Article_content
+    .Row
+      .Content_Main.Content_Article
         :markdown
           It was impossible to stop at one, so after a delicious chocolate cocktail — with a sherry base and a very chocolate mousse like consistency — I headed back to Shibuya.
 
           From the station, I took a detour to visit a shanty&nbsp;bar.
 
-  = partial("photoessays/components/photo_two_column", locals: {slug: current_page.data.slug, 'left': ['P1111765'], 'right': ['P1111769'] })
+    = partial("photoessays/components/photo_two_column", locals: {slug: current_page.data.slug, 'left': ['P1111765'], 'right': ['P1111769'] })
 
-  = partial("photoessays/components/place_drink", locals: {slug: current_page.data.slug, image: 'barb', title: 'amulet-d', address: '渋谷1-25-10 Shibuya, Tōkyō', price: '¥¥', menu: 'Shanty Bar', rating: 3, link: 'https://foursquare.com/v/amuletd-%E3%82%A2%E3%83%9F%E3%83%A5%E3%83%AC%E3%83%83%E3%83%88/4b6e9b54f964a520c7c32ce3' })
+    = partial("photoessays/components/place_drink", locals: {slug: current_page.data.slug, image: 'barb', title: 'amulet-d', address: '渋谷1-25-10 Shibuya, Tōkyō', price: '¥¥', menu: 'Shanty Bar', rating: 3, link: 'https://foursquare.com/v/amuletd-%E3%82%A2%E3%83%9F%E3%83%A5%E3%83%AC%E3%83%83%E3%83%88/4b6e9b54f964a520c7c32ce3' })
 
-  .Content_row
-    .Content_main
-      .Article_content
+    .Row
+      .Content_Main.Content_Article
         :markdown
           Inside the cozy bar — which could seat about five people total — I met some locals, and were soon joined by other tourists.
 
@@ -185,4 +169,4 @@
 
           Eventually, some drinks and many stories later, it was time to turn in.
 
-= partial("photoessays/2017/tokyo/footer", locals: {collection: current_page.data.collection})
+  = partial("photoessays/2017/tokyo/footer", locals: {collection: current_page.data.collection})

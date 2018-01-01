@@ -1,10 +1,25 @@
 .Banner
   +vertical-parent
   position: relative
-  height: calc( 100vh - 10px)
+  height: 100vh
   background-position: 50% 33%
   background-size: cover
   background-color: #000
+  &:after
+    display: block
+    pointer-events: none
+    content: ''
+    position: absolute
+    z-index: 1
+    top: 0
+    left: 0
+    bottom: 0
+    right: 0
+    background-image: radial-gradient(50% 50%, rgba(0,0,0,0.00) 49%, rgba(0,0,0,0.47) 81%, #000000 100%)
+    background-size: 150%
+    background-position: 50% 50%
+    +respond-to(small-down)
+      background-size: 145%
   .Banner_caption
     color: #fff
     width: 100%
@@ -12,21 +27,20 @@
     +vertical-center
     text-align: center
     h1
-      +fluid-scale(font-size, 375px, 1040px, 30px, 72px)
+      +fluid-scale(font-size, $responsive_min, $responsive_max, 34px, 72px)
       text-shadow: 0 20px 80px rgba(0,0,0,0.8)
     p
-      +fluid-scale(font-size, 375px, 1040px, 13px, 24px)
+      +fluid-scale(font-size, $responsive_min, $responsive_max, 24px, 32px)
+      font-family: $font_accent
       font-style: italic
-      text-shadow: 0 20px 80px rgba(0,0,0,0.8)
-      letter-spacing: -1.3px
+      text-shadow: 0 2px 8px rgba(0,0,0,0.8)
+      letter-spacing: -0.04em
   img
     width: 100%
     vertical-align: middle
 
 .PhotoEssaySubHeader ~ .Banner
-  height: calc( 100vh - 169px)
-  +respond-to(small-down)
-    height: calc( 100vh - 126px)
+  height: 100vh
   .scroll_arrows
     bottom: 60px
 
@@ -35,22 +49,36 @@
   justify-content: center
   position: absolute
   padding: 30px
-  background: rgba(0,0,0,0.9)
   bottom: 0
   left: 0
   right: 0
   width: 100%
   color: #fff
+  z-index: 300
+  &:after
+    position: absolute
+    bottom: 0
+    left: 0
+    right: 0
+    content: ''
+    display: block
+    height: 120px
+    background-image: linear-gradient(-180deg, rgba(0,0,0,0.00) 0%, rgba(0,0,0,0.80) 100%)
+    background-repeat repeat-y
+    z-index: 299
   dl
     text-align: left
     margin: 0 10px
+    z-index: 300
+    position: relative
   dt, dd
     margin: 0
+    text-shadow: 0 1px 3px #000
   dt
     +font_headline
-    +fluid-scale(font-size, 375px, 1040px, 13px, 16px)
+    +fluid-scale(font-size, $responsive_min, $responsive_max, 13px, 16px)
   dd
-    +fluid-scale(font-size, 375px, 1040px, 11px, 14px)
+    +fluid-scale(font-size, $responsive_min, $responsive_max, 11px, 14px)
     font-family: $font_body
     opacity: 0.7
 

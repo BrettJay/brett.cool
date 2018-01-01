@@ -1,160 +1,87 @@
+// Container
+=container
+  margin-left: auto
+  margin-right: auto
+  padding-left: 15px
+  padding-right: 15px
+  max-width: 1140px
+
+// Row
+=row
+  +clearfix
+  margin-left: -15px
+  margin-right: -15px
+
 .Content
   +container
 
-.Content--margins
-  padding-top: 80px
-  +respond-to(small-down)
-    padding-top: 40px
+.Content--fluid
+  max-width: none
 
-.Content--marginCollapse
-  padding-top: 80px
-  @media only screen and (max-width: 1060px)
-    padding-top: 0
+.Page
+  +fluid-scale(padding-top, $responsive_min, $responsive_max, 20px, 80px)
+  +fluid-scale(padding-bottom, $responsive_min, $responsive_max, 20px, 80px)
 
-.Content_row
+.Row
   +row
+  > *
+    padding-left: 15px
+    padding-right: 15px
 
-.Fullbleed
-  padding-left: 0
-  padding-right: 0
-
-.page-blog .Fullbleed_image
-  margin-left: -10px
-  margin-right: -10px
-  margin-bottom: $base-spacing-unit
-  img
-    vertical-align: middle
-    width: 100%
-
-.page-blog .Fullbleed_image--inline
-  margin-bottom: 0
-
-.Content_sidebar,
-.Content_primary,
-.Content_main,
-.Content_middle
-  padding-left: 10px
-  padding-right: 10px
-
-.Content_sidebar
-  width: 27.7%
-  float: left
-  +respond-to(small-down)
-    width: 24%
-  +respond-to(mobile)
-    width: 12%
-
-.Content_primary
-  width: 72.3%
-  float: right
-  +respond-to(small-down)
-    width: 76%
-  +respond-to(mobile)
-    width: 88%
-
-.Content_row--wrap
-  .Content_sidebar,
-  .Content_primary,
-  .Content_main
-    +respond-to(small-down)
-      float: none
-      width: 100%
-
-.Content > .Content_row > .Content_main
-  width: 60%
-  float: left
-  margin-left: 27.7%
-  +respond-to(small-down)
-    margin-left: 24%
-    width: 76%
-  +respond-to(mobile)
-    margin-left: 12%
-    width: 88%
-
-.Content_row--padded
-  padding: $base-spacing-unit 0
-  h1, p
-    margin: 0
-  +respond-to(small-down)
-    h1
-      margin-bottom: 0.25em
-  +respond-to(small-down)
-    margin-left: 24%
-    width: 76%
+.Row--NoPadding
+  > *
     padding-left: 0
     padding-right: 0
-    .Content_sidebar,
-    .Content_main,
-    .Content_middle
-      padding-left: 0
-      padding-right: 0
-  +respond-to(mobile)
-    margin-left: 12%
-    width: 88%
 
-.Content_middle
-  +respond-to(ipad-up)
-    float: left
-    width: 45.28%
-    max-width: 471px
+.Content_Headline
+  max-width: 920px
+  margin: 0 auto
+  +fluid-scale(width, $responsive_min, $responsive_max, 96%, 80%)
 
-.Content > .Content_row > .Content_sidebar + .Content_main
-  margin-left: 0
+.Content_Main
+  max-width: 760px
+  margin: 0 auto
+  +fluid-scale(width, $responsive_min, $responsive_max, 96%, 67%)
 
-.Content > .Content_row > .Content_photoessays
-  width: 72.3%
-  float: right
-  padding-left: 10px
-  padding-right: 10px
-  +respond-to(small-down)
-    width: 76%
-  +respond-to(mobile)
-    width: 88%
+.Content_Full
+  max-width: 1140px
+  margin: 0 auto
+  padding-left: 0 !important
+  padding-right: 0 !important
 
-.Content > .Content_row > .Content_photoessayHeader
-  width: 27.7%
-  float: left
-  padding-left: 10px
-  padding-right: 10px
-  h2
-    text-align: right
-  +respond-to(small-down)
-    width: 76%
-    float: right
-    h2
-      text-align: left
-  +respond-to(mobile)
-    width: 88%
 
-.Content_sidebar p
-  +fluid-scale(font-size, 375px, 1040px, 11px, 16px)
+.pb1
+  +fluid-scale(padding-bottom, $responsive_min, $responsive_max, $size_scale_1_min, $size_scale_1_max)
+.pb2
+  +fluid-scale(padding-bottom, $responsive_min, $responsive_max, $size_scale_2_min, $size_scale_2_max)
+.pb3
+  +fluid-scale(padding-bottom, $responsive_min, $responsive_max, $size_scale_3_min, $size_scale_3_max)
+.pb4
+  +fluid-scale(padding-bottom, $responsive_min, $responsive_max, $size_scale_4_min, $size_scale_4_max)
 
-.Content_footer
-  margin-top: $base-spacing-unit * 2
+.pt1
+  +fluid-scale(padding-top, $responsive_min, $responsive_max, $size_scale_1_min, $size_scale_1_max)
+.pt2
+  +fluid-scale(padding-top, $responsive_min, $responsive_max, $size_scale_2_min, $size_scale_2_max)
+.pt3
+  +fluid-scale(padding-top, $responsive_min, $responsive_max, $size_scale_3_min, $size_scale_3_max)
+.pt4
+  +fluid-scale(padding-top, $responsive_min, $responsive_max, $size_scale_4_min, $size_scale_4_max)
 
-.hero_image,
-.aside_image
-  width: 100%
-  img
-    vertical-align: middle
+.pl1
+  +fluid-scale(padding-left, $responsive_min, $responsive_max, $size_scale_1_min, $size_scale_1_max)
+.pl2
+  +fluid-scale(padding-left, $responsive_min, $responsive_max, $size_scale_2_min, $size_scale_2_max)
+.pl3
+  +fluid-scale(padding-left, $responsive_min, $responsive_max, $size_scale_3_min, $size_scale_3_max)
+.pl4
+  +fluid-scale(padding-left, $responsive_min, $responsive_max, $size_scale_4_min, $size_scale_4_max)
 
-.hero_image
-  margin-bottom: $base-spacing-unit / 2
-  +respond-to(ipad-up)
-    margin-bottom: $base-spacing-unit
-
-.tagline
-  +fluid-scale(font-size, 375px, 1040px, 16px, 24px)
-  line-height: 1.3
-
-.Content_main--decoration
-  position: relative
-  &:before
-    content: ''
-    display: block
-    position: absolute
-    z-index: -1
-    width: 20%
-    height: 1px
-    left: 0
-    background: #000
+.pr1
+  +fluid-scale(padding-right, $responsive_min, $responsive_max, $size_scale_1_min, $size_scale_1_max)
+.pr2
+  +fluid-scale(padding-right, $responsive_min, $responsive_max, $size_scale_2_min, $size_scale_2_max)
+.pr3
+  +fluid-scale(padding-right, $responsive_min, $responsive_max, $size_scale_3_min, $size_scale_3_max)
+.pr4
+  +fluid-scale(padding-right, $responsive_min, $responsive_max, $size_scale_4_min, $size_scale_4_max)
