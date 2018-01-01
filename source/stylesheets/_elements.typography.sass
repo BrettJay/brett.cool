@@ -5,69 +5,81 @@ h1, h2, h3, h4, h5, h6
   +font_headline
 
 =h1_scale
-  +fluid-scale(font-size, 375px, 1040px, 30px, 50px)
-  line-height: 1.1
+  +fluid-scale(font-size, $responsive_min, $responsive_max, 28px, 50px)
+  line-height: 1.2
 
 =h2_scale
-  +fluid-scale(font-size, 375px, 1040px, 28px, 38px)
+  +fluid-scale(font-size, $responsive_min, $responsive_max, 26px, 38px)
   line-height: 1.2
 
 =h3_scale
-  +fluid-scale(font-size, 375px, 1040px, 24px, 34px)
+  +fluid-scale(font-size, $responsive_min, $responsive_max, 24px, 34px)
   line-height: 1.2
 
 =h4_scale
-  +fluid-scale(font-size, 375px, 1040px, 22px, 31px)
+  +fluid-scale(font-size, $responsive_min, $responsive_max, 22px, 31px)
   line-height: 1.2
 
 =h5_scale
-  +fluid-scale(font-size, 375px, 1040px, 20px, 25px)
+  +fluid-scale(font-size, $responsive_min, $responsive_max, 20px, 25px)
   line-height: 1.2
 
 =h6_scale
-  +fluid-scale(font-size, 375px, 1040px, 19px, 20px)
+  +fluid-scale(font-size, $responsive_min, $responsive_max, 19px, 20px)
   line-height: 1.2
 
 =body_scale
-  +fluid-scale(font-size, 375px, 1040px, 16px, 18px)
-  line-height: 1.5
-  letter-spacing: -0.2px
-  margin: 1.6em 0
+  +fluid-scale(font-size, $responsive_min, $responsive_max, 16px, 22px)
+  line-height: 1.45
 
 =body--small_scale
-  +fluid-scale(font-size, 375px, 1040px, 13px, 16px)
+  +fluid-scale(font-size, $responsive_min, $responsive_max, 13px, 16px)
 
 h1
   +h1_scale
-  margin: 0.5em 0
+  margin: 0
 
 h2
   +h2_scale
-  margin: 1em 0 0.3em
+  margin: 0
 
 h3
   +h3_scale
-  margin: 0.7em 0
+  margin: 0
   line-height: 1.2
 
 h4
   +h4_scale
-  margin: 0.7em 0
+  margin: 0
   line-height: 1.2
 
 h5
   +h5_scale
-  margin: 0.7em 0
+  margin: 0
   line-height: 1.2
 
 h6
   +h6_scale
-  margin: 0.8em 0
+  margin: 0
   line-height: 1.2
 
 p, ul, dl, ol
   +body_scale
+  margin: 0
+  & + p,
+  & + ul,
+  & + dl,
+  & + ol
+    margin-top: 1.6em
 
+.h1_scale
+  +h1_scale
+
+.h2_scale
+  +h2_scale
+
+h1 a,
+h2 a,
 p a,
 .slide_references a
   color: $content-link
@@ -76,3 +88,15 @@ p a,
   transition: 0.2s ease
   &:hover
     border-bottom: 1px solid $content-link_underline--hover
+
+h1 a,
+.h1_scale a
+  border-bottom: 3px solid $content-link_underline
+  &:hover
+    border-bottom: 3px solid currentColor
+
+.il-pin:hover
+  color: #c11
+
+.il-mixin:hover
+  color: #583ca0

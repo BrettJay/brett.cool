@@ -54,17 +54,17 @@
     text-transform: uppercase
     color: rgba(255,255,255,0.9)
     letter-spacing: 0.05em
-    +fluid-scale(font-size, 375px, 1040px, 11px, 13px)
+    +fluid-scale(font-size, $responsive_min, $responsive_max, 11px, 13px)
 
   .PhotoEssay_nav_title
-    +fluid-scale(font-size, 375px, 1040px, 17px, 24px)
+    +fluid-scale(font-size, $responsive_min, $responsive_max, 17px, 24px)
     +font_headline
     color: #fff
     margin: 5px 0 10px
     line-height: 1.2
 
   .PhotoEssay_nav_date
-    +fluid-scale(font-size, 375px, 1040px, 12px, 13px)
+    +fluid-scale(font-size, $responsive_min, $responsive_max, 12px, 13px)
     color: rgba(255,255,255,0.9)
 
 .PhotoEssayFooterNavigation ~ .Content .Content_footer

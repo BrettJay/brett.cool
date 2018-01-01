@@ -21,13 +21,11 @@
 .PhotoCaption
   vertical-align: baseline
   line-height: 1.5
-  padding: 20px 10px 40px
-  width: 46%
-  margin-left: 27.7%
-  +respond-to(small-down)
-    margin-left: 12%
-    width: 76%
-  +fluid-scale(font-size, 375px, 1040px, 12px, 14px)
+  padding: 20px 0 40px
+  max-width: 760px
+  margin: 0 auto
+  +fluid-scale(width, $responsive_min, $responsive_max, 96%, 67%)
+  +fluid-scale(font-size, $responsive_min, $responsive_max, 12px, 14px)
   a
     color: #06C
     text-decoration: none

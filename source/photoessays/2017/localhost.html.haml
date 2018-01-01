@@ -35,13 +35,12 @@
         height: 315
 ---
 
+= partial("photoessays/components/breadcrumb")
+
 = partial("photoessays/components/banner", locals: {slug: current_page.data.slug, title: current_page.data.title, subtitle: current_page.data.subtitle, trip: current_page.data.trip})
 
-.Content_photoessays.Content_photoessays--localhost#story
-  - data.localhost.dates.each do | date |
-    .PhotoEssayItem
-      = link_to "/photoessays/2017/localhost/#{date.slug}", class: "PhotoEssayCard" do
-        .PhotoEssayCard_caption
-          .PhotoEssayCard_title= date.title
-          .PhotoEssayCard_subtitle= date.subtitle
-        .PhotoEssayCard_cardImage{style: "background-image: url('/images/photoessays/#{current_page.data.slug}/#{date.slug}/banner.jpg')"}
+.Page
+  .Content
+    .Content_photoessays#story.Content_photoessays.Row
+      - data.localhost.dates.each do | date |
+        = partial("photoessays/components/day_card", locals: { date: date, essay_slug: current_page.data.slug})

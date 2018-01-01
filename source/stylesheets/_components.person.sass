@@ -29,13 +29,13 @@
     box-shadow: 0 2px 8px 0 rgba(0,0,0,0.45), 0 20px 80px 0 rgba(0,0,0,0.20)
 
   .PersonCard_title
-    +fluid-scale(font-size, 375px, 1040px, 16px, 22px)
+    +fluid-scale(font-size, $responsive_min, $responsive_max, 16px, 22px)
     +font_headline
     margin: 0
     line-height: 1.2
 
   .PersonCard_twitter
-    +fluid-scale(font-size, 375px, 1040px, 12px, 14px)
+    +fluid-scale(font-size, $responsive_min, $responsive_max, 12px, 14px)
     line-height: 1.5
     margin-top: 10px
     color: $color-grey

@@ -24,33 +24,33 @@
 
 %link{href: "https://fonts.googleapis.com/css?family=Karla|Work+Sans:300,400,500,600,700,800", rel: "stylesheet"}/
 
-%link{:rel => "stylesheet", :href => ""}/
-.Content.Content--marginCollapse
-  .Content_row= image_tag 'talk/deployment.jpg', alt: 'Speaking at Localhost Deployment, June 8 in Sydney', title: 'Speaking at Localhost Deployment, June 8 in Sydney', class: 'hero_image Fullbleed'
-  .Content_row
-    .Content_main
-      %h1 Talks
+.Page
+  .Content
+    .Row
+      .Content_Headline
+        %h1 Talks
+    .Row.pt3
+      .Content_Full
+        %ol.Talks
+          %li.Talk_item
+            = link_to '/talk/less-glamorous-elements-of-design' do
+              .Slides_LessGlamorous
+                .Slide.Slide--title.Slide--dark{"data-aspect-ratio": "16:9"}
+                  .Slide_content
+                    %h2
+                      %div Less
+                      %div Glamorous
+                      %div Elements
+                      %div of Design
+              .Talk_detail
+                %h2 Less Glamorous Elements of&nbsp;Design
+                %p Localhost Deployment · 6–9 June 2017
 
-      %ol.Talks
-        %li.Talk_item
-          = link_to '/talk/less-glamorous-elements-of-design' do
-            .Slides_LessGlamorous
-              .Slide.Slide--title.Slide--dark{"data-aspect-ratio": "16:9"}
+          %li.Talk_item.Talk_item--unavailable
+            .Slides_MixinUp
+              .Slide.Slide--title.Slide--mixin{"data-aspect-ratio": "16:9"}
                 .Slide_content
-                  %h2
-                    %div Less
-                    %div Glamorous
-                    %div Elements
-                    %div of Design
+                  %h2 Mixin’ Up Design &&nbsp;Development
             .Talk_detail
-              %h2 Less Glamorous Elements of&nbsp;Design
-              %p Localhost Deployment · 6–9 June 2017
-
-        %li.Talk_item.Talk_item--unavailable
-          .Slides_MixinUp
-            .Slide.Slide--title.Slide--mixin{"data-aspect-ratio": "16:9"}
-              .Slide_content
-                %h2 Mixin’ Up Design &&nbsp;Development
-          .Talk_detail
-            %h2 Mixin’ Up Design &&nbsp;Development
-            %p Localhost Perth · 2 November 2016
+              %h2 Mixin’ Up Design &&nbsp;Development
+              %p Localhost Perth · 2 November 2016

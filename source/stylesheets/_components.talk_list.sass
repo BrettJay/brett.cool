@@ -1,10 +1,12 @@
+.body--talk
+  background: #f9f9f9
 .Talks
-  margin: -10px
+  margin: -15px 0
   padding: 0
   list-style: none
 
   .Talk_item
-    padding: 10px
+    padding: 15px
     a
       transition: 0.15s ease
       display: block
@@ -23,17 +25,20 @@
   .Talk_detail
     padding-top: 10px
     h2
-      +fluid-scale(font-size, 375px, 1040px, 14px, 17px)
+      +fluid-scale(font-size, $responsive_min, $responsive_max, 13px, 14px)
       font-weight: 600
+      letter-spacing: 0.02em
     h2, p
       margin: 0
     p
-      +fluid-scale(font-size, 375px, 1040px, 13px, 16px)
+      opacity: 0.6
+      letter-spacing: 0.02em
+      +fluid-scale(font-size, $responsive_min, $responsive_max, 13px, 14px)
   a
     color: inherit
     text-decoration: none
     border: 0
 
   .Talk_item--unavailable
-    opacity: 0.6
+    opacity: 0.8
     cursor: default

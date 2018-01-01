@@ -1,0 +1,7 @@
+.PhotoEssayItem
+  = link_to "/photoessays/#{essay_slug}/#{date.slug}" do
+    .PhotoEssayCard
+      .PhotoEssayCard_cardImage{style: "background-image: url('/images/photoessays/#{essay_slug}/#{date.slug}/banner.jpg')"}
+    .PhotoEssayCaption.pt1.pb2
+      .PhotoEssayCaption_title= date.title
+      .PhotoEssayCaption_date= date.date.strftime("%b %-d")

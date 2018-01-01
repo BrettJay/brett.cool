@@ -1,6 +1,6 @@
 ---
   title: Less Glamorous Elements of Design
-  body_classes: body--talks body--slides
+  body_classes: body--talk body--slides
   meta_description: Occasionally I give talks
   meta_keywords:
   ogp:
@@ -37,14 +37,16 @@
   });
 
 .PhotoEssaySubHeader
-  .Content
-    .Content_row
+  .Content.Content--fluid
+    .Row
       .SubHeader_Main
         .LinkBreadCrumbs
           #{link_to 'Talks', '/talk', class: 'BreadCrumb_Header'}
-          .Menu_Button
-            Less Glamorous Elements of Design
-        .DayMenu
+          .BreadCrumb_Header
+        .Menu_Button
+          Less Glamorous Elements of Design
+      .DayMenu
+        .MenuClip
           = link_to "Introduction", "#introduction", class: 'DayItem'
           = link_to "Varying Expectations of Designers", "#expectations", class: 'DayItem'
           = link_to "Fragmented Education", "#fragmentation", class: 'DayItem'
@@ -52,6 +54,7 @@
           = link_to "Visual Vocabulary", "#visvocab", class: 'DayItem'
           = link_to "Conclusion", "#conclusion", class: 'DayItem'
           = link_to "References", "#references", class: 'DayItem'
+
 
 .Slides_LessGlamorous
 
@@ -62,809 +65,811 @@
         %div Glamorous
         %div Elements
         %div of Design
+  .Page
+    .Content
+      .Row#introduction
+        .Content_Main.Content_Article
+          %p Hello, I’m Brett 👋
+          %p I’m a designer and front-end developer at #{link_to 'Pin Payments', 'https://pin.net.au', target: '_blank'}, and a co–organiser of #{link_to 'Mixin', 'http://mixinconf.com', target: '_blank'}.
+
+      .Row.pt4.pb4
+        .Slide{"data-aspect-ratio": "16:9"}
+          .Slide_content
+            %h2 “Less Glamorous<br/>Elements&nbsp;of&nbsp;Design”
+
+      .Row
+        .Content_Main.Content_Article
+          %p Tonight I’m here to talk to you about what I’m calling the “less glamorous elements of design”.
+
+          %p What do I mean by “̵Less Glamorous Elements of Design”?
+
+      .Row.pt3.pb3
+        .Slide{"data-aspect-ratio": "16:9"}
+          .Slide_content
+            = image_tag "#{@path}/clients.jpg", title: "Clients from Hell", alt: "Clients from Hell Website"
+
+      .Row
+        .Content_Main.Content_Article
+          %p I’m not referring to <em>clients from hell</em>, who always want their logos to be bigger...
+
+      .Row.pt3.pb3
+        .Slide{"data-aspect-ratio": "16:9"}
+          .Slide_content= image_tag "#{@path}/dribbble.jpg", title: "Dribbble", alt: "Dribbble Website"
+
+      .Row
+        .Content_Main.Content_Article
+          %p Nor even the so called <abbr>dribbbilisation of design<abbr>...
+          %p Well, <em>not exactly...</em>
+
+      .Row#expectations.pt3.pb3
+        .Slide{"data-aspect-ratio": "16:9"}
+          .Slide_content
+            = image_tag "#{@path}/designers.jpg", title: "Different types of designers", alt: "Different types of designers"
+
+      .Row
+        .Content_Main.Content_Article
+          %p There are many different types of designers, but for designers in our own industry, I often feel this palpable sense of anxiety and uncertainty due to the many differing expectations placed upon designers.
+
+      .Row.pt3.pb3
+        .Slide.Less_shouldDesigners{"data-aspect-ratio": "16:9"}
+          .Slide_content
+            %h2 Should designers code?
+
+      .Row
+        .Content_Main.Content_Article
+          %p So who’s seen this great philosophical question of our decade, posited by the greatest thought leaders on Twitter and Medium?
+
+          %p These questions, and others, in varying degrees of sincerity, to me, plainly indicate that there are many varying ideas and expectations around what designers in our industry should do.
+
+          %p Why is that, though?
+
+      .Row.pt3.pb3
+        .Slide.Less_roles{"data-aspect-ratio": "16:9"}
+          .Slide_content
+            %h2 There are various roles
+
+      .Row
+        .Content_Main.Content_Article
+          %p Well, obviously there are various role. Here are some current titles — next week there’ll be new ones.
+          %p But when I see dozens of roles, and all this terminology I feel like the industry is getting awfully fragmented, and I wonder if it needs to be this way...
+
+      .Row#fragmentation.pt3.pb3
+        .Slide.Slide--dark{"data-aspect-ratio": "16:9"}
+          .Slide_content
+            %h2 Could fragmentation of roles be a symptom of fragmented education?
+
+      .Row
+        .Content_Main.Content_Article
+          %p Could the fragmentation around roles actually be a symptom, not the cause of varying expectations?
+
+      .Row.pt3.pb3
+        .Slide{"data-aspect-ratio": "16:9"}
+          .Slide_content
+            %h2 Our industry is largely self-taught
+
+      .Row
+        .Content_Main.Content_Article
+          %p Our industry is largely self-taught, I don’t think that’s controversial to say.
+
+      .Row.pt3.pb3
+        .Slide{"data-aspect-ratio": "16:9"}
+          .Slide_content
+            %h2 Our industry moves fast
+
+      .Row
+        .Content_Main.Content_Article
+          %p The reason for such prolific self-learning in our industry is that it moves fast. It can feel like traditional curriculums aren’t relevant for the work we do today.
+
+          %p And because of that, expectations and ideas about what we should do change all the time.
+
+      .Row.pt3.pb3
+        .Slide{"data-aspect-ratio": "16:9"}
+          .Slide_content
+            %h2 Existing fragmentation of roles
+
+      .Row
+        .Content_Main.Content_Article
+          %p And the existing fragmentation of roles further reinforces expectations and ideas about what we should do.
+
+      .Row.pt3.pb3
+        .Slide{"data-aspect-ratio": "16:9"}
+          .Slide_content= image_tag "#{@path}/pathway.svg", title: "Pathways", alt: "Pathways"
+
+      .Row
+        .Content_Main.Content_Article
+          %p And depending where you enter the industry from, it’s plausible you may unconsciously be guided towards learning some things, and overlook things that may be useful for your career, just by the role you enter in to.
+
+      .Row.pt3.pb3
+        .Slide{"data-aspect-ratio": "16:9"}
+          .Slide_content
+            %h2
+              Our industry is largely self-taught<br/>
+              Our industry moves fast<br/>
+              Existing fragmentation of roles
+
+      .Row
+        .Content_Main.Content_Article
+          %p I want to talk a little more about all these. Starting with the self-learning in our industry.
+
+      .Row.pt3.pb3
+        .Slide{"data-aspect-ratio": "16:9"}
+          .Slide_content
+            %h2 Curriculums being taught aren’t always relevant for the work we do today
+
+      .Row
+        .Content_Main.Content_Article
+          %p Part of the problem is that curriculums can feel outdated or irrelevant. Perhaps institutions have caught up in recent years since I was at university, but that’s certainly how I felt at the time, and with the rate of change, I could easily see it being worse now.
+
+          %p I hear a quality which university is good at instilling — regardless of curriculum — is self learning.
+
+      .Row.pt3.pb3
+        .Slide{"data-aspect-ratio": "16:9"}
+          .Slide_content
+            %h2 Without a relevant curriculum, we have no guide for what to learn
+
+      .Row
+        .Content_Main.Content_Article
+          %p But without a solid curriculum, we have no guide for what to learn.
+
+      .Row.pt3.pb3
+        .Slide{"data-aspect-ratio": "16:9"}
+          .Slide_content
+            %h2 How do we learn?<br/>What do we learn?
+
+      .Row
+        .Content_Main.Content_Article
+          %p How do we learn, and what do we learn? It should be a deliberate decision.
+
+      .Row.pt3.pb3
+        .Slide{"data-aspect-ratio": "16:9"}
+          .Slide_content
+            %h2 Known Knowns
+
+      .Row
+        .Content_Main.Content_Article
+          %p There are things we know we need to learn, which we currently don’t know. In design, that’s often glamorous, visual design which we can identify as technical skills we need to practise.
+
+      .Row.pt3.pb3
+        .Slide.Slide--dark{"data-aspect-ratio": "16:9"}
+          .Slide_content
+            %h2 Unknown Unknowns
+
+      .Row
+        .Content_Main.Content_Article
+          %p But it’s the things we aren’t even aware we can learn that’s really insidious.
+
+      .Row.pt3.pb3
+        .Slide{"data-aspect-ratio": "16:9"}
+          .Slide_content
+            %h2 Deciding what to learn should be deliberate
+
+      .Row
+        .Content_Main.Content_Article
+          %p Because what you learn should be a deliberate decision.
+
+      .Row.pt3.pb3
+        .Slide{"data-aspect-ratio": "16:9"}
+          .Slide_content
+            %h2 But you cannot make an informed decision without all the information
+
+      .Row
+        .Content_Main.Content_Article
+          %p But you cannot do this without all the information.
+
+      .Row.pt3.pb3
+        .Slide.Slide--dark{"data-aspect-ratio": "16:9"}
+          .Slide_content
+            %h2 Here’s how I learned
+
+      .Row
+        .Content_Main.Content_Article
+          %p So I’ve been speaking in abstract for a bit. Here’s my experience learning design.
 
-  .Content
-    .Content_row#introduction
-      .Content_main
-        %p Hello, I’m Brett 👋
-        %p I’m a designer and front-end developer at #{link_to 'Pin Payments', 'https://pin.net.au', target: '_blank'}, and a co–organiser of #{link_to 'Mixin', 'http://mixinconf.com', target: '_blank'}.
-
-    .Content_row
-      .Slide{"data-aspect-ratio": "16:9"}
-        .Slide_content
-          %h2 “Less Glamorous<br/>Elements&nbsp;of&nbsp;Design”
-
-    .Content_row
-      .Content_main
-        %p Tonight I’m here to talk to you about what I’m calling the “less glamorous elements of design”.
-
-        %p What do I mean by “̵Less Glamorous Elements of Design”?
-
-    .Content_row
-      .Slide{"data-aspect-ratio": "16:9"}
-        .Slide_content
-          = image_tag "#{@path}/clients.jpg", title: "Clients from Hell", alt: "Clients from Hell Website"
-
-    .Content_row
-      .Content_main
-        %p I’m not referring to <em>clients from hell</em>, who always want their logos to be bigger...
-
-    .Content_row
-      .Slide{"data-aspect-ratio": "16:9"}
-        .Slide_content= image_tag "#{@path}/dribbble.jpg", title: "Dribbble", alt: "Dribbble Website"
-
-    .Content_row
-      .Content_main
-        %p Nor even the so called <abbr>dribbbilisation of design<abbr>...
-        %p Well, <em>not exactly...</em>
-
-    .Content_row#expectations
-      .Slide{"data-aspect-ratio": "16:9"}
-        .Slide_content
-          = image_tag "#{@path}/designers.jpg", title: "Different types of designers", alt: "Different types of designers"
-
-    .Content_row
-      .Content_main
-        %p There are many different types of designers, but for designers in our own industry, I often feel this palpable sense of anxiety and uncertainty due to the many differing expectations placed upon designers.
-
-    .Content_row
-      .Slide.Less_shouldDesigners{"data-aspect-ratio": "16:9"}
-        .Slide_content
-          %h2 Should designers code?
-
-    .Content_row
-      .Content_main
-        %p So who’s seen this great philosophical question of our decade, posited by the greatest thought leaders on Twitter and Medium?
-
-        %p These questions, and others, in varying degrees of sincerity, to me, plainly indicate that there are many varying ideas and expectations around what designers in our industry should do.
-
-        %p Why is that, though?
-
-    .Content_row
-      .Slide.Less_roles{"data-aspect-ratio": "16:9"}
-        .Slide_content
-          %h2 There are various roles
-
-    .Content_row
-      .Content_main
-        %p Well, obviously there are various role. Here are some current titles — next week there’ll be new ones.
-        %p But when I see dozens of roles, and all this terminology I feel like the industry is getting awfully fragmented, and I wonder if it needs to be this way...
-
-    .Content_row#fragmentation
-      .Slide.Slide--dark{"data-aspect-ratio": "16:9"}
-        .Slide_content
-          %h2 Could fragmentation of roles be a symptom of fragmented education?
-
-    .Content_row
-      .Content_main
-        %p Could the fragmentation around roles actually be a symptom, not the cause of varying expectations?
-
-    .Content_row
-      .Slide{"data-aspect-ratio": "16:9"}
-        .Slide_content
-          %h2 Our industry is largely self-taught
-
-    .Content_row
-      .Content_main
-        %p Our industry is largely self-taught, I don’t think that’s controversial to say.
-
-    .Content_row
-      .Slide{"data-aspect-ratio": "16:9"}
-        .Slide_content
-          %h2 Our industry moves fast
-
-    .Content_row
-      .Content_main
-        %p The reason for such prolific self-learning in our industry is that it moves fast. It can feel like traditional curriculums aren’t relevant for the work we do today.
-
-        %p And because of that, expectations and ideas about what we should do change all the time.
-
-    .Content_row
-      .Slide{"data-aspect-ratio": "16:9"}
-        .Slide_content
-          %h2 Existing fragmentation of roles
-
-    .Content_row
-      .Content_main
-        %p And the existing fragmentation of roles further reinforces expectations and ideas about what we should do.
-
-    .Content_row
-      .Slide{"data-aspect-ratio": "16:9"}
-        .Slide_content= image_tag "#{@path}/pathway.svg", title: "Pathways", alt: "Pathways"
-
-    .Content_row
-      .Content_main
-        %p And depending where you enter the industry from, it’s plausible you may unconsciously be guided towards learning some things, and overlook things that may be useful for your career, just by the role you enter in to.
-
-    .Content_row
-      .Slide{"data-aspect-ratio": "16:9"}
-        .Slide_content
-          %h2
-            Our industry is largely self-taught<br/>
-            Our industry moves fast<br/>
-            Existing fragmentation of roles
-
-    .Content_row
-      .Content_main
-        %p I want to talk a little more about all these. Starting with the self-learning in our industry.
-
-    .Content_row
-      .Slide{"data-aspect-ratio": "16:9"}
-        .Slide_content
-          %h2 Curriculums being taught aren’t always relevant for the work we do today
-
-    .Content_row
-      .Content_main
-        %p Part of the problem is that curriculums can feel outdated or irrelevant. Perhaps institutions have caught up in recent years since I was at university, but that’s certainly how I felt at the time, and with the rate of change, I could easily see it being worse now.
-
-        %p I hear a quality which university is good at instilling — regardless of curriculum — is self learning.
-
-    .Content_row
-      .Slide{"data-aspect-ratio": "16:9"}
-        .Slide_content
-          %h2 Without a relevant curriculum, we have no guide for what to learn
-
-    .Content_row
-      .Content_main
-        %p But without a solid curriculum, we have no guide for what to learn.
-
-    .Content_row
-      .Slide{"data-aspect-ratio": "16:9"}
-        .Slide_content
-          %h2 How do we learn?<br/>What do we learn?
-
-    .Content_row
-      .Content_main
-        %p How do we learn, and what do we learn? It should be a deliberate decision.
-
-    .Content_row
-      .Slide{"data-aspect-ratio": "16:9"}
-        .Slide_content
-          %h2 Known Knowns
-
-    .Content_row
-      .Content_main
-        %p There are things we know we need to learn, which we currently don’t know. In design, that’s often glamorous, visual design which we can identify as technical skills we need to practise.
-
-    .Content_row
-      .Slide.Slide--dark{"data-aspect-ratio": "16:9"}
-        .Slide_content
-          %h2 Unknown Unknowns
-
-    .Content_row
-      .Content_main
-        %p But it’s the things we aren’t even aware we can learn that’s really insidious.
-
-    .Content_row
-      .Slide{"data-aspect-ratio": "16:9"}
-        .Slide_content
-          %h2 Deciding what to learn should be deliberate
-
-    .Content_row
-      .Content_main
-        %p Because what you learn should be a deliberate decision.
-
-    .Content_row
-      .Slide{"data-aspect-ratio": "16:9"}
-        .Slide_content
-          %h2 But you cannot make an informed decision without all the information
-
-    .Content_row
-      .Content_main
-        %p But you cannot do this without all the information.
-
-    .Content_row
-      .Slide.Slide--dark{"data-aspect-ratio": "16:9"}
-        .Slide_content
-          %h2 Here’s how I learned
-
-    .Content_row
-      .Content_main
-        %p So I’ve been speaking in abstract for a bit. Here’s my experience learning design.
-
-    .Content_row
-      .Slide{"data-aspect-ratio": "16:9"}
-        .Slide_content= image_tag "#{@path}/dribbble.jpg", title: "Dribbble", alt: "Dribbble Website"
-
-    .Content_row
-      .Content_main
-        %p Which brings us back here. Now I love Dribbble. I promise this isn’t a rant on dribbbilisation of design. This is in fact what got me excited about design. Nice looking, shiny pixels. So glamorous!
-
-        %p To fourteen year old aspiring designer me, this was the pinnacle of design. It was enthralling, I saw these amazing looking designs and I wanted to do it too.
-
-    .Content_row
-      .Slide{"data-aspect-ratio": "16:9"}
-        .Slide_content= image_tag "#{@path}/skins.jpg", title: "My Aesthetic", alt: "Winamp Skins, Userbars, Gloss"
-
-    .Content_row
-      .Content_main
-        %p Actually, back then, Windows Media Player and Winamp skins were my aesthetic. And userbars — shoutouts to silkscreen.ttf, and web 2.0 gloss, diagonal stripes etc…
-        %p So back in the day...
-    .Content_row
-      .Slide{"data-aspect-ratio": "16:9"}
-        %video{src: "#{@path}/flashback.mp4", controls: 'controls', preload: 'preload'}
-
-    .Content_row
-      .Content_main
-        %p So here’s a dramatisation of the day my journey in designer education began, one afternoon after school when seeing flashy graphics on the web, and opening a Firefox 2 browser to google it.
-
-        %p And so, thanks to a knack for Google, I ended up teaching myself design — or so I thought of it — through series of 16 step psd tutorials and the like.
-
-    .Content_row
-      .Slide{"data-aspect-ratio": "16:9"}
-        .Slide_content
-          %h2 ⚠️
-
-    .Content_row
-      .Content_main
-        %p And this is where a problem arises.
+      .Row.pt3.pb3
+        .Slide{"data-aspect-ratio": "16:9"}
+          .Slide_content= image_tag "#{@path}/dribbble.jpg", title: "Dribbble", alt: "Dribbble Website"
 
-        %p Now this is a slightly exaggerated example, but when it comes to self-learning...
-
-    .Content_row
-      .Slide{"data-aspect-ratio": "16:9"}
-        .Slide_content
-          %h2 Google is a great way to learn what you know what you need to learn.
+      .Row
+        .Content_Main.Content_Article
+          %p Which brings us back here. Now I love Dribbble. I promise this isn’t a rant on dribbbilisation of design. This is in fact what got me excited about design. Nice looking, shiny pixels. So glamorous!
 
-    .Content_row
-      .Content_main
-        %p Google is only a great way to learn what you already know you need to learn.
+          %p To fourteen year old aspiring designer me, this was the pinnacle of design. It was enthralling, I saw these amazing looking designs and I wanted to do it too.
 
-    .Content_row
-      .Slide{"data-aspect-ratio": "16:9"}
-        .Slide_content
-          %h2 I appreciated superficial qualities of design.
+      .Row.pt3.pb3
+        .Slide{"data-aspect-ratio": "16:9"}
+          .Slide_content= image_tag "#{@path}/skins.jpg", title: "My Aesthetic", alt: "Winamp Skins, Userbars, Gloss"
 
-    .Content_row
-      .Content_main
-        %p The superficial qualities of design and the technical skills I’d need to develop.
+      .Row
+        .Content_Main.Content_Article
+          %p Actually, back then, Windows Media Player and Winamp skins were my aesthetic. And userbars — shoutouts to silkscreen.ttf, and web 2.0 gloss, diagonal stripes etc…
+          %p So back in the day...
 
-    .Content_row
-      .Slide{"data-aspect-ratio": "16:9"}
-        .Slide_content
-          %h2 But there was more to learn.
+      .Row.pt3.pb3
+        .Slide{"data-aspect-ratio": "16:9"}
+          %video{src: "#{@path}/flashback.mp4", controls: 'controls', preload: 'preload'}
 
-    .Content_row
-      .Content_main
-        %p But there was so much process and technique I should learn that was invisible to me.
+      .Row
+        .Content_Main.Content_Article
+          %p So here’s a dramatisation of the day my journey in designer education began, one afternoon after school when seeing flashy graphics on the web, and opening a Firefox 2 browser to google it.
 
-    .Content_row
-      .Slide{"data-aspect-ratio": "16:9"}
-        .Slide_content= image_tag "#{@path}/jjg.jpg", title: "Jesse James Garrett", alt: "Jesse James Garrett"
+          %p And so, thanks to a knack for Google, I ended up teaching myself design — or so I thought of it — through series of 16 step psd tutorials and the like.
 
-    .Content_row
-      .Content_main
-        %p Enter #{link_to 'Jesse James Garrett', 'https://twitter.com/jjg', target: '_blank', rel: 'noopener'}. He has written a lot on the topics of user experience design, including a book entitled “The Elements of User Experience”.
+      .Row.pt3.pb3
+        .Slide{"data-aspect-ratio": "16:9"}
+          .Slide_content
+            %h2 ⚠️
 
-    .Content_row
-      .Slide.Less_pin{"data-aspect-ratio": "16:9"}
+      .Row
+        .Content_Main.Content_Article
+          %p And this is where a problem arises.
 
-    .Content_row
-      .Content_main
-        %p I became much more familiar with Jesse’s work at my current position, when we looked at how to make our design process more explicit.
+          %p Now this is a slightly exaggerated example, but when it comes to self-learning...
 
-    .Content_row
-      .Slide#elements{"data-aspect-ratio": "16:9"}
-        .Slide_content= image_tag "#{@path}/elements.png", title: "The Elements of User Experience", alt: "The Elements of User Experience"
+      .Row.pt3.pb3
+        .Slide{"data-aspect-ratio": "16:9"}
+          .Slide_content
+            %h2 Google is a great way to learn what you know what you need to learn.
 
-    .Content_row
-      .Content_main
-        %p And specifically, this diagram. Here is something that didn’t come up in my google searches while learning design. I didn’t know the combination of magic words to bring it up.
+      .Row
+        .Content_Main.Content_Article
+          %p Google is only a great way to learn what you already know you need to learn.
 
-        %p Now this diagram looks quite complicated, but it’s a brilliant encapsulation of much of what we do, and is still relevant now.
+      .Row.pt3.pb3
+        .Slide{"data-aspect-ratio": "16:9"}
+          .Slide_content
+            %h2 I appreciated superficial qualities of design.
 
-        %p I just want to start off with this quote here:
+      .Row
+        .Content_Main.Content_Article
+          %p The superficial qualities of design and the technical skills I’d need to develop.
 
-        %blockquote
-          %p The Web was originally conceived as a hypertextual information space; but the development of increasingly sophisticated front- and back-end technologies has fostered its use as a remote software interface. This dual nature has led to much confusion, as user experience practitioners have attempted to adapt their terminology to cases beyond the scope of its original application.
+      .Row.pt3.pb3
+        .Slide{"data-aspect-ratio": "16:9"}
+          .Slide_content
+            %h2 But there was more to learn.
 
-        %p Or to put it another way, sometimes we design websites, sometimes we design applications, and the process differs between the two.
-    .Content_row
-      .Slide{"data-aspect-ratio": "16:9"}
-        .Slide_content.Slide_content--full= image_tag "#{@path}/duality.jpg", title: "Designing applications vs websites", alt: "Designing applications vs websites"
+      .Row
+        .Content_Main.Content_Article
+          %p But there was so much process and technique I should learn that was invisible to me.
 
-    .Content_row
-      .Content_main
-        %p Now as unremarkable as this statement is in 2017, this diagram was conceived in 2000...
+      .Row.pt3.pb3
+        .Slide{"data-aspect-ratio": "16:9"}
+          .Slide_content= image_tag "#{@path}/jjg.jpg", title: "Jesse James Garrett", alt: "Jesse James Garrett"
 
-        %p Eight years before the iPhone had an app store, seven years before the iPhone was released, six years before Twitter, four years before “The Facebook”, and three years before MySpace.
+      .Row
+        .Content_Main.Content_Article
+          %p Enter #{link_to 'Jesse James Garrett', 'https://twitter.com/jjg', target: '_blank', rel: 'noopener'}. He has written a lot on the topics of user experience design, including a book entitled “The Elements of User Experience”.
 
-        %p This predates so much of what we consider when we think contemporary product design, yet it still holds a lot of value and insight.
+      .Row.pt3.pb3
+        .Slide.Less_pin{"data-aspect-ratio": "16:9"}
 
-    .Content_row
-      .Slide{"data-aspect-ratio": "16:9"}
-        .Slide_content= image_tag "#{@path}/elements.png", title: "The Elements of User Experience", alt: "The Elements of User Experience"
+      .Row
+        .Content_Main.Content_Article
+          %p I became much more familiar with Jesse’s work at my current position, when we looked at how to make our design process more explicit.
 
-    .Content_row
-      .Content_main
-        %p In fact, if we look at the labels on the elements, we have both an instructive curriculum of design skills to practise, and a design processes for websites and applications to refer to.
+      .Row.pt3.pb3
+        .Slide#elements{"data-aspect-ratio": "16:9"}
+          .Slide_content= image_tag "#{@path}/elements.png", title: "The Elements of User Experience", alt: "The Elements of User Experience"
 
-    .Content_row
-      .Slide{"data-aspect-ratio": "16:9"}
-        .Slide_content.Slide_content--full= image_tag "#{@path}/simplified.jpg", title: "Simplified process", alt: "Simplified process"
+      .Row
+        .Content_Main.Content_Article
+          %p And specifically, this diagram. Here is something that didn’t come up in my google searches while learning design. I didn’t know the combination of magic words to bring it up.
 
-    .Content_row
-      .Content_main
-        %p A simplified version of this diagram exists. Looking at this diagram, I notice a few things.
+          %p Now this diagram looks quite complicated, but it’s a brilliant encapsulation of much of what we do, and is still relevant now.
 
-    .Content_row
-      .Slide{"data-aspect-ratio": "16:9"}
-        .Slide_content.Slide_content--full= image_tag "#{@path}/skills.jpg", title: "Skills", alt: "Skills"
+          %p I just want to start off with this quote here:
 
-    .Content_row
-      .Content_main
-        %p Firstly, it seems to me that there is a progression of specialist skills as you move through the elements. Most people can draw up high level goals or objectives.
+          %blockquote
+            %p The Web was originally conceived as a hypertextual information space; but the development of increasingly sophisticated front- and back-end technologies has fostered its use as a remote software interface. This dual nature has led to much confusion, as user experience practitioners have attempted to adapt their terminology to cases beyond the scope of its original application.
 
-        %p But as you go through the layers, more technical and specialist skills emerge.
+          %p Or to put it another way, sometimes we design websites, sometimes we design applications, and the process differs between the two.
 
-    .Content_row
-      .Slide{"data-aspect-ratio": "16:9"}
-        .Slide_content= image_tag "#{@path}/entry.png", title: "A common entry point", alt: "A common entry point"
+      .Row.pt3.pb3
+        .Slide{"data-aspect-ratio": "16:9"}
+          .Slide_content.Slide_content--full= image_tag "#{@path}/duality.jpg", title: "Designing applications vs websites", alt: "Designing applications vs websites"
 
-    .Content_row
-      .Content_main
-        %p I feel the topmost visual layer is a common entry point to the industry for many designers — it’s certainly how I entered the industry. It starts with an appreciation for the aesthetics of Design, it’s what gets us excited and our foot in the door.
+      .Row
+        .Content_Main.Content_Article
+          %p Now as unremarkable as this statement is in 2017, this diagram was conceived in 2000...
 
-        %p As we become immersed in the industry and gain experience, we naturally start to see and appreciate skills and techniques less appreciable from outside the industry.
+          %p Eight years before the iPhone had an app store, seven years before the iPhone was released, six years before Twitter, four years before “The Facebook”, and three years before MySpace.
 
-    .Content_row
-      .Slide{"data-aspect-ratio": "16:9"}
-        .Slide_content.Slide_content--full= image_tag "#{@path}/focus.jpg", title: "The overlooked layer", alt: "The overlooked layer"
+          %p This predates so much of what we consider when we think contemporary product design, yet it still holds a lot of value and insight.
 
-    .Content_row
-      .Content_main
-        %p As such, I want to talk a bit more about this section, right in the center.
+      .Row.pt3.pb3
+        .Slide{"data-aspect-ratio": "16:9"}
+          .Slide_content= image_tag "#{@path}/elements.png", title: "The Elements of User Experience", alt: "The Elements of User Experience"
 
-        %p The surface layer is the easiest to appreciate. From outside the industry, you can recognise the technical skills required to produce aesthetically pleasing work.
+      .Row
+        .Content_Main.Content_Article
+          %p In fact, if we look at the labels on the elements, we have both an instructive curriculum of design skills to practise, and a design processes for websites and applications to refer to.
 
-        %p But this structure layer as a proficiency, was all but invisible to me as a beginner, starting out, and I feel one of the most easily overlooked, not just by me, but by many.
+      .Row.pt3.pb3
+        .Slide{"data-aspect-ratio": "16:9"}
+          .Slide_content.Slide_content--full= image_tag "#{@path}/simplified.jpg", title: "Simplified process", alt: "Simplified process"
 
-        %p Jesse refers to the tasks in the structural layer of design as Interaction Design and Information Architecture when designing apps and websites respectively.
+      .Row
+        .Content_Main.Content_Article
+          %p A simplified version of this diagram exists. Looking at this diagram, I notice a few things.
 
-        %p And again, Jesse has a useful framework for this layer.
+      .Row.pt3.pb3
+        .Slide{"data-aspect-ratio": "16:9"}
+          .Slide_content.Slide_content--full= image_tag "#{@path}/skills.jpg", title: "Skills", alt: "Skills"
 
-    .Content_row
-      .Slide#visvocab{"data-aspect-ratio": "16:9"}
-        .Slide_content.Slide_content--full= image_tag "#{@path}/vocab.png", title: "A Visual Vocabulary", alt: "A Visual Vocabulary"
+      .Row
+        .Content_Main.Content_Article
+          %p Firstly, it seems to me that there is a progression of specialist skills as you move through the elements. Most people can draw up high level goals or objectives.
 
-    .Content_row
-      .Content_main
-        %p Which he refers to as a visual vocabulary.
+          %p But as you go through the layers, more technical and specialist skills emerge.
 
-    .Content_row
-      .Slide{"data-aspect-ratio": "16:9"}
-        .Slide_content
-          %h2 Sitemap?
+      .Row.pt3.pb3
+        .Slide{"data-aspect-ratio": "16:9"}
+          .Slide_content= image_tag "#{@path}/entry.png", title: "A common entry point", alt: "A common entry point"
 
-    .Content_row
-      .Content_main
-        %p Oh, like a site map?
+      .Row
+        .Content_Main.Content_Article
+          %p I feel the topmost visual layer is a common entry point to the industry for many designers — it’s certainly how I entered the industry. It starts with an appreciation for the aesthetics of Design, it’s what gets us excited and our foot in the door.
 
-        %p Basically, yes! But much more than that.
+          %p As we become immersed in the industry and gain experience, we naturally start to see and appreciate skills and techniques less appreciable from outside the industry.
 
-    .Content_row
-      .Slide{"data-aspect-ratio": "16:9"}
-        .Slide_content.Slide_content--full= image_tag "#{@path}/visvocab01.png", title: "A Visual Vocabulary", alt: "A Visual Vocabulary"
+      .Row.pt3.pb3
+        .Slide{"data-aspect-ratio": "16:9"}
+          .Slide_content.Slide_content--full= image_tag "#{@path}/focus.jpg", title: "The overlooked layer", alt: "The overlooked layer"
 
-    .Content_row
-      .Content_main
-        %p The vocabulary describes a wide library of symbols which are used to represent a user’s journey through an application or website.
+      .Row
+        .Content_Main.Content_Article
+          %p As such, I want to talk a bit more about this section, right in the center.
 
-    .Content_row
-      .Slide{"data-aspect-ratio": "16:9"}
-        .Slide_content.Slide_content--full= image_tag "#{@path}/visvocab02.png", title: "A Visual Vocabulary", alt: "A Visual Vocabulary"
+          %p The surface layer is the easiest to appreciate. From outside the industry, you can recognise the technical skills required to produce aesthetically pleasing work.
 
-    .Content_row
-      .Content_main
-        %p And the various possible conditions and relationships between pages and states.
+          %p But this structure layer as a proficiency, was all but invisible to me as a beginner, starting out, and I feel one of the most easily overlooked, not just by me, but by many.
 
-    .Content_row
-      .Slide{"data-aspect-ratio": "16:9"}
-        .Slide_content
-          %h2 A vocabulary for visualising a user’s journey through an application or website, efficiently.
+          %p Jesse refers to the tasks in the structural layer of design as Interaction Design and Information Architecture when designing apps and websites respectively.
 
-    .Content_row
-      .Content_main
-        %p So this visual vocabulary framework allows you to quickly ideate and iterate on the user’s journey through a website or application, without having to produce high fidelity mockups or prototypes.
+          %p And again, Jesse has a useful framework for this layer.
 
-    .Content_row
-      .Slide{"data-aspect-ratio": "16:9"}
-        .Slide_content
-          %h2 Requires no technical design skills
+      .Row.pt3.pb3
+        .Slide#visvocab{"data-aspect-ratio": "16:9"}
+          .Slide_content.Slide_content--full= image_tag "#{@path}/vocab.png", title: "A Visual Vocabulary", alt: "A Visual Vocabulary"
 
-    .Content_row
-      .Content_main
-        %p It requires absolutely no technical skills to apply. It’s a vocabulary anyone can learn — anyone can draw boxes and arrows.
+      .Row
+        .Content_Main.Content_Article
+          %p Which he refers to as a visual vocabulary.
 
-    .Content_row
-      .Slide{"data-aspect-ratio": "16:9"}
-        .Slide_content
-          %h2 Inclusive
+      .Row.pt3.pb3
+        .Slide{"data-aspect-ratio": "16:9"}
+          .Slide_content
+            %h2 Sitemap?
 
-    .Content_row
-      .Content_main
-        %p And because of this, it allows for this stage of design to be a very inclusive process. Developers, project managers, and other stakeholders, can all use this framework to relate to the project, without a sense of not being qualified to contribute due to lack of technical skills.
+      .Row
+        .Content_Main.Content_Article
+          %p Oh, like a site map?
 
-    .Content_row
-      .Slide{"data-aspect-ratio": "16:9"}
-        .Slide_content
-          %h2 Design with <strike>comittee?</strike>
+          %p Basically, yes! But much more than that.
 
-    .Content_row
-      .Content_main
-        %p Maybe that set a red flag off, are we designing with a comittee?
+      .Row.pt3.pb3
+        .Slide{"data-aspect-ratio": "16:9"}
+          .Slide_content.Slide_content--full= image_tag "#{@path}/visvocab01.png", title: "A Visual Vocabulary", alt: "A Visual Vocabulary"
 
-    .Content_row
-      .Slide{"data-aspect-ratio": "16:9"}
-        .Slide_content
-          %h2 Design with context
+      .Row
+        .Content_Main.Content_Article
+          %p The vocabulary describes a wide library of symbols which are used to represent a user’s journey through an application or website.
 
-    .Content_row
-      .Content_main
-        %p No. I think of it as designing with context.
+      .Row.pt3.pb3
+        .Slide{"data-aspect-ratio": "16:9"}
+          .Slide_content.Slide_content--full= image_tag "#{@path}/visvocab02.png", title: "A Visual Vocabulary", alt: "A Visual Vocabulary"
 
-        %p Ultimately, designers are still responsible for synthesising from other stake holders. There’s a difference between having more context and delegating decisions.
+      .Row
+        .Content_Main.Content_Article
+          %p And the various possible conditions and relationships between pages and states.
 
-    .Content_row
-      .Slide{"data-aspect-ratio": "16:9"}
-        .Slide_content
-          %h2 Design with greater perspective
+      .Row.pt3.pb3
+        .Slide{"data-aspect-ratio": "16:9"}
+          .Slide_content
+            %h2 A vocabulary for visualising a user’s journey through an application or website, efficiently.
 
-    .Content_row
-      .Content_main
-        %p Bringing on developers and other parties allows your design process to be informed by other perspectives, allowing you to design more robust products and websites.
+      .Row
+        .Content_Main.Content_Article
+          %p So this visual vocabulary framework allows you to quickly ideate and iterate on the user’s journey through a website or application, without having to produce high fidelity mockups or prototypes.
 
-    .Content_row
-      .Slide{"data-aspect-ratio": "16:9"}
-        .Slide_content
-          %h2 Make design decisions more efficiently
+      .Row.pt3.pb3
+        .Slide{"data-aspect-ratio": "16:9"}
+          .Slide_content
+            %h2 Requires no technical design skills
 
-    .Content_row
-      .Content_main
-        %p Even outside a team scenario, being familiar with these frameworks will allow you to make your design decisions more efficiently.
+      .Row
+        .Content_Main.Content_Article
+          %p It requires absolutely no technical skills to apply. It’s a vocabulary anyone can learn — anyone can draw boxes and arrows.
 
-    .Content_row
-      .Slide{"data-aspect-ratio": "16:9"}
-        .Slide_content
-          %h2 Make design decisions at the right fidelity
+      .Row.pt3.pb3
+        .Slide{"data-aspect-ratio": "16:9"}
+          .Slide_content
+            %h2 Inclusive
 
-    .Content_row
-      .Content_main
-        %p And at the right time. Too often I’ve found myself mulling over high level design decisions while making pixels shiny.
+      .Row
+        .Content_Main.Content_Article
+          %p And because of this, it allows for this stage of design to be a very inclusive process. Developers, project managers, and other stakeholders, can all use this framework to relate to the project, without a sense of not being qualified to contribute due to lack of technical skills.
 
-    .Content_row
-      .Slide{"data-aspect-ratio": "16:9"}
-        .Slide_content.Slide_content--full= image_tag "#{@path}/layer1.png", title: "Visual Layer", alt: "Visual Layer"
+      .Row.pt3.pb3
+        .Slide{"data-aspect-ratio": "16:9"}
+          .Slide_content
+            %h2 Design with <strike>comittee?</strike>
 
-    .Content_row
-      .Content_main
-        %p At this point, I really should jump away from a visual design tool or code.
+      .Row
+        .Content_Main.Content_Article
+          %p Maybe that set a red flag off, are we designing with a comittee?
 
-    .Content_row
-      .Slide{"data-aspect-ratio": "16:9"}
-        .Slide_content.Slide_content--full= image_tag "#{@path}/layer2.png", title: "Structural Layer", alt: "Structural Layer"
+      .Row.pt3.pb3
+        .Slide{"data-aspect-ratio": "16:9"}
+          .Slide_content
+            %h2 Design with context
 
-    .Content_row
-      .Content_main
-        %p And have a few iterations with boxes and arrows
+      .Row
+        .Content_Main.Content_Article
+          %p No. I think of it as designing with context.
 
-    .Content_row
-      .Slide{"data-aspect-ratio": "16:9"}
-        .Slide_content.Slide_content--full= image_tag "#{@path}/tools.png", title: "Sketch and Framer", alt: "Sketch and Framer"
+          %p Ultimately, designers are still responsible for synthesising from other stake holders. There’s a difference between having more context and delegating decisions.
 
-    .Content_row
-      .Content_main
-        %p But wait, does all this still apply? These days we have Sketch and framer which makes it so much faster!
+      .Row.pt3.pb3
+        .Slide{"data-aspect-ratio": "16:9"}
+          .Slide_content
+            %h2 Design with greater perspective
 
-    .Content_row
-      .Slide{"data-aspect-ratio": "16:9"}
-        .Slide_content.Slide_content--full= image_tag "#{@path}/framer.png", title: "Framer Design View", alt: "Framer Design View"
+      .Row
+        .Content_Main.Content_Article
+          %p Bringing on developers and other parties allows your design process to be informed by other perspectives, allowing you to design more robust products and websites.
 
-    .Content_row
-      .Content_main
-        %p Indeed, Framer itself just launched framer design after all! An end–to–end design tool as they call it!
+      .Row.pt3.pb3
+        .Slide{"data-aspect-ratio": "16:9"}
+          .Slide_content
+            %h2 Make design decisions more efficiently
 
-        %p Whatsmore, they finally solved that “should designers code” question with a segmented control right there in the UI!
+      .Row
+        .Content_Main.Content_Article
+          %p Even outside a team scenario, being familiar with these frameworks will allow you to make your design decisions more efficiently.
 
-        %p Now I’m a huge fan of Framer and their team. But unless you’re designing an interface flow as rote as a messaging app or weather app...
+      .Row.pt3.pb3
+        .Slide{"data-aspect-ratio": "16:9"}
+          .Slide_content
+            %h2 Make design decisions at the right fidelity
 
-    .Content_row
-      .Slide{"data-aspect-ratio": "16:9"}
-        .Slide_content.Slide_content--full= image_tag "#{@path}/singlepage.png", title: "Designing page by page", alt: "Designing page by page"
+      .Row
+        .Content_Main.Content_Article
+          %p And at the right time. Too often I’ve found myself mulling over high level design decisions while making pixels shiny.
 
-    .Content_row
-      .Content_main
-        %p I think there is a real problem with starting by design at a screen–by–screen level in applications like Sketch or Framer.
+      .Row.pt3.pb3
+        .Slide{"data-aspect-ratio": "16:9"}
+          .Slide_content.Slide_content--full= image_tag "#{@path}/layer1.png", title: "Visual Layer", alt: "Visual Layer"
 
-        %p Sure modern tools make this process faster...
+      .Row
+        .Content_Main.Content_Article
+          %p At this point, I really should jump away from a visual design tool or code.
 
-    .Content_row
-      .Slide{"data-aspect-ratio": "16:9"}
-        .Slide_content.Slide_content--full= image_tag "#{@path}/bigpicture.png", title: "Flow", alt: "Flow"
+      .Row.pt3.pb3
+        .Slide{"data-aspect-ratio": "16:9"}
+          .Slide_content.Slide_content--full= image_tag "#{@path}/layer2.png", title: "Structural Layer", alt: "Structural Layer"
 
-    .Content_row
-      .Content_main
-        %p But we can move faster and make decisions more efficiently by zooming out, looking at the high level flow, and iterating on that before zooming in on the details.
+      .Row
+        .Content_Main.Content_Article
+          %p And have a few iterations with boxes and arrows
 
-        %p And then we can design all the delightful micro interactions on each page, secure in the knowledge that we’re building the right thing.
+      .Row.pt3.pb3
+        .Slide{"data-aspect-ratio": "16:9"}
+          .Slide_content.Slide_content--full= image_tag "#{@path}/tools.png", title: "Sketch and Framer", alt: "Sketch and Framer"
 
-    .Content_row
-      .Slide{"data-aspect-ratio": "16:9"}
-        .Slide_content
-          %h2 Focus on the big picture
+      .Row
+        .Content_Main.Content_Article
+          %p But wait, does all this still apply? These days we have Sketch and framer which makes it so much faster!
 
-    .Content_row
-      .Content_main
-        %p In other words, focus on the big picture.
+      .Row.pt3.pb3
+        .Slide{"data-aspect-ratio": "16:9"}
+          .Slide_content.Slide_content--full= image_tag "#{@path}/framer.png", title: "Framer Design View", alt: "Framer Design View"
 
-    .Content_row
-      .Slide{"data-aspect-ratio": "16:9"}
-        .Slide_content
-          %h2 Easier to iterate
+      .Row
+        .Content_Main.Content_Article
+          %p Indeed, Framer itself just launched framer design after all! An end–to–end design tool as they call it!
 
-    .Content_row
-      .Content_main
-        %p It’s faster to iterate on
+          %p Whatsmore, they finally solved that “should designers code” question with a segmented control right there in the UI!
 
-    .Content_row
-      .Slide{"data-aspect-ratio": "16:9"}
-        .Slide_content
-          %h2 Easier to throw away
+          %p Now I’m a huge fan of Framer and their team. But unless you’re designing an interface flow as rote as a messaging app or weather app...
 
-    .Content_row
-      .Content_main
-        %p And you can be more ruthless, throwing away work without feeling like you’re throwing out 60 hours worth of time spent in Photoshop, XD or Sketch.
+      .Row.pt3.pb3
+        .Slide{"data-aspect-ratio": "16:9"}
+          .Slide_content.Slide_content--full= image_tag "#{@path}/singlepage.png", title: "Designing page by page", alt: "Designing page by page"
 
-    .Content_row
-      .Slide{"data-aspect-ratio": "16:9"}
-        .Slide_content= link_to image_tag("#{@path}/juliuezhuo.png", title: "Junior Designers vs Senior Designers", alt: "Junior Designers vs Senior Designers"), 'https://medium.com/the-year-of-the-looking-glass/junior-designers-vs-senior-designers-fbe483d3b51e', target: '_blank'
+      .Row
+        .Content_Main.Content_Article
+          %p I think there is a real problem with starting by design at a screen–by–screen level in applications like Sketch or Framer.
 
-    .Content_row
-      .Content_main
-        %p Julie Zhuo, a product designer at Facebook, wrote—or rather, drew—a series of insightful comparisons between junior designers and senior designers.
+          %p Sure modern tools make this process faster...
 
-    .Content_row
-      .Slide{"data-aspect-ratio": "16:9"}
-        .Slide_content= link_to image_tag("#{@path}/processes.png", title: "Junior Designers vs Senior Designers", alt: "Junior Designers vs Senior Designers"), 'https://medium.com/the-year-of-the-looking-glass/junior-designers-vs-senior-designers-fbe483d3b51e', target: '_blank'
+      .Row.pt3.pb3
+        .Slide{"data-aspect-ratio": "16:9"}
+          .Slide_content.Slide_content--full= image_tag "#{@path}/bigpicture.png", title: "Flow", alt: "Flow"
 
-    .Content_row
-      .Content_main
-        %p It was this comparison between the process of a junior designer, and the process of a senior designer that really resonated with me.
+      .Row
+        .Content_Main.Content_Article
+          %p But we can move faster and make decisions more efficiently by zooming out, looking at the high level flow, and iterating on that before zooming in on the details.
 
-        %p To the left, she compares a junior designer process which appears to be all over the place, with no rhyme or reason, to a deliberate, methodical approach by a senior designer.
+          %p And then we can design all the delightful micro interactions on each page, secure in the knowledge that we’re building the right thing.
 
-        %p To the left is me, every time I make high level product decisions in Sketch or another tool. To the right is a senior designer making decisions at the appropriate fidelity.
+      .Row.pt3.pb3
+        .Slide{"data-aspect-ratio": "16:9"}
+          .Slide_content
+            %h2 Focus on the big picture
 
-        %p Now I’m not here to prescribe any process on anyone—it all depends on the context of what you’re building—and especially not one that looks scarily waterfall–esque.
+      .Row
+        .Content_Main.Content_Article
+          %p In other words, focus on the big picture.
 
-    .Content_row
-      .Slide{"data-aspect-ratio": "16:9"}
-        .Slide_content= image_tag "#{@path}/comparison.png", title: "Process", alt: "Process"
+      .Row.pt3.pb3
+        .Slide{"data-aspect-ratio": "16:9"}
+          .Slide_content
+            %h2 Easier to iterate
 
-    .Content_row
-      .Content_main
-        %p But I think adding some structure to the process, working at the correct fidelity for the decision your making will allow your process to be more deliberate and considered, and give you more consistent, better results.
+      .Row
+        .Content_Main.Content_Article
+          %p It’s faster to iterate on
 
-    .Content_row
-      .Slide{"data-aspect-ratio": "16:9"}
-        .Slide_content
-          %h2 “Not My Job”
+      .Row.pt3.pb3
+        .Slide{"data-aspect-ratio": "16:9"}
+          .Slide_content
+            %h2 Easier to throw away
 
-    .Content_row
-      .Content_main
-        %p Perhaps you find all this interesting, but maybe you don’t think it’s your job. Perhaps you don’t consider yourself a designer.
+      .Row
+        .Content_Main.Content_Article
+          %p And you can be more ruthless, throwing away work without feeling like you’re throwing out 60 hours worth of time spent in Photoshop, XD or Sketch.
 
-        %p But even if you aren, and you’re aware of this now, but aren’t convinced to jump in...
+      .Row.pt3.pb3
+        .Slide{"data-aspect-ratio": "16:9"}
+          .Slide_content= link_to image_tag("#{@path}/juliuezhuo.png", title: "Junior Designers vs Senior Designers", alt: "Junior Designers vs Senior Designers"), 'https://medium.com/the-year-of-the-looking-glass/junior-designers-vs-senior-designers-fbe483d3b51e', target: '_blank'
 
-    .Content_row
-      .Slide{"data-aspect-ratio": "16:9"}
-        .Slide_content
-          %h2 That’s fine!
+      .Row
+        .Content_Main.Content_Article
+          %p Julie Zhuo, a product designer at Facebook, wrote—or rather, drew—a series of insightful comparisons between junior designers and senior designers.
 
-    .Content_row
-      .Content_main
-        %p And that’s fine!
+      .Row.pt3.pb3
+        .Slide{"data-aspect-ratio": "16:9"}
+          .Slide_content= link_to image_tag("#{@path}/processes.png", title: "Junior Designers vs Senior Designers", alt: "Junior Designers vs Senior Designers"), 'https://medium.com/the-year-of-the-looking-glass/junior-designers-vs-senior-designers-fbe483d3b51e', target: '_blank'
 
-    .Content_row
-      .Slide{"data-aspect-ratio": "16:9"}
-        .Slide_content
-          %h2 As long as it’s a conscious decision
+      .Row
+        .Content_Main.Content_Article
+          %p It was this comparison between the process of a junior designer, and the process of a senior designer that really resonated with me.
 
-    .Content_row
-      .Content_main
-        %p It just should be a conscious decision, one that you’re aware of.
+          %p To the left, she compares a junior designer process which appears to be all over the place, with no rhyme or reason, to a deliberate, methodical approach by a senior designer.
 
-    .Content_row
-      .Slide{"data-aspect-ratio": "16:9"}
-        .Slide_content
-          %h2 The problem with less glamorous elements of design is that they’re easily overlooked.
+          %p To the left is me, every time I make high level product decisions in Sketch or another tool. To the right is a senior designer making decisions at the appropriate fidelity.
 
-    .Content_row
-      .Content_main
-        %p The problem is it’s easily overlooked in out industry. It isn’t sexy, it isn’t glamorous, it isn’t particularly exciting, until you realise it can help make the process to building great work more robust.
+          %p Now I’m not here to prescribe any process on anyone—it all depends on the context of what you’re building—and especially not one that looks scarily waterfall–esque.
 
-        %p Many designers — myself included — seem to enter from a visual design background and so the learning and knowledge around this type of thing is awfully fragmented.
+      .Row.pt3.pb3
+        .Slide{"data-aspect-ratio": "16:9"}
+          .Slide_content= image_tag "#{@path}/comparison.png", title: "Process", alt: "Process"
 
-    .Content_row
-      .Slide{"data-aspect-ratio": "16:9"}
-        .Slide_content= link_to image_tag("#{@path}/unnecessary.png", title: "The Unnecessary Fragmentation of Design Jobs", alt: "The Unnecessary Fragmentation of Design Jobs"), 'https://m.signalvnoise.com/the-unnecessary-fragmentation-of-design-jobs-d5b9c8621082', target: '_blank'
+      .Row
+        .Content_Main.Content_Article
+          %p But I think adding some structure to the process, working at the correct fidelity for the decision your making will allow your process to be more deliberate and considered, and give you more consistent, better results.
 
-    .Content_row
-      .Content_main
-        %p Jonas Downey, a designer at Basecamp, recently wrote an article entitled The Unnecessary Fragmentation of Design jobs, in which he states...
+      .Row.pt3.pb3
+        .Slide{"data-aspect-ratio": "16:9"}
+          .Slide_content
+            %h2 “Not My Job”
 
-        %blockquote
-          %p “<strong>If you’re only focused on examining problems</strong>, you’re not empowered to dream up the proper solutions.
+      .Row
+        .Content_Main.Content_Article
+          %p Perhaps you find all this interesting, but maybe you don’t think it’s your job. Perhaps you don’t consider yourself a designer.
 
-          %p <strong>If you’re only dreaming up what you could do</strong>, you’re not close enough to the ground-level truth.
+          %p But even if you aren, and you’re aware of this now, but aren’t convinced to jump in...
 
-          %p <strong>If you’re only working on the nitty gritty implementation</strong>, you know about the <em>what</em> but not a lot about the <em>why</em>.”
+      .Row.pt3.pb3
+        .Slide{"data-aspect-ratio": "16:9"}
+          .Slide_content
+            %h2 That’s fine!
 
-    .Content_row
-      .Slide{"data-aspect-ratio": "16:9"}
-        .Slide_content
-          %h2 Design with Context
+      .Row
+        .Content_Main.Content_Article
+          %p And that’s fine!
 
-    .Content_row
-      .Content_main
-        %p Or put another way, designing with context.
+      .Row.pt3.pb3
+        .Slide{"data-aspect-ratio": "16:9"}
+          .Slide_content
+            %h2 As long as it’s a conscious decision
 
-    .Content_row
-      .Slide{"data-aspect-ratio": "16:9"}
-        .Slide_content= image_tag("#{@path}/ux.png", title: "SDW on UX vs UI", alt: "SDW on UX vs UI")
+      .Row
+        .Content_Main.Content_Article
+          %p It just should be a conscious decision, one that you’re aware of.
 
-    .Content_row
-      .Content_main
-        %p Indeed, outside of research specialities, I feel it’s pretty hard to separate UX from other concerns, which is why I find Sebastiaan’s tweet here very useful.
+      .Row.pt3.pb3
+        .Slide{"data-aspect-ratio": "16:9"}
+          .Slide_content
+            %h2 The problem with less glamorous elements of design is that they’re easily overlooked.
 
-        %p User experience is all-encompassing. When I design a nice looking button, that affects a user’s experience. When Glen Maddern goes to the extra mile to ensure a website works well for someone with network latency has a tremendous impact on that user’s experience.
+      .Row
+        .Content_Main.Content_Article
+          %p The problem is it’s easily overlooked in out industry. It isn’t sexy, it isn’t glamorous, it isn’t particularly exciting, until you realise it can help make the process to building great work more robust.
 
-    .Content_row
-      .Slide{"data-aspect-ratio": "16:9"}
-        .Slide_content
-          %h2 User experience should be everyone’s concern
+          %p Many designers — myself included — seem to enter from a visual design background and so the learning and knowledge around this type of thing is awfully fragmented.
 
-    .Content_row
-      .Content_main
-        %p I do feel like user experience should be everyone’s concern, as we all contribute to it.
+      .Row.pt3.pb3
+        .Slide{"data-aspect-ratio": "16:9"}
+          .Slide_content= link_to image_tag("#{@path}/unnecessary.png", title: "The Unnecessary Fragmentation of Design Jobs", alt: "The Unnecessary Fragmentation of Design Jobs"), 'https://m.signalvnoise.com/the-unnecessary-fragmentation-of-design-jobs-d5b9c8621082', target: '_blank'
 
-    .Content_row
-      .Slide{"data-aspect-ratio": "16:9"}
-        .Slide_content= image_tag("#{@path}/kylie.png", title: "Kylie Timpani on Twitter", alt: "Kylie Timpani on Twitter")
+      .Row
+        .Content_Main.Content_Article
+          %p Jonas Downey, a designer at Basecamp, recently wrote an article entitled The Unnecessary Fragmentation of Design jobs, in which he states...
 
-    .Content_row
-      .Content_main
-        %p And above all else, more perspectives, more adjacent skills, more experience…
+          %blockquote
+            %p “<strong>If you’re only focused on examining problems</strong>, you’re not empowered to dream up the proper solutions.
 
-        %p It’s a common theme I hear from designers I respect in the industry. It all informs our work, allows us to grow, and makes us better.
+            %p <strong>If you’re only dreaming up what you could do</strong>, you’re not close enough to the ground-level truth.
 
-    .Content_row
-      .Slide{"data-aspect-ratio": "16:9"}
-        .Slide_content= image_tag("#{@path}/silos.png", title: "Siloed processes", alt: "Siloed processes")
+            %p <strong>If you’re only working on the nitty gritty implementation</strong>, you know about the <em>what</em> but not a lot about the <em>why</em>.”
 
-    .Content_row
-      .Content_main
-        %p I think when it comes to roles and processes, I don’t like to think of them as silos
+      .Row.pt3.pb3
+        .Slide{"data-aspect-ratio": "16:9"}
+          .Slide_content
+            %h2 Design with Context
 
-    .Content_row
-      .Slide{"data-aspect-ratio": "16:9"}
-        .Slide_content= image_tag("#{@path}/overlap.png", title: "Overlapping processes", alt: "Overlapping processes")
+      .Row
+        .Content_Main.Content_Article
+          %p Or put another way, designing with context.
 
-    .Content_row
-      .Content_main
-        %p The areas of overlap and intersection between roles and perspectives is where the real interest and value lies. More perspective, more context, better work.
+      .Row.pt3.pb3
+        .Slide{"data-aspect-ratio": "16:9"}
+          .Slide_content= image_tag("#{@path}/ux.png", title: "SDW on UX vs UI", alt: "SDW on UX vs UI")
 
-    .Content_row
-      .Slide{"data-aspect-ratio": "16:9"}
-        .Slide_content
-          %h2 ⚠️ Full-stack anxiety ⚠️
+      .Row
+        .Content_Main.Content_Article
+          %p Indeed, outside of research specialities, I feel it’s pretty hard to separate UX from other concerns, which is why I find Sebastiaan’s tweet here very useful.
 
-    .Content_row
-      .Content_main
-        %p Now all this potentially new homework… I don’t want to cause you any undue full stack anxiety.
+          %p User experience is all-encompassing. When I design a nice looking button, that affects a user’s experience. When Glen Maddern goes to the extra mile to ensure a website works well for someone with network latency has a tremendous impact on that user’s experience.
 
-    .Content_row
-      .Slide{"data-aspect-ratio": "16:9"}
-        .Slide_content.Slide_content--full= link_to image_tag("#{@path}/fullstack.jpg", title: "Full Stack Anxiety by Joel Califa", alt: "Full Stack Anxiety by Joel Califa"), 'http://mixinconf.com/videos/full-stack-anxiety/', target: '_blank'
+      .Row.pt3.pb3
+        .Slide{"data-aspect-ratio": "16:9"}
+          .Slide_content
+            %h2 User experience should be everyone’s concern
 
-    .Content_row
-      .Content_main
-        %p That’s a much better talk by #{link_to 'Joel Califa', 'https://twitter.com/notdetails', target: '_blank'} which I suggest you watch.
+      .Row
+        .Content_Main.Content_Article
+          %p I do feel like user experience should be everyone’s concern, as we all contribute to it.
 
-        %p In it, he provides a framework for deciding what you should learn, and being okay with deferring the rest.
+      .Row.pt3.pb3
+        .Slide{"data-aspect-ratio": "16:9"}
+          .Slide_content= image_tag("#{@path}/kylie.png", title: "Kylie Timpani on Twitter", alt: "Kylie Timpani on Twitter")
 
-    .Content_row
-      .Slide#conclusion{"data-aspect-ratio": "16:9"}
-        .Slide_content
-          %h2 “Our Industry Moves Fast”
+      .Row
+        .Content_Main.Content_Article
+          %p And above all else, more perspectives, more adjacent skills, more experience…
 
-    .Content_row
-      .Content_main
-        %p But I want to leave you on a note of optimism.
+          %p It’s a common theme I hear from designers I respect in the industry. It all informs our work, allows us to grow, and makes us better.
 
-        %p I’ve stated that our industry moves fast. And that’s certain feels true. Just ask anyone who’s attempted to learn Javascript in 2016, or <code>[current year]</code>.
+      .Row.pt3.pb3
+        .Slide{"data-aspect-ratio": "16:9"}
+          .Slide_content= image_tag("#{@path}/silos.png", title: "Siloed processes", alt: "Siloed processes")
 
-    .Content_row
-      .Slide{"data-aspect-ratio": "16:9"}
-        .Slide_content.Slide_content--full= image_tag "#{@path}/simplified.jpg", title: "Simplified process", alt: "Simplified process"
+      .Row
+        .Content_Main.Content_Article
+          %p I think when it comes to roles and processes, I don’t like to think of them as silos
 
-    .Content_row
-      .Content_main
-        %p And yet a lot of Jesse’s work still holds a lot of value, insight and relevance to this day.
+      .Row.pt3.pb3
+        .Slide{"data-aspect-ratio": "16:9"}
+          .Slide_content= image_tag("#{@path}/overlap.png", title: "Overlapping processes", alt: "Overlapping processes")
 
-        %p I can only hope the digital work I produce stands 2 decades on the Internet and still seems relevant.
+      .Row
+        .Content_Main.Content_Article
+          %p The areas of overlap and intersection between roles and perspectives is where the real interest and value lies. More perspective, more context, better work.
 
-    .Content_row
-      .Slide{"data-aspect-ratio": "16:9"}
-        .Slide_content
-          %h2 Fundamentals vs fashion
+      .Row.pt3.pb3
+        .Slide{"data-aspect-ratio": "16:9"}
+          .Slide_content
+            %h2 ⚠️ Full-stack anxiety ⚠️
 
-    .Content_row
-      .Content_main
-        %p Which brings me to my final point.
+      .Row
+        .Content_Main.Content_Article
+          %p Now all this potentially new homework… I don’t want to cause you any undue full stack anxiety.
 
-        %p When it comes to the less glamorous elements of design… I think there’s a correlation between each element of design and the cadence of change.
+      .Row.pt3.pb3
+        .Slide{"data-aspect-ratio": "16:9"}
+          .Slide_content.Slide_content--full= link_to image_tag("#{@path}/fullstack.jpg", title: "Full Stack Anxiety by Joel Califa", alt: "Full Stack Anxiety by Joel Califa"), 'http://mixinconf.com/videos/full-stack-anxiety/', target: '_blank'
 
-    .Content_row
-      .Slide{"data-aspect-ratio": "16:9"}
-        .Slide_content.Slide_content--full= image_tag "#{@path}/cadence.png", title: "Rate of Change", alt: "Rate of Change"
+      .Row
+        .Content_Main.Content_Article
+          %p That’s a much better talk by #{link_to 'Joel Califa', 'https://twitter.com/notdetails', target: '_blank'} which I suggest you watch.
 
-    .Content_row
-      .Content_main
-        %p Trends come and go quickly on the surface. It’s exhilarating, but also exhausting.
+          %p In it, he provides a framework for deciding what you should learn, and being okay with deferring the rest.
 
-        %p But a few layers down, the less glamorous, fundamental elements of design are mostly unchanged since we’ve been designing for screen, and still relevant today... and perhaps well into the future too.
+      .Row.pt3.pb3
+        .Slide#conclusion{"data-aspect-ratio": "16:9"}
+          .Slide_content
+            %h2 “Our Industry Moves Fast”
 
-    .Content_row
-      .Slide{"data-aspect-ratio": "16:9"}
-        .Slide_content.Slide_content--full= image_tag "#{@path}/nointerface.jpg", title: "The Best Interface is No Interface", alt: "The Best Interface is No Interface"
+      .Row
+        .Content_Main.Content_Article
+          %p But I want to leave you on a note of optimism.
 
-    .Content_row
-      .Content_main
-        %p #{link_to 'Golden Krisna', 'https://twitter.com/goldenkrishna', target: '_blank'} wrote a book entitled #{link_to 'The Best Interface is No Interface','http://www.nointerface.com/', target: '_blank'}.
+          %p I’ve stated that our industry moves fast. And that’s certain feels true. Just ask anyone who’s attempted to learn Javascript in 2016, or <code>[current year]</code>.
 
-        %p In the mid 2000’s, it seemed like smart devices meant everything, including your fridge, should have a screen.
+      .Row.pt3.pb3
+        .Slide{"data-aspect-ratio": "16:9"}
+          .Slide_content.Slide_content--full= image_tag "#{@path}/simplified.jpg", title: "Simplified process", alt: "Simplified process"
 
-        %p Golden posits that we’re perhaps too infatuated with screen based interfaces, and to look into opportunities that exist beyond the screen.
+      .Row
+        .Content_Main.Content_Article
+          %p And yet a lot of Jesse’s work still holds a lot of value, insight and relevance to this day.
 
-    .Content_row
-      .Slide{"data-aspect-ratio": "16:9"}
-        .Slide_content.Slide_content--full= image_tag "#{@path}/chat.png", title: "Chatbots, Vocal Assistants, Internet of Things...", alt: "Chatbots, Vocal Assistants, Internet of Things..."
+          %p I can only hope the digital work I produce stands 2 decades on the Internet and still seems relevant.
 
-    .Content_row
-      .Content_main
-        %p Indeed, with vocal AI assistants, chatbots, and internet of things. There may come a time when new paradigms emerge, which may have new problems to solve for, without a screen.
+      .Row.pt3.pb3
+        .Slide{"data-aspect-ratio": "16:9"}
+          .Slide_content
+            %h2 Fundamentals vs fashion
 
-    .Content_row
-      .Slide{"data-aspect-ratio": "16:9"}
-        .Slide_content.Slide_content--full= image_tag "#{@path}/boxes.png", title: "Boxes and Arrows", alt: "Boxes and Arrows"
+      .Row
+        .Content_Main.Content_Article
+          %p Which brings me to my final point.
 
-    .Content_row
-      .Content_main
-        %p And even in that eventuality, design processes involving humble boxes and arrows would continue to live on and be a useful technique to learn.
+          %p When it comes to the less glamorous elements of design… I think there’s a correlation between each element of design and the cadence of change.
 
-    .Content_row
-      .Slide{"data-aspect-ratio": "16:9"}
-        .Slide_content
-          %h2 “Less Glamorous<br/>Elements&nbsp;of&nbsp;Design”
+      .Row.pt3.pb3
+        .Slide{"data-aspect-ratio": "16:9"}
+          .Slide_content.Slide_content--full= image_tag "#{@path}/cadence.png", title: "Rate of Change", alt: "Rate of Change"
 
-    .Content_row
-      .Content_main
-        %p So that’s the less glamorous elements of design…
+      .Row
+        .Content_Main.Content_Article
+          %p Trends come and go quickly on the surface. It’s exhilarating, but also exhausting.
 
-    .Content_row
-      .Slide.Slide--dark{"data-aspect-ratio": "16:9"}
-        .Slide_content.Slide_content--full= image_tag "#{@path}/thanks.png", title: "Thanks", alt: "Thanks"
+          %p But a few layers down, the less glamorous, fundamental elements of design are mostly unchanged since we’ve been designing for screen, and still relevant today... and perhaps well into the future too.
 
-    .Content_row
-      .Content_main
-        %p Thanks so much for your time.
+      .Row.pt3.pb3
+        .Slide{"data-aspect-ratio": "16:9"}
+          .Slide_content.Slide_content--full= image_tag "#{@path}/nointerface.jpg", title: "The Best Interface is No Interface", alt: "The Best Interface is No Interface"
 
-        %h3#references Further Reading
-        %ol.slide_references
-          %li= link_to 'The Elements of User Experience — Jesse James Garrett', 'http://www.jjg.net/elements/', target: '_blank'
-          %li= link_to 'A visual vocabulary for describing information architecture and interaction design — Jesse James Garrett', 'http://www.jjg.net/ia/visvocab/', target: '_blank'
-          %li= link_to 'Junior Designers vs Senior Designers — Julie Zhuo', 'https://medium.com/the-year-of-the-looking-glass/junior-designers-vs-senior-designers-fbe483d3b51e', target: '_blank'
-          %li= link_to 'The Unnecessary Fragmentation of Design Jobs — Jonas Downey', 'https://m.signalvnoise.com/the-unnecessary-fragmentation-of-design-jobs-d5b9c8621082', target: '_blank'
-          %li= link_to 'Full Stack Anxiety — Joel Califa', 'http://mixinconf.com/videos/full-stack-anxiety/', target: '_blank'
-          %li= link_to 'The Best Interface is No Interface — Golden Krisna', 'http://www.nointerface.com/book/', target: '_blank'
+      .Row
+        .Content_Main.Content_Article
+          %p #{link_to 'Golden Krisna', 'https://twitter.com/goldenkrishna', target: '_blank'} wrote a book entitled #{link_to 'The Best Interface is No Interface','http://www.nointerface.com/', target: '_blank'}.
+
+          %p In the mid 2000’s, it seemed like smart devices meant everything, including your fridge, should have a screen.
+
+          %p Golden posits that we’re perhaps too infatuated with screen based interfaces, and to look into opportunities that exist beyond the screen.
+
+      .Row.pt3.pb3
+        .Slide{"data-aspect-ratio": "16:9"}
+          .Slide_content.Slide_content--full= image_tag "#{@path}/chat.png", title: "Chatbots, Vocal Assistants, Internet of Things...", alt: "Chatbots, Vocal Assistants, Internet of Things..."
+
+      .Row
+        .Content_Main.Content_Article
+          %p Indeed, with vocal AI assistants, chatbots, and internet of things. There may come a time when new paradigms emerge, which may have new problems to solve for, without a screen.
+
+      .Row.pt3.pb3
+        .Slide{"data-aspect-ratio": "16:9"}
+          .Slide_content.Slide_content--full= image_tag "#{@path}/boxes.png", title: "Boxes and Arrows", alt: "Boxes and Arrows"
+
+      .Row
+        .Content_Main.Content_Article
+          %p And even in that eventuality, design processes involving humble boxes and arrows would continue to live on and be a useful technique to learn.
+
+      .Row.pt3.pb3
+        .Slide{"data-aspect-ratio": "16:9"}
+          .Slide_content
+            %h2 “Less Glamorous<br/>Elements&nbsp;of&nbsp;Design”
+
+      .Row
+        .Content_Main.Content_Article
+          %p So that’s the less glamorous elements of design…
+
+      .Row.pt3.pb3
+        .Slide.Slide--dark{"data-aspect-ratio": "16:9"}
+          .Slide_content.Slide_content--full= image_tag "#{@path}/thanks.png", title: "Thanks", alt: "Thanks"
+
+      .Row
+        .Content_Main.Content_Article
+          %p Thanks so much for your time.
+
+          %h3#references Further Reading
+          %ol.slide_references
+            %li= link_to 'The Elements of User Experience — Jesse James Garrett', 'http://www.jjg.net/elements/', target: '_blank'
+            %li= link_to 'A visual vocabulary for describing information architecture and interaction design — Jesse James Garrett', 'http://www.jjg.net/ia/visvocab/', target: '_blank'
+            %li= link_to 'Junior Designers vs Senior Designers — Julie Zhuo', 'https://medium.com/the-year-of-the-looking-glass/junior-designers-vs-senior-designers-fbe483d3b51e', target: '_blank'
+            %li= link_to 'The Unnecessary Fragmentation of Design Jobs — Jonas Downey', 'https://m.signalvnoise.com/the-unnecessary-fragmentation-of-design-jobs-d5b9c8621082', target: '_blank'
+            %li= link_to 'Full Stack Anxiety — Joel Califa', 'http://mixinconf.com/videos/full-stack-anxiety/', target: '_blank'
+            %li= link_to 'The Best Interface is No Interface — Golden Krisna', 'http://www.nointerface.com/book/', target: '_blank'

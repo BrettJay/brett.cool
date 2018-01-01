@@ -32,119 +32,106 @@
 
 = partial("photoessays/components/banner", locals: {slug: current_page.data.slug, title: current_page.data.title, subtitle: current_page.data.subtitle, trip: current_page.data.trip})
 
-.Content#story
+.Page
+  .Content#story
 
-  .Content_row
-    .Content_main
-      .Article_content
+    .Row
+      .Content_Main.Content_Article
         :markdown
           The next day, I took a Metro line to Kudanshita&nbsp;station.
 
-  = partial("photoessays/components/photo_right", locals: {slug: current_page.data.slug, caption: '', 'photo': 'P1132185'})
+    = partial("photoessays/components/photo_right", locals: {slug: current_page.data.slug, caption: '', 'photo': 'P1132185'})
 
-  .Content_row
-    .Content_main
-      .Article_content
+    .Row
+      .Content_Main.Content_Article
         :markdown
           Walking through Kagurazaka, I came across the Canal Café along a river, which is actually the northern moat of the Imperial Palace.
 
-  = partial("photoessays/components/photo_two_column", locals: {slug: current_page.data.slug, 'left': ['P1132189','P1132216'], 'right': ['P1132196','P1132217'] })
+    = partial("photoessays/components/photo_two_column", locals: {slug: current_page.data.slug, 'left': ['P1132189','P1132216'], 'right': ['P1132196','P1132217'] })
 
-  .Content_row
-    .Content_main
-      .Article_content
+    .Row
+      .Content_Main.Content_Article
         :markdown
           After stopping to take some photos and admire the canal, I headed north, in the direction of the Tokyo&nbsp;Dome.
 
-  = partial("photoessays/components/photo_two_column", locals: {slug: current_page.data.slug, 'left': ['P1132229'], 'right': ['P1132237'] })
+    = partial("photoessays/components/photo_two_column", locals: {slug: current_page.data.slug, 'left': ['P1132229'], 'right': ['P1132237'] })
 
-  .Content_row
-    .Content_main
-      .Article_content
+    .Row
+      .Content_Main.Content_Article
         :markdown
           Nearly a week in Japan, and still the sheer scale of infrastructure... streets, overpasses — everything — just leaves me in awe.
 
-  = partial("photoessays/components/photo_grid", locals: {slug: current_page.data.slug, rows: [ { count: 1, caption: '', photos: ['P1132235'] }, { count: 1, caption: '', photos: ['P1132247'] }, { count: 2, caption: '', photos: ['P1132260','P1132265'] } ] } )
+    = partial("photoessays/components/photo_grid", locals: {slug: current_page.data.slug, rows: [ { count: 1, caption: '', photos: ['P1132235'] }, { count: 1, caption: '', photos: ['P1132247'] }, { count: 2, caption: '', photos: ['P1132260','P1132265'] } ] } )
 
-  .Content_row
-    .Content_main
-      .Article_content
+    .Row
+      .Content_Main.Content_Article
         :markdown
           I continued north...
 
-  = partial("photoessays/components/photo_two_column", locals: {slug: current_page.data.slug, 'left': ['P1132229'], 'right': ['P1132271'] })
+    = partial("photoessays/components/photo_two_column", locals: {slug: current_page.data.slug, 'left': ['P1132229'], 'right': ['P1132271'] })
 
-  .Content_row
-    .Content_main
-      .Article_content
+    .Row
+      .Content_Main.Content_Article
         :markdown
           And then headed east, going around Koishikawa Korakuen Garden...
 
-  = partial("photoessays/components/photo_right", locals: {slug: current_page.data.slug, caption: '', 'photo': 'P1132276'})
+    = partial("photoessays/components/photo_right", locals: {slug: current_page.data.slug, caption: '', 'photo': 'P1132276'})
 
-  .Content_row
-    .Content_main
-      .Article_content
+    .Row
+      .Content_Main.Content_Article
         :markdown
           After checking out a roof garden, I contiued along the path and reached Tokyo Dome, replete with its own rather amazing looking theme park.
 
-  = partial("photoessays/components/photo_grid", locals: {slug: current_page.data.slug, rows: [ { count: 1, caption: '', photos: ['P1132281'] }, { count: 1, caption: 'Had a strong desire to ride that rollercoaster...', photos: ['P1132298'] } ] } )
+    = partial("photoessays/components/photo_grid", locals: {slug: current_page.data.slug, rows: [ { count: 1, caption: '', photos: ['P1132281'] }, { count: 1, caption: 'Had a strong desire to ride that rollercoaster...', photos: ['P1132298'] } ] } )
 
-  .Content_row
-    .Content_main
-      .Article_content
+    .Row
+      .Content_Main.Content_Article
         :markdown
           Continuing through the massive stadium, I walked around the circumference of the theme park, eyeing off the various rides available.
 
-  = partial("photoessays/components/photo_right", locals: {slug: current_page.data.slug, caption: '', 'photo': 'P1132299'})
+    = partial("photoessays/components/photo_right", locals: {slug: current_page.data.slug, caption: '', 'photo': 'P1132299'})
 
-  .Content_row
-    .Content_main
-      .Article_content
+    .Row
+      .Content_Main.Content_Article
         :markdown
           After a quick lunch nearby, I decided to head back to Meiji Shrine for some dusk photography.
 
-  = partial("photoessays/components/photo_right", locals: {slug: current_page.data.slug, caption: '', 'photo': 'P1132302'})
+    = partial("photoessays/components/photo_right", locals: {slug: current_page.data.slug, caption: '', 'photo': 'P1132302'})
 
-  .Content_row
-    .Content_main
-      .Article_content
+    .Row
+      .Content_Main.Content_Article
         :markdown
           I caught a JR line to Harajuku from Souidōbashi&nbsp;station.
 
-  = partial("photoessays/components/photo_right", locals: {slug: current_page.data.slug, caption: '', 'photo': 'P1132313'})
+    = partial("photoessays/components/photo_right", locals: {slug: current_page.data.slug, caption: '', 'photo': 'P1132313'})
 
-  .Content_row
-    .Content_main
-      .Article_content
+    .Row
+      .Content_Main.Content_Article
         :markdown
           With some time to kill to sunset, I decided to wander down Takeshita street yet again, and decided to indulge my sweet tooth.
 
-  = partial("photoessays/components/place_cafe", locals: {slug: current_page.data.slug, image: 'zaku', title: 'Croquant Chou ZakuZaku', address: '神宮1-7-1 (CUTE CUBE HARAJUKU 1F) Shibuya, Tōkyō', price: '¥', menu: 'dessert', rating: 5, link: 'https://foursquare.com/v/%E3%82%AF%E3%83%AD%E3%83%83%E3%82%AB%E3%83%B3%E3%82%B7%E3%83%A5%E3%83%BC-%E3%82%B6%E3%82%AF%E3%82%B6%E3%82%AF-%E5%8E%9F%E5%AE%BF/55532bc8498ef325fa97b2c5' })
+    = partial("photoessays/components/place_cafe", locals: {slug: current_page.data.slug, image: 'zaku', title: 'Croquant Chou ZakuZaku', address: '神宮1-7-1 (CUTE CUBE HARAJUKU 1F) Shibuya, Tōkyō', price: '¥', menu: 'dessert', rating: 5, link: 'https://foursquare.com/v/%E3%82%AF%E3%83%AD%E3%83%83%E3%82%AB%E3%83%B3%E3%82%B7%E3%83%A5%E3%83%BC-%E3%82%B6%E3%82%AF%E3%82%B6%E3%82%AF-%E5%8E%9F%E5%AE%BF/55532bc8498ef325fa97b2c5' })
 
-  .Content_row
-    .Content_main
-      .Article_content
+    .Row
+      .Content_Main.Content_Article
         :markdown
           I’d heard great things about their custard puffs, unfortunately I never got around to trying it...
 
           I only had eyes for their ridiculous–looking soft serve ice cream.
 
-  = partial("photoessays/components/photo_right", locals: {slug: current_page.data.slug, caption: 'No regrets. Okay, there were some.', 'photo': 'P1132318'})
+    = partial("photoessays/components/photo_right", locals: {slug: current_page.data.slug, caption: 'No regrets. Okay, there were some.', 'photo': 'P1132318'})
 
-  .Content_row
-    .Content_main
-      .Article_content
+    .Row
+      .Content_Main.Content_Article
         :markdown
           With that sugar kick, it was time to wander a little further afield, burn some calories, and ingest some caffiene to ease the sugar crash that was sure to otherwise kick–in.
 
-  = partial("photoessays/components/place_cafe", locals: {slug: current_page.data.slug, image: 'P1132320', title: 'Deus Ex Machina', address: '神宮前3-29-5 Shibuya, Tōkyō', price: '¥', menu: 'Coffee', rating: 5, link: 'https://foursquare.com/v/deus-ex-machina/5481aab9498e11594c6b3a01' })
+    = partial("photoessays/components/place_cafe", locals: {slug: current_page.data.slug, image: 'P1132320', title: 'Deus Ex Machina', address: '神宮前3-29-5 Shibuya, Tōkyō', price: '¥', menu: 'Coffee', rating: 5, link: 'https://foursquare.com/v/deus-ex-machina/5481aab9498e11594c6b3a01' })
 
-  = partial("photoessays/components/photo_two_column", locals: {slug: current_page.data.slug, 'left': ['P1132320'], 'right': ['P1132322'] })
+    = partial("photoessays/components/photo_two_column", locals: {slug: current_page.data.slug, 'left': ['P1132320'], 'right': ['P1132322'] })
 
-  .Content_row
-    .Content_main
-      .Article_content
+    .Row
+      .Content_Main.Content_Article
         :markdown
           Deus Ex Machina was a hip joint bursting with personality and serving some excellent coffee.
 
@@ -152,89 +139,79 @@
 
           Nevertheless, soon it was time to head back to Meiji for sunset.
 
-  = partial("photoessays/components/photo_two_column", locals: {slug: current_page.data.slug, 'left': ['P1132324'], 'right': ['P1132332'] })
+    = partial("photoessays/components/photo_two_column", locals: {slug: current_page.data.slug, 'left': ['P1132324'], 'right': ['P1132332'] })
 
-  .Content_row
-    .Content_main
-      .Article_content
+    .Row
+      .Content_Main.Content_Article
         :markdown
           It was a beautiful evening, I walked back through the familiar path, stopping occasionally to take photos.
 
-  = partial("photoessays/components/photo_full", locals: {slug: current_page.data.slug, caption: '', 'photo': 'P1132368'})
+    = partial("photoessays/components/photo_full", locals: {slug: current_page.data.slug, caption: '', 'photo': 'P1132368'})
 
-  .Content_row
-    .Content_main
-      .Article_content
+    .Row
+      .Content_Main.Content_Article
         :markdown
           I re–entered the main temple and took some photos, tempoarily getting accousted to take a group photo for some tourists.
 
-  = partial("photoessays/components/photo_full", locals: {slug: current_page.data.slug, caption: '', 'photo': 'P1132414'})
+    = partial("photoessays/components/photo_full", locals: {slug: current_page.data.slug, caption: '', 'photo': 'P1132414'})
 
-  .Content_row
-    .Content_main
-      .Article_content
+    .Row
+      .Content_Main.Content_Article
         :markdown
           Sunset approached as I exited the main shrine.
 
-  = partial("photoessays/components/photo_full", locals: {slug: current_page.data.slug, caption: '', 'photo': 'P1132426'})
+    = partial("photoessays/components/photo_full", locals: {slug: current_page.data.slug, caption: '', 'photo': 'P1132426'})
 
-  = partial("photoessays/components/photo_two_column", locals: {slug: current_page.data.slug, 'left': ['P1132451'], 'right': ['P1132475'] })
+    = partial("photoessays/components/photo_two_column", locals: {slug: current_page.data.slug, 'left': ['P1132451'], 'right': ['P1132475'] })
 
-  .Content_row
-    .Content_main
-      .Article_content
+    .Row
+      .Content_Main.Content_Article
         :markdown
           I headed back across the bridge toward Harajuku, a beautiful sunset in progress with some magnificent cloud forms.
 
-  = partial("photoessays/components/photo_grid", locals: {slug: current_page.data.slug, rows: [ { count: 1, caption: '', photos: ['P1132481'] }, { count: 1, caption: '', photos: ['P1132488'] },{ count: 1, caption: '', photos: ['P1132491'] } ] } )
+    = partial("photoessays/components/photo_grid", locals: {slug: current_page.data.slug, rows: [ { count: 1, caption: '', photos: ['P1132481'] }, { count: 1, caption: '', photos: ['P1132488'] },{ count: 1, caption: '', photos: ['P1132491'] } ] } )
 
-  .Content_row
-    .Content_main
-      .Article_content
+    .Row
+      .Content_Main.Content_Article
         :markdown
           As night fell, I decided it was naturally time for a&nbsp;beer.
 
-  = partial("photoessays/components/place_drink", locals: {slug: current_page.data.slug, image: 'htp', title: 'Harajuku Taproom', address: '神宮前1-20-13 (ノーサレンダービル 2F) Shibuya, Tōkyō', price: '¥¥', menu: 'Craft Beer', rating: 4, link: 'https://foursquare.com/v/%E5%8E%9F%E5%AE%BF%E3%82%BF%E3%83%83%E3%83%97%E3%83%AB%E3%83%BC%E3%83%A0-harajuku-taproom/4b56d3b2f964a520471c28e3' })
+    = partial("photoessays/components/place_drink", locals: {slug: current_page.data.slug, image: 'htp', title: 'Harajuku Taproom', address: '神宮前1-20-13 (ノーサレンダービル 2F) Shibuya, Tōkyō', price: '¥¥', menu: 'Craft Beer', rating: 4, link: 'https://foursquare.com/v/%E5%8E%9F%E5%AE%BF%E3%82%BF%E3%83%83%E3%83%97%E3%83%AB%E3%83%BC%E3%83%A0-harajuku-taproom/4b56d3b2f964a520471c28e3' })
 
-  = partial("photoessays/components/photo_right", locals: {slug: current_page.data.slug, caption: '', 'photo': 'P1132496'})
+    = partial("photoessays/components/photo_right", locals: {slug: current_page.data.slug, caption: '', 'photo': 'P1132496'})
 
-  .Content_row
-    .Content_main
-      .Article_content
+    .Row
+      .Content_Main.Content_Article
         :markdown
           One or two tasty beers later, it was time to find some&nbsp;dinner.
 
-  = partial("photoessays/components/photo_right", locals: {slug: current_page.data.slug, caption: '', 'photo': 'P1132503'})
+    = partial("photoessays/components/photo_right", locals: {slug: current_page.data.slug, caption: '', 'photo': 'P1132503'})
 
-  = partial("photoessays/components/place_restaurant", locals: {slug: current_page.data.slug, image: 'P1132508', title: 'Harajuku Gyoza Lou', address: '神宮前6-2-4 (岡島ビル) Shibuya, Tōkyō', price: '¥', menu: 'Dumpling', rating: 4, time: '6:04pm', link: 'https://foursquare.com/v/%E5%8E%9F%E5%AE%BF%E9%A4%83%E5%AD%90%E6%A8%93-harajuku-gyozaro/4b46f6bbf964a520042a26e3' })
+    = partial("photoessays/components/place_restaurant", locals: {slug: current_page.data.slug, image: 'P1132508', title: 'Harajuku Gyoza Lou', address: '神宮前6-2-4 (岡島ビル) Shibuya, Tōkyō', price: '¥', menu: 'Dumpling', rating: 4, time: '6:04pm', link: 'https://foursquare.com/v/%E5%8E%9F%E5%AE%BF%E9%A4%83%E5%AD%90%E6%A8%93-harajuku-gyozaro/4b46f6bbf964a520042a26e3' })
 
-  .Content_row
-    .Content_main
-      .Article_content
+    .Row
+      .Content_Main.Content_Article
         :markdown
           Harajuku Gyoza Lou was a true gem of a place. Authentic, inexpensive and cheerful Gyoza awaited.
 
-  = partial("photoessays/components/photo_two_column", locals: {slug: current_page.data.slug, 'left': ['P1132504','P1132508'], 'right': ['P1132506','P1132510'] })
+    = partial("photoessays/components/photo_two_column", locals: {slug: current_page.data.slug, 'left': ['P1132504','P1132508'], 'right': ['P1132506','P1132510'] })
 
-  .Content_row
-    .Content_main
-      .Article_content
+    .Row
+      .Content_Main.Content_Article
         :markdown
           I ordered some fried gyoza and hot sake.
 
-  = partial("photoessays/components/photo_two_column", locals: {slug: current_page.data.slug, 'left': ['P1132512'], 'right': ['P1132528'] })
+    = partial("photoessays/components/photo_two_column", locals: {slug: current_page.data.slug, 'left': ['P1132512'], 'right': ['P1132528'] })
 
-  .Content_row
-    .Content_main
-      .Article_content
+    .Row
+      .Content_Main.Content_Article
         :markdown
           Once I was done, it was time to meander home... But first...
 
-  = partial("photoessays/components/place_retail", locals: {slug: current_page.data.slug, image: 'kiddyland', title: 'KIDDY LAND', address: '神宮前6-1-9 Shibuya, Tōkyō', price: '¥', store: 'Toy, Game and Gift', rating: 4, time: '6:37pm', link: '' })
+    = partial("photoessays/components/place_retail", locals: {slug: current_page.data.slug, image: 'kiddyland', title: 'KIDDY LAND', address: '神宮前6-1-9 Shibuya, Tōkyō', price: '¥', store: 'Toy, Game and Gift', rating: 4, time: '6:37pm', link: '' })
 
-  .Content_row
-    .Content_main
-      .Article_content
+    .Row
+      .Content_Main.Content_Article
         :markdown
           Except for getting distracted by a multi–level toy, game, and gift shop in the form of Kiddy Land&nbsp;Harajuku.
 
@@ -242,6 +219,6 @@
 
           ... For one more drink.
 
-  = partial("photoessays/components/place_drink", locals: {slug: current_page.data.slug, image: 'rnc', title: 'Rock no Cocoro', address: '宇田川町10-1 (バークビル 3F) Shibuya, Tōkyō', price: '¥¥', menu: 'Bar', rating: 4, link: 'https://foursquare.com/v/%E3%83%AD%E3%83%83%E3%82%AF%E3%81%AE%E3%81%93%E3%81%93%E3%82%8D--rock-no-cocoro/4b730dcdf964a52062982de3' })
+    = partial("photoessays/components/place_drink", locals: {slug: current_page.data.slug, image: 'rnc', title: 'Rock no Cocoro', address: '宇田川町10-1 (バークビル 3F) Shibuya, Tōkyō', price: '¥¥', menu: 'Bar', rating: 4, link: 'https://foursquare.com/v/%E3%83%AD%E3%83%83%E3%82%AF%E3%81%AE%E3%81%93%E3%81%93%E3%82%8D--rock-no-cocoro/4b730dcdf964a52062982de3' })
 
-= partial("photoessays/2017/tokyo/footer", locals: {collection: current_page.data.collection})
+  = partial("photoessays/2017/tokyo/footer", locals: {collection: current_page.data.collection})

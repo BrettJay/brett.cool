@@ -31,104 +31,105 @@ ogp:
       height: 315
 ---
 
-%figure.Fullbleed_image
+%figure.pb3
   = image_tag 'blog/2016-11-09-wrangling-ogp-tags/hero.jpg', alt: 'Rangling OGP Tags'
-  %figcaption Can we get more meta? #{link_to 'Oh, ohh', 'https://youtu.be/Qlwd85lSZG8?t=24s', target: '_blank'}
+  %figcaption We need to go deeper...
 
-.Content_row
-  .Content_main
-    .Article_content
-      :markdown
-        Recently I’ve found myself tackling rich link unfurling on websites such as Twitter, Facebook, Slack.
+.Row
+  .Content_Main.Content_Article
+    :markdown
+      Recently I’ve found myself tackling rich link unfurling on websites such as Twitter, Facebook, Slack.
 
-        It’s a small thing, but it’s just an extra layer of polish that—along with gratuitous emoji usage—can make you and your site look really 💯.
+      It’s a small thing, but it’s just an extra layer of polish that—along with gratuitous emoji usage—can make you and your site look really 💯.
 
-        It was around the third time I found myself going through the process again that I _finally_ decided to create some boilerplate stuff for myself to refer to, and figured I’d share it on this here internet thing.
+      It was around the third time I found myself going through the process again that I _finally_ decided to create some boilerplate stuff for myself to refer to, and figured I’d share it on this here internet thing.
 
-        ## What is this OGP stuff?
+      ## What is Open Graph?
 
-        #{link_to 'Open Graph', 'http://ogp.me/', target:'_blank'} protocol is a set of standards by Facebook for marking meta information on a page, which Facebook, and other services, can refer to, and unfurl, to provide richer link previews. As is always the case with #{link_to '‘standards’', 'https://xkcd.com/927/', target: '_blank'}, there are some proprietary and competing ones. #{link_to 'Twitter', 'https://dev.twitter.com/cards/getting-started', target: '_blank'} has their own set of markup and specifications for rich card previews too.
+      The #{link_to 'Open Graph', 'http://ogp.me/', target:'_blank'} protocol is a set of standards developed by Facebook and other websites, for specifying meta information on a page, which is used to provide richer link previews.
 
-        Showing what can happen when you just embrace existing tags, Slack nicely unfurls links based on existing OGP and Twitter tags:
+      As is always the case with #{link_to '‘standards’', 'https://xkcd.com/927/', target: '_blank'}, there are some proprietary and competing ones. #{link_to 'Twitter', 'https://dev.twitter.com/cards/getting-started', target: '_blank'} has their own set of markup and specifications for rich card previews too.
 
-    = image_tag 'blog/2016-11-09-wrangling-ogp-tags/unfurl.jpg', alt: 'A screenshot of a link on my blog unfurled', class: 'hero_image inline_image'
+      Showing what can happen when you just embrace existing tags, Slack nicely unfurls links based on existing OGP and Twitter tags:
 
-    .Article_content
-      :markdown
-        The corresponding bits of HTML which yields the above is straightforward:
+    %figure.image_expand
+      = image_tag 'blog/2016-11-09-wrangling-ogp-tags/unfurl.jpg', alt: 'A screenshot of a link on my blog unfurled'
 
-        <pre>
-        <code>&lt;meta property="og:title" content="Being Open"&gt;
-        &lt;meta property="og:description" content="After the culmination of eighteen months of hard work, the inaugural Mixin conference was held last week. A week later, I’m still reeling from the whirlwind experience…"&gt;
+    :markdown
+      The corresponding bits of HTML which yields the above is straightforward:
 
-        &lt;meta property="fb:image" content="http://brett.cool/images/blog/2016-11-05-be-open/fb.jpg"&gt;
+      <pre>
+      <code>&lt;meta property="og:title" content="Being Open"&gt;
+      &lt;meta property="og:description" content="After the culmination of eighteen months of hard work, the inaugural Mixin conference was held last week. A week later, I’m still reeling from the whirlwind experience…"&gt;
 
-        &lt;meta property="twitter:label1" content="Reading Time 🕖"&gt;
-        &lt;meta property="twitter:data1" content="About 4 minutes"&gt;
-        &lt;meta property="twitter:label2" content="Published 📅"&gt;
-        &lt;meta property="twitter:data2" content="November 5, 2016"&gt;</code>
-        </pre>
+      &lt;meta property="fb:image" content="http://brett.cool/images/blog/2016-11-05-be-open/fb.jpg"&gt;
 
-        #{link_to 'Slack has an excellent article', 'https://medium.com/slack-developer-blog/everything-you-ever-wanted-to-know-about-unfurling-but-were-afraid-to-ask-or-how-to-make-your-e64b4bb9254#.39pruiy2j', target:'_blank'} on the key meta properties, but this post is more interested in the process and strategies for managing these!
+      &lt;meta property="twitter:label1" content="Reading Time 🕖"&gt;
+      &lt;meta property="twitter:data1" content="About 4 minutes"&gt;
+      &lt;meta property="twitter:label2" content="Published 📅"&gt;
+      &lt;meta property="twitter:data2" content="November 5, 2016"&gt;</code>
+      </pre>
 
-        ## Creating the images
-        I’ve created a Sketch Template for making these images. Any old editor will do, but Sketch’s handy multi-export feature really shines when batch creating a bunch of assets.
+      #{link_to 'Slack has an excellent article', 'https://medium.com/slack-developer-blog/everything-you-ever-wanted-to-know-about-unfurling-but-were-afraid-to-ask-or-how-to-make-your-e64b4bb9254#.39pruiy2j', target:'_blank'} on the key meta properties, but this post is more interested in the process and strategies for managing these!
 
-      %figure.image_expand
-        = image_tag 'blog/2016-11-09-wrangling-ogp-tags/template.png', alt: 'Screenshot of Sketch template'
-        %figcaption Sketch template with export slices sized Facebook and Twitter
+      ## Creating the images
+      I’ve created a Sketch Template for making these images. Any old editor will do, but Sketch’s handy multi-export feature really shines when batch creating a bunch of assets.
 
-      :markdown
-        The template includes a canon and some layout guides to make the creation of these images a bit quicker and easier. The og and fb image exports export to @2x scale for Facebook and Twitter respectively.
+    %figure.image_expand
+      = image_tag 'blog/2016-11-09-wrangling-ogp-tags/template.png', alt: 'Screenshot of Sketch template'
+      %figcaption Sketch template with export slices sized Facebook and Twitter
 
-        #{link_to 'Check out the template on Github →', 'https://github.com/BrettJay/ogp-template', target:'_blank'}
+    :markdown
+      The template includes a canon and some layout guides to make the creation of these images a bit quicker and easier. The og and fb image exports export to @2x scale for Facebook and Twitter respectively.
 
-        ## File structure
+      #{link_to 'Check out the template on Github →', 'https://github.com/BrettJay/ogp-template', target:'_blank'}
 
-        As I generate images for facebook and twitter, I prefer to store them together in the same directory, with a predictable filename.
+      ## File structure
 
-        On image formats, I’m flipping from png to jpg depending on compression. Jpeg wherever photographic content is concerned, and png if it’s graphical.
+      As I generate images for facebook and twitter, I prefer to store them together in the same directory, with a predictable filename.
 
-        <pre><code># The default opengraph images
-        brett.cool/images/
-          fb.jpg
-          og.jpg
+      On image formats, I’m flipping from png to jpg depending on compression. Jpeg wherever photographic content is concerned, and png if it’s graphical.
 
-        # Page-specific opengraph image overrides
-        brett.cool/images/page
-          fb.jpg
-          og.jpg
+      <pre><code># The default opengraph images
+      brett.cool/images/
+        fb.jpg
+        og.jpg
 
-        # Blog post opengraph image overrides
-        brett.cool/images/blog/2016-11-09-wrangling-ogp-tags/
-          fb.jpg
-          og.jpg</code></pre>
+      # Page-specific opengraph image overrides
+      brett.cool/images/page
+        fb.jpg
+        og.jpg
 
-        ## Serving the images
+      # Blog post opengraph image overrides
+      brett.cool/images/blog/2016-11-09-wrangling-ogp-tags/
+        fb.jpg
+        og.jpg</code></pre>
 
-        With Middleman, I use #{link_to 'middleman-ogp', 'https://github.com/ngs/middleman-ogp', target:'_blank'} to specify paths to the images in page frontmatter:
+      ## Serving the images
 
-        <pre><code>ogp:
-        og:
-          title: 'Page title'
-          description: 'Page description'
-          image:
-            '': http://example.com/path-to-image/og.png
-            type: image/jpg
-            width: 560
-            height: 300
-          locale:
-            '': en_us
-        fb:
-          title: 'Page title'
-          description: 'Page description'
-          image:
-            '': http://example.com/path-to-image/fb.png
-            type: image/jpg
-            width: 600
-            height: 315</code></pre>
+      With Middleman, I use #{link_to 'middleman-ogp', 'https://github.com/ngs/middleman-ogp', target:'_blank'} to specify paths to the images in page frontmatter:
 
-        Of course, if you’re running a dynamic site, you can do it any number of ways. One way I’ve implemented custom OGP images on a rails site is to specify a default image in the layout, and then use an instance variable in a view template to override the default image path.
+      <pre><code>ogp:
+      og:
+        title: 'Page title'
+        description: 'Page description'
+        image:
+          '': http://example.com/path-to-image/og.png
+          type: image/jpg
+          width: 560
+          height: 300
+        locale:
+          '': en_us
+      fb:
+        title: 'Page title'
+        description: 'Page description'
+        image:
+          '': http://example.com/path-to-image/fb.png
+          type: image/jpg
+          width: 600
+          height: 315</code></pre>
 
-        ## A work in progress
-        This is still something I’m playing around with. #{link_to 'Check out the Github repository and contribute your ideas', 'https://github.com/BrettJay/ogp-template', target:'_blank'} ✨
+      Of course, if you’re running a dynamic site, you can do it any number of ways. One way I’ve implemented custom OGP images on a rails site is to specify a default image in the layout, and then use an instance variable in a view template to override the default image path.
+
+      ## A work in progress
+      This is still something I’m playing around with. #{link_to 'Check out the Github repository', 'https://github.com/BrettJay/ogp-template', target:'_blank'} ✨

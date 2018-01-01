@@ -32,66 +32,59 @@
 
 = partial("photoessays/components/banner", locals: {slug: current_page.data.slug, title: current_page.data.title, subtitle: current_page.data.subtitle, trip: current_page.data.trip})
 
-.Content#story
-  .Content_row
-    .Content_main
-      .Article_content
+.Page
+  .Content#story
+    .Row
+      .Content_Main.Content_Article
         :markdown
           The next morning I set off on a train bound for West&nbsp;Tokyo.
 
-  = partial("photoessays/components/photo_right", locals: {slug: current_page.data.slug, caption: '', 'photo': 'P1121786'})
+    = partial("photoessays/components/photo_right", locals: {slug: current_page.data.slug, caption: '', 'photo': 'P1121786'})
 
-  .Content_row
-    .Content_main
-      .Article_content
+    .Row
+      .Content_Main.Content_Article
         :markdown
           Alighting at Kichijōji station, I headed out toward Inokashira Onshi Park.
 
-  = partial("photoessays/components/photo_two_column", locals: {slug: current_page.data.slug, 'left': ['P1121801'], 'right': ['P1121805'] })
+    = partial("photoessays/components/photo_two_column", locals: {slug: current_page.data.slug, 'left': ['P1121801'], 'right': ['P1121805'] })
 
-  .Content_row
-    .Content_main
-      .Article_content
+    .Row
+      .Content_Main.Content_Article
         :markdown
           Even 30 minutes outside of Tokyo feels vastly built up. As I got closer to Inokashira Onshi Park, however, the buildings begun to get smaller, and more trees and natural landscapes opened up.
 
-  = partial("photoessays/components/photo_two_column", locals: {slug: current_page.data.slug, 'left': ['P1121808'], 'right': ['P1121809'] })
+    = partial("photoessays/components/photo_two_column", locals: {slug: current_page.data.slug, 'left': ['P1121808'], 'right': ['P1121809'] })
 
-  .Content_row
-    .Content_main
-      .Article_content
+    .Row
+      .Content_Main.Content_Article
         :markdown
           I took a quick detour through Inokashira Park to admire the tranquility and beauty of the landscape.
 
-  = partial("photoessays/components/photo_two_column", locals: {slug: current_page.data.slug, 'left': ['P1121822','P1121831'], 'right': ['P1121826','P1121841'] })
+    = partial("photoessays/components/photo_two_column", locals: {slug: current_page.data.slug, 'left': ['P1121822','P1121831'], 'right': ['P1121826','P1121841'] })
 
-  .Content_row
-    .Content_main
-      .Article_content
+    .Row
+      .Content_Main.Content_Article
         :markdown
           After the detour, I followed the park around to the road, and soon found myself outside the Studio Ghibli museum.
 
-  = partial("photoessays/components/photo_two_column", locals: {slug: current_page.data.slug, 'left': ['P1121857'], 'right': ['P1121860'] })
+    = partial("photoessays/components/photo_two_column", locals: {slug: current_page.data.slug, 'left': ['P1121857'], 'right': ['P1121860'] })
 
-  .Content_row
-    .Content_main
-      .Article_content
+    .Row
+      .Content_Main.Content_Article
         :markdown
           I joined the queue and lined up, the queue slowly and steadily moving toward the entrance.
 
-  = partial("photoessays/components/photo_two_column", locals: {slug: current_page.data.slug, 'left': ['P1121868','P1121881'], 'right': ['P1121872','P1121883'] })
+    = partial("photoessays/components/photo_two_column", locals: {slug: current_page.data.slug, 'left': ['P1121868','P1121881'], 'right': ['P1121872','P1121883'] })
 
-  .Content_row
-    .Content_main
-      .Article_content
+    .Row
+      .Content_Main.Content_Article
         :markdown
           The outside architecture of the mueseum was whimsical and fantastical. It really captured that sense of wonder that the films tend to evoke.
 
-  = partial("photoessays/components/photo_two_column", locals: {slug: current_page.data.slug, 'left': ['P1121886'], 'right': ['P1121891'] })
+    = partial("photoessays/components/photo_two_column", locals: {slug: current_page.data.slug, 'left': ['P1121886'], 'right': ['P1121891'] })
 
-  .Content_row
-    .Content_main
-      .Article_content
+    .Row
+      .Content_Main.Content_Article
         :markdown
           The insider was perhaps even more wonderous, with the main hallway in particular feeling like some alive, Willy Wonka–esque contraption, with much to explore in each direction.
 
@@ -101,144 +94,128 @@
 
           On the roof was a life-size model of the robot from #{link_to 'Castle in the Sky', 'https://en.wikipedia.org/wiki/Castle_in_the_Sky', target:'_blank'}.
 
-  = partial("photoessays/components/photo_two_column", locals: {slug: current_page.data.slug, 'left': ['P1121902'], 'right': ['P1121908'] })
+    = partial("photoessays/components/photo_two_column", locals: {slug: current_page.data.slug, 'left': ['P1121902'], 'right': ['P1121908'] })
 
-  .Content_row
-    .Content_main
-      .Article_content
+    .Row
+      .Content_Main.Content_Article
         :markdown
           One harrowing trip to the gift shop later (which was very crowded, rather expensive, and honestly didn’t have the best range of Ghibli merchandise in Japan), I headed off.
 
-  = partial("photoessays/components/photo_right", locals: {slug: current_page.data.slug, caption: '', 'photo': 'P1121910'})
+    = partial("photoessays/components/photo_right", locals: {slug: current_page.data.slug, caption: '', 'photo': 'P1121910'})
 
-  .Content_row
-    .Content_main
-      .Article_content
+    .Row
+      .Content_Main.Content_Article
         :markdown
           I didn’t head far, however. Across the road from the Ghibli museum was a charming bird café.
 
-  = partial("photoessays/components/photo_right", locals: {slug: current_page.data.slug, caption: '', 'photo': '  P1121851'}) 
+    = partial("photoessays/components/photo_right", locals: {slug: current_page.data.slug, caption: '', 'photo': '  P1121851'})
 
-  = partial("photoessays/components/place_cafe", locals: {slug: current_page.data.slug, image: 'P1121851', title: 'Kotori Café', address: '南青山6-3-7 Minato, Japan', price: '¥', menu: 'Bird Café', rating: 5, link: 'https://www.yelp.com.au/biz/%E3%81%93%E3%81%A8%E3%82%8A%E3%82%AB%E3%83%95%E3%82%A7-%E6%B8%AF%E5%8C%BA' })
+    = partial("photoessays/components/place_cafe", locals: {slug: current_page.data.slug, image: 'P1121851', title: 'Kotori Café', address: '南青山6-3-7 Minato, Japan', price: '¥', menu: 'Bird Café', rating: 5, link: 'https://www.yelp.com.au/biz/%E3%81%93%E3%81%A8%E3%82%8A%E3%82%AB%E3%83%95%E3%82%A7-%E6%B8%AF%E5%8C%BA' })
 
-  .Content_row
-    .Content_main
-      .Article_content
+    .Row
+      .Content_Main.Content_Article
         :markdown
           Now it seems I’ve somehow managed a reputation for my affinity for birds. I dare anyone (well, _mostly_ anyone) to visit this café and not feel at least some appreciation for birds afterwards!
 
-  = partial("photoessays/components/photo_two_column", locals: {slug: current_page.data.slug, 'left': ['P1121911'], 'right': ['P1121924'] })
+    = partial("photoessays/components/photo_two_column", locals: {slug: current_page.data.slug, 'left': ['P1121911'], 'right': ['P1121924'] })
 
-  .Content_row
-    .Content_main
-      .Article_content
+    .Row
+      .Content_Main.Content_Article
         :markdown
           Inside the cosy café I had a drink, while watching the animated birds in the window fly around.
 
           After that, I was informed that due to some Thursday special I was able to pat one of the birds for free!
 
-  = partial("photoessays/components/photo_full", locals: {slug: current_page.data.slug, caption: '', 'photo': 'P1122067'})
+    = partial("photoessays/components/photo_full", locals: {slug: current_page.data.slug, caption: '', 'photo': 'P1122067'})
 
-  .Content_row
-    .Content_main
-      .Article_content
+    .Row
+      .Content_Main.Content_Article
         :markdown
           After my time was up, I departed Kotori café.
 
-  = partial("photoessays/components/photo_two_column", locals: {slug: current_page.data.slug, 'left': ['P1122071'], 'right': ['P1122087'] })
+    = partial("photoessays/components/photo_two_column", locals: {slug: current_page.data.slug, 'left': ['P1122071'], 'right': ['P1122087'] })
 
-  .Content_row
-    .Content_main
-      .Article_content
+    .Row
+      .Content_Main.Content_Article
         :markdown
           I wandered through the small town on my way back towards the station.
 
           The streets were compact in size.
 
-  = partial("photoessays/components/photo_right", locals: {slug: current_page.data.slug, caption: '', 'photo': 'P1122103'})
+    = partial("photoessays/components/photo_right", locals: {slug: current_page.data.slug, caption: '', 'photo': 'P1122103'})
 
-  .Content_row
-    .Content_main
-      .Article_content
+    .Row
+      .Content_Main.Content_Article
         :markdown
           Eventually, I ended up at a cheap and cheerful Thai place that came highly recommended.
 
-  = partial("photoessays/components/place_restaurant", locals: {slug: current_page.data.slug, image: 'P1122114', title: 'PepaCafé Forest', address: '井の頭4-1-5 Mitaka-shi, Tōkyō', price: '¥¥', menu: 'Thai', rating: 4, time: '1:08pm', link: 'https://foursquare.com/v/%E3%81%A8%E3%82%93%E3%81%8B%E3%81%A4-%E3%81%BE%E3%81%84%E6%B3%89-%E9%9D%92%E5%B1%B1%E6%9C%AC%E5%BA%97/4b5d79c6f964a520415e29e3' })
+    = partial("photoessays/components/place_restaurant", locals: {slug: current_page.data.slug, image: 'P1122114', title: 'PepaCafé Forest', address: '井の頭4-1-5 Mitaka-shi, Tōkyō', price: '¥¥', menu: 'Thai', rating: 4, time: '1:08pm', link: 'https://foursquare.com/v/%E3%81%A8%E3%82%93%E3%81%8B%E3%81%A4-%E3%81%BE%E3%81%84%E6%B3%89-%E9%9D%92%E5%B1%B1%E6%9C%AC%E5%BA%97/4b5d79c6f964a520415e29e3' })
 
-  .Content_row
-    .Content_main
-      .Article_content
+    .Row
+      .Content_Main.Content_Article
         :markdown
           I walked back toward the station, stopping to take in the views of the the river.
 
-  = partial("photoessays/components/photo_two_column", locals: {slug: current_page.data.slug, 'left': ['P1122120'], 'right': ['P1122128'] })
+    = partial("photoessays/components/photo_two_column", locals: {slug: current_page.data.slug, 'left': ['P1122120'], 'right': ['P1122128'] })
 
-  .Content_row
-    .Content_main
-      .Article_content
+    .Row
+      .Content_Main.Content_Article
         :markdown
           I happened across a street brimming with stalls selling cute souvenirs and ornaments.
 
-  = partial("photoessays/components/photo_right", locals: {slug: current_page.data.slug, caption: '', 'photo': 'P1122149'})
+    = partial("photoessays/components/photo_right", locals: {slug: current_page.data.slug, caption: '', 'photo': 'P1122149'})
 
-  .Content_row
-    .Content_main
-      .Article_content
+    .Row
+      .Content_Main.Content_Article
         :markdown
           Before finally making my way back to the station.
 
-  = partial("photoessays/components/photo_right", locals: {slug: current_page.data.slug, caption: '', 'photo': 'P1122152'})
+    = partial("photoessays/components/photo_right", locals: {slug: current_page.data.slug, caption: '', 'photo': 'P1122152'})
 
-  .Content_row
-    .Content_main
-      .Article_content
+    .Row
+      .Content_Main.Content_Article
         :markdown
           Alighting momentarily at Takadanobaba, I got a glimpse of a nearby Astroboy murial.
 
-  = partial("photoessays/components/photo_two_column", locals: {slug: current_page.data.slug, 'left': ['P1122160'], 'right': ['P1122158'] })
+    = partial("photoessays/components/photo_two_column", locals: {slug: current_page.data.slug, 'left': ['P1122160'], 'right': ['P1122158'] })
 
-  = partial("photoessays/components/photo_right", locals: {slug: current_page.data.slug, caption: '', 'photo': 'P1122162'})
+    = partial("photoessays/components/photo_right", locals: {slug: current_page.data.slug, caption: '', 'photo': 'P1122162'})
 
-  .Content_row
-    .Content_main
-      .Article_content
+    .Row
+      .Content_Main.Content_Article
         :markdown
           ---
 
           Later that evening, I emerged from the hotel to visit a nearby bar.
 
-  = partial("photoessays/components/place_drink", locals: {slug: current_page.data.slug, image: 'door', title: 'Door', address: '宇田川町10-1 (パークビル4F) Shibuya, Tōkyō', price: '¥¥', menu: 'Bar', rating: 4, link: 'https://foursquare.com/v/door/53847893498eaced54d37b48' })
+    = partial("photoessays/components/place_drink", locals: {slug: current_page.data.slug, image: 'door', title: 'Door', address: '宇田川町10-1 (パークビル4F) Shibuya, Tōkyō', price: '¥¥', menu: 'Bar', rating: 4, link: 'https://foursquare.com/v/door/53847893498eaced54d37b48' })
 
-  .Content_row
-    .Content_main
-      .Article_content
+    .Row
+      .Content_Main.Content_Article
         :markdown
-          A few drinks later, I headed through familiar Shibuya nightlife in search of food...
+          A few drinks later, I headed through familiar Shibuya nightlife in search of&nbsp;food...
 
-  = partial("photoessays/components/photo_right", locals: {slug: current_page.data.slug, caption: '', 'photo': 'P1122177'})
+    = partial("photoessays/components/photo_right", locals: {slug: current_page.data.slug, caption: '', 'photo': 'P1122177'})
 
-  .Content_row
-    .Content_main
-      .Article_content
+    .Row
+      .Content_Main.Content_Article
         :markdown
           ... Which eventually lead to me heading to Tokyu Food Show, near the Shibuya station.
 
-  = partial("photoessays/components/place_restaurant", locals: {slug: current_page.data.slug, image: 'food_show', title: 'Tokyu Food Show', address: '玉川2-21-1 (二子玉川ライズSC B1F) Setagaya, Tōkyō', price: '¥', menu: 'Food Hall', rating: 4, time: '6:53pm', link: 'https://foursquare.com/v/%E6%9D%B1%E6%80%A5%E3%83%95%E3%83%BC%E3%83%89%E3%82%B7%E3%83%A7%E3%83%BC-%E6%9D%B1%E6%80%A5%E6%9D%B1%E6%A8%AA%E5%BA%97/4b54335ff964a5206bb427e3' })
+    = partial("photoessays/components/place_restaurant", locals: {slug: current_page.data.slug, image: 'food_show', title: 'Tokyu Food Show', address: '玉川2-21-1 (二子玉川ライズSC B1F) Setagaya, Tōkyō', price: '¥', menu: 'Food Hall', rating: 4, time: '6:53pm', link: 'https://foursquare.com/v/%E6%9D%B1%E6%80%A5%E3%83%95%E3%83%BC%E3%83%89%E3%82%B7%E3%83%A7%E3%83%BC-%E6%9D%B1%E6%80%A5%E6%9D%B1%E6%A8%AA%E5%BA%97/4b54335ff964a5206bb427e3' })
 
-  .Content_row
-    .Content_main
-      .Article_content
+    .Row
+      .Content_Main.Content_Article
         :markdown
           There was a mind-boggling number of stalls and varieties of cuisines. You could go back for each meal of the day and still have variety for days.
 
           After a pretty good vietnamese Bánh mì bowl, I was hankering for some dessert...
 
-  = partial("photoessays/components/place_restaurant", locals: {slug: current_page.data.slug, image: 'pariya', title: 'Pariya', address: '渋谷2-24-1 (東急東横店 B1F) Shibuya, Tōkyō', price: '¥', menu: '', rating: 4, time: '6:53pm', link: 'https://foursquare.com/v/pariya-shibuya/4c3a8e41def90f47f2adfc2d' })
+    = partial("photoessays/components/place_restaurant", locals: {slug: current_page.data.slug, image: 'pariya', title: 'Pariya', address: '渋谷2-24-1 (東急東横店 B1F) Shibuya, Tōkyō', price: '¥', menu: '', rating: 4, time: '6:53pm', link: 'https://foursquare.com/v/pariya-shibuya/4c3a8e41def90f47f2adfc2d' })
 
-  .Content_row
-    .Content_main
-      .Article_content
+    .Row
+      .Content_Main.Content_Article
         :markdown
           Full of food and gelato, I headed back for the hotel to turn in for the night.
 
-= partial("photoessays/2017/tokyo/footer", locals: {collection: current_page.data.collection})
+  = partial("photoessays/2017/tokyo/footer", locals: {collection: current_page.data.collection})
