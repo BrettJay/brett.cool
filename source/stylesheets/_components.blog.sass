@@ -1,3 +1,17 @@
-.blog .Content_Headline a
+.blog .Content_Headline a,
+.blog .Content_Main a
   color: inherit
   border-bottom: 3px solid #fff
+  &:hover
+    color: $content-link
+
+.blog .Content_Main .read-more
+  color: $content-link
+  border-bottom: 1px solid $content-link_underline
+  &:hover
+    border-bottom: 1px solid $content-link_underline--hover
+
+.blog
+  .Row.pb4.pt2 + .Row.pb3
+    border-top: 1px solid #eee
+    +fluid-scale(padding-top, $responsive_min, $responsive_max, $size_scale_4_min, $size_scale_4_max)
