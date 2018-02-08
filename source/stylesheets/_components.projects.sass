@@ -1,0 +1,48 @@
+.Project
+  background: #ffffff
+  transition: 0.2s ease background
+
+.ProjectItem
+  color: initial
+  text-decoration: none
+
+.ProjectItem + .ProjectItem .Project
+  border-top: 1px solid #eee
+
+.ProjectItem:hover .Project
+  background: #dbf3ff
+
+.Project h2,
+.Project p
+  +fluid-scale(padding-left, $responsive_min, $responsive_max, $size_scale_3_min, $size_scale_3_max)
+  +fluid-scale(padding-right, $responsive_min, $responsive_max, $size_scale_3_min, $size_scale_3_max)
+
+.Project h2
+  position: relative
+  +fluid-scale(margin-bottom, $responsive_min, $responsive_max, $size_scale_2_min, $size_scale_2_max)
+
+.Project--active h2:before
+  content: ''
+  display: block
+  width: 10px
+  height: 10px
+  top: 15px
+  transform: translateY(-50%)
+  left: 0
+  background: #3BB300
+  border-radius: 5px
+  position: absolute
+  +respond-to(ipad-up)
+    top: 19px
+    left: 15px
+
+.Project_duration
+  background: #eee
+  font-size: 0.5em
+  border-radius: 5px
+  padding: 5px 10px
+  position: absolute
+  line-height: 1
+  margin-left: 15px
+  top: 50%
+  transform: translateY(-55%)

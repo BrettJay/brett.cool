@@ -36,15 +36,7 @@
         = image_tag 'home/brett.jpg', alt: 'Brett at CSSConf 2015', style: 'width: 100%;'
     .Row
       .Content_Main
-        %p I love coffee, travel, photography, and design grids of the exploded&nbsp;variety. I produce #{link_to 'photoessays', '/photoessays'} and #{link_to 'speak', '/talk'}—very infrequently.
+        :markdown
+          I love coffee, travel, photography, and design grids of the exploded&nbsp;variety. I produce [photoessays](/photoessays) and [speak]('/talk') (very infrequently).
 
-        %h2.h3_scale.pt3.pb1 Elsewhere on the internet
-        %dl.SocialLinks
-          %dt Instagram
-          %dd= link_to '@brt.j', 'https://www.instagram.com/brt.j', target: '_blank'
-          %dt Twitter
-          %dd= link_to '@brett_jay', 'https://www.twitter.com/brett_jay', target: '_blank'
-          %dt Dribbble
-          %dd= link_to '@brettjay', 'https://dribbble.com/brettjay', target: '_blank'
-          %dt Github
-          %dd= link_to '@brettjay', 'https://www.github.com/brettjay', target: '_blank'
+          You can find me elsewhere on the internet, where #{link_to 'I quantify my life', 'http://life.brett.cool', target: '_blank'}, #{link_to 'share photos', 'https://www.instagram.com/brt.j', target: '_blank'}, #{link_to 'commit code', 'https://www.github.com/brettjay', target: '_blank'}, and #{link_to 'tweet inane things', 'https://www.twitter.com/brett_jay', target: '_blank'}.

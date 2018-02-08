@@ -1,0 +1,39 @@
+---
+  title: Projects
+  body_classes: 
+  meta_description: Stuff I’m working on
+  meta_keywords:
+  ogp:
+    og:
+      title: Projects
+      description: Stuff I’m working on
+      image:
+        '': http://brett.cool/images/og.jpg
+        type: image/jpg
+        width: 560
+        height: 300
+    fb:
+      title: Projects
+      description: Stuff I’m working on
+      image:
+        '': http://brett.cool/images/fb.jpg
+        type: image/jpg
+        width: 600
+        height: 315
+---
+
+.Page
+  .Content
+    .Row.pb3
+      .Content_Headline
+        %h1 Projects
+    
+    .Content_Main
+      - data.projects.each do | project |
+        = link_to(project.link.url, class: 'ProjectItem', target: ('_blank' if project.link.type == 'external')) do    
+          .Project.pt3.pb3{class: "Project--#{project.status}"}
+            %h2.h3_scale
+              = project.name
+              %span.Project_duration #{project.dates.from} – #{project.dates.to}
+            :markdown
+              #{project.description}
