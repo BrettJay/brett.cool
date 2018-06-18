@@ -72,7 +72,7 @@ activate :directory_indexes
 # Build configuration
 # --------------------------------------------------------------------------------------------------
 # Run build cleaner
-require_relative "./lib/build_cleaner"
+# require_relative "./lib/build_cleaner"
 
 configure :build do
   activate :build_cleaner
