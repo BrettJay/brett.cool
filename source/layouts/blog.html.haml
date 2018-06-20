@@ -1,3 +1,8 @@
+- @og_label1_override = 'Reading Time 🕖'
+- @og_data1_override = time_label current_article.body
+- @og_label2_override = 'Published 📅'
+- @og_data2_override = Date.parse(current_article.date.to_s).strftime('%b %e, %Y')
+
 = wrap_layout :layout do
   .Page
     .Content

@@ -1,0 +1,35 @@
+%meta{property: 'og:title',        content: render_page_title }
+%meta{property: 'fb:title',        content: render_page_title }
+%meta{property: 'og:description',  content: render_page_description }
+%meta{property: 'fb:description',  content: render_page_description }
+%meta{property: 'og:locale',       content: 'en_us'}
+
+%meta{property: 'fb:type',         content: 'article'}
+%meta{property: 'fb:image',        content: "#{path_to_opengraph_tag}fb.jpg" }
+%meta{property: 'fb:image:type',   content: 'image/jpg' }
+%meta{property: 'fb:image:width',  content: '600' }
+%meta{property: 'fb:image:height', content: '315' }
+
+%meta{property: 'og:type',         content: 'article'}
+%meta{property: 'og:image',        content: "#{path_to_opengraph_tag}og.jpg" }
+%meta{property: 'og:image:type',   content: 'image/jpg' }
+%meta{property: 'og:image:width',  content: '560' }
+%meta{property: 'og:image:height', content: '300' }
+
+%meta{property: 'twitter:card',    content: 'summary_large_image'}
+%meta{property: 'twitter:site',    content: '@brett_jay'}
+%meta{property: 'twitter:creator', content: '@brett_jay'}
+
+- if @og_label1_override.present? && @og_data1_override.present?
+  %meta{property: 'twitter:label1', content: @og_label1_override }
+  %meta{property: 'twitter:data1',  content: @og_data1_override }
+- else
+  %meta{property: 'twitter:label1', content: 'Twitter 📢' }
+  %meta{property: 'twitter:data1',  content: '@brett_jay' }
+
+- if @og_label2_override.present? && @og_data2_override.present?
+  %meta{property: 'twitter:label2', content: @og_label2_override }
+  %meta{property: 'twitter:data2',  content: @og_data2_override }
+- else
+  %meta{property: 'twitter:label2', content: 'Instagram 📸' }
+  %meta{property: 'twitter:data2',  content: '@brt.j' }

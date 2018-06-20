@@ -1,6 +1,6 @@
 # Site wide settings
 site:
-  root_url: http://www.brett.cool
+  root_url: https://www.brett.cool
   title: brett😎
   title_separator: " &mdash; "
   meta_description: designer and front end developer

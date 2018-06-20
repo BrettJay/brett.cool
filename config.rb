@@ -29,17 +29,6 @@ end
 # Extensions
 # --------------------------------------------------------------------------------------------------
 
-# Use OGP
-
-activate :ogp do |ogp|
-  ogp.namespaces = {
-    fb: data.ogp.fb,
-    og: data.ogp.og,
-    twitter: data.ogp.twitter
-  }
-  ogp.base_url = 'http://brett.cool'
-end
-
 # Use LiveReload
 activate :livereload
 
@@ -75,7 +64,7 @@ activate :directory_indexes
 # require_relative "./lib/build_cleaner"
 
 configure :build do
-  activate :build_cleaner
+
   # Exclude any vendor components (bower or custom builds) in the build
   ignore 'stylesheets/vendor/*'
   ignore 'javascripts/vendor/*'
