@@ -33,8 +33,7 @@
 
     %link{href: "https://fonts.googleapis.com/css?family=Crimson+Text:400i|Roboto:400,400i,900", rel: "stylesheet"}/
 
-    - ogp_tags do|name, value|
-      %meta{ property: name, content: value}
+    = partial "layouts/meta"
 
     /[if lte IE 8]
       -# Loading fallback scripts from a CDN for older IE versions could be beneficial
