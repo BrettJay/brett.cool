@@ -1,0 +1,706 @@
+---
+  title: Las Vegas
+  slug: '2013/las-vegas'
+  subtitle: Isolated extravagence
+  body_classes: page-photoessays
+  meta_description: Isolated extravagence
+  meta_keywords:
+  trip:
+    location: america
+    weather: sun
+    arrival: bus
+    departure: plane
+    dates:
+      from: 2013-7-28
+      to: 2013-8-1
+---
+
+- @og_image_override = 'photoessays/2013/las-vegas'
+
+<script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
+
+:javascript
+  $(document).ready(function () {
+    $('.Menu_Button').on('click', function() {
+      $('.PhotoEssaySubHeader').toggleClass('PhotoEssaySubHeader--MenuOpen')
+    });
+  });
+
+.PhotoEssaySubHeader
+  .Content.Content--fluid
+    .Row
+      .SubHeader_Main
+        .LinkBreadCrumbs
+          #{link_to 'Photoessays', '/photoessays/', class: 'BreadCrumb_Header'}
+          .BreadCrumb_Header
+        .Menu_Button
+          Date
+      .DayMenu
+        .MenuClip
+          = link_to "#july-28", class: 'DayItem' do
+            <span class="DayDate">July 28</span> Arriving in Las Vegas <span class="DayDescription">and street drinking</span>
+          = link_to "#july-29", class: 'DayItem' do
+            <span class="DayDate">July 29</span> New York-New York <span class="DayDescription">and Zumanity</span>
+          = link_to "#july-30", class: 'DayItem' do
+            <span class="DayDate">July 30</span> Exploring the main strip <span class="DayDescription">and all the photos</span>
+          = link_to "#july-31", class: 'DayItem' do
+            <span class="DayDate">July 31</span> Outside the main strip <span class="DayDescription">and Penn & Teller</span>
+          = link_to "#august-01", class: 'DayItem' do
+            <span class="DayDate">Aug 1</span> Departing Vegas <span class="DayDescription">On to Colorado! </span>
+
+= partial("/photoessays/components/banner", locals: {slug: current_page.data.slug, title: current_page.data.title, 'subtitle': current_page.data.subtitle, trip: current_page.data.trip})
+
+.Page
+  .Content
+    .Row#july-28
+      .Content_Main.Content_Article
+        :markdown
+          Our greyhouse bus snaked along arterial country roads, heading northwest towards Las Vegas.
+
+          Scenes of afternoon, sunbaked rural America countryside flashed by us.
+
+    = partial("photoessays/components/photo_two_column", locals: {slug: current_page.data.slug, left: ['28/IMG_2455','28/IMG_2484'], right: ['28/IMG_2456','28/IMG_2487'] })
+
+    .Row
+      .Content_Main.Content_Article
+        :markdown
+          Late afternoon we arrived at the Greyhound terminal in downtown Las&nbsp;Vegas.
+
+          We split up into two cabs, and made our way from the downtown depot to The Monte Carlo (now called Park MGM Las Vegas), located along the main strip.
+
+  = partial("photoessays/components/photo_full", locals: {slug: current_page.data.slug, caption: '', 'photo': '28/IMG_2494'})
+
+  .Content
+    .Row
+      .Content_Main.Content_Article
+        :markdown
+          Traffic in Vegas is rather terrible. As we rode along overpasses and highways, we got our first good look of Vegas proper.
+          
+          We saw the pyramid shaped Luxor, the castle-themed Excalibur, and New York-New York — replete with a statue of liberty, and a rollercoaster built in to its exterior.
+
+          Our taxis soon arrived at the Monte Carlo lobby.
+
+    = partial("photoessays/components/photo_two_column", locals: {slug: current_page.data.slug, 'left': ['28/IMG_2497'], 'right': ['28/IMG_2499'] })
+
+    .Row
+      .Content_Main.Content_Article
+        :markdown
+          The size of the hotel was very impressive, especially having just checked out of Banana Bungalow in Hollywood that morning.    
+
+    = partial("photoessays/components/place_accomodation", locals: {slug: current_page.data.slug, image: '28/IMG_2499', title: 'The Monte Carlo', address: '3770 S Las Vegas Blvd, Las Vegas, NV 89109, USA', checkin: '28 July', checkout: '1 August', rating: 5 })
+    
+    .Row
+      .Content_Main.Content_Article
+        :markdown
+          We entered the cool, ritzy lobby to check-in. A soon-to-be-familiar artificial, perfumed smell permeated throughout the casino lobby. Over the top, ostentatious archirecture and furnishings adorned the large, luxuriously styled interior.
+
+          I ducked in to line with my Passport and ID, having booked the Las Vegas leg of our accomodation. We had booked two rooms, which ended up being on floors 23 and 28.
+
+    = partial("photoessays/components/photo_grid", locals: {slug: current_page.data.slug, rows: [ { count: 2, caption: 'Genuinely good accomodation HYPE', photos: ['28/IMG_2505','28/IMG_2511'] } ] } )
+
+    .Row
+      .Content_Main.Content_Article
+        :markdown
+          As we waited to check in, an impromptu percussion performance began to promote the Blue Man Group. We, along with many of our fellow lobby occupants, swarmed to watch.
+
+    .Row.pt4.pb4.pl1.pr1
+      %video{src: "/#{images_dir}/photoessays/#{current_page.data.slug}/28/IMG_2506_lq.mp4", controls: true, preload: 'metadata'}
+
+    .Row
+      .Content_Main.Content_Article
+        :markdown
+          Once the surprise performance was over, we lugged our bags up to our rooms. Michael, Irwin, and I took one the room on floor 28, and Andrew, Richard, and Jared took the room on floor 23.
+
+    = partial("photoessays/components/photo_right", locals: {slug: current_page.data.slug, caption: '', photo: '28/IMG_2516'})
+    
+    .Row
+      .Content_Main.Content_Article
+        :markdown
+          After a short pit stop, Andrew, Richard, and Jared came up to meet us in our room, which they remarked was exactly the same as theirs, albeit mirrored. We decided to explore the Monte Carlo.
+
+          Taking the elevator to the ground floor, we emerged on a floor full of slot machines, and an adjacent foodcourt — replete with a Starbucks, a Mexican fast food place, and a (probably mandated) McDonald’s.
+
+          We headed through a retail strip in the casino creatively titled the “street of dreams”. We enter a menswear store called Misura. I bought a pair of Converse sunglasses.
+
+          We then headed back up to the other room on floor 23. It was fairly similar, but on the opposite wing of the hotel to ours.
+
+          By now, night was upon us. We decided to head out and explore the Vegas strip, in search of food.
+
+    = partial("photoessays/components/photo_full", locals: {slug: current_page.data.slug, caption: '', 'photo': '28/IMG_2522'})
+
+    .Row
+      .Content_Main.Content_Article
+        :markdown
+          We stepped out in to the dry, desert air.
+
+          As we walked towards the main strip, we saw some patrons riding the New York-New York rollercoaster.
+
+          We followed the lights, and crowds along the main strip.
+
+    = partial("photoessays/components/photo_two_column", locals: {slug: current_page.data.slug, 'left': ['28/IMG_2529', '28/IMG_2549'], 'right': ['28/IMG_2539', '28/IMG_2578'] })
+
+    .Row
+      .Content_Main.Content_Article
+        :markdown
+          While Vegas is impressive during the day, it is nothing next to the way it comes alive at night.
+
+          We navigated amongst crowds of pedestrians, with a backdrop of glowing neon lights demanding our attention in every direction.
+          
+          Eventually, we came across an area a few different dinner options. Some of us opted for a burger joint, and Michael grabbed a burrito at a nearby Mexican place.
+
+          We somewhat clumsily ended up ordering our meals individually for takeaway. Once the five of us had ordered from the same burger joint, our rather irritable server lost her temper at us, accusing us of trying to dodge out of paying the group gratuity by ordering individually.
+          
+          Truthfully, we had not tried to do any such thing, we were all just a bit indecisive. The burgers were good though.
+
+          After a quick bite, we continued walking on, stopping by the Belagio to watch a water fountain choreographed to “God Bless the U.S.A.”
+
+    = partial("photoessays/components/photo_grid", locals: {slug: current_page.data.slug, rows: [ { count: 2, caption: '', photos: ['28/IMG_2580','28/IMG_2592'] } ] } )
+
+  = partial("photoessays/components/photo_full", locals: {slug: current_page.data.slug, caption: '', 'photo': '28/IMG_2596'})
+
+  .Content
+    .Row
+      .Content_Main.Content_Article
+        :markdown
+          As we continued our walk, we realised that street drinking in Las Vegas is in fact legal.
+
+          So what happened next is anyone’s guess.
+    
+    = partial("photoessays/components/photo_two_column", locals: {slug: current_page.data.slug, 'left': ['28/IMG_2646'], 'right': ['28/IMG_2615'] })
+    =# partial("photoessays/components/photo_right", locals: {slug: current_page.data.slug, caption: '', photo: '28/IMG_2652'})
+    
+    .Row
+      .Content_Main.Content_Article
+        :markdown
+          We continued walking through the various overpasses, checking out the various casinos.
+
+          Butcher tried his hand at a slot machine.
+
+    .Row.pt4.pb4.pl1.pr1
+      %video{src: "/#{images_dir}/photoessays/#{current_page.data.slug}/28/IMG_2630_lq.mp4", controls: true, preload: 'metadata'}
+
+    = partial("photoessays/components/photo_two_column", locals: {slug: current_page.data.slug, 'left': ['28/IMG_2655', '28/IMG_2652'], 'right': ['28/IMG_2665'] })
+
+    .Row
+      .Content_Main.Content_Article
+        :markdown
+          Eventually, we reached Paris Las Vegas, a very impressive casino which inside felt permanently like dusk.
+
+          If you were the gamling type, you’d definitely have no idea what time it is, or how long you’ve been there.
+
+  = partial("photoessays/components/photo_full", locals: {slug: current_page.data.slug, caption: '', 'photo': '28/IMG_2671'})
+
+  .Content
+    .Row
+      .Content_Main.Content_Article
+        :markdown
+          Many drinks, and a few more steps later, we headed back to our hotel to crash for the night.
+
+    = partial("photoessays/components/photo_two_column", locals: {slug: current_page.data.slug, 'left': ['28/IMG_2687'], 'right': ['28/IMG_2699'] })
+  
+    .Row#july-29
+      .Content_Main.Content_Article
+        :markdown
+          ---
+
+          I awoke early the next morning, and ventured to the ground floor food court, where I got myself a coffee from the nearby Starbucks.
+          
+          It wasn’t specialty, but it was a known quantity.
+
+          I then walked around exploring the interior of the casino. The lights, the smells, the sounds of pokies and a buzz of people filled my senses.
+
+    = partial("photoessays/components/photo_right", locals: {slug: current_page.data.slug, caption: '', photo: '29/IMG_1172'})
+
+    .Row
+      .Content_Main.Content_Article
+        :markdown
+          I continued exploring through corridors, up some escalators.
+          
+    = partial("photoessays/components/photo_right", locals: {slug: current_page.data.slug, caption: '', photo: '29/IMG_1167'})
+
+    .Row
+      .Content_Main.Content_Article
+        :markdown
+          On an outdoor rooftop, I found the “Aria express” monorail shuttle station from Monte Carlo roof... Because you really need to make it even easier to go from one casino to the next.
+          
+          I could also see down to the rather glamorous Monte Carlo pool, replete with outdoor bar.
+
+    = partial("photoessays/components/photo_right", locals: {slug: current_page.data.slug, caption: '', photo: '29/IMG_1169'})
+
+    .Row
+      .Content_Main.Content_Article
+        :markdown
+          I returned to our room, Michael and Irwin were now up. We went back to the overpass overlooking the pool, and made plans to grab a drink and a swim during our stay.
+
+          It was now around 11:30, and the rest of our party were stirring. We decided to head out to explore the strip during the day.
+
+    = partial("photoessays/components/photo_right", locals: {slug: current_page.data.slug, caption: 'Walking down to New York New York', photo: '29/IMG_2713'})
+
+    .Row
+      .Content_Main.Content_Article
+        :markdown
+          Like many of the other themed casinos, New York-New York’s interior was themed; in this case, like a miniature New York street.
+
+    = partial("photoessays/components/photo_right", locals: {slug: current_page.data.slug, caption: '', photo: '29/DSC02382'})
+    = partial("photoessays/components/photo_right", locals: {slug: current_page.data.slug, caption: '', photo: '29/DSC02384'})
+
+    .Row
+      .Content_Main.Content_Article
+        :markdown
+          Inside New York-New York, we found an arcade.
+  
+  = partial("photoessays/components/photo_full", locals: {slug: current_page.data.slug, caption: '', 'photo': '29/IMG_2721'})
+
+  .Content
+    = partial("photoessays/components/photo_two_column", locals: {slug: current_page.data.slug, left: ['29/DSC02387'], right: ['29/IMG_2723','29/DSC02388'] })
+    .Row
+      .Content_Main.Content_Article
+        :markdown
+          After having our fill of arcade games, we decided to find some lunch.
+
+          We explored the New York-New York food court. I opted for a New York style deli sandwich, while Irwin and Richard opted for a burger.
+
+    = partial("photoessays/components/photo_two_column", locals: {slug: current_page.data.slug, left: ['29/IMG_2726','29/IMG_2724'], right: ['29/IMG_2727'] })
+
+    .Row
+      .Content_Main.Content_Article
+        :markdown
+          After lunch, we headed out of New York-New York.
+
+          We headed through MGM Grand.
+
+    = partial("photoessays/components/photo_two_column", locals: {slug: current_page.data.slug, left: ['29/DSC02402'], right: ['29/DSC02404'] })
+
+    .Row
+      .Content_Main.Content_Article
+        :markdown
+          Inside, we caught a glimpse of the Rainforest Café.
+
+    = partial("photoessays/components/photo_two_column", locals: {slug: current_page.data.slug, left: ['29/DSC02410'], right: ['29/DSC02406','29/DSC02409'] })
+
+    .Row
+      .Content_Main.Content_Article
+        :markdown
+          We continued through MGM Grand, emerged back on the Vegas street, and made a beeline for the M&M store.
+    
+    = partial("photoessays/components/photo_right", locals: {slug: current_page.data.slug, caption: '', photo: '29/DSC02417'})
+
+    .Row
+      .Content_Main.Content_Article
+        :markdown
+          Inside was well... M&M’s.
+  
+  = partial("photoessays/components/photo_full", locals: {slug: current_page.data.slug, caption: '', 'photo': '29/IMG_2735'})
+
+  .Content    
+    = partial("photoessays/components/photo_two_column", locals: {slug: current_page.data.slug, left: ['29/DSC02435'], right: ['29/DSC02431','29/DSC02437'] })
+
+    .Row
+      .Content_Main.Content_Article
+        :markdown
+          There were somehow 4 floors of M&M’s chocolates, and associated paraphenalia.
+
+          After we’d had our fill, we exited, heading further down the strip, and running in to Mario and Luigi.
+
+    = partial("photoessays/components/photo_two_column", locals: {slug: current_page.data.slug, left: ['29/IMG_2741'], right: ['29/DSC02461'] })
+
+    .Row
+      .Content_Main.Content_Article
+        :markdown
+          We continued down the strip, checking out novelty gift shops, where some of us picked up towels for the pool.
+
+    = partial("photoessays/components/photo_right", locals: {slug: current_page.data.slug, caption: '', photo: '29/DSC02464'})
+
+    .Row
+      .Content_Main.Content_Article
+        :markdown
+          We headed back to the Monte Carlo mid afternoon.
+
+          After a quick delay getting our room key fixed, we hit the pool and grabbed some drinks.
+
+    = partial("photoessays/components/photo_right", locals: {slug: current_page.data.slug, caption: '', photo: '29/IMG_2749'})
+
+    .Row
+      .Content_Main.Content_Article
+        :markdown
+          ---
+
+          That evening, we went to see Zumanity — a burlesque-themed Cirque du Soleil show playing at New York-New York. It was about the most risqué thing we did in the city infamous for its debauchery.
+
+          After the show, we emerged in search of dinner. We found a nearby Italian place which did pizza and pasta.
+
+    = partial("photoessays/components/photo_two_column", locals: {slug: current_page.data.slug, right: ['29/IMG_2755'], left: ['29/IMG_2752','29/IMG_2753'] })
+
+    .Row
+      .Content_Main.Content_Article
+        :markdown
+          After a bit of a late dinner, it was time for more drinking and wandering around the neon-lit Vegas strip.
+
+    = partial("photoessays/components/photo_two_column", locals: {slug: current_page.data.slug, left: ['29/IMG_2766','29/IMG_2774','29/IMG_2790'], right: ['29/IMG_2760','29/IMG_2772'] })
+
+    .Row
+      .Content_Main.Content_Article
+        :markdown
+          We headed to the Excalibur.
+
+          Inside, we found an Oxygen bar.
+
+    = partial("photoessays/components/photo_two_column", locals: {slug: current_page.data.slug, left: ['29/IMG_2820'], right: ['29/IMG_2818'] })
+
+    .Row
+      .Content_Main.Content_Article
+        :markdown
+          After a quick breather we departed Excalibur, and continued to walk further down the Vegas strip.
+          
+          Eventually we reached the pyramid-shaped Luxor.
+
+    = partial("photoessays/components/photo_two_column", locals: {slug: current_page.data.slug, left: ['29/IMG_2828'], right: ['29/IMG_2829'] })
+
+  = partial("photoessays/components/photo_full", locals: {slug: current_page.data.slug, caption: '', 'photo': '29/IMG_2836'})
+  
+  .Content
+    .Row#july-30
+      .Content_Main.Content_Article
+        :markdown
+          Once we’d taken in the views from the upper floors of the Luxor, we left, and began our walk back to the Monte Carlo to turn in for the night.
+
+          ---
+
+          I awoke a bit later the following morning than usual. Both Butcher and Irwin were still fast asleep. I got up and headed for the other hotel room.
+          
+          I could feel the return of the nasty sore throat I had in San Francisco; the exertion and lack of proper sleep must have been running my body down.
+
+          I met up with Andrew and Richard, and we decided to go to the Monte Carlo’s buffet. After a rather filling brunch, Richard and I decide to head out to see the sights, Richard armed with his DSLR.
+
+          As we set off, we saw Butcher at a nearby crêpe place. I pop past the Starbucks and grab another perfunctory coffee.
+          
+          We headed off, coffee in tow, retracing our steps towards the Aria.
+
+    = partial("photoessays/components/photo_two_column", locals: {slug: current_page.data.slug, left: ['30/IMG_1216'], right: ['30/IMG_1205'] })
+    
+    .Row
+      .Content_Main.Content_Article
+        :markdown
+          Outside the lobby to the Aria was a rather elaborate water fountain, and feature wall.
+  
+  = partial("photoessays/components/photo_full", locals: {slug: current_page.data.slug, caption: '', 'photo': '30/IMG_2841'})
+
+  .Content
+    .Row
+      .Content_Main.Content_Article
+        :markdown
+          We continued up an overpass and entered Crystals, a high-end mall adjacent to the Aria.
+
+          Its interior, like all of Vegas, was oestentatious and flashy. 
+          
+    = partial("photoessays/components/photo_two_column", locals: {slug: current_page.data.slug, left: ['30/IMG_1228','30/IMG_1246'], right: ['30/IMG_1239'] })
+
+    .Row
+      .Content_Main.Content_Article
+        :markdown
+          We continued out of Crystals via the overpass through to The&nbsp;Cosmopolitan.
+
+    = partial("photoessays/components/photo_two_column", locals: {slug: current_page.data.slug, left: ['30/IMG_1258'], right: ['30/IMG_1256'] })
+    
+    .Row
+      .Content_Main.Content_Article
+        :markdown
+          The interior was stunning, and provided some nice photo opportunities.
+
+    = partial("photoessays/components/photo_two_column", locals: {slug: current_page.data.slug, left: ['30/IMG_2859','30/IMG_1272'], right: ['30/IMG_1274'] })
+  = partial("photoessays/components/photo_full", locals: {slug: current_page.data.slug, caption: '', 'photo': '30/IMG_2865'})
+
+  .Content
+    .Row
+      .Content_Main.Content_Article
+        :markdown
+          We continued out on the ground floor, further down the strip.
+
+          To our left, the Bellagio came into view, and on our right, Paris Las Vegas.
+    = partial("photoessays/components/photo_two_column", locals: {slug: current_page.data.slug, left: ['30/IMG_1280'], right: ['30/IMG_1279','30/IMG_1282'] })
+
+  = partial("photoessays/components/photo_full", locals: {slug: current_page.data.slug, caption: '', 'photo': '30/IMG_2868'})
+
+  .Content
+    = partial("photoessays/components/photo_two_column", locals: {slug: current_page.data.slug, left: ['30/IMG_1288','30/IMG_1295'], right: ['30/IMG_1294','30/IMG_1296'] })
+    .Row
+      .Content_Main.Content_Article
+        :markdown
+          We continued up the strip, towards Ceasar’s Palace.
+          
+          By now I distinctly remember my throat was very sore and agitated. I’d grab some meds from a nearby CVS and a bottle of water in an attempt to stymie the symptoms.
+    
+    = partial("photoessays/components/photo_two_column", locals: {slug: current_page.data.slug, left: ['30/IMG_1298','30/IMG_1301','30/IMG_1307','30/IMG_1316','30/IMG_1336'], right: ['30/IMG_1299','30/IMG_1305','30/IMG_1310','30/IMG_1326','30/IMG_1339'] })
+    .Row
+      .Content_Main.Content_Article
+        :markdown
+          As we continued further down the strip, we ran into Butcher, who was now out and about exploring.
+
+          We all continued on to the next casino, the Mirage.
+    = partial("photoessays/components/photo_two_column", locals: {slug: current_page.data.slug, left: ['30/IMG_1347','30/IMG_1356'], right: ['30/IMG_1348','30/IMG_1358'] })
+    .Row
+      .Content_Main.Content_Article
+        :markdown
+          After a short look around, we grabbed a smoothie and returned outside.
+
+  = partial("photoessays/components/photo_full", locals: {slug: current_page.data.slug, caption: '', 'photo': '30/IMG_2886'})
+
+  .Content
+    = partial("photoessays/components/photo_two_column", locals: {slug: current_page.data.slug, left: ['30/IMG_2891'], right: ['30/IMG_1365','30/IMG_1376'] })
+    .Row
+      .Content_Main.Content_Article
+        :markdown
+          We departed the Mirage, now approaching the top of the vegas strip.
+
+    = partial("photoessays/components/photo_two_column", locals: {slug: current_page.data.slug, left: ['30/IMG_1381'], right: ['30/IMG_1383'] })
+
+  = partial("photoessays/components/photo_full", locals: {slug: current_page.data.slug, caption: '', 'photo': '30/IMG_2894'})
+  
+  .Content
+    .Row
+      .Content_Main.Content_Article
+        :markdown
+          Next up, we arrived at Treasure Island.
+
+    = partial("photoessays/components/photo_two_column", locals: {slug: current_page.data.slug, left: ['30/IMG_1393'], right: ['30/IMG_1395','30/IMG_1400'] })
+
+  = partial("photoessays/components/photo_full", locals: {slug: current_page.data.slug, caption: '', 'photo': '30/IMG_2900'})
+
+  .Content
+    = partial("photoessays/components/photo_right", locals: {slug: current_page.data.slug, caption: '', photo: '30/IMG_1397'})
+    .Row
+      .Content_Main.Content_Article
+        :markdown
+          After quickly surveiling another all-too familiar dimly lit casino interior, we departed, and headed for the Venetian.
+    = partial("photoessays/components/photo_right", locals: {slug: current_page.data.slug, caption: 'Taking the overpass over to the Venetian', photo: '30/IMG_1409'})
+    = partial("photoessays/components/photo_two_column", locals: {slug: current_page.data.slug, left: ['30/IMG_1415'], right: ['30/IMG_2907'] })
+
+    .Row
+      .Content_Main.Content_Article
+        :markdown
+          The interior of the Venetian was very impressive.
+
+          Reminiscent of Paris Las Vegas, it emulated an outdoor environment quite convincingly indoors.
+
+          With the added flourish of indoor gondola rides.
+
+  = partial("photoessays/components/photo_full", locals: {slug: current_page.data.slug, caption: 'There are people dining outdoors... Indoors 🤯', 'photo': '30/IMG_2917'})
+  
+  .Content
+    = partial("photoessays/components/photo_two_column", locals: {slug: current_page.data.slug, left: ['30/IMG_1421','30/IMG_1425','30/IMG_1442'], right: ['30/IMG_1426','30/IMG_1440','30/IMG_1460'] })
+
+    .Row
+      .Content_Main.Content_Article
+        :markdown
+          Once the novelty of indoor gondala rides had finally worn off, we made our way out via the second floor.
+
+    = partial("photoessays/components/photo_right", locals: {slug: current_page.data.slug, caption: '', photo: '30/IMG_1468'})
+
+    = partial("photoessays/components/photo_two_column", locals: {slug: current_page.data.slug, left: ['30/IMG_1477'], right: ['30/IMG_1470'] })
+
+    = partial("photoessays/components/photo_right", locals: {slug: current_page.data.slug, caption: '', photo: '30/IMG_1480'})
+
+    .Row
+      .Content_Main.Content_Article
+        :markdown
+          We continued heading back down the strip on the opposite side, pausing to see a wax sculpture of Dwayne Johnson.
+
+    = partial("photoessays/components/photo_two_column", locals: {slug: current_page.data.slug, left: ['30/IMG_1484'], right: ['30/IMG_1485','30/IMG_1487'] })
+
+    .Row
+      .Content_Main.Content_Article
+        :markdown
+          We continued back down, winding through random casinos on our way back towards the Monte Carlo.
+    = partial("photoessays/components/photo_right", locals: {slug: current_page.data.slug, caption: '', photo: '30/IMG_2931'})
+    .Row
+      .Content_Main.Content_Article
+        :markdown
+          On the way, we stopped back in at Paris Las Vegas.
+    = partial("photoessays/components/photo_two_column", locals: {slug: current_page.data.slug, left: ['30/IMG_1500'], right: ['30/IMG_1501'] })
+    = partial("photoessays/components/photo_right", locals: {slug: current_page.data.slug, caption: 'Looks the same mid afternoon, as it does at 1am in the morning.', photo: '30/IMG_1515'})
+    = partial("photoessays/components/photo_two_column", locals: {slug: current_page.data.slug, left: ['30/IMG_1526'], right: ['30/IMG_1535','30/IMG_1546'] })
+
+    .Row
+      .Content_Main.Content_Article
+        :markdown
+          Eventually, we left Paris Las Vegas, and continued our way back to the Monte Carlo.
+
+  = partial("photoessays/components/photo_full", locals: {slug: current_page.data.slug, caption: '', photo: '30/IMG_1556'})
+
+  .Content
+    .Row
+      .Content_Main.Content_Article
+        :markdown
+          Later that evening, we headed out to the Rainforest café for dinner.
+    
+    = partial("photoessays/components/place_restaurant", locals: {slug: current_page.data.slug, image: '29/DSC02410', title: 'Rainforest café', address: '3717 S Las Vegas Blvd, Las Vegas', price: '$$', menu: 'American', rating: 2, link: '' })
+
+    .Row
+      .Content_Main.Content_Article
+        :markdown
+          It’s certainly the sort of place that trades more on the experience than the cuisine, but it was a very pleasant meal.
+
+    = partial("photoessays/components/photo_two_column", locals: {slug: current_page.data.slug, left: ['30/IMG_1626'], right: ['30/IMG_1632', '30/IMG_1628'] })
+
+    .Row
+      .Content_Main.Content_Article
+        :markdown
+          We were all a little exhausted from a long day.
+
+          Richard stayed out to get some photos of Vegas at night. Many of the rest of us retired to bed early to catch up on some sleep.
+
+    = partial("photoessays/components/photo_right", locals: {slug: current_page.data.slug, caption: 'Good night, vegas.', photo: 'banner'})
+
+    .Row#july-31
+      .Content_Main.Content_Article
+        :markdown
+          ---
+
+          I awoke early the next day. Everyone else was still asleep. I decided that I might set off on my own and try to do some souvenir shopping today.
+
+          I headed down to the starbucks and grabbed their porridge for breakfast.
+
+    = partial("photoessays/components/photo_grid", locals: {slug: current_page.data.slug, rows: [ { count: 2, caption: 'It was actually pretty good.', photos: ['31/IMG_2975','31/IMG_2976'] } ] } )
+
+    .Row
+      .Content_Main.Content_Article
+        :markdown
+          After a quick breakfast, I found a souvenir gift shop that sounded suitable for gifts for my family, and so I headed off.
+
+          I headed for the Aria Express station on the upper floors of the Monte Carlo.
+
+    = partial("photoessays/components/photo_right", locals: {slug: current_page.data.slug, caption: '', photo: '31/IMG_2977'})
+
+    .Row
+      .Content_Main.Content_Article
+        :markdown
+          I alighted at the Belagio.
+
+          The Belagio has a very luxurious interior. I walked past a dessert place with presumably realy chocolate foundout prominently displayed pouring down glass leaves.
+
+    = partial("photoessays/components/photo_two_column", locals: {slug: current_page.data.slug, right: ['31/IMG_2993'], left: ['31/IMG_2982','31/IMG_2987'] })
+
+    .Row
+      .Content_Main.Content_Article
+        :markdown
+          I headed out of the Belagio and made my way to a bus stop, where I boarded a double decker bus.
+    
+    = partial("photoessays/components/photo_right", locals: {slug: current_page.data.slug, caption: '', photo: '31/IMG_2995'})
+
+    .Row
+      .Content_Main.Content_Article
+        :markdown
+          I consulted my destination on Google maps as the bus pulled away.
+
+          The bus continued down the strip of Vegas that Richard, Butcher and I had trekked yesterday. The scale seemed a little smaller from the vantage point of the bus, as we were whisked away from the main strip.
+
+          The bus headed west. I alighted at a nearby stop, on to a street with a very different vibe from the Vegas strip that we had just come from.
+
+  = partial("photoessays/components/photo_full", locals: {slug: current_page.data.slug, caption: '', photo: '31/IMG_2999'})
+
+  .Content
+    = partial("photoessays/components/photo_two_column", locals: {slug: current_page.data.slug, right: ['31/IMG_3002'], left: ['31/IMG_3003'] })
+
+  = partial("photoessays/components/photo_full", locals: {slug: current_page.data.slug, caption: '', photo: '31/IMG_3006'})
+
+  .Content
+    = partial("photoessays/components/photo_two_column", locals: {slug: current_page.data.slug, right: ['31/IMG_3007'], left: ['31/IMG_3011','31/IMG_3019'] })
+    .Row
+      .Content_Main.Content_Article
+        :markdown
+          Unfortunately, the shop I appeared to be looking for was not at the address I arrived at.
+
+          I continued to walk, and luckily came across another novelty gift shop.
+
+    = partial("photoessays/components/photo_two_column", locals: {slug: current_page.data.slug, left: ['31/IMG_3021'], right: ['31/IMG_3023'] })
+
+    .Row
+      .Content_Main.Content_Article
+        :markdown
+          Gifts in tow, I head back towards the main strip.
+
+          Now early afternoon, I grab a burrito for lunch, and try an all-American Choco Taco for dessert.
+
+    = partial("photoessays/components/photo_two_column", locals: {slug: current_page.data.slug, left: ['31/IMG_3028','31/IMG_3032'], right: ['31/IMG_3033'] })
+
+    .Row
+      .Content_Main.Content_Article
+        :markdown
+          After lunch, I met up with the others as the hotel.
+
+          Andrew, Irwin, Jared, Butcher and I head to the pool. Richard goes to try his hand at poker (and wins $200).
+
+          ---
+
+          That evening, we set off to see Penn & Teller at the Rio casino.
+
+          We opted to walk there, so we head off early evening, planning to get dinner nearby.
+
+    = partial("photoessays/components/photo_two_column", locals: {slug: current_page.data.slug, left: ['31/DSC02590','31/IMG_3041'], right: ['31/DSC02588','31/DSC02592'] })
+
+    .Row
+      .Content_Main.Content_Article
+        :markdown
+          Once we arrived, we grabbed a quick dinner at the Rio food court.
+
+          Soon enough, it was time for the show.
+
+    = partial("photoessays/components/photo_right", locals: {slug: current_page.data.slug, caption: '', photo: '31/IMG_3059'})
+
+    .Row
+      .Content_Main.Content_Article
+        :markdown
+          After the show, we managed to get photos with Penn Jillette.
+
+    = partial("photoessays/components/photo_two_column", locals: {slug: current_page.data.slug, left: ['31/DSC02613'], right: ['31/DSC02614'] })  
+
+    .Row
+      .Content_Main.Content_Article
+        :markdown
+          We made our way back towards the main Vegas strip.
+
+          I suggested we take a detour through Bellagio, having been quite impressed by its architecture that morning.
+      
+    = partial("photoessays/components/photo_two_column", locals: {slug: current_page.data.slug, left: ['31/DSC02631'], right: ['31/DSC02618','31/DSC02629'] })  
+
+    .Row
+      .Content_Main.Content_Article
+        :markdown
+          We retired to our apartment, and got some shut eye, ahead of our departure to Colorado the following day.
+          
+    .Row#august-01
+      .Content_Main.Content_Article
+        :markdown
+          ---
+
+          The next morning, we awoke, and finished our last minute packing.
+
+    = partial("photoessays/components/photo_two_column", locals: {slug: current_page.data.slug, right: ['01/IMG_3094'], left: ['01/IMG_3096','01/IMG_3097'] })  
+
+    .Row
+      .Content_Main.Content_Article
+        :markdown
+          We then checked out, and boarded a bus for the airport.
+    
+    = partial("photoessays/components/photo_right", locals: {slug: current_page.data.slug, caption: '>that feel when leaving Vegas', photo: '01/IMG_3100'})
+
+    .Row
+      .Content_Main.Content_Article
+        :markdown
+          Soon enough, we arrived at the Las Vegas aiport.
+    
+    = partial("photoessays/components/photo_right", locals: {slug: current_page.data.slug, caption: 'There were even slot machines here, in case you needed your fix.', photo: '01/IMG_3118'})
+
+    .Row
+      .Content_Main.Content_Article
+        :markdown
+          Eventually, we boarded our flight, bound for Colorado.
+
+    = partial("photoessays/components/photo_right", locals: {slug: current_page.data.slug, caption: '', photo: '01/DSC02654'})
+  .Content
+    .PhotoRow
+      .PhotoEssayFooterNavigation
+        = link_to "/photoessays/2013/los-angeles", class: 'PhotoEssay_nav PhotoEssay_nav--next', style: "background-image: url('/images/photoessays/2013/los-angeles/banner.jpg')" do
+          .PhotoEssay_nav_label Previous
+          .PhotoEssay_nav_title Los Angeles
+          .PhotoEssay_nav_date July 26, 2013
