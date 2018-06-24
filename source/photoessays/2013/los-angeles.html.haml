@@ -5,6 +5,10 @@
   body_classes: page-photoessays
   meta_description: Theme parks and fun times
   meta_keywords:
+  collection:
+    prev: san-francisco
+    current: los-angeles
+    next: las-vegas
   trip:
     location: america
     weather: sun
@@ -313,3 +317,15 @@
     .PhotoRow.Component
       .PhotoCaption.PhotoCaption_left To be continued...
       .Photo_right= image_tag "photoessays/2013/los-angeles/29/departing_hq.gif"
+
+  .Content
+    .PhotoRow
+      .PhotoEssayFooterNavigation
+        = link_to "/photoessays/2013/san-francisco", class: 'PhotoEssay_nav PhotoEssay_nav--previous', style: "background-image: url('/images/photoessays/2013/san-francisco/banner.jpg')" do
+          .PhotoEssay_nav_label Previous
+          .PhotoEssay_nav_title San Francisco
+          .PhotoEssay_nav_date July 23, 2013
+        = link_to "/photoessays/2013/las-vegas", class: 'PhotoEssay_nav PhotoEssay_nav--next', style: "background-image: url('/images/photoessays/2013/las-vegas/banner.jpg')" do
+          .PhotoEssay_nav_label Next
+          .PhotoEssay_nav_title Las Vegas
+          .PhotoEssay_nav_date July 29, 2013

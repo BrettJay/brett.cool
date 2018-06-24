@@ -2,7 +2,7 @@
 site:
   root_url: https://www.brett.cool
   title: brett😎
-  title_separator: " &mdash; "
+  title_separator: " — "
   meta_description: designer and front end developer
   meta_keywords:
     - brett jones
