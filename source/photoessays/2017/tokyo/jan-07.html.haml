@@ -23,7 +23,7 @@
         :markdown
           I arrived on an early morning flight in to Narita.
 
-    = partial("photoessays/components/flight", locals: {slug: current_page.data.slug, image: 'flight', title: 'VA682', gate: '48', seat: '25A', airline: 'Singapore Airlines', depart: '12:15am', arrive: '7:45am', rating: '' })
+    = partial("photoessays/components/flight", locals: {slug: current_page.data.slug, image: 'flight', title: 'VA682', gate: '48', seat: '25A', origin: 'SIN', destination: 'NRT', airline: 'Singapore Airlines', depart: '12:15am', arrive: '7:45am', rating: '' })
 
     = partial("photoessays/components/photo_two_column", locals: {slug: current_page.data.slug, 'left': ['P1070052'], 'right': ['P1070063'] })
 

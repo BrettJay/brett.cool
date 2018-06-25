@@ -696,6 +696,8 @@
         :markdown
           Eventually, we boarded our flight, bound for Colorado.
 
+    = partial("photoessays/components/flight", locals: {slug: current_page.data.slug, image: '01/DSC02663', title: 'United 899', origin: 'LAS', destination: 'DEN', gate: '', seat: '26A', airline: 'United Airlines', depart: '11:24am', arrive: '2:17pm', rating: '' })
+
     = partial("photoessays/components/photo_right", locals: {slug: current_page.data.slug, caption: '', photo: '01/DSC02654'})
   .Content
     .PhotoRow
