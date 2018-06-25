@@ -1,0 +1,21 @@
+---
+  title: Denver
+  slug: '2013/denver'
+  subtitle: A moment of chill
+  body_classes: page-photoessays
+  meta_description: A moment of chill
+  meta_keywords:
+  trip:
+    location: america
+    weather: sun
+    arrival: plane
+    departure: plane
+    dates:
+      from: 2013-8-1
+      to: 2013-8-4
+---
+
+- @og_image_override = 'photoessays/2013/denver'
+
+= partial("photoessays/components/breadcrumb")
+= partial("/photoessays/components/banner", locals: {slug: current_page.data.slug, title: current_page.data.title, subtitle: current_page.data.subtitle, trip: current_page.data.trip})
