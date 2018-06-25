@@ -186,7 +186,7 @@
         :markdown
           Eventually, we reached Paris Las Vegas, a very impressive casino which inside felt permanently like dusk.
 
-          If you were the gamling type, you’d definitely have no idea what time it is, or how long you’ve been there.
+          If you were the gambling type, you’d definitely have no idea what time it is, or how long you’ve been there.
 
   = partial("photoessays/components/photo_full", locals: {slug: current_page.data.slug, caption: '', 'photo': '28/IMG_2671'})
 
@@ -696,11 +696,17 @@
         :markdown
           Eventually, we boarded our flight, bound for Colorado.
 
+    = partial("photoessays/components/flight", locals: {slug: current_page.data.slug, image: '01/DSC02663', title: 'United 899', origin: 'LAS', destination: 'DEN', gate: '', seat: '26A', airline: 'United Airlines', depart: '11:24am', arrive: '2:17pm', rating: '' })
+
     = partial("photoessays/components/photo_right", locals: {slug: current_page.data.slug, caption: '', photo: '01/DSC02654'})
   .Content
     .PhotoRow
       .PhotoEssayFooterNavigation
-        = link_to "/photoessays/2013/los-angeles", class: 'PhotoEssay_nav PhotoEssay_nav--next', style: "background-image: url('/images/photoessays/2013/los-angeles/banner.jpg')" do
+        = link_to "/photoessays/2013/los-angeles", class: 'PhotoEssay_nav PhotoEssay_nav--previous', style: "background-image: url('/images/photoessays/2013/los-angeles/banner.jpg')" do
           .PhotoEssay_nav_label Previous
           .PhotoEssay_nav_title Los Angeles
           .PhotoEssay_nav_date July 26, 2013
+        = link_to "/photoessays/2013/denver", class: 'PhotoEssay_nav PhotoEssay_nav--next', style: "background-image: url('/images/photoessays/2013/denver/banner.jpg')" do
+          .PhotoEssay_nav_label Next
+          .PhotoEssay_nav_title Denver
+          .PhotoEssay_nav_date August 1, 2013

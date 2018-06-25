@@ -54,6 +54,7 @@
     dd
       font-family: $font_body
       +fluid-scale(font-size, $responsive_min, $responsive_max, 12px, 14px)
+  
 
   .PlaceCard_attributeGrid
     .Attribute_pair
@@ -63,6 +64,12 @@
     margin-left: 20px
     padding-left: 20px
     border-left: 1px solid rgba(0,0,0,0.1)
+
+  .PlaceCard_attributes--flight .Attribute_pair + .Attribute_pair
+    border-left: 0 none
+    margin-left: 0
+    padding-left: 44px
+    background: image-url('photoessays/trips/transport_plane_card.svg') 10px 50% no-repeat
 
   .PlaceCard_rating:after
     opacity: 0.1

@@ -1,0 +1,330 @@
+---
+  title: Denver
+  slug: '2013/denver'
+  subtitle: Catching our breath in Colorado
+  body_classes: page-photoessays
+  meta_description: Catching our breath in Colorado
+  meta_keywords:
+  trip:
+    location: america
+    weather: sun
+    arrival: plane
+    departure: plane
+    dates:
+      from: 2013-8-1
+      to: 2013-8-4
+---
+
+- @og_image_override = 'photoessays/2013/denver'
+
+= partial("photoessays/components/breadcrumb")
+= partial("/photoessays/components/banner", locals: {slug: current_page.data.slug, title: current_page.data.title, subtitle: current_page.data.subtitle, trip: current_page.data.trip})
+
+.Page
+  .Content#story
+    .Row
+      .Content_Main.Content_Article
+        :markdown
+          Onboard our flight, I attempt to send Richard the photos he backed up to my laptop over airplane Wifi.
+
+          The Wifi was paid access only, however, and having deep trust issues about plane Wifi, we decide to abandon the plan.
+
+          The flight to Colorado from Vegas is less than two hours. I passed the time watching a couple of bits from speedruns from AGDQ 2013.
+
+          Flying sure is a more efficient means of transport than greyhound bus.
+    
+    = partial("photoessays/components/photo_right", locals: {slug: current_page.data.slug, caption: '', photo: '01/DSC02656'})
+
+    .Row
+      .Content_Main.Content_Article
+        :markdown
+          We disembark at the airport, and head to baggage claim.
+
+          Denver airport seems a little confusingly laid out to us; there’s a lot of verticality, and we’ll have to navigate it again when we depart to St. Louis. 
+
+          Eventually, after we pick up bags and endure the world’s slowest ATM, we head out into an overcast afternoon, and queue for a bus.
+
+          After about 20 minutes, we realise we’re in the wrong place. We head back through the airport, towards another platform.
+    
+    = partial("photoessays/components/photo_two_column", locals: {slug: current_page.data.slug, 'left': ['01/IMG_3121'], 'right': ['01/IMG_3127'] })
+
+    .Row
+      .Content_Main.Content_Article
+        :markdown
+          Finally, we get on a bus, and ride in to the city proper.
+
+    = partial("photoessays/components/photo_two_column", locals: {slug: current_page.data.slug, left: ['01/DSC02666'], right: ['01/DSC02669'] })
+
+    .Row
+      .Content_Main.Content_Article
+        :markdown
+          Lugging our suitcases through downtown Denver, we attempt to find a bus to take us to our accomodation.
+
+          We hop on board a far busier local bus route, and try to be as unimposing as six people accompanied by checked luggage can be.
+
+    = partial("photoessays/components/photo_right", locals: {slug: current_page.data.slug, caption: '', photo: '01/IMG_3132'})
+
+    .Row
+      .Content_Main.Content_Article
+        :markdown
+          Confused and tired, we missed our stop. Tensions began to run a little high. We walked on foot through afternoon, downtown Colorado.
+          
+          Eventually, we arrived at our accomodation.
+
+          There was an issue with our booking, luckily however, they we were able to get two rooms next door to each other and combine them into one.
+
+          We regrouped at the hotel.
+
+    = partial("photoessays/components/place_accomodation", locals: {slug: current_page.data.slug, image: '01/accomodation', title: 'Ramada by Wyndham Denver', address: '1150 E Colfax Ave, Denver', checkin: '1 August', checkout: '4 August', rating: 3 })
+
+    = partial("photoessays/components/photo_right", locals: {slug: current_page.data.slug, caption: '', photo: '01/DSC02676'})
+
+    .Row
+      .Content_Main.Content_Article
+        :markdown
+          Eventually, we decided to venture out in search of food.
+
+    = partial("photoessays/components/place_restaurant", locals: {slug: current_page.data.slug, image: '01/sliceworks', title: 'Sliceworks', address: '700 E Colfax Ave, Denver', price: '$$', menu: 'Pizza', rating: 5, link: '' })
+
+    .Row
+      .Content_Main.Content_Article
+        :markdown
+          We stumbled across Sliceworks in downtown Denver.
+
+    = partial("photoessays/components/photo_grid", locals: {slug: current_page.data.slug, rows: [ { count: 2, caption: 'Some might fine pies.', photos: ['01/IMG_3136','01/IMG_3137'] } ] } )
+
+    .Row
+      .Content_Main.Content_Article
+        :markdown
+          We opted for two pizzas. A vegetarian, and a cheeseburger pizza.
+
+          We took them back to the hotel, opting for a chill night in. Both pizzas were fantastic.
+
+          We grabbed some drinks, and had a chill night in. It was a mellow night, much needed after the stress of the day.
+
+          Many drinks and real talks later, we headed to bed.
+
+    .Row#august-02
+      .Content_Main.Content_Article
+        :markdown
+          ---
+
+          We awoke the next morning to find ourselves confronted from the aftermath of the previous night.
+
+    = partial("photoessays/components/photo_grid", locals: {slug: current_page.data.slug, rows: [ { count: 2, caption: '🤔', photos: ['02/IMG_1894','02/IMG_1896'] } ] } )
+
+    .Row
+      .Content_Main.Content_Article
+        :markdown
+          Feeling refreshed, we decided to explore Denver.
+
+          The city had a chill, relaxed vibe about it. It was especially nice after the hustle and bustle of Las Vegas.
+    
+    = partial("photoessays/components/photo_two_column", locals: {slug: current_page.data.slug, left: ['02/IMG_1902'], right: ['02/IMG_1906','02/IMG_3150'] })
+
+    = partial("photoessays/components/photo_right", locals: {slug: current_page.data.slug, caption: '', photo: '02/IMG_1909'})
+
+    .Row
+      .Content_Main.Content_Article
+        :markdown
+          Soon, we found a modern Mexican joint for lunch.
+
+    = partial("photoessays/components/place_restaurant", locals: {slug: current_page.data.slug, image: '02/IMG_1910', title: 'Tamayo', address: '1400 Larimer Street, Denver', price: '$$', menu: 'Mexican', rating: 4, link: 'https://www.eattamayo.com/' })
+    = partial("photoessays/components/photo_two_column", locals: {slug: current_page.data.slug, left: ['02/IMG_3160'], right: ['02/IMG_1913','02/DSC02690'] })
+
+    = partial("photoessays/components/photo_right", locals: {slug: current_page.data.slug, caption: '', photo: '02/IMG_3162'})
+
+    .Row
+      .Content_Main.Content_Article
+        :markdown
+          After lunch, we continued exploring the local area.
+
+    = partial("photoessays/components/photo_right", locals: {slug: current_page.data.slug, caption: '', photo: '02/IMG_1917'})
+    = partial("photoessays/components/photo_two_column", locals: {slug: current_page.data.slug, left: ['02/DSC02698'], right: ['02/DSC02699'] })
+
+    .Row
+      .Content_Main.Content_Article
+        :markdown
+          We stumbled across the Rocky Mountain Chocolate Factory, where Butcher made a friend in Truffles the bear.
+
+    = partial("photoessays/components/photo_right", locals: {slug: current_page.data.slug, caption: 'Today has been... ruff', photo: '02/IMG_1924'})
+    = partial("photoessays/components/photo_two_column", locals: {slug: current_page.data.slug, left: ['02/IMG_1930'], right: ['02/DSC02714'] })
+    
+    .Row
+      .Content_Main.Content_Article
+        :markdown
+          We continued exploring.          
+
+    = partial("photoessays/components/photo_right", locals: {slug: current_page.data.slug, caption: 'GOD B LESS AME RICA', photo: '02/IMG_3185'})
+    = partial("photoessays/components/photo_two_column", locals: {slug: current_page.data.slug, left: ['02/IMG_1944','02/IMG_1969'], right: ['02/IMG_1965'] })
+    = partial("photoessays/components/photo_full", locals: {slug: current_page.data.slug, caption: '', photo: '02/DSC02725'})
+    = partial("photoessays/components/photo_full", locals: {slug: current_page.data.slug, caption: '', photo: '02/IMG_1979'})
+
+    .Row
+      .Content_Main.Content_Article
+        :markdown
+          We found the Colorado convention center, replete with a stylised carving of a bear peering in to the center.
+
+    = partial("photoessays/components/photo_right", locals: {slug: current_page.data.slug, caption: '', photo: '02/DSC02751'})
+    = partial("photoessays/components/photo_two_column", locals: {slug: current_page.data.slug, left: ['02/DSC02761','02/IMG_3210','02/IMG_1987'], right: ['02/DSC02746','02/IMG_3220'] })
+
+    .Row
+      .Content_Main.Content_Article
+        :markdown
+          Once the photo-ops were exhausted, we continued on, until we reached a free shuttle, to take us back up.
+
+          The weather turned grey and overcast.
+
+    = partial("photoessays/components/photo_right", locals: {slug: current_page.data.slug, caption: '', photo: '02/IMG_3225'})
+  = partial("photoessays/components/photo_full", locals: {slug: current_page.data.slug, caption: '', photo: '02/IMG_3226'})
+
+  .Content
+    .Row
+      .Content_Main.Content_Article
+        :markdown
+          We came across a rather nice bookstore.
+
+    = partial("photoessays/components/photo_right", locals: {slug: current_page.data.slug, caption: '', photo: '02/DSC02805'})
+
+    = partial("photoessays/components/place_of_interest", locals: {slug: current_page.data.slug, image: '02/DSC02808', title: 'Tattered Cover', address: '1628 16th St, Denver, CO 80202', place: 'Bookstore', rating: 5, link:'' })
+    = partial("photoessays/components/photo_two_column", locals: {slug: current_page.data.slug, left: ['02/IMG_2020'], right: ['02/IMG_2022','02/IMG_2027'] })
+
+    .Row
+      .Content_Main.Content_Article
+        :markdown
+          The interior was large and cozy, making you want to lounge out with a book and read, especially on a cloudy afternoon as was the case that day.
+
+          I picked up a copy of The Cuckoo’s Calling.
+
+          Eventually, we departed, and made our way back to the hotel by bus.
+
+    = partial("photoessays/components/photo_right", locals: {slug: current_page.data.slug, caption: '', photo: '02/DSC02811'})
+    = partial("photoessays/components/photo_right", locals: {slug: current_page.data.slug, caption: '', photo: '02/IMG_4134'})
+    
+    .Row
+      .Content_Main.Content_Article
+        :markdown
+          Later that evening, we set off in search of food.
+
+          We settled on a nearby Wendy’s, wanting to give a ‘Murrican fast food franchise a try.
+    
+    = partial("photoessays/components/photo_right", locals: {slug: current_page.data.slug, caption: 'Scanning the nutritional panels like 👀', photo: '02/IMG_2033'})
+
+    .Row
+      .Content_Main.Content_Article
+        :markdown
+          After a rather ordinary burger (Richard’s Pretzle bun burger looked pretty legit, though), we headed back to the hotel, picking up some drinks and snacks along the way. 
+
+    = partial("photoessays/components/photo_right", locals: {slug: current_page.data.slug, caption: '', photo: '02/IMG_2034 '})
+
+    .Row#august-03
+      .Content_Main.Content_Article
+        :markdown
+          ---
+
+          The following day was overcast and rainy.
+          
+          We decided to spend the day taking it easy. Besides, we had chores to do.
+
+          We took it in turns to use the coin-operated laundry. Between laundry sessions, I started reading through The Cuckoo’s Calling.
+
+    = partial("photoessays/components/photo_grid", locals: {slug: current_page.data.slug, rows: [ { count: 2, caption: 'Not the most glamourous day on holiday, but a necessary one...', photos: ['03/IMG_3249','03/IMG_3252'] } ] } )
+
+    .Row
+      .Content_Main.Content_Article
+        :markdown
+          That afternoon, we headed out.
+          
+          We ended up hitting up an Irish pub for a late lunch.
+    
+    = partial("photoessays/components/place_restaurant", locals: {slug: current_page.data.slug, image: '03/irish-snug', title: 'The Irish Snug', address: '1201 E Colfax Ave #100, Denver, CO 80218', price: '$$', menu: 'Irish Pub', rating: 3, link: '' })
+
+    .Row
+      .Content_Main.Content_Article
+        :markdown
+          After a pleasant, boozy lunch, we returned back to our hotel and continued our laundry chores.
+
+          ---
+
+          That evening, we set off again in search of dinner.
+
+          It was particularly rainy so we tried to find a place in haste. We passed a rather humourously decoared, lurid green weed “dispensary”.
+    
+    = partial("photoessays/components/photo_right", locals: {slug: current_page.data.slug, caption: 'All I managed with my potato-quality iPhone in the rain. I guess you can at least see the colour...', photo: '03/IMG_3257 '})
+
+
+    .Row
+      .Content_Main.Content_Article
+        :markdown
+          We ended up finding another pub for dinner.
+
+    = partial("photoessays/components/place_restaurant", locals: {slug: current_page.data.slug, image: '03/streets-of-london', title: 'Streets of London Pub', address: '1501 E Colfax Ave, Denver, CO 80218, USA', price: '$', menu: 'Bar', rating: 3, link: '' })
+
+    = partial("photoessays/components/photo_right", locals: {slug: current_page.data.slug, caption: '', photo: '03/IMG_3259 '})
+
+    .Row
+      .Content_Main.Content_Article
+        :markdown
+          Our rainy night at the Streets of London pub was rather memorable.
+
+          There was a local artist performing. He spotted our table and overheard our accents, and he ascertained we were from Australia.
+
+          We spent a great night, with some good quality bants, and sang along to Waltzing Matilda.
+
+    .Row#august-04
+      .Content_Main.Content_Article
+        :markdown
+          ---
+
+          The following day, we gave the hotel buffet breakfast a try. 
+
+          It wasn’t quite Vegas buffet quality, but it was pretty decent. I had some waffles and scrambled eggs.
+
+          We set off and explored the local area, ahead of our flight scheduled for St Louis that evening.
+
+    = partial("photoessays/components/photo_right", locals: {slug: current_page.data.slug, caption: '', photo: '04/IMG_3267'})
+
+    .Row
+      .Content_Main.Content_Article
+        :markdown
+          We stopped by a local electronics store, where I picked up a Logitech MX Anywhere mouse.
+
+          After which, we headed back to the hotel.
+      
+    = partial("photoessays/components/photo_right", locals: {slug: current_page.data.slug, caption: '🤔', photo: '04/IMG_3271'})
+
+    .Row
+      .Content_Main.Content_Article
+        :markdown
+          Later that afternoon, we grabbed our luggage and headed for the airport.
+    
+    = partial("photoessays/components/photo_right", locals: {slug: current_page.data.slug, caption: '', photo: '04/DSC02817'})
+    = partial("photoessays/components/photo_two_column", locals: {slug: current_page.data.slug, left: ['04/DSC02820'], right: ['04/DSC02822'] })
+
+    .Row
+      .Content_Main.Content_Article
+        :markdown
+          We checked our luggage, and found dinner at the airport food court. I opted for Panda Express.
+
+          As we passed through security checkpoints, guards politely asked us where we were headed. When we mentioned St Louis, they sort of looked at us and did a double-take. Puzzled, we continued through to our gate.
+
+          At the gate, Richard informed us of the rather high crime rate of our next destination, St Louis. Both Richard and I were a little apprehensive.
+
+    = partial("photoessays/components/photo_right", locals: {slug: current_page.data.slug, caption: '', photo: '04/DSC02832'})
+
+    .Row
+      .Content_Main.Content_Article
+        :markdown
+          But it was a little late for that!
+          
+          In no time at all, we boarded our flight bound for St Louis.
+
+    = partial("photoessays/components/flight", locals: {slug: current_page.data.slug, image: '04/IMG_3280', title: 'Flight 282', origin: 'DEN', destination: 'STL', gate: '', seat: '', airline: 'Fronteir Airlines', depart: '7:15pm', arrive: '10:12pm', rating: '' })
+
+  .Content
+    .PhotoRow
+      .PhotoEssayFooterNavigation
+        = link_to "/photoessays/2013/las-vegas", class: 'PhotoEssay_nav PhotoEssay_nav--previous', style: "background-image: url('/images/photoessays/2013/las-vegas/banner.jpg')" do
+          .PhotoEssay_nav_label Previous
+          .PhotoEssay_nav_title Las Vegas
+          .PhotoEssay_nav_date July 29, 2013
