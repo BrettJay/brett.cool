@@ -13,16 +13,33 @@
     dates:
       from: 2013-8-1
       to: 2013-8-4
+  days:
+    august-01:
+      date: 2018-08-01
+      title: Arriving in Denver
+      description: pizza and chill
+    august-02:
+      date: 2018-08-02
+      title: Exploring Denver
+      description: bears and books
+    august-03:
+      date: 2018-08-03
+      title: Downtime and laundry
+      description: and a couple of pubs
+    august-04:
+      date: 2018-08-04
+      title: Departing for St Louis
+      description: back to Colorado airport
 ---
 
 - @og_image_override = 'photoessays/2013/denver'
 
-= partial("photoessays/components/breadcrumb")
+= partial("photoessays/2013/day_navigation", locals: { days: current_page.data.days } )
 = partial("/photoessays/components/banner", locals: {slug: current_page.data.slug, title: current_page.data.title, subtitle: current_page.data.subtitle, trip: current_page.data.trip})
 
 .Page
   .Content#story
-    .Row
+    .Row#august-01
       .Content_Main.Content_Article
         :markdown
           Onboard our flight, I attempt to send Richard the photos he backed up to my laptop over airplane Wifi.
@@ -319,3 +336,7 @@
           .PhotoEssay_nav_label Previous
           .PhotoEssay_nav_title Las Vegas
           .PhotoEssay_nav_date July 29, 2013
+        = link_to "/photoessays/2013/st-louis", class: 'PhotoEssay_nav PhotoEssay_nav--next', style: "background-image: url('/images/photoessays/2013/st-louis/banner.jpg')" do
+          .PhotoEssay_nav_label Next
+          .PhotoEssay_nav_title St Louis
+          .PhotoEssay_nav_date August 4, 2013

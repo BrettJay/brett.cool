@@ -1,0 +1,23 @@
+<script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
+
+:javascript
+  $(document).ready(function () {
+    $('.Menu_Button').on('click', function() {
+      $('.PhotoEssaySubHeader').toggleClass('PhotoEssaySubHeader--MenuOpen')
+    });
+  });
+
+.PhotoEssaySubHeader
+  .Content.Content--fluid
+    .Row
+      .SubHeader_Main
+        .LinkBreadCrumbs
+          #{link_to 'Photoessays', '/photoessays/', class: 'BreadCrumb_Header'}
+          .BreadCrumb_Header
+        .Menu_Button
+          Date
+      .DayMenu
+        .MenuClip
+          - days.each do | day |
+            = link_to "#" + day[0], class: 'DayItem' do
+              <span class="DayDate">#{day[1].date.strftime("%b %-d")}</span> #{day[1].title} <span class="DayDescription">#{day[1].description}</span>
