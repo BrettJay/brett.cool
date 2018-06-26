@@ -10,11 +10,11 @@
         .PlaceCard_attributes.PlaceCard_attributes--flight
           %dl.Attribute_pair
             %dt= origin
-            %dd Deparing #{depart}
+            %dd= depart
 
           %dl.Attribute_pair
             %dt= destination
-            %dd Arriving #{arrive}     
+            %dd= arrive
         
         - if !gate.empty? && !seat.empty?
           .PlaceCard_attributes
