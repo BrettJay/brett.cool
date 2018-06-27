@@ -1,0 +1,33 @@
+---
+  title: Pittsburgh
+  slug: '2013/pittsburgh'
+  subtitle: Chill times
+  body_classes: page-photoessays
+  meta_description: Chill times
+  meta_keywords:
+  trip:
+    location: america
+    weather: sun
+    arrival: bus
+    departure: bus
+    dates:
+      from: 2013-8-7
+      to: 2013-8-9
+  days:
+    august-07:
+      date: 2018-08-07
+      title: Arriving in Pittsburgh
+      description: and dodgy motels
+---
+
+- @og_image_override = 'photoessays/2013/pittsburgh'
+
+= partial("photoessays/2013/day_navigation", locals: { days: current_page.data.days } )
+= partial("/photoessays/components/banner", locals: {slug: current_page.data.slug, title: current_page.data.title, subtitle: current_page.data.subtitle, trip: current_page.data.trip})
+
+.Page
+  .Content#story#august04
+    .Row
+      .Content_Main.Content_Article
+        :markdown
+          Hej
