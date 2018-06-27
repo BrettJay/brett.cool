@@ -12,6 +12,6 @@
         %h1 Photoessays
 
     - data.photoessays.each do | photoessays |
-      .Content_photoessays.Row
+      .Content_photoessays.Row{id: photoessays.year }
         - photoessays.photoessays.each do | photoessay |
           = partial("photoessays/components/card", locals: { photoessay: photoessay})
