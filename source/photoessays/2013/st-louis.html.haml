@@ -1,9 +1,9 @@
 ---
   title: St Louis
   slug: '2013/st-louis'
-  subtitle: An arch
+  subtitle: Six guys one arch
   body_classes: page-photoessays
-  meta_description: An arch
+  meta_description: Six guys one arch
   meta_keywords:
   trip:
     location: america
@@ -13,16 +13,275 @@
     dates:
       from: 2013-8-4
       to: 2013-8-6
+  days:
+    august-04:
+      date: 2018-08-04
+      title: Landing in St Louis
+      description: and dodgy motels
+    august-05:
+      date: 2018-08-05
+      title: Visiting the Arch
+      description: and downtown St Louis
+    august-06:
+      date: 2018-08-06
+      title: Departing St Louis
+      description: a red eye greyhouse odyssey
 ---
 
 - @og_image_override = 'photoessays/2013/st-louis'
 
-= partial("photoessays/components/breadcrumb")
-
+= partial("photoessays/2013/day_navigation", locals: { days: current_page.data.days } )
 = partial("/photoessays/components/banner", locals: {slug: current_page.data.slug, title: current_page.data.title, subtitle: current_page.data.subtitle, trip: current_page.data.trip})
 
 .Page
-  .Content#story
+  .Content#story#august04
     .Row
       .Content_Main.Content_Article
         :markdown
+          We arrived late that night in St Louis.
+          
+          Given the time, opted to make our way to the motel by cab. We hauled our luggage into the boot, and set off.
+
+    = partial("photoessays/components/photo_right", locals: {slug: current_page.data.slug, caption: 'Spotted a square card reader in the Taxi driver’s car', photo: '04/IMG_3282'})
+    
+
+    .Row
+      .Content_Main.Content_Article
+        :markdown
+          Our motel was actually close to the airport, and rather cheap too.
+
+          We soon found out why. It kind of looked like one of those motels you’d see in a gritty noir film.
+
+    = partial("photoessays/components/place_accomodation", locals: {slug: current_page.data.slug, image: '04/IMG_3286', title: 'America’s Best Value Inn', address: '4545 Woodson Road, 63134, St Louis, USA', checkin: '4 August', checkout: '6 August', rating: 2 })
+
+    .Row
+      .Content_Main.Content_Article
+        :markdown
+          We checked in, and moved our posessions up to the adjoining rooms. There was a rather disconcerting blood stain on one of the bathroom walls.
+          
+          Richard also noticed that the shower curtain was cloudy for privacy, but had a clear horizontal strip around eye-level, as if to help you see any potential intruders.
+
+  = partial("photoessays/components/photo_full", locals: {slug: current_page.data.slug, caption: '', photo: '04/IMG_3284'})
+
+  .Content
+    = partial("photoessays/components/photo_two_column", locals: {slug: current_page.data.slug, left: ['04/IMG_4203','04/IMG_3285'], right: ['04/IMG_4224'] })
+    .Row
+      .Content_Main.Content_Article
+        :markdown
+          As there was nothing in the nearby area, and it was already quite late, we decided to retire for the night, and all chill indoors with snacks.
+
+          I distinctly remember drifting off to sleep while late night TV played. I heard some fluffy advert from a pharmaceutical company, and was woken up by the almost parody-like quality of the latter half of the advert, which had to put up a disclaimer for all the various side effects of the medication. Late night American TV is strange, and beyond parody in some ways.
+
+          A little while later, we went to bed.
+
+    .Row#august-05
+      .Content_Main.Content_Article
+        :markdown
+          ---
+
+          The following morning, we left our motel in search of food.
+
+    = partial("photoessays/components/photo_right", locals: {slug: current_page.data.slug, caption: 'The view from our rooms, a few floors up', photo: '05/IMG_3300'})
+
+    .Row
+      .Content_Main.Content_Article
+        :markdown
+          Nearby was a pretty good pancake place.
+
+    = partial("photoessays/components/place_restaurant", locals: {slug: current_page.data.slug, image: '05/golden_pancake', title: 'Golden Pancake', address: 'Golden Pancake Restaurant', price: '$', menu: 'Breakfast', rating: 4, link: '' })
+
+    = partial("photoessays/components/photo_right", locals: {slug: current_page.data.slug, caption: 'Some pretty good pancakes and waffles', photo: '05/IMG_3288'})
+    = partial("photoessays/components/photo_two_column", locals: {slug: current_page.data.slug, left: ['05/IMG_3292'], right: ['05/IMG_3293'] })
+
+    .Row
+      .Content_Main.Content_Article
+        :markdown
+          After brunch, we decided to head off to see the Gateway Arch monument.
+
+          We set off, walking to a nearby train station.
+
+    = partial("photoessays/components/photo_right", locals: {slug: current_page.data.slug, caption: '', photo: '05/IMG_2040'})
+
+    .Row
+      .Content_Main.Content_Article
+        :markdown
+          We boarded a train, and soon enough were on our way to Gateway Arch.
+
+          Remembering the statistics Richard had rattled off the previous evening, it couldn’t help but occur to me that given concealed gun carry was legal, there was a decent probability that someone onboard the train was carrying a firearm (and in other places we’d already been).
+
+          We arrived in downtown St Louis. Even at a distance, we could see the way to the arch.
+
+          We walked through the city grid towards the west bank of the Mississippi River. Yep, it was a big arch, alright.
+
+  = partial("photoessays/components/photo_full", locals: {slug: current_page.data.slug, caption: '', photo: 'banner'})
+
+  .Content
+    = partial("photoessays/components/photo_two_column", locals: {slug: current_page.data.slug, left: ['05/IMG_2042', '05/IMG_2058'], right: ['05/IMG_2049', '05/IMG_2054'] })
+
+  = partial("photoessays/components/photo_full", locals: {slug: current_page.data.slug, caption: '', photo: '05/IMG_3316'})
+
+  .Content
+    = partial("photoessays/components/photo_two_column", locals: {slug: current_page.data.slug, left: ['05/IMG_3319','05/IMG_2081'], right: ['05/IMG_3321'] })
+    = partial("photoessays/components/photo_full", locals: {slug: current_page.data.slug, caption: '', photo: '05/IMG_2097'})
+    = partial("photoessays/components/photo_right", locals: {slug: current_page.data.slug, caption: '', photo: '05/IMG_2091'})
+    = partial("photoessays/components/photo_full", locals: {slug: current_page.data.slug, caption: '', photo: '05/IMG_2137'})
+    .Row
+      .Content_Main.Content_Article
+        :markdown
+          The city was a lovely, bustling place.
+
+          Once we’d explored the local area, we trekked back through the city grid.
+
+    = partial("photoessays/components/photo_two_column", locals: {slug: current_page.data.slug, left: ['05/IMG_3329'], right: ['05/IMG_3330'] })
+    = partial("photoessays/components/photo_full", locals: {slug: current_page.data.slug, caption: '', photo: '05/IMG_2121'})
+    = partial("photoessays/components/photo_right", locals: {slug: current_page.data.slug, caption: '', photo: '05/IMG_2122'})
+    = partial("photoessays/components/photo_full", locals: {slug: current_page.data.slug, caption: '', photo: '05/IMG_3334'})
+    
+    .Row
+      .Content_Main.Content_Article
+        :markdown
+          We dropped by a Starbucks for a coffee, and a quick break.
+
+          After a much-needed pick me up, we headed for an underground train station, where we caught a train back to our motel.
+
+    = partial("photoessays/components/photo_right", locals: {slug: current_page.data.slug, caption: '', photo: '05/IMG_3340'})
+    = partial("photoessays/components/photo_two_column", locals: {slug: current_page.data.slug, left: ['05/IMG_3347'], right: ['05/IMG_3353'] })
+
+    .Row#august-06
+      .Content_Main.Content_Article
+        :markdown
+          ---
+          
+          The next day, we packed our luggage ahead of our departure to Pittsburgh.
+          
+          It was going going to be a red eye trip, with a transfer around 1am, and another one a few hours later. It was going to be a long night.
+
+          We dropped our bags at the motel reception, and headed to a nearby Subway to grab some lunch.
+
+    = partial("photoessays/components/photo_right", locals: {slug: current_page.data.slug, caption: 'Very similar to Australia. The tomatoes looked very different, though.', photo: '06/IMG_3354'})
+
+    .Row
+      .Content_Main.Content_Article
+        :markdown
+          After lunch, we returned to our motel, where the reception kindly helped organise us a maxi taxi to the Greyhound depot in town.
+
+          After a short wait, a man arrived with a van. We loaded on our luggage, and were away.
+    
+    = partial("photoessays/components/photo_right", locals: {slug: current_page.data.slug, caption: '', photo: '06/DSC02836'})
+
+    .Row
+      .Content_Main.Content_Article
+        :markdown
+          Our driver regailed us with tidbits about St Louis as we headed towards the Greyhound depot in town. He explained the rich local music scene, and was (mistakenly) under the impression at first that we were in a band.
+
+          It was really nice to hear about the local music scene, and it was a bit of a shame we were only getting a sense of this side of the city as we were leaving. We didn’t get to see a lot of St Louis outside our day trip the day prior, being stranded way out near the airport.
+
+    = partial("photoessays/components/photo_full", locals: {slug: current_page.data.slug, caption: '', photo: '06/DSC02838'})
+
+    .Row
+      .Content_Main.Content_Article
+        :markdown
+          We soon arrived at the depot downtown.
+
+          Our driver unloaded our luggage, and bade us farewell. We went through the depot and got on to our bus.
+
+    = partial("photoessays/components/photo_two_column", locals: {slug: current_page.data.slug, left: ['06/DSC02844'], right: ['06/DSC02848','06/DSC02849'] })
+    = partial("photoessays/components/photo_right", locals: {slug: current_page.data.slug, caption: 'Us, prior to the 13 hour journey', photo: '06/IMG_3364'})
+
+    .Row
+      .Content_Main.Content_Article
+        :markdown
+          Before long, our bus pulled out of the depot, and we were away.
+
+    = partial("photoessays/components/photo_two_column", locals: {slug: current_page.data.slug, left: ['06/DSC02852'], right: ['06/DSC02862','06/DSC02856'] })
+
+    .Row
+      .Content_Main.Content_Article
+        :markdown
+          Our bus hurtled along major roads towards our first transfer.
+
+          The ride was rather uneventful, but very long. The plush seats on Greyhound buses look like they should be comfortable, but after a couple of hours, you invariably feel a strain in your lower back, they evidently don’t provide proper back support. I’d take a domestic economy flight seat over a Greyhound seat any day.
+
+          Late night, we arrived at our first transfer depot, grabbed our posessions, and waited to get on to our next bus.
+    
+    = partial("photoessays/components/photo_two_column", locals: {slug: current_page.data.slug, left: ['06/DSC02887'], right: ['06/DSC02888','06/DSC02889'] })
+
+    .Row
+      .Content_Main.Content_Article
+        :markdown
+          We headed outside for some fresh, 1am air.
+
+    = partial("photoessays/components/photo_right", locals: {slug: current_page.data.slug, caption: '', photo: '06/IMG_3366'})
+    = partial("photoessays/components/photo_two_column", locals: {slug: current_page.data.slug, left: ['06/IMG_3370'], right: ['06/IMG_3368'] })
+
+    .Row
+      .Content_Main.Content_Article
+        :markdown
+          A little while later, our next bus was scheduled to depart.
+          
+          We loaded our luggage on, and were off again.
+
+          ---
+
+          One uneventful, sleepless bus ride later, we arrived at the next Greyhound depot in downtown Columbus.
+
+          The depot was quiet and mostly empty at this time of morning.
+
+    = partial("photoessays/components/photo_right", locals: {slug: current_page.data.slug, caption: '', photo: '06/IMG_3371'})
+
+    .Row
+      .Content_Main.Content_Article
+        :markdown
+          It was about 3am by now.
+
+          We camped out by a wall with our posessions in the quiet depot, trying to pass the time.
+
+    = partial("photoessays/components/photo_two_column", locals: {slug: current_page.data.slug, left: ['06/IMG_3374'], right: ['06/IMG_3375'] })
+
+    .Row
+      .Content_Main.Content_Article
+        :markdown
+          I took a walk around the depot, trying to wake myself up, or find anything to pass the time.
+
+          I watched Butcher and Irwin played a couple of games of a Terminator Salvation arcade game. I sat at a racing arcade game for a while to rest.
+
+    = partial("photoessays/components/photo_right", locals: {slug: current_page.data.slug, caption: '', photo: '06/IMG_3381'})
+
+    .Row
+      .Content_Main.Content_Article
+        :markdown
+          A little while later, I headed to the men’s room.
+          
+          My own thoughts were reflected at me from a bathroom stall.
+
+    = partial("photoessays/components/photo_right", locals: {slug: current_page.data.slug, caption: 'I bet I fly next time, too.', photo: '06/IMG_3387'})
+
+    .Row
+      .Content_Main.Content_Article
+        :markdown
+          For what felt like an eternity, we waited in.
+          
+          It felt like time may have just stopped.
+          
+          The harsh, flickering fluroescent lighting glaring down on us, permeating through closed eyelids.
+
+          The silence of the terminal, with only the sound of the television programme echoing in the vast emptiness.
+
+          One by one, our group bowed to the inevitable, slumping down against the wall with our luggage.
+    
+    = partial("photoessays/components/photo_right", locals: {slug: current_page.data.slug, caption: '', photo: '06/IMG_3390'})
+
+    .Row
+      .Content_Main.Content_Article
+        :markdown
+          It was going to be a long morning.
+
+    = partial("photoessays/components/video", locals: {slug: current_page.data.slug, video: '06/IMG_3391'})
+
+  .Content
+    .PhotoRow
+      .PhotoEssayFooterNavigation
+        = link_to "/photoessays/2013/denver", class: 'PhotoEssay_nav PhotoEssay_nav--previous', style: "background-image: url('/images/photoessays/2013/denver/banner.jpg')" do
+          .PhotoEssay_nav_label Previous
+          .PhotoEssay_nav_title Denver
+          .PhotoEssay_nav_date August 1, 2013

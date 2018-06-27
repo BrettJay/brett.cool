@@ -94,8 +94,7 @@
         :markdown
           As we waited to check in, an impromptu percussion performance began to promote the Blue Man Group. We, along with many of our fellow lobby occupants, swarmed to watch.
 
-    .Row.pt4.pb4.pl1.pr1
-      %video{src: "/#{images_dir}/photoessays/#{current_page.data.slug}/28/IMG_2506_lq.mp4", controls: true, preload: 'metadata'}
+    = partial("photoessays/components/video", locals: {slug: current_page.data.slug, video: '28/IMG_2506_lq'})
 
     .Row
       .Content_Main.Content_Article
@@ -167,8 +166,7 @@
 
           Butcher tried his hand at a slot machine.
 
-    .Row.pt4.pb4.pl1.pr1
-      %video{src: "/#{images_dir}/photoessays/#{current_page.data.slug}/28/IMG_2630_lq.mp4", controls: true, preload: 'metadata'}
+    = partial("photoessays/components/video", locals: {slug: current_page.data.slug, video: '28/IMG_2630_lq'})
 
     = partial("photoessays/components/photo_two_column", locals: {slug: current_page.data.slug, 'left': ['28/IMG_2655', '28/IMG_2652'], 'right': ['28/IMG_2665'] })
 
