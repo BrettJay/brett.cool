@@ -13,41 +13,32 @@
     dates:
       from: 2013-7-28
       to: 2013-8-1
+  days:
+    july-28:
+      date: 2018-07-28
+      title: Arriving in Las Vegas
+      description: and street drinking
+    july-29:
+      date: 2018-07-29
+      title: New York-New York
+      description: and Zumanity
+    july-30:
+      date: 2018-07-30
+      title: Exploring the main strip
+      description: with all the photo-ops
+    july-31:
+      date: 2018-07-31
+      title: Exploring outside the main strip
+      description: and Penn & Teller
+    august-01:
+      date: 2018-08-01
+      title: Deparing Vegas
+      description: Bound for Colorado
 ---
 
 - @og_image_override = 'photoessays/2013/las-vegas'
 
-<script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
-
-:javascript
-  $(document).ready(function () {
-    $('.Menu_Button').on('click', function() {
-      $('.PhotoEssaySubHeader').toggleClass('PhotoEssaySubHeader--MenuOpen')
-    });
-  });
-
-.PhotoEssaySubHeader
-  .Content.Content--fluid
-    .Row
-      .SubHeader_Main
-        .LinkBreadCrumbs
-          #{link_to 'Photoessays', '/photoessays/', class: 'BreadCrumb_Header'}
-          .BreadCrumb_Header
-        .Menu_Button
-          Date
-      .DayMenu
-        .MenuClip
-          = link_to "#july-28", class: 'DayItem' do
-            <span class="DayDate">July 28</span> Arriving in Las Vegas <span class="DayDescription">and street drinking</span>
-          = link_to "#july-29", class: 'DayItem' do
-            <span class="DayDate">July 29</span> New York-New York <span class="DayDescription">and Zumanity</span>
-          = link_to "#july-30", class: 'DayItem' do
-            <span class="DayDate">July 30</span> Exploring the main strip <span class="DayDescription">and all the photos</span>
-          = link_to "#july-31", class: 'DayItem' do
-            <span class="DayDate">July 31</span> Outside the main strip <span class="DayDescription">and Penn & Teller</span>
-          = link_to "#august-01", class: 'DayItem' do
-            <span class="DayDate">Aug 1</span> Departing Vegas <span class="DayDescription">On to Colorado! </span>
-
+= partial("photoessays/2013/day_navigation", locals: { days: current_page.data.days } )
 = partial("/photoessays/components/banner", locals: {slug: current_page.data.slug, title: current_page.data.title, 'subtitle': current_page.data.subtitle, trip: current_page.data.trip})
 
 .Page
@@ -103,8 +94,7 @@
         :markdown
           As we waited to check in, an impromptu percussion performance began to promote the Blue Man Group. We, along with many of our fellow lobby occupants, swarmed to watch.
 
-    .Row.pt4.pb4.pl1.pr1
-      %video{src: "/#{images_dir}/photoessays/#{current_page.data.slug}/28/IMG_2506_lq.mp4", controls: true, preload: 'metadata'}
+    = partial("photoessays/components/video", locals: {slug: current_page.data.slug, video: '28/IMG_2506_lq'})
 
     .Row
       .Content_Main.Content_Article
@@ -176,8 +166,7 @@
 
           Butcher tried his hand at a slot machine.
 
-    .Row.pt4.pb4.pl1.pr1
-      %video{src: "/#{images_dir}/photoessays/#{current_page.data.slug}/28/IMG_2630_lq.mp4", controls: true, preload: 'metadata'}
+    = partial("photoessays/components/video", locals: {slug: current_page.data.slug, video: '28/IMG_2630_lq'})
 
     = partial("photoessays/components/photo_two_column", locals: {slug: current_page.data.slug, 'left': ['28/IMG_2655', '28/IMG_2652'], 'right': ['28/IMG_2665'] })
 
