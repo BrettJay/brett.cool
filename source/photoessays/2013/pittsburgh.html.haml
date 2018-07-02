@@ -1,9 +1,9 @@
 ---
   title: Pittsburgh
   slug: '2013/pittsburgh'
-  subtitle: Chill times
+  subtitle: A city of contrast and texture
   body_classes: page-photoessays
-  meta_description: Chill times
+  meta_description: A city of contrast and texture
   meta_keywords:
   trip:
     location: america
@@ -23,7 +23,7 @@
       title: Exploring the area
       description: and great burgers
     august-09:
-      date: 2018-08-08
+      date: 2018-08-09
       title: Departing Pittsburgh
       description: Bound for Washington
 ---
@@ -34,8 +34,418 @@
 = partial("/photoessays/components/banner", locals: {slug: current_page.data.slug, title: current_page.data.title, subtitle: current_page.data.subtitle, trip: current_page.data.trip})
 
 .Page
-  .Content#story#august04
+  .Content#story
+    .Row#august-07
+      .Content_Main.Content_Article
+        :markdown
+          The windows of the Greyhound bus destined for Pittsburgh gradually shifted from darkness to the first beginnings of a sunrise.
+
+          We’d been on buses, and waiting in depots, for what like a lot longer than the 12-or-so hours it had been in reality.
+
+          Suddenly I saw a green blur outside the bus window to my right, the sun had well and truly risen now.
+
+    = partial("photoessays/components/photo_right", locals: {slug: current_page.data.slug, caption: '', photo: '07/IMG_3398'})
+    = partial("photoessays/components/photo_full", locals: {slug: current_page.data.slug, caption: '', photo: '07/DSC02897'})
+    = partial("photoessays/components/photo_two_column", locals: {slug: current_page.data.slug, left: ['07/IMG_3401','07/DSC02904'], right: ['07/DSC02899','07/IMG_3407'] })
+
     .Row
       .Content_Main.Content_Article
         :markdown
-          Hej
+          We soon passed over a bridge in to the Pittsburgh CBD.
+
+          Despite the lack of proper sleep, the new morning and the beautiful city, filled me with energy and excitement for the potential of a new day.
+
+          Brimming with excitement (and also very eager to be off a bus), it seemed to take forever to reach the depot.
+          
+          But finally it did, and we exhaustedly clambered off the bus.
+
+    = partial("photoessays/components/photo_grid", locals: {slug: current_page.data.slug, rows: [ { count: 2, caption: '...and after our 13 hour journey.', photos: ['07/IMG_3409','07/IMG_3426'] } ] } )
+
+    .Row
+      .Content_Main.Content_Article
+        :markdown
+          Tired as we were, we still had to reach our hotel.
+
+          We got ourselves oriented, and headed through the early morning city.
+    
+    = partial("photoessays/components/photo_right", locals: {slug: current_page.data.slug, caption: '', photo: '07/IMG_3428'})
+
+    .Row
+      .Content_Main.Content_Article
+        :markdown
+          Pittsburgh was a beautiful, quiet city. Along with Denver, it had a quietness to it that reminds me a little of Perth.
+
+          Early morning now, there were a few pedestrians and commuters about, going about their day and heading to work.
+
+    = partial("photoessays/components/photo_full", locals: {slug: current_page.data.slug, caption: '', photo: '07/IMG_3433'})
+    = partial("photoessays/components/photo_right", locals: {slug: current_page.data.slug, caption: '', photo: '07/IMG_3437'})
+
+    .Row
+      .Content_Main.Content_Article
+        :markdown
+          After about 15 minutes of walking we reached the south end of the CBD, and headed through Armstrong tunnel.
+          
+          We came to a bridge suspended over the Monongahela River, that would connect us to the south side of Pittsburgh, where our hotel was.
+
+    = partial("photoessays/components/photo_full", locals: {slug: current_page.data.slug, caption: '', photo: '07/IMG_3442'})
+    = partial("photoessays/components/photo_two_column", locals: {slug: current_page.data.slug, left: ['07/IMG_3443'], right: ['07/IMG_3445'] })
+
+    .Row
+      .Content_Main.Content_Article
+        :markdown
+          Our hotel was not far after the bridge. Gratefully, we arrived.
+
+    = partial("photoessays/components/place_accomodation", locals: {slug: current_page.data.slug, image: '07/holiday-inn', title: 'Holiday Inn', address: '20 S 10th St, Pittsburgh, PA 15203, USA', checkin: '7 August', checkout: '9 August', rating: 4 })
+
+    .Row
+      .Content_Main.Content_Article
+        :markdown
+          Of course, this was around 8 in the morning, and as exhausted as we were, we could not check in until that afternoon.
+
+          Yawning, we relieved ourselves of the burden of our luggage with the hotel reception, and set off to kick around Pittsburgh until check-in opened later that afternoon.
+
+    = partial("photoessays/components/photo_right", locals: {slug: current_page.data.slug, caption: 'Well. What now?', photo: '07/DSC02907'})
+
+    .Row
+      .Content_Main.Content_Article
+        :markdown
+          We decided to head off and explore a bit further to the south (the direction in which Richard is helpfully pointing at, above).
+
+          We continued down 10th street, and then crossed on to E Carson St.
+
+    = partial("photoessays/components/photo_right", locals: {slug: current_page.data.slug, caption: '', photo: '07/DSC02912'})
+    = partial("photoessays/components/photo_full", locals: {slug: current_page.data.slug, caption: '', photo: '07/IMG_2141'})
+    = partial("photoessays/components/photo_two_column", locals: {slug: current_page.data.slug, left: ['07/DSC02918'], right: ['07/DSC02925'] })
+    
+    .Row
+      .Content_Main.Content_Article
+        :markdown
+          The south side of Pittsburgh strongly reminded me of Brunswick Street and Smith Street in Fitzroy, Victoria.
+          
+          It had a similar vibe, with renewed life from a mix of traditional and modern tenenants, occupying and sharing the inherited space.
+
+          We found a nearby diner for what was one of the best breakfasts we randomly stumbled across.
+    
+    = partial("photoessays/components/place_restaurant", locals: {slug: current_page.data.slug, image: '07/IMG_3456', title: 'O’Leary’s Restaurant', address: '1412 E Carson St, Pittsburgh, PA 15203, USA', price: '$', menu: 'Breakfast', rating: 5, link: '' })
+    = partial("photoessays/components/photo_two_column", locals: {slug: current_page.data.slug, left: ['07/IMG_3455'], right: ['07/IMG_3454'] })
+
+    .Row
+      .Content_Main.Content_Article
+        :markdown
+          It was a charming diner, filled with locals having friendly chats with the staff, who seemed to know everyone in the establishment (us aside!).
+          
+          After a hearty breakfast, we headed to a nearby Starbucks to grab a coffee, for the much needed caffeine kick.
+
+    = partial("photoessays/components/photo_right", locals: {slug: current_page.data.slug, caption: '', photo: '07/IMG_3458'})
+
+    .Row
+      .Content_Main.Content_Article
+        :markdown
+          We sat at the Starbucks for a little while, recharging.
+
+          After which, we explored a couple of vintage and boutique stores. One of the shops container a Super Soaker XP90, which I remember my sister and I had received for Christmas in Australia one year growing up.
+
+    = partial("photoessays/components/photo_two_column", locals: {slug: current_page.data.slug, left: ['07/IMG_3460'], right: ['07/IMG_3462'] })
+    = partial("photoessays/components/photo_right", locals: {slug: current_page.data.slug, caption: '', photo: '07/IMG_3463'})
+
+    .Row
+      .Content_Main.Content_Article
+        :markdown
+          Eventually we wandered back towards our hotel, and decided to continue over the bridge and in to the city to continue exploring.
+    
+    = partial("photoessays/components/photo_full", locals: {slug: current_page.data.slug, caption: '', photo: '07/IMG_2143'})
+    = partial("photoessays/components/photo_right", locals: {slug: current_page.data.slug, caption: '', photo: '07/DSC02951'})
+  
+  = partial("photoessays/components/photo_full", locals: {slug: current_page.data.slug, caption: '', photo: '07/IMG_3466'})
+
+  .Content
+    = partial("photoessays/components/photo_two_column", locals: {slug: current_page.data.slug, right: ['07/IMG_2159','07/DSC02960'], left: ['07/IMG_2163'] })
+    .Row
+      .Content_Main.Content_Article
+        :markdown
+          We continued north over the bridge.
+
+          We walked underneath tall, rusty steel overpasses and bridges. There's a real contrast between the green landscape and the manmade steel infrastructure.
+
+    = partial("photoessays/components/photo_right", locals: {slug: current_page.data.slug, caption: '', photo: '07/IMG_2179'})
+    = partial("photoessays/components/photo_full", locals: {slug: current_page.data.slug, caption: '', photo: '07/IMG_2183'})
+    = partial("photoessays/components/photo_two_column", locals: {slug: current_page.data.slug, left: ['07/IMG_3473','07/IMG_3476','07/IMG_4330'], right: ['07/IMG_3471','07/IMG_2185','07/IMG_3479'] })
+    
+    = partial("photoessays/components/photo_right", locals: {slug: current_page.data.slug, caption: '', photo: '07/DSC03033'})
+    .Row
+      .Content_Main.Content_Article
+        :markdown
+          We got our bearings, and headed up a series of escalators to get to a train station platform.
+
+    = partial("photoessays/components/photo_full", locals: {slug: current_page.data.slug, caption: '', photo: '07/IMG_2196'})
+    = partial("photoessays/components/photo_right", locals: {slug: current_page.data.slug, caption: '', photo: '07/IMG_2206'})
+
+    .Row
+      .Content_Main.Content_Article
+        :markdown
+          A short train ride later, we emerged in the midst of Pittsburgh CBD.
+
+    = partial("photoessays/components/photo_two_column", locals: {slug: current_page.data.slug, left: ['07/DSC03051'], right: ['07/IMG_2212','07/IMG_2222'] })
+    = partial("photoessays/components/photo_right", locals: {slug: current_page.data.slug, caption: '', photo: '07/IMG_2231'})
+    
+    .Row
+      .Content_Main.Content_Article
+        :markdown
+          We wandered through the city and arrived at the Point State Park.
+    
+  = partial("photoessays/components/photo_full", locals: {slug: current_page.data.slug, caption: '', photo: '07/IMG_3486'})
+
+  .Content
+    = partial("photoessays/components/photo_right", locals: {slug: current_page.data.slug, caption: '', photo: '07/DSC03069'})
+
+    .Row
+      .Content_Main.Content_Article
+        :markdown
+          We headed under the bridge, towards a fountain in the center of the park.
+
+    = partial("photoessays/components/photo_two_column", locals: {slug: current_page.data.slug, left: ['07/IMG_2239','07/DSC03083','07/IMG_2246'], right: ['07/DSC03082','07/DSC03137'] })
+  = partial("photoessays/components/photo_full", locals: {slug: current_page.data.slug, caption: '', photo: '07/IMG_2269'})
+
+  .Content
+    = partial("photoessays/components/photo_two_column", locals: {slug: current_page.data.slug, left: ['07/IMG_2306'], right: ['07/IMG_2331'] })
+
+    .Row
+      .Content_Main.Content_Article
+        :markdown
+          After taking in the park for a little while, we decided to whittle away the early afternoon at Fort Pitt Museum.
+
+    = partial("photoessays/components/place_of_interest", locals: {slug: current_page.data.slug, image: '07/DSC03143', title: 'Fort Pitt Museum', address: '601 Commonwealth Pl, Pittsburgh, PA 15222, USA', place: 'Museum', rating: 5, link:'' })
+    = partial("photoessays/components/photo_two_column", locals: {slug: current_page.data.slug, left: ['07/IMG_2351'], right: ['07/IMG_2369'] })
+
+    .Row
+      .Content_Main.Content_Article
+        :markdown
+          The museum was surprisingly large, with plenty of historic artwork and recreated scenes. Our tourguide was very knowledgeable and walked us through the various display, giving us a rich account of the history of Pittsburgh and Fort Pitt.
+
+          ---
+
+          It was now early afternoon, so we decided to head back towards our hotel and check in.
+
+          One train ride, and a walk through the south end of the city later, we arrived.
+
+    = partial("photoessays/components/photo_full", locals: {slug: current_page.data.slug, caption: '', photo: '07/IMG_2373'})
+    = partial("photoessays/components/photo_right", locals: {slug: current_page.data.slug, caption: '', photo: '07/DSC03204'})
+
+    .Row
+      .Content_Main.Content_Article
+        :markdown
+          That evening, after we’d packed and had a quick rest in our rooms, we headed out in search of dinner.
+
+          We couldn’t all decide what to get for dinner as a group. So in the end, Irwin, Butcher, and I opted for a Middle Eastern place on E Carlson st.
+    
+    = partial("photoessays/components/place_restaurant", locals: {slug: current_page.data.slug, image: '07/kassab', title: 'Kassab’s Restaurant', address: '1207 E Carson St, Pittsburgh, PA 15203, USA', price: '$', menu: 'Middle Eastern', rating: 5, link: '' })
+    = partial("photoessays/components/photo_two_column", locals: {slug: current_page.data.slug, left: ['07/IMG_3514'], right: ['07/IMG_3512'] })
+
+    .Row
+      .Content_Main.Content_Article
+        :markdown
+          The food here was delicious; the lamb gyro was incredibly full of flavour.
+
+          After a very filling meal, we met up with the others at a nearby bar.
+    
+    = partial("photoessays/components/place_drink", locals: {slug: current_page.data.slug, image: '07/jacks-bar', title: 'Jack’s Bar', address: '1117 E Carson St, Pittsburgh, PA 15203, USA', price: '$', menu: 'Bar', rating: 5, link: '' })
+    = partial("photoessays/components/photo_two_column", locals: {slug: current_page.data.slug, left: ['07/IMG_3519','07/IMG_3521'], right: ['07/IMG_3520','07/IMG_3527'] })
+
+    .Row
+      .Content_Main.Content_Article
+        :markdown
+          We particularly enjoyed the Blue Moon and Summer Shandy beers.
+
+          Many drinks later, we returned back to the hotel for bed.
+
+    .Row#august-08
+      .Content_Main.Content_Article
+        :markdown
+          ---
+
+          The next morning, I awoke quite early, and headed for the breakfast buffet.
+
+    = partial("photoessays/components/photo_right", locals: {slug: current_page.data.slug, caption: '', photo: '08/IMG_3529'})
+
+    .Row
+      .Content_Main.Content_Article
+        :markdown
+          It was starting to get a little late in the morning now, and the others were still resting. Approaching 11am and feeling a bit bored of waiting, I decided to head out by myself and explore E Carlson street again.   
+
+    = partial("photoessays/components/photo_full", locals: {slug: current_page.data.slug, caption: '', photo: '08/IMG_3532'})
+    = partial("photoessays/components/photo_two_column", locals: {slug: current_page.data.slug, left: ['08/IMG_3533'], right: ['08/IMG_3535'] })
+
+  = partial("photoessays/components/photo_full", locals: {slug: current_page.data.slug, caption: 'Serious Fitzroy vibes', photo: '08/IMG_3536'})
+
+  .Content
+    .Row
+      .Content_Main.Content_Article
+        :markdown
+          I continued down E Carson street, noticing a shop I thought the rest of the crew would like to check out; a game exchange shop.
+
+    = partial("photoessays/components/photo_two_column", locals: {slug: current_page.data.slug, left: ['08/IMG_3543'], right: ['08/IMG_3542'] })
+
+    .Row
+      .Content_Main.Content_Article
+        :markdown
+          By now, the rest of the group were up, so I headed back to the hotel to meet up with them.
+
+          We headed back down E Carson street, and headed in to the 
+
+    = partial("photoessays/components/place_of_interest", locals: {slug: current_page.data.slug, image: '08/exchange-southside-pittsburg', title: 'The Exchange', address: '1709 E Carson St, Pittsburgh, PA 15203, USA', place: 'Trade in store', rating: 5, link:'' })
+
+    .Row
+      .Content_Main.Content_Article
+        :markdown
+          Inside was a wide variety of second hand music, media, videogames, and more miscellaneous paraphenalia.
+
+          We spent a long time searching up and down the various ailses.
+
+    = partial("photoessays/components/photo_two_column", locals: {slug: current_page.data.slug, left: ['08/IMG_3546','08/IMG_3548'], right: ['08/IMG_3547','08/IMG_3550','08/IMG_3551'] })
+
+    .Row
+      .Content_Main.Content_Article
+        :markdown
+          We spoke to one of the people behind the register. She was surprised to see people from overseas traveling through Pittsburgh — it kind of was a self-deprecating tone that felt familiar as native Perth folks.
+          
+          After a good look around, it was time to get some lunch.
+
+    = partial("photoessays/components/place_restaurant", locals: {slug: current_page.data.slug, image: '08/fatheads', title: 'Fat Head’s Saloon', address: ' 1805 E Carson St, Pittsburgh, PA 15203, USA', price: '$$', menu: 'Beer and Burger', rating: 5, link: '' })
+
+    .Row
+      .Content_Main.Content_Article
+        :markdown
+          We ended up at Fatheads, which paired craft beers with some very excellent burgers.
+          
+    = partial("photoessays/components/photo_two_column", locals: {slug: current_page.data.slug, left: ['08/IMG_3552','08/IMG_3556','08/IMG_3559','08/IMG_3564'], right: ['08/IMG_4361','08/IMG_3554','08/IMG_3558'] })
+    = partial("photoessays/components/photo_right", locals: {slug: current_page.data.slug, caption: 'Defeated by some excellent burgers', photo: '08/IMG_3572'})
+
+    .Row
+      .Content_Main.Content_Article
+        :markdown
+          After lunch, we headed to a nearby barber shop, where Irwin had decided to get a haircut.
+
+    = partial("photoessays/components/place_of_interest", locals: {slug: current_page.data.slug, image: '08/IMG_3577', title: 'South Side Barber Shop', address: '1509 E Carson St, Pittsburgh, PA 15203, USA', place: 'Barber Shop', rating: 5, link:'' })
+
+    = partial("photoessays/components/photo_right", locals: {slug: current_page.data.slug, caption: '', photo: '08/IMG_3578'})
+
+    .Row
+      .Content_Main.Content_Article
+        :markdown
+          Irwin left the barber shop looking a fair bit more like the photo of Abe Lincoln on the US Five Dollar bill.
+
+          We headed to a nearby Starbucks for an afternoon pick-me-up.
+
+    = partial("photoessays/components/photo_two_column", locals: {slug: current_page.data.slug, left: ['08/IMG_3580','08/IMG_3582'], right: ['08/DSC03208'] })
+    
+    = partial("photoessays/components/photo_right", locals: {slug: current_page.data.slug, caption: 'Drive Thru ATMs. God bless America', photo: '08/IMG_3584'})
+
+    .Row
+      .Content_Main.Content_Article
+        :markdown
+          Later that afternoon, we headed out to explore the city at night.
+          
+    = partial("photoessays/components/photo_two_column", locals: {slug: current_page.data.slug, left: ['08/IMG_3591'], right: ['08/IMG_2391'] })
+  
+  = partial("photoessays/components/photo_full", locals: {slug: current_page.data.slug, caption: '', photo: '08/IMG_3595'})
+  
+  .Content
+    = partial("photoessays/components/photo_full", locals: {slug: current_page.data.slug, caption: '', photo: '08/IMG_2398'})
+
+  = partial("photoessays/components/photo_full", locals: {slug: current_page.data.slug, caption: '', photo: '08/IMG_3601'})
+
+  .Content
+    .Row
+      .Content_Main.Content_Article
+        :markdown
+          We explored the nearby Duquesne University.
+
+    = partial("photoessays/components/photo_full", locals: {slug: current_page.data.slug, caption: '', photo: '08/IMG_2408'})
+    = partial("photoessays/components/photo_right", locals: {slug: current_page.data.slug, caption: '', photo: '08/IMG_2412'})
+
+  = partial("photoessays/components/photo_full", locals: {slug: current_page.data.slug, caption: '', photo: '08/IMG_3604'})
+
+  .Content
+    = partial("photoessays/components/photo_two_column", locals: {slug: current_page.data.slug, left: ['08/DSC03275'], right: ['08/IMG_2424','08/IMG_2427'] })
+    = partial("photoessays/components/photo_right", locals: {slug: current_page.data.slug, caption: '', photo: '08/IMG_2429'})
+
+    .Row
+      .Content_Main.Content_Article
+        :markdown
+          We headed off from the university, and continued to explore the city.
+
+    = partial("photoessays/components/photo_right", locals: {slug: current_page.data.slug, caption: '', photo: '08/IMG_3608'})
+    = partial("photoessays/components/photo_full", locals: {slug: current_page.data.slug, caption: '', photo: '08/IMG_2444'})
+    = partial("photoessays/components/photo_right", locals: {slug: current_page.data.slug, caption: '', photo: '08/DSC03350'})
+    = partial("photoessays/components/photo_two_column", locals: {slug: current_page.data.slug, right: ['08/DSC03353','08/IMG_3626'], left: ['08/IMG_2456'] })
+    = partial("photoessays/components/photo_left", locals: {slug: current_page.data.slug, caption: '', photo: '08/DSC03369'})
+    = partial("photoessays/components/photo_right", locals: {slug: current_page.data.slug, caption: '', photo: '08/DSC03366'})
+    = partial("photoessays/components/photo_full", locals: {slug: current_page.data.slug, caption: '', photo: '08/IMG_2491'})
+
+    .Row
+      .Content_Main.Content_Article
+        :markdown
+          Soon, the sun started to set.
+
+    = partial("photoessays/components/photo_two_column", locals: {slug: current_page.data.slug, left: ['08/IMG_2493'], right: ['08/IMG_2495','08/IMG_2502'] })
+
+    .Row
+      .Content_Main.Content_Article
+        :markdown
+          We reached one of the bridges out of the city center, and took some photos night arrived around us.
+
+  = partial("photoessays/components/photo_full", locals: {slug: current_page.data.slug, caption: '', photo: '08/IMG_3640'})
+
+  .Content
+    = partial("photoessays/components/photo_two_column", locals: {slug: current_page.data.slug, left: ['08/IMG_2505'], right: ['08/IMG_2514'] })
+    = partial("photoessays/components/photo_full", locals: {slug: current_page.data.slug, caption: '', photo: '08/IMG_2552'})
+    = partial("photoessays/components/photo_right", locals: {slug: current_page.data.slug, caption: '', photo: '08/DSC03433'})
+
+    .Row
+      .Content_Main.Content_Article
+        :markdown
+          We continued back through the city, lights twinkling. 
+
+    = partial("photoessays/components/photo_two_column", locals: {slug: current_page.data.slug, left: ['08/IMG_2566'], right: ['08/IMG_2569','08/IMG_2571'] })
+
+    .Row
+      .Content_Main.Content_Article
+        :markdown
+          We headed through the darkened city streets towards Point State Park.
+
+    = partial("photoessays/components/photo_right", locals: {slug: current_page.data.slug, caption: '', photo: '08/IMG_2602'})
+    
+    .Row
+      .Content_Main.Content_Article
+        :markdown
+          A little while later, we started our trek back to the hotel.
+
+          We grabbed some M&M ice cream cookie sandwiches for a late night dessert, after a long night out.
+
+    = partial("photoessays/components/photo_two_column", locals: {slug: current_page.data.slug, right: ['08/IMG_2642','08/IMG_2644'], left: ['08/IMG_3676'] })
+
+    .Row#august-09
+      .Content_Main.Content_Article
+        :markdown
+          ---
+
+          The next morning, we checked out of our hotel, and lugged our luggage back through the city center towards the Greyhound station.
+    
+    = partial("photoessays/components/photo_full", locals: {slug: current_page.data.slug, caption: '', photo: '09/IMG_3682'})
+    = partial("photoessays/components/photo_two_column", locals: {slug: current_page.data.slug, left: ['09/IMG_3685'], right: ['09/IMG_3688'] })
+
+    .Row
+      .Content_Main.Content_Article
+        :markdown
+          Soon enough, we boarded our Greyhound bus bound for Washington.
+
+    = partial("photoessays/components/photo_right", locals: {slug: current_page.data.slug, caption: '', photo: '09/IMG_3694'})
+    = partial("photoessays/components/photo_full", locals: {slug: current_page.data.slug, caption: '', photo: '09/DSC03484'})
+
+  .Content
+    .PhotoRow
+      .PhotoEssayFooterNavigation
+        = link_to "/photoessays/2013/st-louis", class: 'PhotoEssay_nav PhotoEssay_nav--previous', style: "background-image: url('/images/photoessays/2013/st-louis/banner.jpg')" do
+          .PhotoEssay_nav_label Previous
+          .PhotoEssay_nav_title St Louis
+          .PhotoEssay_nav_date August 4, 2013

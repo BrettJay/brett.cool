@@ -49,6 +49,10 @@
   padding-left: 0 !important
   padding-right: 0 !important
 
+=mt4
+  +fluid-scale(margin-top, $responsive_min, $responsive_max, $size_scale_4_min, $size_scale_4_max)
+=mb4
+  +fluid-scale(margin-bottom, $responsive_min, $responsive_max, $size_scale_4_min, $size_scale_4_max)
 
 .pb1
   +fluid-scale(padding-bottom, $responsive_min, $responsive_max, $size_scale_1_min, $size_scale_1_max)
@@ -85,3 +89,10 @@
   +fluid-scale(padding-right, $responsive_min, $responsive_max, $size_scale_3_min, $size_scale_3_max)
 .pr4
   +fluid-scale(padding-right, $responsive_min, $responsive_max, $size_scale_4_min, $size_scale_4_max)
+
+
+.mt4
+  +mt4
+  
+.mb4
+  +mb4

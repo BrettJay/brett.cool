@@ -26,6 +26,7 @@
 
 .Page
   .Content
-    .Content_photoessays#story.Content_photoessays.Row
-      - data.localhost.dates.each do | date |
-        = partial("photoessays/components/day_card", locals: { date: date, essay_slug: current_page.data.slug})
+    .Row
+      .Content_photoessays#story.Content_photoessays--localhost
+        - data.localhost.dates.each do | date |
+          = partial("photoessays/components/day_card", locals: { date: date, essay_slug: current_page.data.slug})
