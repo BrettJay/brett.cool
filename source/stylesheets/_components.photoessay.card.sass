@@ -1,6 +1,6 @@
 .PhotoEssayItem
   flex: 0 1 50%
-  padding: 1px
+  padding: 0px
   +respond-to(small-up)
     flex: 0 1 33.33%
   +respond-to(large)
@@ -11,22 +11,26 @@
   box-shadow: 0 0 0 transparent
   transition: all 0.2s ease
   border-radius: 3px
+  position: relative
+  z-index: 0
   &:hover
-    transform: translateY(-4px)
-    box-shadow: 0 10px 40px rgba(0,0,0,0.44)
+    transform: translateY(-4px) scale(1.02)
+    box-shadow: 0 10px 70px rgba(0,0,0,0.44)
+    z-index: 1
   &:active
     transform: translateY(2px)
     box-shadow: 0 0 0 rgba(0,0,0,1)
+    z-index: 1
 
 // Specific modifiers of card appearances
 .Content_photoessays--full,
 .Content_photoessays--localhost
 
   .PhotoEssayItem
-    flex: 0 1 33.33%
+    flex: 0 1 50%
     padding: 0
     +respond-to(ipad-up)
-      flex: 0 1 20%
+      flex: 0 1 25%
       padding: 0
   +respond-to(mobile)
     .PhotoEssayItem
@@ -45,6 +49,7 @@
 
 .PhotoEssayCaption
   width: 100%
+  background: #fff
   text-align: center
   letter-spacing: 0.02em
   +fluid-scale(font-size, $responsive_min, $responsive_max, 11px, 14px)

@@ -17,7 +17,7 @@
           %span.u-show--mobile= @departure_date.strftime("%b %-d")
         %dd Departed
       %dl
-        %dt= @departure_date.mjd - @arrival_date.mjd
+        %dt= (@departure_date.mjd - @arrival_date.mjd) + 1
         %dd Days
       - if trip[:steps].present?
         %dl
