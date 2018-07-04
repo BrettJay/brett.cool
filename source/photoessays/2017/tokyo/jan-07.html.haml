@@ -55,7 +55,7 @@
         :markdown
           I headed for the hotel to drop my luggage off. Check-in was still a number of hours away.
 
-    = partial("photoessays/components/place_accomodation", locals: {slug: current_page.data.slug, image: 'shibuya_tobu', title: 'Shibuya Tobu Hotel',  address: '3-1 Udagawacho, 渋谷区 Tokyo 150-0042', 'checkin': '7 Jan', 'checkout': '15 Jan', rating: 4 })
+    = partial("photoessays/components/place_accomodation", locals: {slug: current_page.data.slug, image: 'shibuya_tobu', title: 'Shibuya Tobu Hotel',  address: '3-1 Udagawacho, 渋谷区 Tokyo 150-0042', checkin: Date.new(2017,1,7), checkout: Date.new(2017,1,15), rating: 4 })
 
     .Row
       .Content_Main.Content_Article

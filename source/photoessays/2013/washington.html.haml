@@ -1,0 +1,56 @@
+---
+  title: Washington
+  slug: '2013/washington'
+  subtitle: Monuments valley
+  body_classes: page-photoessays
+  meta_description: Monuments valley
+  meta_keywords:
+  trip:
+    location: america
+    weather: cloud
+    arrival: bus
+    departure: bus
+    dates:
+      from: 2013-8-9
+      to: 2013-8-11
+  days:
+    august-09:
+      date: 2018-08-09
+      title: Arriving
+      description: and dodgy motels
+    august-10:
+      date: 2018-08-10
+      title: Exploring Washington
+      description: Monuments and Museums
+    august-11:
+      date: 2018-08-11
+      title: Departing
+      description: bound for New York
+---
+
+- @og_image_override = 'photoessays/2013/washington'
+
+= partial("photoessays/2013/day_navigation", locals: { days: current_page.data.days } )
+= partial("/photoessays/components/banner", locals: {slug: current_page.data.slug, title: current_page.data.title, subtitle: current_page.data.subtitle, trip: current_page.data.trip})
+
+.Page
+  .Content#story#august09
+    .Row
+      .Content_Main.Content_Article
+        :markdown
+          Our Greyhound bus headed towards Washington through the early afternoon. Onboard, I ended up sitting with a stranger, and had a conversation that I learned later apparently was quite audible throughout the bus. I guess our voices carried.
+
+          An otherwise uneventful ride later, we finally arrived at the Washington Greyhound bus depot. From the depot, we headed with our luggage toward a nearby underground station, in order to make our way to our hotel.
+
+    = partial("photoessays/components/photo_right", locals: {slug: current_page.data.slug, caption: '', photo: '09/DSC03485'})
+    = partial("photoessays/components/photo_two_column", locals: {slug: current_page.data.slug, left: ['09/IMG_3697'], right: ['09/IMG_3698'] })
+    = partial("photoessays/components/photo_right", locals: {slug: current_page.data.slug, caption: '', photo: '09/IMG_3703'})
+
+    .Row
+      .Content_Main.Content_Article
+        :markdown
+          Mid afternoon, we arrived at our hotel.
+
+          The rather infamous Allen Lee Hotel in Foggy Bottom (#{ link_to 'RIP in Peace', 'https://wamu.org/story/14/11/07/once_maligned_dc_landmark_gets_makeover_as_citys_first_pod_hotel/', target: '_blank' })
+    
+    = partial("photoessays/components/place_accomodation", locals: {slug: current_page.data.slug, image: '04/IMG_3286', title: 'America’s Best Value Inn', address: '4545 Woodson Road, 63134, St Louis, USA', checkin: current_page.data.trip.dates.from, checkout: current_page.data.trip.dates.to, rating: 2 })

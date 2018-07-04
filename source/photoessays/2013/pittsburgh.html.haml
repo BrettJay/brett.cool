@@ -95,7 +95,7 @@
         :markdown
           Our hotel was not far after the bridge. Gratefully, we arrived.
 
-    = partial("photoessays/components/place_accomodation", locals: {slug: current_page.data.slug, image: '07/holiday-inn', title: 'Holiday Inn', address: '20 S 10th St, Pittsburgh, PA 15203, USA', checkin: '7 August', checkout: '9 August', rating: 4 })
+    = partial("photoessays/components/place_accomodation", locals: {slug: current_page.data.slug, image: '07/holiday-inn', title: 'Holiday Inn', address: '20 S 10th St, Pittsburgh, PA 15203, USA', checkin: current_page.data.trip.dates.from, checkout: current_page.data.trip.dates.to, rating: 4 })
 
     .Row
       .Content_Main.Content_Article

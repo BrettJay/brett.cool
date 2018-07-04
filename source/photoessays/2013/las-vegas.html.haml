@@ -78,7 +78,7 @@
         :markdown
           The size of the hotel was very impressive, especially having just checked out of Banana Bungalow in Hollywood that morning.    
 
-    = partial("photoessays/components/place_accomodation", locals: {slug: current_page.data.slug, image: '28/IMG_2499', title: 'The Monte Carlo', address: '3770 S Las Vegas Blvd, Las Vegas, NV 89109, USA', checkin: '28 July', checkout: '1 August', rating: 5 })
+    = partial("photoessays/components/place_accomodation", locals: {slug: current_page.data.slug, image: '28/IMG_2499', title: 'The Monte Carlo', address: '3770 S Las Vegas Blvd, Las Vegas, NV 89109, USA', checkin: current_page.data.trip.dates.from, checkout: current_page.data.trip.dates.to, rating: 5 })
     
     .Row
       .Content_Main.Content_Article

@@ -8,10 +8,10 @@
 
       .PlaceCard_attributes
         %dl.Attribute_pair
-          %dt= checkin
+          %dt= checkin.strftime("%-d %b")
           %dd Check in
         %dl.Attribute_pair
-          %dt= checkout
+          %dt= checkout.strftime("%-d %b")
           %dd Check out
 
       .PlaceCard_rating{class: "PlaceCard_rating--#{rating}"}

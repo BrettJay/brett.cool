@@ -90,7 +90,7 @@
 
           We regroup at the hotel.
 
-    = partial("photoessays/components/place_accomodation", locals: {slug: current_page.data.slug, image: '01/accomodation', title: 'Ramada by Wyndham Denver', address: '1150 E Colfax Ave, Denver', checkin: '1 August', checkout: '4 August', rating: 3 })
+    = partial("photoessays/components/place_accomodation", locals: {slug: current_page.data.slug, image: '01/accomodation', title: 'Ramada by Wyndham Denver', address: '1150 E Colfax Ave, Denver', checkin: current_page.data.trip.dates.from, checkout: current_page.data.trip.dates.to, rating: 3 })
 
     = partial("photoessays/components/photo_right", locals: {slug: current_page.data.slug, caption: '', photo: '01/DSC02676'})
 

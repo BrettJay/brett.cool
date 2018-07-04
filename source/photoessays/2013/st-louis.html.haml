@@ -52,7 +52,7 @@
 
           We soon found out why. It kind of looked like one of those motels you’d see in a gritty noir film.
 
-    = partial("photoessays/components/place_accomodation", locals: {slug: current_page.data.slug, image: '04/IMG_3286', title: 'America’s Best Value Inn', address: '4545 Woodson Road, 63134, St Louis, USA', checkin: '4 August', checkout: '6 August', rating: 2 })
+    = partial("photoessays/components/place_accomodation", locals: {slug: current_page.data.slug, image: '04/IMG_3286', title: 'America’s Best Value Inn', address: '4545 Woodson Road, 63134, St Louis, USA', checkin: current_page.data.trip.dates.from, checkout: current_page.data.trip.dates.to, rating: 2 })
 
     .Row
       .Content_Main.Content_Article
