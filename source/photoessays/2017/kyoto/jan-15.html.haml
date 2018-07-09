@@ -83,7 +83,7 @@
         :markdown
           I reached my hotel and checked in.
 
-    = partial("photoessays/components/place_accomodation", locals: {slug: current_page.data.slug, image: 'apa', title: 'APA Hotel Kyoto Eki Horikawadori',  address: '〒600-8236 Kyoto Prefecture, Kyoto', 'checkin': '15 Jan', 'checkout': '19 Jan', rating: 2 })
+    = partial("photoessays/components/place_accomodation", locals: {slug: current_page.data.slug, image: 'apa', title: 'APA Hotel Kyoto Eki Horikawadori',  address: '〒600-8236 Kyoto Prefecture, Kyoto', checkin: Date.new(2017,1,15), checkout: Date.new(2017,1,19), rating: 2 })
 
     .Row
       .Content_Main.Content_Article

@@ -47,7 +47,7 @@
         :markdown
           One plane-hack filled flight later, I landed in Melbourne. I departed the airport and made my way into the city to my hotel.
 
-    = partial("photoessays/components/place_accomodation", locals: {slug: current_page.data.slug, image: '29/place_somerset', title: 'Somerset on Elizabeth', address: '250 Elizabeth St, Melbourne VIC', checkin: '29 Nov', checkout: '2 Dec', rating: 4 })
+    = partial("photoessays/components/place_accomodation", locals: {slug: current_page.data.slug, image: '29/place_somerset', title: 'Somerset on Elizabeth', address: '250 Elizabeth St, Melbourne VIC', checkin: current_page.data.trip.dates.from, checkout: current_page.data.trip.dates.to, rating: 4 })
 
     .Row
       .Content_Main.Content_Article
