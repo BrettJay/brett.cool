@@ -1,0 +1,126 @@
+- name: 'San Francisco'
+  slug: 'san-francisco'
+  images:
+    - '24/tram.jpg'
+    - '25/alcatraz.jpg'
+  description: |
+    Our trip begins in San Francisco. We explored downtown San Francisco, Fisherman’s Wharf, and rode bikes over the Golden Gate Bridge.
+  days:
+    - date: 2013-07-23
+      photos:
+        - time: 1037
+          path: 'arrival_flight.jpg'
+        - time: 1410
+          path: 'brett_airport.jpg'
+        - time: 1527
+          path: 'arriving_downtown.jpg'
+      motion:
+        - time: 0000
+          duration: 1230
+          label: AKL ✈ SFO
+          kind: flight
+        - time: 1430
+          duration: 97
+          label: BART
+          kind: transit
+      places:
+        - at: 1215
+          label: San Francisco International Airport 
+          address: San Francisco, CA 94128, USA
+          kind: airport
+        - at: 1604
+          label: Amsterdam Hostel
+          address: 749 Taylor St, San Francisco
+          kind: hotel
+          photo: 'amsterdam_computers.jpg'
+        - at: 1830
+          label: Little Dehli
+          address: 749 Taylor St, San Francisco
+          kind: restaurant
+          photo: 'place_little_delhi.jpg'
+    - date: 2013-07-24
+      photos:
+        - time: 1058
+          path: 'tram_passengers.jpg'
+        - time: 1213
+          path: 'applebees_before.jpg'
+        - time: 1531
+          path: 'lombard_wide.jpg'
+        - time: 1830
+          path: 'shops.jpg'
+        - time: 1951
+          path: 'shops_gamestop.jpg'
+      places:
+        - at: 1132
+          label: Spy Shop
+          kind: interest
+          photo: 'spy_shop.jpg'
+        - at: 1215
+          label: Applebees
+          address: San Francisco, CA 94128, USA
+          kind: restaurant
+        - at: 1341
+          label: Ripleys Believe it or Not Museum
+          kind: interest
+        - at: 1500
+          label: Lombard Street
+          kind: interest
+        - at: 1702
+          label: Jared meets us at Amsterdam Hostel
+          kind: hotel
+        - at: 1900
+          label: Westfield San Francisco Centre
+          kind: shop
+        - at: 2107
+          label: Café Mason
+          kind: restaurant
+    - date: 2013-07-25
+      photos:
+        - time: 1012
+          path: 'grant.jpg'
+        - time: 1175
+          path: 'f_line.jpg'
+        - time: 1421
+          path: 'wharf.jpg'
+        - time: 1611
+          path: 'bike_ride.jpg'
+        - time: 1700
+          path: 'bridge_butcher.jpg'
+        - time: 1850
+          path: 'boat_drinks.jpg'
+        - time: 2106
+          path: 'pizza_butcher.jpg'
+      motion:
+        - time: 1159
+          duration: 80
+          label: F Line Tram
+          kind: transit
+        - time: 1531
+          duration: 270
+          label: Cycling
+          kind: cycling
+        - time: 1829
+          duration: 50
+          label: Ferry
+          kind: ferry
+      places:
+        - at: 1047
+          label: Cupid’s Span
+          kind: interest
+          photo: 'cupid.jpg'
+        - at: 1238
+          label: Hard Rock Café
+          kind: restaurant
+          photo: 'inside_hard_rock.jpg'
+        - at: 1702
+          label: Golden Gate Bridge
+          kind: interest
+          photo: 'bridge_brett.jpg'
+        - at: 1776
+          label: Sausalito
+          kind: location
+          photo: 'island.jpg'
+        - at: 2106
+          label: Piraat Pizzeria & Rotisserie
+          kind: restaurant
+          photo: 'place_pizza.jpg'

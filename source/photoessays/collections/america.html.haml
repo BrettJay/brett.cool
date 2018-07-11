@@ -1,0 +1,60 @@
+---
+  title: America
+  subtitle: America
+  body_classes:
+  meta_description: America trip
+  meta_keywords: mixin, photoessay, conference
+---
+
+.Page
+  
+  - data.collections.america.each do | item |
+
+
+    .Content
+
+      .Collection.Row
+        .Col.CollectionItem
+          #{item.days.first.date.strftime("%b %-d, %Y")}—#{item.days.last.date.strftime("%b %-d, %Y")}
+
+
+          %h1= item.name
+
+          :markdown
+            #{item.description}
+
+          .Days
+            .DayLine.DayLine--Heading
+              .DayLabel
+              .Timeline
+                - 12.times do | tick |
+                  .Timeline_tick= Time.new(2013,7,23,tick * 2,0,0).strftime("%-I%p")
+            - item.days.each do | day |
+              .DayLine
+                .DayLabel
+                  .DayLabel_date= day.date.strftime("%-d")
+                  .DayLabel_month= day.date.strftime("%b")
+                .Timelines
+                  - if day.photos.present?
+                    .Timeline.Timeline_photos
+                      - day.photos.each do | photo |
+                        .TimelinePhoto{style: "left: #{(photo.time.to_f / 2400) * 100}%"}= image_tag "photoessays/2013/#{item.slug}/#{day.date.strftime("%d")}/#{photo.path}"
+                  - if day.motion.present? || day.places.present? 
+                    .Timeline.Timeline_motion
+                      - if day.motion.present?
+                        - day.motion.each do | motion |
+                          .TimelineMotion{style: "left: #{(motion.time.to_f / 2400) * 100}%; width: #{(motion.duration.to_f / 2400) * 100}%", class: "TimelineMotion--#{motion.kind}"}
+                            .Motion_spark
+                            .Motion_label= motion.label
+                      - if day.places.present?
+                        - day.places.each do | place |
+                          .TimelinePlace{style: "left: #{(place.at.to_f / 2400) * 100}%;", class: "TimelinePlace--#{place.kind}"}
+                            - if place.photo.present?
+                              .Place_photo= image_tag "photoessays/2013/#{item.slug}/#{day.date.strftime("%d")}/#{place.photo}"
+                            .Place_icon
+                            .Place_disclosure
+                              = place.label
+        .Col.CollectionImage
+          - item.images.each_with_index do | image, index |
+            .HeroImage{class: "HeroImage--#{index + 1}"}= image_tag "photoessays/2013/#{item.slug}/#{image}"
+            
