@@ -1,0 +1,53 @@
+---
+  title: New York
+  slug: '2013/new-york'
+  subtitle: The big apple
+  body_classes: page-photoessays
+  meta_description: The big apple
+  meta_keywords:
+  trip:
+    location: america
+    weather: cloud
+    arrival: bus
+    departure: plane
+    dates:
+      from: 2013-8-11
+      to: 2013-8-16
+  days:
+    august-11:
+      date: 2018-08-11
+      title: Arriving
+      description: in New York
+    august-12:
+      date: 2018-08-12
+      title: Arriving
+      description: in New York
+    august-13:
+      date: 2018-08-13
+      title: Arriving
+      description: in New York
+    august-14:
+      date: 2018-08-14
+      title: Arriving
+      description: in New York
+    august-15:
+      date: 2018-08-15
+      title: Arriving
+      description: in New York
+    august-16:
+      date: 2018-08-16
+      title: Arriving
+      description: in New York
+---
+
+- @og_image_override = 'photoessays/2013/washington'
+
+= partial("photoessays/2013/day_navigation", locals: { days: current_page.data.days } )
+= partial("/photoessays/components/banner", locals: {slug: current_page.data.slug, title: current_page.data.title, subtitle: current_page.data.subtitle, trip: current_page.data.trip})
+
+.Page
+  .Content#story#august11
+    .Row
+      .Content_Main.Content_Article
+        :markdown
+          Foo
