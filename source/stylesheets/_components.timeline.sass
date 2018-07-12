@@ -1,23 +1,59 @@
-.Collection
+.CollectionRow
+  display: flex
+  justify-content: space-between
 
 .CollectionItem
-  width: 40.09%
-  float: left
+  width: 41.7%
+  align-self: center
+  .CollectionDate
+    text-transform: uppercase
+    letter-spacing: 0.01em
+    color: #808080
+    +fluid-scale(font-size, $responsive_min, $responsive_max, 12px, 14px)
+    +mb2
+  hr
+    border: 0 none
+    width: 40px
+    height: 1px
+    background: #eeeeee
+    +mt2
+    +mb2
+  p
+    color: #666
+    +fluid-scale(font-size, $responsive_min, $responsive_max, 13px, 18px)
 
 .CollectionImage
-  width: 47.368%
-  float: right
+  width: 50%
+  align-self: center
   .HeroImage
     width: 82.40%
-    height: 50vh
+    height: 0
+    padding-top: 88%
     object-fit: cover
+    position: relative
     img
+      position: absolute
+      top: 0
+      left: 0
+      bottom: 0
+      right: 0
       width: 100%
       height: 100%
       vertical-align: middle
       object-fit: cover
+  .HeroImage--2
+    width: 64.81%
+    padding-top: 50%
+    transform: translateY(-50%)
+    float: right
+
+.CollectionRow:nth-child(even)
+  .CollectionItem
+    order: 2
+  .CollectionImage
+    order: 1
 .Days
-  padding: 40px 0
+  padding: 40px 0 20px
   overflow-x: hidden
   overflow-y: visible
 
@@ -26,6 +62,8 @@
   width: 100%
   padding: 10px 0
   min-height: 110px
+  opacity: 0
+  transition: opacity 0.3s ease
 
 .DayLine--Heading
   padding-bottom: 0
@@ -58,6 +96,9 @@
   align-self: center
   position: absolute
   padding-left: 2px
+  opacity: 0
+  transform: translateX(-3%)
+  transition: 0.5s ease all
 
 .DayLabel_date
   font-size: 16px
@@ -119,6 +160,10 @@
 
 .Motion_label
   position: absolute
+  transtion: all 0.4s ease
+  opacity: 0
+  transform: translateX(-3%)
+
 .Motion_spark
   height: 4px
   width: 2px
@@ -127,6 +172,10 @@
   background: #ccc
   width: 100%
   margin: 0 0 5px
+  transform-origin: 0 50%
+  opacity: 0
+  transform: scaleX(0) translateX(-3%)
+  transition: 0.4s ease
 
 .TimelineMotion--flight .Motion_spark
   background: #4A90E2
@@ -150,6 +199,9 @@
   border-radius: 10px
   margin-left: -8px
   margin-top: -8px
+  transition: 0.4s ease
+  opacity: 0
+  transform: scale(0)
 
 .TimelinePhoto
   width: 40px
@@ -158,8 +210,9 @@
   margin-left: -20px
   overflow: hidden
   position: absolute
-  transition: transform 0.2s ease
+  transition: opacity 0.5s ease, transform 0.2s ease
   z-index: 2
+  opacity: 0
   &:hover,
   &:active
     transform: scale(2.3)
@@ -206,3 +259,47 @@
 
 .TimelinePlace--shop .Place_icon
   background: #DD003A image-url('photoessays/collections/places/shop.svg') 50% 50% no-repeat
+
+.Timeline--showing
+  .TimelinePhoto
+    opacity: 1
+    transform: scale(1)
+    &:hover,
+    &:active
+      transform: scale(2.3)
+      z-index: 3
+    @for $i from 1 through 10
+      &:nth-child(#{$i})
+        transition-delay: 260 + (42ms * $i), 0ms
+  .Motion_spark
+    opacity: 1
+    transform: scaleX(1) translateX(0)
+    @for $i from 1 through 10
+      &:nth-child(#{$i})
+        transition-delay: 160 + (42ms * $i)
+  .Motion_label
+    transform: translateX(0)
+    opacity: 1
+    @for $i from 1 through 10
+      &:nth-child(#{$i})
+        transition-delay: 160 + (42ms * $i)
+
+  .Place_icon
+    opacity: 1
+    transform: scale(1)
+
+.TimelinePlace
+  @for $i from 1 through 10
+    &:nth-child(#{$i}) .Place_icon
+      transition-delay: 240 + (60ms * $i)
+
+.Dayline--showing
+  opacity: 1
+  .DayLabel
+    opacity: 1
+    transform: translateX(0)
+  @for $i from 1 through 5
+    &:nth-child(#{$i})
+      transition-delay: 100 + (42 * $i)
+      .DayLabel
+        transition-delay: 150 + (42 * $i)

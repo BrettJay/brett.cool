@@ -1,12 +1,12 @@
 - name: 'San Francisco'
   slug: 'san-francisco'
   images:
-    - '24/tram.jpg'
-    - '25/alcatraz.jpg'
+    - '23/tram.jpg'
+    - '24/alcatraz.jpg'
   description: |
     Our trip begins in San Francisco. We explored downtown San Francisco, Fisherman’s Wharf, and rode bikes over the Golden Gate Bridge.
   days:
-    - date: 2013-07-23
+    - date: 2013-07-22
       photos:
         - time: 1037
           path: 'arrival_flight.jpg'
@@ -38,7 +38,7 @@
           address: 749 Taylor St, San Francisco
           kind: restaurant
           photo: 'place_little_delhi.jpg'
-    - date: 2013-07-24
+    - date: 2013-07-23
       photos:
         - time: 1058
           path: 'tram_passengers.jpg'
@@ -74,7 +74,7 @@
         - at: 2107
           label: Café Mason
           kind: restaurant
-    - date: 2013-07-25
+    - date: 2013-07-24
       photos:
         - time: 1012
           path: 'grant.jpg'
@@ -93,7 +93,7 @@
       motion:
         - time: 1159
           duration: 80
-          label: F Line Tram
+          label: Tram
           kind: transit
         - time: 1531
           duration: 270
@@ -124,3 +124,88 @@
           label: Piraat Pizzeria & Rotisserie
           kind: restaurant
           photo: 'place_pizza.jpg'
+    - date: 2013-07-25
+      photos:
+        - time: 700
+          path: 'bags.jpg'
+        - time: 900
+          path: 'walking.jpg'
+      places:
+        - at: 910
+          label: Greyhound Depot
+          kind: location
+      motion:
+        - time: 845
+          duration: 100
+          label: 
+          kind: walking
+        - time: 945
+          duration: 1455
+          label: Greyhound to LA
+          kind: bus
+
+
+- name: 'Los Angeles'
+  slug: 'los-angeles'
+  images:
+    - '27/IMG_0723.jpg'
+    - '27/IMG_1090.jpg'
+  description: |
+    We next arrived in Los Angeles. We explored Hollywood, Knotts Berry Farm, and Universal Studios.
+  days:
+    - date: 2013-07-25
+      photos:
+        - time: 1100
+          path: 'IMG_2113.jpg'
+        - time: 1600
+          path: 'IMG_2129.jpg'
+        - time: 1800
+          path: 'IMG_2134.jpg'
+        - time: 2100
+          path: 'IMG_2157.jpg'
+      places:
+        - at: 1630
+          label: Banana Bungalo
+          kind: hotel
+        - at: 1850
+          label: Chicken Dijon
+          kind: restaurant
+      motion:
+        - time: 945
+          duration: 600
+          label: Greyhound to LA
+          kind: bus
+        - time: 1400
+          duration: 100
+          label: Taxi 
+          kind: bus
+        - time: 1500
+          duration: 100
+          label: Train 
+          kind: transit
+    - date: 2013-07-26
+      photos:
+        - time: 945
+          path: 'station.jpg'
+        - time: 1200
+          path: 'knottsberry.jpg'
+        - time: 1400
+          path: 'IMG_3766.jpg'
+        - time: 1650
+          path: 'IMG_3779.jpg'
+        - time: 1750
+          path: 'IMG_3781.jpg'
+      places:
+        - at: 1200
+          label: Knotts Berry Farm
+          kind: location
+      motion:
+        - time: 945
+          duration: 140
+          label: Train
+          kind: transit
+        - time: 1030
+          duration: 200
+          label: Bus 
+          kind: bus
+        

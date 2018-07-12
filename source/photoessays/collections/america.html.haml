@@ -8,17 +8,15 @@
 
 .Page
   
-  - data.collections.america.each do | item |
-
-
-    .Content
-
-      .Collection.Row
-        .Col.CollectionItem
-          #{item.days.first.date.strftime("%b %-d, %Y")}—#{item.days.last.date.strftime("%b %-d, %Y")}
-
+  .Content
+    - data.collections.america.each do | item |
+      .CollectionRow.pt3.pb3
+        .CollectionItem
+          .CollectionDate #{item.days.first.date.strftime("%-d %B")} — #{item.days.last.date.strftime("%-d %B")}
 
           %h1= item.name
+
+          %hr/
 
           :markdown
             #{item.description}
@@ -54,7 +52,24 @@
                             .Place_icon
                             .Place_disclosure
                               = place.label
-        .Col.CollectionImage
-          - item.images.each_with_index do | image, index |
-            .HeroImage{class: "HeroImage--#{index + 1}"}= image_tag "photoessays/2013/#{item.slug}/#{image}"
-            
+        .CollectionImage
+          - if item.images.present?
+            - item.images.each_with_index do | image, index |
+              .HeroImage{class: "HeroImage--#{index + 1}"}= image_tag "photoessays/2013/#{item.slug}/#{image}"
+
+<script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
+
+:javascript
+  $('.Timeline').each(function( index, element) {
+    setTimeout(function() {
+      $( element ).addClass('Timeline--showing');
+    }, 200 + 64 * index)
+  });
+
+  
+  $('.DayLine').each(function( index, element) {
+    setTimeout(function() {
+      $( element ).addClass('Dayline--showing');
+    }, 200 + 64 * index)
+  });
+  
