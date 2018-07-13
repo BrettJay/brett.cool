@@ -44,18 +44,42 @@
   .HeroImage--2
     width: 64.81%
     padding-top: 50%
-    transform: translateY(-50%)
+    margin-top: -25%
     float: right
 
 .CollectionRow:nth-child(even)
   .CollectionItem
     order: 2
+    
   .CollectionImage
     order: 1
+    .HeroImage--1
+      float: right
+    .HeroImage--2
+      float: left
+
++respond-to(small-down)
+  .CollectionRow,
+  .CollectionRow:nth-child(even)
+    flex-wrap: wrap
+    .CollectionImage,
+    .CollectionItem
+      width: 100%
+    .CollectionImage
+      order: 1
+    .CollectionItem
+      order: 2
+    .HeroImage--1
+      padding-top: 50%
+    .HeroImage--2
+      padding-top: 30%
+      margin-top: -15%
+      width: 50%
 .Days
   padding: 40px 0 20px
-  overflow-x: hidden
-  overflow-y: visible
+  +respond-to(small-down)
+    overflow-x: hidden
+    overflow-y: visible
 
 .DayLine
   display: flex
@@ -72,8 +96,8 @@
 .DayLine--Heading + .DayLine
   padding-top: 0
 
-.DayLine + .DayLine
-  border-top: 1px solid #eee
+// .DayLine + .DayLine
+//   border-top: 1px solid #eee
 
 .Timelines
   position: relative
@@ -241,6 +265,12 @@
   padding-left: 2px
   border-left: 1px solid #eee
   color: #666
+  opacity: 0
+  transform: translateX(-4%)
+  transition: 0.33s ease all
+  @for $i from 1 through 12
+    &:nth-child(#{$i})
+      transition-delay: 100 + (66ms * $i)
 
 .TimelinePlace--airport .Place_icon
   background: #0656B4 image-url('photoessays/collections/places/airport.svg') 50% 50% no-repeat
@@ -261,6 +291,9 @@
   background: #DD003A image-url('photoessays/collections/places/shop.svg') 50% 50% no-repeat
 
 .Timeline--showing
+  .Timeline_tick
+    opacity: 1
+    transform: translateX(0)
   .TimelinePhoto
     opacity: 1
     transform: scale(1)
@@ -274,16 +307,14 @@
   .Motion_spark
     opacity: 1
     transform: scaleX(1) translateX(0)
-    @for $i from 1 through 10
-      &:nth-child(#{$i})
-        transition-delay: 160 + (42ms * $i)
   .Motion_label
     transform: translateX(0)
     opacity: 1
+  .TimelineMotion
     @for $i from 1 through 10
-      &:nth-child(#{$i})
-        transition-delay: 160 + (42ms * $i)
-
+      &:nth-child(#{$i}) .Motion_spark,
+      &:nth-child(#{$i}) .Motion_label
+        transition-delay: 160 + (66ms * $i)
   .Place_icon
     opacity: 1
     transform: scale(1)

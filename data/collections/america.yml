@@ -1,19 +1,19 @@
 - name: 'San Francisco'
   slug: 'san-francisco'
   images:
-    - '23/tram.jpg'
-    - '24/alcatraz.jpg'
+    - 23/tram.jpg
+    - 24/alcatraz.jpg
   description: |
     Our trip begins in San Francisco. We explored downtown San Francisco, Fisherman’s Wharf, and rode bikes over the Golden Gate Bridge.
   days:
     - date: 2013-07-22
       photos:
         - time: 1037
-          path: 'arrival_flight.jpg'
+          path: arrival_flight.jpg
         - time: 1410
-          path: 'brett_airport.jpg'
+          path: brett_airport.jpg
         - time: 1527
-          path: 'arriving_downtown.jpg'
+          path: arriving_downtown.jpg
       motion:
         - time: 0000
           duration: 1230
@@ -32,29 +32,29 @@
           label: Amsterdam Hostel
           address: 749 Taylor St, San Francisco
           kind: hotel
-          photo: 'amsterdam_computers.jpg'
+          photo: amsterdam_computers.jpg
         - at: 1830
           label: Little Dehli
           address: 749 Taylor St, San Francisco
           kind: restaurant
-          photo: 'place_little_delhi.jpg'
+          photo: place_little_delhi.jpg
     - date: 2013-07-23
       photos:
         - time: 1058
-          path: 'tram_passengers.jpg'
+          path: tram_passengers.jpg
         - time: 1213
-          path: 'applebees_before.jpg'
+          path: applebees_before.jpg
         - time: 1531
-          path: 'lombard_wide.jpg'
+          path: lombard_wide.jpg
         - time: 1830
-          path: 'shops.jpg'
+          path: shops.jpg
         - time: 1951
-          path: 'shops_gamestop.jpg'
+          path: shops_gamestop.jpg
       places:
         - at: 1132
           label: Spy Shop
           kind: interest
-          photo: 'spy_shop.jpg'
+          photo: spy_shop.jpg
         - at: 1215
           label: Applebees
           address: San Francisco, CA 94128, USA
@@ -77,19 +77,19 @@
     - date: 2013-07-24
       photos:
         - time: 1012
-          path: 'grant.jpg'
+          path: grant.jpg
         - time: 1175
-          path: 'f_line.jpg'
+          path: f_line.jpg
         - time: 1421
-          path: 'wharf.jpg'
+          path: wharf.jpg
         - time: 1611
-          path: 'bike_ride.jpg'
+          path: bike_ride.jpg
         - time: 1700
-          path: 'bridge_butcher.jpg'
+          path: bridge_butcher.jpg
         - time: 1850
-          path: 'boat_drinks.jpg'
+          path: boat_drinks.jpg
         - time: 2106
-          path: 'pizza_butcher.jpg'
+          path: pizza_butcher.jpg
       motion:
         - time: 1159
           duration: 80
@@ -107,29 +107,29 @@
         - at: 1047
           label: Cupid’s Span
           kind: interest
-          photo: 'cupid.jpg'
+          photo: cupid.jpg
         - at: 1238
           label: Hard Rock Café
           kind: restaurant
-          photo: 'inside_hard_rock.jpg'
+          photo: inside_hard_rock.jpg
         - at: 1702
           label: Golden Gate Bridge
           kind: interest
-          photo: 'bridge_brett.jpg'
+          photo: bridge_brett.jpg
         - at: 1776
           label: Sausalito
           kind: location
-          photo: 'island.jpg'
+          photo: island.jpg
         - at: 2106
           label: Piraat Pizzeria & Rotisserie
           kind: restaurant
-          photo: 'place_pizza.jpg'
+          photo: place_pizza.jpg
     - date: 2013-07-25
       photos:
         - time: 700
-          path: 'bags.jpg'
+          path: bags.jpg
         - time: 900
-          path: 'walking.jpg'
+          path: walking.jpg
       places:
         - at: 910
           label: Greyhound Depot
@@ -148,21 +148,21 @@
 - name: 'Los Angeles'
   slug: 'los-angeles'
   images:
-    - '27/IMG_0723.jpg'
-    - '27/IMG_1090.jpg'
+    - 27/IMG_0723.jpg
+    - 27/IMG_1090.jpg
   description: |
     We next arrived in Los Angeles. We explored Hollywood, Knotts Berry Farm, and Universal Studios.
   days:
     - date: 2013-07-25
       photos:
         - time: 1100
-          path: 'IMG_2113.jpg'
+          path: IMG_2113.jpg
         - time: 1600
-          path: 'IMG_2129.jpg'
+          path: IMG_2129.jpg
         - time: 1800
-          path: 'IMG_2134.jpg'
+          path: IMG_2134.jpg
         - time: 2100
-          path: 'IMG_2157.jpg'
+          path: IMG_2157.jpg
       places:
         - at: 1630
           label: Banana Bungalo
@@ -186,26 +186,215 @@
     - date: 2013-07-26
       photos:
         - time: 945
-          path: 'station.jpg'
+          path: station.jpg
         - time: 1200
-          path: 'knottsberry.jpg'
+          path: knottsberry.jpg
         - time: 1400
-          path: 'IMG_3766.jpg'
+          path: IMG_3766.jpg
         - time: 1650
-          path: 'IMG_3779.jpg'
+          path: IMG_3779.jpg
         - time: 1750
-          path: 'IMG_3781.jpg'
+          path: IMG_3781.jpg
       places:
         - at: 1200
           label: Knotts Berry Farm
           kind: location
       motion:
-        - time: 945
+        - time: 905
+          duration: 170
+          label: Train
+          kind: transit
+        - time: 1040
+          duration: 180
+          label: Bus 
+          kind: bus
+        - time: 1800
+          duration: 400
+          label: Bus 
+          kind: bus
+        - time: 2100
           duration: 140
           label: Train
           kind: transit
-        - time: 1030
-          duration: 200
-          label: Bus 
+    - date: 2013-07-27
+      photos:
+        - time: 1020
+          path: IMG_0705.jpg
+        - time: 1150
+          path: IMG_2271.jpg
+        - time: 1400
+          path: IMG_0891.jpg
+        - time: 1530
+          path: IMG_1122.jpg
+        - time: 2000
+          path: IMG_2422.jpg
+      places:
+        - at: 1030
+          label: Universal Studios
+          kind: interest
+          photo: IMG_0717.jpg
+        - at: 2000
+          label: La Velvet Margarita Cantina
+          kind: restaurant
+          photo: place_velvet.jpg
+      motion:
+        - time: 900
+          duration: 100
+          label: Train
+          kind: transit
+        - time: 1700
+          duration: 100
+          label: Train
+          kind: transit
+    - date: 2013-07-28
+      photos:
+        - time: 910
+          path: IMG_2440.jpg
+      places:
+        - at: 1000
+          label: Greyhound depot
+          kind: location
+      motion:
+        - time: 900
+          duration: 115
+          label: Train
+          kind: transit
+        - time: 1015
+          duration: 1385
+          label: Greyhound to Las Vegas
           kind: bus
-        
+
+
+
+- name: 'Las Vegas'
+  slug: 'las-vegas'
+  images:
+    - 30/IMG_1885.jpg
+    - 30/IMG_1556.jpg
+  description: |
+    We next arrived in Los Angeles. We explored Hollywood, Knotts Berry Farm, and Universal Studios.
+  days:
+    - date: 2013-07-28
+      photos:
+        - time: 1100
+          path: IMG_2484.jpg
+        - time: 1850
+          path: IMG_2522.jpg
+        - time: 2050
+          path: IMG_2578.jpg
+        - time: 2150
+          path: IMG_2655.jpg
+      places:
+        - at: 1530
+          label: Greyhound depot
+          kind: location
+        - at: 1615
+          label: The Monte Carlo
+          kind: hotel
+          photo: IMG_2499.jpg
+        - at: 1940
+          label: The Belagio
+          kind: location
+          photo: IMG_2592.jpg
+        - at: 2002
+          label: Ceasar’s Palace
+          kind: location
+          photo: IMG_2615.jpg
+        - at: 2200
+          label: Paris Las Vegas
+          kind: location
+          photo: IMG_2665.jpg
+      motion:
+        - time: 1015
+          duration: 600
+          label: Greyhound
+          kind: bus
+        - time: 1530
+          duration: 60
+          label: Taxi
+          kind: transit
+    - date: 2013-07-29
+      photos:
+        - time: 1000
+          path: IMG_1169.jpg
+        - time: 1200
+          path: DSC02387.jpg
+        - time: 1400
+          path: DSC02435.jpg
+        - time: 1630
+          path: IMG_2749.jpg
+        - time: 2000
+          path: IMG_2755.jpg
+        - time: 2150
+          path: IMG_2766.jpg
+      places:
+        - at: 1130
+          label: New York-New York
+          kind: location
+          photo: DSC02382.jpg
+        - at: 1330
+          label: M&M World
+          kind: interest
+          photo: DSC02417.jpg
+        - at: 1830
+          label: Zumanity
+          kind: interest
+        - at: 2200
+          label: Excalibur
+          kind: location
+          photo: IMG_2818.jpg
+        - at: 2300
+          label: Luxor
+          kind: location
+          photo: IMG_2828.jpg
+    - date: 2013-07-30
+      photos:
+        - time: 1100
+          path: IMG_1239.jpg
+        - time: 1200
+          path: IMG_2859.jpg
+        - time: 1300
+          path: IMG_2891.jpg
+        - time: 1400
+          path: IMG_1515.jpg
+        - time: 1900
+          path: IMG_1626.jpg
+      places:
+        - at: 1000
+          label: Crystals
+          kind: shop
+        - at: 1100
+          label: The Cosmopolitan
+          kind: location
+          photo: IMG_1274.jpg
+        - at: 1200
+          label: Caesar’s Palace
+          kind: location
+        - at: 1300
+          label: The Mirage
+          kind: location
+        - at: 1330
+          label: Treasure Island
+          kind: location
+        - at: 1400
+          label: The Venetian
+          kind: location
+        - at: 1430
+          label: Paris Las Vegas
+          kind: location
+    - date: 2013-07-31
+      photos:
+        - time: 1100
+          path: IMG_2484.jpg
+      places:
+        - at: 1130
+          label: New York-New York
+          kind: location
+    - date: 2013-08-01
+      photos:
+        - time: 1100
+          path: IMG_2484.jpg
+      places:
+        - at: 1130
+          label: New York-New York
+          kind: location
