@@ -1,0 +1,24 @@
+---
+  title: Photoessay Collections
+  body_classes: photoessays
+  meta_description: A collection of photoessays, from travels, conferences, and experiences…
+  meta_keywords: Photography, travel, photoessays
+---
+
+.Page
+  .Content
+    = partial "photoessays/header"
+
+    .Content_photoessays.Row
+      - data.collection.each do | collection |
+        .PhotoEssayItem
+          = link_to "/photoessays/collections/#{collection.slug}" do
+            .PhotoEssayCard
+              .PhotoEssayCard_cardImage{style: "background-image: url('/images/photoessays/collections/#{collection.slug}/banner.jpg')"}
+
+            .PhotoEssayCaption.pt1.pb2
+              .PhotoEssayCaption_title= collection.name
+              .PhotoEssayCaption_date
+                = collection.dates.from.strftime("%b %-d")
+                to
+                = collection.dates.to.strftime("%b %-d, %Y")

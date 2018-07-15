@@ -1,0 +1,14 @@
+- name: America
+  slug: america
+  photoessays:
+    - san-francisco
+    - los-angeles
+    - las-vegas
+    - denver
+    - st-louis
+    - pittsburgh
+    - washington
+    - new-york
+  dates:
+    from: 2013-07-22
+    to: 2013-08-16

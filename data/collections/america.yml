@@ -4,7 +4,9 @@
     - 23/tram.jpg
     - 24/alcatraz.jpg
   description: |
-    Our trip begins in San Francisco. We explored downtown San Francisco, Fisherman’s Wharf, and rode bikes over the Golden Gate Bridge.
+    Our trip begins in San Francisco.
+    
+    We explored downtown, Fisherman’s Wharf, and rode bikes over the Golden Gate Bridge.
   days:
     - date: 2013-07-22
       photos:
@@ -353,9 +355,9 @@
           path: IMG_1239.jpg
         - time: 1200
           path: IMG_2859.jpg
-        - time: 1300
+        - time: 1330
           path: IMG_2891.jpg
-        - time: 1400
+        - time: 1530
           path: IMG_1515.jpg
         - time: 1900
           path: IMG_1626.jpg
@@ -370,30 +372,27 @@
         - at: 1200
           label: Caesar’s Palace
           kind: location
-        - at: 1300
+        - at: 1265
           label: The Mirage
           kind: location
         - at: 1330
           label: Treasure Island
           kind: location
-        - at: 1400
+        - at: 1430
           label: The Venetian
           kind: location
-        - at: 1430
+        - at: 1530
           label: Paris Las Vegas
           kind: location
+        - at: 1900
+          label: Rainforest Café
+          kind: restaurant
     - date: 2013-07-31
-      photos:
-        - time: 1100
-          path: IMG_2484.jpg
       places:
         - at: 1130
           label: New York-New York
           kind: location
     - date: 2013-08-01
-      photos:
-        - time: 1100
-          path: IMG_2484.jpg
       places:
         - at: 1130
           label: New York-New York

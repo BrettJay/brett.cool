@@ -31,6 +31,10 @@
         %dl
           %dt= number_with_delimiter(trip[:photos], :delimiter => ',')
           %dd Photos
+      - if trip[:cities].present?
+        %dl
+          %dt= number_with_delimiter(trip[:cities], :delimiter => ',')
+          %dd Cities
       =# .TripIcon{class: "TripIcon_weather--#{trip[:weather]}"}
   .Banner_image{style: "background-image: url('/images/photoessays/#{slug}/banner.jpg')"}
 

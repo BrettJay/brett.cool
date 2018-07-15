@@ -21,12 +21,41 @@
     color: $navigation-link
     opacity: 1
     font-weight: normal
+    opacity: 0.4
+    transition: opacity 0.2s ease
+    &:hover
+      opacity: 0.8
   li.current a
-    opacity: 0.3
+    opacity: 1
 
 // todo: settle on a page naming convention :V
 .page-blog li.navigation_blog a,
 .page-photoessays li.navigation_photoessays a,
 .body--talks li.navigation_talk a,
-.body--talk li.navigation_talk a
-  opacity: 0.3
+.body--talk li.navigation_talk a,
+body.photoessays li.navigation_photoessays a
+  opacity: 1
+
+.sub_navigation
+  list-style: none
+  margin: 0
+  padding-left: 0
+  li
+    +fluid-scale(font-size, $responsive_min, $responsive_max, 12px, 15px)
+    display: inline-block
+    padding: 10px 0
+    border-bottom: 1px solid transparent
+  li + li
+    margin-left: 10px
+  a
+    text-decoration: none
+    color: $navigation-link
+    font-weight: normal
+    opacity: 0.4
+    transition: opacity 0.2s ease
+    &:hover
+      opacity: 0.8
+  li.current
+    a
+      opacity: 1
+    border-bottom: 1px solid #000

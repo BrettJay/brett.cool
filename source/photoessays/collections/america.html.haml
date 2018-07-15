@@ -1,14 +1,60 @@
 ---
-  title: America
-  subtitle: America
-  body_classes:
-  meta_description: America trip
+  title: America Trip
+  subtitle: From San Francisco to New York
+  slug: 'collections/america'
+  body_classes: page-photoessays
+  meta_description: From San Francisco to New York
   meta_keywords: mixin, photoessay, conference
+  trip:
+    location: america
+    weather: sun
+    arrival: plane
+    departure: plane
+    cities: 8
+    dates:
+      from: 2013-7-22
+      to: 2013-8-16
 ---
 
+.PhotoEssaySubHeader
+  .Content.Content--fluid
+    .Row
+      .SubHeader_Main
+        .LinkBreadCrumbs
+          #{link_to 'Photoessays', '/photoessays/', class: 'BreadCrumb_Header'}
+          #{link_to 'Collections', '/photoessays/collections', class: 'BreadCrumb_Header'}
+          .BreadCrumb_Header
+
+= partial("/photoessays/components/banner", locals: {slug: current_page.data.slug, title: current_page.data.title, subtitle: current_page.data.subtitle, trip: current_page.data.trip})
+
+= javascript_include_tag "vendor/jquery.waypoints.min"
+= javascript_include_tag "vendor/inview"
+
+:javascript
+  $(function() {
+    $('.CollectionRow').each(function(index, row) {
+      var inview = new Waypoint.Inview({
+        element: $(this),
+        enter: function(direction) {
+          $(row).addClass('CollectionRow--showing');
+          $(row).find('.DayLine').each(function( index, el) {
+            setTimeout(function() {
+              $(el).addClass('DayLine--showing');
+            }, 300 + 64 * index)
+          });
+          $(row).find('.Timeline').each(function( index, el) {
+            setTimeout(function() {
+              $(el).addClass('Timeline--showing');
+            }, 320 + 64 * index)
+          });
+        }
+      });
+    });
+  });
+
 .Page
-  
-  .Content
+
+  .Content.Content--timeline
     - data.collections.america.each do | item |
       .CollectionRow.pt3.pb3
         .CollectionItem
@@ -56,20 +102,3 @@
           - if item.images.present?
             - item.images.each_with_index do | image, index |
               .HeroImage{class: "HeroImage--#{index + 1}"}= image_tag "photoessays/2013/#{item.slug}/#{image}"
-
-<script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
-
-:javascript
-  $('.Timeline').each(function( index, element) {
-    setTimeout(function() {
-      $( element ).addClass('Timeline--showing');
-    }, 200 + 64 * index)
-  });
-
-  
-  $('.DayLine').each(function( index, element) {
-    setTimeout(function() {
-      $( element ).addClass('Dayline--showing');
-    }, 200 + 64 * index)
-  });
-  
