@@ -29,11 +29,11 @@
     august-14:
       date: 2018-08-14
       title: Free day
-      description: exploring New York
+      description: and Times Square at night
     august-15:
       date: 2018-08-15
-      title: Nepolitan Pizzas
-      description: and Nepolitan Pizza
+      title: Lombardi’s Pizzas
+      description: and our last night out
     august-16:
       date: 2018-08-16
       title: A long trip home
@@ -499,23 +499,112 @@
     .Row
       .Content_Main.Content_Article
         :markdown
-          After a good look around, and a few new purchases. We left the Nintendo World Store and explored Rockefeller center itself.
+          After a good look around and a few purchases, we left the Nintendo World Store and returned to Rockefeller center.
 
     = partial("photoessays/components/photo_right", locals: {slug: current_page.data.slug, caption: '', photo: '13/IMG_3411'})
 
     .Row
       .Content_Main.Content_Article
         :markdown
-          We took a walk around inside the Rockefeller concourse.
+          We took a look around inside the Rockefeller concourse.
 
-          Inside, we found a Ben & Jerrys, which we many of us happily partook in.
+          Inside, we found a Ben & Jerrys, which many of us happily partook in.
 
     = partial("photoessays/components/photo_two_column", locals: {slug: current_page.data.slug, left: ['13/IMG_4524'], right: ['13/IMG_4518','13/IMG_4528'] })
+
+  = partial("photoessays/components/photo_full", locals: {slug: current_page.data.slug, caption: '', photo: '13/IMG_4530'})
+
+  .Content
+    .Row
+      .Content_Main.Content_Article
+        :markdown
+          Returning to the outside of the Rockefeller center once more, we made a beeline for the Lego store.
+
+    = partial("photoessays/components/place_of_interest", locals: {slug: current_page.data.slug, image: '13/IMG_4547', title: 'The LEGO Store', address: '620 5th Ave, New York, NY 10020, USA', place: 'Retail', rating: 5, link:'' })
 
     .Row
       .Content_Main.Content_Article
         :markdown
-          We headed back out of Rockefeller center.
-  = partial("photoessays/components/photo_full", locals: {slug: current_page.data.slug, caption: '', photo: '13/IMG_4530'})
+          Inside were delightful displays made entirely out of Lego, as well as plenty of kits available to buy.
+
+    = partial("photoessays/components/photo_two_column", locals: {slug: current_page.data.slug, left: ['13/IMG_4532','13/IMG_3422'], right: ['13/IMG_4543','13/IMG_4545'] })
+
+    .Row
+      .Content_Main.Content_Article
+        :markdown
+          After a good look around, we departed from Rockefeller center, and set off for Central Park.
+
+  = partial("photoessays/components/photo_full", locals: {slug: current_page.data.slug, caption: '', photo: '13/IMG_4549'})
+  
   .Content
-    = partial("photoessays/components/place_of_interest", locals: {slug: current_page.data.slug, image: '13/IMG_3394', title: 'The LEGO Store', address: '620 5th Ave, New York, NY 10020, USA', place: 'Retail', rating: 5, link:'' })
+    = partial("photoessays/components/photo_two_column", locals: {slug: current_page.data.slug, left: ['13/IMG_3428','13/IMG_3438'], right: ['13/IMG_3435','13/IMG_3445'] })
+    .Row
+      .Content_Main.Content_Article
+        :markdown
+          Before long, we arrived at Central Park.
+
+    = partial("photoessays/components/photo_two_column", locals: {slug: current_page.data.slug, left: ['13/IMG_3447','13/IMG_4555'], right: ['13/IMG_3455','13/IMG_3461','13/IMG_3463'] })
+
+    .Row
+      .Content_Main.Content_Article
+        :markdown
+          The warm afternoon sun shone through the park as we continued to explore further in.
+
+          It was a beautiful time of day to visit.
+
+  = partial("photoessays/components/photo_full", locals: {slug: current_page.data.slug, caption: '', photo: '13/IMG_4551'})
+  .Content
+    .Row
+      .Content_Main.Content_Article
+        :markdown
+          We continued further in to the park.
+    = partial("photoessays/components/photo_two_column", locals: {slug: current_page.data.slug, left: ['13/IMG_3469','13/IMG_3484'], right: ['13/IMG_3480','13/IMG_3485'] })
+    .Row
+      .Content_Main.Content_Article
+        :markdown
+          We knew Central Park was big, but it wasn’t really until we were standing there in its midst — with the aid of our phone GPS technology showing us how relatively little we had explored so far — that it really dawned on us.
+
+          It had a lovely vibe, with plenty of patrons out relaxing and enjoying the warm afternoon weather.
+
+          We continued even further.
+
+    = partial("photoessays/components/photo_two_column", locals: {slug: current_page.data.slug, left: ['13/IMG_3490','13/IMG_3511'], right: ['13/IMG_3493','13/IMG_3512'] })
+    
+    .Row
+      .Content_Main.Content_Article
+        :markdown
+          Eventually we began to tire, and with the prospect of still having to traverse our way back out, we conceded defeat, and headed back out of the park.
+      
+    = partial("photoessays/components/photo_two_column", locals: {slug: current_page.data.slug, left: ['13/IMG_4560'], right: ['13/IMG_3522', '13/IMG_3526'] })
+
+    .Row
+      .Content_Main.Content_Article
+        :markdown
+          We boarded a train, and headed back to Williamsburg.
+
+          One uneventful train ride later, tired and weary, we traipsed out on from the now very-familiar Marcy Ave station platform back to our hotel.
+
+    = partial("photoessays/components/photo_right", locals: {slug: current_page.data.slug, caption: '', photo: '13/IMG_3528'})
+    = partial("photoessays/components/photo_two_column", locals: {slug: current_page.data.slug, left: ['13/IMG_3530','13/IMG_3539'], right: ['13/IMG_4566','13/IMG_3531'] })
+
+    .Row
+      .Content_Main.Content_Article
+        :markdown
+          We gratefully returned to the hostel, and promptly crashed for the evening.
+
+          ---
+
+          Later that evening, we headed out in search of food. Still tired from the long day, we decided to go for a takeaway option.
+
+          We walked a few blocks from our hotel to find a highly rated vegan place Butcher had read about.
+    
+    = partial("photoessays/components/place_restaurant", locals: {slug: current_page.data.slug, image: '13/champs', title: 'Champs Diner', address: '197 Meserole St Brooklyn, NY 11206', price: '$$', menu: 'Vegan Diner', rating: 5, link: '' })
+
+    .Row
+      .Content_Main.Content_Article
+        :markdown
+          We arrived at the small diner, and placed our respective orders for takeaway. Soon enough, our orders were ready, and we walked through the cool night back to our hotel.
+
+          We sat at the long hotel common room table and unpacked our meals. If I hadn’t had been informed that the meal was in fact vegan, I’d have thought I was eating honest to goodness meaty comfort food. Richard had some chicken wings that looked the part; until you reached a small chopstick in the center in place of the usual chicken bone.
+
+          Still feeling exhausted from the long day, we turned in early for the night.
