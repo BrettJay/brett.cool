@@ -1,9 +1,9 @@
 ---
   title: New York
   slug: '2013/new-york'
-  subtitle: The big apple
+  subtitle: Getting lost in the Big Apple
   body_classes: page-photoessays
-  meta_description: The big apple
+  meta_description: Getting lost in the Big Apple
   meta_keywords:
   trip:
     location: america
@@ -20,27 +20,27 @@
       description: in New York
     august-12:
       date: 2018-08-12
-      title: Arriving
-      description: in New York
+      title: Brooklyn Bridge
+      description: and West Manhattan
     august-13:
       date: 2018-08-13
-      title: Arriving
-      description: in New York
+      title: Time Square
+      description: and Central Park
     august-14:
       date: 2018-08-14
-      title: Arriving
-      description: in New York
+      title: Free day
+      description: exploring New York
     august-15:
       date: 2018-08-15
-      title: Arriving
-      description: in New York
+      title: Nepolitan Pizzas
+      description: and Nepolitan Pizza
     august-16:
       date: 2018-08-16
-      title: Arriving
-      description: in New York
+      title: A long trip home
+      description: JFK✈SFO✈AKL✈MEL✈PER
 ---
 
-- @og_image_override = 'photoessays/2013/washington'
+- @og_image_override = 'photoessays/2013/new-york'
 
 = partial("photoessays/2013/day_navigation", locals: { days: current_page.data.days } )
 = partial("/photoessays/components/banner", locals: {slug: current_page.data.slug, title: current_page.data.title, subtitle: current_page.data.subtitle, trip: current_page.data.trip})
@@ -50,4 +50,472 @@
     .Row
       .Content_Main.Content_Article
         :markdown
-          Foo
+          Our Greyhound coach continued Northwest along route 95 through Philadelphia, towards New York.
+
+          Early afternoon, our bus entered West New York in New Jersey, as we continued towards the depot.
+
+    = partial("photoessays/components/photo_two_column", locals: {slug: current_page.data.slug, left: ['11/DSC04192','11/DSC04201'], right: ['11/DSC04197','11/DSC04205'] })
+
+    .Row
+      .Content_Main.Content_Article
+        :markdown
+          Eventually, the buildings grew denser, as we found ourselves approaching Manhattan, New York City.
+
+          As we continued, our surroundings started to look increasingly like the New York City I’d seen portrayed in popular culture.
+
+    = partial("photoessays/components/photo_two_column", locals: {slug: current_page.data.slug, left: ['11/DSC04211'], right: ['11/DSC04208','11/DSC04216'] })
+
+    .Row
+      .Content_Main.Content_Article
+        :markdown
+          We reached the Greyhound terminal, and connected to the underground station. Having had no opportunity for lunch, we grabbed some food from a deli attached to the underground.
+
+          We got our bearings, and then got on to a train to take us from downtown Manhattan to Williamsburg in Brooklyn.
+          
+    = partial("photoessays/components/photo_two_column", locals: {slug: current_page.data.slug, left: ['11/IMG_4070','11/IMG_4075'], right: ['11/IMG_4069','11/IMG_4073'] })
+
+    .Row
+      .Content_Main.Content_Article
+        :markdown
+          As we arrived in Williamsburg, I was immediately struck by how well Rockstar had captured the vibe in GTA IV.
+
+          We headed from the above ground station platform to the nearby hostel.
+
+    = partial("photoessays/components/photo_two_column", locals: {slug: current_page.data.slug, left: ['11/IMG_4083'], right: ['11/IMG_4084'] })      
+      
+    = partial("photoessays/components/place_accomodation", locals: {slug: current_page.data.slug, image: '11/IMG_4095', title: 'B Hotel & Hostel', address: '341 Broadway, Brooklyn, NY 11211, USA', checkin: current_page.data.trip.dates.from, checkout: current_page.data.trip.dates.to, rating: 4 })
+
+    .Row
+      .Content_Main.Content_Article
+        :markdown
+          The fitout of B Hotel was funky and modern. We had three rooms, each with a bunk bed. The rooms were incredibly small, and the walls did not reach to the ceiling, making for a lot of sound and light leaking.
+
+          It was a bit like I imagine it would be to sleep in an open plan office, with dozens of other people on the same floor.
+    
+    = partial("photoessays/components/photo_right", locals: {slug: current_page.data.slug, caption: 'A good few inches of clearance', photo: '11/IMG_4087'})
+
+    .Row
+      .Content_Main.Content_Article
+        :markdown
+          We dropped our bags and went for a quick stroll around the area.
+
+    = partial("photoessays/components/photo_two_column", locals: {slug: current_page.data.slug, left: ['11/IMG_4088'], right: ['11/IMG_4092'] })
+
+    .Row
+      .Content_Main.Content_Article
+        :markdown
+          A short while later, we then returned to B Hotel and explored the common area lounge, which included some handy tourist information.
+
+          We took a break, planning our itinerary for the next day.
+    
+    = partial("photoessays/components/photo_right", locals: {slug: current_page.data.slug, caption: 'Richard and I had slightly different priorities', photo: '11/IMG_4104'})
+
+    .Row
+      .Content_Main.Content_Article
+        :markdown
+          Later that evening, we headed out to find dinner.
+
+          As we walked a few blocks north-west in Williamsburg from our hotel, we found entire blocks of the city grid cordoned off by police — something appeared to have gone down.
+    
+    = partial("photoessays/components/photo_right", locals: {slug: current_page.data.slug, caption: '', photo: '11/IMG_4108'})
+
+    .Row
+      .Content_Main.Content_Article
+        :markdown
+          We diverted a few streets up, and eventually came to a restaurant serving up traditional American comfort food.
+          
+    = partial("photoessays/components/place_restaurant", locals: {slug: current_page.data.slug, image: '11/walter', title: 'Walter Foods', address: '253 Grand St, Brooklyn, NY 11211, USA', price: '$$', menu: 'American', rating: 4, link: '' })
+
+    = partial("photoessays/components/photo_two_column", locals: {slug: current_page.data.slug, left: ['11/IMG_4110'], right: ['11/IMG_4113','11/IMG_4117'] })
+
+    .Row
+      .Content_Main.Content_Article
+        :markdown
+          After a very enjoyable dinner, and a quick night-cap at a nearby pub, we turned in for the evening.
+
+    .Row#august-12
+      .Content_Main.Content_Article
+        :markdown
+          ---
+
+          Early the next morning, a few of us headed to the common room to watch the latest Breaking Bad episode...
+
+    = partial("photoessays/components/photo_right", locals: {slug: current_page.data.slug, caption: '', photo: '12/IMG_4118'})
+
+    .Row
+      .Content_Main.Content_Article
+        :markdown
+          Later that morning, we set off for the Marcy Av station platform, to take us towards Brooklyn Bridge.
+
+  = partial("photoessays/components/photo_full", locals: {slug: current_page.data.slug, caption: '', photo: '12/IMG_4127'})
+
+  .Content
+    .Row
+      .Content_Main.Content_Article
+        :markdown
+          The most efficient route involved transiting in to Manhattan on a J train, transferring to a 2 train, and transiting back out of Manhattan, to arrive at Clark street station.
+
+    = partial("photoessays/components/photo_two_column", locals: {slug: current_page.data.slug, left: ['12/DSC04218'], right: ['12/DSC04219','12/IMG_3079'] })
+    
+    .Row
+      .Content_Main.Content_Article
+        :markdown
+          We popped in to a nearby store for some snacks.
+
+    = partial("photoessays/components/photo_two_column", locals: {slug: current_page.data.slug, left: ['12/IMG_4134'], right: ['12/IMG_4131','12/IMG_4138'] })
+
+    .Row
+      .Content_Main.Content_Article
+        :markdown
+          As we walked North east toward the Brooklyn Bridge, we happened across the Brooklyn War Memorial.
+
+    = partial("photoessays/components/photo_right", locals: {slug: current_page.data.slug, caption: '', photo: '12/DSC04220'})
+  = partial("photoessays/components/photo_full", locals: {slug: current_page.data.slug, caption: '', photo: '12/IMG_4149'})
+  
+  .Content
+    = partial("photoessays/components/photo_two_column", locals: {slug: current_page.data.slug, left: ['12/IMG_4148'], right: ['12/DSC04223'] })
+
+    .Row
+      .Content_Main.Content_Article
+        :markdown
+          After taking some time to admire the memorial, we continued our north-east trajectory towards the Brooklyn Bridge.
+
+          Along the way, we passed some stunning architecture.
+
+    = partial("photoessays/components/photo_two_column", locals: {slug: current_page.data.slug, left: ['12/DSC04227'], right: ['12/DSC04228','12/DSC04231'] })
+    = partial("photoessays/components/photo_right", locals: {slug: current_page.data.slug, caption: '', photo: '12/IMG_4154'})
+    = partial("photoessays/components/photo_full", locals: {slug: current_page.data.slug, caption: '', photo: '12/IMG_3130'})
+
+    .Row
+      .Content_Main.Content_Article
+        :markdown
+          We drew closer to the bridge, walking down charming residential streets.
+          
+          It somehow felt like a blend between the cozy density of a residential street in an outer suburb, with the infrastructure and convenience only found in an inner city street in Perth.
+
+    = partial("photoessays/components/photo_two_column", locals: {slug: current_page.data.slug, left: ['12/IMG_4164'], right: ['12/IMG_4166'] })
+    = partial("photoessays/components/photo_right", locals: {slug: current_page.data.slug, caption: '', photo: '12/IMG_4173'})
+    
+    
+    .Row
+      .Content_Main.Content_Article
+        :markdown
+          We continued east, the Brooklyn Bridge looming against the backdrop of the Manhattan skyline.
+
+          As we crossed over Jay street, we came upon the Brooklyn Bridge.
+    
+    = partial("photoessays/components/photo_two_column", locals: {slug: current_page.data.slug, left: ['12/DSC04247','12/DSC04259'], right: ['12/DSC04260', '12/DSC04264'] })
+
+    .Row
+      .Content_Main.Content_Article
+        :markdown
+          We followed the bridge down to the coast.
+
+    = partial("photoessays/components/photo_full", locals: {slug: current_page.data.slug, caption: '', photo: '12/IMG_3147'})
+
+    .Row
+      .Content_Main.Content_Article
+        :markdown
+           The view of a distant, yet close skyline seemed to swim before us from the other side of the water bank like a mirage.
+
+           It was a surreal view.
+
+    = partial("photoessays/components/photo_two_column", locals: {slug: current_page.data.slug, left: ['12/DSC04267'], right: ['12/DSC04273'] })
+          
+  = partial("photoessays/components/photo_full", locals: {slug: current_page.data.slug, caption: '', photo: '12/IMG_4187'})
+
+  .Content
+    = partial("photoessays/components/photo_full", locals: {slug: current_page.data.slug, caption: '', photo: '12/IMG_3150'})
+    = partial("photoessays/components/photo_two_column", locals: {slug: current_page.data.slug, left: ['12/DSC04279','12/DSC04282'], right: ['12/DSC04277','12/IMG_4196'] })
+
+    .Row
+      .Content_Main.Content_Article
+        :markdown
+          We grabbed some ice cream from a nearby vendor.
+  
+    = partial("photoessays/components/photo_right", locals: {slug: current_page.data.slug, caption: '', photo: '12/DSC04285'})
+
+    .Row
+      .Content_Main.Content_Article
+        :markdown
+          Eating our patriotically-branded ice cream, we admired the view.
+    = partial("photoessays/components/photo_two_column", locals: {slug: current_page.data.slug, left: ['12/IMG_3179','12/DSC04291'], right: ['12/IMG_3186','12/DSC04292'] })
+
+    .Row
+      .Content_Main.Content_Article
+        :markdown
+          It was time to walk that ice cream off, and there was handily a nearby bridge to do just that.
+
+    = partial("photoessays/components/photo_right", locals: {slug: current_page.data.slug, caption: '', photo: '12/DSC04304'})
+
+    .Row
+      .Content_Main.Content_Article
+        :markdown
+          We backtracked a few blocks, and ascended up narrow concrete steps.
+
+    = partial("photoessays/components/photo_two_column", locals: {slug: current_page.data.slug, left: ['12/DSC04309','12/DSC04325'], right: ['12/DSC04310','12/DSC04311'] })
+    = partial("photoessays/components/photo_full", locals: {slug: current_page.data.slug, caption: '', photo: '12/IMG_3202'})
+
+    .Row
+      .Content_Main.Content_Article
+        :markdown
+          Without further ado, we commenced the walk across Brooklyn Bridge, towards&nbsp;Manhattan.
+
+    = partial("photoessays/components/photo_full", locals: {slug: current_page.data.slug, caption: '', photo: '12/IMG_3220'})
+
+    .Row
+      .Content_Main.Content_Article
+        :markdown
+          The bridge provided excellent views of the skyline, the river, and even a distant glimpse of the Statue of Liberty, to our west.
+
+    = partial("photoessays/components/photo_two_column", locals: {slug: current_page.data.slug, left: ['12/DSC04319','12/IMG_3255','12/IMG_3293','12/DSC04344'], right: ['12/IMG_3242','12/IMG_3279','12/DSC04326','12/DSC04334','12/DSC04362'] })
+
+    .Row
+      .Content_Main.Content_Article
+        :markdown
+          Before long, we arrived on the Manhattan end of the bridge.
+
+  = partial("photoessays/components/photo_full", locals: {slug: current_page.data.slug, caption: '', photo: '12/IMG_4263'})
+  .Content
+    .Row
+      .Content_Main.Content_Article
+        :markdown
+          We explored the nearby area, tall skyscrapers towering over us.
+    = partial("photoessays/components/photo_two_column", locals: {slug: current_page.data.slug, left: ['12/IMG_4274','12/IMG_4277','12/DSC04441'], right: ['12/IMG_4269','12/IMG_4280','12/IMG_4313'] })
+
+    .Row
+      .Content_Main.Content_Article
+        :markdown
+          A nearby electronic store caught out eye.
+
+    = partial("photoessays/components/place_of_interest", locals: {slug: current_page.data.slug, image: '12/IMG_4288', title: 'J&R Electronics Inc', address: '23 Park Row, New York, NY 10038, USA', place: 'Electronics store', rating: 4, link:'' })
+
+    .Row
+      .Content_Main.Content_Article
+        :markdown
+          A quick window-shop later, we headed west through Manhattan, the tall skyscrapers casting long shadows in the early afternoon.
+
+    = partial("photoessays/components/photo_right", locals: {slug: current_page.data.slug, caption: '', photo: '12/DSC04442'})
+    = partial("photoessays/components/photo_two_column", locals: {slug: current_page.data.slug, left: ['12/DSC04445','12/DSC04450','12/DSC04476'], right: ['12/DSC04446','12/DSC04463','12/DSC04478'] })
+    
+    = partial("photoessays/components/photo_right", locals: {slug: current_page.data.slug, caption: '', photo: '12/DSC04492'})
+    
+    .Row
+      .Content_Main.Content_Article
+        :markdown
+          We continued west, passing Wall street.
+
+    = partial("photoessays/components/photo_two_column", locals: {slug: current_page.data.slug, left: ['12/DSC04513'], right: ['12/DSC04535','12/DSC04499'] })
+    = partial("photoessays/components/photo_full", locals: {slug: current_page.data.slug, caption: '', photo: '12/DSC04478'})
+    
+    .Row
+      .Content_Main.Content_Article
+        :markdown
+          Eventually, the skyline began to clear as we reached the bottom of the CBD.
+
+    = partial("photoessays/components/photo_right", locals: {slug: current_page.data.slug, caption: '', photo: '12/DSC04547'})
+
+    .Row
+      .Content_Main.Content_Article
+        :markdown
+          Before long, we arrived at the Staten Island south ferry terminal.
+
+    = partial("photoessays/components/photo_right", locals: {slug: current_page.data.slug, caption: '', photo: '12/IMG_4322'})
+
+    .Row
+      .Content_Main.Content_Article
+        :markdown
+          Continuing west, we arrived at Battery Park.
+
+    = partial("photoessays/components/photo_two_column", locals: {slug: current_page.data.slug, left: ['12/DSC04587'], right: ['12/DSC04588','12/DSC04592'] })
+    
+    .Row
+      .Content_Main.Content_Article
+        :markdown
+          We started to explore Battery park in the late afternoon sun.
+
+    = partial("photoessays/components/photo_right", locals: {slug: current_page.data.slug, caption: '', photo: '12/DSC04600'})
+    = partial("photoessays/components/photo_two_column", locals: {slug: current_page.data.slug, left: ['12/DSC04602'], right: ['12/DSC04603'] })
+
+    .Row
+      .Content_Main.Content_Article
+        :markdown
+          Arriving at the coast, we took a seat and admired the view, the Statue of Liberty visible in the distance.
+
+    = partial("photoessays/components/photo_right", locals: {slug: current_page.data.slug, caption: '', photo: '12/DSC04606'})
+    = partial("photoessays/components/photo_two_column", locals: {slug: current_page.data.slug, left: ['12/IMG_4328'], right: ['12/IMG_4331'] })
+
+    .Row
+      .Content_Main.Content_Article
+        :markdown
+          A little while later, we made our way to a nearby station to catch a train back to our hotel.
+
+    = partial("photoessays/components/photo_two_column", locals: {slug: current_page.data.slug, left: ['12/DSC04632'], right: ['12/DSC04634','12/DSC04635'] })
+
+    .Row
+      .Content_Main.Content_Article
+        :markdown
+          ---
+
+          That night, we set off for Barcade in Brooklyn.
+
+    = partial("photoessays/components/place_drink", locals: {slug: current_page.data.slug, image: '12/barcade', title: 'Barcade', address: '388 Union Ave, Brooklyn, NY 11211, USA', price: '$', menu: 'Arcade Bar', rating: 5, link: '' })
+
+    .Row
+      .Content_Main.Content_Article
+        :markdown
+          Living up to its reputation well, Barcade was a funky little bar with plenty of arcade machines, and some excellent craft beers.
+
+          Little wooden surfaces were installed between arcade machines to put your drink down during games.
+    = partial("photoessays/components/photo_two_column", locals: {slug: current_page.data.slug, left: ['12/IMG_4345','12/IMG_4351'], right: ['12/IMG_4341','12/IMG_4339'] })
+    = partial("photoessays/components/photo_right", locals: {slug: current_page.data.slug, caption: '', photo: '12/IMG_4352'})
+
+    .Row
+      .Content_Main.Content_Article
+        :markdown
+          We tried our hand at a four player game of Teenage Mutant Ninja Turtles.
+
+    = partial("photoessays/components/photo_two_column", locals: {slug: current_page.data.slug, left: ['12/IMG_4357'], right: ['12/IMG_4367'] })
+    = partial("photoessays/components/photo_right", locals: {slug: current_page.data.slug, caption: '', photo: '12/IMG_4360'})
+
+    .Row
+      .Content_Main.Content_Article
+        :markdown
+          A few drinks and many games later, we blearily headed off.
+
+          We popped in to a bakery on Grand Street for some late night carbs.
+
+    = partial("photoessays/components/photo_two_column", locals: {slug: current_page.data.slug, left: ['12/IMG_4373','12/IMG_4375'], right: ['12/IMG_4374'] })
+
+    .Row
+      .Content_Main.Content_Article
+        :markdown
+          We headed back to the hotel and turned in for the night.
+
+    .Row#august-13
+      .Content_Main.Content_Article
+        :markdown
+          ---
+  
+          The following morning, we rendezvoused in the hotel common room.
+    
+    = partial("photoessays/components/photo_right", locals: {slug: current_page.data.slug, caption: '', photo: '13/IMG_4378'})
+    = partial("photoessays/components/photo_two_column", locals: {slug: current_page.data.slug, left: ['13/IMG_4380'], right: ['13/IMG_4379'] })
+
+    .Row
+      .Content_Main.Content_Article
+        :markdown
+          We set off in to a cloudy, rainy morning for Marcy Av station, to explore Times Square.
+
+          Transferring in to an underground. Many of the little convenience stores flanking underground platform stations had put out umbrellas for the occasion, which a few of us picked up.
+
+    = partial("photoessays/components/photo_two_column", locals: {slug: current_page.data.slug, left: ['13/IMG_4384'], right: ['13/IMG_4385'] })
+
+    .Row
+      .Content_Main.Content_Article
+        :markdown
+          After grabbing a coffee in downtown Manhattan, we continued on.
+
+          Soon enough, we arrived on to 7th Ave, Times Square.
+
+  = partial("photoessays/components/photo_full", locals: {slug: current_page.data.slug, caption: '', photo: '13/IMG_4388'})
+
+  .Content
+    .Row
+      .Content_Main.Content_Article
+        :markdown
+          The scale of Times Square made an immediate, striking impression, lights shimmering in the morning rain.
+
+          Skyscrapers towered over us in every direction.
+
+    = partial("photoessays/components/photo_two_column", locals: {slug: current_page.data.slug, left: ['13/IMG_4394'], right: ['13/IMG_4399'] })
+
+    .Row
+      .Content_Main.Content_Article
+        :markdown
+          We continued north along 7th Ave.
+
+  = partial("photoessays/components/photo_full", locals: {slug: current_page.data.slug, caption: '', photo: '13/IMG_4402'})
+
+  .Content
+    .Row
+      .Content_Main.Content_Article
+        :markdown
+          Until I’d visit Tokyo some 3½ years later, Times Square was far and away the street I’d walk down, with massive buildings, screens, signs, banners, and advertisments all vying for your attention at once.
+
+    = partial("photoessays/components/photo_two_column", locals: {slug: current_page.data.slug, right: ['13/IMG_4404','13/IMG_4408','13/IMG_4439'], left: ['13/IMG_4405','13/IMG_4412','13/IMG_4413'] })
+  
+    .Row
+      .Content_Main.Content_Article
+        :markdown
+          We decided to grab some lunch at a nearby themed restaurant.
+
+    = partial("photoessays/components/place_restaurant", locals: {slug: current_page.data.slug, image: '13/jekyll', title: 'Jekyll and Hyde Club', address: '216 W 44th St New York, NY 10036 United States', price: '$$', menu: 'American', rating: 3, link: '' })
+
+    .Row
+      .Content_Main.Content_Article
+        :markdown
+          Part restaurant, part theatrical performance, Jekyll and Hyde Club was certainly a place that traded primarily on the experience.
+
+          The dark, charming gothic interior, paired with the in-character performers, made for a very distinct atmosphere. Every fifteen minutes or so, one of the staff would launch into an entertaining performance.
+
+    = partial("photoessays/components/photo_two_column", locals: {slug: current_page.data.slug, left: ['13/IMG_4450'], right: ['13/IMG_4448','13/IMG_4464'] })
+
+    .Row
+      .Content_Main.Content_Article
+        :markdown
+          The food was pretty ordinary, but it was still a memorable experience. By now, factoring in tipping and tax was finally becoming second nature. We paid our bill, and headed back out onto the busy street.
+
+          ---
+
+          The rain had over lunch, with a warm sun now shining over Times Square.
+    
+    = partial("photoessays/components/photo_full", locals: {slug: current_page.data.slug, caption: '', photo: '13/IMG_3358'})
+
+    .Row
+      .Content_Main.Content_Article
+        :markdown
+          We continued north along 7th Ave.
+
+    = partial("photoessays/components/photo_two_column", locals: {slug: current_page.data.slug, left: ['13/IMG_3340', '13/IMG_4471'], right: ['13/IMG_3365', '13/IMG_4479', '13/IMG_3384'] })
+
+    .Row
+      .Content_Main.Content_Article
+        :markdown
+          As we approached the top of Times Square, we veered off towards the Rockefeller center, and made our way to the Nintendo World Store.
+
+    = partial("photoessays/components/place_of_interest", locals: {slug: current_page.data.slug, image: '13/IMG_3394', title: 'Nintendo World Store', address: '10 Rockefeller Plaza, New York, NY 10020', place: 'Retail', rating: 5, link:'' })
+
+    .Row
+      .Content_Main.Content_Article
+        :markdown
+          The store was a spacious, two-story retail store full of Nintendo memorabilia, playable consoles, and merchandise. 10-year old Brett would have been delighted (okay... 22-year old Brett was also quite delighted).          
+
+    = partial("photoessays/components/photo_full", locals: {slug: current_page.data.slug, caption: '', photo: '13/IMG_4501'})
+    = partial("photoessays/components/photo_two_column", locals: {slug: current_page.data.slug, left: ['13/IMG_3390', '13/IMG_3394'], right: ['13/IMG_3397', '13/IMG_3398'] })
+    = partial("photoessays/components/photo_right", locals: {slug: current_page.data.slug, caption: 'Irwin checking out Pikmin 3', photo: '13/IMG_4504'})
+    = partial("photoessays/components/photo_two_column", locals: {slug: current_page.data.slug, left: ['13/IMG_3400'], right: ['13/IMG_3402'] })
+
+    .Row
+      .Content_Main.Content_Article
+        :markdown
+          After a good look around, and a few new purchases. We left the Nintendo World Store and explored Rockefeller center itself.
+
+    = partial("photoessays/components/photo_right", locals: {slug: current_page.data.slug, caption: '', photo: '13/IMG_3411'})
+
+    .Row
+      .Content_Main.Content_Article
+        :markdown
+          We took a walk around inside the Rockefeller concourse.
+
+          Inside, we found a Ben & Jerrys, which we many of us happily partook in.
+
+    = partial("photoessays/components/photo_two_column", locals: {slug: current_page.data.slug, left: ['13/IMG_4524'], right: ['13/IMG_4518','13/IMG_4528'] })
+
+    .Row
+      .Content_Main.Content_Article
+        :markdown
+          We headed back out of Rockefeller center.
+  = partial("photoessays/components/photo_full", locals: {slug: current_page.data.slug, caption: '', photo: '13/IMG_4530'})
+  .Content
+    = partial("photoessays/components/place_of_interest", locals: {slug: current_page.data.slug, image: '13/IMG_3394', title: 'The LEGO Store', address: '620 5th Ave, New York, NY 10020, USA', place: 'Retail', rating: 5, link:'' })

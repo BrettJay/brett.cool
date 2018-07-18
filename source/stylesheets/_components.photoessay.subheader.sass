@@ -171,6 +171,10 @@ $subhead_background: #fff
   .BreadCrumb_Header
     display: inline-block
     +fluid-scale(font-size, $responsive_min, $responsive_max, 12px, 14px)
+    color: rgba(255,255,255,0.5)
+    transition: color 0.2s ease
+    &:hover
+      color: rgba(255,255,255,1)
   .BreadCrumb_Header:first-child
     padding-left: 15px
   .BreadCrumb_Header + .BreadCrumb_Header:before
@@ -181,7 +185,7 @@ $subhead_background: #fff
     height: 10px
     padding-right: 11px
     padding-left: 4px
-    opacity: 0.7
+    opacity: 0.3
 .PhotoEssaySubHeader--MenuOpen
   .DayMenu
     opacity: 1
