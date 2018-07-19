@@ -32,7 +32,7 @@
     transition-delay: 100ms
   p
     transition-delay: 150ms
-  h1, p, .CollectionDate
+  h1, p, .CollectionDate, hr
     transform: translateY(4%)
     opacity: 0
     transition: 0.3s ease all
@@ -40,6 +40,7 @@
 .CollectionImage
   width: 50%
   align-self: center
+  display: block
   .HeroImage
     width: 82.40%
     height: 0
@@ -66,7 +67,7 @@
     padding-top: 50%
     margin-top: -25%
     float: right
-    transition-delay: 200ms
+    transition-delay: 230ms
 
 .CollectionRow:nth-child(even)
   .CollectionItem
@@ -99,6 +100,6 @@
 
 
 .CollectionRow--showing
-  h1, p, .CollectionDate, .HeroImage
+  h1, p, .CollectionDate, .HeroImage, hr
     transform: translateY(0%)
     opacity: 1

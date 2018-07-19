@@ -27,36 +27,27 @@
 
 = partial("/photoessays/components/banner", locals: {slug: current_page.data.slug, title: current_page.data.title, subtitle: current_page.data.subtitle, trip: current_page.data.trip})
 
-= javascript_include_tag "vendor/jquery.waypoints.min"
-= javascript_include_tag "vendor/inview"
+= javascript_include_tag "jquery.waypoints.min"
+= javascript_include_tag "inview"
 
 :javascript
   $(function() {
     $('.CollectionRow').each(function(index, row) {
       var inview = new Waypoint.Inview({
         element: $(this),
-        enter: function(direction) {
-          $(row).addClass('CollectionRow--showing');
-          $(row).find('.DayLine').each(function( index, el) {
-            setTimeout(function() {
-              $(el).addClass('DayLine--showing');
-            }, 300 + 64 * index)
-          });
-          $(row).find('.Timeline').each(function( index, el) {
-            setTimeout(function() {
-              $(el).addClass('Timeline--showing');
-            }, 320 + 64 * index)
-          });
+        enter: function(direction) {  
+          setTimeout(function() {
+            $(row).addClass('CollectionRow--showing');
+          }, 320);
         }
       });
     });
   });
 
 .Page
-
   .Content.Content--timeline
     - data.collections.america.each do | item |
-      .CollectionRow.pt3.pb3
+      .CollectionRow.mt4.mb4
         .CollectionItem
           .CollectionDate #{item.days.first.date.strftime("%-d %B")} — #{item.days.last.date.strftime("%-d %B")}
 
@@ -75,7 +66,7 @@
                   .Timeline_tick= Time.new(2013,7,23,tick * 2,0,0).strftime("%-I%p")
             - item.days.each do | day |
               .DayLine
-                .DayLabel
+                = link_to "/photoessays/2013/#{item.slug}##{day.date.strftime("%B-%d").downcase}", class: 'DayLabel' do
                   .DayLabel_date= day.date.strftime("%-d")
                   .DayLabel_month= day.date.strftime("%b")
                 .Timelines
@@ -98,7 +89,8 @@
                             .Place_icon
                             .Place_disclosure
                               = place.label
-        .CollectionImage
+
+        = link_to "/photoessays/2013/#{item.slug}", class: 'CollectionImage' do
           - if item.images.present?
             - item.images.each_with_index do | image, index |
               .HeroImage{class: "HeroImage--#{index + 1}"}= image_tag "photoessays/2013/#{item.slug}/#{image}"

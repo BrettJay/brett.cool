@@ -1,12 +1,12 @@
-- name: 'San Francisco'
-  slug: 'san-francisco'
+- name: San Francisco
+  slug: san-francisco
   images:
     - 23/tram.jpg
     - 24/alcatraz.jpg
   description: |
     Our trip begins in San Francisco.
     
-    We explored downtown, Fisherman’s Wharf, and rode bikes over the Golden Gate Bridge.
+    We explored downtown San Francisco, Fisherman’s Wharf, and rode bikes over the Golden Gate Bridge.
   days:
     - date: 2013-07-22
       photos:
@@ -147,13 +147,13 @@
           kind: bus
 
 
-- name: 'Los Angeles'
-  slug: 'los-angeles'
+- name: Los Angeles
+  slug: los-angeles
   images:
     - 27/IMG_0723.jpg
     - 27/IMG_1090.jpg
   description: |
-    We next arrived in Los Angeles. We explored Hollywood, Knotts Berry Farm, and Universal Studios.
+    We next arrived in Los Angeles. We explored Hollywood, visited Knotts Berry Farm, and Universal Studios.
   days:
     - date: 2013-07-25
       photos:
@@ -268,13 +268,13 @@
 
 
 
-- name: 'Las Vegas'
-  slug: 'las-vegas'
+- name: Las Vegas
+  slug: las-vegas
   images:
     - 30/IMG_1885.jpg
     - 30/IMG_1556.jpg
   description: |
-    We next arrived in Los Angeles. We explored Hollywood, Knotts Berry Farm, and Universal Studios.
+    We
   days:
     - date: 2013-07-28
       photos:
@@ -388,10 +388,28 @@
           label: Rainforest Café
           kind: restaurant
     - date: 2013-07-31
+      photos:
+        - time: 1000
+          path: IMG_2977.jpg
+        - time: 1200
+          path: IMG_2995.jpg
+        - time: 1700
+          path: DSC02590.jpg
+        - time: 2115
+          path: DSC02613.jpg
       places:
-        - at: 1130
-          label: New York-New York
+        - at: 1730
+          label: Rio
           kind: location
+      motion:
+        - time: 1010
+          duration: 100
+          label: Bus
+          kind: bus
+        - time: 1230
+          duration: 120
+          label: Bus
+          kind: bus
     - date: 2013-08-01
       places:
         - at: 1130

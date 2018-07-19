@@ -32,14 +32,18 @@
   min-height: 60px
 
 .DayLabel
+  display: block
   width: 30px
   text-align: left
   align-self: center
   position: absolute
   padding-left: 2px
   opacity: 0
+  pointer-events: auto
   transform: translateX(-3%)
   transition: 0.5s ease all
+  text-decoration: none
+  z-index: 100
 
 .DayLabel_date
   font-size: 16px
@@ -207,47 +211,48 @@
 .TimelinePlace--shop .Place_icon
   background: #DD003A image-url('photoessays/collections/places/shop.svg') 50% 50% no-repeat
 
-.Timeline--showing
-  .Timeline_tick
-    opacity: 1
-    transform: translateX(0)
-  .TimelinePhoto
-    opacity: 1
-    transform: scale(1)
-    &:hover,
-    &:active
-      transform: scale(2.3)
-      z-index: 3
-    @for $i from 1 through 10
-      &:nth-child(#{$i})
-        transition-delay: 260 + (42ms * $i), 0ms
-  .Motion_spark
-    opacity: 1
-    transform: scaleX(1) translateX(0)
-  .Motion_label
-    transform: translateX(0)
-    opacity: 1
-  .TimelineMotion
-    @for $i from 1 through 10
-      &:nth-child(#{$i}) .Motion_spark,
-      &:nth-child(#{$i}) .Motion_label
-        transition-delay: 160 + (66ms * $i)
-  .Place_icon
-    opacity: 1
-    transform: scale(1)
-
 .TimelinePlace
   @for $i from 1 through 10
     &:nth-child(#{$i}) .Place_icon
       transition-delay: 240 + (60ms * $i)
 
-.DayLine--showing
-  opacity: 1
-  .DayLabel
+.CollectionRow--showing
+  .Timeline
+    .Timeline_tick
+      opacity: 1
+      transform: translateX(0)
+    .TimelinePhoto
+      opacity: 1
+      transform: scale(1)
+      &:hover,
+      &:active
+        transform: scale(2.3)
+        z-index: 3
+      @for $i from 1 through 10
+        &:nth-child(#{$i})
+          transition-delay: 260 + (42ms * $i), 0ms
+    .Motion_spark
+      opacity: 1
+      transform: scaleX(1) translateX(0)
+    .Motion_label
+      transform: translateX(0)
+      opacity: 1
+    .TimelineMotion
+      @for $i from 1 through 10
+        &:nth-child(#{$i}) .Motion_spark,
+        &:nth-child(#{$i}) .Motion_label
+          transition-delay: 160 + (66ms * $i)
+    .Place_icon
+      opacity: 1
+      transform: scale(1)
+
+  .DayLine
     opacity: 1
-    transform: translateX(0)
-  @for $i from 1 through 5
-    &:nth-child(#{$i})
-      transition-delay: 100 + (42 * $i)
-      .DayLabel
-        transition-delay: 150 + (42 * $i)
+    .DayLabel
+      opacity: 1
+      transform: translateX(0)
+    @for $i from 1 through 5
+      &:nth-child(#{$i})
+        transition-delay: 100 + (42 * $i)
+        .DayLabel
+          transition-delay: 150 + (42 * $i)
