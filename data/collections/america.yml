@@ -756,6 +756,8 @@
           path: IMG_4051_lq.jpg
         - time: 1100
           path: DSC04180_lq.jpg
+        - time: 1400
+          path: IMG_4055_lq.jpg
       motion:
         - time: 1030
           duration: 150
