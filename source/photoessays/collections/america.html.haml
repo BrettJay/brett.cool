@@ -3,8 +3,8 @@
   subtitle: San Francisco to New York
   slug: 'collections/america'
   body_classes: page-photoessays
-  meta_description: From July 22 to August 16 in 2013, we traveled from San Francisco to Los Angeles, Las Vegas, Denver, St Louis, Pittsburgh, Washington, and New York. 🗺 📸
-  meta_keywords: mixin, photoessay, conference
+  meta_description: In July and August of 2013 we traveled across America, from San Francisco to New York. Here’s where we went, and what we got up to 🗺 📸
+  meta_keywords: America, photoessay, travel, photography, esssay
   trip:
     location: america
     weather: sun
@@ -20,7 +20,7 @@
 - @og_label1_override = 'Dates 📅'
 - @og_data1_override = "#{Date.parse(current_page.data.trip.dates.from.to_s).strftime('%B %e')} to #{Date.parse(current_page.data.trip.dates.to.to_s).strftime('%B %e, %Y')}"
 - @og_label2_override = 'Cities 🗺'
-- @og_data2_override = current_page.data.trip.cities
+- @og_data2_override = "San Francisco, Los Angeles, Las Vegas, Denver, St Louis, Pittsburgh, Washington, New York."
 
 .PhotoEssaySubHeader
   .Content.Content--fluid
@@ -52,7 +52,7 @@
 .Page
   .Content.Content--timeline
     - data.collections.america.each do | item |
-      .CollectionRow.mt4.mb4
+      .CollectionRow.mt4.mb4.pt1.pb1
         .CollectionItem
           .CollectionDate #{item.days.first.date.strftime("%-d %B")} — #{item.days.last.date.strftime("%-d %B")}
 
@@ -74,6 +74,9 @@
                 = link_to "/photoessays/2013/#{item.slug}##{day.date.strftime("%B-%d").downcase}", title: "Read from #{day.date.strftime("%B %-d")}", class: 'DayLabel' do
                   .DayLabel_date= day.date.strftime("%-d")
                   .DayLabel_month= day.date.strftime("%b")
+                  .DayLabel_chevron
+                    %svg{height: "9", viewbox: "0 0 5 9", width: "5", xmlns: "http://www.w3.org/2000/svg"}
+                      %polyline{fill: "none", points: ".5 .5 4.5 4.5 .5 8.5", stroke: "#666"}
                 .Timelines
                   - if day.photos.present?
                     .Timeline.Timeline_photos

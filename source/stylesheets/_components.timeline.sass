@@ -47,7 +47,17 @@
   transition: 0.5s ease all
   text-decoration: none
   z-index: 100
-  
+  .DayLabel_chevron
+    position: absolute
+    top: 2px
+    right: 1px
+    transition: all 0.2s ease
+    svg
+      transition: all 0.2s ease
+  &:hover .DayLabel_chevron
+    transform: translateX(3px)
+    svg
+      stroke: #0066CC
 .DayLabel_date
   font-size: 16px
   color: #111111

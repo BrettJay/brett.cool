@@ -5,8 +5,10 @@
     - 24/alcatraz.jpg
   description: |
     Our trip begins in San Francisco.
+
+    After a 13-hour flight from Auckland, and a brief pit stop in customs, we arrived in early afternoon San Francisco.
     
-    We explored downtown San Francisco, Fisherman’s Wharf, and rode bikes over the Golden Gate Bridge.
+    We explored downtown, Fisherman’s Wharf, and rode bikes over the Golden Gate Bridge to Sausilito.
   days:
     - date: 2013-07-22
       photos:
@@ -149,7 +151,9 @@
     - 27/IMG_0723.jpg
     - 27/IMG_1090.jpg
   description: |
-    We next arrived in Los Angeles. We explored Hollywood, visited Knotts Berry Farm, and Universal Studios.
+    We arrived in downtown Los Angeles from San Francisco via Greyhounds bus.
+
+    We explored the buzzing Hollywood strip, and rode amusement park rides at Knotts Berry Farm, and Universal Studios in Hollywood.
   days:
     - date: 2013-07-25
       photos:
@@ -266,7 +270,12 @@
     - 30/IMG_1885.jpg
     - 30/IMG_1556.jpg
   description: |
-    We then arrived in Las Vegas. 
+    The lights, spectacle, and vibe of Las Vegas makes a striking first impression.
+
+    We spent our time exploring the casino strip, drinks in hand, walking from casino to casino.
+
+    We also saw Penn & Teller at Rio, and Cirque du Soleil’s Zumanity at New York-New York.
+
   days:
     - date: 2013-07-28
       photos:
@@ -381,6 +390,9 @@
         - at: 1730
           label: Rio
           kind: location
+        - at: 2100
+          label: Penn & Teller
+          kind: interest
       motion:
         - time: 1010
           duration: 100
@@ -414,9 +426,10 @@
     - 02/IMG_1909.jpg
     - 02/DSC02751.jpg
   description: |
-    After the dizzying spectacle of Las Vegas, Denver was the perfect place to catch our breath.
+    After the dizzying spectacle of Las Vegas, Denver was the perfect place to come down.
 
-    We explored the quiet city and 
+    We explored the laid back city, eating some excellent Pizza, and singing Waltzing Matilda in rainy pubs with locals, when they noticed our Australian accents.
+
   days:
     - date: 2013-08-01
       photos:
@@ -507,7 +520,11 @@
     - 05/IMG_2137.jpg
     - banner.jpg
   description: |
-    We made a quick stopover in St Louis to check out the Gateway Arch.
+    Following Denver, we made a brief flyover to St Louis.
+
+    After a rather traditional diner breakfast, with some quality golden pancakes, we explored downtown St Louis and the Gateway Arch.
+
+    We departed for Pittsburgh, with a redeye greyhound bus route involving stopovers at 2am and 4am.
   days:
     - date: 2013-08-04
       places:
@@ -585,9 +602,10 @@
     - 08/DSC03433.jpg
     - 08/DSC03350.jpg
   description: |
-    We then arrived in Las Vegas. 
+    We arrived early morning in Pittsburgh on little sleep from our St Louis Greyhound odyssey. The quiet, town had a welcoming vibe reminiscent of Fitzroy in Melbourne.
+
+    We explored the beautiful city, and enjoyed some excellent food and drink — including some memorable burgers and craft beer at Fatheads.
   days:
-      
     - date: 2013-08-07
       places:
         - at: 200
@@ -662,7 +680,7 @@
           path: DSC03484_lq.jpg
       motion:
         - time: 1400
-          duration: 400
+          duration: 350
           label: Greyhound to Washington
           kind: bus
 
@@ -674,7 +692,9 @@
     - banner.jpg
     - 10/DSC03663.jpg
   description: |
-    Monuments, Smithsonian museums
+    We spent our little time in Washington seeing the various iconic monuments in the national mall; including the Lincoln memorial and the Washington monument, as well as The White House.
+
+    We also visited the National Air & Space Museum, and the National Museum of Natural History.
   days:
     - date: 2013-07-09
       photos:
@@ -695,6 +715,11 @@
         - at: 2217
           label: Lincoln Memorial
           kind: interest
+      motion:
+        - time: 1400
+          duration: 220
+          label: Greyhound
+          kind: bus
     - date: 2013-07-10
       photos:
         - time: 800
@@ -748,9 +773,7 @@
     - 12/IMG_3150.jpg
     - 14/DSC04961.jpg
   description: |
-    Capping off our trip, we arrived in New York.
-
-    Over the course of six days, we saw as much of New York as we could, and ate some amazing food.
+    Finally, we arrived in New York. Over the course of six days, we saw as much of New York as we could, including Brooklyn Bridge, Times Square, and Central Park.
   days:
     - date: 2013-07-11
       photos:
