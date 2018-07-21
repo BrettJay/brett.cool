@@ -1,0 +1,32 @@
+.Row
+  .Content_Main
+    .PlaceCard.PlaceCard--flights
+      .PlaceCard_cover{style: "background-image: url('/images/photoessays/#{slug}/#{image}.jpg')"}
+      - flights.each do | flight |
+        .Flight
+          .PlaceCard_title= flight[:title]
+          .PlaceCard_address= flight[:airline]
+
+          .PlaceCard_attributeGrid
+            .PlaceCard_attributes.PlaceCard_attributes--flight
+              %dl.Attribute_pair
+                %dt= flight[:origin]
+                %dd= flight[:depart]
+
+              %dl.Attribute_pair
+                %dt= flight[:destination]
+                %dd= flight[:arrive]
+            
+            - if !flight[:gate].blank? && !flight[:seat].blank?
+              .PlaceCard_attributes
+                %dl.Attribute_pair
+                  %dt= flight[:gate]
+                  %dd Gate
+                %dl.Attribute_pair
+                  %dt= flight[:seat]
+                  %dd Seat
+
+          - unless flight[:rating].blank?
+            .PlaceCard_rating{class: "PlaceCard_rating--#{flight[:rating]}"}
+              - flight[:rating].times do
+                ★

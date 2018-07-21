@@ -1,0 +1,922 @@
+- name: San Francisco
+  slug: san-francisco
+  images:
+    - 23/tram.jpg
+    - 24/alcatraz.jpg
+  description: |
+    Our trip begins in San Francisco.
+    
+    We explored downtown San Francisco, Fisherman’s Wharf, and rode bikes over the Golden Gate Bridge.
+  days:
+    - date: 2013-07-22
+      photos:
+        - time: 1037
+          path: arrival_flight_lq.jpg
+        - time: 1410
+          path: brett_airport_lq.jpg
+        - time: 1527
+          path: arriving_downtown_lq.jpg
+      motion:
+        - time: 0000
+          duration: 1230
+          label: AKL ✈ SFO
+          kind: flight
+        - time: 1430
+          duration: 97
+          label: BART
+          kind: transit
+      places:
+        - at: 1215
+          label: San Francisco International Airport 
+          address: San Francisco, CA 94128, USA
+          kind: airport
+        - at: 1604
+          label: Amsterdam Hostel
+          address: 749 Taylor St, San Francisco
+          kind: hotel
+          photo: amsterdam_computers_lq.jpg
+        - at: 1830
+          label: Little Dehli
+          address: 749 Taylor St, San Francisco
+          kind: restaurant
+          photo: place_little_delhi.jpg
+    - date: 2013-07-23
+      photos:
+        - time: 1058
+          path: tram_passengers_lq.jpg
+        - time: 1213
+          path: applebees_before_lq.jpg
+        - time: 1531
+          path: lombard_wide_lq.jpg
+        - time: 1830
+          path: shops_lq.jpg
+      places:
+        - at: 1132
+          label: Spy Shop
+          kind: interest
+          photo: spy_shop.jpg
+        - at: 1215
+          label: Applebees
+          address: San Francisco, CA 94128, USA
+          kind: restaurant
+        - at: 1341
+          label: Ripleys Believe it or Not Museum
+          kind: interest
+        - at: 1500
+          label: Lombard Street
+          kind: interest
+        - at: 1702
+          label: Jared meets us at Amsterdam Hostel
+          kind: hotel
+        - at: 1900
+          label: Westfield San Francisco Centre
+          kind: shop
+        - at: 2107
+          label: Café Mason
+          kind: restaurant
+    - date: 2013-07-24
+      photos:
+        - time: 1012
+          path: grant_lq.jpg
+        - time: 1175
+          path: f_line_lq.jpg
+        - time: 1421
+          path: wharf_lq.jpg
+        - time: 1700
+          path: bridge_butcher_lq.jpg
+        - time: 1850
+          path: boat_drinks_lq.jpg
+        - time: 2106
+          path: pizza_butcher_lq.jpg
+      motion:
+        - time: 1159
+          duration: 80
+          label: Tram
+          kind: transit
+        - time: 1531
+          duration: 270
+          label: Cycling
+          kind: cycling
+        - time: 1829
+          duration: 50
+          label: Ferry
+          kind: ferry
+      places:
+        - at: 1047
+          label: Cupid’s Span
+          kind: interest
+          photo: cupid_lq.jpg
+        - at: 1238
+          label: Hard Rock Café
+          kind: restaurant
+          photo: inside_hard_rock_lq.jpg
+        - at: 1702
+          label: Golden Gate Bridge
+          kind: interest
+          photo: bridge_brett_lq.jpg
+        - at: 1776
+          label: Sausalito
+          kind: location
+          photo: island_lq.jpg
+        - at: 2106
+          label: Piraat Pizzeria & Rotisserie
+          kind: restaurant
+          photo: place_pizza_lq.jpg
+    - date: 2013-07-25
+      photos:
+        - time: 700
+          path: bags_lq.jpg
+        - time: 900
+          path: walking_lq.jpg
+      places:
+        - at: 910
+          label: Greyhound Depot
+          kind: location
+      motion:
+        - time: 845
+          duration: 100
+          label: 
+          kind: walking
+        - time: 945
+          duration: 1455
+          label: Greyhound to LA
+          kind: bus
+
+
+- name: Los Angeles
+  slug: los-angeles
+  images:
+    - 27/IMG_0723.jpg
+    - 27/IMG_1090.jpg
+  description: |
+    We next arrived in Los Angeles. We explored Hollywood, visited Knotts Berry Farm, and Universal Studios.
+  days:
+    - date: 2013-07-25
+      photos:
+        - time: 1100
+          path: IMG_2113_lq.jpg
+        - time: 1600
+          path: IMG_2129_lq.jpg
+        - time: 1800
+          path: IMG_2134_lq.jpg
+        - time: 2100
+          path: IMG_2157_lq.jpg
+      places:
+        - at: 1630
+          label: Banana Bungalo
+          kind: hotel
+        - at: 1850
+          label: Chicken Dijon
+          kind: restaurant
+      motion:
+        - time: 945
+          duration: 600
+          label: Greyhound to LA
+          kind: bus
+        - time: 1400
+          duration: 100
+          label: Taxi 
+          kind: bus
+        - time: 1500
+          duration: 100
+          label: Train 
+          kind: transit
+    - date: 2013-07-26
+      photos:
+        - time: 945
+          path: station_lq.jpg
+        - time: 1200
+          path: knottsberry_lq.jpg
+        - time: 1400
+          path: IMG_3766_lq.jpg
+        - time: 1750
+          path: IMG_3781_lq.jpg
+      places:
+        - at: 1200
+          label: Knotts Berry Farm
+          kind: location
+      motion:
+        - time: 905
+          duration: 170
+          label: Train
+          kind: transit
+        - time: 1040
+          duration: 180
+          label: Bus 
+          kind: bus
+        - time: 1800
+          duration: 400
+          label: Bus 
+          kind: bus
+        - time: 2100
+          duration: 140
+          label: Train
+          kind: transit
+    - date: 2013-07-27
+      photos:
+        - time: 1110
+          path: IMG_2271_lq.jpg
+        - time: 1400
+          path: IMG_0891_lq.jpg
+        - time: 1530
+          path: IMG_1122_lq.jpg
+        - time: 2000
+          path: IMG_2422_lq.jpg
+      places:
+        - at: 1030
+          label: Universal Studios
+          kind: interest
+          photo: IMG_0717_lq.jpg
+        - at: 2000
+          label: La Velvet Margarita Cantina
+          kind: restaurant
+          photo: place_velvet_lq.jpg
+      motion:
+        - time: 900
+          duration: 100
+          label: Train
+          kind: transit
+        - time: 1700
+          duration: 100
+          label: Train
+          kind: transit
+    - date: 2013-07-28
+      photos:
+        - time: 910
+          path: IMG_2440_lq.jpg
+      places:
+        - at: 1000
+          label: Greyhound depot
+          kind: location
+      motion:
+        - time: 900
+          duration: 115
+          label: Train
+          kind: transit
+        - time: 1015
+          duration: 1385
+          label: Greyhound to Las Vegas
+          kind: bus
+
+
+
+- name: Las Vegas
+  slug: las-vegas
+  images:
+    - 30/IMG_1885.jpg
+    - 30/IMG_1556.jpg
+  description: |
+    We then arrived in Las Vegas. 
+  days:
+    - date: 2013-07-28
+      photos:
+        - time: 1100
+          path: IMG_2484_lq.jpg
+        - time: 2000
+          path: IMG_2578_lq.jpg
+        - time: 2200
+          path: IMG_2655_lq.jpg
+      places:
+        - at: 1530
+          label: Greyhound depot
+          kind: location
+        - at: 1615
+          label: The Monte Carlo
+          kind: hotel
+          photo: IMG_2499_lq.jpg
+        - at: 1940
+          label: The Belagio
+          kind: location
+          photo: IMG_2592_lq.jpg
+        - at: 2002
+          label: Ceasar’s Palace
+          kind: location
+          photo: IMG_2615_lq.jpg
+        - at: 2200
+          label: Paris Las Vegas
+          kind: location
+          photo: IMG_2665_lq.jpg
+      motion:
+        - time: 1015
+          duration: 600
+          label: Greyhound
+          kind: bus
+        - time: 1530
+          duration: 60
+          label: Taxi
+          kind: transit
+    - date: 2013-07-29
+      photos:
+        - time: 1200
+          path: DSC02387_lq.jpg
+        - time: 1400
+          path: DSC02435_lq.jpg
+        - time: 1630
+          path: IMG_2749_lq.jpg
+        - time: 2150
+          path: IMG_2766_lq.jpg
+      places:
+        - at: 1130
+          label: New York-New York
+          kind: location
+          photo: DSC02382_lq.jpg
+        - at: 1330
+          label: M&M World
+          kind: interest
+          photo: DSC02417_lq.jpg
+        - at: 1830
+          label: Zumanity
+          kind: interest
+        - at: 2200
+          label: Excalibur
+          kind: location
+          photo: IMG_2818_lq.jpg
+        - at: 2300
+          label: Luxor
+          kind: location
+          photo: IMG_2828_lq.jpg
+    - date: 2013-07-30
+      photos:
+        - time: 1150
+          path: IMG_2859_lq.jpg
+        - time: 1330
+          path: IMG_2891_lq.jpg
+        - time: 1530
+          path: IMG_1515_lq.jpg
+        - time: 1900
+          path: IMG_1626_lq.jpg
+      places:
+        - at: 1000
+          label: Crystals
+          kind: shop
+        - at: 1100
+          label: The Cosmopolitan
+          kind: location
+        - at: 1200
+          label: Caesar’s Palace
+          kind: location
+        - at: 1330
+          label: Treasure Island
+          kind: location
+        - at: 1430
+          label: The Venetian
+          kind: location
+        - at: 1530
+          label: Paris Las Vegas
+          kind: location
+        - at: 1900
+          label: Rainforest Café
+          kind: restaurant
+    - date: 2013-07-31
+      photos:
+        - time: 1000
+          path: IMG_2977_lq.jpg
+        - time: 1200
+          path: IMG_2995_lq.jpg
+        - time: 1700
+          path: DSC02590_lq.jpg
+        - time: 2115
+          path: DSC02613_lq.jpg
+      places:
+        - at: 1730
+          label: Rio
+          kind: location
+      motion:
+        - time: 1010
+          duration: 100
+          label: Bus
+          kind: bus
+        - time: 1230
+          duration: 120
+          label: Bus
+          kind: bus
+    - date: 2013-08-01
+      photos:
+        - time: 1000
+          path: IMG_3100_lq.jpg
+        - time: 1200
+          path: DSC02663_lq.jpg
+      places:
+        - at: 1100
+          label: LAS
+          kind: airport
+      motion:
+        - time: 1124
+          duration: 330
+          label: Flight to Denver
+          kind: flight
+
+
+
+- name: Denver
+  slug: denver
+  images:
+    - 02/IMG_1909.jpg
+    - 02/DSC02751.jpg
+  description: |
+    After the dizzying spectacle of Las Vegas, Denver was the perfect place to catch our breath.
+
+    We explored the quiet city and 
+  days:
+    - date: 2013-08-01
+      photos:
+        - time: 1600
+          path: DSC02669_lq.jpg
+        - time: 1840
+          path: IMG_3137_lq.jpg
+      motion:
+        - time: 1124
+          duration: 330
+          label: Flight to Denver
+          kind: flight
+      places:
+        - at: 1420
+          label: Denver International Airport
+          kind: airport
+        - at: 1651
+          label: Ramada by Wyndham Denver
+          kind: hotel
+          photo: accomodation_lq.jpg
+        - at: 1851
+          label: Sliceworks
+          kind: restaurant
+    - date: 2013-08-02
+      photos:
+        - time: 1000
+          path: IMG_1902_lq.jpg
+        - time: 1230
+          path: IMG_3162_lq.jpg
+        - time: 1350
+          path: IMG_1979_lq.jpg
+        - time: 1500
+          path: DSC02811_lq.jpg
+        - time: 1917
+          path: IMG_2033_lq.jpg
+      places:
+        - at: 1250
+          label: Tamayo
+          kind: restaurant
+          photo: IMG_1910_lq.jpg
+        - at: 1430
+          label: Tattered Cover Bookstore
+          kind: interest
+        - at: 1900
+          label: Wendy’s
+          kind: restaurant
+    - date: 2013-08-03
+      photos:
+        - time: 1500
+          path: IMG_2035_lq.jpg
+        - time: 1230
+          path: irish-snug_lq.jpg
+        - time: 1820
+          path: IMG_3257_lq.jpg
+      places:
+        - at: 1250
+          label: The Irish Snug
+          kind: restaurant
+        - at: 1850
+          label: Streets of London Pub
+          kind: restaurant
+          photo: streets-of-london_lq.jpg
+    - date: 2013-08-04
+      places:
+        - at: 1750
+          label: Denver International Airport
+          kind: airport
+      photos:
+        - time: 1100
+          path: IMG_3267_lq.jpg
+        - time: 1300
+          path: IMG_3271_lq.jpg
+        - time: 1600
+          path: DSC02817_lq.jpg
+      motion:
+        - time: 1450
+          duration: 300
+          label: Bus
+          kind: bus
+        - time: 1900
+          duration: 265
+          label: Flight to St Louis
+          kind: flight
+
+- name: St Louis
+  slug: st-louis
+  images:
+    - 05/IMG_2137.jpg
+    - banner.jpg
+  description: |
+    We made a quick stopover in St Louis to check out the Gateway Arch.
+  days:
+    - date: 2013-08-04
+      places:
+        - at: 2000
+          label: St Louis Airport
+          kind: airport
+        - at: 2100
+          label: America’s Best Value In St Louis
+          kind: hotel
+      photos:
+        - time: 2200
+          path: IMG_4203_lq.jpg
+        - time: 2350
+          path: IMG_3286_lq.jpg
+      motion:
+        - time: 1900
+          duration: 240
+          label: Flight to St Louis
+          kind: flight
+    - date: 2013-08-05
+      places:
+        - at: 1100
+          label: Golden Pancake
+          kind: restaurant
+        - at: 1315
+          label: Gateway Arch
+          kind: interest
+      photos:
+        - time: 1050
+          path: IMG_3288_lq.jpg
+        - time: 1340
+          path: IMG_2097_lq.jpg
+        - time: 1750
+          path: IMG_3353_lq.jpg
+      motion:
+        - time: 1150
+          duration: 130
+          label: Train
+          kind: transit
+        - time: 1550
+          duration: 130
+          label: Train
+          kind: transit
+    - date: 2013-08-06
+      places:
+        - at: 1050
+          label: Subway
+          kind: restaurant
+        - at: 1600
+          label: Greyhound depot
+          kind: location
+        - at: 2200
+          label: Greyhound depot
+          kind: location
+      photos:
+        - time: 1300
+          path: DSC02836_lq.jpg
+        - time: 1617
+          path: IMG_3364_lq.jpg
+        - time: 2350
+          path: IMG_3366_lq.jpg
+      motion:
+        - time: 1600
+          duration: 600
+          label: Greyhound
+          kind: bus
+        - time: 2300
+          duration: 100
+          label:
+          kind: bus
+
+- name: Pittsburgh
+  slug: pittsburgh
+  images:
+    - 08/DSC03433.jpg
+    - 08/DSC03350.jpg
+  description: |
+    We then arrived in Las Vegas. 
+  days:
+      
+    - date: 2013-08-07
+      places:
+        - at: 200
+          label: Greyhound depot
+          kind: location
+        - at: 750
+          label: Holiday Inn
+          kind: hotel
+        - at: 830
+          label: O’Leary’s Restaurant
+          kind: restaurant 
+          photo: IMG_3454_lq.jpg
+        - at: 1300
+          label: Fort Pitt Museum
+          kind: interest
+        - at: 1830
+          label: Kassab’s Restaurant
+          kind: restaurant
+          photo: IMG_3514_lq.jpg
+        - at: 2000
+          label: Jack’s Bar
+          kind: bar
+      photos:
+        - time: 500
+          path: DSC02897_lq.jpg
+        - time: 660
+          path: IMG_3433_lq.jpg
+        - time: 1020
+          path: DSC03137_lq.jpg
+        - time: 1200
+          path: IMG_2269_lq.jpg
+        - time: 1400
+          path: IMG_2373_lq.jpg
+        - time: 2000
+          path: IMG_3527_lq.jpg
+      motion:
+        - time: 000
+          duration: 200
+          label: Greyhound
+          kind: bus
+        - time: 300
+          duration: 300
+          label: Greyhound
+          kind: bus
+    - date: 2013-08-08
+      photos:
+        - time: 1030
+          path: IMG_3532_lq.jpg
+        - time: 1230
+          path: IMG_3556_lq.jpg
+        - time: 1600
+          path: IMG_2408_lq.jpg
+        - time: 1800
+          path: IMG_2552_lq.jpg
+        - time: 2100
+          path: IMG_2602_lq.jpg
+      places:
+        - at: 1030
+          label: The Exchange
+          kind: shop
+        - at: 1200
+          label: Fatheads
+          kind: restaurant
+          photo: IMG_3572_lq.jpg
+    - date: 2013-08-09
+      photos:
+        - time: 1000
+          path: IMG_3682_lq.jpg
+        - time: 1350
+          path: IMG_3694_lq.jpg
+        - time: 1600
+          path: DSC03484_lq.jpg
+      motion:
+        - time: 1400
+          duration: 400
+          label: Greyhound to Washington
+          kind: bus
+
+
+
+- name: Washington
+  slug: washington
+  images:
+    - banner.jpg
+    - 10/DSC03663.jpg
+  description: |
+    Monuments, Smithsonian museums
+  days:
+    - date: 2013-07-09
+      photos:
+        - time: 1500
+          path: IMG_3697_lq.jpg
+        - time: 1840
+          path: IMG_3712_lq.jpg
+        - time: 2200
+          path: IMG_3742_lq.jpg
+      places:
+        - at: 1640
+          label: The Allen Lee Hotel
+          kind: hotel
+        - at: 1850
+          label: Rasoi Indian Kitchen
+          kind: restaurant
+          photo: IMG_3722_lq.jpg
+        - at: 2217
+          label: Lincoln Memorial
+          kind: interest
+    - date: 2013-07-10
+      photos:
+        - time: 800
+          path: IMG_3755_lq.jpg
+        - time: 950
+          path: IMG_3768_lq.jpg
+        - time: 1100
+          path: IMG_2688_lq.jpg
+        - time: 1300
+          path: IMG_2826_lq.jpg
+        - time: 1500
+          path: IMG_3009_lq.jpg
+        - time: 1900
+          path: IMG_4047_lq.jpg
+      places:
+        - at: 1020
+          label: Lincoln Memorial
+          kind: interest
+        - at: 1130
+          label: The White House
+          kind: interest
+        - at: 1230
+          label: National Air and Space Museum
+          kind: interest
+        - at: 1500
+          label: National Museum of Natural History
+          kind: interest
+        - at: 1900
+          label: Vapiano
+          kind: restaurant
+    - date: 2013-07-11
+      photos:
+        - time: 800
+          path: IMG_4051_lq.jpg
+        - time: 1100
+          path: DSC04180_lq.jpg
+      motion:
+        - time: 1030
+          duration: 150
+          label: Train
+          kind: transit
+        - time: 1200
+          duration: 400
+          label: Greyhound to New York
+          kind: bus
+
+
+- name: New York
+  slug: new-york
+  images:
+    - 12/IMG_3150.jpg
+    - 14/DSC04961.jpg
+  description: |
+    Capping off our trip, we arrived in New York.
+
+    Over the course of six days, we saw as much of New York as we could, and ate some amazing food.
+  days:
+    - date: 2013-07-11
+      photos:
+        - time: 1400
+          path: DSC04205_lq.jpg
+        - time: 1600
+          path: IMG_4083_lq.jpg
+      places:
+        - at: 1600
+          label: B Hotel
+          kind: hotel
+        - at: 1900
+          label: Walter Foods
+          kind: restaurant
+      motion:
+        - time: 1200
+          duration: 400
+          label: Greyhound to New York
+          kind: bus
+    - date: 2013-07-12
+      places:
+        - at: 1400
+          label: Brooklyn Bridge
+          kind: interest
+          photo: IMG_4196_lq.jpg
+        - at: 1600
+          label: J&R Electronics
+          kind: shop
+        - at: 1750
+          label: Staten Island Ferry
+          kind: interest
+        - at: 2200
+          label: Barcade
+          kind: bar
+      photos:
+        - time: 1000
+          path: DSC04218_lq.jpg
+        - time: 1200
+          path: DSC04223_lq.jpg
+        - time: 1440
+          path: IMG_3220_lq.jpg
+        - time: 1600
+          path: DSC04463_lq.jpg
+        - time: 1800
+          path: DSC04606_lq.jpg
+        - time: 2200
+          path: IMG_4341_lq.jpg
+    - date: 2013-07-13
+      photos:
+        - time: 1030
+          path: IMG_4385_lq.jpg
+        - time: 1230
+          path: IMG_4408_lq.jpg
+        - time: 1400
+          path: IMG_4504_lq.jpg
+        - time: 1700
+          path: IMG_3480_lq.jpg
+      places:
+        - at: 1130
+          label: Times Square
+          kind: interest
+        - at: 1230
+          label: Jekyll and Hyde Club
+          kind: restaurant
+        - at: 1400
+          label: Nintendo World Store
+          kind: shop
+          photo: IMG_4501_lq.jpg
+        - at: 1500
+          label: Lego Store Rockefeller Square
+          kind: shop
+        - at: 1700
+          label: Central Park
+          kind: interest
+        - at: 1900
+          label: Champ’s Diner
+          kind: restaurant
+    - date: 2013-07-14
+      photos:
+        - time: 1000
+          path: IMG_4581.jpg
+        - time: 1230
+          path: IMG_4606_lq.jpg
+        - time: 1400
+          path: IMG_4641_lq.jpg
+        - time: 1700
+          path: DSC04945_lq.jpg
+        - time: 1900
+          path: IMG_4683_lq.jpg
+        - time: 2150
+          path: IMG_3768_lq.jpg
+      places:
+        - at: 1130
+          label: One World Trade Center
+          kind: interest
+        - at: 1205
+          label: Olivia Gourmet
+          kind: restaurant
+        - at: 1750
+          label: Chipotle
+          kind: restaurant
+        - at: 1830
+          label: Disney Times Square
+          kind: shop
+          photo: DSC04973_lq.jpg
+        - at: 1900
+          label: Toys ‘R’ Us Times Square
+          kind: shop
+          photo: IMG_3737_lq.jpg
+    - date: 2013-07-15
+      photos:
+        - time: 950
+          path: IMG_4709_lq.jpg
+        - time: 1100
+          path: IMG_4726_lq.jpg
+        - time: 1400
+          path: IMG_4760_lq.jpg
+        - time: 1800
+          path: DSC00049_lq.jpg
+        - time: 2000
+          path: DSC00084_lq.jpg
+        - time: 2200
+          path: DSC00101_lq.jpg
+      places:
+        - at: 1230
+          label: Le Pain Quotident
+          kind: restaurant
+        - at: 1830
+          label: Lombardi’s Pizza
+          kind: restaurant
+    - date: 2013-07-16
+      photos:
+        - time: 700
+          path: IMG_4785_lq.jpg
+        - time: 900
+          path: IMG_4789_lq.jpg
+        - time: 1200
+          path: IMG_4797_lq.jpg
+        - time: 1500
+          path: DSC05132_lq.jpg
+        - time: 1750
+          path: IMG_4813_lq.jpg
+        - time: 1950
+          path: IMG_4826_lq.jpg
+      places:
+        - at: 1200
+          label: JFK Airprot
+          kind: airport
+        - at: 1300
+          label: Shake Shack JFK
+          kind: restaurant
+        - at: 1700
+          label: SFO Airprot
+          kind: airport
+      motion:
+        - time: 1000
+          duration: 200
+          label: Train
+          kind: transit
+
+        - time: 1400
+          duration: 300
+          label: JFK to SFO
+          kind: flight
+
+        - time: 2200
+          duration: 200
+          label: SFO to AKL
+          kind: flight

@@ -44,12 +44,6 @@
     - title: New York
       url: '2013/new-york'
       date: 2013-08-11
-      draft: true
-      trip:
-        location: america
-        dates:
-          from: 2016-8-11
-          to: 2016-8-16
 
     - title: Washington
       url: '2013/washington'
@@ -77,4 +71,4 @@
 
     - title: San Francisco
       url: '2013/san-francisco'
-      date: 2013-07-23
+      date: 2013-07-22

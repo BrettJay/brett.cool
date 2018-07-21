@@ -1,4 +1,4 @@
-.Banner{style: "background-image: url('/images/photoessays/#{slug}/banner.jpg')"}
+.Banner
   .Banner_caption
     %h1= title
     %p= subtitle
@@ -31,5 +31,16 @@
         %dl
           %dt= number_with_delimiter(trip[:photos], :delimiter => ',')
           %dd Photos
+      - if trip[:cities].present?
+        %dl
+          %dt= number_with_delimiter(trip[:cities], :delimiter => ',')
+          %dd Cities
       =# .TripIcon{class: "TripIcon_weather--#{trip[:weather]}"}
-  =# partial "photoessays/components/scroll"
+  .Banner_image{style: "background-image: url('/images/photoessays/#{slug}/banner.jpg')"}
+
+<script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
+
+:javascript
+  $(document).ready(function () {
+    $('.Banner').addClass('Banner-animateIn')
+  });

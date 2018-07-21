@@ -1,0 +1,101 @@
+---
+  title: America Trip
+  subtitle: San Francisco to New York
+  slug: 'collections/america'
+  body_classes: page-photoessays
+  meta_description: From July 22 to August 16 in 2013, we traveled from San Francisco to Los Angeles, Las Vegas, Denver, St Louis, Pittsburgh, Washington, and New York. 🗺 📸
+  meta_keywords: mixin, photoessay, conference
+  trip:
+    location: america
+    weather: sun
+    arrival: plane
+    departure: plane
+    cities: 8
+    dates:
+      from: 2013-7-22
+      to: 2013-8-16
+---
+
+- @og_image_override = 'photoessays/collections/america'
+- @og_label1_override = 'Dates 📅'
+- @og_data1_override = "#{Date.parse(current_page.data.trip.dates.from.to_s).strftime('%B %e')} to #{Date.parse(current_page.data.trip.dates.to.to_s).strftime('%B %e, %Y')}"
+- @og_label2_override = 'Cities 🗺'
+- @og_data2_override = current_page.data.trip.cities
+
+.PhotoEssaySubHeader
+  .Content.Content--fluid
+    .Row
+      .SubHeader_Main
+        .LinkBreadCrumbs
+          #{link_to 'Collections', '/photoessays/collections', class: 'BreadCrumb_Header'}
+          .BreadCrumb_Header
+
+= partial("/photoessays/components/banner", locals: {slug: current_page.data.slug, title: current_page.data.title, subtitle: current_page.data.subtitle, trip: current_page.data.trip})
+
+= javascript_include_tag "jquery.waypoints.min"
+= javascript_include_tag "inview"
+
+:javascript
+  $(function() {
+    $('.CollectionRow').each(function(index, row) {
+      var inview = new Waypoint.Inview({
+        element: $(this),
+        enter: function(direction) {  
+          setTimeout(function() {
+            $(row).addClass('CollectionRow--showing');
+          }, 100);
+        }
+      });
+    });
+  });
+
+.Page
+  .Content.Content--timeline
+    - data.collections.america.each do | item |
+      .CollectionRow.mt4.mb4
+        .CollectionItem
+          .CollectionDate #{item.days.first.date.strftime("%-d %B")} — #{item.days.last.date.strftime("%-d %B")}
+
+          %h1= item.name
+
+          %hr/
+
+          :markdown
+            #{item.description}
+          %p= link_to "Read Photoessay", "/photoessays/2013/#{item.slug}"
+          .Days
+            .DayLine.DayLine--Heading
+              .DayLabel
+              .Timeline
+                - 12.times do | tick |
+                  .Timeline_tick= Time.new(2013,7,23,tick * 2,0,0).strftime("%-I%p")
+            - item.days.each do | day |
+              .DayLine
+                = link_to "/photoessays/2013/#{item.slug}##{day.date.strftime("%B-%d").downcase}", title: "Read from #{day.date.strftime("%B %-d")}", class: 'DayLabel' do
+                  .DayLabel_date= day.date.strftime("%-d")
+                  .DayLabel_month= day.date.strftime("%b")
+                .Timelines
+                  - if day.photos.present?
+                    .Timeline.Timeline_photos
+                      - day.photos.each do | photo |
+                        .TimelinePhoto{style: "left: #{(photo.time.to_f / 2400) * 100}%"}= image_tag "photoessays/2013/#{item.slug}/#{day.date.strftime("%d")}/#{photo.path}"
+                  - if day.motion.present? || day.places.present? 
+                    .Timeline.Timeline_motion
+                      - if day.motion.present?
+                        - day.motion.each do | motion |
+                          .TimelineMotion{style: "left: #{(motion.time.to_f / 2400) * 100}%; width: #{(motion.duration.to_f / 2400) * 100}%", class: "TimelineMotion--#{motion.kind}"}
+                            .Motion_spark
+                            .Motion_label= motion.label
+                      - if day.places.present?
+                        - day.places.each do | place |
+                          .TimelinePlace{style: "left: #{(place.at.to_f / 2400) * 100}%;", class: "TimelinePlace--#{place.kind}"}
+                            - if place.photo.present?
+                              .Place_photo= image_tag "photoessays/2013/#{item.slug}/#{day.date.strftime("%d")}/#{place.photo}"
+                            .Place_icon
+                            .Place_disclosure
+                              = place.label
+
+        = link_to "/photoessays/2013/#{item.slug}", class: 'CollectionImage' do
+          - if item.images.present?
+            - item.images.each_with_index do | image, index |
+              .HeroImage{class: "HeroImage--#{index + 1}"}= image_tag "photoessays/2013/#{item.slug}/#{image}"

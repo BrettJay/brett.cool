@@ -1,11 +1,17 @@
 # Site wide settings
 site:
   root_url: https://www.brett.cool
-  title: brett😎
+  title: brett.cool
   title_separator: " — "
   meta_description: designer and front end developer
   meta_keywords:
     - brett jones
+    - design
+    - development
+    - photography
+    - travel
+    - photoessay
+    - writing
   author: Brett Jones
   active_navigation_item_class: current
   analytics_id: UA-XXXXXXX-XX

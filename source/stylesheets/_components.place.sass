@@ -84,3 +84,30 @@
 a.PlaceCard:hover
   transform: translateY(-4px)
   box-shadow: 0 2px 8px 0 rgba(0,0,0,0.45), 0 20px 80px 0 rgba(0,0,0,0.20)
+
+.PlaceCard--flights
+  padding-top: 15px
+  padding-bottom: 15px
+  
+.Flight
+  padding-top: 15px
+  padding-bottom: 15px
+  position: relative
+  .PlaceCard_attributes--flight
+    padding-bottom: 0
+.Flight + .Flight
+  border-top: 1px solid #eee
+  padding-top: 25px
+  &:before
+    position: absolute
+    width: 16px
+    height: 16px
+    z-index: 10
+    background: #fff
+    border-bottom: 1px solid #eee
+    border-right: 1px solid #eee
+    transform: rotate(45deg)
+    top: -9px
+    margin-left: -16px
+    left: 50%
+    content: ''

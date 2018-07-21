@@ -5,16 +5,27 @@
   background-position: 50% 33%
   background-size: cover
   background-color: #000
+  overflow: hidden
+  .Banner_image
+    background-position: 50% 33%
+    background-size: cover
+    transform: scale(1.2) translateY(5%)
+    opacity: 0
+    transition-delay: 300ms
+    transition: opacity 0.35s ease-out, transform 9s ease-out
+  .Banner_image,
   &:after
     display: block
     pointer-events: none
-    content: ''
     position: absolute
-    z-index: 1
+    z-index: 0
     top: 0
     left: 0
     bottom: 0
     right: 0
+  &:after
+    content: ''
+    z-index: 1
     background-image: radial-gradient(50% 50%, rgba(0,0,0,0.00) 49%, rgba(0,0,0,0.47) 81%, #000000 100%)
     background-size: 150%
     background-position: 50% 50%
@@ -26,23 +37,29 @@
     padding: 0 20px
     +vertical-center
     text-align: center
+    position: relative
+    z-index: 2
     h1
       +fluid-scale(font-size, $responsive_min, $responsive_max, 34px, 72px)
       text-shadow: 0 20px 80px rgba(0,0,0,0.8)
+      opacity: 0
+      transition-delay: 400ms
+      transition: opacity 0.35s ease-out
     p
       +fluid-scale(font-size, $responsive_min, $responsive_max, 24px, 32px)
       font-family: $font_accent
       font-style: italic
       text-shadow: 0 2px 8px rgba(0,0,0,0.8)
       letter-spacing: -0.04em
+      opacity: 0
+      transition-delay: 600ms
+      transition: opacity 0.35s ease-out
   img
     width: 100%
     vertical-align: middle
 
 .PhotoEssaySubHeader ~ .Banner
   height: 100vh
-  .scroll_arrows
-    bottom: 60px
 
 .Banner_TripSummary
   display: flex
@@ -71,6 +88,11 @@
     margin: 0 10px
     z-index: 300
     position: relative
+    opacity: 0
+    transition: opacity 0.3s ease
+    @for $i from 1 through 10
+      &:nth-child(#{$i})
+        transition-delay: 400 + (88ms * $i)
   dt, dd
     margin: 0
     text-shadow: 0 1px 3px #000
@@ -125,3 +147,12 @@
     background-position: 0 50%
     padding-left: 30px
     background-size: 20px
+
+.Banner-animateIn
+  .Banner_image,
+  h1,
+  p
+    transform: scale(1) translateY(0%)
+    opacity: 1 !important
+  .Banner_TripSummary dl
+    opacity: 1

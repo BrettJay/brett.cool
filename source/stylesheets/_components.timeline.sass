@@ -1,0 +1,265 @@
+.Days
+  padding-top: 20px
+  +respond-to(small-down)
+    overflow-x: hidden
+    overflow-y: visible
+
+.DayLine
+  display: flex
+  width: 100%
+  padding: 10px 0
+  min-height: 110px
+  opacity: 0
+  transition: opacity 0.3s ease
+
+.DayLine--Heading
+  padding-bottom: 0
+  min-height: 0
+
+.DayLine--Heading + .DayLine
+  padding-top: 0
+
+.Timelines
+  position: relative
+  display: block
+  width: 100%
+
+.Timeline
+  padding: 5px 0
+  flex: 1
+  display: flex
+  position: relative
+  min-height: 30px
+
+.Timeline_photos
+  min-height: 60px
+
+.DayLabel
+  display: block
+  width: 30px
+  text-align: left
+  align-self: center
+  position: absolute
+  padding-left: 2px
+  opacity: 0
+  pointer-events: auto
+  transform: translateX(-3%)
+  transition: 0.5s ease all
+  text-decoration: none
+  z-index: 100
+  
+.DayLabel_date
+  font-size: 16px
+  color: #111111
+  letter-spacing: 0.33px
+
+.DayLabel_month
+  opacity: 0.5
+  font-size: 9px
+  color: #111111
+
+.TimelineMotion,
+.TimelinePlace
+  font-size: 10px
+  position: absolute
+  pointer-events: auto
+  
+.TimelinePlace:hover .Place_disclosure,
+.TimelinePlace:active .Place_disclosure
+  opacity: 1
+  transform: translateX(-50%) translateY(10%)
+
+.TimelinePlace:hover .Place_photo,
+.TimelinePlace:active .Place_photo
+  transform: translateX(-50%) translateY(-20%)
+  opacity: 1
+
+.Place_disclosure
+  position: absolute
+  z-index: 10
+  background: #fff
+  padding: 5px
+  border-radius: 3px
+  left: 50%
+  transform: translateX(-50%) translateY(0%)
+  box-shadow: 0 1px 4px rgba(0,0,0,0.1)
+  min-width: 100px
+  text-align: center
+  opacity: 0
+  transition: all 0.2s ease
+  z-index: 10
+  pointer-events: none
+
+.Place_photo
+  position: absolute
+  left: 50%
+  bottom: 0
+  width: 100px
+  z-index: 10
+  transition: all 0.2s ease
+  border-radius: 5px
+  overflow: hidden
+  opacity: 0
+  transform: translateX(-50%) translateY(-10%)
+  pointer-events: none
+  img
+    width: 100%
+    vertical-align: middle
+    object-fit: cover
+
+.Motion_label
+  position: absolute
+  transtion: all 0.4s ease
+  opacity: 0
+  transform: translateX(-3%)
+
+.Motion_spark
+  height: 4px
+  width: 2px
+  border-radius: 2px
+  border: 1px solid #fff
+  background: #ccc
+  width: 100%
+  margin: 0 0 5px
+  transform-origin: 0 50%
+  opacity: 0
+  transform: scaleX(0) translateX(-1%)
+  transition: 0.4s ease
+
+.TimelineMotion--flight .Motion_spark
+  background: #4A90E2
+
+.TimelineMotion--transit .Motion_spark
+  background: #7ED321
+
+.TimelineMotion--cycling .Motion_spark
+  background: #DD8500
+
+.TimelineMotion--ferry .Motion_spark
+  background: #00DDD3
+
+.TimelineMotion--bus .Motion_spark
+  background: #DD7700
+
+.Place_icon
+  width: 20px
+  height: 20px
+  background: #eee
+  border-radius: 10px
+  margin-left: -8px
+  margin-top: -8px
+  transition: 0.4s ease
+  opacity: 0
+  transform: scale(0)
+
+.TimelinePhoto
+  width: 40px
+  height: 50px
+  border-radius: 3px
+  margin-left: -20px
+  overflow: hidden
+  position: absolute
+  transition: opacity 0.5s ease, transform 0.2s ease
+  z-index: 2
+  
+  &:hover,
+  &:active
+    transform: scale(2.3)
+    z-index: 3
+  img
+    object-fit: cover
+    width: 100%
+    height: 100%
+    vertical-align: middle
+
+.Timeline_motion:before
+  content: ""
+  display: block
+  height: 2px
+  border-radius: 2px
+  border: 1px solid #fff
+  background: #f7f7f7
+  position: absolute
+  left: 0
+  right: 0
+  z-index: 0
+  
+.Timeline_tick
+  flex: 0 1 8.333%
+  font-size: 8px
+  padding-left: 2px
+  border-left: 1px solid #eee
+  color: #666
+  opacity: 0
+  transform: translateX(-4%)
+  transition: 0.33s ease all
+  @for $i from 1 through 12
+    &:nth-child(#{$i})
+      transition-delay: 100 + (66ms * $i)
+
+.TimelinePlace--airport .Place_icon
+  background: #0656B4 image-url('photoessays/collections/places/airport.svg') 50% 50% no-repeat
+
+.TimelinePlace--hotel .Place_icon
+  background: #9013FE image-url('photoessays/collections/places/hotel.svg') 50% 50% no-repeat
+
+.TimelinePlace--restaurant .Place_icon
+  background: #F5A623 image-url('photoessays/collections/places/restaurant.svg') 50% 50% no-repeat
+
+.TimelinePlace--interest .Place_icon
+  background: #5AA800 image-url('photoessays/collections/places/place_of_interest.svg') 50% 50% no-repeat
+
+.TimelinePlace--location .Place_icon
+  background: #5AA800 image-url('photoessays/collections/places/location.svg') 50% 50% no-repeat
+
+.TimelinePlace--shop .Place_icon
+  background: #DD003A image-url('photoessays/collections/places/shop.svg') 50% 50% no-repeat
+
+.TimelinePlace--bar .Place_icon
+  background: #FE1344 image-url('photoessays/collections/places/bar.svg') 50% 50% no-repeat
+
+.TimelinePlace
+  @for $i from 1 through 10
+    &:nth-child(#{$i}) .Place_icon
+      transition-delay: 240 + (60ms * $i)
+
+.CollectionRow--showing
+  .Timeline
+    .Timeline_tick
+      opacity: 1
+      transform: translateX(0)
+    .TimelinePhoto
+      opacity: 1
+      transform: scale(1)
+      &:hover,
+      &:active
+        transform: scale(2.3)
+        z-index: 3
+      @for $i from 1 through 10
+        &:nth-child(#{$i})
+          transition-delay: 260 + (42ms * $i), 0ms
+    .Motion_spark
+      opacity: 1
+      transform: scaleX(1) translateX(0)
+    .Motion_label
+      transform: translateX(0)
+      opacity: 1
+    .TimelineMotion
+      @for $i from 1 through 10
+        &:nth-child(#{$i}) .Motion_spark,
+        &:nth-child(#{$i}) .Motion_label
+          transition-delay: 160 + (66ms * $i)
+    .Place_icon
+      opacity: 1
+      transform: scale(1)
+
+  .DayLine
+    opacity: 1
+    .DayLabel
+      opacity: 1
+      transform: translateX(0)
+    @for $i from 1 through 5
+      &:nth-child(#{$i})
+        transition-delay: 100 + (42 * $i)
+        .DayLabel
+          transition-delay: 150 + (42 * $i)
