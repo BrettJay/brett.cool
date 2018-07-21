@@ -1,9 +1,9 @@
 ---
   title: America Trip
-  subtitle: From San Francisco to New York
+  subtitle: San Francisco to New York
   slug: 'collections/america'
   body_classes: page-photoessays
-  meta_description: From San Francisco to New York
+  meta_description: From July 22 to August 16 in 2013, we traveled from San Francisco to Los Angeles, Las Vegas, Denver, St Louis, Pittsburgh, Washington, and New York. 🗺 📸
   meta_keywords: mixin, photoessay, conference
   trip:
     location: america
@@ -15,6 +15,12 @@
       from: 2013-7-22
       to: 2013-8-16
 ---
+
+- @og_image_override = 'photoessays/collections/america'
+- @og_label1_override = 'Dates 📅'
+- @og_data1_override = "#{Date.parse(current_page.data.trip.dates.from.to_s).strftime('%B %e')} to #{Date.parse(current_page.data.trip.dates.to.to_s).strftime('%B %e, %Y')}"
+- @og_label2_override = 'Cities 🗺'
+- @og_data2_override = current_page.data.trip.cities
 
 .PhotoEssaySubHeader
   .Content.Content--fluid
@@ -37,7 +43,7 @@
         enter: function(direction) {  
           setTimeout(function() {
             $(row).addClass('CollectionRow--showing');
-          }, 320);
+          }, 100);
         }
       });
     });
@@ -56,7 +62,7 @@
 
           :markdown
             #{item.description}
-
+          %p= link_to "Read Photoessay", "/photoessays/2013/#{item.slug}"
           .Days
             .DayLine.DayLine--Heading
               .DayLabel
@@ -65,7 +71,7 @@
                   .Timeline_tick= Time.new(2013,7,23,tick * 2,0,0).strftime("%-I%p")
             - item.days.each do | day |
               .DayLine
-                = link_to "/photoessays/2013/#{item.slug}##{day.date.strftime("%B-%d").downcase}", class: 'DayLabel' do
+                = link_to "/photoessays/2013/#{item.slug}##{day.date.strftime("%B-%d").downcase}", title: "Read from #{day.date.strftime("%B %-d")}", class: 'DayLabel' do
                   .DayLabel_date= day.date.strftime("%-d")
                   .DayLabel_month= day.date.strftime("%b")
                 .Timelines

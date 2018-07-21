@@ -3,7 +3,7 @@
   +respond-to(small-down)
     overflow-x: hidden
     overflow-y: visible
-    
+
 .DayLine
   display: flex
   width: 100%
@@ -47,7 +47,7 @@
   transition: 0.5s ease all
   text-decoration: none
   z-index: 100
-
+  
 .DayLabel_date
   font-size: 16px
   color: #111111
@@ -62,7 +62,8 @@
 .TimelinePlace
   font-size: 10px
   position: absolute
-
+  pointer-events: auto
+  
 .TimelinePlace:hover .Place_disclosure,
 .TimelinePlace:active .Place_disclosure
   opacity: 1
@@ -122,7 +123,7 @@
   margin: 0 0 5px
   transform-origin: 0 50%
   opacity: 0
-  transform: scaleX(0) translateX(-3%)
+  transform: scaleX(0) translateX(-1%)
   transition: 0.4s ease
 
 .TimelineMotion--flight .Motion_spark
@@ -213,6 +214,9 @@
 
 .TimelinePlace--shop .Place_icon
   background: #DD003A image-url('photoessays/collections/places/shop.svg') 50% 50% no-repeat
+
+.TimelinePlace--bar .Place_icon
+  background: #FE1344 image-url('photoessays/collections/places/bar.svg') 50% 50% no-repeat
 
 .TimelinePlace
   @for $i from 1 through 10

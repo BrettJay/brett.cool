@@ -25,7 +25,29 @@
   p
     color: #666
     +fluid-scale(font-size, $responsive_min, $responsive_max, 13px, 18px)
-    
+    a
+      font-size: 0.8em
+      border: 0 none
+      position: relative
+      opacity: 0.8
+      transition: opacity 0.2s ease
+      &:after
+        content: ''
+        display: block
+        width: 6px
+        height: 9px
+        background: image-url('link_chevron.svg') 50% 50% no-repeat
+        position: absolute
+        top: 3px
+        right: -8px
+        transition: transform 0.2s ease
+      &:hover
+        opacity: 1
+        &:after
+          transform: translateX(3px)
+  p + p
+    margin-top: 0.7em
+
   .CollectionDate
     transition-delay: 50ms
   h1
@@ -35,8 +57,7 @@
   h1, p, .CollectionDate, hr
     transform: translateY(4%)
     opacity: 0
-    transition: 0.3s ease all
-
+    transition: 0.2s ease opacity, 0.2s ease transform
 .CollectionImage
   width: 50%
   align-self: center
