@@ -27,6 +27,22 @@ figure
   h3
     margin: 0.9em 0
 
+  sup a
+    opacity: 0.5
+    &:hover
+      opacity: 1
+
+  .footnotes
+    ol
+      padding-left: 20px
+    li + li
+      margin-top: 1.5em
+    li, p
+      +fluid-scale(font-size, $responsive_min, $responsive_max, 14px, 19px)
+      line-height: 1.4
+      color: #111
+    p
+      margin: 0.8em 0
   .aside
     color: $content-tertiary
     +body--small_scale
@@ -85,7 +101,8 @@ figure.image_expand
   +respond-to(ipad-up)
     margin: 60px -40px
 
-figure img
+figure img,
+img.blog_img
   max-width: 100%
 
 .inline_image
@@ -95,3 +112,29 @@ figure img
   text-decoration: none
   color: inherit
 
+
+.browser_frame
+  background: #333
+  padding-top: 30px
+  border-radius: 5px
+  box-shadow: 0 4px 30px rgba(0,0,0,0.2)
+  position: relative
+  text-decoration: none
+  border: none !important
+  display: block
+  overflow: hidden
+  &:after
+    content: attr(data-url)
+    font-size: 11px
+    position: absolute
+    top: 5px
+    left: 50%
+    transform: translateX(-50%)
+    background: #eee
+    color: #333
+    padding: 2px 10px
+    min-width: 40%
+    text-align: center
+    border-radius: 3px
+  img
+    display: block
