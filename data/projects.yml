@@ -1,13 +1,3 @@
-- name: Mixin
-  status: active
-  link:
-    url: 'http://mixinconf.com'
-    type: external
-  dates:
-    from: '2015'
-    to: present
-  description: >
-    Helping to organise a world–class conference for designers, developers, and those around and in–between.
 - name: Photoessays
   status: active
   link:
@@ -28,3 +18,13 @@
     to: present
   description: >
     Video production, editing, and podcasting, with some of my best friends since highschool.
+- name: Mixin
+  status: inactive
+  link:
+    url: 'http://mixinconf.com'
+    type: external
+  dates:
+    from: '2015'
+    to: '2018'
+  description: >
+    Helping to organise a world–class conference for designers, developers, and those around and in–between.
