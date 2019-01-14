@@ -27,9 +27,7 @@ body_classes: page-blog
 
       <p><a href="https://ia.net/writer">iA Writer</a> is my go-to writing application. It features beautiful typography, and some very powerful features, in a clean interface.</p>
 
-      <p>The included <a href="https://ia.net/writer/support/general/system-requirements#url-schemes">URL scheme feature</a><sup><a href="#fn1-18315" id="fnr1-18315" title="see footnote" class="footnote">1</a></sup> allows you to launch the application, and read or write files with an ‘ia-writer://’ URL opened in Safari.</p>
-
-      <p>For instance:</p>
+      <p>The included <a href="https://ia.net/writer/support/general/system-requirements#url-schemes">URL scheme feature</a><sup><a href="#fn1-18315" id="fnr1-18315" title="see footnote" class="footnote">1</a></sup> allows you to launch the application, and read or write files with the ‘ia-writer://’ URL. For instance:</p>
 
       <pre><code>ia-writer://new</code></pre>
 
@@ -39,25 +37,25 @@ body_classes: page-blog
 
       <p><a href="https://itunes.apple.com/au/app/shortcuts/id915249334">Shortcuts</a> is a very powerful iOS automation app, that can do some very impressive things. </p>
 
-      <p>We can get the current date, format it as ‘YYYY/MM/dd’, and pass it on to be used in the path parameter. Adding a ‘.txt’ suffix to the path tells iA writer the last portion is the filename:</p>
+      <p>We can get the current date, format it as ‘YYYY/MM/dd’, and pass it on to be used in the path parameter. Adding a ‘.txt’ suffix to the path tells iA&nbsp;Writer the last portion is the filename:</p>
       <figure class="iphonex_frame">
         #{image_tag 'blog/2019-01-14-using-ios-shortcuts-for-journaling/shortcuts.png'}
       </figure>
 
-      <p>Running this command opens the following URL in Safari:</p>
+      <p>Running this shortcut opens the following URL:</p>
 
       <pre><code>ia-writer://new?path=/Log/2019/01/14.txt&amp;edit=true
       </code></pre>
 
-      <p>Opening this URL in Safari launches iA Writer, creates a new file at the specified location, and ‘edit=true’ opens the keyboard, so I can begin typing immediately.</p>
+      <p>Opening this URL launches iA Writer, creates a new file at the specified location, and ‘edit=true’ opens the keyboard for immediate editing.</p>
 
-      <p>Add it to the Shortcuts widget, and I can quickly log my day from anywhere on my iPhone with a few swipes and a tap, even on the Lock Screen:</p>
+      <p>Add it to the Shortcuts widget, and a day can be logged with a few swipes and a tap from anywhere, even on the Lock Screen:</p>
 
     %figure.iphonex_frame
       %video{src: "/#{images_dir}/blog/2019-01-14-using-ios-shortcuts-for-journaling/widget.mp4", controls: true, preload: 'metadata'}
 
     :markdown
-      <p>This simple shortcut has been very valuable for me so far.</p>
+      <p>Although simple, this shortcut has been very valuable for me so far.</p>
 
       <p>It’s a nice reminder to keep in mind small, quick wins with software, which bring a lot of value by making day to day tasks just that <em>little bit better</em>.</p>
 
@@ -66,8 +64,8 @@ body_classes: page-blog
       <p>#{link_to 'Log Day', 'https://www.icloud.com/shortcuts/d65113d70fa04ccd952b31e64546d647', class: 'shortcut shortcut--blue';}</p>
 
       ## Going further
-      <p>The ‘new’ command also accepts a ‘text’ param<sup><a href="#fn2-18531" id="fnr2-18531" title="see footnote" class="footnote">2</a></sup>, which adds content to the new document. Shortcuts even offers an action that can URL encode a supplied block of text.</p>
-      <p>Here’s just a few ideas for things that Shortcuts could pre-fill an iA Writer document with:</p>
+      <p>The ‘new’ command also accepts a ‘text’ parameter<sup><a href="#fn2-18531" id="fnr2-18531" title="see footnote" class="footnote">2</a></sup>, which adds content to the new document. Shortcuts even offers an action to URL encode a block of text.</p>
+      <p>Here’s just a few ideas for content Shortcuts could include in a new iA&nbsp;Writer document:</p>
 
       * Your current location
       * The current time
