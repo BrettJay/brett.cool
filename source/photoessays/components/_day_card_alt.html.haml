@@ -1,0 +1,9 @@
+- day_slug = Date.parse(id).strftime("feb-%d")
+
+.PhotoEssayItem
+  = link_to "/photoessays/#{essay_slug}/#{day_slug}" do
+    .PhotoEssayCard
+      .PhotoEssayCard_cardImage{style: "background-image: url('/images/photoessays/#{essay_slug}/#{day_slug}/banner.jpg')"}
+    .PhotoEssayCaption.pt1.pb2
+      .PhotoEssayCaption_title= date.title
+      .PhotoEssayCaption_date= Date.parse(id).strftime("%b %-d")

@@ -1,3 +1,9 @@
+- year: 2019
+  photoessays:
+    - title: Japan
+      url: 2019/japan
+      date: 2019-02-06
+
 - year: 2017
   photoessays:
     - title: Localhost
