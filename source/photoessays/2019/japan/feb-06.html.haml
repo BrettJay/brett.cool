@@ -1,67 +1,18 @@
 ---
 slug: '2019/japan/feb-06'
+body_classes: page-photoessays
 ---
 
-- @dynamic_title = 'Perth to Osaka'
+- essay = data.photo_essays['2019'].japan.find { | slug, date | slug == '2019-02-06' }
+
+- @dynamic_title = essay[1].title
+- @dynamic_subtitle = essay[1].subtitle
+
+= partial("photoessays/components/banner", locals: {slug: current_page.data.slug, title: essay[1].title, subtitle: current_page.data.subtitle, trip: ''})
+
 
 .Page
   .Content#story
-    .Row
-      .Content_Main.Content_Article
-        :markdown
-          We arrive early morning at Perth Airport.
-          
-          Dropping our luggage at the bag drop, we head towards International Departures, pausing for a quick coffee, and to catch our breath.
-    
-    = partial("photoessays/components/photo_two_column", locals: {slug: current_page.data.slug, left: ['P2060004'], right: ['P2060008'] })
-
-    .Row
-      .Content_Main.Content_Article
-        :markdown
-          We’re not new to travel—in fact we made a similiar journey last year. But for some reason we’ve been a little more nervous this time around.
-
-          I thought perhaps if we departed from Perth early morning (rather than late evening), we could arrive at Osaka the same night, and wouldn’t lose as much sleep as we would flying overnight.
-
-          Turns out, you’re always going to lose sleep with International travel. In this case, a 6:40am flight from Perth meant a 3:45am Airport arrival.
-
-    = partial("photoessays/components/photo_right", locals: {slug: current_page.data.slug, caption: "", photo: 'P2060010'})
-
-    .Row
-      .Content_Main.Content_Article
-        :markdown
-          After clearing security, we waited by the gate.
-
-          Gradually, the sun began to rise, allowing us to see the baggage handlers loading luggage into the aircraft.
-    
-    = partial("photoessays/components/photo_right", locals: {slug: current_page.data.slug, caption: "", 'photo': 'P2060017'})
-
-    = partial("photoessays/components/flight", locals: {slug: current_page.data.slug, image: 'P2060028', title: 'SQ 224', gate: '52', seat: '44K', origin: 'PER', destination: 'SIN', airline: 'Singapore Airlines', depart: '6:50am', arrive: '11:38am', rating: '' })
-
-    = partial("photoessays/components/photo_full", locals: {slug: current_page.data.slug, caption: "Drafting some words", photo: 'P2060032'})
-    
-    .Row
-      .Content_Main.Content_Article
-        :markdown
-          We arrived at T2 of Changi Airport just before midday.
-
-          On many connections, I've passed through Changi around midnight. It turns out that 
-
-    = partial("photoessays/components/photo_two_column", locals: {slug: current_page.data.slug, left: ['P2060035'], right: ['P2060036'] })
-    = partial("photoessays/components/photo_right", locals: {slug: current_page.data.slug, caption: "", photo: 'P2060049'})
-
-    .Row
-      .Content_Main.Content_Article
-        :markdown
-          We took a Skytrain from T2 to T3, where our connecting flight would be.
-
-    = partial("photoessays/components/photo_two_column", locals: {slug: current_page.data.slug, left: ['P2060058'], right: ['P2060055'] })
-    = partial("photoessays/components/photo_right", locals: {slug: current_page.data.slug, caption: "", photo: 'P2060068'})
-
-    .Row
-      .Content_Main.Content_Article
-        :markdown
-          Security
-
-    = partial("photoessays/components/photo_full", locals: {slug: current_page.data.slug, caption: "", photo: 'P2060085'})
-
-    = partial("photoessays/components/flight", locals: {slug: current_page.data.slug, image: 'P2060085', title: 'SQ 622', gate: '10B', seat: '51G', origin: 'SIN', destination: 'KIX', airline: 'Singapore Airlines', depart: '2:04pm', arrive: '9:40pm', rating: '' })
+    - essay[1].content.each do | story_block |
+      - story_block.each do | template, block |
+        = partial("photoessays/blocks/#{template}", locals: {slug: current_page.data.slug, block: block })

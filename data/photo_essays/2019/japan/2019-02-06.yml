@@ -1,0 +1,83 @@
+title: Perth to Osaka
+subtitle: Arriving downtown
+steps: 0
+km: 0
+content:
+  - story: |
+      We arrive early morning at Perth Airport.
+
+      Dropping our luggage at bag drop, we head towards International Departures, pausing for a quick coffee, and to catch our breath.
+  - photos:
+      type: column
+      images: ['P2060004','P2060008']
+  - story: |
+      We’re not new to travel—in fact we made a similiar journey last year. But for some reason we’ve been a little more nervous this time around.
+
+      I thought perhaps if we departed from Perth early morning (rather than evening), we could arrive at Osaka the same night, and wouldn’t lose as much sleep as we would flying overnight.
+
+      Turns out, you’re always going to lose sleep with International travel. In this case, a 6:40am flight from Perth meant a 3:45am airport arrival (if you want to be conservative).
+  - photo:
+      style: right
+      image: P2060010
+  - story: |
+      After clearing security, we waited at the gate.
+
+      Gradually, the sun began to rise, allowing us to see the baggage handlers loading lugggage and meals for the flight into the aircraft.
+  - photo:
+      style: full
+      image: P2060017
+  - story: |
+      Before long, we were boarding the flight.
+  - flight:
+      image: P2060028
+      title: SQ 224
+      gate: 52
+      seat: 44K
+      origin: PER
+      destination: SIN
+      airline: Singapore Airlines
+      depart: 6:50am
+      arrive: 11:38am
+      rating: 4
+  - story: |
+      Onboard, I took the opportunity to work on some side projects, and drafted some content for an article about an [itinerary planner](https://itinerary.brett.cool) I’d been playing around with.
+  - photo:
+      style: full
+      image: P2060032
+      caption: Writing some words onboard
+  - story: |
+      We arrived at T2 of Changi Airport just before midday.  
+
+      On many connections, I've passed through Changi around midnight. It turns out that it’s a bit less difficult to navigate during the day.
+  - photos:
+      type: column
+      images: ['P2060035','P2060036']
+  - photo:
+      style: right
+      image: P2060049
+  - story: |
+      We took a Skytrain from T2 to T3, where our connecting flight gate was.
+  - photos:
+      type: column
+      images: ['P2060058','P2060055']
+  - photo:
+      style: right
+      image: P2060068
+  - story: |
+      Changi Airport has a security check just outside each gate.
+
+      After passing through, we wated for our flight.
+  - photo:
+      style: full
+      image: P2060085
+  - flight:
+      image: P2060085
+      title: SQ 622
+      gate: 10B
+      seat: 51G
+      origin: SIN
+      destination: KIX
+      airline: Singapore Airlines
+      depart: 2:04pm
+      arrive: 9:40pm
+      rating: 4

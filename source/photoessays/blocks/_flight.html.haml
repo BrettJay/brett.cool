@@ -1,0 +1,31 @@
+.Row
+  .Content_Main
+    .PlaceCard.PlaceCard--flight
+      .PlaceCard_cover{style: "background-image: url('/images/photoessays/#{slug}/#{block.image}.jpg')"}
+      .PlaceCard_icon
+      .PlaceCard_title= block.title
+      .PlaceCard_address= block.airline
+
+      .PlaceCard_attributeGrid
+        .PlaceCard_attributes.PlaceCard_attributes--flight
+          %dl.Attribute_pair
+            %dt= block.origin
+            %dd= block.depart
+
+          %dl.Attribute_pair
+            %dt= block.destination
+            %dd= block.arrive
+        
+        - if block.gate.present? && block.seat.present?
+          .PlaceCard_attributes
+            %dl.Attribute_pair
+              %dt= block.gate
+              %dd Gate
+            %dl.Attribute_pair
+              %dt= block.seat
+              %dd Seat
+
+      - if block.rating.present?
+        .PlaceCard_rating{class: "PlaceCard_rating--#{block.rating}"}
+          - block.rating.times do
+            ★
