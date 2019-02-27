@@ -26,6 +26,4 @@
               %dd Seat
 
       - if block.rating.present?
-        .PlaceCard_rating{class: "PlaceCard_rating--#{block.rating}"}
-          - block.rating.times do
-            ★
+        = partial("photoessays/blocks/common/rating", locals: {slug: current_page.data.slug, block: block})

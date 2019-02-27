@@ -1,7 +1,1 @@
-.PhotoRow.Component
-  .PhotoCol_alpha
-    - block.images.values_at(*block.images.each_index.select(&:odd?)).each do | photo |
-      = image_tag "photoessays/#{slug}/#{photo}.jpg"
-  .PhotoCol_beta
-    - block.images.values_at(*block.images.each_index.select(&:even?)).each do | photo |
-      = image_tag "photoessays/#{slug}/#{photo}.jpg"
+= partial("photoessays/blocks/photo/#{block.type}", locals: {slug: current_page.data.slug, block: block})

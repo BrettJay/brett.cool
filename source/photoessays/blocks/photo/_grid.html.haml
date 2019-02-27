@@ -1,0 +1,7 @@
+.PhotoRow.PhotoRow--Grid.Component
+  - block.rows.each do | row |
+    .PhotoRow{class: "PhotoRow--#{row[:images].count}"}
+      - row[:images].each_with_index do | image, index |
+        .Photo{class: "Photo--#{index+1}_of_#{row[:images].count}"}= image_tag "photoessays/#{slug}/#{image}.jpg"
+    - if row[:caption].present?
+      .PhotoCaption= row[:caption]
