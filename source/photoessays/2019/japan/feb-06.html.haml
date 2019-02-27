@@ -8,7 +8,7 @@ body_classes: page-photoessays
 - @dynamic_title = essay[1].title
 - @dynamic_subtitle = essay[1].subtitle
 
-= partial("photoessays/components/banner", locals: {slug: current_page.data.slug, title: essay[1].title, subtitle: current_page.data.subtitle, trip: ''})
+= partial("photoessays/components/banner", locals: {slug: current_page.data.slug, title: essay[1].title, subtitle: essay[1].subtitle, trip: ''})
 
 
 .Page
