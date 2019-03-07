@@ -2,6 +2,7 @@
   slug: '2017/kyoto/jan-15'
   body_classes: page-photoessays
 ---
+
 - essay = data.photo_essays['2017'].kyoto.find { | slug, date | slug == '2017-01-15' }
 
 - @dynamic_title = essay[1].title
@@ -11,9 +12,6 @@
 - @og_image_override = 'photoessays/2017/kyoto/jan-15'
 
 = partial("photoessays/2017/kyoto/subheader", locals: {collection: essay[1].collection})
-
-essay[1].collection
-
 = partial("photoessays/components/banner", locals: {slug: current_page.data.slug, title: essay[1].title, subtitle: essay[1].subtitle, trip: ''})
 
 .Page

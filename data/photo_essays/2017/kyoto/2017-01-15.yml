@@ -6,7 +6,7 @@ collection:
   prev: jan-15
   current: jan-15
   next: jan-16
-content: 
+content:
   - story: |
       The shinkansen continued its speedy approach towards Kyoto, and as it did so, the winter weather seemed to intensify.
   - photos:
@@ -87,7 +87,7 @@ content:
       images: [ P1150231, P1150247 ]
   - story: |
       Soon a train arrived, and I was on my way...
-      
+
       Well, not for long. Due to the snow, our train abruptly stopped, and we received an announcement over the PA that our train would be delayed.
   - photo:
       style: right
