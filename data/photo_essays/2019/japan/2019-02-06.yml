@@ -1,33 +1,35 @@
-title: Perth to Osaka
-subtitle: Arriving in downtown Osaka
-steps: 0
+title: Dōtonbori Nightlife
+subtitle: Arriving in Osaka
+steps: 16024
 km: 0
+collection:
+  current:
+    folder: japan
+    file: 2019-02-06
+  next:
+    folder: japan
+    file: 2019-02-07
 content:
   - story: |
-      We arrive early morning at Perth Airport.
+      We arrive at Perth airport around 3am.
 
-      Dropping our luggage at bag drop, we head towards International Departures, pausing for a quick coffee, and to catch our breath.
+      Dropping our luggage at bag drop, we headed towards International Departures, pausing for a quick coffee, and to catch our breath.
   - photos:
-      type: column
-      images: ['P2060004','P2060008']
+      type: grid
+      rows:
+        - images: [ P2060004, P2060008 ]
   - story: |
-      We’re not new to travel—in fact we made a similiar journey last year. But for some reason we’ve been a little more nervous this time around.
-
-      I thought perhaps if we departed from Perth early morning (rather than evening), we could arrive at Osaka the same night, and wouldn’t lose as much sleep as we would flying overnight.
-
-      Turns out, you’re always going to lose sleep with International travel. In this case, a 6:40am flight from Perth meant a 3:45am airport arrival (if you want to be conservative).
+      After clearing security, we make our way for Gate 52, and wait for boarding.
   - photo:
       style: right
       image: P2060010
   - story: |
-      After clearing security, we waited at the gate.
-
-      Gradually, the sun began to rise, allowing us to see the baggage handlers loading lugggage and meals for the flight into the aircraft.
+      Sunrise arrives as we wait at the terminal, allowing us to see luggage and meals for the flight being loaded into the aircraft.
   - photo:
       style: full
       image: P2060017
   - story: |
-      Before long, we were boarding the flight.
+      Before long, our boarding group is called, and we make our way onto the aircraft, finding our assigned seats.
   - flight:
       image: P2060028
       title: SQ 224
@@ -40,33 +42,29 @@ content:
       arrive: 11:38am
       rating: 4
   - story: |
-      Onboard, I took the opportunity to work on some side projects, and drafted some content for an article about an [itinerary planner](https://itinerary.brett.cool) I’d been playing around with.
+      Once we reach cruising altitude, I take the opportunity to work on side projects, and watch a couple of movies.
   - photo:
       style: full
       image: P2060032
-      caption: Writing some words onboard
   - story: |
-      We arrived at T2 of Changi Airport just before midday.  
+      One comfortable, uneventful flight later, we arrive at Changi Airport.
 
-      On many connections, I've passed through Changi around midnight. It turns out that it’s a bit less difficult to navigate during the day.
+      On most occasions, I’ve passed through Changi late at night. This time, it’s just before midday. For some reason, Changi seems less imposing, and easier to navigate during broad daylight.
+
+      Our 2 hour layover allows us to meander to our next gate without rushing.
+  - photos:
+      type: grid
+      rows:
+        - images: [ P2060035, P2060036 ]
+        - images: [ P2060049 ]
+          style: right
+  - story: |
+      We take a Skytrain from T2 to T3, for our connecting flight to Osaka.
   - photos:
       type: column
-      images: ['P2060035','P2060036']
-  - photo:
-      style: right
-      image: P2060049
+      images: [ P2060058, P2060055, P2060061, P2060062 ]
   - story: |
-      We took a Skytrain from T2 to T3, where our connecting flight gate was.
-  - photos:
-      type: column
-      images: ['P2060058','P2060055']
-  - photo:
-      style: right
-      image: P2060068
-  - story: |
-      Changi Airport has a security check just outside each gate.
-
-      After passing through, we wated for our flight.
+      We reach gate 10B, and pass through the security checkpoint.
   - photo:
       style: full
       image: P2060085
@@ -81,3 +79,117 @@ content:
       depart: 2:04pm
       arrive: 9:40pm
       rating: 4
+  - story: |
+      The cabin for our Osaka flight is a bit newer than our first aircraft.
+
+      I watch some movies, reacquainting myself with Japanese draft beer, while Alyssa reads and practises sketching.
+  - photos:
+      type: grid
+      rows:
+        - images: [ P2060090, P2060089 ]
+        - images: [ P2060092 ]
+          style: right
+  - story: |
+      Several hours later, our plane lands at Kansai Interantional Airport.
+
+      We gratefully depart the aircraft, stretching our legs, and making our way through the dark, quiet airport.
+  - photos:
+      type: grid
+      rows:
+        - images: [ P2060093, P2060094 ]
+        - images: [ P2060099 ]
+          style: right
+  - story: |
+      We board a shuttle for the main terminal.
+  - photos:
+      type: grid
+      rows:
+        - images: [ P2060101, P2060104 ]
+  - story: |
+      Passing through Immigration, we collected our luggage.
+
+      We then emerged into cool Osaka night, heading for Kansai-airport Station, where we took an express train to Namba station.
+  - photos:
+      type: grid
+      rows:
+        - images: [ P2060108 ]
+        - images: [ P2060112 ]
+          style: right
+  - story: |
+      We headed steadily north towards Namba station, the lights from cars, streets, and buildings winking against an inky blue sky.
+
+      We emerge at Namba station, and continued north on foot towards our hotel, grateful for the chance to stretch our legs.
+  - photo:
+      image: P2060119
+      style: right
+  - story: |
+      As we continue North-east on foot, we approached the east entrance of Namba Nankai, an arcade of shops, and eateries, that branches North towards Dōtonbori.
+  - photos:
+      type: grid
+      rows:
+        - images: [ P2060121 ]
+        - images: [ P2060124, P2060127 ]
+  - story: |
+      We headed north towards our hotel, approaching Dōtonbori.
+  - photos:
+      type: grid
+      rows:
+        - images: [ P2060131 ]
+        - images: [ P2060139, P2060142 ]
+  - story: |
+      Late as it was, Dōtonbori was crowded with nightlife.
+
+      We continued through the throngs of crowds toward our hotel, we’d be better able to stop and look around once we had dropped our bags.
+  - photo:
+      image: P2060148
+      style: full
+  - story: |
+      Eventually, we reached our hotel, checked in, and dropped our bags.
+  - place:
+      type: accomodation
+      image: hotelcode
+      title: Hotel Code
+      address: 1 Chome-16-３０ Higashishinsaibashi, Chuo Ward, Osaka
+      checkin: 2019-02-06
+      checkout: 2019-02-08
+      rating: 4
+  - story: |
+      The room was a pretty standard configuration for a hotel in Japan, we gratefully dropped our bags in the cozy room, and caught our breath.
+
+      Although it was getting late, we were feeling rather energised.
+      
+      I setup the Wifi router that had been delivered to the hotel for us, and we set out again, taking in the Osaka nightlife.
+  - photo:
+      image: P2060155
+      style: full
+  - story: |
+      We headed south, back towards the Dōtonbori street, looking for snacks.
+
+      We paused at Dōtonbori River to admire the view.
+  - photo:
+      image: banner
+      style: full
+  - story: |
+      We continued south, back towards the Dōtonbori strip.
+
+      In the last half an hour or so, many stalls had begun to close. Yet there were still quite large crowds.
+  - photos:
+      type: grid
+      rows:
+        - images: [ P2060161, P2060171 ]
+  - story: |
+      We wandered around Dōtonbori for a little while longer, before conceding that we didn’t feel like going for a sit-down meal.
+  - photo:
+      image: P2070176
+      style: right
+  - story: |
+      After a few laps, we decided to visit a convenience store, and pick up an assorted range of snacks to nibble on in the comfort of our hotel.
+      
+      I also picked up a small bottle of whiskey for ¥238 (so cheap!)
+  - photo:
+      image: P2070177
+      style: full
+  - story: |
+      Back in the hotel, we munched on some fried chicken, and some other rather satisfying convenience store snacks.
+
+      We turned in for the night, our only full day to explore Osaka ahead of us.

@@ -1,15 +1,18 @@
 .PlaceCard_cover{style: "background-image: url('/images/photoessays/#{slug}/#{block.image}.jpg')"}
-.PlaceCard_icon
 .PlaceCard_title= block.title
 .PlaceCard_address= block.address
 
 .PlaceCard_attributes
+  - if block.price.present?
+    %dl.Attribute_pair
+      %dt= block.price
+      %dd Price
   %dl.Attribute_pair
-    %dt= block.price
-    %dd Price
-  %dl.Attribute_pair
-    %dt= block.menu
-    %dd Place
-
+    %dt= block.label
+    %dd
+      - if block.descriptor.present?
+        = block.descriptor
+      - else
+        Place
 - if block.rating.present?
   = partial("photoessays/blocks/common/rating", locals: {slug: current_page.data.slug, block: block})

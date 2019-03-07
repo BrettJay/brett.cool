@@ -1,0 +1,20 @@
+.Content
+  .PhotoRow
+    .PhotoEssayFooterNavigation  
+      - if collection.prev.present?
+        - prev_essay_key = collection.prev      
+        - prev_essay = data.photo_essays["#{prev_essay_key.file.strftime("%Y")}"]["#{prev_essay_key.folder}"].find { | slug, date | slug == prev_essay_key.file.to_s }
+
+        = link_to "/photoessays/#{prev_essay_key.file.strftime('%Y')}/#{prev_essay_key.folder}/#{prev_essay_key.file.strftime('%b-%d').to_s.downcase}", class: 'PhotoEssay_nav PhotoEssay_nav--previous', style: "background-image: url('/images/photoessays/#{prev_essay_key.file.strftime('%Y')}/#{prev_essay_key.folder}/#{prev_essay_key.file.strftime('%b-%d').to_s.downcase}/banner.jpg')" do
+          .PhotoEssay_nav_label Previous
+          .PhotoEssay_nav_title= prev_essay[1].title
+          .PhotoEssay_nav_date= prev_essay_key.file.strftime("%B %-d")
+
+      - if collection.next.present?
+        - next_essay_key = collection.next
+        - next_essay = data.photo_essays["#{next_essay_key.file.strftime("%Y")}"]["#{next_essay_key.folder}"].find { | slug, date | slug == next_essay_key.file.to_s }
+
+        = link_to "/photoessays/#{next_essay_key.file.strftime("%Y")}/#{next_essay_key.folder}/#{next_essay_key.file.strftime("%b-%d").to_s.downcase}", class: 'PhotoEssay_nav PhotoEssay_nav--next', style: "background-image: url('/images/photoessays/#{next_essay_key.file.strftime("%Y")}/#{next_essay_key.folder}/#{next_essay_key.file.strftime("%b-%d").to_s.downcase}/banner.jpg')" do
+          .PhotoEssay_nav_label Next
+          .PhotoEssay_nav_title= next_essay[1].title
+          .PhotoEssay_nav_date= next_essay_key.file.strftime("%B %-d")

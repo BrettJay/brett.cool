@@ -8,16 +8,15 @@
 
       .PlaceCard_attributeGrid
         .PlaceCard_attributes.PlaceCard_attributes--flight
-          %dl.Attribute_pair
+          %dl.Attribute_pair.Attribute_pair__origin
             %dt= origin
             %dd= depart
 
-          %dl.Attribute_pair
+          %dl.Attribute_pair.Attribute_pair__destination
             %dt= destination
             %dd= arrive
         
-        - if !gate.empty? && !seat.empty?
-          .PlaceCard_attributes
+          - if gate.present? && seat.present?
             %dl.Attribute_pair
               %dt= gate
               %dd Gate

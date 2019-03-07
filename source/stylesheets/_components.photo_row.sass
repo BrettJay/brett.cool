@@ -1,9 +1,14 @@
+$gutter__outer: 20px
+$gutter__outer--small: 4px
+
+$gutter__inner: 20px / 2
+$gutter__inner--small: 4px / 2
+
 .PhotoRow
   +fluid-scale(margin-top, $responsive_min, $responsive_max, 20px, 60px)
   +fluid-scale(margin-bottom, $responsive_min, $responsive_max, 20px, 60px)
   position: relative
   +clearfix
-
   .PhotoCol_alpha,
   .PhotoCol_beta
     float: left
@@ -11,83 +16,82 @@
       vertical-align: middle
       width: 100%
     img + img
-      margin-top: 30px
+      margin-top: $gutter__outer
       +respond-to(small-down)
-        margin-top: 4px
+        margin-top: $gutter__outer--small
 
   .PhotoCol_alpha
     width: 48%
-    padding-right: 15px
+    padding-right: $gutter__inner
     +respond-to(small-down)
-      padding-right: 2px
+      padding-right: $gutter__inner--small
 
   .PhotoCol_beta
     width: 52%
-    padding-left: 15px
+    padding-left: $gutter__inner
     +respond-to(small-down)
-      padding-left: 2px
+      padding-left: $gutter__inner--small
 
-  .PhotoCol_gamma
-    width: 27.3584906%
-    padding-right: 15px
-    +respond-to(small-down)
-      padding-right: 2px
-
-// .PhotoRow--full
-//   margin-left: 0
-//   margin-right: 0
-
+  
 .PhotoRow--Grid
   .PhotoRow
     margin: 0
-    padding: 15px 0
+    padding: $gutter__inner 0
+    display: flex
     +respond-to(small-down)
-      padding: 2px 0
+      padding: $gutter__inner--small 0
+
 .Photo
-  float: left
   img
     width: 100%
+    height: 100%
     vertical-align: middle
+    object-fit: cover
 
 .Photo--1_of_2
   width: 48%
-  padding-right: 10px
+  padding-right: $gutter__inner
   +respond-to(small-down)
-    padding-right: 2px
+    padding-right: $gutter__inner--small
 
 .Photo--2_of_2
   width: 52%
-  padding-left: 10px
+  padding-left: $gutter__inner
   +respond-to(small-down)
-    padding-left: 2px
+    padding-left: $gutter__inner--small
 
 .Photo--1_of_3,
 .Photo--1_of_4
   width: 27.7%
-  padding: 0 10px 0 0
+  padding: 0 $gutter__inner 0 0
   +respond-to(small-down)
-    padding: 0 2px 0 0
+    padding: 0 $gutter__inner--small 0 0
 
 .Photo--2_of_3
-  padding: 0 10px
+  padding: 0 $gutter__inner
   width: 45.3%
   +respond-to(small-down)
-    padding: 0 2px
+    padding: 0 $gutter__inner--small
 
 .Photo--3_of_3,
 .Photo--4_of_4
-  padding: 0 0 0 10px
+  padding: 0 0 0 $gutter__inner
   width: 27%
   +respond-to(small-down)
-    padding: 0 0 0 2px
+    padding: 0 0 0 $gutter__inner--small
 
 .Photo--2_of_4,
 .Photo--3_of_4
-  padding: 0 10px
+  padding: 0 $gutter__inner
   +respond-to(small-down)
-    padding: 0 2px
+    padding: 0 $gutter__inner--small
 
 .Photo--2_of_4
   width: 21%
 .Photo--3_of_4
   width: 24.3%
+
+.PhotoRow--1.PhotoRow--right
+  justify-content: flex-end
+  .Photo--1_of_1
+    width: 82.70175%

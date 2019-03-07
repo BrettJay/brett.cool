@@ -1,4 +1,356 @@
-title: Day 2
-subtitle: Subtitle
-steps: 0
+title: Shinsekai and Shitennō-ji
+subtitle: and a Shibe café
+steps: 26296
 km: 0
+collection:
+  current:
+    folder: japan
+    file: 2019-02-07
+  next:
+    folder: japan
+    file: 2019-02-08
+  prev:
+    folder: japan
+    file: 2019-02-06
+content:
+  - story: |
+      One heavy night sleep later, we awoke to the sound of our phone alarms going off. We got up, packed our bags, and got ready for the day.
+
+      We emerged from our Hotel lobby in to early morning Osaka.
+  - photo:
+      image: P2070181
+      style: right
+  - story: |
+      Compared with some of the areas of Tokyo we’d become most familiar with last year, Osaka’s streets felt a little older and grungier.
+  - photos:
+      type: grid
+      rows:
+        - images: [ P2070185 ]
+          style: right
+        - images: [ P2070186, P2070188 ]
+  - story: |
+      We walked through the quiet streets, heading Northwest for the Shinsaibashi subway station.
+
+      We turned north on Mido-suji street, and crossed a few large blocks of city grid to arrive at the Shinsaibashi subway access.
+
+      We’d be traveling to Kyoto tomorrow through this station, so it was good to be able to scope out the route without luggage.
+  - photos:
+      type: grid
+      rows:
+        - images: [ P2070191, P2070192 ]
+        - images: [ P2070193 ]
+          style: right
+  - story: |
+      Taking the Midosuji line, we alighted at Yodoyabashi Station.
+
+      Exiting the underground subway station, we emerged near Yodoya Bridge, with some stunning views of the river and nearby architecture.
+  - photos:
+      type: grid
+      rows:
+        - images: [ P2070198 ]
+        - images: [ P2070199, P2070203 ]
+  - story: |
+      We headed east from the station, along the river.
+  - photo:
+      image: P2070207
+      style: right
+  - story: |
+      Eventually, we arrived at our first coffee of the trip.
+  - place:
+      type: drink
+      image: IMG_4695
+      title: Brooklyn Roasting Company
+      address: 〒541-0041 大阪府大阪市中央区北浜２丁目１−16
+      price: ¥
+      label: Coffee
+      rating: 4
+  - story: |
+      We entered the cozy, dimly lit Brooklyn Roasting Company.
+  - photo:
+      image: P2070213
+      style: right
+  - story: |
+      Over coffee, we planned our next move. We decided to head south for the Shitennō-ji Temple—sometimes regarded as the first Buddhist temple in Japan—and then look around the retro-future Shinsekai area.
+
+      After coffee, we departed for Shinsaibashi station, and take the Midosuji in opposite direction.
+  - photos:
+      type: grid
+      rows:
+        - images: [ P2070214, P2070216 ]
+        - images: [ P2070218 ]
+          style: right
+  - story: |
+      Alighting at Tennōji station, we winded our way North, wandering through side streets and undercover alleyways.
+  - photos:
+      type: grid
+      rows:
+        - images: [ P2070222, P2070224 ]
+        - images: [ P2070229 ]
+          style: right
+  - story: |
+      Continuing North, we walked through quiet, residential sized streets.
+  - photos:
+      type: column
+      images: [ P2070233, P2070238, P2070247, P2070250 ]
+  - story: |
+      Soon, we were approaching Shitennō-ji.
+  - photo:
+      image: P2070253
+      style: right
+  - story: |
+      We crossed the street, and entered the temple.
+  - photos:
+      type: grid
+      rows:
+        - images: [ P2070256, banner ]
+  - story: |
+      Shitennō-ji temple was vast and impressive.
+
+      We wandered through the temple grounds, taking in the impressive sights.
+  - photos:
+      type: grid
+      rows:
+        - images: [ P2070262, P2070270 ]
+        - images: [ P2070276, P2070277, P2070280 ]
+  - story: |
+      After wandering around the vast temple grounds, and watching a procession in the main hall, we left the temple, and headed west from Shitennō-ji temple towards Shinsekai.
+
+      We turned off a main street on to quiet side streets, the Tsutenkaku tower looming into view.
+  - photos:
+      type: column
+      images: [ P2070283, P2070287, P2070297, P2070305 ]
+  - photos:
+      type: grid
+      rows:
+        - images: [ P2070309 ]
+          style: right
+  - story: |
+      Suddenly we emerged into the bright, future-retro Shinsekai area.
+  - photos:
+      type: grid
+      rows:
+        - images: [ P2070313 ]
+  - story: |
+      We wandered around the bustling area under the Tsutenkaku tower, and explored a nearby novelty gift store.
+  - photos:
+      type: grid
+      rows:
+        - images: [ P2070320, P2070321 ]
+  - story: |
+      We continued to explore the area, finding a stall selling cheesy corndogs.
+  - photos:
+      type: columns
+      images:
+        right: [ IMG_1819 ]
+        left: [ IMG_1824, IMG_1821 ]
+  - story: |
+      We then tried a dessert place selling dango — chewy rice dumplings, covered in a sauce of sugar, shoyu, and starch.
+  - photos:
+      type: grid
+      rows:
+        - images: [ P2070325 ]
+          style: right
+        - images: [ P2070329, P2070333 ]
+  - story: |
+      As early afternoon arrived, we headed south towards the station.
+  - photo:
+      image: P2070338
+      style: right
+  - story: |
+      We headed back through downtown Osaka back to our hotel.
+  - photos:
+      type: grid
+      rows:
+        - images: [ P2070341, P2070349 ]
+  - story: |
+      ---
+
+      Later that afternoon, we headed back out towards Dōtonbori.
+  - photos:
+      type: grid
+      rows:
+        - images: [ P2070350 ]
+        - images: [ P2070359, P2070364 ]
+  - story: |
+      We found a fried chicken joint we had passed the previous night.
+  - place:
+      type: restaurant
+      image: P2070368
+      title: Kinnotorikara
+      price: ¥
+      menu: Fried chicken
+      descriptor: Stand
+      rating: 4
+      link: https://www.tripadvisor.com.au/Restaurant_Review-g298566-d3843293-Reviews-Kinnotorikara_Nanba_ebisubashi-Osaka_Osaka_Prefecture_Kinki.html
+  - story: |
+      Kinnotorikara prepares and fries chicken fresh to order.
+      
+      We ordered our fried chicken, and picked up a bubble tea next door.
+
+      Once our order was ready, we explored a number of the seasonings and sauces provided.
+  - photos:
+      type: columns
+      images:
+        left: [ IMG_1865, IMG_1871, IMG_1867 ]
+        right: [ IMG_1868, IMG_1872 ]
+  - story: |
+      The fried chicken was light and tasty.
+
+      Once we’d eaten our fill, and washed down the fried chicken with some very refreshing bubble tea, it was time to move on.
+
+      We headed back north, taking a diversion through an underground mall.
+  - photos:
+      type: grid
+      rows:
+        - images: [ P2070359, P2070374 ]          
+        - images: [ P2070376 ]
+          style: right
+  - story: |
+      In the underground mall, we were stopped by police. They were running an awareness campaign, as apparently more pedestrians had recently been involved in car accidents.
+
+      After explaining the situation, giving us a both a free whistle and light arm band, we continued exploring the underground mall back toward the Dōtonbori strip.
+  - photos:
+      type: grid
+      rows:
+        - images: [ P2070377, P2070380 ]
+  - story: |
+      We noticed a Shibe café, and decided on a whim to book ourselves in for a 5:30pm session.
+  - photos:
+      type: grid
+      rows:
+        - images: [ P2070381 ]
+        - images: [ P2070384 ]
+          style: right
+  - story: |
+      With some time to spare in the area now, we explored the local area, making our way through to the Dōtonbori river.
+  - photos:
+      type: grid
+      rows:
+        - images: [ P2070394, P2070400, P2070405 ]
+  - story: |
+      We explored the local mall streets, and Hozenji Temple.
+  - photos:
+      type: grid
+      rows:
+        - images: [ P2070410, P2070413 ]
+        - images: [ P2070418 ]
+        - images: [ P2070422 ]
+          style: right
+  - story: |
+      Soon enough, it was time for our Shibe cafeé appointment.
+
+      We headed back to the main Dōtonbori strip for the café.
+  - place:
+      type: drink
+      image: mameshibacafe
+      title: Mame-Shiba Café
+      price: ¥
+      label: Shiba Inu
+      descriptor: Café
+      rating: 3
+  - story: |
+      We entered, removed our shoes, grabbed a drink, and sat in the café.
+  - photos:
+      type: grid
+      rows:
+        - images: [ P2070499, P2070510 ]
+        - images: [ P2070521 ]
+        - images: [ P2070544, P2070560 ]
+  - story: |
+      Half an hour, and many good doggo pats later, it was time to head off.
+
+      We left Mame-Shiba Café, and headed north for a well rated Chicken Ramen place.
+  - photos:
+      type: grid
+      rows:
+        - images: [ P2070593, P2070594 ]
+  - story: |
+      Before long, we had arrived out front.
+
+      With the aid of Google Translate, we ordered our Ramen tickets from a vending machine, and headed inside.
+  - place:
+      type: restaurant
+      image: P2070600
+      title: 鶏soba 座銀 にぼし店
+      price: ¥
+      menu: Ramen
+      rating: 2
+      link: https://foursquare.com/v/鶏soba-座銀-にぼし店/55b369e4498e8431bdcc9a87
+  - photo:
+      image: P2070599
+      style: right
+  - story: |
+      The Chicken Ramen was well prepared, but the flavour somehow both a little bland—and yet too meaty—for my taste.
+
+      After a still enjoyable dinner experience, we departed, and continued exploring the nearby area.
+
+      We discovered a nearby second-hand bookstore chain.
+  - place:
+      type: interest
+      image: bookoff
+      title: Book Off
+      label: Second-hand
+      descriptor: Book and videogame store
+      rating: 5
+  - story: |
+      Inside Book Off was a massive amount of second hand trading cards, videogames, books, movies, and assorted merchandise.
+
+      We spent a little while exploring the store, and its impressive range.
+      
+      Afterwards, we headed south through the arcade, intending to head towards a craft beer venue for a nightcap.
+  - photo:
+      image: P2070603
+      style: full
+  - story: |
+      As we headed for the craft beer place, we happened across a coffee shop I’d been meaning to check out.
+
+      We decided to head in for a post-curfew coffee.
+  - place:
+      type: drink
+      image: P2070628
+      title: LiLo Coffee Roasters
+      price: ¥
+      label: Coffee
+      rating: 5
+  - story: |
+      We headed in to the cozy coffee shop, and ordered our drinks.
+  - photos:
+      type: grid
+      rows:
+        - images: [ P2070623, P2070626 ]
+        - images: [ P2070631 ]
+          style: right
+  - story: |
+      After a breather over coffee, we headed next door for a rather interesting&nbsp;bookshop.
+  - place:
+      type: interest
+      image: villagevanguard
+      title: Village Vanguard America Mura
+      label: Book
+      descriptor: Shop
+      rating: 5
+  - story: |
+      After exploring the various novelty items, we headed on for our long-awaited nightcap.
+  - place:
+      type: drink
+      image: IMG_1973
+      title: CraftBeerWorks Kamikaze
+      time: 1549538520
+      price: ¥¥
+      label: Craft beer
+      descriptor: Bar
+      rating: 5
+  - story: |
+      We settled in to the cozy bar, and ordered our drinks.
+  - photos:
+      type: grid
+      rows:
+        - images: [ IMG_1973, P2070633 ]
+          caption: 'Right: Bourbon Barrel Sippin’ Into Darkness, an excellent 12% Chocolate Imperial Stout 👌'
+  - story: |
+      After an enjoyable drink, we started making our way back toward the hotel.      
+  - photos:
+      type: grid
+      rows:
+        - images: [ P2070643 ]
+        - images: [ P2070652, P2070657 ]

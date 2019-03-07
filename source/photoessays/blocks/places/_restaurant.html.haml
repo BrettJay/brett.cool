@@ -4,12 +4,17 @@
 .PlaceCard_address= block.address
 
 .PlaceCard_attributes
-  %dl.Attribute_pair
-    %dt= block.price
-    %dd Price
+  - if block.price.present?
+    %dl.Attribute_pair
+      %dt= block.price
+      %dd Price
   %dl.Attribute_pair
     %dt= block.menu
-    %dd Place
+    %dd
+      - if block.descriptor.present?
+        = block.descriptor
+      - else
+        Restaurant
 
 - if block.rating.present?
   = partial("photoessays/blocks/common/rating", locals: {slug: current_page.data.slug, block: block})
