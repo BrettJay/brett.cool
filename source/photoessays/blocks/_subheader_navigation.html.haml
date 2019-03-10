@@ -18,7 +18,7 @@
           <span class="DayDate">#{Date.parse(essay[0]).strftime("%b %-d")}</span> #{essay[1].title}
       .DayMenu
         .MenuClip
-          - data.photo_essays["#{collection_path[:year]}"]["#{collection_path[:folder]}"].sort{ |a, b| a.to_s.downcase <=> b.to_s.downcase }.each do | id, day |
+          - data.photoessays["#{collection_path[:year]}"]["#{collection_path[:folder]}"].sort{ |a, b| a.to_s.downcase <=> b.to_s.downcase }.each do | id, day |
             - if collection.current.file.to_s == id.to_s
               .DayItem.DayItem--Current
                 <span class="DayDate">#{Date.parse(id).strftime("%b %-d")}</span> #{day.title} <span class="DayDescription">#{day.subtitle}</span>

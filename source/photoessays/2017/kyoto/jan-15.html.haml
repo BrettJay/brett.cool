@@ -3,7 +3,7 @@
   body_classes: page-photoessays
 ---
 
-- essay = data.photo_essays['2017'].kyoto.find { | slug, date | slug == '2017-01-15' }
+- essay = data.photoessays['2017'].kyoto.find { | slug, date | slug == '2017-01-15' }
 
 - @dynamic_title = essay[1].title
 - @dynamic_subtitle = essay[1].subtitle

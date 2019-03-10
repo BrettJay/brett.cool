@@ -25,5 +25,5 @@
 .Page
   .Content
     .Content_photoessays.Row
-      - data.photo_essays['2019'].japan.sort{ |a, b| a.to_s.downcase <=> b.to_s.downcase }.each do | id, date |
+      - data.photoessays['2019'].japan.sort{ |a, b| a.to_s.downcase <=> b.to_s.downcase }.each do | id, date |
         = partial("photoessays/components/day_card_alt", locals: { id: id, date: date, essay_slug: current_page.data.slug})
