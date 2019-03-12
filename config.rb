@@ -1,3 +1,15 @@
+module Haml::Filters
+  remove_filter("Markdown") #remove the existing Markdown filter
+
+  module Markdown
+    include Haml::Filters::Base
+
+    def render(text)
+      Redcarpet::Markdown.new(Redcarpet::Render::HTML.new(with_toc_data: true)).render(text)
+    end
+
+  end
+end
 # --------------------------------------------------------------------------------------------------
 # Helpers
 # --------------------------------------------------------------------------------------------------
@@ -17,7 +29,10 @@ activate :reading_time
 # Blog
 # --------------------------------------------------------------------------------------------------
 
-activate :blog do |blog|
+set :markdown_engine, :redcarpet
+set :markdown, :fenced_code_blocks => true, :smartypants => true, :footnotes => true
+
+activate :blog do | blog |
   blog.prefix = "blog"
   blog.layout = "blog"
   blog.calendar_template = "/blog/calendar.html"
