@@ -348,9 +348,11 @@ content:
         - images: [ IMG_1973, P2070633 ]
           caption: 'Right: Bourbon Barrel Sippin’ Into Darkness, an excellent 12% Chocolate Imperial Stout 👌'
   - story: |
-      After an enjoyable drink, we started making our way back toward the hotel.      
+      After a drink, we headed back to our hotel, passing Triangle Park.
   - photos:
       type: grid
       rows:
         - images: [ P2070643 ]
         - images: [ P2070652, P2070657 ]
+  - story: |
+      Back at the hotel, we packed our bags for departure the following morning.

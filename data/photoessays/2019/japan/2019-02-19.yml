@@ -2,3 +2,13 @@ title: Returning to Perth
 subtitle: Subtitle
 steps: 0
 km: 0
+collection:
+  current:
+    folder: japan
+    file: 2019-02-19
+  prev:
+    folder: japan
+    file: 2019-02-18
+content:
+  - story: |
+      Tuesday Feb 19th

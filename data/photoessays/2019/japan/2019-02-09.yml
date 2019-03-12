@@ -1,4 +1,17 @@
-title: Day 4
+title: Gion
 subtitle: Subtitle
-steps: 0
+steps: 18590
 km: 0
+collection:
+  current:
+    folder: japan
+    file: 2019-02-09
+  next:
+    folder: japan
+    file: 2019-02-10
+  prev:
+    folder: japan
+    file: 2019-02-08
+content:
+  - story: |
+      Saturday Feb 9th

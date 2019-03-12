@@ -5,5 +5,7 @@
     "titleBar.activeForeground": "#000",
     "titleBar.inactiveForeground": "#000",
   },
-  "window.title": "brett.cool${separator}${activeEditorShort}"
+  "window.title": "brett.cool${separator}${activeEditorShort}",
+  "editor.tabSize": 2,
+  "editor.detectIndentation": false
 }

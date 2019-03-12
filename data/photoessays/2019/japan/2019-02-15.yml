@@ -1,4 +1,17 @@
 title: Day 10
 subtitle: Subtitle
-steps: 0
+steps: 27850
 km: 0
+collection:
+  current:
+    folder: japan
+    file: 2019-02-15
+  next:
+    folder: japan
+    file: 2019-02-16
+  prev:
+    folder: japan
+    file: 2019-02-14
+content:
+  - story: |
+      Wednesday Feb 15th

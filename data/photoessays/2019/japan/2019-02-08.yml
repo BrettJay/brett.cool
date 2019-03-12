@@ -25,38 +25,61 @@ content:
         - images: [ P2080674 ]
           style: right
   - story: |
-      a
+      We made our way underground and boarded a train for Shin-Osaka station.
   - photos:
       type: grid
       rows:
         - images: [ P2080680 ]
+  - story: |
+      Our train traveled north, arriving at Shin-Osaka station.
   - photos:
       type: column
       images: [ P2080682, P2080683, P2080688, P2080692 ]
+  - story: |
+      We alighted, and made our way for the Shinkansen platforms.
   - photos:
       type: grid
       rows:
         - images: [ P2080697 ]
         - images: [ P2080702, P2080705 ]
+  - story: |
+      Getting out bearings, we purchased our Shinkansen ticket and made our way into the station.
+
+      After exploring a few of the shops, we made our way up the escalator to the platform, and before long boarded a Shinkansen bound for Kyoto.
+  - photo:
+      image: P2080706
+      style: full
+  - story: |
+      We settled in, and snacked on a Tayaki each in lieu of breakfast.
   - photos:
       type: grid
       rows:
-        - images: [ P2080706 ]
         - images: [ P2080711, P2080714 ]
   - story: |
-      In a matter of only 15 minutes, we arrived in Kyoto.
+      We were just settling in for our trip, when we suddenly found ourselves arriving in Kyoto.
+
+      It was only about fifteen minutes in total.
   - photos:
       type: grid
       rows:
         - images: [ P2080737, P2080740 ]
-  - photos:
-      type: grid
-      rows:
-        - images: [ P2080742 ]
+  - story: |
+      Making our way through the station, we headed for a connection to the subway towards downtown Kyoto, for our hotel.
+  - photo:
+      image: P2080742
+      style: full
+  - story: |
+      We grabbed a onigiri from a 7 Eleven at the station, and transferred onto a subway platform.
+
+      2 Stops later, we emerged in downtown Kyoto.
   - photos:
       type: grid
       rows:
         - images: [ P2080755, P2080758 ]
+  - story: |
+      The streets became smaller as we made our way to our hotel.
+
+      A few blocks from Karasuma station, we arrived at Imu Hotel.
   - place:
       type: accomodation
       image: P2080771
@@ -66,14 +89,30 @@ content:
       checkout: 2019-02-12
       link: https://goo.gl/maps/RXGUY2ArTB82
       rating: 5
+  - story: |
+      Imu was a beautiful, modern hotel.
+      
+      We entered, spoke to reception, and dropped our bags in the lobby. There were racks of self-serve luggage locks, we took two, locked our bags.
+
+      The lobby was a pleasant area, with an elevated platform with seating, a Nintendo Switch, and complimentary drinks.
+      
+      We spent a few minutes catching our breath, adjusting our day bags, and tried the 7 Eleven Beef Onigiri.
+
+      It was mid morning now, but check-in wasn’t until 4:00pm, so we decided to go explore the local area, starting with Nishiki Markets.
   - photos:
       type: grid
       rows:
         - images: [ P2080772, P2080779]
-        - images: [ P2080781 ]
+  - story: |
+      wasd
+  - photo:
+      image: P2080781
+      style: full
   - photo:
       image: P2080794
       style: full
+  - story: |
+      We explored the various stalls.
   - photos:
       type: column
       images: [ P2080797, P2080801, P2080803, P2080805 ]
@@ -87,6 +126,7 @@ content:
       image: P2080851
       menu: Wagyu Beef
       price: ¥
+      rating: 5
   - photo:
       image: P2080853
       style: right
@@ -189,7 +229,7 @@ content:
       title: Omen Nippon
       price: ¥¥
       menu: Udon and Tempura
-      rating: 5
+      rating: 4
   - photos:
       type: grid
       rows:

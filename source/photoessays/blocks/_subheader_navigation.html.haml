@@ -13,7 +13,7 @@
       .SubHeader_Main
         .LinkBreadCrumbs
           #{link_to 'Photoessays', '/photoessays/', class: 'BreadCrumb_Header'}
-          #{link_to collection_title, "/photoessays/#{collection_path}", class: 'BreadCrumb_Header'}
+          #{link_to collection_title, "/photoessays/#{collection_path[:year]}/#{collection_path[:folder]}", class: 'BreadCrumb_Header'}
         .Menu_Button
           <span class="DayDate">#{Date.parse(essay[0]).strftime("%b %-d")}</span> #{essay[1].title}
       .DayMenu
@@ -25,3 +25,4 @@
             - else
               = link_to "/photoessays/#{collection_path[:year]}/#{collection_path[:folder]}/#{Date.parse(id).strftime("%b-%d").to_s.downcase}", class: 'DayItem' do
                 <span class="DayDate">#{Date.parse(id).strftime("%b %-d")}</span> #{day.title} <span class="DayDescription">#{day.subtitle}</span>
+

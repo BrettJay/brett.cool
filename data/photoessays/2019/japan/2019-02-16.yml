@@ -1,4 +1,17 @@
 title: Day 11
 subtitle: Subtitle
-steps: 0
+steps: 27115
 km: 0
+collection:
+  current:
+    folder: japan
+    file: 2019-02-16
+  next:
+    folder: japan
+    file: 2019-02-17
+  prev:
+    folder: japan
+    file: 2019-02-15
+content:
+  - story: |
+      Friday Feb 16th

@@ -1,4 +1,17 @@
 title: Day 6
 subtitle: Subtitle
-steps: 0
+steps: 28365
 km: 0
+collection:
+  current:
+    folder: japan
+    file: 2019-02-11
+  next:
+    folder: japan
+    file: 2019-02-12
+  prev:
+    folder: japan
+    file: 2019-02-10
+content:
+  - story: |
+      Sunday Feb 11th
