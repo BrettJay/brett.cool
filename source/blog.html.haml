@@ -15,7 +15,8 @@
             %span.metadata_date= Date.parse(article.date.to_s).strftime('%b %e, %Y')
             ·
             %span.metadata_reading_time #{time_label article.body}
-      = article.summary
+      .Row
+        .Content_Main= article.summary
       .Row.pb4.pt2
         .Content_Main.Content_Article
           = link_to article, class: 'read-more' do

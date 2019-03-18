@@ -17,7 +17,10 @@ activate :reading_time
 # Blog
 # --------------------------------------------------------------------------------------------------
 
-activate :blog do |blog|
+set :markdown_engine, :redcarpet
+set :markdown, :fenced_code_blocks => true, :smartypants => true, :footnotes => true
+
+activate :blog do | blog |
   blog.prefix = "blog"
   blog.layout = "blog"
   blog.calendar_template = "/blog/calendar.html"
