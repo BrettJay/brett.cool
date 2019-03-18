@@ -1,0 +1,84 @@
+---
+title: Using iOS Shortcuts + iA Writer to reduce journaling friction
+meta_description: Over the years, I’ve tried different approaches to journaling. It’s been difficult to make the habit stick...
+date: 2019/01/14
+---
+
+<%- @og_image_override = 'blog/2019-01-14-using-ios-shortcuts-for-journaling' %>
+
+Over the years, I’ve tried different approaches to journaling. It’s been difficult to make the habit stick.
+
+For every nice feature dedicated apps provide, complexity is introduced, and with that, hurdles  to jump through, when I just want to quickly note a few memorable moments in my day.
+
+To avoid platform lock-in and distractions, I settled on a low-fi solution: each day is a text file, within month and year folders. For instance:
+
+```
+/Log/2019/01/14.txt
+```
+
+This structured approach is a great candidate for automation, and wanting to be more consistent this year, I decided to see how I could make journaling on iPhone more seamless.
+
+## iA Writer’s URL Scheme
+
+<a href="https://ia.net/writer" target="_blank">iA Writer</a> is my go-to writing application. It features beautiful typography, and some very powerful features, in a clean interface.
+
+The included [URL scheme feature][url][^1] allows you to launch the application, and read or write files with an ‘ia-writer://’ URL opened in Safari.
+
+[url]: https://ia.net/writer/support/general/system-requirements#url-schemes
+
+For instance:
+
+```
+ia-writer://new
+```
+
+The ‘new’ command accepts a number of parameters, including ‘path’, which allows you to specify the directory and filename for the new file.
+
+## Building a date-aware path with Shortcuts
+
+[Shortcuts](https://itunes.apple.com/au/app/shortcuts/id915249334) is a very powerful iOS automation app, that can do some very impressive things.
+
+We can get the current date, format it as ‘YYYY/MM/dd’, and pass it on to be used in the path parameter. Adding a ‘.txt’ suffix to the path tells iA writer the last portion is the filename:
+
+<figure class="iphonex_frame">
+  <%= image_tag 'blog/2019-01-14-using-ios-shortcuts-for-journaling/shortcuts.png' %>
+</figure>
+
+Running this shortcut opens the following URL:
+
+```
+ia-writer://new?path=/Log/2019/01/14.txt&amp;edit=true
+```
+
+Opening this URL launches iA Writer, creates a new file at the specified location, and ‘edit=true’ opens the keyboard for immediate editing.
+
+Add it to the Shortcuts widget, and a day can be logged with a few swipes and a tap from anywhere, even on the Lock Screen:
+
+<figure class="iphonex_frame">
+  <video src="/<%= images_dir %>/blog/2019-01-14-using-ios-shortcuts-for-journaling/widget.mp4" controls="true"/>
+</figure>
+
+Although simple, this shortcut has been very valuable for me so far.
+
+It’s a nice reminder to keep in mind small, quick wins with software, which bring a lot of value by making day to day tasks just that *little bit better*.
+
+Download, and play around with the ‘Log Day’ shortcut for iOS here:
+
+<%= link_to 'Log Day', 'https://www.icloud.com/shortcuts/d65113d70fa04ccd952b31e64546d647', class: 'shortcut shortcut--blue' %>
+
+## Going further
+The ‘new’ command also allows for a ‘text’ param[^2], which populates the content of the document. Shortcuts even offers an action to URL encode a block of text.
+
+Here’s just a few ideas for content Shortcuts could include in a new iA&nbsp;Writer document:
+
+* Your current location
+* The current time
+* The weather
+* The currently playing song, if any
+* A checklist of habits
+
+And that’s just scratching the surface 😎
+
+[^1]: You will need to enable this feature under Settings → URL Commands → Enable URL Commands
+
+[^2]: The text param, and all other strings in iA Writer URL Schemes, have a 4,000 character limit.
