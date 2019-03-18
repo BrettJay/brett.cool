@@ -19,7 +19,6 @@
 ---
 
 = partial("photoessays/components/breadcrumb")
-
 = partial("photoessays/components/banner", locals: {slug: current_page.data.slug, title: current_page.data.title, subtitle: current_page.data.subtitle, trip: current_page.data.trip})
 
 - japan_photoessays = data.photoessays['2019'].japan.sort{ |a, b| a.to_s.downcase <=> b.to_s.downcase }

@@ -89,25 +89,27 @@ content:
       checkout: 2019-02-12
       link: https://goo.gl/maps/RXGUY2ArTB82
       rating: 5
-  - story: |
-      Imu was a beautiful, modern hotel.
-      
-      We entered, spoke to reception, and dropped our bags in the lobby. There were racks of self-serve luggage locks, we took two, locked our bags.
+  - story: |      
+      We entered the modern hotel, spoke to reception, and dropped our bags in the lobby. There were racks of self-serve luggage locks, we took two, locked our bags.
 
       The lobby was a pleasant area, with an elevated platform with seating, a Nintendo Switch, and complimentary drinks.
       
-      We spent a few minutes catching our breath, adjusting our day bags, and tried the 7 Eleven Beef Onigiri.
+      We adjusted our day bags, and tried the 7 Eleven Beef Onigiri.
 
-      It was mid morning now, but check-in wasn’t until 4:00pm, so we decided to go explore the local area, starting with Nishiki Markets.
+      It was mid morning, but check-in wasn’t until 4:00pm, so we decided to go explore the local area, starting with Nishiki Markets.
+
+      We departed the hotel lobby, and headed back towards the main strip.
   - photos:
       type: grid
       rows:
         - images: [ P2080772, P2080779]
   - story: |
-      wasd
+      Walking through the quiet side streets, we made our way towards Nishiki&nbsp;Markets.
   - photo:
       image: P2080781
       style: full
+  - story: |
+      After a quick detour through some side streets, we arrived at Nishiki markets downtown.
   - photo:
       image: P2080794
       style: full
