@@ -28,6 +28,14 @@ figure
   h3
     margin: 0.9em 0
 
+  li a
+    color: $content-link
+    text-decoration: none
+    border-bottom: 1px solid $content-link_underline
+    transition: 0.2s ease color, 0.2s ease border, 0.2s ease opacity
+    &:hover
+      border-bottom: 1px solid $content-link_underline--hover
+
   sup a
     opacity: 0.5
     &:hover
