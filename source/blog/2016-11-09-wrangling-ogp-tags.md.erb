@@ -1,10 +1,7 @@
 ---
 title: Wrangling OGP Tags
 meta_description: Recently I’ve found myself tackling rich link unfurling on websites such as Twitter, Facebook, Slack...
-date: 2016-11-09 00:01 UTC
-author: Brett Jones
-author_slug: brett
-body_classes: page-blog
+date: 2016/11/09
 ---
 
 <%- @og_image_override = 'blog/2016-11-09-wrangling-ogp-tags' %>
@@ -28,23 +25,23 @@ As is always the case with <%= link_to '‘standards’', 'https://xkcd.com/927/
 
 Showing what can happen when you just embrace existing tags, Slack nicely unfurls links based on existing OGP and Twitter tags:
 
-<figure class="image_expand">
+<figure class="mt3 mb3">
   <%= image_tag 'blog/2016-11-09-wrangling-ogp-tags/unfurl.jpg', alt: 'A screenshot of a link on my blog unfurled' %>
 </figure>
 
 The corresponding bits of HTML which yields the above is straightforward:
 
-<pre>
-<code>&lt;meta property="og:title" content="Being Open"&gt;
-&lt;meta property="og:description" content="After the culmination of eighteen months of hard work, the inaugural Mixin conference was held last week. A week later, I’m still reeling from the whirlwind experience…"&gt;
+```html
+<meta property="og:title"       content="Being Open">
+<meta property="og:description" content="After the culmination of eighteen months of hard work, the inaugural Mixin conference was held last week. A week later, I’m still reeling from the whirlwind experience…">
 
-&lt;meta property="fb:image" content="http://brett.cool/images/blog/2016-11-05-be-open/fb.jpg"&gt;
+<meta property="fb:image"       content="http://brett.cool/images/blog/2016-11-05-be-open/fb.jpg">
 
-&lt;meta property="twitter:label1" content="Reading Time 🕖"&gt;
-&lt;meta property="twitter:data1" content="About 4 minutes"&gt;
-&lt;meta property="twitter:label2" content="Published 📅"&gt;
-&lt;meta property="twitter:data2" content="November 5, 2016"&gt;</code>
-</pre>
+<meta property="twitter:label1" content="Reading Time 🕖">
+<meta property="twitter:data1"  content="About 4 minutes">
+<meta property="twitter:label2" content="Published 📅">
+<meta property="twitter:data2"  content="November 5, 2016">
+````
 
 <%= link_to 'Slack has an excellent article', 'https://medium.com/slack-developer-blog/everything-you-ever-wanted-to-know-about-unfurling-but-were-afraid-to-ask-or-how-to-make-your-e64b4bb9254#.39pruiy2j', target:'_blank' %> on the key meta properties, but this post is more interested in the process and strategies for managing these!
 
@@ -85,25 +82,27 @@ brett.cool/images/blog/2016-11-09-wrangling-ogp-tags/
 
 With Middleman, I use <%= link_to 'middleman-ogp', 'https://github.com/ngs/middleman-ogp', target:'_blank' %> to specify paths to the images in page frontmatter:
 
-<pre><code>ogp:
-og:
-  title: 'Page title'
-  description: 'Page description'
-  image:
-    '': http://example.com/path-to-image/og.png
-    type: image/jpg
-    width: 560
-    height: 300
-  locale:
-    '': en_us
-fb:
-  title: 'Page title'
-  description: 'Page description'
-  image:
-    '': http://example.com/path-to-image/fb.png
-    type: image/jpg
-    width: 600
-    height: 315</code></pre>
+```yml
+ogp:
+  og:
+    title: 'Page title'
+    description: 'Page description'
+    image:
+      '': http://example.com/path-to-image/og.png
+      type: image/jpg
+      width: 560
+      height: 300
+    locale:
+      '': en_us
+  fb:
+    title: 'Page title'
+    description: 'Page description'
+    image:
+      '': http://example.com/path-to-image/fb.png
+      type: image/jpg
+      width: 600
+      height: 315
+```
 
 Of course, if you’re running a dynamic site, you can do it any number of ways. One way I’ve implemented custom OGP images on a rails site is to specify a default image in the layout, and then use an instance variable in a view template to override the default image path.
 
