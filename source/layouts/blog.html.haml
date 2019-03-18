@@ -13,4 +13,6 @@
             %span.metadata_date= Date.parse(current_article.date.to_s).strftime('%b %e, %Y')
             ·
             %span.metadata_reading_time #{time_label current_article.body}
-      = yield
+      .Row
+        .Content_Main.Content_Article
+          = yield

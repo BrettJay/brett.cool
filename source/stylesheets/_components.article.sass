@@ -85,7 +85,7 @@ figure
 
 figure figcaption
   text-align: center
-  margin-top: 20px
+  +fluid-scale(margin-top, $responsive_min, $responsive_max, 5px, 20px)
   +body--small_scale
   color: $content-tertiary
   a
@@ -98,8 +98,11 @@ figure figcaption
       border-bottom: 1px solid $content-link_underline--hover
 
 figure.image_expand
-  +respond-to(ipad-up)
-    margin: 60px -40px
+  +fluid-scale(margin-top, $responsive_min, $responsive_max, 5px, 20px)
+  +fluid-scale(margin-bottom, $responsive_min, $responsive_max, 15px, 60px)
+  +fluid-scale(margin-left, $responsive_min, $responsive_max, 0px, -100px)
+  +fluid-scale(margin-right, $responsive_min, $responsive_max, 0px, -100px)
+  
 
 figure img,
 img.blog_img
@@ -111,7 +114,6 @@ img.blog_img
 .ArticleBreadcrumb a
   text-decoration: none
   color: inherit
-
 
 .browser_frame
   background: #333
@@ -149,6 +151,7 @@ figure.iphonex_frame,
   display: block
   border-radius: 12%/6%
   border: 8px solid #000
+  background: #000
   overflow: hidden
   position: relative
   &:after
