@@ -1,0 +1,196 @@
+---
+title: Prototyping a travel itinerary application with Middleman
+meta_description: In the lead-up to my most recent Japan trip, I made some decent headway prototyping an Itinerary application
+date: 2019/03/21
+body_classes: page-blog
+---
+
+Last month, I traveled to Japan again.
+
+I often put together an itinerary before traveling, in order to:
+
+1. Bring siloed information together
+2. Present information in a useful format
+
+I’ve toyed with the idea of tackling a travel itinerary, with plenty of draft Sketch files scattered around my computer.
+
+But there’s a wide gulf between the work required to put together a few design mockups, and a fully functional application.
+
+In the lead-up to my most recent Japan trip, I finally got around to making some decent headway [prototyping an Itinerary application][i], with the help of Middleman and Netlify.
+
+[i]: https://itinerary.brett.cool
+
+Here’s a bit on the process of creating this prototype.
+
+## Bringing siloed information together
+It’s inevitable that relevant travel information will be spread across a number of locations. For me, it’s often:
+
+* **Email** — where booking confirmations are received.
+* **Bookmarks** — from general web browsing.
+* **iPhone Apps** — such as [Lonely Planet Guides][lpg], and [Foursquare][fs].
+* **Google Custom Maps** for landmarks, and day planning.
+
+[lpg]: https://itunes.apple.com/au/app/guides-by-lonely-planet/id1045791869
+[fs]: https://foursquare.com
+
+At this point, I enlist the help of a spreadsheet to collect and make sense of all this information.
+
+This is where we can plan **what** we’re seeing, **when**.
+
+<figure class="image_expand">
+  <%= image_tag 'blog/2019-03-21-prototyping-an-itinerary/spreadsheet.png', class: 'mt3 mb2', style: 'box-shadow: 0 7px 14px rgba(0,0,0,0.1); border-radius: 4px;' %>
+</figure>
+
+I like to divide each day into three sections—morning, afternoon, evening—and a section for lunch and dinner in between.
+
+This allows us to schedule a destination for each part of the day, and make a list of things to do while in each area.
+
+Doing so provides a good balance between structure and flexibility to be useful; _“Let’s walk to Shinjuku this morning, and see x, y, and z before lunch”_.
+
+But there’s a few problems with this spreadsheet.
+
+## Presenting information in a useful format
+
+Here’s the spreadsheet on my main holiday device:
+
+<figure class="iphonex_frame">
+  <%= image_tag 'blog/2019-03-21-prototyping-an-itinerary/IMG_3165.png' %>
+</figure>
+
+Sitting at a computer proficiently switching between windows is very different to glancing at a mobile phone while commuting.
+
+It’s impressive Apple can deliver the full range of spreadsheeting features to the iPhone, but panning around a spreadsheet isn’t ideal.
+
+A common question—_“how do I get there?”_—isn’t addressed either.
+
+## Imagining an ideal itinerary
+
+This is where I fire up Sketch, start from a clean slate, and set to work.
+
+With some blatant disregard for layer organisation, I roughed out a few mockups, focusing on a lightweight layout optimised for mobile viewing:
+
+<figure class="image_expand">
+  <%= image_tag 'blog/2019-03-21-prototyping-an-itinerary/mockup.png', class: 'mt3 mb3', style: 'box-shadow: 0 7px 14px rgba(0,0,0,0.1); border-radius: 4px;' %>
+</figure>
+
+I opted to keep the simple morning/afternoon/evening structure. To emphasize flexibilty, I opted for icons over explicit labels for time of day.
+
+Although far from complete, I felt like I had enough of a direction to start iterating on this design, with actual data.
+
+---
+
+## Rapid iteration with Middleman
+
+Visual design tools are an indispensable part of my workflow, but there are limitations, and certain tasks become repetitive, and inefficient.
+
+While many modern design tools have extensions to generate content from data files and cut down on repetitive tasks, they often just make the process of building a barely-interactive artifact *slightly more efficient*. Then you have to build the thing all over again, anyway.
+
+Middleman, like many static site generators, provides a data API, which allows for you to specify data—in formats such as JSON, Yaml, CSV—and iterate over this data. And the generated static site is actually a usable and efficient finished product.
+
+Based on the mockup in Sketch, I settled on the following data structure:
+
+```
+data/
+  dates/                    # Each day on the itinerary
+    2019-02-06.yml          
+    2019-02-07.yml
+    [⋯]
+  meals/                    # Meal locations
+    and-people-udagawa.yml
+    bills-odaiba.yml
+    [⋯]
+  places/                   # Places to visit
+    365-jours.yml
+    about-life.yml
+    [⋯]
+  transport/                # Google maps routes
+    airport-to-osaka.yml
+    kyoto-to-nara.yml
+    [⋯]
+```
+
+Each day is represented with a date file, named in YYYY-MM-DD format. With this convention, the filename itself can be parsed as a date and displayed in many different formats.
+
+When you query data in Middleman, and data is stored across multiple files, the data is returned in a hash. The hash key is the filename, and the hash value contains the file:
+
+```
+> data.dates
+→ {"2019-02-06"=>{ [⋯] }, "2019-02-07"=>{ [⋯] }, "2019-02-08"=>{ [⋯] }}
+```
+
+You can use the filename as a key to receive the contents of that file:
+      
+```
+# Querying for file 2019-02-08.yml
+> data.dates['2019-02-08']
+
+→ {"morning"=>{"area"=>"Osaka to Kyoto", "activities"=>[{"place"=>"lilo-coffee", "verbiage"=>"Coffee at"}, {"place"=>"hotel-code", "verbiage"=>"Check out of"}, {"transport"=>"osaka-to-kyoto"}, {"place"=>"imu-hotel", "verbiage"=>"Drop bags at"}, {"place"=>"bukkoji-temple", "verbiage"=>"See"}, {"place"=>"tokyu-hands-kyoto", "verbiage"=>"Check out"}]}, "lunch"=>"nishki", "afternoon"=>{"area"=>"Central Kyoto", "activities"=>[{"place"=>"tanaka-keiran", "verbiage"=>"Tamagoyaki at"}, {"place"=>"kurasu-kyoto", "verbiage"=>"Coffee at"}, {"place"=>"toji-temple", "verbiage"=>"See"}, {"place"=>"higashihonganji-temple", "verbiage"=>"See"}, {"place"=>"imu-hotel", "verbiage"=>"Check in to"}]}, "dinner"=>"omen-nippon", "night"=>{"area"=>"Downtown Kyoto", "activities"=>[{"place"=>"cafe-siesta", "verbiage"=>"Drink at"}]}}
+```
+
+The structure of these date files matches the structure of the design of the schedule in the mockup; morning, lunch, afternoon, dinner, and night.
+
+If you’re familiar with yaml syntax, you'll see that the sections have an 'area' label, and a hash of 'activities'.
+
+<div class="itinerary_diagram">
+<div class="code left">
+<pre><code data-title="data/dates/2019-02-08.yml">morning:
+  area: Osaka to Kyoto
+  activities:
+    - place: lilo-coffee
+      verbiage: Coffee at
+    - place: hotel-code
+      verbiage: Check out of
+    - transport: osaka-to-kyoto
+    - place: imu-hotel
+      verbiage: Drop bags at
+    - place: bukkoji-temple
+      verbiage: See
+    - place: tokyu-hands-kyoto
+      verbiage: Check out
+
+lunch: nishki
+
+afternoon:
+  area: Central Kyoto
+  activities:
+    - place: tanaka-keiran
+      verbiage: Tamagoyaki at
+    - place: kurasu-kyoto
+      verbiage: Coffee at
+    - place: toji-temple  
+      verbiage: See
+    - place: higashihonganji-temple
+      verbiage: See
+    - place: imu-hotel
+      verbiage: Check in to
+
+dinner: omen-nippon
+
+night:
+  area: Downtown Kyoto
+  activities:
+    - place: cafe-siesta
+      verbiage: Drink at</code></pre></div>
+  <figure class="iphonex_frame">
+    <%= image_tag 'blog/2019-03-21-prototyping-an-itinerary/IMG_3396.png' %>
+  </figure>
+<div class="code right"><pre><code data-title="data/places/lilo-coffee.yml">name: LiLo Coffee Roasters
+location: Osaka
+type: Coffee
+link: https://goo.gl/maps/APpNqErZ3Kt</code></pre>
+<pre><code data-title="data/transport/osaka-to-kyoto.yml">label: Train from Osaka to Kyoto
+type: Train
+link: https://goo.gl/maps/LvzoXqLwZJ42</code></pre>
+<pre><code data-title="data/meals/omen-nippon.yml">name: Myoudai Omen Shijo Pontocho
+description: Tempura and Udon restaurant in Downtown Kyoto
+location: Downtown Kyoto
+cuisine: udon
+link: https://goo.gl/maps/3bWimMwCP8F2</code></pre>
+</div>
+
+
+---
+
+<figure class="video">
+  <video src="/<%= images_dir %>/blog/2019-03-21-prototyping-an-itinerary/demo.mp4" controls="true" style="width: 100%;"/>
+</figure>
