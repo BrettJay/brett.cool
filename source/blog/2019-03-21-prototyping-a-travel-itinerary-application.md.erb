@@ -65,7 +65,7 @@ Sitting at a computer proficiently switching between windows is very different t
 
 It’s impressive Apple can deliver the full range of spreadsheeting features to the iPhone, but panning around a spreadsheet to find our next destination is not ideal.
 
-And common travel question—_“how do I get there?”_—isn’t addressed either.
+And a common travel question—_“how do I get there?”_—isn’t addressed.
 
 ## Imagining an ideal itinerary
 
@@ -77,7 +77,7 @@ With some blatant disregard for layer organisation, I roughed out a few mockups,
   <%= image_tag 'blog/2019-03-21-prototyping-an-itinerary/mockup.png', class: 'mt3 mb3', style: 'box-shadow: 0 7px 14px rgba(0,0,0,0.1); border-radius: 4px;' %>
 </figure>
 
-I opted to keep the simple morning/afternoon/evening structure. To emphasize flexibilty, I opted for icons over explicit labels for time of day.
+I opted to keep the simple morning/afternoon/evening structure. To emphasize flexibilty, I opted for icons over explicit labels for time of day[^1].
 
 Although far from complete, I felt like I had enough of a direction to start iterating on this design, with actual data.
 
@@ -111,9 +111,9 @@ data/
     [⋯]
 ```
 
-Each day is represented with a date file, named in YYYY-MM-DD format. With this convention, the filename itself can be parsed as a date and displayed in many different formats.
+Each day is represented with a date file, named in YYYY-MM-DD format. With this convention, the filename itself can be parsed as a date and displayed in a variety of ways (e.g. 8/2, Feb 8, February 8).
 
-When you query data in Middleman, and data is stored across multiple files, the data is returned in a hash. The hash key is the filename, and the hash value contains the file:
+When you query data in Middleman, and data is stored across multiple files, the data is returned in a hash. The key is the filename, and the value contains the file:
 
 ```
 > data.dates
@@ -140,7 +140,7 @@ This makes it trivial to edit. Which was important, as I was still finalising my
   <figcaption>Rearranging, editing, and adding new items to the itinerary.</figcaption>
 </figure>
 
-The activities array mainly contains hashes[^1], for either places of interest, or  transport routes[^2].
+The activities array mainly contains hashes[^2], for either places of interest, or  transport routes[^3].
 
 For instance:
 
@@ -153,7 +153,7 @@ For instance:
 
 ```
 
-In the view template when a place hash is supplied[^3], we check for a corresponding data file in the ‘places’ directory[^4].
+In the view template when a place hash is supplied[^4], we check for a corresponding data file in the ‘places’ directory[^5].
 
 So in this case, we check for ‘lilo-coffee.yml’ in ‘data/places’:
 
@@ -165,7 +165,7 @@ type: Coffee
 link: https://goo.gl/maps/APpNqErZ3Kt
 ```
 
-The name from this file is displayed with the supplied verbiage[^5]. The entire block is linked (if a link is present), and the ‘type’ changes the icon to add just a bit more clarity as to what the place is.
+The name from this file is displayed with the supplied verbiage[^6]. The entire block is linked (if a link is present), and the ‘type’ changes the icon to add just a bit more clarity as to what the place is.
 
 You may also notice the ‘location’ line — more on this later.
 
@@ -179,13 +179,13 @@ The verbiage adds just a bit more context for each instance too — we’ll both
 
 ## Rapid design iteration
 
-At this point, I was switching to Sketch to design icons, and experiment with some UI, and then switching back to VSCode and Middleman moments later to implement in code.
+At this point, I was switching to Sketch to design icons, and experiment with UI, and then switching back to VSCode and Middleman moments later to implement in code.
 
-Working in this manner dramatically reduces the feedback loop between design, implementation, and testing. This makes it much faster to try out ideas and  progress faster.
+Working in this manner dramatically reduces the feedback loop between design, implementation, and testing. This makes it much faster to try out ideas and  work faster.
 
-An early version of this app was a single page[^6]. In testing, it became clear quickly that this wasn’t going to work, especially for the latter half of the trip, which would require increasingly more scrolling to get to.
+An early version of this app was a single page[^7]. In testing, it became clear quickly that this wasn’t going to work, especially for the latter half of the trip, which would require increasingly more scrolling to get to.
 
-With the way I’d created the date files separately, it was possible to iterate over each date in code, and links to each day with a calendar view:
+As I’d specified each date in separate files, it was possible to iterate over each date in code, and links to each day from a calendar view:
 
 ```haml
 .DateCalendar.DateCalendar--header
@@ -208,14 +208,14 @@ With the way I’d created the date files separately, it was possible to iterate
     = partial 'components/day_placeholder', locals: { day: day }
 ```
 
-Add a bit of javascript append a class to the calendar with today’s date...
+Add a bit of javascript tp append a class to the calendar with today’s date...
 
 ```javascript
 let today = new Date().toISOString().substr(0, 10);
 document.querySelector(".DateCalendar--body").classList.add(`Date--${today}`);
 ```
 
-And we have a calendar, with an indicator of the current date:
+And we now have a calendar index, which shows the current date (just pretend it’s Valentine’s Day when you’re reading this[^8]):
 
 <figure class="iphonex_frame mb4">
   <%= image_tag 'blog/2019-03-21-prototyping-an-itinerary/IMG_3409.png' %>
@@ -225,15 +225,15 @@ And we have a calendar, with an indicator of the current date:
 
 You may have noticed the ‘Places’ switch in the footer.
 
-While building the itinerary, I began to wonder, “How can I check I’m aware of everything I may want to see in an area?”
+While building the itinerary, I began to wonder, “How can I check I’m aware of everything I added for an area?”
 
-What if plans change? What if I find myself in a location I hadn’t scheduled, and wanted to check for places I took down that may be in the area?
+What if plans change? What if we find ourselves in a location we hadn’t scheduled, and wanted to check places we saved that may be in the area?
 
-What I wanted was be able to view place data **by location, not date**.
+What I wanted was be able to view places **by location, not date**.
 
 Because Middleman provides the place files in the form of a ruby hash, we’re able to manipulate that data with all the hash methods ruby provides.
 
-In my Middleman config I added the following:
+In Middleman config:
 
 ```ruby
 # Get all place files
@@ -254,21 +254,21 @@ places_by_location.each do | location, places |
 end
 ```
 
-Which takes the same place data we’d already written, groups by location, and generates new pages with that information:
+This code takes the same place data we’d already written, groups by location, and generates new pages with that information:
 
 <figure class="iphonex_frame">
   <%= image_tag 'blog/2019-03-21-prototyping-an-itinerary/IMG_3411.png' %>
 </figure>
 
-This was a nice, and cheap feature to add, which proved useful on our trip.
+This was a nice, and very technically cheap feature to add.
 
 ## A few bonus iPhone tweaks
 
-One of the nice, but slightly underutilised features in iOS is the ability to add a webpage to your Home screen. When your webpage is launched from the Home screen, your page is displayed in a nice, full-screen view, which *almost* makes your app look native.
+One of the nice, but slightly under-utilised features in iOS is the ability to add a webpage to your Home screen. When your webpage is launched from the Home screen, your page is displayed in a nice, full-screen view, which *almost* makes your app feel native.
 
-Appscope wrote an excellent article — ‘<a href="https://medium.com/appscope/designing-native-like-progressive-web-apps-for-ios-1b3cdda1d0e8" target="_blank" rel="noopener noreferrer">Designing Native-Like Progressive Web Apps For iOS</a>’, which explains some of the techniques you can use to make a web app feel a bit less like a web page.
+Appscope wrote an excellent article — ‘<a href="https://medium.com/appscope/designing-native-like-progressive-web-apps-for-ios-1b3cdda1d0e8" target="_blank" rel="noopener noreferrer">Designing Native-Like Progressive Web Apps For iOS</a>’, which explains many techniques you can use to make a web app feel a bit more like a native app.
 
-I added a couple of meta tags to the application layout, and a nice iOS Homescreen icon.
+I added a couple of meta tags to the application layout, and an iOS Home screen icon.
 
 ```haml
 %meta{name: 'apple-mobile-web-app-capable',          content: 'yes'}
@@ -282,7 +282,9 @@ Here’s the culmination of all this work; adding the Itinerary to my Home scree
   <video src="/<%= images_dir %>/blog/2019-03-21-prototyping-an-itinerary/final.mp4" controls="true"/>
 </figure>
 
-I built this Itinerary in a couple of hours, about a week before we departed for Japan.
+Not too shabby.
+
+I built this Itinerary in a couple of hours here and there, about a week before we departed for Japan.
 
 I had a lot of fun building this app, and I learned a lot of interesting techniques in the process.
 
@@ -291,23 +293,29 @@ It reinforced for me how valuable it is to reduce the feedback loop between desi
 This will depend on context. But in this case, for my own purposes, I learned far more, made much more progress, and got a lot more real-world benefit out of this prototype, than the handful of wistful static Sketch designs that lay unfinished on my computer.
 
 [^1]:
-  The activity array can also handle an array of strings, an example of which can be found [on Feb 13][gh]. These lines display a fallback icon (and have no link to tap on).
+  And a bit of a nod to my favourite, now-defunt iOS calendar app, [Sunrise][s]
 
 [^2]:
-  The ‘transport’ files follow a relatively similar pattern to place files, without the contextual ‘verbiage’. I originally put an [ambitious amount of data in these files][overkill], but that was ultimately TMI, in the most literal sense.
+  The activity array can also handle an array of strings, an example of which can be found [on Feb 13][gh]. These lines display a fallback icon (and have no link to tap on).
 
 [^3]:
-  The [\_activity_place.html.haml][ap] partial is rendered when a hash with a key of ‘place’ is present in the current activity array item being processed.
+  The ‘transport’ files follow a relatively similar pattern to place files, without the contextual ‘verbiage’. I originally put an [ambitious amount of data in these files][overkill], but that was ultimately TMI, in the most literal sense.
 
 [^4]:
-  A helper method called find_place in [place_helper.rb][ph] checks the place data folder for a filename matching the value supplied. The same approach is used for ‘meal’ and ‘transport’ data files. I could have refactored, but oh well!
+  The [\_activity_place.html.haml][ap] partial is rendered when a hash with a key of ‘place’ is present in the current activity array item being processed.
 
 [^5]:
-  I’m not sure Verbiage is a word, or the word I want. 🤔
+  A helper method called find_place in [place_helper.rb][ph] checks the place data folder for a filename matching the value supplied. The same approach is used for ‘meal’ and ‘transport’ data files. I could have refactored, but oh well!
 
 [^6]:
+  I’m not sure Verbiage is a word, or the word I want. 🤔
+
+[^7]:
   You can see the initial design of [index.html.haml][v1] on Jan 29.
 
+[^8]:
+  Happy Valentine’s Day
+[s]: http://blog.sunrise.am/
 [gh]: https://github.com/BrettJay/itinerary/blob/master/data/dates/2019-02-13.yml
 [overkill]: https://github.com/BrettJay/itinerary/blob/master/data/transport/osaka-to-kyoto.yml
 [ph]: https://github.com/BrettJay/itinerary/blob/master/helpers/place_helper.rb#L2-L4
