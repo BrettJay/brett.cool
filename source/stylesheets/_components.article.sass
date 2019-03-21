@@ -28,6 +28,14 @@ figure
   h3
     margin: 0.9em 0
 
+  li a
+    color: $content-link
+    text-decoration: none
+    border-bottom: 1px solid $content-link_underline
+    transition: 0.2s ease color, 0.2s ease border, 0.2s ease opacity
+    &:hover
+      border-bottom: 1px solid $content-link_underline--hover
+
   sup a
     opacity: 0.5
     &:hover
@@ -70,20 +78,20 @@ figure
 
   code
     +fluid-scale(font-size, $responsive_min, $responsive_max, 12px, 13px)
-    display: block
     font-family: 'Menlo', 'Consolas', monospace
     line-height: 1.4
-    background: #F7F8F9
+    display: inline-block
     color: #102435
+    background: #F7F8F9
+    
+  pre
     border-radius: 5px
     padding: 20px
-  pre
-    white-space: pre-wrap
-    white-space: -moz-pre-wrap
-    white-space: -pre-wrap
-    white-space: -o-pre-wrap
-    word-wrap: break-word
+    display: block
+    overflow-x: scroll
     margin: 30px 0
+    background: #F7F8F9
+    -webkit-overflow-scrolling: touch
 
 figure figcaption
   text-align: center
@@ -184,3 +192,9 @@ figure.iphonex_frame,
 .shortcut--blue
   background-image: linear-gradient(-225deg, #1387E5 0%, #3B9CEC 100%)
   color: #fff
+
+figure.video
+  border-radius: 4px
+  overflow: hidden
+  video
+    display: block

@@ -1,0 +1,324 @@
+---
+title: Prototyping a travel itinerary application with Middleman
+meta_description: In the lead-up to my most recent Japan trip, I made some decent headway prototyping an Itinerary application
+date: 2019/03/21
+body_classes: page-blog
+---
+
+<%- @og_image_override = 'blog/2019-03-21-prototyping-an-itinerary' %>
+
+<%= image_tag 'blog/2019-03-21-prototyping-an-itinerary/hero.png', style:'width: 100%; vertical-align: middle', class: 'mb3' %>
+
+Last month, I traveled to Japan again.
+
+I often put together an itinerary before traveling, in order to:
+
+1. Bring siloed information together
+2. Present information in a useful format
+
+I’ve toyed with the idea of tackling a travel itinerary, with plenty of draft Sketch files scattered around my computer.
+
+But there’s a wide gulf between the work required to put together a few design mockups, and a fully functional application.
+
+In the lead-up to my most recent Japan trip, I finally got around to making some decent headway [prototyping an Itinerary application][i], with the help of Middleman and Netlify.
+
+[i]: https://itinerary.brett.cool
+
+Here’s a bit on the process of creating this prototype.
+
+## Bringing siloed information together
+It’s inevitable that relevant travel information will be spread across a number of locations. For me, it’s often:
+
+* **Email** — where booking confirmations are received.
+* **Bookmarks** — from general web browsing.
+* **iPhone Apps** — such as [Lonely Planet Guides][lpg], and [Foursquare][fs].
+* **Google Custom Maps** for landmarks, and day planning.
+
+[lpg]: https://itunes.apple.com/au/app/guides-by-lonely-planet/id1045791869
+[fs]: https://foursquare.com
+
+At this point, I enlist the help of a spreadsheet to collect and make sense of all this information.
+
+This is where we can start to plan **what** we’re seeing, **when**.
+
+<figure class="image_expand">
+  <%= image_tag 'blog/2019-03-21-prototyping-an-itinerary/spreadsheet.png', class: 'mt3 mb2', style: 'box-shadow: 0 7px 14px rgba(0,0,0,0.1); border-radius: 4px;' %>
+</figure>
+
+I like to divide each day into three sections—morning, afternoon, evening—and a section for lunch and dinner in between.
+
+This allows us to schedule a destination for each part of the day, and make a list of things to do while in each area.
+
+Doing so provides a good balance between structure and flexibility to be useful; _“Let’s walk to Shinjuku this morning, and see x, y, and z before lunch”_.
+
+But there’s a few problems with this spreadsheet.
+
+## Presenting information in a useful format
+
+Here’s the spreadsheet on my main holiday device:
+
+<figure class="iphonex_frame">
+  <%= image_tag 'blog/2019-03-21-prototyping-an-itinerary/IMG_3165.png' %>
+</figure>
+
+Sitting at a computer proficiently switching between windows is very different to glancing at a mobile phone while commuting.
+
+It’s impressive Apple can deliver the full range of spreadsheeting features to the iPhone, but panning around a spreadsheet to find our next destination is not ideal.
+
+And a common travel question—_“how do I get there?”_—isn’t addressed.
+
+## Imagining an ideal itinerary
+
+This is where I fire up Sketch, start from a clean slate, and set to work.
+
+With some blatant disregard for layer organisation, I roughed out a few mockups, focusing on a lightweight layout optimised for mobile viewing:
+
+<figure class="image_expand">
+  <%= image_tag 'blog/2019-03-21-prototyping-an-itinerary/mockup.png', class: 'mt3 mb3', style: 'box-shadow: 0 7px 14px rgba(0,0,0,0.1); border-radius: 4px;' %>
+</figure>
+
+I opted to keep the simple morning/afternoon/evening structure. To emphasize flexibilty, I opted for icons over explicit labels for time of day[^1].
+
+Although far from complete, I felt like I had enough of a direction to start iterating on this design, with actual data.
+
+## Rapid iteration with Middleman
+
+Visual design tools are an indispensable part of my workflow, but there are limitations, and certain tasks become repetitive, and inefficient.
+
+While many modern design tools have extensions to generate content from data files and cut down on repetitive tasks, they often just make the process of building a barely-interactive artifact *slightly more efficient*. Then you have to build the real thing, anyway.
+
+Middleman, like many static site generators, provides a data API, which allows for you to specify data—in formats such as JSON, Yaml, CSV—and iterate over this data. And the generated static site is actually a usable, and pretty efficient product.
+
+Based on the mockup in Sketch, I settled on the following data structure:
+
+```
+data/
+  dates/                    # Each day on the itinerary
+    2019-02-06.yml          
+    2019-02-07.yml
+    [⋯]
+  meals/                    # Meal locations
+    and-people-udagawa.yml
+    bills-odaiba.yml
+    [⋯]
+  places/                   # Places to visit
+    365-jours.yml
+    about-life.yml
+    [⋯]
+  transport/                # Google maps routes
+    airport-to-osaka.yml
+    kyoto-to-nara.yml
+    [⋯]
+```
+
+Each day is represented with a date file, named in YYYY-MM-DD format. With this convention, the filename itself can be parsed as a date and displayed in a variety of ways (e.g. 8/2, Feb 8, February 8).
+
+When you query data in Middleman, and data is stored across multiple files, the data is returned in a hash. The key is the filename, and the value contains the file:
+
+```
+> data.dates
+→ {"2019-02-06"=>{ [⋯] }, "2019-02-07"=>{ [⋯] }, "2019-02-08"=>{ [⋯] }}
+```
+
+You can use the filename as a key to receive the contents of that file:
+      
+```
+# Querying for file 2019-02-08.yml
+> data.dates['2019-02-08']
+
+→ {"morning"=>{"area"=>"Osaka to Kyoto", "activities"=>[{"place"=>"lilo-coffee", "verbiage"=>"Coffee at"}, {"place"=>"hotel-code", "verbiage"=>"Check out of"}, {"transport"=>"osaka-to-kyoto"}, {"place"=>"imu-hotel", "verbiage"=>"Drop bags at"}, {"place"=>"bukkoji-temple", "verbiage"=>"See"}, {"place"=>"tokyu-hands-kyoto", "verbiage"=>"Check out"}]}, "lunch"=>"nishki", "afternoon"=>{"area"=>"Central Kyoto", "activities"=>[{"place"=>"tanaka-keiran", "verbiage"=>"Tamagoyaki at"}, {"place"=>"kurasu-kyoto", "verbiage"=>"Coffee at"}, {"place"=>"toji-temple", "verbiage"=>"See"}, {"place"=>"higashihonganji-temple", "verbiage"=>"See"}, {"place"=>"imu-hotel", "verbiage"=>"Check in to"}]}, "dinner"=>"omen-nippon", "night"=>{"area"=>"Downtown Kyoto", "activities"=>[{"place"=>"cafe-siesta", "verbiage"=>"Drink at"}]}}
+```
+
+The contents of these files match the structure of morning, lunch, afternoon, dinner, and night.
+
+Each part of the day has a label, and an array of activites.
+
+This makes it trivial to edit. Which was important, as I was still finalising my itinerary *while I was developing it*:
+
+<figure class="video mt3 mb3">
+  <video src="/<%= images_dir %>/blog/2019-03-21-prototyping-an-itinerary/demo.mp4" controls="true" style="width: 100%;"></video>
+  <figcaption>Rearranging, editing, and adding new items to the itinerary.</figcaption>
+</figure>
+
+The activities array mainly contains hashes[^2], for either places of interest, or  transport routes[^3].
+
+For instance:
+
+```yml
+# data/dates/2019-02-08.yml
+
+  activities:
+    - place: lilo-coffee
+      verbiage: Coffee at
+
+```
+
+In the view template when a place hash is supplied[^4], we check for a corresponding data file in the ‘places’ directory[^5].
+
+So in this case, we check for ‘lilo-coffee.yml’ in ‘data/places’:
+
+```yml
+# data/places/lilo-coffee.yml
+name: LiLo Coffee Roasters
+location: Osaka
+type: Coffee
+link: https://goo.gl/maps/APpNqErZ3Kt
+```
+
+The name from this file is displayed with the supplied verbiage[^6]. The entire block is linked (if a link is present), and the ‘type’ changes the icon to add just a bit more clarity as to what the place is.
+
+You may also notice the ‘location’ line — more on this later.
+
+<figure class="iphonex_frame">
+  <%= image_tag 'blog/2019-03-21-prototyping-an-itinerary/IMG_3396.png' %>
+</figure>
+
+This approach makes it efficient to refer to the same place multiple times, and trivial to change the date or time we’re planning to visit.
+
+The verbiage adds just a bit more context for each instance too — we’ll both be ‘checking in to’ and ‘checking out of’ the same hotel.
+
+## Rapid design iteration
+
+At this point, I was switching to Sketch to design icons, and experiment with UI, and then switching back to VSCode and Middleman moments later to implement in code.
+
+Working in this manner dramatically reduces the feedback loop between design, implementation, and testing. This makes it much faster to try out ideas and  work faster.
+
+An early version of this app was a single page[^7]. In testing, it became clear quickly that this wasn’t going to work, especially for the latter half of the trip, which would require increasingly more scrolling to get to.
+
+As I’d specified each date in separate files, it was possible to iterate over each date in code, and links to each day from a calendar view:
+
+```haml
+.DateCalendar.DateCalendar--header
+  - [ 'Mon','Tue','Wed','Thu','Fri','Sat','Sun'].each do | day |
+    .DateCalendar__day= day
+
+.DateCalendar.DateCalendar--body
+  - # Pad the calendar with a couple of place holders dates
+  - (4..5).each do | day |
+    .DateCalendar__day.DateCalendar__day--placeholder
+      %h2.DateItem__dayLabel= day
+
+  - # Actual dates
+  - dates_in_order.each do | slug, date |
+    = link_to date_link_for(slug), class: "DateCalendar__day Day--#{Date.parse(slug).strftime("%Y-%m-%d")}" do
+      %h2.DateItem__dayLabel= Date.parse(slug).strftime("%-d")
+
+  - # A couple more numbers to pad out the third line...
+  - (20..24).each do | day |
+    = partial 'components/day_placeholder', locals: { day: day }
+```
+
+Add a bit of javascript tp append a class to the calendar with today’s date...
+
+```javascript
+let today = new Date().toISOString().substr(0, 10);
+document.querySelector(".DateCalendar--body").classList.add(`Date--${today}`);
+```
+
+And we now have a calendar index, which shows the current date (just pretend it’s Valentine’s Day when you’re reading this[^8]):
+
+<figure class="iphonex_frame mb4">
+  <%= image_tag 'blog/2019-03-21-prototyping-an-itinerary/IMG_3409.png' %>
+</figure>
+
+## Taking things further
+
+You may have noticed the ‘Places’ switch in the footer.
+
+While building the itinerary, I began to wonder, “How can I check I’m aware of everything I added for an area?”
+
+What if plans change? What if we find ourselves in a location we hadn’t scheduled, and wanted to check places we saved that may be in the area?
+
+What I wanted was be able to view places **by location, not date**.
+
+Because Middleman provides the place files in the form of a ruby hash, we’re able to manipulate that data with all the hash methods ruby provides.
+
+In Middleman config:
+
+```ruby
+# Get all place files
+places = data.places
+
+# Get all meal files that aren’t references to an in-flight or unassigned meal
+meals = data.meals.select{ | id, meal | meal.location != 'Flight' && meal.location != 'na' }
+
+# Merge place and meals into one hash
+all_locations = places.merge(meals)
+
+# Group all the places in this hash by their location, and sort alphabetically
+places_by_location = all_locations.group_by{ |id, place| place.location }.sort{ |a, b| a.to_s.downcase <=> b.to_s.downcase }
+
+# Build a static page, and supply the location, and places data to the template
+places_by_location.each do | location, places |
+  proxy "places/#{location.parameterize("-")}.html", "/places/template.html", locals: { location: location, places: places }, ignore: true
+end
+```
+
+This code takes the same place data we’d already written, groups by location, and generates new pages with that information:
+
+<figure class="iphonex_frame">
+  <%= image_tag 'blog/2019-03-21-prototyping-an-itinerary/IMG_3411.png' %>
+</figure>
+
+This was a nice, and very technically cheap feature to add.
+
+## A few bonus iPhone tweaks
+
+One of the nice, but slightly under-utilised features in iOS is the ability to add a webpage to your Home screen. When your webpage is launched from the Home screen, your page is displayed in a nice, full-screen view, which *almost* makes your app feel native.
+
+Appscope wrote an excellent article — ‘<a href="https://medium.com/appscope/designing-native-like-progressive-web-apps-for-ios-1b3cdda1d0e8" target="_blank" rel="noopener noreferrer">Designing Native-Like Progressive Web Apps For iOS</a>’, which explains many techniques you can use to make a web app feel a bit more like a native app.
+
+I added a couple of meta tags to the application layout, and an iOS Home screen icon.
+
+```haml
+%meta{name: 'apple-mobile-web-app-capable',          content: 'yes'}
+%meta{name: 'apple-mobile-web-app-title',            content: 'Itinerary'}
+%meta{name: 'apple-mobile-web-app-status-bar-style', content: 'default'}
+```
+
+Here’s the culmination of all this work; adding the Itinerary to my Home screen, and launching the full-screen view:
+
+<figure class="iphonex_frame mb3">
+  <video src="/<%= images_dir %>/blog/2019-03-21-prototyping-an-itinerary/final.mp4" controls="true"/>
+</figure>
+
+Not too shabby.
+
+I built this Itinerary in a couple of hours here and there, about a week before we departed for Japan.
+
+I had a lot of fun building this app, and I learned a lot of interesting techniques in the process.
+
+It reinforced for me how valuable it is to reduce the feedback loop between designing, and testing. You can validate ideas, and iterate far quicker with a shorter feedback loop.
+
+This will depend on context. But in this case, for my own purposes, I learned far more, made much more progress, and got a lot more real-world benefit out of this prototype, than the handful of wistful static Sketch designs that lay unfinished on my computer.
+
+[^1]:
+  And a bit of a nod to my favourite, now-defunt iOS calendar app, [Sunrise][s]
+
+[^2]:
+  The activity array can also handle an array of strings, an example of which can be found [on Feb 13][gh]. These lines display a fallback icon (and have no link to tap on).
+
+[^3]:
+  The ‘transport’ files follow a relatively similar pattern to place files, without the contextual ‘verbiage’. I originally put an [ambitious amount of data in these files][overkill], but that was ultimately TMI, in the most literal sense.
+
+[^4]:
+  The [\_activity_place.html.haml][ap] partial is rendered when a hash with a key of ‘place’ is present in the current activity array item being processed.
+
+[^5]:
+  A helper method called find_place in [place_helper.rb][ph] checks the place data folder for a filename matching the value supplied. The same approach is used for ‘meal’ and ‘transport’ data files. I could have refactored, but oh well!
+
+[^6]:
+  I’m not sure Verbiage is a word, or the word I want. 🤔
+
+[^7]:
+  You can see the initial design of [index.html.haml][v1] on Jan 29.
+
+[^8]:
+  Happy Valentine’s Day
+[s]: http://blog.sunrise.am/
+[gh]: https://github.com/BrettJay/itinerary/blob/master/data/dates/2019-02-13.yml
+[overkill]: https://github.com/BrettJay/itinerary/blob/master/data/transport/osaka-to-kyoto.yml
+[ph]: https://github.com/BrettJay/itinerary/blob/master/helpers/place_helper.rb#L2-L4
+[ap]: https://github.com/BrettJay/itinerary/blob/master/source/components/_activity_place.html.haml
+[v1]: https://github.com/BrettJay/itinerary/blob/7b5d2fd04232abc0165cc748b260a189c74093c8/source/index.html.haml
+
