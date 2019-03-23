@@ -7,17 +7,5 @@
 
 .Page
   .Content
-    - page_articles.each_with_index do |article, i|
-      .Row.pb3
-        .Content_Main
-          %h2.h1_scale= link_to article.title, article
-          .Article_metadata
-            %span.metadata_date= Date.parse(article.date.to_s).strftime('%b %e, %Y')
-            ·
-            %span.metadata_reading_time #{time_label article.body}
-      .Row
-        .Content_Main= article.summary
-      .Row.pb4.pt2
-        .Content_Main.Content_Article
-          = link_to article, class: 'read-more' do
-            Continue Reading
+    - page_articles.each do | article |
+      = partial("layouts/summaries/#{article.data.type}", locals: { article: article })
