@@ -10,4 +10,5 @@
       .Row
         .Content_Main.Content_Article
           = yield
-      = partial("layouts/posts/footer/#{current_article.data.type}", locals: { article: current_article })
+      - if current_article.data.type == 'link'
+        = partial("layouts/posts/footer/#{current_article.data.type}", locals: { article: current_article })
