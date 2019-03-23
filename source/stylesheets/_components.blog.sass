@@ -1,17 +1,29 @@
 .blog .Content_Headline a,
-.blog .Content_Main a
+.blog .Content_Main a,
+.page-blog .Content_Headline a,
+.page-blog .Content_Main a
   color: inherit
   border-bottom: 3px solid #fff
   &:hover
     color: $content-link
 
 .blog .Content_Main .read-more
+.page-blog .Content_Main .read-more
   color: $content-link
   border-bottom: 1px solid $content-link_underline
   &:hover
     border-bottom: 1px solid $content-link_underline--hover
 
-.blog
+.blog,
+.page-blog
   .Post + .Post
     border-top: 1px solid #eee
     +fluid-scale(padding-top, $responsive_min, $responsive_max, $size_scale_4_min, $size_scale_4_max)
+
+.Post__footer
+  +width--large
+  padding: 10px
+  background: #f7f7f7
+
+.Post__footer--pagination
+  text-align: center

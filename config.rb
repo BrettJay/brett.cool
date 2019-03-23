@@ -23,6 +23,8 @@ set :markdown, :fenced_code_blocks => true, :smartypants => true, :footnotes => 
 activate :blog do | blog |
   blog.prefix = "blog"
   blog.layout = "blog"
+  blog.paginate = true
+  blog.per_page = 2
   blog.calendar_template = "/blog/calendar.html"
   blog.tag_template = "/blog/tag.html"
   blog.summary_separator = /READMORE/

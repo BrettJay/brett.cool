@@ -1,11 +1,23 @@
 ---
-  title: Blog
-  body_classes: blog
-  meta_description: Occasional blog posts
-  meta_keywords: Design, development, blog
+title: Blog
+body_classes: blog top-navigation
+meta_description: Occasional blog posts
+meta_keywords: Design, development, blog
+pageable: true
 ---
 
 .Page
   .Content
     - page_articles.each do | article |
       = partial("layouts/summaries/#{article.data.type}", locals: { article: article })
+
+    - if paginate && num_pages > 1
+      .Row
+        .Post__footer.Post__footer--pagination
+          - if prev_page
+            = link_to '← Newer', prev_page
+            ·
+          Page #{page_number}
+          - if next_page
+            ·
+            = link_to 'Older →', next_page

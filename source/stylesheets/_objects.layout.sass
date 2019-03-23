@@ -12,6 +12,22 @@
   margin-left: -15px
   margin-right: -15px
 
+=width--default
+  max-width: 760px
+  margin: 0 auto
+  +fluid-scale(width, $responsive_min, $responsive_max, 96%, 67%)
+
+=width--large
+  max-width: 920px
+  margin: 0 auto
+  +fluid-scale(width, $responsive_min, $responsive_max, 96%, 80%)
+
+=width--full
+  max-width: 1140px
+  margin: 0 auto
+  padding-left: 0 !important
+  padding-right: 0 !important
+
 .Content
   +container
 
@@ -34,20 +50,13 @@
     padding-right: 0
 
 .Content_Headline
-  max-width: 920px
-  margin: 0 auto
-  +fluid-scale(width, $responsive_min, $responsive_max, 96%, 80%)
+  +width--large
 
 .Content_Main
-  max-width: 760px
-  margin: 0 auto
-  +fluid-scale(width, $responsive_min, $responsive_max, 96%, 67%)
+  +width--default
 
 .Content_Full
-  max-width: 1140px
-  margin: 0 auto
-  padding-left: 0 !important
-  padding-right: 0 !important
+  +width--full
 
 =mt4
   +fluid-scale(margin-top, $responsive_min, $responsive_max, $size_scale_4_min, $size_scale_4_max)
