@@ -13,7 +13,11 @@ module PageTitleHelper
   end
 
   def render_page_title
-    title = current_page.data.title
+    if !current_page.data.title.blank?
+      title = current_page.data.title
+    else
+      title = @dynamic_title
+    end
 
     raise 'You must provide a page title for your page!' if title.blank?
 

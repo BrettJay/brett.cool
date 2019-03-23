@@ -1,6 +1,29 @@
 ---
-title: Archive
 pageable: true
-per_page: 12
-body_classes: page-blog top-navigation animate-fade
+per_page: 10
+body_classes: page-blog blog top-navigation animate-fade
 ---
+
+- @dynamic_title = "Posts tagged ‘#{tagname}’"
+
+.Page
+  .Content
+    .Row.pb3
+      .Content_Main
+        %h1.h3_scale
+          Posts tagged
+          = link_to "#{tagname} ×", '/blog', class: 'clear-tag'
+
+    - page_articles.each do | article |
+      = partial("layouts/summaries/#{article.data.type}", locals: { article: article })
+
+    - if paginate && num_pages > 1
+      .Row
+        .Post__footer.Post__footer--pagination
+          - if prev_page
+            = link_to '← Newer', prev_page
+            ·
+          Page #{page_number}
+          - if next_page
+            ·
+            = link_to 'Older →', next_page

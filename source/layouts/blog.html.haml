@@ -6,13 +6,8 @@
 = wrap_layout :layout do
   .Page
     .Content
-      .Row.pb3
-        .Content_Main
-          %h1= current_article.title
-          .Article_metadata
-            %span.metadata_date= Date.parse(current_article.date.to_s).strftime('%b %e, %Y')
-            ·
-            %span.metadata_reading_time #{time_label current_article.body}
+      = partial("layouts/posts/header/#{current_article.data.type}", locals: { article: current_article })
       .Row
         .Content_Main.Content_Article
           = yield
+      = partial("layouts/posts/footer/#{current_article.data.type}", locals: { article: current_article })

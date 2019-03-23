@@ -1,9 +1,10 @@
-.blog .Content_Headline a,
-.blog .Content_Main a
+.blog h2 a,
+.page-blog h1 a
   color: inherit
-  border-bottom: 3px solid #fff
+  border-bottom: 0 none
   &:hover
     color: $content-link
+    border-bottom: 0 none
 
 .blog .Content_Main .read-more
   color: $content-link
@@ -11,7 +12,30 @@
   &:hover
     border-bottom: 1px solid $content-link_underline--hover
 
-.blog
-  .Row.pb4.pt2 + .Row.pb3
+.blog,
+.page-blog
+  .Post + .Post
     border-top: 1px solid #eee
     +fluid-scale(padding-top, $responsive_min, $responsive_max, $size_scale_4_min, $size_scale_4_max)
+
+.Post__footer
+  +width--full
+  padding: 10px 15px !important
+  color: #555
+  +fluid-scale(font-size, $responsive_min, $responsive_max, 11px, 13px)
+  a
+    color: #555
+    text-decoration: none
+    border-bottom: 1px solid transparent
+    transition: 0.2s ease color, 0.2s ease border, 0.2s ease opacity
+    &:hover
+      color: $content-link
+      border-bottom: 1px solid $content-link_underline--hover
+
+.Post__footer--pagination
+  text-align: center
+  background: #fff
+  
+.Post__footer__tags
+  text-align: right
+  color: #999
