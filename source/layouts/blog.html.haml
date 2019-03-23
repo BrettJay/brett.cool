@@ -6,7 +6,8 @@
 = wrap_layout :layout do
   .Page
     .Content
-      = partial("layouts/posts/#{current_article.data.type}", locals: { article: current_article })
+      = partial("layouts/posts/header/#{current_article.data.type}", locals: { article: current_article })
       .Row
         .Content_Main.Content_Article
           = yield
+      = partial("layouts/posts/footer/#{current_article.data.type}", locals: { article: current_article })

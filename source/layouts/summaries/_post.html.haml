@@ -12,7 +12,11 @@
     .Content_Main.Content_Article
       = link_to article, class: 'read-more' do
         Continue Reading
-  .Row.pt2.pb4
-    .Post__footer
-      Filed Under:
 
+  .Row.pt3.pb4
+    .Post__footer
+      .Post__footer__tags
+        - article.tags.each_with_index do | tag, i |
+          - if i > 0
+            \/
+          = link_to tag, "/blog/tags/#{tag}"
