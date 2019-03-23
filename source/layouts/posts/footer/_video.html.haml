@@ -1,0 +1,6 @@
+.Row.pt4.pb4
+  .Content_Main.Content_Article
+    :markdown
+      #{article.data.meta_description}
+  .Content_Main.pt3
+    #{Date.parse(article.date.to_s).strftime('%A %e %B %Y')}

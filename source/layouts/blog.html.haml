@@ -13,5 +13,5 @@
         .Row
           .Content_Main.Content_Article
             = yield
-      - if current_article.data.type == 'link'
+      - if current_article.data.type == 'link' || current_article.data.type == 'video'
         = partial("layouts/posts/footer/#{current_article.data.type}", locals: { article: current_article })
