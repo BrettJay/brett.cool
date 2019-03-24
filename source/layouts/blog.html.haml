@@ -7,7 +7,11 @@
   .Page
     .Content
       = partial("layouts/posts/header/#{current_article.data.type}", locals: { article: current_article })
-      .Row
-        .Content_Main.Content_Article
-          = yield
-      = partial("layouts/posts/footer/#{current_article.data.type}", locals: { article: current_article })
+      - if current_article.data.type == 'video'
+        = yield
+      - else
+        .Row
+          .Content_Main.Content_Article
+            = yield
+      - if current_article.data.type == 'link' || current_article.data.type == 'video'
+        = partial("layouts/posts/footer/#{current_article.data.type}", locals: { article: current_article })
