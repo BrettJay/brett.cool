@@ -109,38 +109,61 @@ content:
       image: P2080781
       style: full
   - story: |
-      After a quick detour through some side streets, we arrived at Nishiki markets downtown.
+      After a short walk through some side streets, we soon arrived.
   - photo:
       image: P2080794
       style: full
   - story: |
-      We explored the various stalls.
+      We entered the bustling Nishiki markets.
   - photos:
       type: column
       images: [ P2080797, P2080801, P2080803, P2080805 ]
+  - story: |
+      We headed down the narrow market ailse, turning our heads to look at the wide variety of market stalls flanking us.
   - photos:
       type: column
-      images: [ P2080811, P2080812, P2080816, P2080819, P2080827, P2080842 ]
+      images: [ P2080811, P2080812, P2080816, P2080819 ]
+  - story: |
+      Passing through the various seafood and street food stalls, we sampled some popular Tamagoyaki.
+  - place:
+      type: restaurant
+      address: 〒604-8055 京都府京都市中京区東魚屋町 富小路西入東魚屋町185 錦小路通
+      title: Tanaka Keiran
+      image: P2080827
+      menu: Tamagoyaki
+      price: ¥
+      rating: 2
+      link: https://goo.gl/maps/L64MNAHhZuD2
+  - story: |
+      It was a little too fishy for our taste.
+  - photos:
+      type: column
+      images: [ P2080827, P2080842 ]
+  - story: |
+      A little further down, we found a beef stall.
   - place:
       type: restaurant
       address: 〒604-8871 京都府京都市中京区壬生朱雀町２−１０
       title: Meat Shop Hiro
-      image: P2080851
+      image: P2080853
       menu: Wagyu Beef
       price: ¥
-      rating: 5
-  - photo:
-      image: P2080853
-      style: right
+      rating: 4
+  - story: |
+      We tried a skewer of Wagyu beef steak. The meat was flavoured nicely, tender, and juicy.
+
+      We continued down Nishiki, stopping in at a curry pan store towards the end of the markets.
   - photo:
       image: P2080854
       style: right
+  - story: |
+      As we reached the end of the markets, we reached a small shrine.
   - photos:
       type: grid
       rows:
-        - images: [ P2080858 ]
-        - images: [ P2080867 ]
-          style: right
+        - images: [ P2080858, P2080867 ]
+  - story: |
+      Working out way back towards the main strip, we headed towards a popular dessert place, serving Melon Pan with icecream.
   - photos:
       type: grid
       rows:
@@ -155,17 +178,30 @@ content:
       link: https://goo.gl/maps/kcaWytojHcG2
   - photo:
       image: P2080881
-      style: full
+      style: right
+      caption: 😍
+  - story: |
+      The Melon pan was warm, crusty, and sugary on the crust like a biscuit.
+      
+      The vanilla ice cream was sweet, and combined with the bread in a very satisfying bite.
+
+      After devouring the Melon pan, and with a fair bit of time until check-in remaining, we decided to heard towards the Kyoto CBD, to explore the shrines in the area.
   - photo:
       image: P2080885
       style: full
+  - story: |
+      We consulted Google maps, and grabbed a bus headed for Kyoto station.
   - photo:
       image: P2080889
       style: right
+  - story: |
+      A short bus ride later, we arrived at a bus terminal just outside of the JR Kyoto station.
   - photos:
       type: grid
       rows:
         - images: [ P2080892, P2080893 ]
+  - story: |
+      Taking a brief detour through an underground shopping mall, we wound our way towards a coffee place I’d discovered a couple of years ago.
   - photos:
       type: grid
       rows:
@@ -176,13 +212,21 @@ content:
       title: Kurasu
       address: 〒600-8235 京都府京都市下京区東油小路町５５２
       label: Specialty Coffee
+      descriptor: Shop
+      rating: 5
       link: https://goo.gl/maps/oseyLgYSpkD2
+  - story: |
+      We took a seat, and savoured a coffee.
   - photo:
       image: P2080913
       style: right
+  - story: |
+      After a quick breather, we headed for some nearby temples.
   - photo:
       image: P2080921
       style: full
+  - story: |
+      We entered the temple grounds.
   - photos:
       type: grid
       rows:
