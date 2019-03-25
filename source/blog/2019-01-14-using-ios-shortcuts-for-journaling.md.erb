@@ -9,6 +9,25 @@ body_classes: page-blog
 
 <%- @og_image_override = 'blog/2019-01-14-using-ios-shortcuts-for-journaling' %>
 
+**Embarassingly-late update:**
+
+It turns out there’s a limitation with iA Writer’s URL schemes feature. Unfortunately, the path parameter cannot currently create new directories.
+
+<blockquote class="twitter-tweet" data-conversation="none" data-lang="en"><p lang="en" dir="ltr">Currently, if the folders don&#39;t exist in the given path, they are not created. We&#39;ll look to improve this in the future.</p>&mdash; iA Writer: Get focused. (@iAWriter) <a href="https://twitter.com/iAWriter/status/1088322338020417536?ref_src=twsrc%5Etfw">January 24, 2019</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script> 
+
+For the time being, I’ve updated the shortcut to create files in a flat directory structure (still assuming the presence of a 'Log' folder), like so:
+
+```
+Log\
+  2019-01-13.txt
+  2019-01-14.txt
+  2019-01-15.txt
+```
+
+[Get the updated Shortcut here](https://www.icloud.com/shortcuts/254e156b29f4413db439da698220431a)
+
+---
+
 Over the years, I’ve tried different approaches to journaling. It’s been difficult to make the habit stick.
 
 For every nice feature dedicated apps provide, complexity is introduced, and with that, hurdles  to jump through, when I just want to quickly note a few memorable moments in my day.
@@ -67,7 +86,7 @@ It’s a nice reminder to keep in mind small, quick wins with software, which br
 
 Download, and play around with the ‘Log Day’ shortcut for iOS here:
 
-<%= link_to 'Log Day', 'https://www.icloud.com/shortcuts/d65113d70fa04ccd952b31e64546d647', class: 'shortcut shortcut--blue' %>
+<%= link_to 'Log My Day', 'https://www.icloud.com/shortcuts/254e156b29f4413db439da698220431a', class: 'shortcut shortcut--blue' %>
 
 ## Going further
 The ‘new’ command also allows for a ‘text’ param[^2], which populates the content of the document. Shortcuts even offers an action to URL encode a block of text.
