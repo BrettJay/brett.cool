@@ -226,19 +226,18 @@ content:
       image: P2080921
       style: full
   - story: |
-      We entered the temple grounds.
+      We entered the temple grounds, some early cherry blossoms in bloom.
   - photos:
       type: grid
       rows:
         - images: [ P2080924, P2080926 ]
         - images: [ P2080927 ]
         - images: [ P2080932, P2080935 ]
-  - photos:
-      type: grid
-      rows:
-        - images: [ P2080941 ]
-        - images: [ P2080944 ]
-          style: right
+  - story: |
+      We continued on to the temple next door.
+  - photo:
+      image: P2080944
+      style: right
   - photos:
       type: column
       images: [ P2080948, P2080949, P2080952, P2080953 ]
@@ -247,22 +246,55 @@ content:
       rows:
         - images: [ P2080956 ]
         - images: [ P2080957, P2080959 ]
-  - photo:
-      image: P2080964
-      style: right
+  - story: |
+      From here, we made our way through residential side streets.
+  - photos:
+      type: grid
+      rows:
+        - images: [ P2080941 ]
+        - images: [ P2080964 ]
+          style: right
+  - story: |
+      We soon arrived at Higashihonganji Temple.
   - photos:
       type: grid
       rows:
         - images: [ banner ]
         - images: [ P2080976 ]
+  - story: |
+      We entered the vast and impressive temple grounds.
+
+      We explored around the temple grounds, and headed inside the main hall.
+  - photos:
+      type: grid
+      rows:
         - images: [ P2080979, P2080983 ]
         - images: [ P2080994 ]
+  - story: |
+      We left Higashiyama, and headed south towards Kyoto station.
+
+      Along the way, we popped in to a Lawsons, and picked up some fried chicken to snack on.
+  - photos:
+      type: grid
+      rows:
+        - images: [ IMG_2082, IMG_3348 ]
+  - story: |
+      We took the Subway Karasuma line and made our way back to Imu Kyoto Hotel for a pit stop.
+
+      ---
+
+      That evening, we re-emerged into evening Kyoto.
+
   - photo:
       image: P2081004
       style: right
+  - story: |
+      We headed for the main downtown Kyoto strip.
   - photo:
       image: P2081019
       style: full
+  - story: |
+      We made our way west, and after a short walk, arrived at Ponto-chō alley.
   - photos:
       type: grid
       rows:
@@ -270,17 +302,42 @@ content:
         - images: [ P2081047, P2081056 ]
         - images: [ P2081060 ]
           style: right
+  - story: |
+      After a little exploration, we grabbed dinner nearby.
   - place:
       type: restaurant
-      title: Omen Nippon
+      title: Omen Shijo
+      image: omen
+      address: 〒604-8014 京都府中京区柏屋町 京都市中京区四条通先斗町西入ル
       price: ¥¥
       menu: Udon and Tempura
       rating: 4
+      link: https://goo.gl/maps/e3J2NnUg4ip
+  - story: |
+      We settled in to Omen Shijo, for some enjoyable Udon and Tempura.
   - photos:
       type: grid
       rows:
         - images: [ P2081067 ]
         - images: [ P2081068, P2081069 ]
+  - story: |
+      After a very filling dinner, we headed for a nearby bar for a nightcap.
+  - place:
+      type: drink
+      image: lasiesta
+      title: Cafe La Siesta 8bit Edition
+      address: 〒604-8024 京都府京都市中京区紙屋町３６６
+      label: Videogame
+      descriptor: Café and bar
+      rating: 4
+      link: https://goo.gl/maps/apaRCzPsLFx
+  - story: |
+      Cafe La Siesta was a charming retro videogame themed bar, with some very tasty videogame themed cocktails.
+  - photos:
+      type: column
+      images: [ IMG_2115, IMG_2120, IMG_2116 ]
+  - story: |
+      After an enjoyable drink, we made our way back to the hotel and turned in for the night.
   - photo:
       image: P2081075
       style: full

@@ -14,4 +14,112 @@ collection:
     file: 2019-02-08
 content:
   - story: |
-      Saturday Feb 9th
+      The following morning,
+  - photos:
+      type: grid
+      rows:
+        - images: [ P2091077, P2091084 ]
+        - images: [ P2091088 ]
+        - images: [ P2091092 ]
+          style: right
+  - photos:
+      type: grid
+      rows:
+        - images: [ P2091093, P2091094 ]
+  - photos:
+      type: grid
+      rows:
+        - images: [ P2091096, P2091100 ]
+  - photos:
+      type: grid
+      rows:
+        - images: [ P2091102 ]
+        - images: [ P2091105, P2091106 ]
+        - images: [ P2091107 ]
+  - photos:
+      type: grid
+      rows:
+        - images: [ P2091109, P2091111 ]
+        - images: [ P2091114 ]
+        - images: [ P2091115 ]
+        - images: [ P2091121, P2091123 ]
+  - photos:
+      type: grid
+      rows:
+        - images: [ P2091129 ]
+        - images: [ P2091131 ]
+  - place:
+      type: drink
+      image: P2091153
+      title: '%Aribica'
+      address: 〒605-0853 京都府京都市東山区星野町８７−５
+      label: Cofee
+      descriptor: Bar
+      rating: 4
+  - photos:
+      type: grid
+      rows:
+        - images: [ P2091148 ]
+        - images: [ P2091153, P2091150 ]
+  - photos:
+      type: grid
+      rows:
+        - images: [ P2091155 ]
+        - images: [ P2091178, P2091208 ]
+        - images: [ P2091212 ]
+  - photos:
+      type: grid
+      rows:
+        - images: [ P2091217, P2091220 ]
+        - images: [ P2091222 ]
+  - photos:
+      type: grid
+      rows:
+        - images: [ P2091226, P2091230 ]
+        - images: [ P2091240 ]
+  - place:
+      type: drink
+      image: P2091242
+      title: Starbucks
+      address: 〒605-0853 京都府京都市東山区星野町８７−５
+      label: Cofee
+      descriptor: Bar
+      rating: 4
+  - photos:
+      type: grid
+      rows:
+        - images: [ P2091243, P2091246 ]
+        - images: [ P2091261 ]
+        - images: [ P2091265, P2091266 ]
+  - photos:
+      type: grid
+      rows:
+        - images: [ P2091286 ]
+        - images: [ P2091293, P2091297 ]
+  - photos:
+      type: grid
+      rows:
+        - images: [ P2091302 ]
+          style: right
+        - images: [ P2091306 ]
+  - photos:
+      type: grid
+      rows:
+        - images: [ P2091309, P2091310 ]
+  - photo:
+      image: P2091329
+      style: full
+  - photos:
+      type: grid
+      rows:
+        - images: [ P2091335, P2091337 ]
+        - images: [ P2091338 ]
+        - images: [ P2091341, P2091342 ]
+  - photos:
+      type: grid
+      rows:
+        - images: [ P2091345 ]
+        - images: [ P2091359, P2091361 ]
+        - images: [ P2091364 ]
+        - images: [ P2091374 ]
+          style: right
