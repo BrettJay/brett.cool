@@ -1,0 +1,12 @@
+- remain = (5 - article.data.rating)
+
+.Row.pb3
+  .Content_Main
+    %h1= article.title
+    .Article_metadata
+      %span.metadata_date= Date.parse(article.date.to_s).strftime('%b %e, %Y')
+      ·
+      - article.data.rating.times do 
+        ★
+      - remain.times do
+        ☆
