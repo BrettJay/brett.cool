@@ -90,7 +90,7 @@ content:
       link: https://goo.gl/maps/RXGUY2ArTB82
       rating: 5
   - story: |      
-      We entered the modern hotel, spoke to reception, and dropped our bags in the lobby. There were racks of self-serve luggage locks, we took two, locked our bags.
+      We entered the modern hotel, spoke to reception, and locked our bags with the self-serve bag rack in the lobby.
 
       The lobby was a pleasant area, with an elevated platform with seating, a Nintendo Switch, and complimentary drinks.
       
@@ -179,9 +179,8 @@ content:
   - photo:
       image: P2080881
       style: right
-      caption: 😍
   - story: |
-      The Melon pan was warm, crusty, and sugary on the crust like a biscuit.
+      The Melon pan was warm and fluffy, with a sugary crust like a biscuit.
       
       The vanilla ice cream was sweet, and combined with the bread in a very satisfying bite.
 
@@ -226,7 +225,7 @@ content:
       image: P2080921
       style: full
   - story: |
-      We entered the temple grounds, some early cherry blossoms in bloom.
+      We entered the temple, some early cherry blossoms already in bloom.
   - photos:
       type: grid
       rows:
@@ -234,20 +233,17 @@ content:
         - images: [ P2080927 ]
         - images: [ P2080932, P2080935 ]
   - story: |
-      We continued on to the temple next door.
+      After a look around the first temple grounds, we continued on to the temple next door.
   - photo:
       image: P2080944
       style: right
+  - story: |
+      We walked up to the main temple, admiring the impressive and intricate&nbsp;architecture.
   - photos:
       type: column
-      images: [ P2080948, P2080949, P2080952, P2080953 ]
-  - photos:
-      type: grid
-      rows:
-        - images: [ P2080956 ]
-        - images: [ P2080957, P2080959 ]
+      images: [ P2080948, P2080949, P2080952, P2080953, P2080957, P2080959 ]
   - story: |
-      From here, we made our way through residential side streets.
+      We exited the temple, and crossed the street to the alley opposite, walking through small, residential alleys on the way to our next temple.
   - photos:
       type: grid
       rows:
@@ -255,20 +251,24 @@ content:
         - images: [ P2080964 ]
           style: right
   - story: |
+      As we walked,  opened some hand (and foot) warmers to 
       We soon arrived at Higashihonganji Temple.
   - photos:
       type: grid
       rows:
         - images: [ banner ]
-        - images: [ P2080976 ]
   - story: |
       We entered the vast and impressive temple grounds.
-
-      We explored around the temple grounds, and headed inside the main hall.
   - photos:
       type: grid
       rows:
+        - images: [ P2080976 ]
         - images: [ P2080979, P2080983 ]
+  - story: |
+      We explored around the temple grounds, removed our shoes, and headed inside the main hall.
+  - photos:
+      type: grid
+      rows:
         - images: [ P2080994 ]
   - story: |
       We left Higashiyama, and headed south towards Kyoto station.
