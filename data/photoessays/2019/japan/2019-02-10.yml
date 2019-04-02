@@ -1,9 +1,9 @@
 title: Arashiyama
-subtitle: Subtitle
+subtitle: and a Monkey Park
 steps: 25307
-km: 0
+km: 19.28
 collection:
-  current:
+  current: 
     folder: japan
     file: 2019-02-10
   next:
@@ -14,4 +14,80 @@ collection:
     file: 2019-02-09
 content:
   - story: |
-      Sunday Feb 10th
+      We emerged from our Hotel to find it lightly snowing.
+  - photo:
+      image: P2101448
+      style: right
+  - story: |
+      We walked through the light snowfall from the hotel, towards Karasuma subway station.
+  - photo:
+      image: P2101453
+      style: full
+  - story: |
+      We rode the subway from Karasuma station to Kyoto station.
+
+      We picked up an onigiri each for breakfast from a convenience store in the station.
+
+      We eventually found our way through the labyrinthian station to the JR office, and activated our JR pass. We then entered the station, and made our way for a train bound for Arashiyama.
+  - photo:
+      image: P2101464
+      style: full
+  - story: |
+      Our train departed from Kyoto station.
+  - photos:
+      type: grid
+      rows:
+        - images: [ P2101466, P2101468 ]
+        - images: [ P2101477 ]
+  - story: |
+      Before long, we arrived at Arashiyama station.
+  - photos:
+      type: grid
+      rows:
+        - images: [ P2101481, P2101483 ]
+  - story: |
+      We made our way south, walking through quiet side streets.
+  - photos:
+      type: grid
+      rows:
+        - images: [ P2101487 ]
+        - images: [ P2101493 ]
+          style: right
+  - story: |
+      As we headed south towards Katsura River, it began to snow lightly again.
+  - photos:
+      type: grid
+      rows:
+        - images: [ P2101496, P2101505 ]
+        - images: [ P2101507 ]
+        - images: [ P2101509 ]
+          style: right
+  - story: |
+      We headed east up Sanjo-Dori.
+  - photo:
+      image: P2101517
+      style: full
+  - story: |
+      We turned left and made our way south, crossing over Togetsu-kyō Bridge.
+  - photos:
+      type: grid
+      rows:
+        - images: [ P2101519 ]
+        - images: [ P2101532, P2101534 ]
+  - story: |
+      Over another small bridge.
+  - photo:
+      image: P2101537
+      style: full
+  - story: |
+      We followed the coast, making our way up to the monkey park.
+  - photo:
+      image: P2101540
+      style: full
+  - story: |
+      Last time I’d visited, it had been closed due to snow. Today, however, it was open for business. We decided to head in for a look.
+
+      We headed up the mountain.
+  - photo:
+      image: P2101542
+      style: right
