@@ -15,46 +15,38 @@ collection:
 content:
   - story: |
       We emerged from our Hotel to find it lightly snowing.
-  - photo:
-      image: P2101448
-      style: right
-  - story: |
-      We walked through the light snowfall from the hotel, towards Karasuma subway station.
+  
+      Walking through the gentle snowfall, we made our way towards Karasuma subway station.
   - photo:
       image: P2101453
       style: full
   - story: |
-      We rode the subway from Karasuma station to Kyoto station.
+      We rode the subway to Kyoto station.
 
-      We picked up an onigiri each for breakfast from a convenience store in the station.
-
-      We eventually found our way through the labyrinthian station to the JR office, and activated our JR pass. We then entered the station, and made our way for a train bound for Arashiyama.
-  - photo:
-      image: P2101464
-      style: full
-  - story: |
-      Our train departed from Kyoto station.
+      Picking up an onigiri en route from a convenience store station, we eventually found our way to the JR office, and activated our JR pass.
+      
+      We then used our pass to board a train bound for Arashiyama.
   - photos:
       type: grid
       rows:
+        - images: [ P2101464 ]
         - images: [ P2101466, P2101468 ]
         - images: [ P2101477 ]
   - story: |
-      Before long, we arrived at Arashiyama station.
+      Within 20 minutes, we arrived at Arashiyama station.
   - photos:
       type: grid
       rows:
         - images: [ P2101481, P2101483 ]
   - story: |
-      We made our way south, walking through quiet side streets.
+      We made our way south, walking through quiet streets.
   - photos:
       type: grid
       rows:
         - images: [ P2101487 ]
-        - images: [ P2101493 ]
-          style: right
+        - images: [ P2101491, P2101493 ]
   - story: |
-      As we headed south towards Katsura River, it began to snow lightly again.
+      As we headed south towards Katsura River, it began to snow lightly.
   - photos:
       type: grid
       rows:
@@ -63,31 +55,192 @@ content:
         - images: [ P2101509 ]
           style: right
   - story: |
-      We headed east up Sanjo-Dori.
+      We headed east on Sanjo-Dori.
   - photo:
       image: P2101517
       style: full
   - story: |
-      We turned left and made our way south, crossing over Togetsu-kyō Bridge.
+      Turning left and heading south, we crossed Togetsu-kyō Bridge, beautiful vistas surrounding us in every direction.
   - photos:
       type: grid
       rows:
         - images: [ P2101519 ]
         - images: [ P2101532, P2101534 ]
   - story: |
-      Over another small bridge.
+      We continued south, admiring the beauty of the rivers and mountains.
   - photo:
       image: P2101537
       style: full
   - story: |
-      We followed the coast, making our way up to the monkey park.
+      Following the coast, we made our way west towards the monkey park.
   - photo:
       image: P2101540
       style: full
   - story: |
-      Last time I’d visited, it had been closed due to snow. Today, however, it was open for business. We decided to head in for a look.
-
-      We headed up the mountain.
+      Last time I’d visited, it had been closed due to snow. Today however, it was open for business.
+      
+      We decided to make our way up the mountain and have a look.
   - photo:
       image: P2101542
       style: right
+  - story: |
+      We continued up the mountain, beautiful aerial views of Arashiyama coming into view as we continued our climb.
+  - photos:
+      type: grid
+      rows:
+        - images: [ P2101546, P2101547 ]
+        - images: [ P2101553 ]
+        - images: [ P2101555 ]
+          style: right
+  - story: |
+      As we approached the summit, we began to spot some monkeys.
+  - photos:
+      type: grid
+      rows:
+        - images: [ P2101558, P2101556 ]
+  - story: |
+      We continued to the observation deck, offering beautiful, panoramic views.
+  - photos:
+      type: grid
+      rows:
+        - images: [ banner ]
+        - images: [ P2101564 ]
+        - images: [ P2101570 ]
+          style: right
+  - story: |
+      We headed inside a nearby shed, where you could feed the monkeys.
+  - photos:
+      type: grid
+      rows:
+        - images: [ P2101586, P2101581 ]
+        - images: [ P2101577 ]
+        - images: [ P2101590, P2101603 ]
+  - story: |
+      A little while later, we decided it was time to move on.
+      
+      We made our way back down the mountain.
+  - photos:
+      type: grid
+      rows:
+        - images: [ P2101606, P2101609 ]
+        - images: [ P2101610, P2101613 ]
+        - images: [ P2101618 ]
+          style: right
+  - story: |
+      We traced our way back toward Togetsu-kyō bridge.
+
+      On the way, we stopped in at a sourvenir shop, featuring some cute Shibe shaped purses.
+      
+      After picking up a few souvenirs we departed, continuing over Togetsu-kyō.
+  - photos:
+      type: grid
+      rows:
+        - images: [ P2101628 ]
+          style: right
+        - images: [ P2101633 ]
+        - images: [ P2101639 ]
+  - story: |
+      We continued along the coast.
+
+      As we walked along the river, we could see some people who’d hired a canoe, trying to coordinate their rowing.
+  - photo:
+      image: P2101643
+      style: right
+  - story: |
+      We made our way up towards Arashiyama Park’s observation deck.
+  - photo:
+      image: P2101647
+      style: full
+  - story: |
+      When I’d made this climb [just over 2 years ago][jan17], the icy conditions on the day had made it quite treacherous.
+
+      Thankfully, this time the weather was a bit more conducive to our footwear.
+
+      [jan17]: https://brett.cool/photoessays/2017/kyoto/jan-17/
+  - photo:
+      image: P2101652
+      style: full
+  - story: |
+      Before long, we made it to the Observation Deck.
+  - photo:
+      image: P2101653
+      style: full
+  - story: |
+      After taking in the view, we headed back down the mountain.
+  - photo:
+      image: P2101660
+      style: right
+  - story: |
+      We made our way down to the beautiful bamboo grove.
+  - photos:
+      type: grid
+      rows:
+        - images: [ P2101661 ]
+        - images: [ P2101662, P2101693 ]
+  - story: |
+      We continued through the bamboo grove back towards the station. 
+  - photos:
+      type: grid
+      rows:
+        - images: [ P2101702 ]
+        - images: [ P2101710 ]
+          style: right
+        - images: [ P2101719, P2101722 ]
+  - story: |
+      We left
+  - photos:
+      type: grid
+      rows:
+        - images: [ P2101725, P2101732 ]
+  - story: |
+      We made our way back to the station 
+  - photos:
+      type: grid
+      rows:
+        - images: [ P2101736 ]
+        - images: [ P2101739, P2101740 ]
+  - story: |
+      Back toward Kyoto
+  - photos:
+      type: grid
+      rows:
+        - images: [ P2101749, P2101754 ]
+  - place:
+      type: restaurant
+      address: 〒604-8041 京都府京都市中京区裏寺町598 新京極東入 蛸薬師通
+      title: Ichiran
+      image: ichiran
+      menu: Ramen
+      price: ¥¥
+      rating: 5
+      link: https://goo.gl/maps/3Fk3ERM1ZFS2
+  - photo:
+      image: P2101764
+      style: full
+  - photo:
+      image: P2101768
+      style: right
+  - photos:
+      type: grid
+      rows:
+        - images: [ P2101772 ]
+        - images: [ P2101776, P2101778 ]
+  - photo:
+      image: P2101780
+      style: right
+  - place:
+      type: drink
+      address: 〒606-8437 京都府京都市左京区南禅寺草川町６４
+      title: Blue Bottle
+      image: P2101782
+      label: Coffee
+      descriptor: Shop
+      price: ¥¥
+      rating: 5
+  - photos:
+      type: grid
+      rows:
+        - images: [ P2101786 ]
+        - images: [ P2101789, P2101792 ]
+        - images: [ P2101793 ]
+        - images: [ P2101794 ]

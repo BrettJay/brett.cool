@@ -91,7 +91,7 @@ content:
   - story: |
       After a short break, we departed %Aribica, and continued west, up a slightly inclined path towards a temple.
 
-      As we approached the crest of the lane, we watched as cars approaching from opposite sides navigated the single lane, feeling some second-hand driving anxiety.
+      As we approached the crest of the lane, we watched as cars approaching from opposite sides navigated the single lane, feeling some second-hand driving anxiety, as they navigated the single lane road.
 
       We continued up.
   - photos:
@@ -111,14 +111,14 @@ content:
         - images: [ P2091240 ]
           style: right
   - story: |
-      After a good look around, we headed to a nearby Starbucks, fitted in to an old Japanese teahouse.
+      After a look around, we headed to a nearby Starbucks, retrofitted inside an old Japanese teahouse.
   - place:
       type: drink
       image: P2091242
       title: Starbucks Highashiyama
       address: 〒605-0853 京都府京都市東山区星野町８７−５
       label: Coffee
-      descriptor: Bar
+      descriptor: Shop
       rating: 4
   - story: |
       We entered, the interior was beautifully presented.
@@ -276,15 +276,13 @@ content:
       image: IMG_2217
       style: right
   - story: |
-      Returning to our spot in the queue, it looked like there was a good half an hour wait in front of us.
+      I returned to our spot in line. I found myself wishing we could be passing the time in a bar, when I remembered—street drinking is legal in Japan!
 
-      I couldn’t help but wish we could be passing the time in a bar, when inspiration struck—street drinking is legal in Japan!
+      A light drizzle of rain fell as I set off to find a convenience store. I grabbed us each a drink, and returned to the queue.
 
-      A light drizzle of rain began as I set off to find a convenience store. I grabbed us a each drink, and returned to the queue.
+      Feeling like I was perhaps sharing a bit too much of Australian drinking culture, we knocked back our tinnies while waiting for our turn.
 
-      Feeling like I was inadvertantly sharing a bit too much of Australian drinking culture with everyone in the line, we knocked back our tinnies while waiting for our turn.
-
-      Eventually, we were seated.
+      This made the wait go much quicker.
   - place:
       type: restaurant
       address: 〒604-0000 京都府京都市中京区十文字町 蛸薬師下る十文字町452番地 柳馬場通
@@ -294,14 +292,19 @@ content:
       price: ¥¥
       rating: 5
       link: https://goo.gl/maps/zV9BefP6ttB2
+  - story: |
+      We stepped inside the cozy restaurant and were seated out the back.
+
+      We were presented with menus to order, and both opted for the soy-based Kogashi ramen.
   - photo:
       image: P2091441
       style: full
+      caption: A very unique charred flavour 👌
   - story: |
-      We opted for the soy-based Kogashi ramen.
-
       The ramen was incredibly full of flavour, with a smokey, charred flavour, well accented by the presence of chopped onion.
 
       It was a very unique experience, and similarly enjoyable to my favourite ramen in Japan, Ichiran.
 
-      After a hearty bowl of ramen, we departed. Feeling quite tired from a long day, we headed back to the hotel for a nightcap before bed.
+      After a very hearty bowl of ramen, we departed.
+      
+      Feeling quite tired from a long day, we headed back to the hotel for a nightcap before bed.
