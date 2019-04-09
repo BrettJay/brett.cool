@@ -178,7 +178,7 @@ content:
         - images: [ P2101661 ]
         - images: [ P2101662, P2101693 ]
   - story: |
-      We continued through the bamboo grove back towards the station. 
+      We continued through the bamboo grove.
   - photos:
       type: grid
       rows:
@@ -187,24 +187,28 @@ content:
           style: right
         - images: [ P2101719, P2101722 ]
   - story: |
-      We left
+      As we reached the bottom of the mountain, we made our way through the small town.
   - photos:
       type: grid
       rows:
         - images: [ P2101725, P2101732 ]
   - story: |
-      We made our way back to the station 
+      Now well and truly lunch time, we made our way back to Arashiyama station, keen to get our ramen on.
   - photos:
       type: grid
       rows:
         - images: [ P2101736 ]
         - images: [ P2101739, P2101740 ]
   - story: |
-      Back toward Kyoto
+      A short trip later, we were back in Kyoto.
+      
+      We wandered through the city, bound for the one and only Ichiran.
   - photos:
       type: grid
       rows:
         - images: [ P2101749, P2101754 ]
+  - story: |
+      We gratefully arrived, and after a short wait, we received our ramen tickets from the familiar vending machine, and were seated at our private booth.
   - place:
       type: restaurant
       address: 〒604-8041 京都府京都市中京区裏寺町598 新京極東入 蛸薬師通
@@ -217,14 +221,31 @@ content:
   - photo:
       image: P2101764
       style: full
+      caption: Level 10 spice 👌
+  - story: |
+      The rich, beautifully delicate broth lived up to our memories from our last Tokyo trip.
+      
+      It had been nearly a year since we last had Ichiran. It was worth the wait, and the trek.
+
+      After a wonderfully filling bowl of ramen, we left Ichiran.
+      
+      As we wandered back down the main strip, I spotted some people with Blue Bottle bags.
+      
+      On a whim, we decided to catch the subway to Blue Bottle in Higashiyama.
   - photo:
       image: P2101768
       style: right
+  - story: |
+      A short ride later, we arrived at Keage station.
+
+      Heading north through a tunnel, we made our way through Konchiin Temple garden.
   - photos:
       type: grid
       rows:
         - images: [ P2101772 ]
         - images: [ P2101776, P2101778 ]
+  - story: |
+      We turned left on to Nanzenji Kusakawacho, and made our way to the Blue Bottle a little further down.
   - photo:
       image: P2101780
       style: right
@@ -237,10 +258,82 @@ content:
       descriptor: Shop
       price: ¥¥
       rating: 5
+      link: https://goo.gl/maps/NV8DuDeTKUH2
+  - story: |
+      We entered the Blue Bottle.
+
+      It was quite a popular destination. We lined up, and ordered our drinks.
   - photos:
       type: grid
       rows:
         - images: [ P2101786 ]
         - images: [ P2101789, P2101792 ]
         - images: [ P2101793 ]
-        - images: [ P2101794 ]
+          style: right
+  - story: |
+      After a little while, our drinks were ready.
+
+      We headed through to the front room gift store.
+  - photo:
+      image: P2101794
+      style: full
+  - story: |
+      After drinking our coffees, we decided to check out the nearby Nanzen-ji temple, to our east.
+  - photos:
+      type: grid
+      rows:
+        - images: [ P2101799 ]
+          style: right
+        - images: [ P2101805 ]
+  - story: |
+      We headed to our right, seeing a large brick aqueduct.
+  - photos:
+      type: grid
+      rows:
+        - images: [ P2101817 ]
+        - images: [ P2101822, P2101825 ]
+  - story: |
+      After exploring a little further up, we headed back down, and made our way back to the hotel.
+  - photo:
+      image: P2101835
+      style: full
+  - story: |
+      ---
+
+      Back at the hotel, we took a couple of hours to do some laundry, as we’d be departing for Tokyo the day after tomorrow.
+
+      After washing and drying our laundry, we decided to try the hotel bar for a quick cheeky drink.
+  - photos:
+      type: grid
+      rows:
+        - images: [ IMG_2315, IMG_2360 ]
+  - story: |
+      After a cheeky drink, we decided to head out for dinner.
+
+      We made our way to a highly-rated Katsu place nearby in downtown Kyoto.
+  - place:
+      type: restaurant
+      address: 〒604-8143 京都府京都市中京区阪東屋町 東洞院通四条上ル
+      title: Katsukura
+      image: katsukura
+      menu: Katsu
+      price: ¥¥
+      rating: 5
+      link: https://goo.gl/maps/aXfb4foAdpx
+  - story: |
+      After a short wait, we were seated.
+      
+      We ordered drinks, and were provided with mortars to grind sesame seeds, to add to the Tonkatsu sauce.
+  - photos:
+      type: grid
+      rows:
+        - images: [ IMG_2369, IMG_2368 ]
+  - story: |
+      Soon, our Tonkatsu arrived.
+  - photo:
+      image: P2101839
+      style: full
+  - story: |
+      The katsu crust was crisp, and the chicken fillet was tender.
+
+      After dinner, we headed back to the hotel, for our final full day in Kyoto.
