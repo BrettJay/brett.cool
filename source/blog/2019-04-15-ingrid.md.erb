@@ -1,0 +1,99 @@
+---
+title: Ingrid — a grid system template for tiling Instagram posts
+date: 2019/04/15
+type: post
+meta_description:
+body_classes: page-blog
+---
+
+<figure class="image_expand">
+  <%= image_tag 'blog/2019-04-15-ingrid/sketch.png', style: 'border-radius: 5px; box-shadow: 0 1px 3px rgba(0,0,0,0.4), 0 4px 14px rgba(0,0,0,0.3);' %>
+</figure>
+
+During free moments I had over the weekend, I devised and put together [Ingrid][i],
+a free Sketch template for creating seamlessly tiling Instagram posts.
+
+Ingrid is based on a method I first used to create a tiled image composition
+for [Instagram][ig] when I finished my America Trip photoessays last year.
+
+The insight: design at 1× 
+-------------------------
+
+The takeaway from that process was to ‘design at 1×’, so to speak.
+
+The majority of people using Instagram do so on mobile, and a sizeable
+proportion use iPhones. The majority iPhones display images at 375pt wide.
+
+I discovered by creating a Sketch canvas at that size, and following a 15pt grid
+system, I could better control and predict the way everything—from the alignment,
+and spacing of elements, to the size of text—would display.
+
+Utilising Sketch’s handy slices feature, it’s possible to export each frame at a
+much higher resolution[^1], the end result is a high resolution composition,
+that feels right at home, especially on target devices[^2].
+
+Building Ingrid
+---------------
+
+It was Friday night, and I was enjoying a [13% imperial stout][b] when
+inspiration suddenly struck.
+
+I was mulling over the process I used to create Instagram compositions when the
+name ‘Ingrid’ leapt in to my head.
+
+Well, now that I had a name, I had to build it.
+
+Creating the Sketch template was pretty straightforward. I spent some time
+carefully puttig together the template, with an in-situ preview of the post view
+when viewed on an iPhone X/XS.
+
+The other 95%...
+----------------
+
+Once I’d finished the Ingrid template, [I put it on Github][gh], and spent some
+time fenagling a somewhat-legible readme.
+
+It also struck me as the perfect opportunity to play around more with [Gatsby][gb],
+a static site generator I’ve been enjoying recently. Paired with [Netlify][n],
+it’s really quite fast to go from [Github repository][ghs] to [live website][i].
+
+I figured I needed a quick sizzle reel to get across how it works.
+
+I blew some dust off my copy of After Effects[^3], recorded some footage with
+[Screenflick][sf][^4], and many keyframes later...
+
+<figure class="video mt3 mb3" id="demo">
+  <video src="/<%= images_dir %>/blog/2019-04-15-ingrid/sizzle.mp4" controls="true" style="width: 100%;"></video>
+</figure>
+
+This is without a doubt the fastest turnaround from ideation to publishing. In
+fairness, the work *around* the work took the longest (probably because the idea
+itself and the work involved was relatively simple).
+
+Still though, it’s been a fun, tiring, and educational process!
+
+[i]: https://ingrid.brett.cool "Ingrid"
+[ig]: https://www.instagram.com/p/BlhluaeDVDg/
+[b]: https://untappd.com/b/stillwater-artisanal-on-fleek/1394616
+[gh]: https://github.com/brettJay/ingrid "Ingrid repository"
+[ghs]: https://github.com/brettJay/ingrid-site "Ingrid site repository"
+[gb]: https://www.gatsbyjs.org/ "Gatsby"
+[n]: https://www.netlify.com/ "Netlify"
+[sf]: https://www.araelium.com/screenflick-mac-screen-recorder
+[marc]: https://twitter.com/marcedwards "Marc Edwards"
+
+[^1]:
+  Last I checked, Instagram stores uploaded images at 1080 × 1080px. Although
+  you can design for the right scale, some downsampling is inevitable.
+
+[^2]:
+  When viewing on a corresponding device, elements within Instagram’s own UI
+  will appear to align with images inset by 15pt, it’s a subtle, but nice effect. 
+
+[^3]:
+  In other words, I updated to CC2019, all my plugins broke, I tracked down
+  plugin downloads from email, migrated them and my preferences across, and
+  dug out the external HDD After Effects wanted for its disk cache...
+
+[^4]:
+  h/t [Marc Edwards][marc]
