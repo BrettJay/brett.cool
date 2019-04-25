@@ -14,4 +14,70 @@ collection:
     file: 2019-02-12
 content:
   - story: |
-      Wednesday Feb 13th
+      The following morning, we set off for from our hotel.
+      
+      We picked up some supplies from a nearby convenience store, and then headed through Shibuya Mark City, towards Shibuya station.
+  - photos:
+      type: grid
+      rows:
+        - images: [ P2132281 ]
+        - images: [ P2132288 ]
+          style: right
+  - story: |
+      We made our way in to the JR station and made our way to a platform.
+  - photos:
+      type: grid
+      rows:
+        - images: [ P2132294, P2132298 ]
+  - story: |
+      We jumped on a train bound for Tokyo station.
+  - photos:
+      type: grid
+      rows:
+        - images: [ P2132302 ]
+          style: right
+        - images: [ P2132303 ]
+  - story: |
+      We headed through the crowded Tokyo station towards the Shinkansen platforms.
+  - photo:
+      image: P2132305
+      style: full
+  - story: |
+      Picking up some Onigiri, we made our way for a platform.
+  - photos:
+      type: grid
+      rows:
+        - images: [ P2132307 ]
+        - images: [ P2132309, P2132310 ]
+  - story: |
+      Before long, the Shinkansen arrived.
+
+      We boarded, took our seats, and were soon making our way rapidly north, out of the built-up Tokyo city center.
+  - photos:
+      type: grid
+      rows:
+        - images: [ P2132331, P2132315 ]
+        - images: [ P2132325 ]
+          style: right
+  - story: |
+      We snacked on our Onigiri as we continued North.
+  - photos:
+      type: grid
+      rows:
+        - images: [ P2132333, P2132335 ]
+        - images: [ P2132347 ]
+          style: right
+        - images: [ P2132363, P2132369 ]
+  - photo:
+      image: P2132377
+      style: full
+  - photo:
+      image: P2132380
+      style: full
+  - photos:
+      type: grid
+      rows:
+        - images: [ P2132381, P2132389 ]
+        - images: [ P2132392 ]
+        - images: [ P2132393 ]
+          style: right
