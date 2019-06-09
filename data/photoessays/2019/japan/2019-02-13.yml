@@ -81,3 +81,6 @@ content:
         - images: [ P2132392 ]
         - images: [ P2132393 ]
           style: right
+  - photo:
+      image: P2132394
+      style: full
