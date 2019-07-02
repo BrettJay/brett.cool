@@ -136,7 +136,7 @@ content:
       image: P2122198
       style: full
   - story: |
-      After grabbing a takeaway coffee, we headed back south towards Shibuya Scramble.
+      After grabbing a takeaway coffee, we headed back south towards the Shibuya Scramble.
   - photos:
       type: grid
       rows:
@@ -144,7 +144,7 @@ content:
         - images: [ P2122202 ]
           style: right
   - story: |
-      We headed through the Shibuya Crossing, and up the main street.
+      We made our way through the scramble, and up the main street.
   - photos:
       type: grid
       rows:
