@@ -269,3 +269,39 @@ content:
   - photo:
       image: P2132617
       style: right
+  - story: |
+      We boarded a train, and arrived moments later in Ueno.
+  - photos:
+      type: grid
+      rows:
+        - images: [ P2132619, P2132620 ]
+  - story: |
+      We hadn’t visited Ueno last year. It was an older, quieter part of the city, but still bustling on Wednesday night.
+
+      We exited the station, and had a quick look around the main area.
+  - photo:
+      image: P2132622
+      style: full
+      caption: I visited that ‘The World End’ irish pub a couple of years ago.
+  - story: |
+      Though large parts of Ueno matched with my memory, there seemed to be quite a few new developments too.
+
+      Truly, the pace of development in Tokyo is far faster than I’m acclimated to.
+  - photos:
+      type: grid
+      rows:
+        - images: [ P2132623, P2132624 ]
+        - images: [ P2132626 ]
+  - story: |
+      We reached the Ichiran and saw a giant line snaking out.
+
+      Eyeballing it (and knowing the line always continues inside), we were guessing at least an hour. Looking at Google Maps, we could continue our epic anti-clockwise circle route towards Shinjuku, where there were a few more Ichiran locations.
+
+      We continued to explore Ueno nightlife, on our way back to the station.
+  - photo:
+      image: P2132631
+      style: full
+  - story: |
+      We boarded a train bound for Shinjuku.
+
+      A short while later, we alighted.
