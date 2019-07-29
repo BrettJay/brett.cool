@@ -1,0 +1,16 @@
+- remain = (5 - article.data.rating)
+
+.Post
+  .Row.pb2
+    .Content_Main
+      %h2= link_to article.title, article
+      .Article_metadata
+        %span.metadata_date= Date.parse(article.date.to_s).strftime('%b %e, %Y')
+        ·
+        - article.data.rating.times do 
+          ★
+        - remain.times do
+          ☆
+
+  .Row.pb4
+    .Content_Main.Content_Article= article.body

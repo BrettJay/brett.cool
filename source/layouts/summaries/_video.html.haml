@@ -1,0 +1,11 @@
+.Post
+  .Row.pb3
+    .Content_Main
+      %h2.h2_scale= link_to article.title, article
+
+  = article.body
+  
+  .Row.pt3.pb4
+    .Content_Main.Content_Article
+      :markdown
+        #{article.data.meta_description}
