@@ -302,6 +302,54 @@ content:
       image: P2132631
       style: full
   - story: |
-      We boarded a train bound for Shinjuku.
+      We returned to the station, and boarded a train to Shinjuku.
 
-      A short while later, we alighted.
+      A little while later, we arrived in Shinjuku, and made our way to Ichiran.
+  - place:
+      type: restaurant
+      address: 〒160-0022 東京都新宿区新宿３丁目３４−11 ピースビルB1F・6F
+      title: Ichiran
+      image: IMG_7022
+      menu: Ramen
+      price: ¥¥
+      rating: 5
+      link: https://goo.gl/maps/o7uYqCjf8D42uk9Z7
+  - story: |
+      As we approached, we saw a small queue for the basement. We made our way for the back of the line, when we were stopped by one of the staff manning the line. He handed us a card, and told us to go to floor six.
+
+      We made our way upstairs, and found the sixth floor of the Ichiran store just coming online—clearly in anticipation of the queues. We presented our card, and found ourselves close to the front of the line for the vending machine to order.
+  - photo:
+      image: IMG_7022
+      style: right
+  - story: |
+      The shop was so recently opened that we were in the first group to be seated, and could hear the chefs entering and setting up the kitchen as we took our seats.
+
+      Before long, our ramen arrived.
+
+      ---
+
+      One delicious bowl of ramen later, we headed off for a nightcap.
+  - place:
+      type: drink
+      image: IMG_1411
+      title: Tap Stand
+      address: 〒160-0022 東京都新宿区新宿３丁目３５ 新宿高野第２ビル
+      label: Beer
+      link: https://goo.gl/maps/SA8PafvZPxnh2HHw8
+  - story: |
+      We popped in to Tap Stand, ordered a drink, and a few snacks.
+  - photos:
+      type: grid
+      rows:
+        - images: [ IMG_7998, IMG_1432 ]
+  - story: |
+      A few drinks later, we headed through Shinjuku nightlife, walking down crowded streets.
+  - photos:
+      type: grid
+      rows:
+        - images: [ P2132651 ]
+        - images: [ P2132654, P2132660 ]
+        - images: [ P2132666 ]
+          style: right
+  - story: |
+      After a quick visit to a crowded Don Quijote, we decided to complete the circle loop on the Yamanote line, back to our hotel, and turn in for the night.
