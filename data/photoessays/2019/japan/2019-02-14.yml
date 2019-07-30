@@ -1,4 +1,4 @@
-title: Valentine’s Day in Tokyo
+title: Tokyo Valentine’s Day
 subtitle: Coffee, Book Stores, and Soba
 steps: 22505
 km: 17.15
@@ -14,4 +14,151 @@ collection:
     file: 2019-02-13
 content:
   - story: |
-      Thursday Feb 14th
+      In the morning, we awoke and set off for the Shibuya subway station.
+  - photos:
+      type: grid
+      rows:
+        - images: [ P2142672 ]
+        - images: [ P2142676, P2142679 ]
+  - story: |
+      We headed to the basement levels, and road the TV Subway line to Nakameguro. A brief ride later, we alighted.
+  - photos:
+      type: grid
+      rows:
+        - images: [ P2142681 ]
+        - images: [ P2142684 ]
+  - story: |
+      We set off in the cool morning air, through quiet streets to our favourite coffee shop in Tokyo.
+  - photo:
+      image: P2142690
+      style: right
+  - story: |
+      Before long, we arrived at Onibus.
+  - place:
+      type: drink
+      address: 〒153-0051 東京都目黒区上目黒２丁目１４−1
+      title: Onibus
+      image: P2142707
+      label: Coffee
+      descriptor: Shop
+      price: ¥
+      rating: 5
+      link: https://goo.gl/maps/683QRJSdxxhNwYkR9
+  - story: |
+      We ordered coffee, and a small pack of biscuits, and waited for our order in the very pretty courtyard.
+  - photos:
+      type: grid
+      rows:
+        - images: [ P2142707 ]
+          style: right
+        - images: [ P2142695, P2142691 ]
+  - story: |
+      We received our coffees, and headed upstairs.
+  - photos:
+      type: grid
+      rows:
+        - images: [ banner ]
+        - images: [ P2142706 ]
+  - story: |
+      We whiled away the early morning in the cozy coffee shop.
+
+      ---
+
+      After a coffee (or two, in my case), we retraced our foorsteps towards the subway station. 
+      
+      Rather than entering the subway, we continued on foot north towards Tsutaya Books.
+  - photo:
+      image: P2142717
+      style: right
+  - story: |
+      We continued north, the roads growing larger as we made our way back in the direction of Shibuya.
+  - photo:
+      image: P2142724
+      style: right
+  - story: |
+      We soon arrived at Tsutaya Books.
+  - place:
+      type: interest
+      image: P2142725
+      title: Tsutaya Books Daikanyama
+      address: 〒150-0033 東京都渋谷区猿楽町１７−５ ＤＡＩＫＡＮＹＡＭＡ Ｔ－ＳＩＴＥ蔦屋書店 １号館、３号館、２号館１階
+      label: Book
+      descriptor: shop
+      rating: 5
+      link: https://goo.gl/maps/obyuQhEmK11h4avP7
+  - story: |
+      Tsutaya Books is a beautiful Book store, split into various sections based on genre.
+
+      The bottom floor has a restaurant, while a café and bar await you on the second floor.
+  - photo:
+      image: IMG_4627
+      style: full
+  - place:
+      type: restaurant
+      address: 〒150-0013 東京都渋谷区恵比寿４丁目３−10 センチュリー・パーク1F
+      title: Itasoba Kaoriya
+      image: P2142735
+      menu: Soba
+      price: ¥¥
+      rating: 5
+      link: https://goo.gl/maps/RGvjPstfLFrZ48qs9
+  - photo:
+      image: P2142734
+      style: right
+  - photos:
+      type: grid
+      rows:
+        - images: [ P2142737, P2142739 ]
+  - photo:
+      image: P2142740
+      style: right
+  - photo:
+      image: P2142741
+      style: right
+  - photos:
+      type: grid
+      rows:
+        - images: [ P2142746, P2142752 ]
+  - place:
+      type: interest
+      image: P2142725
+      title: Yellow Submarine
+      address: 〒101-0021 東京都千代田区外神田１丁目１１−5 秋葉原スーパービル8F
+      label: Hobby
+      descriptor: store
+      rating: 4
+      link: https://goo.gl/maps/nzAij1P4XuUwsw626
+  - place:
+      type: interest
+      image: P2142725
+      title: Atre Akihabara 1
+      address: 〒101-0021 東京都千代田区外神田１丁目１７−6
+      label: Department
+      descriptor: store
+      rating: 4
+      link: https://goo.gl/maps/LwPcSGUT6EvVF5Kq8
+  - place:
+      type: interest
+      image: P2142725
+      title: Chabara
+      address: 〒101-0022 東京都千代田区神田練塀町8-2
+      label: Japanese food
+      descriptor: store
+      rating: 4
+      link: https://goo.gl/maps/RyJtrcfAn5rVGftT7
+  - place:
+      type: restaurant
+      address: 〒150-0042 東京都渋谷区宇田川町３１−2 ＢＥＡＭ6F 渋谷
+      title: Nabezo
+      image: P2142735
+      menu: Sukiyaki and Shabu Shabu
+      price: ¥¥¥
+      rating: 4
+      link: https://g.page/nabezo-shibuyacenter?share
+  - place:
+      type: drink
+      image: IMG_1411
+      title: Ben Fiddich
+      address: 〒160-0023 東京都新宿区西新宿１丁目１３−7 大和家ビル9F
+      label: Cocktail
+      link: https://g.page/BenFiddich?share
