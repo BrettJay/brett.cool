@@ -21,7 +21,9 @@ content:
         - images: [ P2142672 ]
         - images: [ P2142676, P2142679 ]
   - story: |
-      We headed to the basement levels, and road the TV Subway line to Nakameguro. A brief ride later, we alighted.
+      We headed underground, and road the TV Subway line to Nakameguro.
+      
+      A few stops later, we arrived.
   - photos:
       type: grid
       rows:
@@ -33,7 +35,7 @@ content:
       image: P2142690
       style: right
   - story: |
-      Before long, we arrived at Onibus.
+      We soon arrived at Onibus.
   - place:
       type: drink
       address: 〒153-0051 東京都目黒区上目黒２丁目１４−1
@@ -45,7 +47,9 @@ content:
       rating: 5
       link: https://goo.gl/maps/683QRJSdxxhNwYkR9
   - story: |
-      We ordered coffee, and a small pack of biscuits, and waited for our order in the very pretty courtyard.
+      We ordered our coffees, and a small pack of biscuits.
+      
+      We waited for our coffees in the beautiful courtyard.
   - photos:
       type: grid
       rows:
@@ -53,20 +57,20 @@ content:
           style: right
         - images: [ P2142695, P2142691 ]
   - story: |
-      We received our coffees, and headed upstairs.
+      Coffee in hand, we headed upstairs.
   - photos:
       type: grid
       rows:
         - images: [ banner ]
         - images: [ P2142706 ]
   - story: |
-      We whiled away the early morning in the cozy coffee shop.
+      We whiled away the early morning hours at Onibus, taking in the serene coffee shop, and surrounding views.
 
       ---
 
-      After a coffee (or two, in my case), we retraced our foorsteps towards the subway station. 
+      After a coffee or two, we retraced our foorsteps towards the subway station. 
       
-      Rather than entering the subway, we continued on foot north towards Tsutaya Books.
+      Rather than entering the subway, we continued on foot north, back towards Tsutaya Books.
   - photo:
       image: P2142717
       style: right
@@ -76,23 +80,54 @@ content:
       image: P2142724
       style: right
   - story: |
-      We soon arrived at Tsutaya Books.
+      The striking architecture of Tsutaya Books loomed into view.
   - place:
       type: interest
       image: P2142725
       title: Tsutaya Books Daikanyama
       address: 〒150-0033 東京都渋谷区猿楽町１７−５ ＤＡＩＫＡＮＹＡＭＡ Ｔ－ＳＩＴＥ蔦屋書店 １号館、３号館、２号館１階
       label: Book
-      descriptor: shop
+      descriptor: store
       rating: 5
       link: https://goo.gl/maps/obyuQhEmK11h4avP7
   - story: |
-      Tsutaya Books is a beautiful Book store, split into various sections based on genre.
+      Tsutaya Books is a beautiful Book store, split into various sections based on genre. There’s also a wing dedicated to music, movies, and television.
 
-      The bottom floor has a restaurant, while a café and bar await you on the second floor.
+      The ground floor included a restaurant, while a café and bar was available on the second floor.
   - photo:
       image: IMG_4627
       style: full
+  - story: |
+      I’ve never seen a more handsome yet comfy bookstore. It really is the kind of place you could spend an entire day at, from breakfast in the morning to drinks at night.
+
+      We whiled away the rest of the morning at Tsutaya Books.
+
+      ---
+
+      As lunch-time approached we departed, making our way for Ebisu.
+
+      We stopped in at a coffee shop en-route.
+  - place:
+      type: drink
+      address: 〒150-0021 東京都渋谷区恵比寿西１丁目３３−１８ コート代官山1F
+      title: Duct Coffee Lab
+      image: duct
+      label: Coffee
+      descriptor: Shop
+      price: ¥
+      rating: 2
+      link: https://goo.gl/maps/Q8aQQyj35kpxV6pT6
+  - story: |
+      Duct was a pretty little coffee shop, but clearly filter wasn’t their speciality; it was a very dark cup, probably should have gone for an espresso!
+
+      We left, continuing for Ebisu.
+  - photo:
+      image: P2142728
+      style: full
+  - story: |
+      We soon arrived at our destination, a highly-rated Soba place.
+
+      After a short wait outside, we were seated.
   - place:
       type: restaurant
       address: 〒150-0013 東京都渋谷区恵比寿４丁目３−10 センチュリー・パーク1F
@@ -102,63 +137,179 @@ content:
       price: ¥¥
       rating: 5
       link: https://goo.gl/maps/RGvjPstfLFrZ48qs9
+  - story: |
+      The inside of Itasoba was cozy and warm.
+      
+      We were seated at a communal table. I ordered a draught beer, and we both ordered lunch sets with duck soup.
   - photo:
       image: P2142734
       style: right
+  - story: |
+      The Soba was wonderfully prepared, had a good bite, and paired excellently with the duck soup.
+
+      After a delicious lunch, we departed, and headed for Ebisu station.
   - photos:
       type: grid
       rows:
         - images: [ P2142737, P2142739 ]
-  - photo:
-      image: P2142740
-      style: right
-  - photo:
-      image: P2142741
-      style: right
+  - story: |
+      From the station, we caught the Yamanote line to Akihabara. A short ride later, we emerged in afternoon Akihabara.
+
+      Outside the station, we popped in to a Pablo cheesecake shop for a Valentine’s Day themed dessert.
+  - place:
+      type: drink
+      image: IMG_5974
+      title: PABLO Akihabara
+      address: 〒101-0025 東京都千代田区神田佐久間町１丁目６−5 アキバ・トリム 1F
+      label: Dessert
+      descriptor: shop
+      rating: 4
+      link: https://goo.gl/maps/QyHBcFmG1vrDf4cJ9
   - photos:
       type: grid
       rows:
-        - images: [ P2142746, P2142752 ]
+        - images: [ IMG_7485, IMG_5578 ]
+  - story: |
+      The Pablo cheesecake was topped with a strawberry jam, and a soft strawberry daifuku. It was delicious, and a great boost of energy for the afternoon.
+      
+      After picking up a spare SD card for my camera at Labi Akihabara, we continued north west.
+  - photo:
+      image: P2142740
+      style: right
+  - story: |
+      We arrived at Yellow Submarine, a hobby and trading card game store.
   - place:
       type: interest
-      image: P2142725
+      image: IMG_0617
       title: Yellow Submarine
       address: 〒101-0021 東京都千代田区外神田１丁目１１−5 秋葉原スーパービル8F
       label: Hobby
       descriptor: store
       rating: 4
       link: https://goo.gl/maps/nzAij1P4XuUwsw626
+  - story: |
+      Inside was a massive range of trading cards, and other games.
+  - photo:
+      image: 02142019_141926
+      style: full
+  - story: |
+      While Alyssa shopped inside, I headed outside to have a look around.
+  - photo:
+      image: P2142746
+      style: right
+  - story: |
+      As I explored the nearby area, I came across an alley with many small shops, selling cheap electronics...
   - place:
       type: interest
-      image: P2142725
+      image: akiboo
+      title: Akibaoo
+      address: 〒101-0021 東京都千代田区外神田１丁目８−10 バウハウス
+      label: Computer
+      descriptor: store
+      rating: 4
+      link: https://goo.gl/maps/GfPi641g5PDmzUDq8
+  - photos:
+      type: grid
+      rows:
+        - images: [ P2142741 ]
+        - images: [ IMG_1134, IMG_2681 ]
+          caption: Smart watches, cheap bluetooth headphones, and airsoft guns...
+  - story: |
+      I met up with Alyssa back at Yellow Submarine, and we headed south to continue exploring the alley of cheap electronics.
+  - photo:
+      image: P2142752
+      style: full
+  - story: |
+      We wound our way back towards the station through an old shopping mall.
+  - place:
+      type: interest
+      image: radio-center
+      title: Akihabara Radio Center
+      address: 〒101-0021 東京都千代田区外神田１丁目１４−2
+      label: Shopping
+      descriptor: mall
+      rating: 4
+      link: https://goo.gl/maps/cCkuWWtKuv1cjeLd8
+  - story: |
+      Inside, we looked around for potential souvenirs.
+
+      We emerged near the station entrance, and entered a department store. 
+  - photo:
+      image: IMG_0534
+      style: right
+  - place:
+      type: interest
+      image: atre
       title: Atre Akihabara 1
       address: 〒101-0021 東京都千代田区外神田１丁目１７−6
       label: Department
       descriptor: store
-      rating: 4
+      rating: 3
       link: https://goo.gl/maps/LwPcSGUT6EvVF5Kq8
+  - photos:
+      type: grid
+      rows:
+        - images: [ IMG_3399, IMG_4050 ]
+  - story: |
+      After a quick look around, we continued to a nearby Japanese specialty food store.
+  - photo:
+      image: IMG_8539
+      style: right
   - place:
       type: interest
-      image: P2142725
+      image: chabra
       title: Chabara
       address: 〒101-0022 東京都千代田区神田練塀町8-2
       label: Japanese food
       descriptor: store
       rating: 4
       link: https://goo.gl/maps/RyJtrcfAn5rVGftT7
+  - photo:
+      image: 02142019_162633
+      style: full
+  - story: |
+      Now late afternoon, and quite worn out from all the exploring, we decided to head back to the hotel for a quick rest.
+
+      ---
+
+      That evening, we made our way for an all-you-can-eat Sukiyaki restaurant.
   - place:
       type: restaurant
       address: 〒150-0042 東京都渋谷区宇田川町３１−2 ＢＥＡＭ6F 渋谷
       title: Nabezo
-      image: P2142735
-      menu: Sukiyaki and Shabu Shabu
+      image: nabezo
+      menu: Sukiyaki
       price: ¥¥¥
       rating: 4
       link: https://g.page/nabezo-shibuyacenter?share
+  - photo:
+      image: 02142019_185820
+      style: full
+  - story: |
+      We cooked our meats in the Sukikayi broth, adding vegetables, noodles, and dumplings to the mixture.
+
+      ---
+
+      One hearty dinner later, we caught a train to Shinjuku.
+
+      We arrived, and headed for Bar Ben Fiddich.
   - place:
       type: drink
-      image: IMG_1411
+      image: IMG_4793
       title: Ben Fiddich
       address: 〒160-0023 東京都新宿区西新宿１丁目１３−7 大和家ビル9F
       label: Cocktail
-      link: https://g.page/BenFiddich?share
+      link: https://g.page/BenFiddich
+  - story: |
+      Bar Ben Fiddich is a must-visit place for us on special occasions.
+      
+      Owner Hiroyasu Kayama makes some incredible original cocktails, based on flavour requests. With many a flourish and show included.
+
+      We settled in and enjoyed some truly fantastic cocktails.
+  - photos:
+      type: grid
+      rows:
+        - images: [ IMG_4793 ]
+        - images: [ IMG_5172, IMG_8168 ]
+  - story: |
+      A few hours and a couple of cocktails each later we departed, making our way back to our hotel, to turn in for the night.
