@@ -251,7 +251,9 @@ content:
       rows:
         - images: [ IMG_3399, IMG_4050 ]
   - story: |
-      After a quick look around, we continued to a nearby Japanese specialty food store.
+      After a quick look around inside, we exited, returning to the street.
+
+      We headed for a nearby specialty Japanese food store.
   - photo:
       image: IMG_8539
       style: right
@@ -264,6 +266,8 @@ content:
       descriptor: store
       rating: 4
       link: https://goo.gl/maps/RyJtrcfAn5rVGftT7
+  - story: |
+      Inside was a wide range of specialty Japanese food.
   - photo:
       image: 02142019_162633
       style: full
@@ -288,11 +292,15 @@ content:
   - story: |
       We cooked our meats in the Sukikayi broth, adding vegetables, noodles, and dumplings to the mixture.
 
-      ---
+      Our waiter was delightful, and gave us many good instructions for how to cook our meat best.
 
-      One hearty dinner later, we caught a train to Shinjuku.
-
-      We arrived, and headed for Bar Ben Fiddich.
+      One hearty dinner (and a few scoops of icecream) later, we left Nabezo, and caught a train from Shibuya to Shinjuku.
+  - photos:
+      type: grid
+      rows:
+        - images: [ IMG_2703, IMG_6178 ]
+  - story: |
+      Once in Shinjuku, we headed for Bar Ben Fiddich.
   - place:
       type: drink
       image: IMG_4793
