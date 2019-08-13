@@ -1,5 +1,5 @@
 title: Asakusa and Odaiba
-subtitle: Subtitle
+subtitle: and a night in Roppongi
 steps: 27850
 km: 21.22
 collection:
@@ -14,4 +14,200 @@ collection:
     file: 2019-02-14
 content:
   - story: |
-      Wednesday Feb 15th
+      We awoke just before 8 in our hotel room.
+  - photo:
+      image: P2152754
+      style: right
+  - story: |
+      After a little time getting ready, we set off, grabbing fried chicken from a nearby Lawson’s for breakfast.
+  - photos:
+      type: grid
+      rows:
+        - images: [ P2152756, P2152757 ]
+  - story: |
+      We made our way to the station, riding a subway train bound for Asakusa.
+  - photo:
+      image: P2152761
+      style: full
+  - story: |
+      A short while later, we arrived in Asakusa.
+
+      We made our way from the station for Sensō-ji temple, heading down Nakamise shopping street.
+  - photos:
+      type: grid
+      rows:
+        - images: [ P2152766 ]
+        - images: [ P2152768 ]
+          style: right
+  - story: |
+      We weaved our way through the morning crowds, pausing here and there to look at the various stalls flanking the approach to the temple.
+  - photo:
+      image: P2152776
+      style: full
+  - story: |
+      We entered Sensō-ji temple proper.
+  - photo:
+      image: P2152778
+      style: full
+  - story: |
+      After a look around, we returned back down the shopping street.
+  - photos:
+      type: grid
+      rows:
+        - images: [ P2152785, P2152781 ]
+  - story: |
+      We made our way west from Sensō-ji.
+  - photos:
+      type: grid
+      rows:
+        - images: [ P2152790, P2152791 ]
+  - story: |
+      We soon reached a shoppin arcade.
+  - photo:
+      image: P2152792
+      style: full
+  - story: |
+      We explored some of the nearby souvenir shops, and I contemplated a number of small sling bags.
+
+      We looped back around to Nakamise shopping street. As we walked, I noticed a guy walking past us eating a Melonpan with icecream.
+
+      We hadn’t had Melonpan since Kyoto, the hunt was now on—I opened Google Maps, and navigated us to a nearby Melonpan vendor.
+  - place:
+      type: drink
+      image: P2152793
+      title: Kagetsudō Kaminarimon
+      address: 〒111-0032 東京都台東区浅草１丁目１８−11
+      label: Dessert
+      descriptor: shop
+      rating: 4
+      link: https://goo.gl/maps/PT3EmXwSGrNCu6ag7
+  - story: |
+      We were seated inside, and served a warm Melonpan with cool soft serve.
+  - photo:
+      image: P2152794
+      style: right
+  - story: |
+      One delicious, fluffy melonpan later, we departed, and made our way along the Nakamise shopping street.
+
+      As we walked, a sudden murmur of excitment grew around us—very light snow was gently falling. Children ran past us, trying to catch tiny snowflakes.
+
+      We headed east, past the station, and took a look across Sumida River.
+  - photos:
+      type: grid
+      rows:
+        - images: [ P2152795 ]
+        - images: [ P2152800 ]
+          style: right
+  - story: |
+      We then headed for the station, detouring through the old underground shopping streets.
+  - photos:
+      type: grid
+      rows:
+        - images: [ P2152805 ]
+        - images: [ P2152809 ]
+          style: right
+  - story: |
+      We arrived on the station platform, to take a train from Asakusa station to Ebisu station.
+  - photo:
+      image: P2152812
+      style: right
+  - story: |
+      Soon, we were en route to Ebisu station.
+
+      As we passed Tokyo station, we caught sight of more snow falling gently.
+  - photo:
+      image: P2152814
+      style: full
+  - story: |
+      We arrived in Ebisu station, and made our way for lunch.
+
+      Alyssa was excited for where we were heading.
+  - photo:
+      image: P2152818
+      style: right
+  - story: |
+      After a bit of a confusing wander around the station, we found our way to the attached Shake Shack.
+  - place:
+      type: restaurant
+      address: 〒150-0022 東京都渋谷区恵比寿南１丁目６−1 アトレ恵比寿西館1F
+      title: Shake Shack
+      image: shakeshack
+      menu: Burgers
+      price: ¥¥
+      rating: 5
+      link: https://goo.gl/maps/QZ9RbZEKi2T7Qprf6
+  - story: |
+      We settled in for some rather tasty smash patty burgers and cheesy fries.
+  - photo:
+      image: P2152825
+      style: full
+  - story: |
+      As we ate lunch, we mulled over what to do that afternoon.
+
+      We had planned to go to Odaiba the following day, but our afternoon was rather free, and doing Odaiba today would open up our weekend.
+
+      ---
+
+      One satisfying lunch later, we made our way for Odaiba by train.
+
+      We transferred on to a local route.
+  - photos:
+      type: grid
+      rows:
+        - images: [ P2152829 ]
+          style: right
+        - images: [ P2152830 ]
+  - story: |
+      A short ride later, we arried in Odaiba.
+
+      We made our way out of the station.
+  - photo:
+      image: P2152834
+      style: full
+  - story: |
+      We emerged on the large, man-made island.
+  - photos:
+      type: grid
+      rows:
+        - images: [ P2152836 ]
+        - images: [ P2152840 ]
+  - story: |
+      We made our way through one of the large shopping complexes, passing through a large food court, towards the Unicorn Gundam statue.
+  - photo:
+      image: P2152841
+      style: right
+  - story: |
+      Outside, we arrived.
+  - photo:
+      image: P2152844
+      style: right
+  - photos:
+      type: grid
+      rows:
+        - images: [ P2152860 ]
+        - images: [ P2152861, P2152865 ]
+        - images: [ P2152869 ]
+        - images: [ P2152872 ]
+  - photo:
+      image: P2152884
+      style: full
+  - photo:
+      image: P2152891
+      style: full
+  - photo:
+      image: P2152905
+      style: full
+  - photo:
+      image: P2152906
+      style: full
+  - photo:
+      image: P2152910
+      style: full
+  - photo:
+      image: P2152913
+      style: full
+  - photos:
+      type: grid
+      rows:
+        - images: [ P2152914 ]
+        - images: [ P2152916 ]
