@@ -1,0 +1,268 @@
+- name: Osaka
+  slug: feb-06
+  images:
+    - feb-07/P2070333.jpg
+    - feb-06/banner.jpg
+  description: |
+    We arrived in Osaka.
+  days:
+    - date: 2019-02-06
+      photos:
+        - time: 500
+          path: P2060010_lq.jpg
+        - time: 1200
+          path: P2060085.jpg
+        - time: 1600
+          path: P2060092.jpg
+        - time: 2150
+          path: P2060131.jpg
+        - time: 2350
+          path: P2070177.jpg
+      motion:
+        - time: 650
+          duration: 500
+          label: PER ✈ SIN
+          kind: flight
+        - time: 1402
+          duration: 740
+          label: SIN ✈ KIX
+          kind: flight
+      places:
+        - at: 1138
+          label: Changi Airport
+          kind: airport
+          photo: P2060049.jpg
+        - at: 2140
+          label: KIX Airport
+          kind: airport
+        - at: 2250
+          label: Hotel Code
+          kind: hotel
+          photo: hotelcode.jpg
+    - date: 2019-02-07
+      photos:
+        - time: 859
+          path: P2070185.jpg
+        - time: 1100
+          path: P2070207.jpg
+        - time: 1250
+          path: banner.jpg
+        - time: 1600
+          path: P2070350.jpg
+        - time: 1830
+          path: P2070521.jpg
+        - time: 2200
+          path: P2070643.jpg
+      motion:
+        - time: 900
+          duration: 100
+          label: Midosuji Line
+          kind: transit
+      places:
+        - at: 1050
+          label: Brooklyn Roasting Company
+          kind: cafe
+          photo: IMG_4695.jpg
+        - at: 1250
+          label: Shitennō-ji temple
+          kind: interest
+          photo: banner.jpg
+        - at: 1400
+          label: Kinnotorikara
+          kind: restaurant
+          photo: P2070368.jpg
+        - at: 1830
+          label: Mame-Shiba Café
+          kind: interest
+          photo: mameshibacafe.jpg
+        - at: 1900
+          label: 鶏soba 座銀 にぼし店
+          kind: restaurant
+          photo: P2070599.jpg
+        - at: 1951
+          label: LiLo Coffee Roasters
+          kind: cafe
+          photo: P2070626.jpg
+        - at: 2030
+          label: Village Vanguard America Mura
+          kind: shop
+          photo: villagevanguard.jpg
+        - at: 2150
+          label: Craftbeerworks Kamikaze
+          kind: bar
+          photo: P2070633.jpg
+    - date: 2019-02-08
+      photos:
+        - time: 800
+          path: P2080669.jpg
+        - time: 1000
+          path: P2080697.jpg
+      motion:
+        - time: 900
+          duration: 200
+          label: Shinkansen to Kyoto
+          kind: transit
+
+- name: Kyoto
+  slug: feb-08
+  images:
+    - feb-09/banner.jpg
+    - feb-08/banner.jpg
+  description: |
+    We arrived in Kyoto.
+  days:
+    - date: 2019-02-08
+      photos:
+        - time: 950
+          path: P2080737.jpg
+        - time: 1200
+          path: P2080797.jpg
+        - time: 1500
+          path: P2080935.jpg
+        - time: 1800
+          path: P2081046.jpg
+      places:
+        - at: 1030
+          label: Imu Hotel
+          kind: hotel
+          photo: P2080771.jpg
+        - at: 1230
+          label: Nishiki Markets
+          kind: restaurant
+          photo: P2080794.jpg
+        - at: 1430
+          label: Kurasu
+          kind: cafe
+          photo: P2080913.jpg
+        - at: 1600
+          label: Higashihonganji temple
+          kind: interest
+          photo: banner.jpg
+        - at: 1900
+          label: Omen Shijo
+          kind: restaurant
+          photo: P2081069.jpg
+        - at: 2050
+          label: Cafe La Siesta 8 bit
+          kind: bar
+          photo: IMG_2120.jpg
+    - date: 2019-02-09
+      photos:
+        - time: 950
+          path: P2091102.jpg
+        - time: 1100
+          path: P2091155.jpg
+        - time: 1200
+          path: P2091329.jpg
+        - time: 1500
+          path: P2091422.jpg
+        - time: 1900
+          path: P2091434.jpg
+      places:
+        - at: 1050
+          label: '%Aribica'
+          kind: cafe
+          photo: P2091148.jpg
+        - at: 1150
+          label: Starbucks Higashiyama
+          kind: cafe
+          photo: P2091261.jpg
+        - at: 1350
+          label: Yudofu Kisaki
+          kind: restaurant
+          photo: P2091415.jpg
+        - at: 1550
+          label: PullSt café
+          kind: cafe
+        - at: 1950
+          label: Gogyo
+          kind: restaurant
+          photo: P2091441.jpg
+    - date: 2019-02-10
+      photos:
+        - time: 800
+          path: P2101453.jpg
+        - time: 1000
+          path: P2101507.jpg
+        - time: 1200
+          path: P2101653.jpg
+        - time: 1300
+          path: P2101693.jpg
+        - time: 1616
+          path: P2101817.jpg
+        - time: 1850
+          path: IMG_2315.jpg
+        - time: 2100
+          path: P2101839.jpg
+      places:
+        - at: 1100
+          label: Monkey Park
+          kind: interest
+          photo: P2101564.jpg
+        - at: 1200
+          label: Arashiyama Park
+          kind: interest
+          photo: P2101652.jpg
+        - at: 1280
+          label: Bamboo Grove
+          kind: interest
+          photo: P2101702.jpg
+        - at: 1410
+          label: Ichiran
+          kind: restaurant
+          photo: P2101764.jpg
+        - at: 1517
+          label: Blue Bottle Kyoto
+          kind: cafe
+          photo: P2101792.jpg
+        - at: 1618
+          label: Nazen-ji temple
+          kind: interest
+          photo: P2101805.jpg
+        - at: 2107
+          label: Katsukura
+          kind: restaurant
+          photo: P2101805.jpg
+  
+
+- name: Tokyo
+  slug: feb-12
+  images:
+    - feb-12/P2122267.jpg
+    - feb-16/banner.jpg
+  description: |
+    Finally, we arrived back in Tokyo
+  days:
+    - date: 2019-02-12
+      photos:
+        - time: 500
+          path: P2060010_lq.jpg
+        - time: 1200
+          path: P2060085.jpg
+        - time: 1600
+          path: P2060092.jpg
+        - time: 2100
+          path: P2060131.jpg
+        - time: 2350
+          path: P2070177.jpg
+      motion:
+        - time: 650
+          duration: 500
+          label: PER ✈ SIN
+          kind: flight
+        - time: 1402
+          duration: 740
+          label: SIN ✈ KIX
+          kind: flight
+      places:
+        - at: 1138
+          label: Changi Airport
+          kind: airport
+          photo: P2060049.jpg
+        - at: 2140
+          label: KIX Airport
+          kind: airport
+        - at: 2250
+          label: Hotel Code
+          kind: hotel
+          photo: hotelcode.jpg

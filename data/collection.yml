@@ -1,3 +1,11 @@
+- name: Japan
+  slug: japan-2019
+  photoessays:
+    - japan
+  dates:
+    from: 2019-02-06
+    to: 2019-02-19
+
 - name: America
   slug: america
   photoessays:
