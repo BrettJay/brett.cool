@@ -172,42 +172,184 @@ content:
         - images: [ P2152836 ]
         - images: [ P2152840 ]
   - story: |
-      We made our way through one of the large shopping complexes, passing through a large food court, towards the Unicorn Gundam statue.
+      We made our way through one of the large shopping complexes.
   - photo:
       image: P2152841
       style: right
   - story: |
-      Outside, we arrived.
+      Passing through a large food court and emerging on the other side, we arrived at the Unicorn Gundam statue.
   - photo:
       image: P2152844
       style: right
+  - story: |
+      After a few photo ops, we continued clockwise, heading over West Park Bridge.
   - photos:
       type: grid
       rows:
         - images: [ P2152860 ]
         - images: [ P2152861, P2152865 ]
+  - story: |
+      We reached a lookout spot, facing North towards Tokyo, replete with a replica of the Statue of Liberty.
+  - photos:
+      type: grid
+      rows:
         - images: [ P2152869 ]
         - images: [ P2152872 ]
+  - story: |
+      We continued our loop, heading back inside.
+
+      After exploring a few specialty stores, we headed to Tokyo Joypolis.
+  - place:
+      type: interest
+      image: IMG_1981
+      title: Tokyo Joypolis
+      address: 〒135-0091 東京都港区台場１丁目６−1 3F～5F DECKS Tokyo Beach
+      label: Amusement
+      descriptor: Park
+      rating: 4
+      link: https://goo.gl/maps/eicxrFCbzmBR7H6XA
+  - story: |
+      We spent the next couple of hours trying a number of indoor rides, including an inline halfpipe rhythm game called [Halfpipe Tokyo][h], a rhythm roller coaster called [Genkion Live Coaster][g], and a racing game called [Storm G][s]—where we achieved first place, and attained the rank of “Perfect Pair”.
+
+      Many rides and a couple of hours later, we headed to the third floor, for a celebratory and potentially-alocholic bubble tea.
+
+      [h]: http://tokyo-joypolis.com/language/english/attraction/1st/halfpipe.html "Halfpipe Tokyo"
+      [g]: http://tokyo-joypolis.com/language/english/attraction/1st/gekion.html "Genkion Live Coaster"
+      [s]: http://tokyo-joypolis.com/language/english/attraction/2nd/stormg.html "Storm G"
+  - photos:
+      type: grid
+      rows:
+        - images: [ IMG_1981, IMG_6292 ]
+  - story: |
+      We left Joyopolis, and continued our loop.
+      
+      We made our way to DiverCity Tokyo, and headed up an elevator for the Gundam Base Tokyo store on level 7.
+  - place:
+      type: interest
+      image: P2152877
+      title: GUNDAM BASE TOKYO
+      address: 〒135-0064 東京都江東区青海１丁目１−10 ダイバーシティ東京 プラザ７F
+      label: Gundam
+      descriptor: Store
+      rating: 4
+      link: https://goo.gl/maps/n6a7cP3qzMpNCJ5Y7
+  - story: |
+      Inside was a massive range of Gundam kits for sale, as well as individual parts, and spaces to chill out and build.
+  - photos:
+      type: grid
+      rows:
+        - images: [ IMG_9597, IMG_9318 ]
+  - story: |
+      A short while later, we departed Gundam Base, and exited DiverCity Tokyo.
+
+      Sunset was approaching as we continued to explore, as we made our way for TeamLAB Borderless.
   - photo:
       image: P2152884
       style: full
+  - story: |
+      We continued souh-east, until we realised we’d overshot the location and returned.
   - photo:
       image: P2152891
       style: full
+  - story: |
+      We eventually arrived at TeamLAB Borderless.
+      
+      Unfortunately, there was only an hour left, and though there were tickets available, the staff advised us we’d be rushing to see everything in the time we had left—all the more reason to return!
+
+      We made our way back to the station, and rode back to Shibuya station, to drop our shopping off at our hotel.
+
+      ***
+
+      A short while later, we emerged—far less encumbered—and made our way for Roppongi.
+  - photo:
+      image: P2152899
+      style: right
+  - story: |
+      Google informed us to take a bus, so we made our way east, past the station, and liend up for a bus.
+
+      We jumped on a bus that looked right, and rode to Roppongi.
+  - photos:
+      type: grid
+      rows:
+        - images: [ IMG_2797, IMG_4717 ]
+  - story: |
+      A short while later, our stop arrived, and we made our way through nightlife in Roppongi for our favourite pizza joint in Tokyo.
+  - place:
+      type: restaurant
+      address: 〒106-0046 東京都港区元麻布３丁目１０−1 中岡ビル201
+      title: SAVOY
+      image: '20190215_194826'
+      menu: Pizza
+      price: ¥¥
+      rating: 5
+      link: https://goo.gl/maps/aQ2E7vbrScmohNpC9
+  - story: |
+      After a short wait in the cool night air, we were gratefully seated inside the cozy, warm kitchen.
   - photo:
       image: P2152905
       style: full
+      caption: Bun, making the goods.
+  - story: |
+      Savoy is alays a must for us, and the wait is always worth it. We ordered our drinks, and food.
+
+      Watching [Bun](https://www.instagram.com/angie.mieux/) make the pizzas is a show unto itself.
+
+      Before long, our Margherita Pizza arrived.
   - photo:
       image: P2152906
       style: full
+  - story: |
+      The leopard-spotted pizza was hot, fresh, fluffy and yet _so crisp_. With a rich marinara sauce, balanced perfectly with the gooey cheese, and with bursts of flavour from the basil. It was devoured quickly. 
+
+      Luckily, our Marinara arrived shortly after.
   - photo:
       image: P2152910
       style: full
-  - photo:
-      image: P2152913
-      style: full
+  - story: |
+      It’s easy to take for granted the humble Marinara—_why_ opt for a cheese-less pizza when there’s a cheese pizza?
+
+      We were just as impressed with the Marinara and its freshly sliced garlic and oregano herbs. Just as perfectly balanced as the Margherita, and deserving on its place on a menu with only two options.
+
+      ***
+
+      Very full now, we left Savoy, and headed out in to the cool night Roppongi air.
+
+      As we headed north, we popped in to a Tsutaya books.
+  - place:
+      type: drink
+      image: tsutaya
+      title: TSUTAYA Tokyo Roppongi
+      address: 〒106-0032 東京都港区六本木６丁目１１−1
+      label: Book
+      descriptor: Store
+      rating: 5
+      link: https://goo.gl/maps/JaebrE5h1uR9dqtD6
+  - story: |
+      After a quick look around, we continued to our next destination for the night.
+  - place:
+      type: drink
+      image: IMG_8919
+      title: Brewdog
+      address: 〒106-0032 東京都港区六本木５丁目３−２ 齋藤ビル 1F
+      label: Beer
+      descriptor: Hall
+      rating: 5
+      link: https://goo.gl/maps/23MDZ4VkKng1gxaC6
+  - story: |
+      Brewdog and Savoy is always a fantastic recipe for a good night in Roppongi.
+
+      We were seated at the bar, and enjoyed a nightcap before bed.
+  - photos:
+      type: grid
+      rows:
+        - images: [ IMG_3752, IMG_4836 ]
+        - images: [ P2152913 ]
+        - images: [ IMG_5452 ]
+          style: right
+  - story: |
+      Some time later, we departed Brewdog, and made our way back to Shibuya.
   - photos:
       type: grid
       rows:
         - images: [ P2152914 ]
-        - images: [ P2152916 ]
+        - images: [ IMG_2823, P2152916 ]
