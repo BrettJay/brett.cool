@@ -1,0 +1,23 @@
+---
+slug: '2019/japan/feb-17'
+body_classes: page-photoessays
+---
+
+- essay = data.photoessays['2019'].japan.find { | slug, date | slug == '2019-02-17' }
+
+- id = essay[0]
+- photoessay = essay[1]
+
+- @dynamic_title = photoessay.title
+- @dynamic_subtitle = photoessay.subtitle
+
+= partial("photoessays/blocks/subheader_navigation", locals: { essay: essay, collection: photoessay.collection, collection_title: 'Japan', collection_path: { year: '2019', folder: 'japan' }})
+= partial("photoessays/components/banner", locals: {slug: current_page.data.slug, title: photoessay.title, subtitle: photoessay.subtitle, trip: ''})
+
+.Page
+  .Content#story
+    - photoessay.content.each do | story_block |
+      - story_block.each do | template, block |
+        = partial("photoessays/blocks/#{template}", locals: {slug: current_page.data.slug, block: block })
+
+  = partial("photoessays/blocks/footer_navigation", locals: { collection: photoessay.collection })
