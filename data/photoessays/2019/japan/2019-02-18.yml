@@ -15,3 +15,75 @@ collection:
 content:
   - story: |
       Monday Feb 18th
+  - photos:
+      type: grid
+      rows:
+        - images: [ P2183192 ]
+        - images: [ P2183193 ]
+  - photos:
+      type: grid
+      rows:
+        - images: [ P2183194 ]
+        - images: [ P2183197, P2183199 ]
+  - photo:
+      image: P2183204
+      style: full
+  - photo:
+      image: P2183208
+      style: right
+  - place:
+      type: drink
+      address: 〒153-0061 東京都目黒区中目黒３丁目２３−16
+      title: Blue Bottle Nakameguro 
+      image: P2183212
+      label: Coffee
+      descriptor: Shop
+      price: ¥
+      rating: 5
+      link: https://goo.gl/maps/hUTvY4HwAS5Z2A2y9
+
+  - photos:
+      type: grid
+      rows:
+        - images: [ P2183214, P2183219 ]
+
+  - photo:
+      image: P2183220
+      style: full
+  
+  - photo:
+      image: P2183224
+      style: full
+
+  - photos:
+      type: grid
+      rows:
+        - images: [ P2183226, P2183232 ]
+        - images: [ P2183233 ]
+        - images: [ P2183235, P2183237 ]
+
+  - photos:
+      type: grid
+      rows:
+        - images: [ P2183240 ]
+          style: right
+        - images: [ P2183242 ]
+        - images: [ P2183250 ]
+        - images: [ P2183254, P2183258 ]
+
+  - photos:
+      type: grid
+      rows:
+        - images: [ P2183261 ]
+        - images: [ P2183267 ]
+
+  - photo:
+      image: P2183275
+      style: full
+  
+  - photos:
+      type: grid
+      rows:
+        - images: [ P2183284, P2183285 ]
+        - images: [ P2183291, P2183303 ]
+        - images: [ P2183295 ]
