@@ -3,22 +3,23 @@
     %h1= title
     %p= subtitle
   - if trip.present?
-    - @arrival_date = trip[:dates][:from]
-    - @departure_date = trip[:dates][:to]
     .Banner_TripSummary
-      %dl.TripIcon--withText{class: "TripIcon_transport--#{trip[:arrival]}"}
-        %dt
-          %span.u-show--small-up= @arrival_date.strftime("%b %-d, %Y")
-          %span.u-show--mobile= @arrival_date.strftime("%b %-d")
-        %dd Arrived
-      %dl.TripIcon--withText{class: "TripIcon_transport--#{trip[:departure]}"}
-        %dt
-          %span.u-show--small-up= @departure_date.strftime("%b %-d, %Y")
-          %span.u-show--mobile= @departure_date.strftime("%b %-d")
-        %dd Departed
-      %dl
-        %dt= (@departure_date.mjd - @arrival_date.mjd) + 1
-        %dd Days
+      - if trip.dig(:dates).present?
+        - @arrival_date = trip[:dates][:from]
+        - @departure_date = trip[:dates][:to]
+        %dl.TripIcon--withText{class: "TripIcon_transport--#{trip[:arrival]}"}
+          %dt
+            %span.u-show--small-up= @arrival_date.strftime("%b %-d, %Y")
+            %span.u-show--mobile= @arrival_date.strftime("%b %-d")
+          %dd Arrived
+        %dl.TripIcon--withText{class: "TripIcon_transport--#{trip[:departure]}"}
+          %dt
+            %span.u-show--small-up= @departure_date.strftime("%b %-d, %Y")
+            %span.u-show--mobile= @departure_date.strftime("%b %-d")
+          %dd Departed
+        %dl
+          %dt= (@departure_date.mjd - @arrival_date.mjd) + 1
+          %dd Days
       - if trip[:steps].present?
         %dl
           %dt= number_with_delimiter(trip[:steps], :delimiter => ',')
