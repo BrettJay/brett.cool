@@ -12,3 +12,13 @@ collection:
 content:
   - story: |
       Tuesday Feb 19th
+  - photo:
+      image: P2193308
+      style: full
+
+  - photos:
+      type: grid
+      rows:
+        - images: [ P2193310, P2193312 ]
+        - images: [ P2193313 ]
+        - images: [ P2193315, P2193316 ]
