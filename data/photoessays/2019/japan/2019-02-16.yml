@@ -1,5 +1,5 @@
 title: Shinjuku and Ginza
-subtitle: Subtitle
+subtitle: Pedestrian paradise
 steps: 27115
 km: 20.66
 collection:
@@ -14,4 +14,304 @@ collection:
     file: 2019-02-15
 content:
   - story: |
-      Friday Feb 16th
+      We set off early morning from our hotel, heading east.
+  - photo:
+      image: P2162918
+      style: right
+  - story: |
+      We wound our way through inner Shibuya, making our way north.
+
+      We took side streets and alleys, passing areas under redevelopment.
+  - photo:
+      image: P2162919
+      style: full
+  - story: |
+      We continued north in the early morning sun.
+  - photos:
+      type: grid
+      rows:
+        - images: [ P2162921, P2162925 ]
+  - story: |
+      Eventually, we reached a 7 Eleven towards the top of Shibuya.
+      
+      We entered, grabbing some breakfast supplies and drinks. We took a seat near the window, and ate our makeshift breakfast.
+
+      ***
+
+      After a quick breakfast pit stop, we continued north, passing NHK broadcasting to our left.
+  - photos:
+      type: grid
+      rows:
+        - images: [ P2162928 ]
+          style: right
+        - images: [ P2162930 ]
+  - story: |
+      We headed over an overpass, approaching Yoyogi Park.
+  - photo:
+      image: P2162935
+      style: full
+  - story: |
+      We wound our way around the western edge of Yoyogi Park, eventually emerging at a western exit, and making our way for our first coffee stop.
+  - place:
+      type: drink
+      address: 〒151-0053 東京都渋谷区代々木５丁目６５−4
+      title: Little Nap Coffee Stand
+      image: IMG_2851
+      label: Coffee
+      descriptor: Shop
+      price: ¥
+      rating: 4
+      link: https://goo.gl/maps/LVBkGUkRAHSuKdBK7
+  - story: |
+      Little Nap Coffee Stand is a charming, cosy café.
+
+      We ordered our coffees and a small block of coffee choolate at the counter, and found some seating.
+  - photo:
+      image: IMG_4493
+      style: right
+      caption: After a little while, seats freed up at the bar by the window, so we moved there.
+  - story: |
+      One coffee later, we departed, and continued North, tracing our way along charming residential sized buildings.
+
+      We cut through a side alley.
+  - photos:
+      type: grid
+      rows:
+        - images: [ IMG_7129, IMG_1730 ]
+  - story: |
+      It was a pleasant morning, warm in the sun, but cool enough for a walk.
+
+      We continued north, crossing over a train line.
+  - photos:
+      type: grid
+      rows:
+        - images: [ P2162938 ]
+        - images: [ P2162940, P2162943 ]
+  - story: |
+      The walk to Shinjuku was very pleasant down these pedestrian sized roads.
+
+      Watching people go about their day as we chatted was a lovely change from the hustle and bustle of catching trains.
+  - photos:
+      type: grid
+      rows:
+        - images: [ P2162944, P2162945 ]
+        - images: [ P2162947 ]
+          style: right
+  - story: |
+      It was also ideal for good doggo spotting.
+  - photo:
+      image: P2162948
+      style: full
+  - story: |
+      We continued along winding, residential paths.
+  - photos:
+      type: grid
+      rows:
+        - images: [ P2162952 ]
+        - images: [ P2162954, P2162955 ]
+  - story: |
+      We stopped in at a convenience store for some supplies.
+  - photo:
+      image: P2162956
+      style: full
+  - story: |
+      We resumed our relaxed pace towards Shinjuku, large skyscrapers looming in the distant skyline.
+  - photos:
+      type: grid
+      rows:
+        - images: [ P2162958, P2162960 ]
+        - images: [ P2162964 ]
+  - story: |
+      We criss-crossed along paths, finding our way to Shinjuku. We crossed roads, took detours, as I attempted to get us to the ideal approach.
+      
+      I remember us being in the middle of a fascinating conversation on neuralplasticity when suddenly, after taking an elevator, we had arrived in Shinjuku proper, with large towering Skyscrapers surrounding us.
+  - photo:
+      image: P2162966
+      style: full
+  - story: |
+      We continued up, approaching Shinjuku station.
+  - photos:
+      type: column
+      images: [ P2162967, P2162969, P2162972 ]
+  - story: |
+      We made our way along the overpass towards Tokyu Hands and the Takashimaya Times Square building.
+  - photo:
+      image: P2162973
+      style: right
+  - story: |
+      To our right was the vast range of train tracks connecting to Shinjuku.
+  - photos:
+      type: grid
+      rows:
+        - images: [ P2162975 ]
+        - images: [ P2162978, P2162989 ]
+  - story: |
+      We crossed the bridge and entered Tokyu Hands Shinjuku.
+  - place:
+      type: interest
+      image: P2162989
+      title: Tokyu Hands
+      address: 〒151-8580 東京都渋谷区千駄ケ谷５丁目２４−2 2～8F タカシマヤタイムズスクエアビル
+      label: General
+      descriptor: store
+      rating: 5
+      link: https://goo.gl/maps/jJP6HgTLaks2qf4e6
+  - story: |
+      Inside, we spent a bit of time looking at bags and accessories, and Alyssa finding a suitable Bento Box for lunches.
+
+      After a good look around, we continued on, and made our way for one of my go-to coffee places in the area...
+  - place:
+      type: drink
+      address: 〒160-0022 東京都新宿区新宿４丁目１−6 NEWoMan SHINJUKU 1F
+      title: Blue Bottle Shinjuku
+      image: P2162991
+      label: Coffee
+      descriptor: Shop
+      price: ¥
+      rating: 5
+      link: https://goo.gl/maps/jFC5ZJsGps1rQ8WG8
+  - story: |
+      Blue Bottle, of course. We ordered, and took a seat.
+  - photos:
+      type: grid
+      rows:
+        - images: [ P2162991, P2162993 ]
+  - story: |
+      On the way out, I checked the retail section to see if they stocked the glass Kinto mug my filter coffee was served in.
+
+      Turns out, they used to sell it. Thankfully, a helpful barista pointed me in the direction of a homeware store opposite, where I picked up a [Kinto Fika set](https://milligram.com/kinto-fika-cafe-set-lunch-glass).
+
+      ***
+
+      We departed, and were now quite keen on lunch.
+      
+      We made our way to a nearby Ichiran, only to find the queue too long for us.
+
+      We made our way back to the station, and across the overpass near Takashimaya Times Square building, for our second burger in two days.
+  - place:
+      type: restaurant
+      address: 〒151-0053 東京都渋谷区代々木２丁目２−1 新宿サザンテラス内 小田急サザンタワー2F
+      title: Shake Shack Shinjuku
+      image: shakeshack
+      menu: Burgers
+      price: ¥¥
+      rating: 5
+      link: https://goo.gl/maps/xaFhuX5amobodXDJ7
+  - story: |
+      We placed our orders, and before long, our glorious Shack burgers arrived.
+  - photos:
+      type: grid
+      rows:
+        - images: [ '20190216_125156', IMG_5502 ]
+  - story: |
+      After lunch, we made our way to Shinjuku station to visit Ginza.
+
+      We made our way for the Subway E line platform, navigating the labyrinthian interior of Shinjuku station.
+  - photo:
+      image: P2162994
+      style: right
+  - story: |
+      A little while later, we alighted in Ginza, and made our way from the subway to the surface.
+  - photo:
+      image: P2162995
+      style: full
+  - story: |
+      We emerged into warm, sunny Ginza.
+  - photo:
+      image: P2162997
+      style: full
+  - story: |
+      Weekends in Ginza brings Pedestrian Paradise to areas of the main streets, where roads are closed off to cars.
+  - photo:
+      image: P2163001
+      style: full
+  - story: |
+      We made our way down the street in the warm afternoon.
+  - photo:
+      image: P2163043
+      style: full
+  - story: |
+      It was surprisingly warm in the afternoon sun. I removed my middle sweater layer, feeling hot for the first time during our time in Japan.
+
+      Nevertheless, there were plenty of photo-ops in the warm afternoon sun.
+  - photos:
+      type: grid
+      rows:
+        - images: [ P2163049 ]
+        - images: [ P2163053, P2163057, P2163067 ]
+  - story: |
+      As we arrived towards the end of the Pedestrian Paradise strip, we entered one of our favourite stationery stores.
+  - place:
+      type: interest
+      image: itoya
+      title: Itoya
+      address: 〒104-0061 東京都中央区銀座２丁目７−15
+      label: Stationery
+      descriptor: store
+      rating: 5
+      link: https://goo.gl/maps/AzS2B83hbCnXDt3n6
+  - story: |
+      Itoya has several floors of all things stationery, from pens, pencils, paper and notebooks, to travel and everyday carry items, as well as wedding invitations.
+
+      After a good look around Itoya, we left, and made our way back to the station.
+  - photo:
+      image: P2163079
+      style: full
+  - story: |
+      Late afternoon now, we returned to Shibuya and our hotel.
+
+      ---
+
+      Later that evening, we headed out in to Shibuya. Still a little early for dinner, we decided to look around the Shibuya Tokyu Hands store.
+  - place:
+      type: interest
+      image: tokyuhands
+      title: Tokyu Hands
+      address: 〒150-0042 東京都渋谷区宇田川町１２−１８
+      label: General
+      descriptor: store
+      rating: 5
+      link: https://goo.gl/maps/CJH3skDi6Qdp6PRR7
+  - story: |
+      We spent a while ascending the floors, exploring the variety of bags, stationery, and other goods on display.
+
+      Towards the top floor, we entered the pet section, with plenty of birds.
+
+      ***
+
+      Now approaching dinner time, we departed Tokyu Hands, and made our way for one of our favourite Katsu places.
+  - place:
+      type: restaurant
+      address: 〒150-0002 東京都渋谷区渋谷２丁目２４−1 東急百貨店東横店西館 9F
+      title: Tonkatsu Maisen Tokyu
+      image: maisen
+      menu: Katsu
+      price: ¥¥
+      rating: 5
+      link: https://goo.gl/maps/oi1p3XN4AoQfnexn7
+  - story: |
+      We ordered our Curry Katsu sets, with bottomless cabbage.
+  - photos:
+      type: grid
+      rows:
+        - images: [ P2163087 ]
+        - images: [ IMG_8324, P2163086 ]
+  - story: |
+      After dinner, we went for a post-dinner nightcap.
+
+      We headed to the top floor of Tsutaya Books in Shibuya, overlooking the Shibuya Scramble.
+  - place:
+      type: interest
+      image: tsutaya
+      title: Tsutaya Books Shibuya
+      address: 〒150-0042 東京都渋谷区宇田川町２１−6
+      label: Book
+      descriptor: store
+      rating: 5
+      link: https://goo.gl/maps/X6nkvo1snafrUNbh6
+  - photos:
+      type: grid
+      rows:
+        - images: [ IMG_5279, IMG_0365 ]
+  - story: |
+      After a chill nightcap, we headed home to turn in for the night.
