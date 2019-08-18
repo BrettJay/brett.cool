@@ -14,4 +14,119 @@ collection:
     file: 2019-02-16
 content:
   - story: |
-      Sunday Feb 17th
+      We awoke early
+  - photo:
+      image: P2173089
+      style: right
+
+  - photos:
+      type: grid
+      rows:
+        - images: [ P2173091 ]
+        - images: [ P2173092, P2173095 ]
+
+  - photos:
+      type: grid
+      rows:
+        - images: [ P2173096, P2173101 ]
+  
+  - photo:
+      image: P2173104
+      style: full
+
+  - photo:
+      image: P2173106
+      style: right
+
+  - photos:
+      type: grid
+      rows:
+        - images: [ P2173109 ]
+        - images: [ P2173112 ]
+          style: right
+  
+  - photo:
+      image: P2173115
+      style: full
+
+  - photos:
+      type: grid
+      rows:
+        - images: [ P2173117, P2173120 ]
+        - images: [ P2173121 ]
+
+  - photo:
+      image: P2173124
+      style: right
+  
+  - photos:
+      type: grid
+      rows:
+        - images: [ P2173126, P2173129 ]
+  
+  - photo:
+      image: P2173137
+      style: full
+  
+  - photo:
+      image: P2173138
+      style: full
+  
+  - photo:
+      image: P2173140
+      style: full
+  
+  - photos:
+      type: grid
+      rows:
+        - images: [ P2173142 ]
+          style: right
+        - images: [ P2173143 ]
+
+  - place:
+      type: restaurant
+      address: 〒150-0001 東京都渋谷区神宮前６丁目５−6 サンポウ綜合ビル2F
+      title: Ichiran
+      image: ichiran
+      menu: Ramen
+      price: ¥¥
+      rating: 4
+      link: https://goo.gl/maps/4rw6Hq1di7HTX3aF9
+
+  - photo:
+      image: P2173144
+      style: right
+  
+  - photo:
+      image: P2173148
+      style: right
+  
+  - photos:
+      type: grid
+      rows:
+        - images: [ P2173149 ]
+        - images: [ P2173152, P2173163 ]
+
+  - photo:
+      image: P2173173
+      style: full
+
+  - photo:
+      image: P2173178
+      style: right
+
+  - place:
+      type: restaurant
+      address: 〒141-0031 東京都品川区西五反田２丁目７−8 誠實（せいじつ）ビル9F
+      title: DevilCraft Gotanda
+      image: IMG_2507
+      menu: Brewpub
+      price: ¥¥
+      rating: 5
+      link: https://goo.gl/maps/Yb6Nsfb7XkMnPp7v8
+
+  - photos:
+      type: grid
+      rows:
+        - images: [ P2173182, P2173188 ]
+  
