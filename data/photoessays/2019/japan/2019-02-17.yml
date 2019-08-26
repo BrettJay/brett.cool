@@ -14,10 +14,14 @@ collection:
     file: 2019-02-16
 content:
   - story: |
-      We awoke early
+      We awoke on our second anniversary, and made our way north from the hotel.
+
   - photo:
       image: P2173089
       style: right
+
+  - story: |
+      Cutting our way through 
 
   - photos:
       type: grid
@@ -25,18 +29,32 @@ content:
         - images: [ P2173091 ]
         - images: [ P2173092, P2173095 ]
 
+  - story: |
+      Unlike yesterday, we headed east.
+
   - photos:
       type: grid
       rows:
         - images: [ P2173096, P2173101 ]
   
+  - story: |
+      Before long, we arrived at Meiji Shrine.
+
   - photo:
       image: P2173104
       style: full
 
+  - story: |
+      We entered the shrine grounds.
+
   - photo:
       image: P2173106
       style: right
+
+  - story: |
+      As we walked, it turned out there was a procession.
+
+      Curious, we followed along.
 
   - photos:
       type: grid
@@ -44,10 +62,16 @@ content:
         - images: [ P2173109 ]
         - images: [ P2173112 ]
           style: right
-  
+
+  - story: |
+      We entered the main temple grounds.
+
   - photo:
       image: P2173115
       style: full
+
+  - story: |
+      We made a wish on a placard.
 
   - photos:
       type: grid
@@ -59,6 +83,9 @@ content:
       image: P2173124
       style: right
   
+  - story: |
+      We then exited the grounds.
+
   - photos:
       type: grid
       rows:
@@ -71,7 +98,16 @@ content:
   - photo:
       image: P2173138
       style: full
-  
+
+  - place:
+      type: drink
+      image: IMG_2508
+      title: ZAKUZAKU
+      address: 〒150-0001 東京都渋谷区神宮前１丁目７−1 CUTECUBE原宿 1階
+      label: Pastry
+      descriptor: Dessert shop
+      link: https://goo.gl/maps/ugUPGNFAfEdCTH8Q8
+
   - photo:
       image: P2173140
       style: full

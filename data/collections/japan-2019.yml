@@ -4,7 +4,9 @@
     - feb-07/P2070333.jpg
     - feb-06/banner.jpg
   description: |
-    We arrived in Osaka.
+    We arrived in Osaka late on Wedesday night. Making our way to the city center from KIX, we explored the Dōtonbori market street until the morning hours approached.
+
+    We visited Shitennō-ji temple, and the retro-future Shinsekai area.
   days:
     - date: 2019-02-06
       photos:
@@ -43,10 +45,12 @@
       photos:
         - time: 859
           path: P2070185.jpg
-        - time: 1100
+        - time: 1000
           path: P2070207.jpg
-        - time: 1250
+        - time: 1150
           path: banner.jpg
+        - time: 1350
+          path: P2070333.jpg
         - time: 1600
           path: P2070350.jpg
         - time: 1830
@@ -63,11 +67,15 @@
           label: Brooklyn Roasting Company
           kind: cafe
           photo: IMG_4695.jpg
-        - at: 1250
+        - at: 1150
           label: Shitennō-ji temple
           kind: interest
           photo: banner.jpg
-        - at: 1400
+        - at: 1250
+          label: Shinsekai
+          kind: interest
+          photo: P2070329.jpg
+        - at: 1450
           label: Kinnotorikara
           kind: restaurant
           photo: P2070368.jpg
@@ -223,7 +231,57 @@
           label: Katsukura
           kind: restaurant
           photo: P2101805.jpg
-  
+    - date: 2019-02-11
+      photos:
+        - time: 1050
+          path: P2111892.jpg
+        - time: 1400
+          path: P2112053.jpg
+        - time: 1700
+          path: P2112093.jpg
+      places:
+        - at: 900
+          label: Kurasu
+          kind: cafe
+        - at: 1000
+          label: Fushimi Inari Temple
+          kind: interest
+        - at: 1100
+          label: Vermillion
+          kind: cafe
+        - at: 1300
+          label: Mellow Café
+          kind: restaurant
+        - at: 1400
+          label: Nara Park
+          kind: interest
+        - at: 1650
+          label: Tōdai-ji temple
+          kind: interest
+          photo: banner.jpg
+        - at: 2000
+          label: Sukemasa
+          kind: restaurant
+    - date: 2019-02-12
+      photos:
+        - time: 950
+          path: P2122106.jpg
+        
+        - time: 1150
+          path: P2122122.jpg
+      places:
+        - at: 900
+          label: Nishiki Market
+          kind: restaurant
+        - at: 1150
+          label: Kyoto station
+          kind: restaurant
+
+      motion:
+        - time: 1150
+          duration: 300
+          label: Shinkansen to Tokyo
+          kind: transit
 
 - name: Tokyo
   slug: feb-12
@@ -235,34 +293,53 @@
   days:
     - date: 2019-02-12
       photos:
-        - time: 500
-          path: P2060010_lq.jpg
         - time: 1200
-          path: P2060085.jpg
-        - time: 1600
-          path: P2060092.jpg
-        - time: 2100
-          path: P2060131.jpg
-        - time: 2350
-          path: P2070177.jpg
-      motion:
-        - time: 650
-          duration: 500
-          label: PER ✈ SIN
-          kind: flight
-        - time: 1402
-          duration: 740
-          label: SIN ✈ KIX
-          kind: flight
+          path: P2122158.jpg
+        - time: 1450
+          path: P2122181.jpg
+        - time: 1800
+          path: P2122233.jpg
+        - time: 2150
+          path: P2122270.jpg
       places:
-        - at: 1138
-          label: Changi Airport
-          kind: airport
-          photo: P2060049.jpg
-        - at: 2140
-          label: KIX Airport
-          kind: airport
-        - at: 2250
-          label: Hotel Code
+        - at: 1500
+          label: APA Hotel Dougenzakaue
           kind: hotel
-          photo: hotelcode.jpg
+        - at: 1550
+          label: About Life Coffee
+          kind: cafe
+        - at: 1800
+          label: Baird Beer Taproom Harajuku
+          kind: bar
+          photo: P2122237.jpg
+        - at: 1900
+          label: Kiddy land
+          kind: shop
+        - at: 2000
+          label: Devil Craft Gotanda
+          kind: restaurant
+          photo: IMG_2507.jpg
+      motion:
+        - time: 1100
+          duration: 300
+          label: Shinkansen to Tokyo
+          kind: transit
+
+    - date: 2019-02-13
+      photos:
+        - time: 1080
+          path: P2132377.jpg
+        - time: 1260
+          path: P2132487.jpg
+        
+      places:
+        - at: 1250
+          label: Ninjintei
+          kind: restaurant
+
+      motion:
+        - time: 1000
+          duration: 200
+          label: Shinkansen to Yuzawa
+          kind: transit
+
