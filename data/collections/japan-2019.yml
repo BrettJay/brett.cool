@@ -4,9 +4,11 @@
     - feb-07/P2070333.jpg
     - feb-06/banner.jpg
   description: |
-    We arrived in Osaka late on Wedesday night. Making our way to the city center from KIX, we explored the Dōtonbori market street until the morning hours approached.
+    We arrived in Osaka late on Wedesday night. Making our way to the city center from the airport, we explored the Dōtonbori market street until the early morning.
 
-    We visited Shitennō-ji temple, and the retro-future Shinsekai area.
+    We visited Shitennō-ji temple, and the retro-future Shinsekai area, visited a Shibe café, and sampled some excellent post-curfew coffee at LiLo Coffee Roasters, before a nightcap at CraftBeerWorks Kamikaze.
+
+    We departed, making our way to Kyoto by Shinkansen.
   days:
     - date: 2019-02-06
       photos:
@@ -117,7 +119,11 @@
     - feb-09/banner.jpg
     - feb-08/banner.jpg
   description: |
-    We arrived in Kyoto.
+    A brief Shinkansen ride later, we arrived in Kyoto.
+
+    We explored the Nishiki markets, trying Melonpan with ice cream. We explored the local temples and shrines, and by night, the famous Pontocho alley.
+
+    We also visited Gion, stunning Arashiyama scenery, Fushimi Inari Taisha, and Nara Park.
   days:
     - date: 2019-02-08
       photos:
@@ -273,9 +279,6 @@
         - at: 900
           label: Nishiki Market
           kind: restaurant
-        - at: 1150
-          label: Kyoto station
-          kind: restaurant
 
       motion:
         - time: 1150
@@ -289,7 +292,9 @@
     - feb-12/P2122267.jpg
     - feb-16/banner.jpg
   description: |
-    Finally, we arrived back in Tokyo
+    Finally, we arrived back in Tokyo.
+
+    We explored Harajuku, took a snow trip to Yuzawa, explored 
   days:
     - date: 2019-02-12
       photos:
@@ -306,7 +311,7 @@
           label: APA Hotel Dougenzakaue
           kind: hotel
         - at: 1550
-          label: About Life Coffee
+          label: About Life Coffee Brewers
           kind: cafe
         - at: 1800
           label: Baird Beer Taproom Harajuku
@@ -339,7 +344,7 @@
 
       motion:
         - time: 1000
-          duration: 200
+          duration: 150
           label: Shinkansen to Yuzawa
           kind: transit
 
