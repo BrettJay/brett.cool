@@ -14,14 +14,14 @@ collection:
     file: 2019-02-16
 content:
   - story: |
-      We awoke on our second anniversary, and made our way north from the hotel.
+      We awoke in the morning, got ready, and made our way north from the hotel.
 
   - photo:
       image: P2173089
       style: right
 
   - story: |
-      Cutting our way through inner Shibuya, we made our way North again, towards Yoyogi Park again.
+      Cutting our way through inner Shibuya streets, we continued North towards Yoyogi Park.
 
   - photos:
       type: grid
@@ -30,7 +30,7 @@ content:
         - images: [ P2173092, P2173095 ]
 
   - story: |
-      As we arrived at the bottom of Yoyogi Park, we headed east towards Harajuku and Meiji Shrine.
+      We arrived at the base of Yoyogi Park and headed east, towards Harajuku and Meiji Shrine.
 
   - photos:
       type: grid
@@ -45,16 +45,16 @@ content:
       style: full
 
   - story: |
-      We entered the shrine grounds.
+      We entered the serene shrine grounds.
 
   - photo:
       image: P2173106
       style: right
 
   - story: |
-      As we walked, it turned out there was a procession.
+      As we walked, we saw a procession of Monks ahead.
 
-      Curious, we followed along.
+      Curious, we followed along side them, watching with the other visitors.
 
   - photos:
       type: grid
@@ -64,14 +64,14 @@ content:
           style: right
 
   - story: |
-      We entered the main temple grounds.
+      At the end of the procession, we entered the main temple grounds.
 
   - photo:
       image: P2173115
       style: full
 
   - story: |
-      We made a wish on a placard.
+      For our second anniversary, we made a wish on a placard.
 
   - photos:
       type: grid
@@ -79,25 +79,43 @@ content:
         - images: [ P2173117, P2173120 ]
         - images: [ P2173121 ]
 
+  - story: |
+      The main temple was buzzing with visitors watching the procession.
+
   - photo:
       image: P2173124
       style: right
   
   - story: |
-      We then exited the grounds.
+      A short while later, we exited the grounds.
+
+      Looping back around, we made our way back through the entrance.
 
   - photos:
       type: grid
       rows:
         - images: [ P2173126, P2173129 ]
   
+  - story: |
+      We then continued east out of the park, across to Harajuku.
+
   - photo:
       image: P2173137
       style: full
-  
+
+  - story: |
+      It was an early, cool morning in Harajuku.
+      
+      We made our way down the crowded Takashita-dori street in search of comcrêpe—a crêpe store specialising in crème brûlée crêpes.
+
   - photo:
       image: P2173138
       style: full
+
+  - story: |
+      Unfortunately, it turned out the store was closed for renovations.
+
+      We found a dessert place nearby we’d tried last year, that more than made up for Comcrêpe’s temporary closure.
 
   - place:
       type: drink
@@ -107,17 +125,52 @@ content:
       label: Pastry
       descriptor: Dessert shop
       link: https://goo.gl/maps/ugUPGNFAfEdCTH8Q8
+  
+  - story: |
+      At Croquant Chou Zaku Zaku, we both opted to try a limited time Blueberry Cheese pastry.
 
   - photo:
       image: P2173140
       style: full
   
-  - photos:
-      type: grid
-      rows:
-        - images: [ P2173142 ]
-          style: right
-        - images: [ P2173143 ]
+  - story: |
+      The pastry was crispy and golden, with a light, rich filling inside. The blueberry cheese coating added a refreshing zing.
+
+      The pastry felt so light that we decided to balance it witgh another snack—this time something more savoury.
+
+  - place:
+      type: drink
+      image: calbee
+      title: Calbee+
+      address: 〒150-0001 東京都渋谷区神宮前１丁目１６−8
+      label: Hot chip
+      descriptor: Shop
+      link: https://goo.gl/maps/HwMVveV7SkQHYzMA8
+
+  - story: |
+      We entered Calbee+ and lined up.
+
+      Calbee is a popular brand of chips in Japan, available at most convenience stores and groceries. 
+
+      Here, they cook and prepare their chips fresh for you to eat.
+
+  - photo:
+      image: P2173142
+      style: right
+
+  - story: |
+      We reached the front of the line and placed our order.
+
+      Once cooked, we took our chips upstairs to the dining area.
+
+  - photo:
+      image: P2173143
+      style: full
+  
+  - story: |
+      The chips were very enjoyable fresh, in particular we loved the shoestring fry cut chips. They have much more flavour fresh.
+
+      After a quick look around some stores in Harajuku (including a cosplay store with Anime wigs), we decided to grab an early lunch at Ichiran to avoid typical&nbsp;queues.
 
   - place:
       type: restaurant
@@ -126,16 +179,32 @@ content:
       image: ichiran
       menu: Ramen
       price: ¥¥
-      rating: 4
+      rating: 5
       link: https://goo.gl/maps/4rw6Hq1di7HTX3aF9
+
+  - story: |
+      Our strategy paid off, as we were seated and soon had delicious bowls of ramen placed in front of us.
 
   - photo:
       image: P2173144
       style: right
-  
-  - photo:
+
+  - story: |
+      One delicious bowl of ramen later, we went for a pick-me-up coffee.
+
+  - place:
+      type: drink
+      address: 〒150-0001 東京都渋谷区神宮前５丁目１７−13
+      title: The Roastery by Nozy Coffee
       image: P2173148
-      style: right
+      label: Coffee
+      descriptor: Shop
+      price: ¥¥
+      rating: 5
+      link: https://goo.gl/maps/a9FainaKPmTXms6x6
+  
+  - story: |
+      Some rather delicious coffees later, we departed Nozy coffee.
   
   - photos:
       type: grid
