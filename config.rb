@@ -62,6 +62,9 @@ set :js_dir,      'javascripts'
 # Pretty URLs - See https://middlemanapp.com/advanced/pretty_urls/
 activate :directory_indexes
 
+# Disable warnings
+Haml::TempleEngine.disable_option_validator!
+
 # --------------------------------------------------------------------------------------------------
 # Build configuration
 # --------------------------------------------------------------------------------------------------
