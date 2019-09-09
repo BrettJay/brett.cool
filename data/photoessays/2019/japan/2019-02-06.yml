@@ -19,17 +19,17 @@ content:
       rows:
         - images: [ P2060004, P2060008 ]
   - story: |
-      After clearing security, we make our way for Gate 52, and wait for boarding.
+      After clearing security, we made our way for Gate 52, and waited for boarding.
   - photo:
       style: right
       image: P2060010
   - story: |
-      Sunrise arrives as we wait at the terminal, allowing us to see luggage and meals for the flight being loaded into the aircraft.
+      Sunrise arrives as we waited at the terminal, allowing us to see luggage and meals for the flight being loaded into the aircraft.
   - photo:
       style: full
       image: P2060017
   - story: |
-      Before long, our boarding group is called, and we make our way onto the aircraft, finding our assigned seats.
+      Before long, our boarding group was called, and we made our way onto the aircraft, finding our assigned seats.
   - flight:
       image: P2060028
       title: SQ 224
@@ -42,12 +42,12 @@ content:
       arrive: 11:38am
       rating: 4
   - story: |
-      Once we reach cruising altitude, I take the opportunity to work on side projects, and watch a couple of movies.
+      Once we reached cruising altitude, I took the opportunity to work on side projects, and watch a couple of movies.
   - photo:
       style: full
       image: P2060032
   - story: |
-      One comfortable, uneventful flight later, we arrive at Changi Airport.
+      One comfortable, uneventful flight later, we arrived at Changi Airport.
 
       On most occasions, I’ve passed through Changi late at night. This time, it’s just before midday. For some reason, Changi seems less imposing, and easier to navigate during broad daylight.
 
