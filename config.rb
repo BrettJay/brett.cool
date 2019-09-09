@@ -89,8 +89,8 @@ configure :build do
                          remove_quotes: false
 
   # Compress images (default)
-  require 'middleman-smusher'
-  activate :smusher
+  # require 'middleman-smusher'
+  # activate :smusher
 
   # Compress ALL images (advanced)
   # Before activating the below, follow setup instructions on https://github.com/toy/image_optim
