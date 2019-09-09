@@ -1,5 +1,5 @@
 title: Returning to Perth
-subtitle: Subtitle
+subtitle: Until next time!
 steps: 10599
 km: 8.08
 collection:
@@ -11,14 +11,28 @@ collection:
     file: 2019-02-18
 content:
   - story: |
-      Tuesday Feb 19th
+      We awoke early in our hotel room and were greeted with a beautiful early morning view outside our room.
   - photo:
       image: P2193308
       style: full
+  - story: |
+      We packed our bags, and checked out of our hotel room.
 
+      We made our way through Shibuya Mark City to the Shibuya station, where we picked up Narita Express (NEX) tickets.
+
+      We boarded our platform, and before long, our train arrived.
   - photos:
       type: grid
       rows:
         - images: [ P2193310, P2193312 ]
+  - story: |
+      On board, we had a breakfast comprised of Maisen Katsu Chicken sandwiches we’d picked up last night, while the Tokyo scenery whipped by us.
+  - photos:
+      type: grid
+      rows:
         - images: [ P2193313 ]
         - images: [ P2193315, P2193316 ]
+  - story: |
+      A short while later, we arrived at Narita airport.
+      
+      We checked our luggage, and were soon boarding our flight back to Perth, en route via Singapore.

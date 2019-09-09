@@ -14,14 +14,14 @@ collection:
     file: 2019-02-16
 content:
   - story: |
-      We awoke in the morning, got ready, and made our way north from the hotel.
+      We awoke, and made our way north from the hotel.
 
   - photo:
       image: P2173089
       style: right
 
   - story: |
-      Cutting our way through inner Shibuya streets, we continued North towards Yoyogi Park.
+      Cutting our way through Shibuya streets, we continued north to Yoyogi Park.
 
   - photos:
       type: grid
@@ -38,7 +38,7 @@ content:
         - images: [ P2173096, P2173101 ]
   
   - story: |
-      Before long, we arrived at Meiji Shrine.
+      Before long, we arrived at the beautiful Meiji Shrine entrance.
 
   - photo:
       image: P2173104
@@ -54,7 +54,7 @@ content:
   - story: |
       As we walked, we saw a procession of Monks ahead.
 
-      Curious, we followed along side them, watching with the other visitors.
+      Curious, we followed behind them, watching along with the other visitors.
 
   - photos:
       type: grid
@@ -80,16 +80,16 @@ content:
         - images: [ P2173121 ]
 
   - story: |
-      The main temple was buzzing with visitors watching the procession.
+      The main temple was buzzing with visitors.
 
   - photo:
       image: P2173124
       style: right
   
   - story: |
-      A short while later, we exited the grounds.
+      After a good look around, we exited the grounds.
 
-      Looping back around, we made our way back through the entrance.
+      Looping back around in a clockwise arc, we made our way back through the shrine entrance.
 
   - photos:
       type: grid
@@ -97,14 +97,14 @@ content:
         - images: [ P2173126, P2173129 ]
   
   - story: |
-      We then continued east out of the park, across to Harajuku.
+      We then continued east, across to Harajuku.
 
   - photo:
       image: P2173137
       style: full
 
   - story: |
-      It was an early, cool morning in Harajuku.
+      Harajuku is such a contrast to the quiet, serene Meiji shrine. The young, fashionable city in Tokyo, it was quietly bustling on this cool Sunday morning.
       
       We made our way down the crowded Takashita-dori street in search of comcrêpe—a crêpe store specialising in crème brûlée crêpes.
 
@@ -170,7 +170,7 @@ content:
   - story: |
       The chips were very enjoyable fresh, in particular we loved the shoestring fry cut chips. They have much more flavour fresh.
 
-      After a quick look around some stores in Harajuku (including a cosplay store with Anime wigs), we decided to grab an early lunch at Ichiran to avoid typical&nbsp;queues.
+      After a quick look around some stores in Harajuku (including a cosplay store with wigs for Anime characters), we decided to grab an early lunch at Ichiran to avoid typical&nbsp;queues.
 
   - place:
       type: restaurant
@@ -190,7 +190,11 @@ content:
       style: right
 
   - story: |
-      One delicious bowl of ramen later, we went for a pick-me-up coffee.
+      One delicious bowl of ramen later, we left Ichiran, spotting a rather large queue for lunch as we departed.
+
+      We continued down the small, quaint streets in Harajuku. 
+      
+      After a quick stop in a discount gift store, we made our way for coffee.
 
   - place:
       type: drink
@@ -202,23 +206,55 @@ content:
       price: ¥¥
       rating: 5
       link: https://goo.gl/maps/a9FainaKPmTXms6x6
-  
+
+  - photos:
+      type: grid
+      rows:
+        - images: [ IMG_4048, IMG_1396 ]
+          caption: Trying out the bag hook keychain I picked up in Akihabara
+
   - story: |
       Some rather delicious coffees later, we departed Nozy coffee.
-  
+
+      We headed back to our hotel to drop purchases off, and have an early afternoon break.
+
+      ---
+
+      Later that afternoon, we made our way for Akihabara.
+
+      As we arrived, we happened across Akihabara pedestrian paradise which—it turns out—takes place on Sundays.
+
   - photos:
       type: grid
       rows:
         - images: [ P2173149 ]
+  - story: |
+      We strolled along the main strip as sunset approached.
+  
+  - photos:
+      type: grid
+      rows:
         - images: [ P2173152, P2173163 ]
+
+  - story: |
+      As early evening arrived, we explored a range of stores, including a rather impressively-stocked second hand videogame store.
 
   - photo:
       image: P2173173
       style: full
 
-  - photo:
-      image: P2173178
-      style: right
+  - story: |
+      We whiled away the evening exploring the novel Akihabara shops.
+  
+  - photos:
+      type: grid
+      rows:
+        - images: [ IMG_4825, IMG_2105 ]
+        - images: [ P2173178 ]
+          style: right
+
+  - story: |
+      As dinner time arrrived, we decided to revisit one of our favourite pizza places—Devil Craft in Gotanda.
 
   - place:
       type: restaurant
@@ -230,8 +266,17 @@ content:
       rating: 5
       link: https://goo.gl/maps/Yb6Nsfb7XkMnPp7v8
 
+  - story: |
+      I ordered an 8.1% Xocoveza Mocha Stout, inspired by Mexican Hot Chocolate.
+
   - photos:
       type: grid
       rows:
         - images: [ P2173182, P2173188 ]
   
+  - story: |
+      After dinner in Gotanda, we made our way back to our hotel for the night.
+
+  - photo:
+      image: P2173189
+      style: full
