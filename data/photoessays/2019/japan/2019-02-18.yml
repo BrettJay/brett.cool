@@ -1,0 +1,203 @@
+title: Nakameguro
+subtitle: and Metropolitan Government Building
+steps: 33490
+km: 25.52
+collection:
+  current:
+    folder: japan
+    file: 2019-02-18
+  next:
+    folder: japan
+    file: 2019-02-19
+  prev:
+    folder: japan
+    file: 2019-02-17
+content:
+  - story: |
+      We awoke and left our hotel, tracing the very familiar path from our hotel through Shibuya Mark City to the bustling Shibuya station.
+  - photos:
+      type: grid
+      rows:
+        - images: [ P2183192 ]
+        - images: [ P2183193 ]
+  - story: |
+      We caught the Subway and road to Nakameguro.
+  - photos:
+      type: grid
+      rows:
+        - images: [ P2183194 ]
+        - images: [ P2183197, P2183199 ]
+  - story: |
+      We walked through quaint, peaceful neighbourhood streets.
+
+      Tokyo has some lovely, suburban feeling pockets mere minutes out of the main hustle and bustle hubs.
+  - photo:
+      image: P2183204
+      style: full
+  - photo:
+      image: P2183208
+      style: right
+  - story: |
+      A pleasant walk later, we arrived at a Blue Bottle.
+  - place:
+      type: drink
+      address: 〒153-0061 東京都目黒区中目黒３丁目２３−16
+      title: Blue Bottle Nakameguro 
+      image: P2183212
+      label: Coffee
+      descriptor: Shop
+      price: ¥
+      rating: 5
+      link: https://goo.gl/maps/hUTvY4HwAS5Z2A2y9
+  - story: |
+      After a lovely morning coffee, we departed, and made our way back to Nakameguro station, cutting through some beautiful streets on the way.
+  - photos:
+      type: grid
+      rows:
+        - images: [ P2183214, P2183219 ]
+  - story: |
+      We soon arrived at the station and boarded a train for Shinjuku.
+  - photo:
+      image: P2183220
+      style: full
+  - story: |
+      A short train ride later, we arrived in Shinjuku.
+
+      We walked through the massive station and attached shopping malls towards West Shinjuku.
+  - photo:
+      image: P2183224
+      style: full
+  - story: |
+      We made our way towards the Tokyo Metropolitan Government Building, large skyscrapers looming before us.
+  - photos:
+      type: grid
+      rows:
+        - images: [ P2183226, P2183232 ]
+        - images: [ P2183233 ]
+  - story: |
+      Eventually, we arrived at the base of the Metropolitan Government Building.
+  - photos:
+      type: grid
+      rows:
+        - images: [ P2183235, P2183237 ]
+  - story: |
+      We made our way up, enjoying the vistas afforded by the clear, sunny weather.
+  - photos:
+      type: grid
+      rows:
+        - images: [ P2183240 ]
+          style: right
+        - images: [ P2183242 ]
+        - images: [ P2183250, P2183254 ]
+        - images: [ IMG_1378, P2183258 ]
+  - story: |
+      We left the Tokyo Metropolitan Government Building and made our way for our final Ichiran of the trip.
+  - place:
+      type: restaurant
+      address: 〒160-0022 東京都新宿区新宿３丁目３４−11 ピースビルB1F・6F
+      title: Ichiran
+      image: IMG_7022
+      menu: Ramen
+      price: ¥¥
+      rating: 5
+      link: https://goo.gl/maps/o7uYqCjf8D42uk9Z7
+  - photos:
+      type: grid
+      rows:
+        - images: [ IMG_1294, IMG_2188 ]
+
+  - story: |
+      We popped in to a nearby on Don Quijote store in Shinjuku.
+
+  - place:
+      type: interest
+      image: IMG_3253
+      title: Don Quijote
+      address: 〒160-0022 東京都新宿区新宿３丁目３６−16
+      label: General
+      descriptor: store
+      rating: 5
+      link: https://goo.gl/maps/EEHMcWf1haPp68uh8
+  
+  - story: |
+      We looked around inside the large store. On the liquor floor, I deliberated picking up a bottle of Nikka Coffee Grain Whisky, but ultimately ended up leaving the store empty handed.
+
+      We then made our way back to the hotel.
+
+      ---
+
+      That evening, we headed through Harajuku to pick up some wigs for a future costume idea.
+
+  - photos:
+      type: grid
+      rows:
+        - images: [ P2183261 ]
+        - images: [ P2183267 ]
+
+  - story: |
+      After picking up our wigs, we walked back towards Shibuya.
+
+  - photos:
+      type: grid
+      rows:
+        - images: [ P2183275 ]
+        - images: [ P2183284, P2183285 ]
+
+  - story: |
+      After a quick stop-in at Tokyu Hands, we made our way to Tonkatsu Maisen for our last dinner in Tokyo.
+
+  - place:
+      type: restaurant
+      address: 〒150-0002 東京都渋谷区渋谷２丁目２４−1 東急百貨店東横店西館 9F
+      title: Tonkatsu Maisen Tokyu
+      image: maisen
+      menu: Katsu
+      price: ¥¥
+      rating: 5
+      link: https://goo.gl/maps/oi1p3XN4AoQfnexn7
+
+  - photo:
+      image: IMG_9296
+      style: right
+
+  - story: |
+      After dinner, we walked back through Shibuya nightlife, towards GoodBeer Faucets for a nightcap.
+
+  - photos:
+      type: grid
+      rows:
+        - images: [ P2183291, P2183303 ]
+        - images: [ P2183295 ]
+
+  - story: |
+      We soon arrived at Goodbeer Faucets.
+
+  - place:
+      type: drink
+      image: goodbeer
+      title: Goodbeer Faucets
+      address: 〒150-0046 東京都渋谷区松濤１丁目２９−1 クロスロードビル
+      label: Craft beer
+      price: ¥¥
+      rating: 5
+      link: https://g.page/BenFiddich
+
+  - photos:
+      type: grid
+      rows:
+        - images: [ IMG_0200, '20190218_185929', IMG_6319 ]
+
+  - story: |
+      After our nightcap, we headed back to the hotel...
+
+      ... And decided to go on one last mission—pick up Nikka Coffee Grain Whisky from Don Quijote.
+      
+      We dropped our bags, cameras, and set off to Shinjuku, fully unemcumbered for the first time on the trip.
+
+      We made our way by train to Shinjuku, and rushed through late night Shinjuku streets, for Don Quijote.
+
+      Inside, we headed up to the liquor floor and... Could not find any  of the Nikka Coffee Grain Whisky left, despite it being a mere few hours later. Alyssa went to find a staff member to see if they could look up if they had any stock left.
+
+      Just when it looked like a failed mission, I noticed one last bottle perched high up out of reach... I stood on a nearby stool, and sure enough, *the last bottle of Nikka Coffee Grain Whisky*.
+
+      A successful Whisky mission later, we returned back to our hotel to turn in for the night.

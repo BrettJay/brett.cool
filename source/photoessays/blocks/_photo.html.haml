@@ -1,0 +1,16 @@
+- if block.style == 'full'
+  .PhotoRow.PhotoRow--full.Component
+    .Photo_hero= image_tag "photoessays/#{slug}/#{block.image}.jpg"
+    - if block.caption.present?
+      .Content
+        .PhotoCaption= block.caption
+- else
+  .PhotoRow.Component
+    - if block.style == 'left'
+      .Photo_left= image_tag "photoessays/#{slug}/#{block.image}.jpg"
+      - if block.caption.present?
+        .PhotoCaption.PhotoCaption_right= block.caption
+    - elsif block.style == 'right'
+      - if block.caption.present?
+        .PhotoCaption.PhotoCaption_left= block.caption
+      .Photo_right= image_tag "photoessays/#{slug}/#{block.image}.jpg"

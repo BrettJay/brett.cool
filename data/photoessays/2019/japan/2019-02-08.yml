@@ -1,0 +1,343 @@
+title: Traveling to Kyoto
+subtitle: and local Shrines
+steps: 23738
+km: 18.09
+collection:
+  current:
+    folder: japan
+    file: 2019-02-08
+  next:
+    folder: japan
+    file: 2019-02-09
+  prev:
+    folder: japan
+    file: 2019-02-07
+content:
+  - story: |
+      We awoke the next morning, bags packed, and checked out of Hotel Code.
+
+      Luggage in tow, we headed North-west for Shinsaibashi station.
+  - photos:
+      type: grid
+      rows:
+        - images: [ P2080659, P2080669 ]
+        - images: [ P2080672 ]
+        - images: [ P2080674 ]
+          style: right
+  - story: |
+      We made our way underground and boarded a train for Shin-Osaka station.
+  - photos:
+      type: grid
+      rows:
+        - images: [ P2080680 ]
+  - story: |
+      Our train traveled north, arriving at Shin-Osaka station.
+  - photos:
+      type: column
+      images: [ P2080682, P2080683, P2080688, P2080692 ]
+  - story: |
+      We alighted, and made our way for the Shinkansen platforms.
+  - photos:
+      type: grid
+      rows:
+        - images: [ P2080697 ]
+        - images: [ P2080702, P2080705 ]
+  - story: |
+      Getting out bearings, we purchased our Shinkansen ticket and made our way into the station.
+
+      After exploring a few of the shops, we made our way up the escalator to the platform, and before long boarded a Shinkansen bound for Kyoto.
+  - photo:
+      image: P2080706
+      style: full
+  - story: |
+      We settled in, and snacked on a Tayaki each in lieu of breakfast.
+  - photos:
+      type: grid
+      rows:
+        - images: [ P2080711, P2080714 ]
+  - story: |
+      We were just settling in for our trip, when we suddenly found ourselves arriving in Kyoto.
+
+      It was only about fifteen minutes in total.
+  - photos:
+      type: grid
+      rows:
+        - images: [ P2080737, P2080740 ]
+  - story: |
+      Making our way through the station, we headed for a connection to the subway towards downtown Kyoto, for our hotel.
+  - photo:
+      image: P2080742
+      style: full
+  - story: |
+      We grabbed a onigiri from a 7 Eleven at the station, and transferred onto a subway platform.
+
+      2 Stops later, we emerged in downtown Kyoto.
+  - photos:
+      type: grid
+      rows:
+        - images: [ P2080755, P2080758 ]
+  - story: |
+      The streets became smaller as we made our way to our hotel.
+
+      A few blocks from Karasuma station, we arrived at Imu Hotel.
+  - place:
+      type: accomodation
+      image: P2080771
+      title: Imu Hotel Kyoto
+      address: 〒600-8445 京都府京都市下京区岩戸山町411
+      checkin: 2019-02-08
+      checkout: 2019-02-12
+      link: https://goo.gl/maps/RXGUY2ArTB82
+      rating: 5
+  - story: |      
+      We entered the modern hotel, spoke to reception, and locked our bags with the self-serve bag rack in the lobby.
+
+      The lobby was a pleasant area, with an elevated platform with seating, a Nintendo Switch, and complimentary drinks.
+      
+      We adjusted our day bags, and tried the 7 Eleven Beef Onigiri.
+
+      It was mid morning, but check-in wasn’t until 4:00pm, so we decided to go explore the local area, starting with Nishiki Markets.
+
+      We departed the hotel lobby, and headed back towards the main strip.
+  - photos:
+      type: grid
+      rows:
+        - images: [ P2080772, P2080779]
+  - story: |
+      Walking through the quiet side streets, we made our way towards Nishiki&nbsp;Markets.
+  - photo:
+      image: P2080781
+      style: full
+  - story: |
+      After a short walk through some side streets, we soon arrived.
+  - photo:
+      image: P2080794
+      style: full
+  - story: |
+      We entered the bustling Nishiki markets.
+  - photos:
+      type: column
+      images: [ P2080797, P2080801, P2080803, P2080805 ]
+  - story: |
+      We headed down the narrow market ailse, turning our heads to look at the wide variety of market stalls flanking us.
+  - photos:
+      type: column
+      images: [ P2080811, P2080812, P2080816, P2080819 ]
+  - story: |
+      Passing through the various seafood and street food stalls, we sampled some popular Tamagoyaki.
+  - place:
+      type: restaurant
+      address: 〒604-8055 京都府京都市中京区東魚屋町 富小路西入東魚屋町185 錦小路通
+      title: Tanaka Keiran
+      image: P2080827
+      menu: Tamagoyaki
+      price: ¥
+      rating: 2
+      link: https://goo.gl/maps/L64MNAHhZuD2
+  - story: |
+      It was a little too fishy for our taste.
+  - photos:
+      type: column
+      images: [ P2080827, P2080842 ]
+  - story: |
+      A little further down, we found a beef stall.
+  - place:
+      type: restaurant
+      address: 〒604-8871 京都府京都市中京区壬生朱雀町２−１０
+      title: Meat Shop Hiro
+      image: P2080853
+      menu: Wagyu Beef
+      price: ¥
+      rating: 4
+  - story: |
+      We tried a skewer of Wagyu beef steak. The meat was flavoured nicely, tender, and juicy.
+
+      We continued down Nishiki, stopping in at a curry pan store towards the end of the markets.
+  - photo:
+      image: P2080854
+      style: right
+  - story: |
+      As we reached the end of the markets, we reached a small shrine.
+  - photos:
+      type: grid
+      rows:
+        - images: [ P2080858, P2080867 ]
+  - story: |
+      Working out way back towards the main strip, we headed towards a popular dessert place, serving Melon Pan with icecream.
+  - photos:
+      type: grid
+      rows:
+        - images: [ P2080876, P2080877 ]
+  - place:
+      type: drink
+      image: P2080884
+      title: Kofukudo
+      address: 〒600-8002 京都府京都市下京区御旅町１８
+      label: Melonpan
+      descriptor: Dessert place
+      link: https://goo.gl/maps/kcaWytojHcG2
+  - photo:
+      image: P2080881
+      style: right
+  - story: |
+      The Melon pan was warm and fluffy, with a sugary crust like a biscuit.
+      
+      The vanilla ice cream was sweet, and combined with the bread in a very satisfying bite.
+
+      After devouring the Melon pan, and with a fair bit of time until check-in remaining, we decided to heard towards the Kyoto CBD, to explore the shrines in the area.
+  - photo:
+      image: P2080885
+      style: full
+  - story: |
+      We consulted Google maps, and grabbed a bus headed for Kyoto station.
+  - photo:
+      image: P2080889
+      style: right
+  - story: |
+      A short bus ride later, we arrived at a bus terminal just outside of the JR Kyoto station.
+  - photos:
+      type: grid
+      rows:
+        - images: [ P2080892, P2080893 ]
+  - story: |
+      Taking a brief detour through an underground shopping mall, we wound our way towards a coffee place I’d discovered a couple of years ago.
+  - photos:
+      type: grid
+      rows:
+        - images: [ P2080894, P2080907 ]
+  - place:
+      type: drink
+      image: P2080916
+      title: Kurasu
+      address: 〒600-8235 京都府京都市下京区東油小路町５５２
+      label: Specialty Coffee
+      descriptor: Shop
+      rating: 5
+      link: https://goo.gl/maps/oseyLgYSpkD2
+  - story: |
+      We took a seat, and savoured a coffee.
+  - photo:
+      image: P2080913
+      style: right
+  - story: |
+      After a quick breather, we headed for some nearby temples.
+  - photo:
+      image: P2080921
+      style: full
+  - story: |
+      We entered the temple, some early cherry blossoms already in bloom.
+  - photos:
+      type: grid
+      rows:
+        - images: [ P2080924, P2080926 ]
+        - images: [ P2080927 ]
+        - images: [ P2080932, P2080935 ]
+  - story: |
+      After a look around the first temple grounds, we continued on to the temple next door.
+  - photo:
+      image: P2080944
+      style: right
+  - story: |
+      We walked up to the main temple, admiring the impressive and intricate&nbsp;architecture.
+  - photos:
+      type: column
+      images: [ P2080948, P2080949, P2080952, P2080953, P2080957, P2080959 ]
+  - story: |
+      We exited the temple, and crossed the street to the alley opposite, walking through small, residential alleys on the way to our next temple.
+  - photos:
+      type: grid
+      rows:
+        - images: [ P2080941 ]
+        - images: [ P2080964 ]
+          style: right
+  - story: |
+      As we walked,  opened some hand (and foot) warmers to 
+      We soon arrived at Higashihonganji Temple.
+  - photos:
+      type: grid
+      rows:
+        - images: [ banner ]
+  - story: |
+      We entered the vast and impressive temple grounds.
+  - photos:
+      type: grid
+      rows:
+        - images: [ P2080976 ]
+        - images: [ P2080979, P2080983 ]
+  - story: |
+      We explored around the temple grounds, removed our shoes, and headed inside the main hall.
+  - photos:
+      type: grid
+      rows:
+        - images: [ P2080994 ]
+  - story: |
+      We left Higashiyama, and headed south towards Kyoto station.
+
+      Along the way, we popped in to a Lawsons, and picked up some fried chicken to snack on.
+  - photos:
+      type: grid
+      rows:
+        - images: [ IMG_2082, IMG_3348 ]
+  - story: |
+      We took the Subway Karasuma line and made our way back to Imu Kyoto Hotel for a pit stop.
+
+      ---
+
+      That evening, we re-emerged into evening Kyoto.
+
+  - photo:
+      image: P2081004
+      style: right
+  - story: |
+      We headed for the main downtown Kyoto strip.
+  - photo:
+      image: P2081019
+      style: full
+  - story: |
+      We made our way west, and after a short walk, arrived at Ponto-chō alley.
+  - photos:
+      type: grid
+      rows:
+        - images: [ P2081046 ]
+        - images: [ P2081047, P2081056 ]
+        - images: [ P2081060 ]
+          style: right
+  - story: |
+      After a little exploration, we grabbed dinner nearby.
+  - place:
+      type: restaurant
+      title: Omen Shijo
+      image: omen
+      address: 〒604-8014 京都府中京区柏屋町 京都市中京区四条通先斗町西入ル
+      price: ¥¥
+      menu: Udon and Tempura
+      rating: 4
+      link: https://goo.gl/maps/e3J2NnUg4ip
+  - story: |
+      We settled in to Omen Shijo, for some enjoyable Udon and Tempura.
+  - photos:
+      type: grid
+      rows:
+        - images: [ P2081067 ]
+        - images: [ P2081068, P2081069 ]
+  - story: |
+      After a very filling dinner, we headed for a nearby bar for a nightcap.
+  - place:
+      type: drink
+      image: lasiesta
+      title: Cafe La Siesta 8bit Edition
+      address: 〒604-8024 京都府京都市中京区紙屋町３６６
+      label: Videogame
+      descriptor: Café and bar
+      rating: 4
+      link: https://goo.gl/maps/apaRCzPsLFx
+  - story: |
+      Cafe La Siesta was a charming retro videogame themed bar, with some very tasty videogame themed cocktails.
+  - photos:
+      type: column
+      images: [ IMG_2115, IMG_2120, IMG_2116 ]
+  - story: |
+      After an enjoyable drink, we made our way back to the hotel and turned in for the night.
+  - photo:
+      image: P2081075
+      style: full

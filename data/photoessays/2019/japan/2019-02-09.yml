@@ -1,0 +1,310 @@
+title: Exploring Gion
+subtitle: and a serene Tofu restaurant
+steps: 18590
+km: 14.17
+collection:
+  current:
+    folder: japan
+    file: 2019-02-09
+  next:
+    folder: japan
+    file: 2019-02-10
+  prev:
+    folder: japan
+    file: 2019-02-08
+content:
+  - story: |
+      The following morning we set off from the hotel, heading for Gion.
+  - photos:
+      type: grid
+      rows:
+        - images: [ P2091077, P2091084 ]
+  - story: |
+      We walked along a quiet street, parallel to Karasuma street.
+
+      Along the way, we passed temples and shrines.
+  - photos:
+      type: grid
+      rows:
+        - images: [ P2091088 ]
+        - images: [ P2091092 ]
+          style: right
+  - story: |
+      After a short walk, we turned west on to Shijo-dori street.
+  - photos:
+      type: grid
+      rows:
+        - images: [ P2091093, P2091094 ]
+  - story: |
+      We crossed over Shijoo Bridge, continuing along Shijo-dori street.
+  - photos:
+      type: grid
+      rows:
+        - images: [ P2091096, P2091100 ]
+  - story: |
+      We turned right, heading south down Hanamikoji Dori street.
+  - photos:
+      type: grid
+      rows:
+        - images: [ P2091102 ]
+  - story: |
+      We walked down the quiet street, flanked with traditional buildings.
+  - photos:
+      type: grid
+      rows:
+        - images: [ P2091105, P2091106 ]
+        - images: [ P2091107 ]
+        - images: [ P2091109, P2091111 ]
+  - story: |
+      As we came to the end of the street, we stumbled upon Kenninji temple.
+  - photos:
+      type: grid
+      rows:
+        - images: [ P2091115 ]
+        - images: [ P2091114, P2091123 ]
+  - story: |
+      After a brief look around, we continued west.
+  - photos:
+      type: grid
+      rows:
+        - images: [ P2091121, P2091129 ]
+        - images: [ P2091131 ]
+  - story: |
+      We stopped in at %Aribica’s Higashiyama shop for a quick coffee.
+  - place:
+      type: drink
+      image: P2091153
+      title: '%Aribica'
+      address: 〒605-0853 京都府京都市東山区星野町８７−５
+      label: Coffee
+      descriptor: Bar
+      rating: 4
+  - story: |
+      We found a spot in the cozy bar.
+      
+      I ordered a pourover, and Alyssa ordered a flat white.
+  - photos:
+      type: grid
+      rows:
+        - images: [ P2091148 ]
+        - images: [ P2091153, P2091150 ]
+  - story: |
+      After a short break, we departed %Aribica, and continued west, up a slightly inclined path towards a temple.
+
+      As we approached the crest of the lane, we watched as cars approaching from opposite sides navigated the single lane, feeling some second-hand driving anxiety, as they navigated the single lane road.
+
+      We continued up.
+  - photos:
+      type: grid
+      rows:
+        - images: [ P2091155 ]
+        - images: [ P2091178, P2091208 ]
+        - images: [ P2091212 ]
+  - story: |
+      We wandered through the small lanes of South Higashiyama, stopping in at shops and stalls.
+  - photos:
+      type: grid
+      rows:
+        - images: [ P2091217, P2091220 ]
+        - images: [ P2091222 ]
+        - images: [ P2091226, P2091230 ]
+        - images: [ P2091240 ]
+          style: right
+  - story: |
+      After a look around, we headed to a nearby Starbucks, retrofitted inside an old Japanese teahouse.
+  - place:
+      type: drink
+      image: P2091242
+      title: Starbucks Highashiyama
+      address: 〒605-0853 京都府京都市東山区星野町８７−５
+      label: Coffee
+      descriptor: Shop
+      rating: 4
+  - story: |
+      We entered, the interior was beautifully presented.
+
+      We ordered our drinks, made our way upstairs, and found a free spot to sit, crossing my legs with some (much) difficulty.
+  - photos:
+      type: grid
+      rows:
+        - images: [ P2091243, P2091246 ]
+        - images: [ P2091261 ]
+        - images: [ P2091265, P2091266 ]
+  - story: |
+      After a serene break, we departed.
+
+      We looked around a few nearby stalls, including a candy store, before making our way back.
+  - photos:
+      type: grid
+      rows:
+        - images: [ banner ]
+        - images: [ P2091293, P2091297 ]
+  - story: |
+      We hopped on a bus, and made our way for North Higashiyama.
+  - photos:
+      type: grid
+      rows:
+        - images: [ P2091302 ]
+          style: right
+        - images: [ P2091306 ]
+  - story: |
+      A short while later we arrived, and headed west for Higashiyama Jisho-ji.
+  - photos:
+      type: grid
+      rows:
+        - images: [ P2091309, P2091310 ]
+  - story: |
+      On the way to Higashiyama Jisho-ji we stopped for a snack, opting for a roasted sweet potato, and a steamed pork bun.
+  - photo:
+      image: P2091317
+      style: right
+  - story: |
+      We continued our way up the street to Higashiyama Jisho-ji, flanked on either side by stalls of street food vendors, and souvenir shops.
+
+      Soon, we arrived at the entrance of Higashiyama Jisho-ji.
+  - photo:
+      image: P2091329
+      style: full
+  - story: |
+      We made our way into the beautiful grounds of the Zen temple.
+  - photos:
+      type: grid
+      rows:
+        - images: [ P2091335, P2091337 ]
+        - images: [ P2091338 ]
+        - images: [ P2091341, P2091342 ]
+  - story: |
+      We followed the path clockwise through the gardens, admiring the beauty and tranquility.
+  - photos:
+      type: grid
+      rows:
+        - images: [ P2091345 ]
+        - images: [ P2091359, P2091361 ]
+        - images: [ P2091364 ]
+        - images: [ P2091374 ]
+          style: right
+  - story: |
+      As the path continued, we began to ascend up a hill side, which afforded some truly breathtaking views of the garden, and the surrounding area.
+  - photo:
+      image: P2091387
+      style: full
+  - story: |
+      We continued on the path, and made our way back down.
+  - photo:
+      image: P2091394
+      style: right
+  - story: |
+      We then departed the temple.
+  - photo:
+      image: P2091401
+      style: right
+  - story: |
+      We passed through the vendor stalls on our way back down the street. At the bottom, we turned left, and made our way along the Philosopher’s Path.
+  - photo:
+      image: P2091402
+      style: full
+  - story: |
+      We continued South along the Philosopher’s Path. We decided to take a quick look at the nearby Hōnen-in Temple.
+  - photos:
+      type: grid
+      rows:
+        - images: [ P2091405 ]
+        - images: [ P2091408 ]
+  - story: |
+      It was now early afternoon, and time for lunch.
+
+      By chance, as we departed Hōnen-in temple, we spotted an interesting looking Tofu restaurant, and decided to take a look inside.
+  - place:
+      type: restaurant
+      address: 浄土寺南田町１７３－５ 京都市左京区, Kyōto
+      title: 喜さ起
+      image: P2091419
+      menu: Tofu
+      price: ¥¥¥
+      rating: 5
+      link: https://goo.gl/maps/eRy2Zk2GCm72
+  - story: |
+      We settled in for a serene, peaceful lunch of tofu.
+  - photos:
+      type: grid
+      rows:
+        - images: [ P2091415 ]
+          style: right
+        - images: [ P2091416, P2091417 ]
+          caption: That sesame tofu tho 😍
+  - story: |
+      After a very satisfying lunch of tofu and tempura, we departed, and made our way through quiet, suburban streets.
+  - photos:
+      type: grid
+      rows:
+        - images: [ P2091421, P2091422 ]
+        - images: [ P2091430, P2091432 ]
+  - story: |
+      After picking up a spare lightning charging cable at a nearby convenience store, we stopped in for a quick coffee at a coffee shop on Shirakawa Dori.
+  - place:
+      type: drink
+      image: pullst
+      title: Pullst Cafe
+      label: Coffee
+      descriptor: Bar
+      rating: 3
+  - story: |
+      After a quick pick-me-up, we left, and caught a bus back to the Kyoto CBD.
+
+      We alighted in Gion, and walked from there back to Imu Kyoto Hotel.
+
+      ---
+
+      Later that evening, we departed our hotel in search of dinner.
+  - photo:
+      image: P2091434
+      style: right
+  - story: |
+      We made our way back towards Nishiki Markets.
+
+      Just outside the market entrance, we found a ¥300 shop.
+
+      After a brief look around, we headed down Nishhiki Markets, headed for Gogyo Ramen.
+  - photo:
+      image: P2091437
+      style: right
+  - story: |
+      Eventually, we arrived at Gogyo. There was a bit of a line.
+      
+      A lady in front helpfully informed us we needed to add our name to the list, so I headed to the front, and with some help from Google Translate, attempted to write my name.
+  - photo:
+      image: IMG_2217
+      style: right
+  - story: |
+      I returned to our spot in line. I found myself wishing we could be passing the time in a bar, when I remembered—street drinking is legal in Japan!
+
+      A light drizzle of rain fell as I set off to find a convenience store. I grabbed us each a drink, and returned to the queue.
+
+      Feeling like I was perhaps sharing a bit too much of Australian drinking culture, we knocked back our tinnies while waiting for our turn.
+
+      This made the wait go much quicker.
+  - place:
+      type: restaurant
+      address: 〒604-0000 京都府京都市中京区十文字町 蛸薬師下る十文字町452番地 柳馬場通
+      title: Gogyo
+      image: gogyo
+      menu: Kogashi Ramen
+      price: ¥¥
+      rating: 5
+      link: https://goo.gl/maps/zV9BefP6ttB2
+  - story: |
+      We stepped inside the cozy restaurant and were seated out the back.
+
+      We were presented with menus to order, and both opted for the soy-based Kogashi ramen.
+  - photo:
+      image: P2091441
+      style: full
+      caption: A very unique charred flavour 👌
+  - story: |
+      The ramen was incredibly full of flavour, with a smokey, charred flavour, well accented by the presence of chopped onion.
+
+      It was a very unique experience, and similarly enjoyable to my favourite ramen in Japan, Ichiran.
+
+      After a very hearty bowl of ramen, we departed.
+      
+      Feeling quite tired from a long day, we headed back to the hotel for a nightcap before bed.

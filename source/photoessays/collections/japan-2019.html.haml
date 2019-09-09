@@ -1,0 +1,104 @@
+---
+  title: Japan 2019
+  subtitle: Osaka to Tokyo
+  slug: 'collections/japan-2019'
+  body_classes: page-photoessays
+  meta_description: Osaka, Kyoto, and Tokyo
+  meta_keywords: Japan, photoessay, travel, photography, esssay
+  trip:
+    location: japan
+    weather: snow
+    arrival: plane
+    departure: plane
+    cities: 3
+    dates:
+      from: 2019-2-6
+      to: 2019-2-19
+---
+
+- @og_image_override = 'photoessays/collections/japan-2019'
+- @og_label1_override = 'Dates 📅'
+- @og_data1_override = "#{Date.parse(current_page.data.trip.dates.from.to_s).strftime('%B %e')} to #{Date.parse(current_page.data.trip.dates.to.to_s).strftime('%B %e, %Y')}"
+- @og_label2_override = 'Cities 🗺'
+- @og_data2_override = ""
+
+.PhotoEssaySubHeader
+  .Content.Content--fluid
+    .Row
+      .SubHeader_Main
+        .LinkBreadCrumbs
+          #{link_to 'Collections', '/photoessays/collections', class: 'BreadCrumb_Header'}
+          .BreadCrumb_Header
+
+= partial("/photoessays/components/banner", locals: {slug: current_page.data.slug, title: current_page.data.title, subtitle: current_page.data.subtitle, trip: current_page.data.trip})
+
+= javascript_include_tag "jquery.waypoints.min"
+= javascript_include_tag "inview"
+
+:javascript
+  $(function() {
+    $('.CollectionRow').each(function(index, row) {
+      var inview = new Waypoint.Inview({
+        element: $(this),
+        enter: function(direction) {  
+          setTimeout(function() {
+            $(row).addClass('CollectionRow--showing');
+          }, 100);
+        }
+      });
+    });
+  });
+
+.Page
+  .Content.Content--timeline
+    - data.collections['japan-2019'].each do | item |
+      .CollectionRow.mt4.mb4.pt1.pb1
+        .CollectionItem
+          .CollectionDate #{item.days.first.date.strftime("%-d %B")} — #{item.days.last.date.strftime("%-d %B")}
+
+          %h1= item.name
+
+          %hr/
+
+          :markdown
+            #{item.description}
+          %p= link_to "Read Photoessay", "/photoessays/2019/japan/#{item.slug}"
+          .Days
+            .DayLine.DayLine--Heading
+              .DayLabel
+              .Timeline
+                - 12.times do | tick |
+                  .Timeline_tick= Time.new(2019,2,6,tick * 2,0,0).strftime("%-I%p")
+            - item.days.each do | day |
+              .DayLine
+                = link_to "/photoessays/2019/japan/#{day.date.strftime("%b-%d").downcase}", title: "Read from #{day.date.strftime("%B %-d")}", class: 'DayLabel' do
+                  .DayLabel_date= day.date.strftime("%-d")
+                  .DayLabel_month= day.date.strftime("%b")
+                  .DayLabel_chevron
+                    %svg{height: "9", viewbox: "0 0 5 9", width: "5", xmlns: "http://www.w3.org/2000/svg"}
+                      %polyline{fill: "none", points: ".5 .5 4.5 4.5 .5 8.5", stroke: "#666"}
+                .Timelines
+                  - if day.photos.present?
+                    .Timeline.Timeline_photos
+                      - day.photos.each do | photo |
+                        .TimelinePhoto{style: "left: #{(photo.time.to_f / 2400) * 100}%"}= image_tag "photoessays/2019/japan/#{day.date.strftime("%b-%d").downcase}/#{photo.path}"
+                  - if day.motion.present? || day.places.present? 
+                    .Timeline.Timeline_motion
+                      - if day.motion.present?
+                        - day.motion.each do | motion |
+                          .TimelineMotion{style: "left: #{(motion.time.to_f / 2400) * 100}%; width: #{(motion.duration.to_f / 2400) * 100}%", class: "TimelineMotion--#{motion.kind}"}
+                            .Motion_spark
+                            .Motion_label= motion.label
+                      - if day.places.present?
+                        - day.places.each do | place |
+                          .TimelinePlace{style: "left: #{(place.at.to_f / 2400) * 100}%;", class: "TimelinePlace--#{place.kind}"}
+                            - if place.photo.present?
+                              .Place_photo= image_tag "photoessays/2019/japan/#{day.date.strftime("%b-%d").downcase}/#{place.photo}"
+                            .Place_icon
+                            .Place_disclosure
+                              = place.label
+
+        = link_to "/photoessays/2019/#{item.slug}", class: 'CollectionImage' do
+          - if item.images.present?
+            - item.images.each_with_index do | image, index |
+              .HeroImage{class: "HeroImage--#{index + 1}"}= image_tag "photoessays/2019/japan/#{image}"

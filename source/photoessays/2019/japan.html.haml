@@ -1,0 +1,30 @@
+---
+  title: Japan
+  slug: '2019/japan'
+  subtitle: A fortnight in Osaka, Kyoto, and Tokyo
+  body_classes: page-photoessays
+  meta_description: A fortnight in Osaka, Kyoto, and Tokyo
+  meta_keywords: osaka, kyoto, tokyo, japan, trip, photography, travel, photoessay
+  trip:
+    location: japan
+    weather: winter
+    arrival: plane
+    departure: plane
+    steps: 325233
+    km: 247.83
+    photos: 3256
+    dates:
+      from: 2019-02-06
+      to: 2019-02-19
+---
+
+= partial("photoessays/components/breadcrumb")
+= partial("photoessays/components/banner", locals: {slug: current_page.data.slug, title: current_page.data.title, subtitle: current_page.data.subtitle, trip: current_page.data.trip})
+
+- japan_photoessays = data.photoessays['2019'].japan.sort{ |a, b| a.to_s.downcase <=> b.to_s.downcase }
+  
+.Page
+  .Content
+    .Content_photoessays.Row
+      - japan_photoessays.each do | id, date |
+        = partial("photoessays/components/day_card_alt", locals: { id: id, date: date, essay_slug: current_page.data.slug})

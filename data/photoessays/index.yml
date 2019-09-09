@@ -1,0 +1,80 @@
+- year: 2019
+  photoessays:
+    - title: Japan
+      url: 2019/japan
+      date: 2019-02-06
+
+- year: 2017
+  photoessays:
+    - title: Localhost
+      url: 2017/localhost
+      date: 2017-06-06
+    - title: Kyoto
+      url: 2017/kyoto
+      date: 2017-01-15
+    - title: Tokyo
+      url: 2017/tokyo
+      date: 2017-01-07
+
+- year: 2016
+  photoessays:
+  - title: CSSConf Au
+    url: '2016/cssconfau'
+    date: 2016-11-30
+  - title: Mixin
+    url: mixin-2016
+    date: 2016-10-28
+
+# - year: 2015
+#   photoessays:
+#     - title: CSSConf Au
+#       url: '2015/css-conf'
+#       date: March 26, 2015
+
+# - year: 2014
+#   photoessays:
+#     - title: Web Directions
+#       url: '2014/web-directions'
+#       date: October 30, 2014
+
+#     - title: Red Dot Ruby Conf
+#       url: '2014/red-dot-ruby-conf'
+#       date: June 26, 2014
+
+#     - title: CSSConf Au
+#       url: '2014/css-conf'
+#       date: April 9, 2014
+
+- year: 2013
+  photoessays:
+    - title: New York
+      url: '2013/new-york'
+      date: 2013-08-11
+
+    - title: Washington
+      url: '2013/washington'
+      date: 2013-08-09
+
+    - title: Pittsburgh
+      url: '2013/pittsburgh'
+      date: 2013-08-07
+
+    - title: St Louis
+      url: '2013/st-louis'
+      date: 2013-08-04
+
+    - title: Denver
+      url: '2013/denver'
+      date: 2013-08-01
+
+    - title: Las Vegas
+      url: '2013/las-vegas'
+      date: 2013-07-29
+
+    - title: Los Angeles
+      url: '2013/los-angeles'
+      date: 2013-07-26
+
+    - title: San Francisco
+      url: '2013/san-francisco'
+      date: 2013-07-22

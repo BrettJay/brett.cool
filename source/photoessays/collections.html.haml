@@ -18,7 +18,4 @@
 
             .PhotoEssayCaption.pt1.pb2
               .PhotoEssayCaption_title= collection.name
-              .PhotoEssayCaption_date
-                = collection.dates.from.strftime("%b %-d")
-                to
-                = collection.dates.to.strftime("%b %-d, %Y")
+              .PhotoEssayCaption_date #{collection.dates.from.strftime("%b %-d")}—#{collection.dates.to.strftime("%b %-d, %Y")}

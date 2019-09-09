@@ -1,0 +1,262 @@
+title: Arriving in Tokyo
+subtitle: Shibuya and Harajuku
+steps: 21077
+km: 16.06
+collection:
+  current:
+    folder: japan
+    file: 2019-02-12
+  next:
+    folder: japan
+    file: 2019-02-13
+  prev:
+    folder: japan
+    file: 2019-02-11
+content:
+  - story: |
+      The next morning, we awoke.
+
+      Ahead of check out, we decided to head to the Nishiki Markets one last time to get some more Konpeito.
+  - photo:
+      image: P2122095
+      style: right
+  - story: |
+      Before long, we arrived at the familiar Nishiki street.
+  - photos:
+      type: grid
+      rows:
+        - images: [ P2122097, P2122098 ]
+          caption: Eating while walking is serious business
+  - story: |
+      We picked up another couple of bags of Konpeito.
+  - photos:
+      type: grid
+      rows:
+        - images: [ P2122100, P2122102 ]
+  - story: |
+      We continued through Nishiki Markets, stopping to check if Kofukudo was open for one last Melon Pan (sadly, it wasn’t).
+  - photo:
+      image: P2122106
+      style: full
+  - story: |
+      We made our way back to the hotel, finished packing, and checked out.
+
+      Wheeling our luggage, we headed for Karasuma subway station.
+  - photos:
+      type: grid
+      rows:
+        - images: [ P2122115 ]
+          style: right
+        - images: [ P2122116 ]
+  - story: |
+      We soon arived at Kyoto station.
+
+      At the station, we picked up some supplies—including a Sausage McMuffin each—before passing through to the Shinkansen platforms.
+  - photo:
+      image: P2122117
+      style: right
+  - story: |
+      After picking up some snacks and drinks, we headed up to the platform.
+  - photos:
+      type: grid
+      rows:
+        - images: [ P2122122 ]
+        - images: [ P2122123 ]
+          style: right
+  - story: |
+      Before long, we were on the Shinkansen, bound for Tokyo.
+  - photos:
+      type: grid
+      rows:
+        - images: [ P2122132, P2122135 ]
+        - images: [ P2122139 ]
+  - story: |
+      Onboard the Shinkansen, we ate our snacks.
+  - photos:
+      type: grid
+      rows:
+        - images: [ P2122143 ]
+          style: right
+        - images: [ P2122158 ]
+  - story: |
+      By early afternoon, our Shinkansen pulled in to Tokyo station.
+  - photo:
+      image: P2122174
+      style: full
+  - story: |
+      We descended from the Shinkansen platform and made our way through the busy Tokyo station, making our way for the Yamanote line bound for Shibuya.
+  - photo:
+      image: P2122179
+      style: right
+  - story: |
+      We boarded a train and made our way west towards Shibuya on the Yamanote line.
+  - photos:
+      type: grid
+      rows:
+        - images: [ P2122180 ]
+          style: right
+        - images: [ P2122181 ]
+  - story: |
+      A short train ride later, we alighted at Shibuya station.
+  - photos:
+      type: grid
+      rows:
+        - images: [ P2122185 ]
+          style: right
+        - images: [ P2122188, P2122190 ]
+  - story: |
+      We made our way Northwest through the familiar Shibuya Mark City, bound for our hotel.
+  - photo:
+      image: P2122191
+      style: right
+  - story: |
+      Continuing Northwest, we headed towards APA Hotel.
+  - photo:
+      image: P2122194
+      style: right
+  - story: |
+      We soon arrived at APA Hotel.
+  - place:
+      type: accomodation
+      image: apahotel
+      title: APA Hotel Dougenzakaue
+      address: 〒150-0044 東京都渋谷区円山町２０−番1号
+      checkin: 2019-02-12
+      checkout: 2019-02-19
+      link: https://goo.gl/maps/x5sPfH4Agji3Wf338
+      rating: 3
+  - story: |
+      We dropped bags, and headed out, deciding to stop by a nearby Lawson’s and grab some fried chicken for a snack.
+  - photo:
+      image: P2122197
+      style: right
+  - story: |
+      We then crossed the road, and headed to a nearby coffee shop.
+  - photo:
+      image: P2122198
+      style: full
+  - story: |
+      After grabbing a takeaway coffee, we headed back south towards the Shibuya Scramble.
+  - photos:
+      type: grid
+      rows:
+        - images: [ P2122201 ]
+        - images: [ P2122202 ]
+          style: right
+  - story: |
+      We made our way through the scramble, and up the main street.
+  - photos:
+      type: grid
+      rows:
+        - images: [ P2122206 ]
+  - story: |
+      Taking in the frantic pace of Shibuya, we wound our way back up the street.
+      
+      With check-in time approaching, we circled back to APA Hotel, and checked in.
+
+      ---
+
+      At sunset, we set off again.
+  - photo:
+      image: P2122212
+      style: right
+  - story: |
+      We headed back through Shibuya Mark City.
+  - photo:
+      image: P2122215
+      style: right
+  - story: |
+      We headed for the JR station, and we took the Yamanote line up towards Harajuku.
+  - photo:
+      image: P2122220
+      style: full
+  - story: |
+      We headed down the crowded, and neon-lit Takashita-dori.
+  - photos:
+      type: grid
+      rows:
+        - images: [ P2122227, P2122232 ]
+        - images: [ P2122233 ]
+        - images: [ P2122234 ]
+          style: right
+  - story: |
+      After a good look around, we made our way to a familiar craft beer venue.
+  - place:
+      type: drink
+      image: P2122237
+      title: Baird Beer Taproom Harajuku
+      price: ¥¥
+      label: Craft beer
+      descriptor: Bar
+      rating: 5
+      link: https://goo.gl/maps/MPnUyZpG87BRWHoe7
+  - photos:
+      type: grid
+      rows:
+        - images: [ P2122237, P2122235 ]
+  - story: |
+      After relaxing over a drink, we continued down Takashita Dori, continuing east, and making our way to a nearby toystore.
+  - place:
+      type: interest
+      image: kiddyland
+      title: Kiddy Land
+      address: 〒150-0001 東京都渋谷区神宮前６丁目１−9
+      label: Toy
+      descriptor: Store
+      rating: 5
+      link: https://goo.gl/maps/mVVH3Jq6dKAuwfGY7
+  - story: |
+      After a good look around the many floors of Kiddy Land, we departed, and made our way back west towards Harajuku station.
+  - photos:
+      type: grid
+      rows:
+        - images: [ P2122239 ]
+          style: right
+        - images: [ P2122248 ]
+  - story: |
+      We alighted at Gotanda station.
+  - photos:
+      type: grid
+      rows:
+        - images: [ P2122249, P2122250 ]
+        - images: [ P2122251 ]
+  - story: |
+      Exiting the station, we headed through Gotanda towards a nearby craft beer spot.
+  - photo:
+      image: P2122253
+      style: right
+  - story: |
+      We took an elevator up to DevilCraft Gotanda.
+  - place:
+      type: restaurant
+      address: 〒141-0031 東京都品川区西五反田２丁目７−8 誠實（せいじつ）ビル9F
+      title: DevilCraft Gotanda
+      image: IMG_2507
+      menu: Brewpub
+      price: ¥¥
+      rating: 5
+      link: https://goo.gl/maps/Yb6Nsfb7XkMnPp7v8
+  - story: |
+      We grabbed a table, and were soon joined by a fellow Perth-expat, [Tim][t].
+
+      We ordered some beers, and some very delicious, Chicago deep-dish style pizza pies.
+      
+      [t]: https://timoliver.blog/
+  - photos:
+      type: grid
+      rows:
+        - images: [ P2122262, P2122263 ]
+  - story: |
+      A few beers, and many slices of pizza later, we said goodbye, and left.
+      
+      We made our way back to Gotanda station, and took a train west for Shibuya station.
+  - photo:
+      image: P2122267
+      style: right
+  - story: |
+      We departed Shibuya Station, taking a detour through the crowded Shibuya Scramble nightlife, and headed down Shibuya Center-Gai.
+  - photo:
+      image: P2122270
+      style: full
+  - story: |
+      Now quite late, we headed back for the hotel, to turn in for the night.

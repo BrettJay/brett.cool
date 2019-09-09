@@ -1,0 +1,150 @@
+title: Arriving in Kyoto
+subtitle: Snow, trains and shrines
+steps: 16063
+km: 11.3
+collection:
+  prev: jan-15
+  current: jan-15
+  next: jan-16
+content:
+  - story: |
+      The shinkansen continued its speedy approach towards Kyoto, and as it did so, the winter weather seemed to intensify.
+  - photos:
+      type: column
+      images: ['P1150103','P1150111','P1150114','P1150122']
+  - story: |
+      As the shinkansen continued south west, the sky turned grey and the snow came in.
+  - photos:
+      type: column
+      images: ['P1150126','P1150132']
+  - story: |
+      The logistics of carrying my luggage in heavy snow started to dawn on me as the conditions outside got&nbsp;wilder.
+  - photos:
+      type: column
+      images: ['P1150139','P1150146','P1150148','P1150151']
+  - story: |
+      And then — quite as suddenly as the wild weather appeared — blue skies returned.
+  - photo:
+      style: full
+      image: P1150153
+  - story: |
+      The weather continued to improve as I got closer to&nbsp;Kyoto.
+  - photos:
+      type: column
+      images: ['P1150154','P1150157']
+  - story: |
+      I arrived at Kyoto station and set off.
+  - photo:
+      style: right
+      image: P1150163
+  - story: |
+      I exited the station and headed in the direction of my hotel, which was thankfully not too far from the station.
+  - photo:
+      style: right
+      image: P1150180
+  - story: |
+      As I headed for the hotel, it began to snow. Thankfully, this was far more manageable than the snow I’d experienced in Yuzawa.
+  - photo:
+      style: full
+      image: P1150188
+      caption: It did start to pick up, but crucially the ground was not slushy... yet.
+  - photos:
+      type: column
+      images: ['P1150195','P1150199']
+  - story: |
+      I reached my hotel and checked in.
+  - place:
+      type: accomodation
+      image: apa
+      title: APA Hotel Kyoto Eki Horikawadori
+      address: 〒600-8236 Kyoto Prefecture, Kyoto
+      checkin: 2017-01-15
+      checkout: 2017-01-19
+      rating: 2
+  - story: |
+      After dropping my bags, I set off again. As I walked out of the hotel, a coffee shop across the road caught my eyes with its specialty coffee signifiers...
+
+      I was staying across the road from <a href="http://www.kurasu.kyoto/" target="_blank">Kurasu</a> — a place I’d purchased coffee equipment from all the way back in Perth.
+  - place:
+      type: cafe
+      image: kurasu
+      title: Kurasu
+      address: 下京区東油小路町552 (油小路通塩小路下る) Kyoto
+      price: ¥
+      menu: Coffee
+      rating: 5
+      link: https://foursquare.com/v/kurasu/57abc6d6498ef9d8938d95cf
+  - photo:
+      style: right
+      image: P1150206
+      caption: What were the odds?
+  - story: |
+      I grabbed a takeaway filter and set back off for the train station, intending to visit Fushimi–Inari shrine.
+
+      Snow fell gently as I waited for a train.
+  - photos:
+      type: column
+      images: [ P1150231, P1150247 ]
+  - story: |
+      Soon a train arrived, and I was on my way...
+
+      Well, not for long. Due to the snow, our train abruptly stopped, and we received an announcement over the PA that our train would be delayed.
+  - photo:
+      style: right
+      image: P1150257
+      caption: Good photo ops though
+  - story: |
+      After what felt like an eternity, the train began to move again. Sunset was fast approaching now. I alighted and headed for the shrine.
+  - photo:
+      style: full
+      image: P1150268
+  - story: |
+      Snow was falling thick and fast now. Nevertheless, many people — myself included — were keen to see the shrine regardless.
+  - photo:
+      style: full
+      image: P1150284
+  - story: |
+      Throwing caution to the wind, I was indiscrimnately shooting while my camera, getting covered in snow all the while.
+  - photos:
+      type: grid
+      rows:
+        - images: [ P1150309 ]
+        - images: [ P1150329 ]
+        - images: [ P1150289, P1150301 ]
+  - photos:
+      type: column
+      images: [ P1150334, P1150354, P1150369, P1150379, P1150389, P1150390, P1150397, P1150408, P1150420, P1150424]
+  - story: |
+      I continued up the trail as sunset approached.
+
+      Night fell, and it was time to head back.
+  - photos:
+      type: column
+      images: [ P1150464, P1150467 ]
+  - photo:
+      style: full
+      image: P1150483
+  - story: |
+      I headed back to the train station and made my way back to Kyoto.
+  - photos:
+      type: column
+      images: [ P1150565, P1150569, P1150574, P1150577 ]
+  - story: |
+      Having worked up quite an appetite, I traipsed to a highly rated ramen place.
+  - place:
+      type: restaurant
+      image: daiichi
+      title: Daiichi Asahi
+      address: 下京区東塩小路向畑町845 Kyoto, Kyōto
+      price: ¥¥
+      menu: Ramen
+      rating: 5
+      link: https://foursquare.com/v/%E6%9C%AC%E5%AE%B6-%E7%AC%AC%E4%B8%80%E6%97%AD-%E3%81%9F%E3%81%8B%E3%81%B0%E3%81%97%E6%9C%AC%E5%BA%97/4b6cd3dcf964a5206a572ce3
+  - photo:
+      style: right
+      image: P1150584
+  - story: |
+      One delicious bowl of ramen later, I traipsed through the ice and snow back to the hotel.
+  - photo:
+      style: full
+      image: P1150586

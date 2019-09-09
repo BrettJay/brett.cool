@@ -1,0 +1,303 @@
+title: Nara
+subtitle: and Fushimi Inari
+steps: 28365
+km: 21.61
+collection:
+  current:
+    folder: japan
+    file: 2019-02-11
+  next:
+    folder: japan
+    file: 2019-02-12
+  prev:
+    folder: japan
+    file: 2019-02-10
+content:
+  - story: |
+      The following morning, we headed to the Karasuma subway station.
+  - photos:
+      type: grid
+      rows:
+        - images: [ P2111844, P2111845 ]
+        - images: [ P2111847 ]
+          style: right
+  - story: |
+      We transferred at Kyoto station, and made hopped on a JR line train for Fushimi Inari station.
+
+      We had accidentally hopped on a rapid train that didn’t stop at Fushimi Inari, so we got off at the first stop, and waited for the next train.
+
+      Snow gently fell as we waited on the platform.
+  - photo:
+      image: P2111850
+      style: right
+  - story:
+      A short train ride later, and we emerged outside Fushimi Inari Taisha.
+  - photo:
+      image: P2111853
+      style: full
+  - story:
+      We decided to head for a nearby coffee place before beginning the climb.
+
+      Continuing west, we turned left to head across the train line.
+  - photos:
+      type: grid
+      rows:
+        - images: [ P2111855 ]
+          style: right
+        - images: [ P2111858, P2111860 ]
+        - images: [ P2111863 ]
+  - story:
+      A short walk later, we arrived at Kurasu’s new branch.
+  - place:
+      type: drink
+      address: 〒612-0013 京都府京都市伏見区深草秡川町24-5
+      title: Kurasu Fushimi Inari
+      image: P2111869
+      label: Coffee
+      descriptor: Shop
+      price: ¥
+      rating: 5
+      link: https://goo.gl/maps/66iuaMN4R5p
+  - story:
+      We stepped into the modern, cozy coffee shop, and ordered takeaway.
+  - photo:
+      image: P2111864
+      style: full
+  - story:
+      Drinks in hand, we returned to Fushimi Inari.
+  - photo:
+      image: P2111873
+      style: right
+  - story:
+      We made our way up to the opening gate.
+  - photos:
+      type: grid
+      rows:
+        - images: [ P2111888, P2111881 ]
+        - images: [ P2111892 ]
+  - story:
+      We continued up.
+  - photo:
+      image: P2111899
+      style: right
+  - story:
+      We explored the nearby market street.
+  - photo:
+      image: P2111901
+      style: right
+  - story:
+      After sampling a custard taiyaki, beef yakitori, and fried chicken, we continued our way up through the first gates.
+  - photos:
+      type: grid
+      rows:
+        - images: [ P2111906, P2111907 ]
+        - images: [ P2111908 ]
+          style: right
+  - story:
+      We picked up an Inari wooden placard and made a wish.
+  - photos:
+      type: grid
+      rows:
+        - images: [ P2111910, P2111911 ]
+        - images: [ P2111916 ]
+        - images: [ P2111919 ]
+          style: right      
+  - story:
+      We continued our climb, and were rewarded with a lovely view.
+  - photo:
+      image: P2111924
+      style: full
+  - story:
+      We continued up the mountain.
+  - photos:
+      type: grid
+      rows:
+        - images: [ P2111925, P2111927, P2111932 ]
+        - images: [ P2111933, P2111939]
+        - images: [ P2111960 ]
+          style: right
+  - story:
+      A little while later, we decided it was time to turn back — we had a trip to Nara to make!
+  - photos:
+      type: grid
+      rows:
+        - images: [ P2111962, P2111966 ]
+        - images: [ P2111985 ]
+          style: right
+  - story:
+      We made our way down to the base of Fushimi Inari.
+  - photo:
+      image: P2111988
+      style: right
+      caption: Until next time...
+  - story:
+      It was time for another coffee! We stopped by a nearby espresso bar.
+  - place:
+      type: drink
+      address: 〒612-0805 京都府京都市伏見区深草開土口町５−31 伏見
+      title: Vermillion
+      image: P2111993
+      label: Coffee
+      descriptor: Shop
+      price: ¥¥
+      rating: 5
+      link: https://goo.gl/maps/7jGHxZh2w2C2
+  - story: |
+      After taking a moment to rest after our climb, we departed for the station, and made our way south along the Nara line, towards Nara.
+
+      We had caught a local train, and decided to transfer at a station where we could catch the next rapid train.
+
+      We waited on the chilly platform for the next train.
+  - photo:
+      image: P2111998
+      style: right
+  - story: |
+      A while later, a rapid arrived, and we made our way speedily towards Nara.
+  - photos:
+      type: grid
+      rows:
+        - images: [ P2112000, P2112002 ]
+  - story: |
+      The train continued south, houses and rural landscapes flying past.
+  - photo:
+      image: P2112009
+      style: full
+  - story: |
+      Eventually, we arrived in Nara.
+
+      It was lightly raining as we made our way east through the city center.
+  - photo:
+      image: P2112012
+      style: full
+  - story: |
+      We turned left off Sanjo dori, heading to a highly rated café for a late lunch.
+  - photo:
+      image: P2112016
+      style: right
+  - story: |
+      We entered the cozy café, and took a seat.
+  - place:
+      type: restaurant
+      address: 〒630-8226 奈良県奈良市小西町１−８ axe unit1階
+      title: Mellow Café
+      image: P2112024
+      menu: Italian
+      price: ¥¥
+      rating: 4
+      link: https://goo.gl/maps/tJK8rAm7uAS2
+  - story: |
+      After a lovely pizza we departed, and continued east along Sanjo dori.
+  - photo:
+      image: P2112027
+      style: right
+      caption: Doggo spotted
+  - story: |
+      As we continue, we made a detour for Kōfuku-ji temple.
+  - photo:
+      image: P2112029
+      style: full
+  - story: |
+      We entered Kōfuku-ji, which exhibited some national treasures.
+  - photo:
+      image: P2112030
+      style: right
+  - story: |
+      We continued north east.
+
+      Very soon, we started to spot deer.
+  - photos:
+      type: grid
+      rows:
+        - images: [ P2112041, P2112036 ]  
+  - story: |
+      We picked up some crackers to feed the deer.
+  - photos:
+      type: grid
+      rows:
+        - images: [ P2112042 ]
+          style: right
+        - images: [ P2112053 ]
+  - story: |
+      As mid afternoon approached, we made our way for Tōdai-ji temple.
+  - photos:
+      type: grid
+      rows:
+        - images: [ P2112060 ]
+          style: right
+  - story: |
+      We passed through the main gate to the temple.
+  - photos:
+      type: grid
+      rows:
+        - images: [ P2112064 ]
+        - images: [ P2112068, P2112069 ]
+  - story: |
+      We popped in to Tōdai-ji museum, exhibiting a number of cultural artifacts.
+  - photo:
+      image: P2112072
+      style: right
+  - story: |
+      After a quick look around inside the museum, we then approached the vast and very impressive Tōdai-ji temple.
+  - photos:
+      type: grid
+      rows:
+        - images: [ banner ]
+        - images: [ P2112085, P2112093 ]
+  - story: |
+      We entered the temple, the scheer scale of the bronze buddha statue was an imposing and impressive figure to behold.
+
+      We made our way clockwise through the temple, looking at the various displays and artifacts inside.
+
+      It was now getting quite late, so we made our way back to Nara station.
+
+      About half an hour later, we gratefully sat on our train, bound for Kyoto, sun well and truly setting.
+  - photo:
+      image: P2112094
+      style: right
+  - story: |
+      ---
+
+      We rode back into town, exhausted.
+
+      On the commute, we tried to figure out what to do for dinner. A highly rated curry place sounded good, and so we decided to make our way there, once we’d arrived in Kyoto.
+
+      About an hour later we pulled in to the station, and we began our curry&nbsp;mission.
+  - photos:
+      type: grid
+      rows:
+        - images: [ IMG_2454, IMG_2453 ]
+  - story: |
+      We transferred to another train, and made our way to Nijo station.
+
+      We alighted, stopped in at a convenience store to withdraw some cash, and continued, walking briskly through quiet, dark side streets.
+
+      Soon, we arrived at the curry shop, or at least, where it should have been, according to Google Maps.
+
+      There was nothing there.
+
+      Exhausted, we headed back toward the station. After a brief stop off at a supermarket, we decided to make our way back to the hotel.
+
+      ---
+
+      One short connecting train later, we arrived at our hotel.
+      
+      Alyssa discovered there was a highly rated Gyoza place around the corner, so we decided to try stopping in.
+  - place:
+      type: restaurant
+      address: 〒600-8446 京都府京都市下京区堀之内町２６３
+      title: Sukemasa
+      image: sukemasa
+      menu: Gyoza
+      price: ¥
+      rating: 4
+      link: https://goo.gl/maps/TRh3hLQQFvG2
+  - story: |
+      Gratefully, Sukemasa was open, and the menu was very simple. Gyoza; you simply choose the amount.
+      
+      This lack of decision-making was appreciated in our exhausted state.
+
+      Our Gyoza arrived and we gratefully ate.
+      
+      The Gyoza were plump, juicy, and full of flavour, perfectly cooked, crispy on the top, and tender and soft on the other sides.
+
+      After a dozen or so Gyoza and rice, we departed. We made the short walk back to our hotel, and gratefully turned in for the night.

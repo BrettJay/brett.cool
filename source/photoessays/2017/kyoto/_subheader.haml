@@ -16,12 +16,12 @@
           #{link_to 'Kyoto', '/photoessays/2017/kyoto', class: 'BreadCrumb_Header'}
         .Menu_Button
           - data.kyoto.dates.each do | date |
-            - if date.slug === current_page.data.collection.current
+            - if date.slug === collection.current
               <span class="DayDate">#{date.date.strftime("%b %-d")}</span> #{date.title}
       .DayMenu
         .MenuClip
           - data.kyoto.dates.each do | date |
-            - if date.slug === current_page.data.collection.current
+            - if date.slug === collection.current
               .DayItem.DayItem--Current
                 <span class="DayDate">#{date.date.strftime("%b %-d")}</span> #{date.title} <span class="DayDescription">#{date.subtitle}</span>
             - else

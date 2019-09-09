@@ -1,0 +1,616 @@
+- name: Osaka
+  slug: feb-06
+  images:
+    - feb-07/P2070333.jpg
+    - feb-06/banner.jpg
+  description: |
+    We arrived in Osaka late on Wedesday night. Making our way to the city center from the airport, we explored the Dōtonbori market street until the early morning.
+
+    We visited Shitennō-ji temple, and the retro-future Shinsekai area, visited a Shibe café, and sampled some excellent post-curfew coffee at LiLo Coffee Roasters, before a nightcap at CraftBeerWorks Kamikaze.
+
+    We departed, making our way to Kyoto by Shinkansen.
+  days:
+    - date: 2019-02-06
+      photos:
+        - time: 500
+          path: P2060010_lq.jpg
+        - time: 1200
+          path: P2060085_lq.jpg
+        - time: 1600
+          path: P2060092_lq.jpg
+        - time: 2150
+          path: P2060131_lq.jpg
+        - time: 2350
+          path: P2070177_lq.jpg
+      motion:
+        - time: 650
+          duration: 500
+          label: PER ✈ SIN
+          kind: flight
+        - time: 1402
+          duration: 740
+          label: SIN ✈ KIX
+          kind: flight
+      places:
+        - at: 1138
+          label: Changi Airport
+          kind: airport
+          photo: P2060049_lq.jpg
+        - at: 2140
+          label: KIX Airport
+          kind: airport
+        - at: 2250
+          label: Hotel Code
+          kind: hotel
+          photo: hotelcode.jpg
+    - date: 2019-02-07
+      photos:
+        - time: 859
+          path: P2070185_lq.jpg
+        - time: 1000
+          path: P2070207_lq.jpg
+        - time: 1150
+          path: banner_lq.jpg
+        - time: 1350
+          path: P2070333_lq.jpg
+        - time: 1600
+          path: P2070350_lq.jpg
+        - time: 1830
+          path: P2070521_lq.jpg
+        - time: 2200
+          path: P2070643_lq.jpg
+      motion:
+        - time: 900
+          duration: 100
+          label: Midosuji Line
+          kind: transit
+      places:
+        - at: 1050
+          label: Brooklyn Roasting Company
+          kind: cafe
+          photo: IMG_4695_lq.jpg
+        - at: 1150
+          label: Shitennō-ji temple
+          kind: interest
+          photo: banner_lq.jpg
+        - at: 1250
+          label: Shinsekai
+          kind: interest
+          photo: P2070329_lq.jpg
+        - at: 1450
+          label: Kinnotorikara
+          kind: restaurant
+          photo: P2070368_lq.jpg
+        - at: 1830
+          label: Mame-Shiba Café
+          kind: interest
+          photo: mameshibacafe.jpg
+        - at: 1900
+          label: 鶏soba 座銀 にぼし店
+          kind: restaurant
+          photo: P2070599_lq.jpg
+        - at: 1951
+          label: LiLo Coffee Roasters
+          kind: cafe
+          photo: P2070626_lq.jpg
+        - at: 2030
+          label: Village Vanguard America Mura
+          kind: shop
+          photo: villagevanguard.jpg
+        - at: 2150
+          label: Craftbeerworks Kamikaze
+          kind: bar
+          photo: P2070633_lq.jpg
+    - date: 2019-02-08
+      photos:
+        - time: 800
+          path: P2080669_lq.jpg
+        - time: 1000
+          path: P2080697_lq.jpg
+      motion:
+        - time: 900
+          duration: 200
+          label: Shinkansen to Kyoto
+          kind: transit
+
+- name: Kyoto
+  slug: feb-08
+  images:
+    - feb-09/banner.jpg
+    - feb-08/banner.jpg
+  description: |
+    A brief Shinkansen ride later, we arrived in Kyoto.
+
+    We explored the Nishiki markets, trying Melonpan with ice cream. We explored the local temples and shrines, and by night, the famous Pontocho alley.
+
+    We also visited Gion, stunning Arashiyama scenery, Fushimi Inari Taisha, and Nara Park.
+  days:
+    - date: 2019-02-08
+      photos:
+        - time: 950
+          path: P2080737_lq.jpg
+        - time: 1200
+          path: P2080797_lq.jpg
+        - time: 1500
+          path: P2080935_lq.jpg
+        - time: 1800
+          path: P2081046_lq.jpg
+      places:
+        - at: 1030
+          label: Imu Hotel
+          kind: hotel
+          photo: P2080771_lq.jpg
+        - at: 1230
+          label: Nishiki Markets
+          kind: restaurant
+          photo: P2080794_lq.jpg
+        - at: 1430
+          label: Kurasu
+          kind: cafe
+          photo: P2080913_lq.jpg
+        - at: 1600
+          label: Higashihonganji temple
+          kind: interest
+          photo: banner_lq.jpg
+        - at: 1900
+          label: Omen Shijo
+          kind: restaurant
+          photo: P2081069_lq.jpg
+        - at: 2050
+          label: Cafe La Siesta 8 bit
+          kind: bar
+          photo: IMG_2120_lq.jpg
+    - date: 2019-02-09
+      photos:
+        - time: 950
+          path: P2091102_lq.jpg
+        - time: 1100
+          path: P2091155_lq.jpg
+        - time: 1200
+          path: P2091329_lq.jpg
+        - time: 1500
+          path: P2091422_lq.jpg
+        - time: 1900
+          path: P2091434_lq.jpg
+      places:
+        - at: 1050
+          label: '%Aribica'
+          kind: cafe
+          photo: P2091148_lq.jpg
+        - at: 1150
+          label: Starbucks Higashiyama
+          kind: cafe
+          photo: P2091261_lq.jpg
+        - at: 1350
+          label: Yudofu Kisaki
+          kind: restaurant
+          photo: P2091415_lq.jpg
+        - at: 1550
+          label: PullSt café
+          kind: cafe
+        - at: 1950
+          label: Gogyo
+          kind: restaurant
+          photo: P2091441_lq.jpg
+    - date: 2019-02-10
+      photos:
+        - time: 800
+          path: P2101453_lq.jpg
+        - time: 1000
+          path: P2101507_lq.jpg
+        - time: 1200
+          path: P2101653_lq.jpg
+        - time: 1300
+          path: P2101693_lq.jpg
+        - time: 1616
+          path: P2101817_lq.jpg
+        - time: 1850
+          path: IMG_2315_lq.jpg
+        - time: 2100
+          path: P2101839_lq.jpg
+      places:
+        - at: 1100
+          label: Monkey Park
+          kind: interest
+          photo: P2101564_lq.jpg
+        - at: 1200
+          label: Arashiyama Park
+          kind: interest
+          photo: P2101652_lq.jpg
+        - at: 1280
+          label: Bamboo Grove
+          kind: interest
+          photo: P2101702_lq.jpg
+        - at: 1410
+          label: Ichiran
+          kind: restaurant
+          photo: P2101764_lq.jpg
+        - at: 1517
+          label: Blue Bottle Kyoto
+          kind: cafe
+          photo: P2101792_lq.jpg
+        - at: 1618
+          label: Nazen-ji temple
+          kind: interest
+          photo: P2101805_lq.jpg
+        - at: 2107
+          label: Katsukura
+          kind: restaurant
+    - date: 2019-02-11
+      photos:
+        - time: 800
+          path: P2111850_lq.jpg
+        - time: 1000
+          path: P2111892_lq.jpg
+        - time: 1200
+          path: P2111966_lq.jpg
+        - time: 1400
+          path: P2112053_lq.jpg
+        - time: 1700
+          path: P2112093_lq.jpg
+        - time: 1950
+          path: IMG_2453_lq.jpg
+      places:
+        - at: 900
+          label: Kurasu
+          kind: cafe
+          photo: P2111864_lq.jpg
+        - at: 1000
+          label: Fushimi Inari Temple
+          kind: interest
+        - at: 1100
+          label: Vermillion
+          kind: cafe
+          photo: P2111993_lq.jpg
+        - at: 1300
+          label: Mellow Café
+          kind: restaurant
+        - at: 1400
+          label: Nara Park
+          kind: interest
+          photo: P2112041_lq.jpg
+        - at: 1650
+          label: Tōdai-ji temple
+          kind: interest
+          photo: banner_lq.jpg
+        - at: 2000
+          label: Sukemasa
+          kind: restaurant
+    - date: 2019-02-12
+      photos:
+        - time: 950
+          path: P2122106_lq.jpg
+        - time: 1150
+          path: P2122122_lq.jpg
+        - time: 1350
+          path: P2122135_lq.jpg
+      places:
+        - at: 900
+          label: Nishiki Market
+          kind: restaurant
+      motion:
+        - time: 1150
+          duration: 330
+          label: Shinkansen to Tokyo
+          kind: transit
+
+- name: Tokyo
+  slug: feb-12
+  images:
+    - feb-12/P2122267.jpg
+    - feb-16/banner.jpg
+  description: |
+    Finally, we returned to Tokyo.
+
+    For the last leg of our trip, we revisited some favourite spots from our 2018 trip—including some of our favourite food spots in Harajuku, Savoy in Roppongi, Maisen in Shibuya, and DevilCraft in Gotanda.
+
+    We also took a snow trip to Yuzawa, explored Odaiba, and thoroughly explored all Akihabara had to offer.
+  days:
+    - date: 2019-02-12
+      photos:
+        - time: 1200
+          path: P2122158_lq.jpg
+        - time: 1450
+          path: P2122181_lq.jpg
+        - time: 1800
+          path: P2122233_lq.jpg
+        - time: 2200
+          path: P2122270.jpg
+      places:
+        - at: 1500
+          label: APA Hotel Dougenzakaue
+          kind: hotel
+        - at: 1550
+          label: About Life Coffee Brewers
+          kind: cafe
+        - at: 1800
+          label: Baird Beer Taproom Harajuku
+          kind: bar
+          photo: P2122237_lq.jpg
+        - at: 1900
+          label: Kiddy land
+          kind: shop
+        - at: 2000
+          label: Devil Craft Gotanda
+          kind: restaurant
+          photo: IMG_2507_lq.jpg
+      motion:
+        - time: 1100
+          duration: 300
+          label: Shinkansen to Tokyo
+          kind: transit
+
+    - date: 2019-02-13
+      photos:
+        - time: 800
+          path: P2132281.jpg
+        - time: 1080
+          path: P2132377_lq.jpg
+        - time: 1260
+          path: P2132487_lq.jpg
+        - time: 1450
+          path: P2132536_lq.jpg
+        - time: 1650
+          path: P2132578_lq.jpg
+        - time: 1850
+          path: P2132600_lq.jpg
+        - time: 2050
+          path: P2132631_lq.jpg
+        - time: 2250
+          path: P2132666_lq.jpg
+      places:
+        - at: 1250
+          label: Ninjintei
+          kind: restaurant
+          photo: P2132516_lq.jpg
+        - at: 1860
+          label: Akihabara
+          kind: interest
+        - at: 2050
+          label: Ichiran
+          kind: restaurant
+        - at: 2150
+          label: Tap Stand
+          kind: bar
+      motion:
+        - time: 1000
+          duration: 150
+          label: Shinkansen to Yuzawa
+          kind: transit
+        - time: 1500
+          duration: 150
+          label: Shinkansen to Tokyo
+          kind: transit
+    - date: 2019-02-14
+      photos:
+        - time: 850
+          path: P2142684_lq.jpg
+        - time: 1060
+          path: banner_lq.jpg
+        - time: 1340
+          path: P2142739_lq.jpg
+        - time: 1600
+          path: P2142741_lq.jpg
+        - time: 1900
+          path: IMG_6178_lq.jpg
+        - time: 2200
+          path: IMG_8168_lq.jpg
+      places:
+        - at: 970
+          label: Onibus Coffee
+          kind: cafe
+          photo: P2142707_lq.jpg
+        - at: 1150
+          label: Tsutaya Books Daikanyama
+          kind: shop
+          photo: IMG_4627_lq.jpg
+        - at: 1250
+          label: Duct Coffee Lab
+          kind: cafe
+        - at: 1350
+          label: Itasoba Kaoriya
+          kind: restaurant
+          photo: P2142734_lq.jpg
+        - at: 1450
+          label: Yellow Submarine
+          kind: shop
+        - at: 1830
+          label: Nabezo
+          kind: restaurant
+          photo: 02142019_185820_lq.jpg
+        - at: 2030
+          label: Ben Fiddich
+          kind: bar
+          photo: IMG_4793_lq.jpg
+    - date: 2019-02-15
+      photos:
+        - time: 950
+          path: P2152768_lq.jpg
+        - time: 1250
+          path: P2152805_lq.jpg
+        - time: 1500
+          path: P2152836_lq.jpg
+        - time: 1800
+          path: P2152891_lq.jpg
+        - time: 2045
+          path: P2152905_lq.jpg
+        - time: 2265
+          path: P2152914_lq.jpg
+      places:
+        - at: 970
+          label: Sensō-ji
+          kind: interest
+          photo: P2152778_lq.jpg
+        - at: 1150
+          label: Kagetsudō Kaminarimon
+          kind: cafe
+          photo: P2152794_lq.jpg
+        - at: 1300
+          label: Shake Shack Ebisu
+          kind: restaurant
+          photo: P2152825_lq.jpg
+        - at: 1450
+          label: Odaiba
+          kind: interest
+          photo: P2152840_lq.jpg
+        - at: 1550
+          label: Joyopolis
+          kind: interest
+          photo: IMG_1981_lq.jpg
+        - at: 2045
+          label: Savoy
+          kind: restaurant
+          photo: P2152910_lq.jpg
+        - at: 2175
+          label: Brewdog
+          kind: bar
+          photo: IMG_5452_lq.jpg
+    - date: 2019-02-16
+      photos:
+        - time: 1000
+          path: P2162938_lq.jpg
+        - time: 1250
+          path: P2162969_lq.jpg
+        - time: 1500
+          path: P2163001_lq.jpg
+        - time: 1750
+          path: P2163049_lq.jpg
+        - time: 2000
+          path: IMG_8324_lq.jpg
+        - time: 2260
+          path: IMG_0365_lq.jpg
+      places:
+        - at: 1000
+          label: Little Nap Coffee Stand
+          kind: cafe
+          photo: IMG_4493_lq.jpg
+        - at: 1120
+          label: Tokyu Hands Shinjuku
+          kind: shop
+          photo: P2162989_lq.jpg
+        - at: 1230
+          label: Blue Bottle Shinjuku
+          kind: cafe
+          photo: P2162993_lq.jpg
+        - at: 1380
+          label: Shake Shack Shinjuku
+          kind: restaurant
+          photo: IMG_5502_lq.jpg
+        - at: 1580
+          label: Itoya
+          kind: shop
+        - at: 1980
+          label: Tonkatsu Maisen
+          kind: restaurant
+          photo: P2163087_lq.jpg
+        - at: 2110
+          label: Tsutaya Books Shibuya
+          kind: bar
+          photo: tsutaya.jpg
+    - date: 2019-02-17
+      photos:
+        - time: 800
+          path: P2173089_lq.jpg
+        - time: 1050
+          path: P2173138_lq.jpg
+        - time: 1300
+          path: P2173148_lq.jpg
+        - time: 1600
+          path: P2173149_lq.jpg
+        - time: 1850
+          path: P2173178_lq.jpg
+        - time: 2100
+          path: P2173189_lq.jpg
+      places:
+        - at: 950
+          label: Meiji Shrine
+          kind: interest
+          photo: P2173104_lq.jpg
+        - at: 1020
+          label: Zaku Zaku
+          kind: cafe
+          photo: P2173140_lq.jpg
+        - at: 1100
+          label: Calbee+
+          kind: restaurant
+          photo: P2173143_lq.jpg
+        - at: 1200
+          label: Ichiran
+          kind: restaurant
+          photo: P2173144_lq.jpg
+        - at: 1300
+          label: The Roastery by Nozy Coffee
+          kind: cafe
+          photo: IMG_1396_lq.jpg
+        - at: 1900
+          label: DevilCraft Gotanda
+          kind: restaurant
+          photo: P2173188_lq.jpg
+    - date: 2019-02-18
+      photos:
+        - time: 900
+          path: P2183204_lq.jpg
+        - time: 1200
+          path: P2183242_lq.jpg
+        - time: 1630
+          path: P2183267_lq.jpg
+        - time: 1870
+          path: P2183285_lq.jpg
+        - time: 2200
+          path: IMG_1569_lq.jpg
+      places:
+        - at: 950
+          label: Blue Bottle Nakameguro
+          kind: cafe
+          photo: P2183212_lq.jpg
+        - at: 1210
+          label: Tokyo Metropolitan Government Building
+          kind: interest
+          photo: P2183237_lq.jpg
+        - at: 1310
+          label: Ichiran
+          kind: restaurant
+          photo: IMG_2188_lq.jpg
+        - at: 1400
+          label: Don Quijote Shinjuku
+          kind: shop
+        - at: 1890
+          label: Maisen
+          kind: restaurant
+          photo: IMG_9296_lq.jpg
+        - at: 1970
+          label: Goodbeer Faucets
+          kind: bar
+          photo: IMG_6319_lq.jpg
+        - at: 2220
+          label: Don Quijote Shinjuku
+          kind: shop
+    - date: 2019-02-19
+      photos:
+        - time: 600
+          path: P2193308_lq.jpg
+        - time: 860
+          path: P2193313.jpg
+      places:
+        - at: 1030
+          label: Narita Airport
+          kind: airport
+        - at: 1550
+          label: Changi Airport
+          kind: airport
+        - at: 2300
+          label: Perth Airport
+          kind: airport
+      motion:
+        - time: 700
+          duration: 300
+          label: NEX to Narita Airport
+          kind: transit
+        - time: 1110
+          duration: 500
+          label: NRT ✈ SIN
+          kind: flight
+        - time: 1800
+          duration: 500
+          label: SIN ✈ PER
+          kind: flight

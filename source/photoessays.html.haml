@@ -2,14 +2,14 @@
   title: Photoessays
   body_classes: photoessays
   meta_description: A collection of photoessays, from travels, conferences, and experiences…
-  meta_keywords: Photography, travel, photoessays
+  meta_keywords: [ 'Photography', 'travel', 'photoessays' ]
 ---
 
 .Page
   .Content
     = partial "photoessays/header"
 
-    - data.photoessays.each do | photoessays |
+    - data.photoessays['index'].each do | photoessays |
       .Content_photoessays.Row{id: photoessays.year }
         - photoessays.photoessays.each do | photoessay |
           = partial("photoessays/components/card", locals: { photoessay: photoessay})

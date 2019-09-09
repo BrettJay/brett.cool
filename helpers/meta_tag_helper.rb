@@ -45,7 +45,9 @@ module MetaTagHelper
   end
 
   def set_description
-    if data.page.meta_description.blank?
+    if @dynamic_description.present?
+      @dynamic_description
+    elsif data.page.meta_description.blank?
       data.config.site.meta_description
     else
       data.page.meta_description

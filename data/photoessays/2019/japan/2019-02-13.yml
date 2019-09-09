@@ -1,0 +1,355 @@
+title: Yuzawa Snowtrip
+subtitle: Akihabara, Ueno, and Shinjuku nightlife
+steps: 21773
+km: 16.59
+collection:
+  current:
+    folder: japan
+    file: 2019-02-13
+  next:
+    folder: japan
+    file: 2019-02-14
+  prev:
+    folder: japan
+    file: 2019-02-12
+content:
+  - story: |
+      The following morning, we set off from our hotel.
+      
+      We picked up some supplies from a nearby convenience store, and then headed through Shibuya Mark City, towards Shibuya station.
+  - photos:
+      type: grid
+      rows:
+        - images: [ P2132281 ]
+        - images: [ P2132288 ]
+          style: right
+  - story: |
+      We made our way in to the JR station and on to a platform.
+  - photos:
+      type: grid
+      rows:
+        - images: [ P2132294, P2132298 ]
+  - story: |
+      We jumped on a train bound for Tokyo station.
+  - photos:
+      type: grid
+      rows:
+        - images: [ P2132302 ]
+          style: right
+        - images: [ P2132303 ]
+  - story: |
+      Arriving at Tokyo station, we disembarked, and made our way through the crowded underground station for the Shinkansen platforms.
+  - photo:
+      image: P2132305
+      style: full
+  - story: |
+      We made our way for platform 22.
+  - photos:
+      type: grid
+      rows:
+        - images: [ P2132307 ]
+        - images: [ P2132309, P2132310 ]
+  - story: |
+      Before long, the Shinkansen arrived.
+
+      We boarded, and were soon making our way rapidly north, out of the built-up Tokyo city center.
+  - photos:
+      type: grid
+      rows:
+        - images: [ P2132331, P2132315 ]
+        - images: [ P2132325 ]
+          style: right
+  - story: |
+      We snacked on our Onigiri as we continued north, the scenery outside whipping by us.
+
+      We crossed over bridges, the buildings starting to get smaller, and landscapes more rural.
+  - photos:
+      type: grid
+      rows:
+        - images: [ P2132333, P2132335 ]
+        - images: [ P2132347 ]
+          style: right
+  - story: |
+       In about half an hour, we’d traveled a considerable distance north.
+  - photos:
+      type: grid
+      rows:
+        - images: [ P2132363, P2132369 ]
+  - story: |
+      The sun was out now, and it seemed so impossible we’d be seeing any snow today...
+
+      Our train made its way in and out of mountain tunnels, until suddenly our train emerged in to a quiet, wintry landscape.
+  - photo:
+      image: P2132377
+      style: full
+  - story: |
+      We arrived at Echigo-Yuzawa station, made our way downstairs, and out of the station through the Southwest exit.
+  - photo:
+      image: P2132380
+      style: full
+  - story: |
+      Alyssa took her first steps into the lightly falling snow, catching it as it gently fell. We picked up a pile of powdery, fresh snow, and turned it over in our hands.
+
+      We continued, turning right, and heading northwest along Yuzawa Onsen-dori street.
+  - photos:
+      type: grid
+      rows:
+        - images: [ P2132381, P2132389 ]
+  - story: |
+      The last time I’d been to Yuzawa, the snow had posed a real impediment, making exploration rather difficult.
+
+      Thankfully today, the snowfall was light, making it trivial to navigate.
+
+      We continued along the road, pausing to try throwing a snowball at each other, before continuing.
+  - photos:
+      type: grid
+      rows:
+        - images: [ P2132392 ]
+        - images: [ P2132393 ]
+          style: right
+  - story: |
+      We could see mountains looming in the distance to our left as we walked.
+  - photo:
+      image: P2132394
+      style: full
+  - story: |
+      We continued along the road, retracing my steps from a couple of years ago, but far less impeded by snow this time.
+  - photos:
+      type: grid
+      rows:
+        - images: [ P2132402, P2132405 ]
+        - images: [ P2132406, P2132407 ]
+  - story: |
+      We came to a parking lot that—thanks to the untouched snow—was transformed into something far more interesting.
+  - photos:
+      type: grid
+      rows:
+        - images: [ P2132414, P2132457 ]
+        - images: [ P2132460 ]
+          style: right
+  - story: |
+      After a quick, impromptu snow-fight we continued.
+      
+      We soon reached the ski slopes.
+  - photo:
+      image: P2132464
+      style: right
+  - story: |
+      We wandered around, toured a nearby building, and tried our hand at building a snowman.
+  - photos:
+      type: column
+      images: [ P2132502, IMG_7800, P2132487 ]
+  - story: |
+      It was now around 12:30, we we were pretty keen to warm up over lunch.
+
+      We made our way back down, and stopped in at a nearby Katsu restaurant.
+  - place:
+      type: restaurant
+      address: 〒949-6101 新潟県南魚沼郡湯沢町湯沢湯沢497ー4
+      title: Ninjintei
+      image: P2132519
+      menu: Tonkatsu
+      price: ¥¥
+      rating: 5
+      link: https://goo.gl/maps/AxVctyGW3x1o8vM8A
+  - photo:
+      style: right
+      image: P2132516
+  - story: |
+      We continued back towards Echigo-Yuzawa station.
+  - photos:
+      type: grid
+      rows:
+        - images: [ P2132517, P2132522 ]
+        - images: [ P2132527 ]
+          style: right
+  - story: |
+      Back at Echigo Yuzawa station, we headed inside and explored around the various stalls.
+  - photo:
+      image: P2132531
+      style: full
+  - story: |
+      The interior was warm and cozy, with plenty of gifts, souvenirs, and local delicacies on offer, as well as cafés, and other restaurants.
+  - photo:
+      image: P2132533
+      style: right
+  - story: |
+      After exploring the various stalls, we headed for a sake tasting area, showcasing over 100 varieties of sake.
+  - photos:
+      type: grid
+      rows:
+        - images: [ P2132536, P2132544 ]
+  - story: |
+      Several sakes later each, we departed, heading for the Shinkansen platform bound for Tokyo.
+  - photo:
+      image: P2132548
+      style: right
+  - story: |
+      Before long, a Shinkansen arrived, and we boarded.
+
+      The Shinkansen departed, bound for Tokyo, rural scenery whipping by, as early evening approached.
+  - photos:
+      type: column
+      images: [ P2132550, P2132556, P2132558, P2132562 ]
+  - story: |
+      The buildings loomed larger, as we began our approach to Tokyo.
+  - photo:
+      image: P2132565
+      style: right
+  - story: |
+      Eventually, we arrived back at Tokyo station.
+  - photos:
+      type: grid
+      rows:
+        - images: [ P2132578, P2132580 ]
+        - images: [ P2132586 ]
+          style: right
+  - story: |
+      It was now approaching early evening.
+      
+      We transferred to a Yamanote line train, made our way back to Shibuya, dropped in to our hotel, and.
+
+      ---
+
+      An hour and a half later, we set off for the Shibuya station to Akihabara, via Shibuya Mark City.
+  - photo:
+      image: P2132595
+      style: right
+  - story: |
+      We jumped on a train bound for Akihabara.
+  - photo:
+      image: P2132596
+      style: full
+  - story: |
+      About 40 minutes later, we emerged into Akihabara station, and headed through the bright Electric Town district.
+  - photo:
+      image: P2132600
+      style: full
+  - story: |
+      We made our way in to one of the nearby malls.
+  - place:
+      type: interest
+      image: radio-kaikan
+      title: Akihabara Radio Kaikan
+      address: 〒101-0021 東京都千代田区外神田１丁目１５−16
+      label: Animé, gaming, and hobby
+      descriptor: shopping mall
+      rating: 4
+      link: https://goo.gl/maps/gt1Ja919i9D7p8G48
+  - story: |
+      We explored the various shops inside, examining the range of trading cards and other goods on offer.
+
+      We continued exploring the floors, full of niche products and interests, before returning to the street level, continuing to the end of the block, and heading north.
+  - photos:
+      type: grid
+      rows:
+        - images: [ P2132602, P2132603 ]
+        - images: [ P2132607 ]
+        - images: [ P2132612 ]
+          style: right
+  - story: |
+      We explored other stores on our way up, looping around, until we reached the massive Yodobashi-Akiba electronic store.
+  - place:
+      type: interest
+      image: yodobashi
+      title: Yodobashi Camera Akiba
+      address: 〒101-0028 東京都千代田区神田花岡町1-1
+      label: Electronic
+      descriptor: store
+      rating: 5
+      link: https://goo.gl/maps/iRdrS1QWbXZyd4RV7
+  - story: |
+      The sheer scale of Yodobashi stores never fail to impress me.
+
+      We headed inside and explored. It’s honestly kind of exhausting—there’s just *so much* to look at.
+
+      We had a good look around and, after mulling over picking up an external SSD for a little while, we left.
+
+      Now feeling like dinner, we decided the time was right for another Ichiran visit. Google Maps informed us of an Ichiran in Ueno just a bit north of our position, so we headed back to Akihabara station.
+  - photo:
+      image: P2132617
+      style: right
+  - story: |
+      We boarded a train, and arrived moments later in Ueno.
+  - photos:
+      type: grid
+      rows:
+        - images: [ P2132619, P2132620 ]
+  - story: |
+      We hadn’t visited Ueno last year. It was an older, quieter part of the city, but still bustling on Wednesday night.
+
+      We exited the station, and had a quick look around the main area.
+  - photo:
+      image: P2132622
+      style: full
+      caption: I visited that ‘The World End’ irish pub a couple of years ago.
+  - story: |
+      Though large parts of Ueno matched with my memory, there seemed to be quite a few new developments too.
+
+      Truly, the pace of development in Tokyo is far faster than I’m acclimated to.
+  - photos:
+      type: grid
+      rows:
+        - images: [ P2132623, P2132624 ]
+        - images: [ P2132626 ]
+  - story: |
+      We reached the Ichiran and saw a giant line snaking out.
+
+      Eyeballing it (and knowing the line always continues inside), we were guessing at least an hour. Looking at Google Maps, we could continue our epic anti-clockwise circle route towards Shinjuku, where there were a few more Ichiran locations.
+
+      We continued to explore Ueno nightlife, on our way back to the station.
+  - photo:
+      image: P2132631
+      style: full
+  - story: |
+      We returned to the station, and boarded a train to Shinjuku.
+
+      A little while later, we arrived in Shinjuku, and made our way to Ichiran.
+  - place:
+      type: restaurant
+      address: 〒160-0022 東京都新宿区新宿３丁目３４−11 ピースビルB1F・6F
+      title: Ichiran
+      image: IMG_7022
+      menu: Ramen
+      price: ¥¥
+      rating: 5
+      link: https://goo.gl/maps/o7uYqCjf8D42uk9Z7
+  - story: |
+      As we approached, we saw a small queue for the basement. We made our way for the back of the line, when we were stopped by one of the staff manning the line. He handed us a card, and told us to go to floor six.
+
+      We made our way upstairs, and found the sixth floor of the Ichiran store just coming online—clearly in anticipation of the queues. We presented our card, and found ourselves close to the front of the line for the vending machine to order.
+  - photo:
+      image: IMG_7022
+      style: right
+  - story: |
+      The shop was so recently opened that we were in the first group to be seated, and could hear the chefs entering and setting up the kitchen as we took our seats.
+
+      Before long, our ramen arrived.
+
+      ---
+
+      One delicious bowl of ramen later, we headed off for a nightcap.
+  - place:
+      type: drink
+      image: IMG_1411
+      title: Tap Stand
+      address: 〒160-0022 東京都新宿区新宿３丁目３５ 新宿高野第２ビル
+      label: Beer
+      link: https://goo.gl/maps/SA8PafvZPxnh2HHw8
+  - story: |
+      We popped in to Tap Stand, ordered a drink, and a few snacks.
+  - photos:
+      type: grid
+      rows:
+        - images: [ IMG_7998, IMG_1432 ]
+  - story: |
+      A few drinks later, we headed through Shinjuku nightlife, walking down crowded streets.
+  - photos:
+      type: grid
+      rows:
+        - images: [ P2132651 ]
+        - images: [ P2132654, P2132660 ]
+        - images: [ P2132666 ]
+          style: right
+  - story: |
+      After a quick visit to a crowded Don Quijote, we decided to complete the circle loop on the Yamanote line, back to our hotel, and turn in for the night.

@@ -1,0 +1,8 @@
+.Row
+  .Content_Main
+    - if block.link.present?
+      = link_to block.link, class: 'PlaceCard', target: '_blank' do
+        = partial("photoessays/blocks/places/#{block.type}", locals: {slug: current_page.data.slug, block: block})
+    - else
+      .PlaceCard
+        = partial("photoessays/blocks/places/#{block.type}", locals: {slug: current_page.data.slug, block: block})

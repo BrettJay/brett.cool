@@ -1,0 +1,339 @@
+title: Arashiyama
+subtitle: and a Monkey Park
+steps: 25307
+km: 19.28
+collection:
+  current: 
+    folder: japan
+    file: 2019-02-10
+  next:
+    folder: japan
+    file: 2019-02-11
+  prev:
+    folder: japan
+    file: 2019-02-09
+content:
+  - story: |
+      We emerged from our Hotel to find it lightly snowing.
+  
+      Walking through the gentle snowfall, we made our way towards Karasuma subway station.
+  - photo:
+      image: P2101453
+      style: full
+  - story: |
+      We rode the subway to Kyoto station.
+
+      Picking up an onigiri en route from a convenience store station, we eventually found our way to the JR office, and activated our JR pass.
+      
+      We then used our pass to board a train bound for Arashiyama.
+  - photos:
+      type: grid
+      rows:
+        - images: [ P2101464 ]
+        - images: [ P2101466, P2101468 ]
+        - images: [ P2101477 ]
+  - story: |
+      Within 20 minutes, we arrived at Arashiyama station.
+  - photos:
+      type: grid
+      rows:
+        - images: [ P2101481, P2101483 ]
+  - story: |
+      We made our way south, walking through quiet streets.
+  - photos:
+      type: grid
+      rows:
+        - images: [ P2101487 ]
+        - images: [ P2101491, P2101493 ]
+  - story: |
+      As we headed south towards Katsura River, it began to snow lightly.
+  - photos:
+      type: grid
+      rows:
+        - images: [ P2101496, P2101505 ]
+        - images: [ P2101507 ]
+        - images: [ P2101509 ]
+          style: right
+  - story: |
+      We headed east on Sanjo-Dori.
+  - photo:
+      image: P2101517
+      style: full
+  - story: |
+      Turning left and heading south, we crossed Togetsu-kyō Bridge, beautiful vistas surrounding us in every direction.
+  - photos:
+      type: grid
+      rows:
+        - images: [ P2101519 ]
+        - images: [ P2101532, P2101534 ]
+  - story: |
+      We continued south, admiring the beauty of the rivers and mountains.
+  - photo:
+      image: P2101537
+      style: full
+  - story: |
+      Following the coast, we made our way west towards the monkey park.
+  - photo:
+      image: P2101540
+      style: full
+  - story: |
+      Last time I’d visited, it had been closed due to snow. Today however, it was open for business.
+      
+      We decided to make our way up the mountain and have a look.
+  - photo:
+      image: P2101542
+      style: right
+  - story: |
+      We continued up the mountain, beautiful aerial views of Arashiyama coming into view as we continued our climb.
+  - photos:
+      type: grid
+      rows:
+        - images: [ P2101546, P2101547 ]
+        - images: [ P2101553 ]
+        - images: [ P2101555 ]
+          style: right
+  - story: |
+      As we approached the summit, we began to spot some monkeys.
+  - photos:
+      type: grid
+      rows:
+        - images: [ P2101558, P2101556 ]
+  - story: |
+      We continued to the observation deck, offering beautiful, panoramic views.
+  - photos:
+      type: grid
+      rows:
+        - images: [ banner ]
+        - images: [ P2101564 ]
+        - images: [ P2101570 ]
+          style: right
+  - story: |
+      We headed inside a nearby shed, where you could feed the monkeys.
+  - photos:
+      type: grid
+      rows:
+        - images: [ P2101586, P2101581 ]
+        - images: [ P2101577 ]
+        - images: [ P2101590, P2101603 ]
+  - story: |
+      A little while later, we decided it was time to move on.
+      
+      We made our way back down the mountain.
+  - photos:
+      type: grid
+      rows:
+        - images: [ P2101606, P2101609 ]
+        - images: [ P2101610, P2101613 ]
+        - images: [ P2101618 ]
+          style: right
+  - story: |
+      We traced our way back toward Togetsu-kyō bridge.
+
+      On the way, we stopped in at a sourvenir shop, featuring some cute Shibe shaped purses.
+      
+      After picking up a few souvenirs we departed, continuing over Togetsu-kyō.
+  - photos:
+      type: grid
+      rows:
+        - images: [ P2101628 ]
+          style: right
+        - images: [ P2101633 ]
+        - images: [ P2101639 ]
+  - story: |
+      We continued along the coast.
+
+      As we walked along the river, we could see some people who’d hired a canoe, trying to coordinate their rowing.
+  - photo:
+      image: P2101643
+      style: right
+  - story: |
+      We made our way up towards Arashiyama Park’s observation deck.
+  - photo:
+      image: P2101647
+      style: full
+  - story: |
+      When I’d made this climb [just over 2 years ago][jan17], the icy conditions on the day had made it quite treacherous.
+
+      Thankfully, this time the weather was a bit more conducive to our footwear.
+
+      [jan17]: https://brett.cool/photoessays/2017/kyoto/jan-17/
+  - photo:
+      image: P2101652
+      style: full
+  - story: |
+      Before long, we made it to the Observation Deck.
+  - photo:
+      image: P2101653
+      style: full
+  - story: |
+      After taking in the view, we headed back down the mountain.
+  - photo:
+      image: P2101660
+      style: right
+  - story: |
+      We made our way down to the beautiful bamboo grove.
+  - photos:
+      type: grid
+      rows:
+        - images: [ P2101661 ]
+        - images: [ P2101662, P2101693 ]
+  - story: |
+      We continued through the bamboo grove.
+  - photos:
+      type: grid
+      rows:
+        - images: [ P2101702 ]
+        - images: [ P2101710 ]
+          style: right
+        - images: [ P2101719, P2101722 ]
+  - story: |
+      As we reached the bottom of the mountain, we made our way through the small town.
+  - photos:
+      type: grid
+      rows:
+        - images: [ P2101725, P2101732 ]
+  - story: |
+      Now well and truly lunch time, we made our way back to Arashiyama station, keen to get our ramen on.
+  - photos:
+      type: grid
+      rows:
+        - images: [ P2101736 ]
+        - images: [ P2101739, P2101740 ]
+  - story: |
+      A short trip later, we were back in Kyoto.
+      
+      We wandered through the city, bound for the one and only Ichiran.
+  - photos:
+      type: grid
+      rows:
+        - images: [ P2101749, P2101754 ]
+  - story: |
+      We gratefully arrived, and after a short wait, we received our ramen tickets from the familiar vending machine, and were seated at our private booth.
+  - place:
+      type: restaurant
+      address: 〒604-8041 京都府京都市中京区裏寺町598 新京極東入 蛸薬師通
+      title: Ichiran
+      image: ichiran
+      menu: Ramen
+      price: ¥¥
+      rating: 5
+      link: https://goo.gl/maps/3Fk3ERM1ZFS2
+  - photo:
+      image: P2101764
+      style: full
+      caption: Level 10 spice 👌
+  - story: |
+      The rich, beautifully delicate broth lived up to our memories from our last Tokyo trip.
+      
+      It had been nearly a year since we last had Ichiran. It was worth the wait, and the trek.
+
+      After a wonderfully filling bowl of ramen, we left Ichiran.
+      
+      As we wandered back down the main strip, I spotted some people with Blue Bottle bags.
+      
+      On a whim, we decided to catch the subway to Blue Bottle in Higashiyama.
+  - photo:
+      image: P2101768
+      style: right
+  - story: |
+      A short ride later, we arrived at Keage station.
+
+      Heading north through a tunnel, we made our way through Konchiin Temple garden.
+  - photos:
+      type: grid
+      rows:
+        - images: [ P2101772 ]
+        - images: [ P2101776, P2101778 ]
+  - story: |
+      We turned left on to Nanzenji Kusakawacho, and made our way to the Blue Bottle a little further down.
+  - photo:
+      image: P2101780
+      style: right
+  - place:
+      type: drink
+      address: 〒606-8437 京都府京都市左京区南禅寺草川町６４
+      title: Blue Bottle
+      image: P2101782
+      label: Coffee
+      descriptor: Shop
+      price: ¥¥
+      rating: 5
+      link: https://goo.gl/maps/NV8DuDeTKUH2
+  - story: |
+      We entered the Blue Bottle.
+
+      It was quite a popular destination. We lined up, and ordered our drinks.
+  - photos:
+      type: grid
+      rows:
+        - images: [ P2101786 ]
+        - images: [ P2101789, P2101792 ]
+        - images: [ P2101793 ]
+          style: right
+  - story: |
+      After a little while, our drinks were ready.
+
+      We headed through to the front room gift store.
+  - photo:
+      image: P2101794
+      style: full
+  - story: |
+      After drinking our coffees, we decided to check out the nearby Nanzen-ji temple, to our east.
+  - photos:
+      type: grid
+      rows:
+        - images: [ P2101799 ]
+          style: right
+        - images: [ P2101805 ]
+  - story: |
+      We headed to our right, seeing a large brick aqueduct.
+  - photos:
+      type: grid
+      rows:
+        - images: [ P2101817 ]
+        - images: [ P2101822, P2101825 ]
+  - story: |
+      After exploring a little further up, we headed back down, and made our way back to the hotel.
+  - photo:
+      image: P2101835
+      style: full
+  - story: |
+      ---
+
+      Back at the hotel, we took a couple of hours to do some laundry, as we’d be departing for Tokyo the day after tomorrow.
+
+      After washing and drying our laundry, we decided to try the hotel bar for a quick cheeky drink.
+  - photos:
+      type: grid
+      rows:
+        - images: [ IMG_2315, IMG_2360 ]
+  - story: |
+      After a cheeky drink, we decided to head out for dinner.
+
+      We made our way to a highly-rated Katsu place nearby in downtown Kyoto.
+  - place:
+      type: restaurant
+      address: 〒604-8143 京都府京都市中京区阪東屋町 東洞院通四条上ル
+      title: Katsukura
+      image: katsukura
+      menu: Katsu
+      price: ¥¥
+      rating: 5
+      link: https://goo.gl/maps/aXfb4foAdpx
+  - story: |
+      After a short wait, we were seated.
+      
+      We ordered drinks, and were provided with mortars to grind sesame seeds, to add to the Tonkatsu sauce.
+  - photos:
+      type: grid
+      rows:
+        - images: [ IMG_2369, IMG_2368 ]
+  - story: |
+      Soon, our Tonkatsu arrived.
+  - photo:
+      image: P2101839
+      style: full
+  - story: |
+      The katsu crust was crisp, and the chicken fillet was tender.
+
+      After dinner, we headed back to the hotel, for our final full day in Kyoto.

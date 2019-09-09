@@ -1,0 +1,7 @@
+.PhotoRow.Component
+  .PhotoCol_alpha
+    - block.images.left.each do | photo |
+      = image_tag "photoessays/#{slug}/#{photo}.jpg"
+  .PhotoCol_beta
+    - block.images.right.each do | photo |
+      = image_tag "photoessays/#{slug}/#{photo}.jpg"

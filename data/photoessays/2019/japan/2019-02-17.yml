@@ -1,0 +1,282 @@
+title: Meiji and Harajuku
+subtitle: and an afternoon in Akihabara
+steps: 22504
+km: 17.15
+collection:
+  current:
+    folder: japan
+    file: 2019-02-17
+  next:
+    folder: japan
+    file: 2019-02-18
+  prev:
+    folder: japan
+    file: 2019-02-16
+content:
+  - story: |
+      We awoke, and made our way north from the hotel.
+
+  - photo:
+      image: P2173089
+      style: right
+
+  - story: |
+      Cutting our way through Shibuya streets, we continued north to Yoyogi Park.
+
+  - photos:
+      type: grid
+      rows:
+        - images: [ P2173091 ]
+        - images: [ P2173092, P2173095 ]
+
+  - story: |
+      We arrived at the base of Yoyogi Park and headed east, towards Harajuku and Meiji Shrine.
+
+  - photos:
+      type: grid
+      rows:
+        - images: [ P2173096, P2173101 ]
+  
+  - story: |
+      Before long, we arrived at the beautiful Meiji Shrine entrance.
+
+  - photo:
+      image: P2173104
+      style: full
+
+  - story: |
+      We entered the serene shrine grounds.
+
+  - photo:
+      image: P2173106
+      style: right
+
+  - story: |
+      As we walked, we saw a procession of Monks ahead.
+
+      Curious, we followed behind them, watching along with the other visitors.
+
+  - photos:
+      type: grid
+      rows:
+        - images: [ P2173109 ]
+        - images: [ P2173112 ]
+          style: right
+
+  - story: |
+      At the end of the procession, we entered the main temple grounds.
+
+  - photo:
+      image: P2173115
+      style: full
+
+  - story: |
+      For our second anniversary, we made a wish on a placard.
+
+  - photos:
+      type: grid
+      rows:
+        - images: [ P2173117, P2173120 ]
+        - images: [ P2173121 ]
+
+  - story: |
+      The main temple was buzzing with visitors.
+
+  - photo:
+      image: P2173124
+      style: right
+  
+  - story: |
+      After a good look around, we exited the grounds.
+
+      Looping back around in a clockwise arc, we made our way back through the shrine entrance.
+
+  - photos:
+      type: grid
+      rows:
+        - images: [ P2173126, P2173129 ]
+  
+  - story: |
+      We then continued east, across to Harajuku.
+
+  - photo:
+      image: P2173137
+      style: full
+
+  - story: |
+      Harajuku is such a contrast to the quiet, serene Meiji shrine. The young, fashionable city in Tokyo, it was quietly bustling on this cool Sunday morning.
+      
+      We made our way down the crowded Takashita-dori street in search of comcrêpe—a crêpe store specialising in crème brûlée crêpes.
+
+  - photo:
+      image: P2173138
+      style: full
+
+  - story: |
+      Unfortunately, it turned out the store was closed for renovations.
+
+      We found a dessert place nearby we’d tried last year, that more than made up for Comcrêpe’s temporary closure.
+
+  - place:
+      type: drink
+      image: IMG_2508
+      title: ZAKUZAKU
+      address: 〒150-0001 東京都渋谷区神宮前１丁目７−1 CUTECUBE原宿 1階
+      label: Pastry
+      descriptor: Dessert shop
+      link: https://goo.gl/maps/ugUPGNFAfEdCTH8Q8
+  
+  - story: |
+      At Croquant Chou Zaku Zaku, we both opted to try a limited time Blueberry Cheese pastry.
+
+  - photo:
+      image: P2173140
+      style: full
+  
+  - story: |
+      The pastry was crispy and golden, with a light, rich filling inside. The blueberry cheese coating added a refreshing zing.
+
+      The pastry felt so light that we decided to balance it witgh another snack—this time something more savoury.
+
+  - place:
+      type: drink
+      image: calbee
+      title: Calbee+
+      address: 〒150-0001 東京都渋谷区神宮前１丁目１６−8
+      label: Hot chip
+      descriptor: Shop
+      link: https://goo.gl/maps/HwMVveV7SkQHYzMA8
+
+  - story: |
+      We entered Calbee+ and lined up.
+
+      Calbee is a popular brand of chips in Japan, available at most convenience stores and groceries. 
+
+      Here, they cook and prepare their chips fresh for you to eat.
+
+  - photo:
+      image: P2173142
+      style: right
+
+  - story: |
+      We reached the front of the line and placed our order.
+
+      Once cooked, we took our chips upstairs to the dining area.
+
+  - photo:
+      image: P2173143
+      style: full
+  
+  - story: |
+      The chips were very enjoyable fresh, in particular we loved the shoestring fry cut chips. They have much more flavour fresh.
+
+      After a quick look around some stores in Harajuku (including a cosplay store with wigs for Anime characters), we decided to grab an early lunch at Ichiran to avoid typical&nbsp;queues.
+
+  - place:
+      type: restaurant
+      address: 〒150-0001 東京都渋谷区神宮前６丁目５−6 サンポウ綜合ビル2F
+      title: Ichiran
+      image: ichiran
+      menu: Ramen
+      price: ¥¥
+      rating: 5
+      link: https://goo.gl/maps/4rw6Hq1di7HTX3aF9
+
+  - story: |
+      Our strategy paid off, as we were seated and soon had delicious bowls of ramen placed in front of us.
+
+  - photo:
+      image: P2173144
+      style: right
+
+  - story: |
+      One delicious bowl of ramen later, we left Ichiran, spotting a rather large queue for lunch as we departed.
+
+      We continued down the small, quaint streets in Harajuku. 
+      
+      After a quick stop in a discount gift store, we made our way for coffee.
+
+  - place:
+      type: drink
+      address: 〒150-0001 東京都渋谷区神宮前５丁目１７−13
+      title: The Roastery by Nozy Coffee
+      image: P2173148
+      label: Coffee
+      descriptor: Shop
+      price: ¥¥
+      rating: 5
+      link: https://goo.gl/maps/a9FainaKPmTXms6x6
+
+  - photos:
+      type: grid
+      rows:
+        - images: [ IMG_4048, IMG_1396 ]
+          caption: Trying out the bag hook keychain I picked up in Akihabara
+
+  - story: |
+      Some rather delicious coffees later, we departed Nozy coffee.
+
+      We headed back to our hotel to drop purchases off, and have an early afternoon break.
+
+      ---
+
+      Later that afternoon, we made our way for Akihabara.
+
+      As we arrived, we happened across Akihabara pedestrian paradise which—it turns out—takes place on Sundays.
+
+  - photos:
+      type: grid
+      rows:
+        - images: [ P2173149 ]
+  - story: |
+      We strolled along the main strip as sunset approached.
+  
+  - photos:
+      type: grid
+      rows:
+        - images: [ P2173152, P2173163 ]
+
+  - story: |
+      As early evening arrived, we explored a range of stores, including a rather impressively-stocked second hand videogame store.
+
+  - photo:
+      image: P2173173
+      style: full
+
+  - story: |
+      We whiled away the evening exploring the novel Akihabara shops.
+  
+  - photos:
+      type: grid
+      rows:
+        - images: [ IMG_4825, IMG_2105 ]
+        - images: [ P2173178 ]
+          style: right
+
+  - story: |
+      As dinner time arrrived, we decided to revisit one of our favourite pizza places—Devil Craft in Gotanda.
+
+  - place:
+      type: restaurant
+      address: 〒141-0031 東京都品川区西五反田２丁目７−8 誠實（せいじつ）ビル9F
+      title: DevilCraft Gotanda
+      image: IMG_2507
+      menu: Brewpub
+      price: ¥¥
+      rating: 5
+      link: https://goo.gl/maps/Yb6Nsfb7XkMnPp7v8
+
+  - story: |
+      I ordered an 8.1% Xocoveza Mocha Stout, inspired by Mexican Hot Chocolate.
+
+  - photos:
+      type: grid
+      rows:
+        - images: [ P2173182, P2173188 ]
+  
+  - story: |
+      After dinner in Gotanda, we made our way back to our hotel for the night.
+
+  - photo:
+      image: P2173189
+      style: full
