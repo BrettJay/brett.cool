@@ -10,6 +10,7 @@ body_classes: page-photoessays
 
 - @dynamic_title = photoessay.title
 - @dynamic_subtitle = photoessay.subtitle
+- @og_image_override = "photoessays/#{current_page.data.slug}"
 
 = partial("photoessays/blocks/subheader_navigation", locals: { essay: essay, collection: photoessay.collection, collection_title: 'Japan', collection_path: { year: '2019', folder: 'japan' }})
 = partial("photoessays/components/banner", locals: {slug: current_page.data.slug, title: photoessay.title, subtitle: photoessay.subtitle, trip: { steps: photoessay.steps, km: photoessay.steps} })
