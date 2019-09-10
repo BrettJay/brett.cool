@@ -1,0 +1,217 @@
+---
+title: Page composition with Yaml and Middleman
+date: 2019/09/10
+type: post
+meta_description:
+body_classes: page-blog
+---
+
+<%- @og_image_override = 'blog/2019-09-10-page-composition' %>
+
+<figure class="image_expand">
+  <%= image_tag 'blog/2019-09-10-page-composition/hero.jpg', alt: 'Page Composition' %>
+</figure>
+
+Yesterday I published a [photoessay of my February trip to Japan][japan].
+
+I’ve been experimenting with techniques to produce photoessays since 2015. While
+I find it a little alarming I’ve been tackling essentially the same problem on
+and off for over four years[^1], I’ve learned a lot doing so.
+
+And no doubt, my biggest takeaway came from a new compositional approach I
+explored for this latest photoessay.
+
+Writing pains
+-------------
+
+Until now, the content of a photoessay would live within a haml file.
+
+This file contained the markup to structure the page, the prose (each block
+nested in a markdown filter, several divs deep), and calls to partials for
+reusable blocks—such as a grid of photos, or details of a location.
+
+```
+.Page
+  .Content#story
+    .Row
+      .Content_Main.Content_Article
+        :markdown
+          Here’s some words
+
+    = partial("photoessays/components/photo_two_column", locals: {slug: current_page.data.slug, left: ['foo.jpg'], right: ['bar.jpg'] })
+
+    .Row
+      .Content_Main.Content_Article
+        :markdown
+          And then something else.
+
+    = partial("photoessays/components/photo_right", locals: {slug: current_page.data.slug, caption: '', photo: 'image.jpg'})
+
+    .Row
+      .Content_Main.Content_Article
+        :markdown
+          And some more words.
+    
+    = partial("photoessays/components/place_accomodation", locals: { slug: current_page.data.slug, image: 'hotel.jpg', title: 'Hotel Name', address: '749 Taylor St, San Francisco', checkin: current_page.data.trip.dates.from, checkout: current_page.data.trip.dates.to, rating: 4 })
+```
+
+Even if you like haml/pug like me, this is *ugly*—writing is painful, and editing
+moreso. Despite leveraging partials, making adjustments to the layout is
+burdensome and error-prone.
+
+An idea: key/value pair templates
+---------------------------------
+
+While setting to work on the Japan 2019 photoessays and being frustrated how my
+approach got in the way of writing, I was struck with an idea.
+
+What if I used Middleman’s data layer to describe the content of the page in an
+array of key value pairs, where the key is the template, and the value an object
+with information for the template—like a markdown block, or an array of images
+for a grid of photos...
+
+```
+/data/photoessays/2019/japan/2019-02-06.yml
+
+content:
+  - story: |
+      We arrive at Perth airport around 3am.
+  - photos:
+      type: grid
+      rows:
+        - images: [ P2060004, P2060008 ]
+  - flight:
+      image: P2060028
+      title: SQ 224
+      gate: 52
+      seat: 44K
+      origin: PER
+      destination: SIN
+```
+
+That would allow updating and rearraging of content without touching markup.
+
+Then, it would be a matter of iterating over this array on the page...
+
+```
+/source/photoessays/2019/japan/feb-06.html.haml
+
+- # This returns a hash with the key of '2019-02-06', and the file contents as the value
+- essay = data.photoessays['2019'].japan.find { | slug, date | slug == '2019-02-06' }
+
+- # Assign the photoessay contents to the local variable 'photoessay'
+- photoessay = essay[1]
+
+.Page
+  .Content#story
+    - # For each item in the content array, as story block...
+    - photoessay.content.each do | story_block |
+      - # Take the key as the template name, and the value as the content block 
+      - story_block.each do | template, block |
+        - # Render the template partial of the same filename, with the block contents passed down
+        = partial("photoessays/blocks/#{template}", locals: {slug: current_page.data.slug, block: block })
+```
+
+...and rendering the associated partial.
+
+```
+/source/photoessays/blocks/_story.html.haml
+
+.Row
+  .Content_Main.Content_Article
+    :markdown
+      #{block}
+```
+
+I gave it a quick test [converting a previous Photoessay][test] to the new format,
+and was delighted with how easy it was, and manageable editing its content was.
+
+I think there’s something to this constrained approach to declaring content.
+[Theme UI][themeui] is a compelling constraint-based approach to styling React
+Apps. It might be similarly nice to be able to compose page content in a terse
+format, from a library of components...
+
+```
+- billboard:
+    title: Widgets, unlike any other
+    copy: |
+      Our widgets are unlike any others.
+
+      You may think you find widgets like ours, but they are not more.
+    actions:
+      - label: Buy Now
+        style: primary
+        link: /buy
+      - label: Learn More
+        link: /learn-more
+- features:
+    - heading: Secure
+      copy: Very secure guaranteed
+    - heading: Reliable
+      copy: Much reliable, 5 year warranty
+    - heading: Affordable
+      copy: Good prices, many value
+- testimonials:
+    - quote: I r8 it 8/8 m8
+      cite: Bob Smith
+    - quote: Very good
+      cite: Jane Doe
+```
+
+You can dig more into the approach in this website’s GitHub repo:
+
+1. [Sample photoessay][sample-essay]
+2. [Sample page (iterates over the photoessay content)][sample-page]
+3. [Component partials (rendered in the sample page)][templates]
+
+Looking forward
+---------------
+
+So... perhaps what I’m describing is not altogether dissimlar to the React
+component and props pattern—albeit with less angular brackets.
+
+I have been playing around with [Gatsby] a lot this year, and in particular am
+quite excited by [MDX][mdx]. I think this approach could be quite promising,
+effectively enabling something a little like the following...
+
+```
+import { PhotoGrid, Flight } from "./components/photoessays"
+
+We arrive at Perth airport around 3am.
+
+Dropping our luggage at bag drop, we headed towards International Departures, pausing for a quick coffee, and to catch our breath.
+
+<PhotoGrid images={[P2060004, P2060008]}/>
+
+Before long, our boarding group was called, and we made our way onto the aircraft, finding our assigned seats.
+
+<Flight
+  image="P2060028"
+  title="SQ 224"
+  gate="52"
+  seat="44K"
+  origin="PER"
+  destination="SIN"
+  airline="Singapore Airlines"
+  depart="6:50am"
+  arrive="11:38am"/>
+```
+
+But as long as this Middleman version of my website is active, I’ll be exploring
+more approaches using this strategy.
+
+[^1]:
+  To be fair, the oldest photoessay which is leveraging the current approach is the
+  [Mixin photoessay][mixin], which is only nearly 3 years old...
+
+[japan]: /photoessays/2019/japan "Japan 2019 Photoessay"
+[mixin]: /photoessays/mixin-2016 "Mixin 2016"
+
+[gatsby]: https://www.gatsbyjs.org/ "Gatsby JS"
+[mdx]: https://mdxjs.com/ "MDX"
+[themeui]: https://theme-ui.com/ "Theme UI"
+[test]: https://github.com/BrettJay/brett.cool/commit/22e30d653b8e8e2424a9957f6dac62552c0af4a9
+
+[sample-essay]: https://github.com/BrettJay/brett.cool/blob/master/data/photoessays/2019/japan/2019-02-06.yml
+[sample-page]: https://github.com/BrettJay/brett.cool/blob/master/source/photoessays/2019/japan/feb-06.html.haml
+[templates]: https://github.com/BrettJay/brett.cool/tree/master/source/photoessays/blocks
