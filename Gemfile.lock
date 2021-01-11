@@ -140,7 +140,7 @@ GEM
     rb-fsevent (0.10.3)
     rb-inotify (0.10.0)
       ffi (~> 1.0)
-    redcarpet (3.4.0)
+    redcarpet (3.5.1)
     rubocop (0.62.0)
       jaro_winkler (~> 1.5.1)
       parallel (~> 1.10)
@@ -194,7 +194,7 @@ DEPENDENCIES
   middleman-ogp
   middleman-search_engine_sitemap
   middleman-smusher
-  redcarpet (~> 3.0)
+  redcarpet (~> 3.5)
   rubocop
 
 BUNDLED WITH

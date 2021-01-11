@@ -2,7 +2,7 @@ source 'https://rubygems.org'
 
 # middleman-basis is currently not compatible with middleman v4
 gem 'bundler', '~> 1.17'
-gem 'redcarpet', '~> 3.0'
+gem 'redcarpet', '~> 3.5'
 
 gem 'middleman', '~> 3'
 gem 'middleman-bower'
